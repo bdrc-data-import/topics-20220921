@@ -1,0 +1,59 @@
+@base          <bdg:T2CN4662> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4662 {
+    bda:LG1B58B5E4B7CBF25F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:28:27.351Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG52332547328E89C5
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-23T09:49:15.54Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG693D43249AA8DBEB
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-25T10:25:36.047Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGCC8E6839A5ED82C1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T12:40:22.764Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4662  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4662 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5a/T2CN4662.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4662 ;
+        adm:logEntry        bda:LG1B58B5E4B7CBF25F , bda:LG52332547328E89C5 , bda:LG693D43249AA8DBEB , bda:LGCC8E6839A5ED82C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF59B525983743F5F
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.6, p.364 ཕྱག་ན་རྡོ་རྗེ་ཡང་གསང་བདུད་རྩི་ཐིགས་པ་ནི་གསང་བའི་བདག་པོས་གྲུབ་ཆེན་ལས་ཀྱི་རྡོ་རྗེ་ལ་སྩལ་བ་ལས་བརྒྱུད་པའི་ཡི་དམ་ཞིག་སྟེ།\n མཐིང་ནག་ཞལ་གསུམ་ཕྱག་དྲུག་པ། །གཡས་གཡོན་དཀར་དམར་ཁྲོ་འཛུམ་ཞལ། །རིན་ཆེན་ཅོད་པན་རྒྱན་གྱིས་མཛེས། །དང་པོའི་ཕྱག་གཉིས་རྡོ་རྗེ་དང་། །བར་མ་ཉི་ཟླ་གཉིས་ཀྱི་བར། །བགེགས་ཚོགས་འཇོམས་ཕྱིར་ཐལ་མོ་འདེབས། །ཐ་མས་སྦྲུལ་ནག་ཡོངས་སུ་འཛིན། །སྟག་ཤམ་རིན་ཆེན་རྒྱན་གྱིས་སྤྲས། །ཞེས་གསལ་བ་ལྟར་རོ།།"@bo .
+    
+    bdr:T2CN4662  a         :Topic ;
+        skos:prefLabel      "gsang bdag bdud rtsi thigs pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF59B525983743F5F .
+}

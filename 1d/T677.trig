@@ -1,0 +1,41 @@
+@base          <bdg:T677> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T677 {
+    bda:LG2FEE08C56F82DE9E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-03T13:17:06.079Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T677  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T677 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1d/T677.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T677 ;
+        adm:logEntry        bda:LG2FEE08C56F82DE9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT51B9653C38447939
+        a                   :Note ;
+        :noteText           "this deity topic is used for the rituals invoking the wisdom deity, manjughosa. who is white as a mass of moonstone, with one face and two arms; his right hand is boon-granting; his left at his heart holds with thumb and ring finger the root of an utpala, one whose bloom, opening beside his right ear, is a book of the the perfection of wisdom in a hundred thousand slokas; he sits in vajraparyanka; he has five knots of hair and wears a white silk scarf and round his lower body assorted silks; with the youthfulness of a sixteen year old; he has the thirty-two marks and eighty signs of a great being; deities of tibetan buddhism #185"@en .
+    
+    bdr:T677  a             :Topic ;
+        skos:altLabel       "'jam dkar kha che paN chen lugs/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs dkar po kha che paN chen lugs/"@bo-x-ewts , "white manjughosa in the tradition of the great pandita of kashmir"@en , "sita manjughosa"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT51B9653C38447939 .
+}

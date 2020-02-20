@@ -1,0 +1,55 @@
+@base          <bdg:T2GS1150> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1150 {
+    bda:LG4E696A828552CC34
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T13:02:39.74Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA90492A4387F217F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-01T06:51:19.173Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE83A4618F6B62D11
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-01T06:58:20.665Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1150  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1150 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9f/T2GS1150.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1150 ;
+        adm:logEntry        bda:LG4E696A828552CC34 , bda:LGA90492A4387F217F , bda:LGE83A4618F6B62D11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTC58A9EAE1E3B6CAC
+        a                   :Note ;
+        :locationStatement  "p. 232" ;
+        :noteSource         bdr:MW2GS1147 ;
+        :noteText           "this supernatural being topic is used for bskang gso and similar rituals for the propitiation of the gnas bdag of sbas yul mkhan pa lung"@en .
+    
+    bdr:T2GS1150  a         :Topic ;
+        skos:altLabel       "bdud po zu ra ra/"@bo-x-ewts ;
+        skos:prefLabel      "zu ra ba (gnas bdag)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC58A9EAE1E3B6CAC .
+}

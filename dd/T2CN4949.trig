@@ -1,0 +1,52 @@
+@base          <bdg:T2CN4949> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4949 {
+    bda:LG0370F3C083FEF040
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T17:04:39.531Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG1F772F0E640E738C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-25T10:13:06.764Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG8348876E5EA8A63D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-27T14:20:43.39Z"^^xsd:dateTime ;
+        adm:logMessage      "created & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBD15D79B0FAD1B29
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:54:30.531Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4949  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4949 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dd/T2CN4949.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4949 ;
+        adm:logEntry        bda:LG0370F3C083FEF040 , bda:LG1F772F0E640E738C , bda:LG8348876E5EA8A63D , bda:LGBD15D79B0FAD1B29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2CN4949  a         :Topic ;
+        :isRoot             true .
+}

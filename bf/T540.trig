@@ -1,0 +1,62 @@
+@base          <bdg:T540> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T540 {
+    bda:LG6CEA1B91F3F2549F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T12:13:41.036Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG6E1A6A8237E922DD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T14:55:19.538Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1265 thun bzhi bla ma'i rnal 'byor (kaM tshang lugs)"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGAF0EC4605FCE2A05
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-12T15:08:46.882Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGE09B128B7CEA486B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-08T15:29:04.917Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T540  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T540 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bf/T540.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T540 ;
+        adm:logEntry        bda:LG6CEA1B91F3F2549F , bda:LG6E1A6A8237E922DD , bda:LGAF0EC4605FCE2A05 , bda:LGE09B128B7CEA486B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB0FC6D96844D5E5F
+        a                   :Note ;
+        :noteText           "see also T4, \"bla ma'i rnal 'byor\""@en .
+    
+    bdr:NTFF039990FAC72F97
+        a                   :Note ;
+        :locationStatement  "v. 17" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "under this category are classed various rituals focussing upon identity with the guru\n'jam mgon kong sprul in the rin chen gter mdzod chen mo includes the following practices:\n1) dwags po'i gsang lam bla sgrub ('ja' tshon snying po)\n2) Dom+bi pa, bi rwa pa, pha dam pa, mitra dzo ki, rat+na gling pa (gnam chos)\n3) pak+shi bla sgrub (yon dge mi 'gyur rdo rje)\n4) klong chen bla sgrub ('jigs med gling pa)\n5) grub thob thugs thig ('jam dbyangs mkhyen brtse'i dbang po)\n6) sku gsum rigs 'dus (mchog gyur gling pa)"@en .
+    
+    bdr:T540  a             :Topic ;
+        rdfs:seeAlso        bdr:T1265 ;
+        skos:prefLabel      "bla sgrub/"@bo-x-ewts , "guru practice"@en , "gurusadhana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB0FC6D96844D5E5F , bdr:NTFF039990FAC72F97 .
+}

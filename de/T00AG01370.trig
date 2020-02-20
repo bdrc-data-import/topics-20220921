@@ -1,0 +1,41 @@
+@base          <bdg:T00AG01370> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01370 {
+    bda:LGC0B92F6EEDB41002
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-12T11:40:39.307Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01370  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01370 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "de/T00AG01370.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01370 ;
+        adm:logEntry        bda:LGC0B92F6EEDB41002 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4ADE9506FEFC7A42
+        a                   :Note ;
+        :noteText           "a cycle from 'jigs med gling pa's klong chen snying thig"@en .
+    
+    bdr:T00AG01370  a       :Topic ;
+        skos:altLabel       "rta khyung 'bar ba/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma drag po rta khyung 'bar ba ('jigs med gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4ADE9506FEFC7A42 .
+}

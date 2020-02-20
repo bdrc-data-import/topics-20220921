@@ -1,0 +1,41 @@
+@base          <bdg:T1961> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1961 {
+    bda:LG5EA372226F036C4C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T16:45:31.84Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T1821"@en .
+    
+    bda:LG8422A4DCDF510A12
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T19:05:48.791Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T1821 to T978"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1961  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1961 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2f/T1961.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1961 ;
+        adm:logEntry        bda:LG5EA372226F036C4C , bda:LG8422A4DCDF510A12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1961  a            :Topic ;
+        rdfs:seeAlso        bdr:T978 ;
+        skos:prefLabel      "phung po dur 'jug"@bo-x-ewts , "disposal of the dead"@en ;
+        :isRoot             true .
+}

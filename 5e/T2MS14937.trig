@@ -1,0 +1,43 @@
+@base          <bdg:T2MS14937> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14937 {
+    bda:LG4002300B54D72D45
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-10-20T12:36:35.485Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T969"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG48228ADA3D0165D5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-08T15:47:16.11Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14937  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14937 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5e/T2MS14937.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14937 ;
+        adm:logEntry        bda:LG4002300B54D72D45 , bda:LG48228ADA3D0165D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T969 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2MS14937  a        :Topic ;
+        skos:altLabel       "phyag mtshan/"@bo-x-ewts ;
+        skos:prefLabel      "phyag"@bo-x-ewts , "mudra"@sa-x-ndia ;
+        :isRoot             true .
+}

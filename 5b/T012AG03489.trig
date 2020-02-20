@@ -1,0 +1,40 @@
+@base          <bdg:T012AG03489> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03489 {
+    bda:LGC7050385CBE3C535
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-25T10:53:17.829Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T012AG03489  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03489 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5b/T012AG03489.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03489 ;
+        adm:logEntry        bda:LGC7050385CBE3C535 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2FE462D50387DB04
+        a                   :Note ;
+        :noteText           "blocks for the mchog gling gter gsar were carved in the first decade of the twentieth century by the first ke la mchog gling incarnation, dkon mchog ’gyur med bstan pa'i rgyal mtshan (d.u.), the author of the lengthiest of the mchog gling hagiographies. it has been published in exile twice: first in twenty-four volumes as the collected rediscovered teachings (gter ma) of gter-chen mchog-gyur-gling-pa, by patshang lama sonam gyaltsen in delhi, 1977 (w8751); and again in thirty-nine volumes as the treasury of revelations and teachings of mchog-gyur-bde-chen-gling-pa by lama pema tashi, paro, bhutan, between 1982 and 1986 (w22642)."@en .
+    
+    bdr:T012AG03489  a      :Topic ;
+        skos:prefLabel      "mchog gling gter gsar/"@bo-x-ewts , "the collected revelations of mchog gyur gling pa"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT2FE462D50387DB04 .
+}

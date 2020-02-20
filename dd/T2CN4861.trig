@@ -1,0 +1,60 @@
+@base          <bdg:T2CN4861> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4861 {
+    bda:LG04BFBAD9270B7152
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T16:35:57.895Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG33FA2A606F6ABA36
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-22T11:02:45.805Z"^^xsd:dateTime ;
+        adm:logMessage      "created and added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG67C356FC80E2850E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T15:54:44.623Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG7438F51368C4E75F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:59:10.401Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2CN4861  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4861 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dd/T2CN4861.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4861 ;
+        adm:logEntry        bda:LG04BFBAD9270B7152 , bda:LG33FA2A606F6ABA36 , bda:LG67C356FC80E2850E , bda:LG7438F51368C4E75F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT70CA985FCAF74921
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.11, p.26 འདིར་ཞིང་སྐྱོང་མ་སྐུ་མཆེད་གཉིས་ནི་དུས་མཚན་གནོད་སྦྱིན་མ་དམར་མོ་ཁྲག་རལ་ཅན་དང་། དུས་མཚན་སྲིན་མོ་ཆེན་མོ་སྨུག་ནག་གཅེར་མོ་ཟངས་རལ་ཅན་རྣམ་གཉིས་ལ་གོ་བར་གསལ།"@bo .
+    
+    bdr:T2CN4861  a         :Topic ;
+        skos:altLabel       "dus mtshan gnod sbyin ma/"@bo-x-ewts , "dus mtshan srin mo chen mo/"@bo-x-ewts ;
+        skos:prefLabel      "zhing skyong ma sku mched gnyis/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT70CA985FCAF74921 .
+}

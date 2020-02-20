@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1168> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1168 {
+    bda:LG5CDF1E819A62660D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T12:42:03.728Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1168  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1168 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "93/T2GS1168.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1168 ;
+        adm:logEntry        bda:LG5CDF1E819A62660D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF00F0FBF86A8C231
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations connected with a form of the wisdom illuminating white varahi\n\n\ndeities of tibetan buddhism #99"@en .
+    
+    bdr:T2GS1168  a         :Topic ;
+        skos:prefLabel      "phag dkar shes rab gsal byed yig rnying nas bshad pa ltar/"@bo-x-ewts , "wisdom-illuminating white varahi as taught in the ancient texts tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF00F0FBF86A8C231 .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1144> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1144 {
+    bda:LG04BFEE0288B7E137
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T13:52:55.588Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDA417AA8C1031B53
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T16:45:00.579Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1144  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1144 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "98/T2GS1144.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1144 ;
+        adm:logEntry        bda:LG04BFEE0288B7E137 , bda:LGDA417AA8C1031B53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC48A2702279EAB9A
+        a                   :Note ;
+        :noteText           "this deity topic is assigned to empowerments and  rituals invoking the yama dharmaraja, dark blue, with one face and two arms; he has the face of a buffalo; his right hand brandishes a black skull-club marked with a vajra and his left making a threatening forefinger with a black noose; his hair is brown and streams upwards; his fangs are bared and he is naked; his penis is erect, extremely terrile in sentiment and without ornaments; he abides in pratyalidha posture (right leg bent) amidst a gale of fire on his buffalo seat;  \nhis consort, caumundi, is to his left; she is black with tawny hair loose in individual strands and with dangling breasts; she holds a trident and a skull and is very wrathful; \nthe are surrounded by the following attendants:\n1) ya ba ti (yavati \"averter\"?) holding a club;  \n2) phywa sangs (\"free of luck\") holding a wheel;  \n3) dmigs pa (upalabdi, \"peception\"?) holding an impaling stake;\n4) ral pa tshar dgu (\"ninefold hairlocks\") holding a sakti dagger;  \n5) gshin rje'i pho nya (yamaduta, \"yama's messenger\"), holding a hook;  \n6) dus kyi zhags pa (kalapasa, \"noose of time\"), holding a demon-noose;  \n7) yamadandin (\"yama club-holder\"), holding a club;  \n8) yamadamstrin (\"yama tooth-holder\"), holding a blazing tooth;  \n9) dus mtshan ma (kalaratri, \"night of time\");\n10) ghataki (gsod ma mo, \"muderess\");  \n11) kali (nag mo, \"black one\")'  \n12) revatisakali (nam gru sha ka li);  \nand all the rest of the hosts of yamas and matrkas (the first eight are evidently male yamas; the other four are matrkas)\n\ndeities of tibetan buddhism #404"@en .
+    
+    bdr:T2GS1144  a         :Topic ;
+        skos:prefLabel      "chos rgyal las kyi gshin rje mthing ga"@bo-x-ewts , "blue dharmaraja karmayama"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC48A2702279EAB9A .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T2467> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2467 {
+    bda:LG842AAF4DAE60505D
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T10:51:07.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added mnga' gsol and made it the primary term"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG977B1DBB71288298
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:08:39.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T2467  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2467 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d7/T2467.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2467 ;
+        adm:logEntry        bda:LG842AAF4DAE60505D , bda:LG977B1DBB71288298 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2467  a            :Topic ;
+        skos:altLabel       "bkra shis mnga' gsol/"@bo-x-ewts , "授权"@zh-hans ;
+        skos:prefLabel      "mnga' gsol/"@bo-x-ewts , "授權"@zh-hant ;
+        :isRoot             true .
+}

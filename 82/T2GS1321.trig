@@ -1,0 +1,48 @@
+@base          <bdg:T2GS1321> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1321 {
+    bda:LG0F9234C7F2D71C49
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:44:14.039Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD1700B71DDC010F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T18:55:31.913Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1321  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1321 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "82/T2GS1321.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1321 ;
+        adm:logEntry        bda:LG0F9234C7F2D71C49 , bda:LGD1700B71DDC010F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT9F0CE98360081455
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 988" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus, quoting the dung tshig mdzod 609-8, lists the five chief pranidhana of the dge ldan pa tradition: 1) bzang spyod; 2) byams smon; 3) thog mtha' ma; 4) bde smon; 5) spyod 'jug; the source notes that often the spyod 'jug is replaced by the gsang 'dus smon lam"@en .
+    
+    bdr:T2GS1321  a         :Topic ;
+        skos:prefLabel      "dge ldan pa'i smon lam lnga /"@bo-x-ewts , "the five prayers of the dge lugs tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9F0CE98360081455 .
+}

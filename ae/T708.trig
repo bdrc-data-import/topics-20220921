@@ -1,0 +1,40 @@
+@base          <bdg:T708> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T708 {
+    bda:LG56FEA8C7EBE5259C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T11:35:34.261Z"^^xsd:dateTime ;
+        adm:logMessage      "rule of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T708  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T708 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ae/T708.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T708 ;
+        adm:logEntry        bda:LG56FEA8C7EBE5259C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT58AD7BF8C1E69042
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the wrathful king, green with three faces, green, blue, and white, and six arms; his first pair of hands at his heart join threatening forefingers; the second pair holds a vajra and a bell, and the last pair a hook and a noose; he is in pratyalidha (right leg bent) and tramples on the entire host of hindering demons (represented by their leader ganesa); he is complete with all the requisites of glory, such as a crown and long necklace of human heads, a human skin, an elephant skin, and a tiger skin; he abides in a blazing mass of fire; he is crowned with amoghasiddhi.  \n\n\ndeities of tibetan buddhism #225"@en .
+    
+    bdr:T708  a             :Topic ;
+        skos:prefLabel      "khro bo rme brtsegs ljang khu jo bo rje'i lugs/"@bo-x-ewts , "green wrathful ucchusma"@en , "bhurkunkuta syama krodha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT58AD7BF8C1E69042 .
+}

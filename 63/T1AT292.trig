@@ -1,0 +1,41 @@
+@base          <bdg:T1AT292> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT292 {
+    bda:LGB7960065F80FD19A
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-12T10:12:14.534Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:T1AT292  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT292 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "63/T1AT292.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT292 ;
+        adm:logEntry        bda:LGB7960065F80FD19A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9B715FB84F0C1917
+        a                   :Note ;
+        :noteText           "local guardian of Mount Merchen (dza ri mer chen) in Nangchen"@en .
+    
+    bdr:T1AT292  a          :Topic ;
+        rdfs:comment        "local guardian of Mount Merchen (dza ri mer chen) in Nangchen" ;
+        skos:altLabel       "gnas bdag rdo rje 'od dkar/"@bo-x-ewts , "gnas srung rdo rje 'od dkar/"@bo-x-ewts ;
+        skos:prefLabel      "mer chen gnas srung rdo rje 'od dkar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9B715FB84F0C1917 .
+}

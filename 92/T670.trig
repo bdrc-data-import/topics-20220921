@@ -1,0 +1,46 @@
+@base          <bdg:T670> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T670 {
+    bda:LG5E0A91FBC1910DD4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:40:52.724Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCC98C2AA0D817222
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-03T10:11:01.364Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T670  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T670 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/T670.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T670 ;
+        adm:logEntry        bda:LG5E0A91FBC1910DD4 , bda:LGCC98C2AA0D817222 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0E079A1B2C32DDBF
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas and permissions to invoke; these texts stemming from the oral transmission of the guhyasamaja tantra; the deity is black in color, having three heads (red, white and blue), with six arms and two legs; his right hands hold a vajra, sword, and wheel; his left hands, the first of which makes a wrathful treatening forefinger; the other two hold an axe and noose; he is in pratyalidha stepping posture treading on eight monkeys; he wears a tiger skin, silk garbends, serpent ornaments, and a crown and a long necklace of human heads; cf. deities of tibetan buddhism #178"@en .
+    
+    bdr:T670  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba spre'u brgyad ma/"@bo-x-ewts , "acala of the eight monkeys"@en , "acala astakapa"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT0E079A1B2C32DDBF .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T2412> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2412 {
+    bda:LG3CBB9CA781DF3B32
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T12:18:50.831Z"^^xsd:dateTime ;
+        adm:logMessage      "language order changed"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG47955B84F48B86DD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T10:06:48.6Z"^^xsd:dateTime ;
+        adm:logMessage      "ཡིག་ནོར་བཅོས་ཡོད་"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG8CA9E32242814D87
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T14:57:26.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative names"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2412  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2412 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/T2412.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2412 ;
+        adm:logEntry        bda:LG3CBB9CA781DF3B32 , bda:LG47955B84F48B86DD , bda:LG8CA9E32242814D87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2412  a            :Topic ;
+        skos:altLabel       "'phrul klad/"@bo-x-ewts , "glog klad/"@bo-x-ewts , "rtsis 'khor/"@bo-x-ewts ;
+        skos:prefLabel      "kam pu Tar/"@bo-x-ewts , "computer"@en ;
+        :isRoot             true .
+}

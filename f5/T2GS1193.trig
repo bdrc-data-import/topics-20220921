@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1193> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1193 {
+    bda:LG4BA6787B67301475
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:33:56.903Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG50830B614A851F23
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T12:51:49.895Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7D4DF8D32DFF70C2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T10:54:02.46Z"^^xsd:dateTime ;
+        adm:logMessage      "ceated with application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGBE13016B5B76AFD1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T12:56:12.662Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1193  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1193 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f5/T2GS1193.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1193 ;
+        adm:logEntry        bda:LG4BA6787B67301475 , bda:LG50830B614A851F23 , bda:LG7D4DF8D32DFF70C2 , bda:LGBE13016B5B76AFD1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB34D1DC157F56532
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the wealth deity prince nada kubera or natakavara (supreme dancer) who is orange with three faces, orange, blue, and white, wrathful and laughing, with upward streaming hair; he has sixteen arms, the right hands holding a vajra, a wheel, a jewel, a lotus, a sword, a noose, a javelin, and an axe; the left hold a bell, a trident, a mongoose, flower-calyces (puspaputa), a flag, a skull, a bow, and a fly-whisk; he abides in pratyalidha posture (left leg extended), adorned with a tiger skin, silken garments and snakes and jewels, dazzling garlanded in blazing light rays; he is seated on a lotus seat; on his right are brahma and visnu, on his left isvara and kubera; in the four cardinal directions are four male treasure owning yaksa and in the four intermediate directions, four female ones.\n\ndeities of tibetan buddhism #323"@en .
+    
+    bdr:T2GS1193  a         :Topic ;
+        skos:prefLabel      "sras gar mkhan mchog"@bo-x-ewts , "prince nada kubera"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB34D1DC157F56532 .
+}

@@ -1,0 +1,39 @@
+@base          <bdg:T2379> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2379 {
+    bda:LG2C37C1D1EC4A1BB8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-17T11:46:26.803Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2379  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2379 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "09/T2379.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2379 ;
+        adm:logEntry        bda:LG2C37C1D1EC4A1BB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT63D68FC80CFA2B0D
+        a                   :Note ;
+        :noteText           "idiomatic expressions which repeat portions of the first or second words: kha bshad ngo bshad or kham kham"@en .
+    
+    bdr:T2379  a            :Topic ;
+        skos:prefLabel      "zlos sgra/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT63D68FC80CFA2B0D .
+}

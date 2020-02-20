@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1327> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1327 {
+    bda:LG0B1946E671925410
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:53:40.316Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6DA9748BEBEB4583
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T18:27:05.286Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1327  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1327 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/T2GS1327.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1327 ;
+        adm:logEntry        bda:LG0B1946E671925410 , bda:LG6DA9748BEBEB4583 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT0237FB490D32CB33
+        a                   :Note ;
+        :locationStatement  "v. 2, pp. 1341-1342" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 649-19) lists these six tantric adornments as: 1) rus pa'i dbu rgyan; 2) mgul rgyan; 3) snyan rgyan; 4) gdu bu; 5) se ral kha; 6) 'og pag. iw notes: the six ornaments and accoutrements scepters [bone head ornament, necklace, ear rings, gdu bu, se ral kha, 'og pag]"@en .
+    
+    bdr:NT82504911C6C8F39D
+        a                   :Note ;
+        :noteText           "this topic is applied to works concerned with the adornments of a tantric yogic practitioner"@en .
+    
+    bdr:T2GS1327  a         :Topic ;
+        skos:prefLabel      "rgyan drug phyag mtshan/"@bo-x-ewts , "six adornments of the tantric practitioner"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0237FB490D32CB33 , bdr:NT82504911C6C8F39D .
+}

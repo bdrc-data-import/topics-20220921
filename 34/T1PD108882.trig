@@ -1,0 +1,71 @@
+@base          <bdg:T1PD108882> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108882 {
+    bda:LG0E5E784F828B6EBE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T09:43:54.048Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG2499C32608848894
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T09:46:42.317Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས།"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG26299B1DEA3BF378
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-25T10:46:43.769Z"^^xsd:dateTime ;
+        adm:logMessage      "updated"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG90ACA22101BF405F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG9A0188B1A95DE906
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108882  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108882 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "34/T1PD108882.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108882 ;
+        adm:logEntry        bda:LG0E5E784F828B6EBE , bda:LG2499C32608848894 , bda:LG26299B1DEA3BF378 , bda:LG90ACA22101BF405F , bda:LG9A0188B1A95DE906 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4C9FEBFA31DAEC78
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 78) བཀའ་ཤོག  གོང་རིམ་ནས་གནང་བའི་ཡི་གེ་ཞེས་འཁོད།"@bo .
+    
+    bdr:NTD276B9D72EFE411F
+        a                   :Note ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "དུང་དཀར་ཚིག་མཛོད་ཆེན་མོར་ (p. 181)བཀའ་ལུང་། རིམ་པ་གོང་མ་ནས་སྤྲད་པའི་ཡིག་ཆ་དང་བཀའ་ཤོག་སོགས་ཞེས་གསལ།"@bo .
+    
+    bdr:T1PD108882  a       :Topic ;
+        skos:altLabel       "bka' lung /"@bo-x-ewts , "bka' rgya/"@bo-x-ewts ;
+        skos:prefLabel      "bka' shog"@bo-x-ewts , "公文，命令，执照"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4C9FEBFA31DAEC78 , bdr:NTD276B9D72EFE411F .
+}

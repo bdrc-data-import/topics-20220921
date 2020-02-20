@@ -1,0 +1,47 @@
+@base          <bdg:T571> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T571 {
+    bda:LG2D350288CE0C0729
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T11:11:45.949Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG773BB8D22CF0A0F8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T11:21:20.203Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T571  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T571 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "48/T571.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T571 ;
+        adm:logEntry        bda:LG2D350288CE0C0729 , bda:LG773BB8D22CF0A0F8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT441536197083017F
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals for the form of guhyasamaja as taught by the mahasiddha lalitavajra; the deity is blue with three faces (black, white and red) and six arms); the first pair of arms holding a vajra and bell embrace his consort, vajradhatvisvari (rdo rje dbyings kyi dbang phyug ma; mistress of the vajra realm), the remaining right hands hold a wheel and a lotus; the left a jewel and a sword; he sits in vajraparyanka and is adorned with silks and jewels.\n\ndeities of tibetan buddhism #53"@en .
+    
+    bdr:T571  a             :Topic ;
+        skos:altLabel       "gsang 'dus mi bskyod rdo rje lhan skyes/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus lhan skyes/"@bo-x-ewts , "innate sahaja guhyasamaja"@en , "guhyasamaja sahaja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT441536197083017F .
+}

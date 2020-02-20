@@ -1,0 +1,65 @@
+@base          <bdg:T01JR254> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01JR254 {
+    bda:LGACC5EF0AA0ACA1F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-16T17:02:56.193Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGC759713FB7632EF1
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-11-06T14:48:57.668Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGEB77BE4E2E494C3B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-04-26T11:00:41.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 notes in tibetan"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T01JR254  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01JR254 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b2/T01JR254.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01JR254 ;
+        adm:logEntry        bda:LGACC5EF0AA0ACA1F9 , bda:LGC759713FB7632EF1 , bda:LGEB77BE4E2E494C3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3F0F5EAA600EE14D
+        a                   :Note ;
+        :locationStatement  "v. 16, 6 ff." ;
+        :noteSource         bdr:MW21807 ;
+        :noteText           "༡༽འདིར་ཀློང་ཆེན་སྙིང་ཐིག་གི་བླ་རྫོགས་ཐུགས་གསུམ་མཐའ་དག་གི་བཀའ་སྲུང་ཐུན་མོང་མ་ཡིན་པ་དཔལ་ལྡན་མ་མགོན་ལྕམ་དྲལ་ཡིན་པར་གསལ་ལ།"@bo .
+    
+    bdr:NT84DE70CDF57E9514
+        a                   :Note ;
+        :noteText           "protectors of the klong chen snying thig treasures; primary deity is e ka dza ti"@en .
+    
+    bdr:NT91D377E2CD85DB6C
+        a                   :Note ;
+        :locationStatement  "2 ff." ;
+        :noteSource         bdr:MW3CN15336 ;
+        :noteText           "༢༽འདིར་ཀཾ་ཚང་ལ་ཡང་བཀའ་སྲུང་མ་མགོན་ལྕམ་དྲལ་ཞེས་ཡོངས་གྲགས་ཀྱི་ཆོས་སྐྱོང་གཙོ་བོའི་དཀྱིལ་འཁོར་དུ་བཞུགས་པ་གསལ་ལོ།།"@bo .
+    
+    bdr:T01JR254  a         :Topic ;
+        skos:altLabel       "bka' srung ma mgon lcam dral/"@bo-x-ewts , "ma hA kA lA lcam dral/"@bo-x-ewts ;
+        skos:prefLabel      "ma mgon lcam dral/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3F0F5EAA600EE14D , bdr:NT84DE70CDF57E9514 , bdr:NT91D377E2CD85DB6C .
+}

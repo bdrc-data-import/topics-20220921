@@ -1,0 +1,57 @@
+@base          <bdg:T1AT472> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT472 {
+    bda:LGA126C5F0007E85B5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-31T12:30:13.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB7450456ACE63B96
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-08-20T12:48:31.837Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of mar me'i smon lam"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC794CBF058C8C5D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-12T15:12:20.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:T1AT472  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT472 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dc/T1AT472.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT472 ;
+        adm:logEntry        bda:LGA126C5F0007E85B5 , bda:LGB7450456ACE63B96 , bda:LGC794CBF058C8C5D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T479 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT5E35576167642B53
+        a                   :Note ;
+        :noteText           "lamp aspiration prayer"@en .
+    
+    bdr:NT7F9A3C78FE308B4B
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T479"@en .
+    
+    bdr:T1AT472  a          :Topic ;
+        rdfs:comment        "lamp aspiration prayer" ;
+        skos:prefLabel      "mar me smon lam/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5E35576167642B53 , bdr:NT7F9A3C78FE308B4B .
+}

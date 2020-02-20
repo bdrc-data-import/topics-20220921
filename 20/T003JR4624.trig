@@ -1,0 +1,47 @@
+@base          <bdg:T003JR4624> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR4624 {
+    bda:LG89D5648EAE0CF016
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-18T13:53:30.241Z"^^xsd:dateTime ;
+        adm:logMessage      "note added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGC5E17F3D0642F201
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-18T13:39:10.28Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T003JR4624  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR4624 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "20/T003JR4624.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR4624 ;
+        adm:logEntry        bda:LG89D5648EAE0CF016 , bda:LGC5E17F3D0642F201 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8F88A201A366D796
+        a                   :Note ;
+        :noteText           "dam pa bde gshegs, founder of kaH thog dgon, devised this synthesis of the zhi khro deities of the gsang ba snying po and deity rdo rje phur pa"@en .
+    
+    bdr:T003JR4624  a       :Topic ;
+        skos:altLabel       "sgyu 'phrul zhi khro phur gsum (kaH thog)"@bo-x-ewts ;
+        skos:prefLabel      "zhi khro phur gsum (kaH thog)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8F88A201A366D796 .
+}

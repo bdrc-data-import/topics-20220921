@@ -1,0 +1,56 @@
+@base          <bdg:T3JT12491> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3JT12491 {
+    bda:LG4E0E1D3BC7597C4B
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-14T10:35:47.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG62F04A36573CE5B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-24T15:46:52.592Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG8725323085CCF08E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-24T15:50:55.674Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T3JT12491  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3JT12491 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/T3JT12491.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3JT12491 ;
+        adm:logEntry        bda:LG4E0E1D3BC7597C4B , bda:LG62F04A36573CE5B0 , bda:LG8725323085CCF08E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2F2E4D54B77D92FF
+        a                   :Note ;
+        :locationStatement  "V. 1, p. 210" ;
+        :noteSource         bdr:MW2DB4578 ;
+        :noteText           "འདིར་མདོ་དང་མདོ་རྩ་འདུལ་བའི་སྡེ་སྣོད། མཛོད་དང་ཀུན་བཏུས་མངོན་པའི་སྡེ་སྣོད། རྩ་འཇུག་ཞི་སྤྱོད་ཟབ་མོ་ལྟ་བའི་གཞུང་། བྱམས་ཆོས་སྡེ་ལྔ་རྒྱ་ཆེན་མདོ་སྡེའི་གཞུང་། ཞེས་གསལ་བ་ནི་གཞུང་ཆེན་བཅུ་གསུམ་ཆ་ལག་དང་བཅས་པའོ།"@bo .
+    
+    bdr:NT324D74D6F647D8D5
+        a                   :Note ;
+        :noteText           "Great root texts of philosophy. The fundamental treatises on Buddhist philosophy covering the topics of Vinaya, the bodhisattva trainings, Maitreya's five treatises covering Prajnaparamita etc. as well as Abhidharma, and Madhyamaka"@en .
+    
+    bdr:T3JT12491  a        :Topic ;
+        skos:prefLabel      "gzhung chen bcu gsum/"@bo-x-ewts , "Thirteen major philosophical texts"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2F2E4D54B77D92FF , bdr:NT324D74D6F647D8D5 .
+}

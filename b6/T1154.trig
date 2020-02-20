@@ -1,0 +1,58 @@
+@base          <bdg:T1154> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1154 {
+    bda:LG13F62E58C1E337C8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T08:44:31.91Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5EF841D0B6D1B6D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T15:11:58.579Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8D4690D6A7CDF81D
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-06T11:47:38.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGD1391C94E4775711
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T11:48:33.83Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1154  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1154 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/T1154.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1154 ;
+        adm:logEntry        bda:LG13F62E58C1E337C8 , bda:LG5EF841D0B6D1B6D7 , bda:LG8D4690D6A7CDF81D , bda:LGD1391C94E4775711 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT338E308CC212A0FE
+        a                   :Note ;
+        :noteText           "this topic is applied to works concerned with the sixteen arhats or sthavira as a group; the topic is not used for the thub pa gnas brtan bcu drug dang bcas pa (T566);   these sixteen elders are:  \nangaja (yan lag 'byung; who holds a censer and a fly whisk);  \najita (ma pham pa; who is depicted in meditation);  \nvanavasin (nags na gnas;  with a raised forefinger and fly whisk);  \nkalika (dus ldan; holding golden earrings);  \nvajriputra (rdo rje mo'i bu;  with raised forefinger and fly whisk);  \nbhadra (bzang po;  with gestures of explaining the teahcing and meditation);  \nkanakavatsa (gser be'u;  holding a precious noose);\nkanakabharadvaja (b+ha ra d+hwa dza gser can;  shown in meditation);  \nbakula ba ku la;  (holding a mongoose);  \nrahula (sgra gcan zin;  with a jewel crown);  \ncudapanthaka (lam phran bstan; shown in meditation);  \npindola bharadvaja (b+ha ra d+hwa dza bsod snyoms len;  holding a book and an alms bowl);  \npanthaka (lam bstan;  explaining the teaching and holding a book);  \nnagasena (klu'i sde;  holding a flask and a monk's staff);  \ngopaka (sbed byed;  holding a book);  \nabheda (mi phyed pa; holding a stupa of enlightenent);  \nadded to the sixteen elders are:\nupasaka dharmatrata (dge bsnyen d+harma;  holding a fly whisk and a flask inside the east gate);\nthe chinese monk pu tai ho shang (hwa shang;  holding a rosary in his right hand and a bag in the left)\nthe four great kings (caturmaharaja, rgyal po chen po sde bzhi)\nat the east gate is dhrtarastra (yul 'khor srung;  white and holding a lute);  \nat the south gate is virudhaka ('phags skyes po;  blue and holding a sword);\nat the west gate is virupaksa (mig mi bzang;  red and holding a serpent noose and a caitya);  \nat the north gate is vaisravana (rnam thos sras;  yellow and holding a banner marked with a wish-granting gem and a mongoose);  \ndeities of tibetan buddism #17-38"@en .
+    
+    bdr:T1154  a            :Topic ;
+        skos:altLabel       "gnas bcu/"@bo-x-ewts ;
+        skos:prefLabel      "gnas brtan bcu drug"@bo-x-ewts , "sixteen sthavira"@en ;
+        :isRoot             true ;
+        :note               bdr:NT338E308CC212A0FE .
+}

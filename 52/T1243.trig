@@ -1,0 +1,41 @@
+@base          <bdg:T1243> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1243 {
+    bda:LG2EE75C2281327591
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-19T14:29:41.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added information"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1243  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1243 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "52/T1243.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1243 ;
+        adm:logEntry        bda:LG2EE75C2281327591 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB25A11569A1BC399
+        a                   :Note ;
+        :noteText           "a treasure cycle dedicated to padmasambhava supposedly revealed by legs ldan rdo rje - see mkhyen brtse'i dbang po, yon tan gter mdzod kyi las byang la nye bar mkho ba'i lhan thabs, p.385: \"mnga' ris paN chen sku mched kyi gter byon kho na gung bsgrigs pa lags.\" the cycle was developed by pad+ma phrin las, kaH thog rdo rje rig 'dzin and others."@en .
+    
+    bdr:T1243  a            :Topic ;
+        skos:altLabel       "sgrub thabs yon tan gter mdzod/"@bo-x-ewts , "thugs sgrub yon yan gter mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "gu ru sgrub thabs yon tan gter mdzod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB25A11569A1BC399 .
+}

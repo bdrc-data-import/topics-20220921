@@ -1,0 +1,64 @@
+@base          <bdg:T2101> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2101 {
+    bda:LG6302D56CB277596D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T14:45:44.71Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T00AG0331"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8D3DD115F4A70510
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T12:53:36.187Z"^^xsd:dateTime ;
+        adm:logMessage      "edited with the language settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBAAFC203512DD3AE
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-03T11:10:31.293Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGC886351F5090BF63
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-03T11:14:33.19Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGD2F4E216B5666318
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T12:37:35.658Z"^^xsd:dateTime ;
+        adm:logMessage      "realeased and moved all info from T00AG0331(withdrwn)"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2101  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2101 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b8/T2101.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2101 ;
+        adm:logEntry        bda:LG6302D56CB277596D , bda:LG8D3DD115F4A70510 , bda:LGBAAFC203512DD3AE , bda:LGC886351F5090BF63 , bda:LGD2F4E216B5666318 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2EB2523AC7E503EF
+        a                   :Note ;
+        :noteText           "eight manifestations of padmasambhava:\nskAkya seng+ge\npadmasambhava\nnyi ma 'od zer\nseng+ge sgra sgrog\nrdo rje gro lod\npad+ma rgyal po\nblo ldan mchog sred"@en .
+    
+    bdr:T2101  a            :Topic ;
+        skos:prefLabel      "gu ru mtshan brgyad/"@bo-x-ewts , "eight manifestations of padmasambhava"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2EB2523AC7E503EF .
+}

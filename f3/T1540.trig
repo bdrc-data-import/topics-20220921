@@ -1,0 +1,46 @@
+@base          <bdg:T1540> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1540 {
+    bda:LG0207EEDA66031496
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-01T10:37:08.048Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF02E7ACC7D46406B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:31:40.269Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1540  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1540 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/T1540.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1540 ;
+        adm:logEntry        bda:LG0207EEDA66031496 , bda:LGF02E7ACC7D46406B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT7D71D25136F79D8E
+        a                   :Note ;
+        :noteText           "the 39th of the jo nang khrid brgya."@en .
+    
+    bdr:T1540  a            :Topic ;
+        skos:prefLabel      "ku ru kul+le (khrid)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7D71D25136F79D8E .
+}

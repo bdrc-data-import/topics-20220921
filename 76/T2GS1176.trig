@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1176> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1176 {
+    bda:LG7582EA03B9C0CFED
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T02:02:33.638Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG90438D229E896133
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T17:09:08.233Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1176  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1176 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "76/T2GS1176.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1176 ;
+        adm:logEntry        bda:LG7582EA03B9C0CFED , bda:LG90438D229E896133 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB3D61F7A111BBB33
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the red lady parnasabari (leaf-clad wild woman) whose color is red with one face and two arms; with her right fist, with a vajra, she strikes the host of hindering demons; her left hand, making the threatening forefinger at her heart, troubles all doers of harm; she has three round, red eyes and bared fangs, is dwarfish and corpulent; she has upward streaming hair; she is adorned with a tiger-skin, jewels, bones and snakes; she abides in pratyalidha posture (left leg extended) amid a blazing mass of fire; she is crowned with amitabha.\n\ndeities of tibetan buddhism #219"@en .
+    
+    bdr:T2GS1176  a         :Topic ;
+        skos:prefLabel      "ri khrod ma lo ma gyon ma dmar mo/"@bo-x-ewts , "red parna sabari"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB3D61F7A111BBB33 .
+}

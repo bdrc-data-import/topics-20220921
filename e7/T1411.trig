@@ -1,0 +1,44 @@
+@base          <bdg:T1411> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1411 {
+    bda:LGB6DEA3E473F4D101
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-29T15:29:26.034Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T2MS13818"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1411  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1411 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/T1411.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1411 ;
+        adm:logEntry        bda:LGB6DEA3E473F4D101 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT8FA8EF4DFAF12317
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T2MS13818"@en .
+    
+    bdr:NT980B11FCE1E6E6F9
+        a                   :Note ;
+        :noteText           "lineage of highly esoteric practice stemming from the guruyoga focussing upon tsongkhapa"@en .
+    
+    bdr:T1411  a            :Topic ;
+        skos:prefLabel      "dben sa snyan brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8FA8EF4DFAF12317 , bdr:NT980B11FCE1E6E6F9 .
+}

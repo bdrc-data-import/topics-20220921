@@ -1,0 +1,76 @@
+@base          <bdg:T10MS12962> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS12962 {
+    bda:LG1A81FF3BE7EA4C1B
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T16:21:36.498Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5D8A277C20D2C042
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T18:02:05.187Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG655F2437A747032F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-14T09:31:01.808Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG675014FDBA5DCD48
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:14:49.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG7C3F3339E7142B43
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T11:16:46.79Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG883A0670F89537AC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T12:53:22.083Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T2060 (theg pa dman pa) and T1KG3717 (theg chen)"@en .
+    
+    bda:LGE5FD93185062DE55
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T20:28:03.948Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T10MS12962  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS12962 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "6a/T10MS12962.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS12962 ;
+        adm:logEntry        bda:LG1A81FF3BE7EA4C1B , bda:LG5D8A277C20D2C042 , bda:LG655F2437A747032F , bda:LG675014FDBA5DCD48 , bda:LG7C3F3339E7142B43 , bda:LG883A0670F89537AC , bda:LGE5FD93185062DE55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTFD382AAC042D2E77
+        a                   :Note ;
+        :noteText           "The three vehicles are divided differently; one system lists them as,\n\n1) the vehicle of sravakas or listeners (nyan thos kyi theg pa} \n2) the vehicle of pratekyabuddhas or solitary realizers (rang sangs rgyas kyi theg pa)\n3) the vehicle of bodhisattvas or mahayana (theg pa chen po)"@en .
+    
+    bdr:T10MS12962  a       :Topic ;
+        rdfs:seeAlso        bdr:T1KG3717 , bdr:T2060 ;
+        skos:altLabel       "three vehicles/"@bo-x-ewts ;
+        skos:prefLabel      "theg pa gsum/"@bo-x-ewts , "triyāna"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTFD382AAC042D2E77 .
+}

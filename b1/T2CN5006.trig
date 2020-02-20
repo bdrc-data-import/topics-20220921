@@ -1,0 +1,60 @@
+@base          <bdg:T2CN5006> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN5006 {
+    bda:LG28FB19A607C45595
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:30:11.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2BA20634B8878FE6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:39:38.625Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG327A56FF457C87E0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T12:55:04.848Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG3EA7A9C0B38069DB
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:41:50.653Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN5006  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN5006 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b1/T2CN5006.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN5006 ;
+        adm:logEntry        bda:LG28FB19A607C45595 , bda:LG2BA20634B8878FE6 , bda:LG327A56FF457C87E0 , bda:LG3EA7A9C0B38069DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT58FDAE18ACBDCED9
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.10, p. 112 འདི་ནི་པེ་ཧར་གླིང་སོགས་སུ་གནས་ཤིང་། དྲག་ཤུལ་དབང་པོའི་སྦྱོར་ཡུམ་བདུད་མོ་སྲོག་གི་སྤུ་གྲི་མ་སྟེ། མ་མོ་ཆེན་མོ་རྫུ་འཕྲུལ་ཅན། །བདུད་མོ་སྲོག་གི་སྤུ་གྲི་ཁྱོད།།དོན་ནི་དབྱིངས་ཀྱི་ཡུམ་དང་གཅིག །ཤནྟིང་རོ་ཟན་ཞེས་སུ་གྲགས། །བར་དུ་བཞད་པའི་རྡོ་རྗེའི་ཡུམ། །ཉི་ཤར་མེ་ལོང་ཌཱ་ཀི་མ། །ཐ་མ་དྲག་ཤུལ་དབང་པོ་ཡི། །སྦྱོར་ཡུམ་སྲོག་གི་སྤུ་གྲི་ཁྱོད།།སྔོན་ནས་ལས་དང་སྨོན་ལམ་འབྲེལ།།ད་ལྟ་དམ་ཚིག་གཅིག་ཏུ་སྦྲེལ།།དུང་དུང་ལྷང་ལྷང་ཁྱོད་འབོད་ན།།ལ་འུར་རྒྱུགས་ཏེ་འདིར་བྱོན་ཅིག །ཞེས་འཁོད་ལ་ཞིབ་པ། སླེ་ལུང་བཞད་པའི་རྡོ་རྗེ་དགུང་ལོ་སོ་ལྔ་ལ་ལྷ་གཅིག་ཉི་མ་གཞོན་ནུས་སྩལ་བའི་རིན་ཆེན་སྣ་བདུན་གྱི་རྒྱུད་ལས་གསུངས་པའི་བདུད་མོ་ཉི་ཤར་མེ་ལོང་གི་སྒོས་སྒྲུབ་བྱ་ཚུལ་དུ་གསལ།"@bo .
+    
+    bdr:T2CN5006  a         :Topic ;
+        skos:altLabel       "bdud mo me long /"@bo-x-ewts ;
+        skos:prefLabel      "bdud mo nyi shar me long /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT58FDAE18ACBDCED9 .
+}

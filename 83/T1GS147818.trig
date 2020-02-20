@@ -1,0 +1,41 @@
+@base          <bdg:T1GS147818> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147818 {
+    bda:LGF8167293F58B6C83
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T11:25:21.5Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147818  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147818 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "83/T1GS147818.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147818 ;
+        adm:logEntry        bda:LGF8167293F58B6C83 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDD8BFA2DDAF80525
+        a                   :Note ;
+        :noteText           "a form of gur gyi mgon po received in a vision by thang stong rgyal po; the yig cha for this practice was written by ngag dbang bstan 'dzin phun tshogs; the lineage for its transmission came directly from rdo rje 'chang to bram ze mchog sred then to thang stong rgyal po then to the sa skya pa master, rdo ring pa kun dga' rgyal mtshan, and then to rje btsun kun dga' grol mchog"@en .
+    
+    bdr:T1GS147818  a       :Topic ;
+        skos:altLabel       "gur mgon sprin gseb ma (thang stong nye brgyud)"@bo-x-ewts ;
+        skos:prefLabel      "gur gyi mgon po sprin gseb ma (thang stong nye brgyud)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDD8BFA2DDAF80525 .
+}

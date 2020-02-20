@@ -1,0 +1,45 @@
+@base          <bdg:T00AG01363> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01363 {
+    bda:LG13740E8100BDC75A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-05T11:46:07.205Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGFE754E5225237A27
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T15:32:12.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added more names of gter ston to the gter ma"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:T00AG01363  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01363 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b6/T00AG01363.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01363 ;
+        adm:logEntry        bda:LG13740E8100BDC75A , bda:LGFE754E5225237A27 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBD9BA95C52A61C9D
+        a                   :Note ;
+        :noteText           "a treasure cycle dedicated to avalokitesvara revealed by mchog gyur gling pa at mkha' 'gro bum rdzong in Lho zla, south of skye rgu mdo, in 1857."@en .
+    
+    bdr:T00AG01363  a       :Topic ;
+        skos:prefLabel      "thugs chen 'khor ba dong sprugs (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBD9BA95C52A61C9D .
+}

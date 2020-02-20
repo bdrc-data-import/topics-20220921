@@ -1,0 +1,44 @@
+@base          <bdg:T00UNK58> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00UNK58 {
+    bda:LG3E454C38DD3BF7B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-05T10:25:06.993Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en .
+    
+    bda:LG6D530072CFA3868E
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-05T10:27:19.854Z"^^xsd:dateTime ;
+        adm:logMessage      "edited; jann"@en .
+    
+    bda:T00UNK58  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00UNK58 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b4/T00UNK58.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00UNK58 ;
+        adm:logEntry        bda:LG3E454C38DD3BF7B0 , bda:LG6D530072CFA3868E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT000E9C7B610C23DE
+        a                   :Note ;
+        :noteText           "set of visionary teachings of rig 'dzin tshe dbang nor bu"@en .
+    
+    bdr:T00UNK58  a         :Topic ;
+        skos:prefLabel      "nam mkha' gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT000E9C7B610C23DE .
+}

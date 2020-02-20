@@ -1,0 +1,35 @@
+@base          <bdg:T2265> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2265 {
+    bda:LGB76B6DC1868A3B73
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T21:57:50.283Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2265  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2265 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "4b/T2265.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2265 ;
+        adm:logEntry        bda:LGB76B6DC1868A3B73 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2265  a            :Topic ;
+        skos:prefLabel      "rten la phyag mchod/"@bo-x-ewts , "icon worship"@en ;
+        :isRoot             true .
+}

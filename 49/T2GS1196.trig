@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1196> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1196 {
+    bda:LGBD733CCE5CACD717
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T17:06:07.037Z"^^xsd:dateTime ;
+        adm:logMessage      "created with application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF9762CB4CA6BB486
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:33:59.099Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1196  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1196 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "49/T2GS1196.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1196 ;
+        adm:logEntry        bda:LGBD733CCE5CACD717 , bda:LGF9762CB4CA6BB486 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEEF00AE227081263
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon ganapati who is white, his principal face is an elephant's, his right face a cat's, and his left face a monkey's; his three right hands hold a radish, a gem, and a sword; his three left hold a ladduka sweetmeat, a vessel of liquor, and an axe; his front pair of legs are interlaced; and the back pair is in pratyalidha posture (right bent); he is naked, with jewel ornaments, and a sacred thread of lotuses.\n\nbeneath is his consort, white with a reddish tint, and adorned with jewels; she has a monkey's face and a sacred thread of blue utpala; with her two hands she is holding two of the principal's feet an her mouth she is sucking his sacred vajra; her two legs are astride; she is supported by b) a messenger (pho nya, duta) and c) a female attendant (phyag brnyan mo) in the form of monkeys.\n\nbelow and other side of the deity's body are treasure vases; around lie the eight auspicious things and the seven precious things of royalty; at his heart are the mantras and seed syllables; at his brow and at his throat AH and at his navel hUM; from the mantra and seed syllable at his hear pours a stream of wish granting gems, which flow through his private part into his consort's mouth; a succession of deity shapes descends from the private parts and fills the vase overflowing to fill the room.\n\ndeviation: consort has monkey's body as well as face; the objects shown at bottom right in fact include five of the secondary seven precious things (saptaratna, rgyal srid rin po che sna bdun): the perfect wheel, the jewel, the immaculate queen; the chamberlain, the thoroughbred horse; the elephant; and the general.\n\ndeities of tibetan buddhism #334."@en .
+    
+    bdr:T2GS1196  a         :Topic ;
+        skos:altLabel       "tshogs bdag chags pa rdo rje/"@bo-x-ewts , "tshogs kyi bdag po chags pa rdo rje/"@bo-x-ewts ;
+        skos:prefLabel      "'jur 'gegs sel ba'i tshogs bdag chags pa rdo rje/"@bo-x-ewts , "authority-averting (ajna-vinivarta) ganapati ragavajra"@en ;
+        :isRoot             true ;
+        :note               bdr:NTEEF00AE227081263 .
+}

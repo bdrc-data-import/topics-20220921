@@ -1,0 +1,46 @@
+@base          <bdg:T00EGS1017606> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00EGS1017606 {
+    bda:LG074CA180C49FF370
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-25T15:09:22.43Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG287F7F7B608ABF32
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-05T01:58:34.015Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T00EGS1017606
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00EGS1017606 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2a/T00EGS1017606.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00EGS1017606 ;
+        adm:logEntry        bda:LG074CA180C49FF370 , bda:LG287F7F7B608ABF32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD92B55B49CA17A43
+        a                   :Note ;
+        :noteText           "buddhist philosophical term"@en .
+    
+    bdr:T00EGS1017606
+        a                   :Topic ;
+        skos:prefLabel      "chos can mthun snang dgag mi dgag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD92B55B49CA17A43 .
+}

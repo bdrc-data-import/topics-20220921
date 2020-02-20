@@ -1,0 +1,40 @@
+@base          <bdg:T1004> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1004 {
+    bda:LG86350FC93ED1348B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:23:22.783Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1004  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1004 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6e/T1004.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1004 ;
+        adm:logEntry        bda:LG86350FC93ED1348B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT7660AA675F57A6D6
+        a                   :Note ;
+        :noteText           "the name of the third mandala of the rgyud sde kun btus\nthis mandala is derived from the  mdo brgyad brgya pa\nthe yig cha to the practice was written by 'khon ston bsod nams dpal 'byor lhun grub\nston mchog nyi ma'i gnyen gyi bka' mdo brgyad brgya pa la brten nas slob dpon zhi ba 'tshos bkral ba'i de bzhin gshegs pa'i rigs kyi gtso bo bder gshegs smen bla mched brgyad lha zhe bdun ma'i dkyil 'khor dbang bskur ba 'khon ston bsod nams dpal 'byor lhun grub kyi yi ge steng nas thob pa'i brgyud pa ni\nston mchog thub pa'i dbang po shAkya'i sengge\n'phags pa 'jam dpal dbyangs\nmkhan chen bo dhi satwa'am zhi ba 'tsho\nchos rgyal khri srong lde'u btsun\nchos rgyal sad la legs 'jing yon\nmnga' bdag khri ral pa can\nlha lung dpal gyi rdo rje\nmnga' bdag 'od srung\nkhri dpal 'khor btsan\nskyid lde nyi ma mgon\nmnga' bdag bkra shis lde\nlha bla ma ye shes 'od\nmnga' bdag lha lde'am lha btsun byang chub 'od\nmnga' bdag 'od lde\nmnga' bdag rtse lde"@en .
+    
+    bdr:T1004  a            :Topic ;
+        skos:prefLabel      "sman bla lha 47 (51)"@bo-x-ewts , "bhaisajyaguru 47 (51) devatmaka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7660AA675F57A6D6 .
+}

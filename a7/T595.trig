@@ -1,0 +1,47 @@
+@base          <bdg:T595> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T595 {
+    bda:LG711EA022BD038739
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T10:02:36.794Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDB3F750E264651CC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T10:05:35.193Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T595  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T595 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a7/T595.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T595 ;
+        adm:logEntry        bda:LG711EA022BD038739 , bda:LGDB3F750E264651CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3F345A9065C9026F
+        a                   :Note ;
+        :noteText           "this deity term is used for initiations and rituals for avalokita, white as the autumn moon, with one face and two arms, the right boon granting, the left holding a white lotus; he sits in the lalita posture with right leg extended, his lower parts wrapped in a deerskin, in the garb of the lord of beasts (pasupati); he has a topknot of tresses and is crowned wth buddha amitabha; he gazes at the goddess on his left;  \n\nb) to the east is the red amoghapasa, his two right hands holding a noose and a vajra, his left a hook and a rosary; he is adorned with all of the ornaments and stands with his feet together;   \n \nc) to the south is hayagriva with a green horse's head on top of his head; his two right hands have a club and the threatening forefinger; his left hand holds a yellow wheel and the stem of a red lotus; he is in pratyalidha posture (left leg extended);   \n\nd) to the west comes ekajata, blue, her four right hands holding a sword, a noose, a lotus and an arrow; her left a wheel, a club, a trident, and a bow; she is in alidha posture (right leg extended);  \nhayagriva and ekajata are adorned with tiger-skins, snakes, and jewels, and are extremely wrathful;  \n\ne) to the north is bhrkuti, off-white (dkar sham), her two right hands holding a vajra club and a white lotus; her left a rosary and a water pot; she stands on her right leg in lalita posture, looking at the face of the principal and adorned with all of the ornaments;   \n \ndeities of tibetan buddhism #105"@en .
+    
+    bdr:T595  a             :Topic ;
+        skos:altLabel       "spyan ras gzigs don zhags lha lnga ba ri lugs/"@bo-x-ewts , "five deity amoghapasa avalokita in the tradition of bari"@en ;
+        skos:prefLabel      "don yod zhags pa lha lnga ba ri lugs/"@bo-x-ewts , "amoghapasa avalokitesvara (ba ri lugs)"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3F345A9065C9026F .
+}

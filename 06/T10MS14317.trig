@@ -1,0 +1,72 @@
+@base          <bdg:T10MS14317> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14317 {
+    bda:LG03A30E544B857145
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-05T11:29:43.149Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T10MS14317 (dbang bskur) and T48 (dbang chog) as parents"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG29D78F221CC7A793
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T18:52:19.564Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T00JR2353 to T48"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG3BF35E23189A9BFE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-31T11:25:38.904Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic for claissification"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG7EDB4D319DF4EC00
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T12:23:15.58Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG8963789E8A2C8ED2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:14:55.381Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGDDE41810470F6833
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.251Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T10MS14317  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14317 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "06/T10MS14317.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14317 ;
+        adm:logEntry        bda:LG03A30E544B857145 , bda:LG29D78F221CC7A793 , bda:LG3BF35E23189A9BFE , bda:LG7EDB4D319DF4EC00 , bda:LG8963789E8A2C8ED2 , bda:LGDDE41810470F6833 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDB5666A8844C24AD
+        a                   :Note ;
+        :noteText           "this generic topic classifies that which has to do with the performance of bestowing a tantric empowerment initiation in its many varities"@en .
+    
+    bdr:T10MS14317  a       :Topic ;
+        rdfs:seeAlso        bdr:T00JR2124 , bdr:T00JR758 , bdr:T00JR761 , bdr:T012AG03338 , bdr:T01AG03281 , bdr:T01AG03287 , bdr:T1095 , bdr:T10MS14290 , bdr:T1292 , bdr:T1295 , bdr:T1627 , bdr:T1703 , bdr:T1AT452 , bdr:T1GS110789 , bdr:T1GS110790 , bdr:T21 , bdr:T2210 , bdr:T473 , bdr:T48 , bdr:T569 , bdr:T623 , bdr:T7 ;
+        skos:altLabel       "dbang skur/"@bo-x-ewts , "tantric empowerment/"@bo-x-ewts , "灌顶"@zh-hans ;
+        skos:prefLabel      "dbang bskur/"@bo-x-ewts , "abhiṣeka"@sa-x-ndia , "灌頂"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NTDB5666A8844C24AD .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T577> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T577 {
+    bda:LG237ED98286718D47
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T12:33:34.412Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG42B800C34ABA5C14
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T12:58:47.46Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T577  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T577 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "70/T577.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T577 ;
+        adm:logEntry        bda:LG237ED98286718D47 , bda:LG42B800C34ABA5C14 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6BAF091B030DFEBD
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals connected with the  teaching the practice of long life sadhana focusing upon the white cakrasamvara in union with consort vajravarahi; the visualization is very much the same as the bde mchog dkar po (deities of tibetan buddhism #68), except that the his hair is not described and he is adorned with six bone ornaments and a tiger skin; vajravarahi who is embracing him is the same is that she is adorned with a long necklace of dry skulls;\n\n  \ndeities of tibetan buddhism #69"@en .
+    
+    bdr:T577  a             :Topic ;
+        skos:prefLabel      "bde mchog dkar po tshe sgrub/"@bo-x-ewts , "samvara sita (ayuhsadhana)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT6BAF091B030DFEBD .
+}

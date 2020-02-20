@@ -1,0 +1,71 @@
+@base          <bdg:T1PD108894> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108894 {
+    bda:LG7794611B38E59515
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:01:59.404Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG7F8F2AFEB82A0A35
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:57:41.159Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG82AFBECB08DA8BA5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:33:48.304Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA19B4FC3E75993FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGBBE19DC29347F448
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGEEC3C14B4E727FEA
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:54:14.778Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1PD108894  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108894 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "98/T1PD108894.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108894 ;
+        adm:logEntry        bda:LG7794611B38E59515 , bda:LG7F8F2AFEB82A0A35 , bda:LG82AFBECB08DA8BA5 , bda:LGA19B4FC3E75993FA , bda:LGBBE19DC29347F448 , bda:LGEEC3C14B4E727FEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA4CC460A615A61D5
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "སྔར་གྱི་རྫོང་དང་གཞིས་ཀ་སྟེ། བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 2016) སྔར་གྱི་ཡུལ་གྲུ་སོ་སོའི་རྫོང་དང་གཞིས་ཀ་ཞེས་འཁོད།"@bo .
+    
+    bdr:T1PD108894  a       :Topic ;
+        skos:prefLabel      "rdzong gzhis/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA4CC460A615A61D5 .
+}

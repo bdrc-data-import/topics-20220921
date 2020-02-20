@@ -1,0 +1,148 @@
+@base          <bdg:T246> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T246 {
+    bda:LG201DF1BE0B512CDF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T06:16:33.619Z"^^xsd:dateTime ;
+        adm:logMessage      "add note from W1PD95844"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:LG2C93E5712F0C2375
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T05:43:35.781Z"^^xsd:dateTime ;
+        adm:logMessage      "add note from W1PD95844"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:LG41C2B0BB92B2B451
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-21T16:34:21.521Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6D97981DB16E8909
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T06:27:18.67Z"^^xsd:dateTime ;
+        adm:logMessage      "add note from W1PD 95844"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:LG780175BA98397015
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T13:00:44.575Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T4CZ2184"@en .
+    
+    bda:LG79877228239562EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-21T17:18:14.186Z"^^xsd:dateTime ;
+        adm:logMessage      "add T1674"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:LG88F91F6CBC023432
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added another possible sanskrit term"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LG90C5785B2461912B
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-20T15:15:31.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added gzhas"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG956FF984883D5D0F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T05:57:41.625Z"^^xsd:dateTime ;
+        adm:logMessage      "add note from W1PD95844"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:LG968208F4F39C4CA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-10T10:12:25.494Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9C54B5BA457FE576
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-17T18:15:31.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added Sanskrit"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LGA6F39BDAE72B88C6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T06:52:11.38Z"^^xsd:dateTime ;
+        adm:logMessage      "add note from W1PD95844"@en ;
+        adm:logWho          bdr:U00008 .
+    
+    bda:T246  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T246 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "40/T246.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T246 ;
+        adm:logEntry        bda:LG201DF1BE0B512CDF , bda:LG2C93E5712F0C2375 , bda:LG41C2B0BB92B2B451 , bda:LG6D97981DB16E8909 , bda:LG780175BA98397015 , bda:LG79877228239562EE , bda:LG88F91F6CBC023432 , bda:LG90C5785B2461912B , bda:LG956FF984883D5D0F , bda:LG968208F4F39C4CA2 , bda:LG9C54B5BA457FE576 , bda:LGA6F39BDAE72B88C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT11DEAA22D03E96A7
+        a                   :Note ;
+        :locationStatement  "Pp.184-185" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains discussion on the novice precept concerning song (glu), dance (gar), and instrumental music (rol mo) in Shakyaprabha's Sum brgya pa"@en .
+    
+    bdr:NT430774D40BF8A70D
+        a                   :Note ;
+        :locationStatement  "P.832" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains dicussion on glu, gar, and rol mo in the anonymous text on novice precept Thams cad yod par smra ba rnams kyi dge tshul gyi bya ba"@en .
+    
+    bdr:NT450BC476C29F5BD7
+        a                   :Note ;
+        :locationStatement  "P.895" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains story of the drug sde monks related to the monastic precept prohibiting song, dance, and instrumental music."@en .
+    
+    bdr:NT86906332368C523B
+        a                   :Note ;
+        :locationStatement  "Pp.625-627" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains relatively lengthy dicussion on the novice precept concerning glu, gar, and rol mo in Vinitadeva's Trisatakarikavyakhyana (Tshig le'ur byas pa sum brgya pa'i rnam par bshad pa)"@en .
+    
+    bdr:NTA7DCF239001038AC
+        a                   :Note ;
+        :locationStatement  "PP.781-782" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains discussion on glu, gar, and rol mo in Kamalasila's Sramanapancasatkarikapradabhismarana"@en .
+    
+    bdr:NTC63A9F4DCAB385A7
+        a                   :Note ;
+        :locationStatement  "Pp.359-360" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains dicussion on novice precept concerning song (glu), dance (gar), and instrumental music (rol mo) in Shakyaprabha's 'Od ldan"@en .
+    
+    bdr:NTC66A361F771A2A0B
+        a                   :Note ;
+        :locationStatement  "P.729" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains one line on glu, gar, and sil snyan in Nagarjuna's Lnag bcu pa"@en .
+    
+    bdr:NTF497FBB32E85116F
+        a                   :Note ;
+        :locationStatement  "P.862" ;
+        :noteSource         bdr:MW1PD95844 ;
+        :noteText           "contains dicussion on gar, glu, and rol mo in Kalyanamitra's Sramanerasiksapadasutra"@en .
+    
+    bdr:T246  a             :Topic ;
+        skos:altLabel       "glu gzhas/"@bo-x-ewts , "gzhas/"@bo-x-ewts , "caryāgīta"@sa-x-iast ;
+        skos:prefLabel      "glu/"@bo-x-ewts , "songs"@en , "saṅgīta"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NT11DEAA22D03E96A7 , bdr:NT430774D40BF8A70D , bdr:NT450BC476C29F5BD7 , bdr:NT86906332368C523B , bdr:NTA7DCF239001038AC , bdr:NTC63A9F4DCAB385A7 , bdr:NTC66A361F771A2A0B , bdr:NTF497FBB32E85116F .
+}

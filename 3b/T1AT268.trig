@@ -1,0 +1,67 @@
+@base          <bdg:T1AT268> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT268 {
+    bda:LG0E97330700AC7E1D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T15:00:30.957Z"^^xsd:dateTime ;
+        adm:logMessage      "moved name \"rjes chings\" from T514"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2F643D253C60285A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T12:55:45.521Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name in tibetan"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2FFDDF18B857EE96
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-27T13:26:25.141Z"^^xsd:dateTime ;
+        adm:logMessage      "revised topic"@en .
+    
+    bda:LG4B30D9E70A3ACD2D
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-27T13:06:41.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:LG97C92CB87EB9E427
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-27T15:09:37.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added information"@en .
+    
+    bda:LGA78A51655231AFAE
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-02T15:50:47.427Z"^^xsd:dateTime .
+    
+    bda:T1AT268  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT268 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3b/T1AT268.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT268 ;
+        adm:logEntry        bda:LG0E97330700AC7E1D , bda:LG2F643D253C60285A , bda:LG2FFDDF18B857EE96 , bda:LG4B30D9E70A3ACD2D , bda:LG97C92CB87EB9E427 , bda:LGA78A51655231AFAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCB2F966A33FF06C6
+        a                   :Note ;
+        :noteText           "descriptive outline/summary of major texts that usually  introduces a teaching"@en .
+    
+    bdr:T1AT268  a          :Topic ;
+        rdfs:comment        "general outline" ;
+        skos:altLabel       "sngon chings dang rjes chings/"@bo-x-ewts ;
+        skos:prefLabel      "sngon chings dang mjug chings/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCB2F966A33FF06C6 .
+}

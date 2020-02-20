@@ -1,0 +1,40 @@
+@base          <bdg:T1351> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1351 {
+    bda:LGA91FC8483B0959D4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:35.86Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1351  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1351 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/T1351.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1351 ;
+        adm:logEntry        bda:LGA91FC8483B0959D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7DBDAF12C62A8229
+        a                   :Note ;
+        :noteText           "this topic is used for rituals focusing upon the group of five dakini: the deities are seated on five lotus seats\n1) on the middle one on a moon is the buddhadakini (sangs rgyas mkha' 'gro), white and crowned with vairocana, she is peaceful in sentiment; \n2) in the east seated on a sun is vajradakini (rdo rje mkha' 'gro), blue and crowned with aksobhya and wrathful in sentiment; \n3) in the south on a yellow moon is ratnadakini (rin chen mkha' 'gro), crowned with ratnasambhava and cheeful in sentiment; \n4) in the west on a red, rayless sun, comes padmadakini (pad+ma mkha' 'gro), red, crowned with amitabha, and of passionate sentiment; \n5) in the north on a crossed vajra, is visvadakini or karmadakini (las kyi mkha' 'gro or karma mkha' 'gro), green and crowned with amoghasiddhi, and of various sentiments including wrath and mirth;\neach plays a damaru with her right hand, while her left holds at her heart a skull full of nectar; they have crowns of five dry skulls, long necklaces of fifty fresh heads, and the five symbolic ornaments of bone; their hair is black and half bound up; under the left arm of each is a khatvanga of the nature of method (=the male consort), marked respectively with a wheel, a vajra, a jewel, a lotus, and a sword; they abide amid five-colored light rays, each surrounded by a hundred thousand principal dakinis similar to herself and by countless attendant dakinis. deities of tibetan buddhism #415-417"@en .
+    
+    bdr:T1351  a            :Topic ;
+        skos:altLabel       "mkha' 'gro ma rigs lnga /"@bo-x-ewts , "rigs lnga'i mkha' 'gro."@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro sde lnga /"@bo-x-ewts , "the five classes of dakinis"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7DBDAF12C62A8229 .
+}

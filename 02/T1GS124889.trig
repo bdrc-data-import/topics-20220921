@@ -1,0 +1,47 @@
+@base          <bdg:T1GS124889> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS124889 {
+    bda:LG92A5FEFF31F2B8BA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-05T01:15:36.078Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF2107B74DCE25D1C
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:06:03.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T1GS124889  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS124889 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "02/T1GS124889.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS124889 ;
+        adm:logEntry        bda:LG92A5FEFF31F2B8BA , bda:LGF2107B74DCE25D1C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6120B4B5114ABDA0
+        a                   :Note ;
+        :noteText           "on the use of the consumption of food in the practice of devotion"@en .
+    
+    bdr:T1GS124889  a       :Topic ;
+        skos:altLabel       "药食瑜伽"@zh-hans , "食供瑜伽"@zh-hans ;
+        skos:prefLabel      "zas kyi rnal 'byor/"@bo-x-ewts , "藥食瑜伽"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NT6120B4B5114ABDA0 .
+}

@@ -1,0 +1,65 @@
+@base          <bdg:T583> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T583 {
+    bda:LG172AE36D1137A052
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T23:50:27.267Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG2B221B900F0DF43B
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-21T13:44:14.734Z"^^xsd:dateTime ;
+        adm:logMessage      "proofread"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG960D3F4E820978B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T15:23:44.06Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGBFBF23847AAAA67F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-11T15:31:37.788Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling nA and added shad"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGD1B926BCB536B40B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T12:18:02.291Z"^^xsd:dateTime ;
+        adm:logMessage      "#87 added to deities of tibetan buddhism note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T583  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T583 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ce/T583.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T583 ;
+        adm:logEntry        bda:LG172AE36D1137A052 , bda:LG2B221B900F0DF43B , bda:LG960D3F4E820978B0 , bda:LGBFBF23847AAAA67F , bda:LGD1B926BCB536B40B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB1990DB882367383
+        a                   :Note ;
+        :noteText           "this topic is applied to sadhana and other ritual practices connected with vajrayogini; she is red with one face, two arms, and three eyes.  \n\n\ndeities of tibetan buddhism #77; see also #87"@en .
+    
+    bdr:T583  a             :Topic ;
+        skos:altLabel       "rje btsun nA ro mkha' spyod ma/"@bo-x-ewts , "rje btsun rdo rje rnal 'byor ma/"@bo-x-ewts ;
+        skos:prefLabel      "nA ro mkha' spyod/"@bo-x-ewts , "dakini according to the tradition of naropa"@en , "nadakhecari"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB1990DB882367383 .
+}

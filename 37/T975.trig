@@ -1,0 +1,46 @@
+@base          <bdg:T975> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T975 {
+    bda:LGB754D30AAAB5E6B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T11:06:24.851Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1GS110789 (dbang gi sta gon)"@en .
+    
+    bda:LGC4D8FC9C88B0E89C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-31T11:43:11.469Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD5797AA289930F8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T16:54:46.174Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T975  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T975 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "37/T975.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T975 ;
+        adm:logEntry        bda:LGB754D30AAAB5E6B0 , bda:LGC4D8FC9C88B0E89C , bda:LGD5797AA289930F8E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T975  a             :Topic ;
+        skos:prefLabel      "sta gon/"@bo-x-ewts , "preparation"@en ;
+        :isRoot             true .
+}

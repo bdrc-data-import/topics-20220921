@@ -1,0 +1,64 @@
+@base          <bdg:T2045> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2045 {
+    bda:LG463F169FBF55825B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-15T15:27:12.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added SeeAlso t326 (sman sgrub)"@en .
+    
+    bda:LG595F361A5B0FBF46
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T12:11:01.891Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5AB9D7B281DF4351
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T12:05:15.291Z"^^xsd:dateTime ;
+        adm:logMessage      "need to release"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5D7300424A2453E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T11:27:06.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added SeeAlso T326"@en .
+    
+    bda:LGD15616652208C9FB
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:20:34.733Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2045  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2045 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "2a/T2045.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2045 ;
+        adm:logEntry        bda:LG463F169FBF55825B , bda:LG595F361A5B0FBF46 , bda:LG5AB9D7B281DF4351 , bda:LG5D7300424A2453E2 , bda:LGD15616652208C9FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5A838ACD52A762F9
+        a                   :Note ;
+        :noteText           "the fourth of the bka' brgyad of the rnying ma tradition; this group is focussed on medicine and the g.yu thog snying tig of g.yu thog\nin the rin chen gter mdzod one finds the following cycles:\n1) g.yu thog snying thig (g.yu thog yon tan mgon po)\n2) tshe sgrub 'chi bdag bdud 'joms (chags med sogs)\n3) sman bla longs sku gtso 'khor lnga pa (zur mkhar mnyam nyid rdo rje'i dag snang)\n4) 'chi med bi ma'i snying thig gi bla sgrub (mchog gling dag snang)\n5) 'chi med 'phags ma'i snying thig ('jam dbyangs mkhyen brtse dbang po'i dag snang)\n6) 'chi med bdud rtsi bum chen (rdor 'bum chos kyi grags pa)\n7) rdo rje bdud rtsi bde ba chen po (ra mo shel sman ye shes zhabs; revived by 'jam dbyangs mkhyen brtse'i dbang po)\n8) thugs sgrub yang snying 'dus pa'i bdud rtsi sman sgrub (ratna gling a)\n9) tshe sgrub bdud rtsi 'khyil pa (legs ldan rje)\n10) yon tan bdud rtsi'i mchog tig ('jam dbyangs mkhyen brtse'i dbang po'i snyan brgyud)\n11) bka' brgyad gsang rdzogs kyi sman sgrub ( gu ru chos dbang)\n12) rdo sems thugs kyi thig le'i cha lag sman sgrub byin 'bebs (mchog gyur gling pa)"@en .
+    
+    bdr:T2045  a            :Topic ;
+        rdfs:seeAlso        bdr:T326 ;
+        skos:altLabel       "sman sgrub (bdud rtsi sman dngos)"@bo-x-ewts ;
+        skos:prefLabel      "bdud rtsi yon tan sgrub pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5A838ACD52A762F9 .
+}

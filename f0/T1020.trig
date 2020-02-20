@@ -1,0 +1,52 @@
+@base          <bdg:T1020> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1020 {
+    bda:LG2C0371029A796749
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T12:28:06.832Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7AD05921A809FD8D
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:49:03.13Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA956A075875C95F8
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:31.629Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1020  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1020 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f0/T1020.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1020 ;
+        adm:logEntry        bda:LG2C0371029A796749 , bda:LG7AD05921A809FD8D , bda:LGA956A075875C95F8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9B7E8816AA0421CD
+        a                   :Note ;
+        :noteText           "wrathful fire ritual performed for destructive purposes; these rituals invoke wrathful deities; it is used with a specific wrathful deity or host of deities"@en .
+    
+    bdr:T1020  a            :Topic ;
+        rdfs:seeAlso        bdr:T416 ;
+        skos:prefLabel      "drag po'i sbyin sreg"@bo-x-ewts , "wrathful fire puja"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9B7E8816AA0421CD .
+}

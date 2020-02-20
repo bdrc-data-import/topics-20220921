@@ -1,0 +1,46 @@
+@base          <bdg:T2524> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2524 {
+    bda:LG11E750C9460F1758
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T07:43:59.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2524  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2524 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "07/T2524.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2524 ;
+        adm:logEntry        bda:LG11E750C9460F1758 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C32B8264C533658
+        a                   :Note ;
+        :locationStatement  "pp.167-198" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "the group of 12 protective goddesses; comprises the bdud mo bzhi, the gnod sbyin bzhi and the sman mo bzhi"@en .
+    
+    bdr:NTF8A00864A6F123B8
+        a                   :Note ;
+        :noteText           "the twelve tenmas, 12 local female spirits [brtan ma] [IW];  the twelve local female spirits [RY] ;12 mkha' 'gro ma sisters who guard buddhism [JV] ;\nlocal goddesses, twelve Local deities subjugated by padmakara. They are associated with the months of the year the realms and the nidanas [RY] \n\nRetrieved from \"http://rywiki.tsadra.org/index.php/bstan_ma_bcu_gnyis\""@en .
+    
+    bdr:T2524  a            :Topic ;
+        skos:prefLabel      "bstan ma bcu gnyis/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6C32B8264C533658 , bdr:NTF8A00864A6F123B8 .
+}

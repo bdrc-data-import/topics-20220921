@@ -1,0 +1,76 @@
+@base          <bdg:T360> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T360 {
+    bda:LG1953AEF360DC8F70
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:15:50.224Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2D90A8751F200BD2
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T11:56:26.046Z"^^xsd:dateTime ;
+        adm:logMessage      "T360 and T2552 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG3E0F65AA050DF200
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T12:23:08.749Z"^^xsd:dateTime ;
+        adm:logMessage      "name normalized"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG5788020907FB59F4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T11:33:40.496Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG81C83E65F6EAEAC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T12:49:06.316Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1255 (jo nang bka'babs drug ldan)"@en .
+    
+    bda:LGF75CDE28C3D4F279
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T17:03:19.64Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T360  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T360 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "41/T360.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T360 ;
+        adm:logEntry        bda:LG1953AEF360DC8F70 , bda:LG2D90A8751F200BD2 , bda:LG3E0F65AA050DF200 , bda:LG5788020907FB59F4 , bda:LG81C83E65F6EAEAC4 , bda:LGF75CDE28C3D4F279 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT006CDFFFB11A899A
+        a                   :Note ;
+        :noteText           "this topic is applied to the main sampannakrama practice for the kalacakra tantra. \n\nthe successive sixfold yoga is:\n\n1) so sor sdud pa -- pratyahara\n2) bsam gtan -- dhyana\n3) srog rtsol -- pranayama\n4) 'dzin pa -- dharana\n5) rjes dran -- anusmrti\n6) ting nge 'dzin -- samadhi"@en .
+    
+    bdr:NT99E1F6007770F5CC
+        a                   :Note ;
+        :locationStatement  "v.2, p. 1541" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1582-6) lists the six yan lag or branches: 1) sor sdud kyi yan lag; 2) bsam gtan gyi yan lag; 3) srog rtsol gyi yan lag; 4) 'dzin pa'i yan lag; 5) rjes dran gyi yan lag; 6) ting nge 'dzin gyi yan lag."@en .
+    
+    bdr:T360  a             :Topic ;
+        rdfs:seeAlso        bdr:T1253 , bdr:T1255 ;
+        skos:altLabel       "jo nang /"@bo-x-ewts , "rdo rje rnal 'byor ba yan lag drug"@bo-x-ewts , "sbyor ba yan lag drug"@bo-x-ewts , "yan lag drug pa/"@bo-x-ewts ;
+        skos:prefLabel      "sbyor drug"@bo-x-ewts , "sadangayoga"@sa-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT006CDFFFB11A899A , bdr:NT99E1F6007770F5CC .
+}

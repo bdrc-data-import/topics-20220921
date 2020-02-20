@@ -1,0 +1,46 @@
+@base          <bdg:T1KG89006> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG89006 {
+    bda:LG0B498E4B2D3A9256
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-04-13T11:23:22.473Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG81D0DBB6F0D5951E
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-10T16:04:30.12Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavour of T1147"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T1KG89006  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG89006 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "36/T1KG89006.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG89006 ;
+        adm:logEntry        bda:LG0B498E4B2D3A9256 , bda:LG81D0DBB6F0D5951E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT076CC42BC847B073
+        a                   :Note ;
+        :noteText           "this topic apply to books on christianity"@en .
+    
+    bdr:T1KG89006  a        :Topic ;
+        skos:prefLabel      "yi shu/"@bo-x-ewts , "christianity"@en , "基督教"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT076CC42BC847B073 .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T755> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T755 {
+    bda:LG2A42D289C7C65704
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:34:01.95Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE6E092D93F220611
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T14:22:27.048Z"^^xsd:dateTime ;
+        adm:logMessage      "notes of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFCB7BD4644D12576
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T11:22:05.591Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T755  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T755 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "80/T755.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T755 ;
+        adm:logEntry        bda:LG2A42D289C7C65704 , bda:LGE6E092D93F220611 , bda:LGFCB7BD4644D12576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT92CB2FC0DF3EECE4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the goddess mahalaksmi (great fortune) who is green, graceful, laughing, and wide- eyed, adorned with silks and jewels; her right hand holds a lotus marked with a gem and her left gives refuge; she is surrounded by a host of yaksa matrka (gnod sbyin ma mo) attendants;  her crown is yamantaka.  \n\ndeities of tibetan buddhism #325"@en .
+    
+    bdr:T755  a             :Topic ;
+        skos:prefLabel      "lha mo dpal chen mo/"@bo-x-ewts , "the goddess mahalaksmi"@en , "mahalaksmi devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT92CB2FC0DF3EECE4 .
+}

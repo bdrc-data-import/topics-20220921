@@ -1,0 +1,52 @@
+@base          <bdg:T541> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T541 {
+    bda:LG39CA9164D0EF8EAD
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-22T14:20:48.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG7AEAEC1D5AD93465
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-03-14T10:11:17.071Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC272DA41818C52B4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-30T10:50:53.466Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T541  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T541 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8a/T541.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T541 ;
+        adm:logEntry        bda:LG39CA9164D0EF8EAD , bda:LG7AEAEC1D5AD93465 , bda:LGC272DA41818C52B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEB553252BE0E922E
+        a                   :Note ;
+        :noteText           "religious practice; literally, \"to take into experience\""@en .
+    
+    bdr:T541  a             :Topic ;
+        skos:altLabel       "nyams su len pa/"@bo-x-ewts ;
+        skos:prefLabel      "nyams len/"@bo-x-ewts , "practice"@en , "修持"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTEB553252BE0E922E .
+}

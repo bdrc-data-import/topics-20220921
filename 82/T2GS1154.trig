@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1154> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1154 {
+    bda:LG03A95ACF1503CDDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T10:20:06.773Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA6C6E780BFB49AAF
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:31:48.088Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1154  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1154 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "82/T2GS1154.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1154 ;
+        adm:logEntry        bda:LG03A95ACF1503CDDE , bda:LGA6C6E780BFB49AAF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT4C6FD9375ABF7746
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the wrathful hayagriva, shining a ruby color, with one face, two arms, and three eyes; his right hand brandishes a club of khadira wood marked with a vajra; his left aims a threatenting forefinger at his heart; on his head is a green, neighing horse's head; his legs are in pratyalidha (right bent) and trample male and female nagas; he is complete with all the ornaments and dress of a wrathful deity such as tiger skin and snake ornaments; he abides amid a blazing mass of fire; he is crowned with amitabha;  deities of tibetan buddhism #163"@en .
+    
+    bdr:T2GS1154  a         :Topic ;
+        skos:prefLabel      "rta mgrin dpa' gcig lhan skyes jo bo'i lugs/"@bo-x-ewts , "innate hayagriva without consort in the tradition of atisa"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4C6FD9375ABF7746 .
+}

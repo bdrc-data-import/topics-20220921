@@ -1,0 +1,41 @@
+@base          <bdg:T1071> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1071 {
+    bda:LG5EC46AD032340573
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T09:47:27.728Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGA7DD4128E76F572C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:04:48.236Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1071  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1071 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "64/T1071.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1071 ;
+        adm:logEntry        bda:LG5EC46AD032340573 , bda:LGA7DD4128E76F572C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1071  a            :Topic ;
+        skos:prefLabel      "rdo rje phag mo 'byung ba lha 19 (21) zhi sbas lugs/"@bo-x-ewts , "vajravarahi 19 (21) devatmaka santigupta krama"@sa-alalc97 ;
+        :isRoot             true .
+}

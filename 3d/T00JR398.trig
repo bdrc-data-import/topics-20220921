@@ -1,0 +1,39 @@
+@base          <bdg:T00JR398> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR398 {
+    bda:LG013EDB46A8A7D2D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-20T14:49:28.207Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG9B35C690A5E9F8E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:42.245Z"^^xsd:dateTime .
+    
+    bda:T00JR398  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR398 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3d/T00JR398.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR398 ;
+        adm:logEntry        bda:LG013EDB46A8A7D2D3 , bda:LG9B35C690A5E9F8E3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00JR398  a         :Topic ;
+        rdfs:seeAlso        bdr:T11MS11 ;
+        skos:prefLabel      "mun khrid/"@bo-x-ewts , "instructions on the dark retreat"@en ;
+        :isRoot             true .
+}

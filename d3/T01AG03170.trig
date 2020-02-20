@@ -1,0 +1,40 @@
+@base          <bdg:T01AG03170> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG03170 {
+    bda:LG193EA81E9AE0AB10
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-28T12:11:24.399Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew, not a cw"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG1BC023514BC1F8B2
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-04T17:05:51.386Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T01AG03170  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG03170 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d3/T01AG03170.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG03170 ;
+        adm:logEntry        bda:LG193EA81E9AE0AB10 , bda:LG1BC023514BC1F8B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T01AG03170  a       :Topic ;
+        skos:prefLabel      "snyan brgyud yang phur sbrag ma'i zab tig"@bo-x-ewts ;
+        :isRoot             true .
+}

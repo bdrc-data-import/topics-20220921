@@ -1,0 +1,46 @@
+@base          <bdg:T1549> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1549 {
+    bda:LG527732194ACF6032
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:33:38.952Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC929D1BC1CD60BB5
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T12:22:37.963Z"^^xsd:dateTime ;
+        adm:logMessage      "with drawn in favor of corect T"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1549  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1549 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8e/T1549.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1549 ;
+        adm:logEntry        bda:LG527732194ACF6032 , bda:LGC929D1BC1CD60BB5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT48835A02B9FB5579
+        a                   :Note ;
+        :noteText           "48th of the jo nang khrid brgya."@en .
+    
+    bdr:T1549  a            :Topic ;
+        skos:prefLabel      "phyag rgya'i lam (khrid)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT48835A02B9FB5579 .
+}

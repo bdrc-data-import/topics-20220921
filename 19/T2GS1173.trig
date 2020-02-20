@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1173> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1173 {
+    bda:LG3157B93ECDBCDE6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T15:26:28.978Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG99605107C696CF30
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T16:58:56.081Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2GS1173  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1173 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "19/T2GS1173.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1173 ;
+        adm:logEntry        bda:LG3157B93ECDBCDE6F , bda:LG99605107C696CF30 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1FA5DC8DEB6E728C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon the wealth granting tara, green, her two right hands boon-granting and with a rosary, her two left hands holding an utpala and a book; she is adorned with silks and jewels and she sits in sattvaparyanka; she has four attendants: 1) to the east is vajra tara, who is black and holds a vajra; 2) to the south is ratna tara, yellow and holding a jewel; 3) to the west is padma tara, red, holding a lotus; 4) to the north is buddha tara, white, holding a wheel; in the four intermediate directions  to the southeast are white flower tara, black incense tara, yellow lamp tara, and red perfume tara; these are on moons and are peaceful; in the east gate is black vajrankusi; in the south gate is yellow pasi; in the west gate red sphota; and in the north gate yellow ghanta; these abide in alidha (right leg extended) on suns and have the full garb of wrathful goddesses; the principal is crowned with amoghasiddhi and the attendatgs with jewel of the essence of the principal.  \n\ndeities of tibetan buddhism #140"@en .
+    
+    bdr:T2GS1173  a         :Topic ;
+        skos:prefLabel      "sgrol ma nor sbyin ma/"@bo-x-ewts , "wealth-granting tara"@en , "tara dhanada"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1FA5DC8DEB6E728C .
+}

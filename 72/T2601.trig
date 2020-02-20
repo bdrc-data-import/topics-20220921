@@ -1,0 +1,35 @@
+@base          <bdg:T2601> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2601 {
+    bda:T2601  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2601 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "72/T2601.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2601 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5BB0621A7EF2AB7C
+        a                   :Note ;
+        :locationStatement  "v. 72" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "rituals for the protection against poisoning\nthe rin chen gter mdzod contains seven different titles arranged in three sections\n1) dug dbang rdo rje pha lam (rig 'dzin rgod kyi ldem 'phru can)\n2) dug dbang rdo rje pha lam gyi phyag len (byang bdag bkra shis stobs rgyal)\n3) dug srung rta ri ma (lcang sman don grub dar)\n4) gur drag dug srung yid nor zung gi phyag len zab tig bye ring las byung ba (rat+na gling pa)\n5) dug srung (rong sman nyi ma'i 'od)\n6) dug srung gser gzugs snyan brgyud ma'i lo rgyus gdams ngag (d+harma swa mi'i gsung)\n7) dug srung gser gzugs snyan brgyud kyi sgom bzlas ('jam dbyangs mkhyen brtse'i dbang po)"@en .
+    
+    bdr:T2601  a            :Topic ;
+        skos:prefLabel      "dug nad srung ba/"@bo-x-ewts , "protection against poisoning"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5BB0621A7EF2AB7C .
+}

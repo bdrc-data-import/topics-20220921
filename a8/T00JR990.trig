@@ -1,0 +1,60 @@
+@base          <bdg:T00JR990> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR990 {
+    bda:LG05034F918A176FCC
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-11T11:22:09.191Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created, will fill out soon"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG248A088682677FD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-16T16:14:48.933Z"^^xsd:dateTime ;
+        adm:logMessage      "minor changes"@en .
+    
+    bda:LGF136320ADD30EF6E
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-12T14:59:57.156Z"^^xsd:dateTime ;
+        adm:logMessage      "finished"@en .
+    
+    bda:T00JR990  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR990 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a8/T00JR990.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR990 ;
+        adm:logEntry        bda:LG05034F918A176FCC , bda:LG248A088682677FD9 , bda:LGF136320ADD30EF6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4DB49843B1107791
+        a                   :Note ;
+        :locationStatement  "pp. 164-165" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "1) chos rje gtsang ston pa'i man ngag lta phreng 'grel dang khrid yig bcas \n2) mkhas grub nam mkha' rdo rje'i sems sde pra khrid\n3) rme shod sangs rgyas rdo rje'i bla ma yang tig khrid \n4) mkhas grub ye shes rgyal mtshan gyi phyag chen man ngag rgya mtsho \n5) grub thob kun dga' 'bum pa'i gcod khrid chen mo \n6) bar khrod dbon bkra shis rin chen gyi rdzogs chen khrid zab lam rig pa'i me long, \n7) bya bral ba bsod nams don 'grub kyi rdzogs chen khrid zab don snying po \n8) hor po shakya rgyal mtshan gyi dgongs pa zang thal khrid \n9) mkhas grub pad+ma ma ti'i bar do drug gi khrid \n10) pad+ma ma ti'i yang ti nag po gser gyi 'bru gcig khrid zab lam don gsal\n11) rig 'dzin tshe dbang nor bu'i dkon mchog spyi 'dus kyi khrid gu ru'i dgongs rgyan \n12) rig 'dzin bdud 'dul rdo rje'i rdzogs chen khrid kun bzang 'ja' sku \n13) klong gsal rdo rje snying po'i khrid yig 'ja' zer grong 'jug"@en .
+    
+    bdr:NTF39FCF7ACED47BA2
+        a                   :Note ;
+        :locationStatement  "p. 176.5" ;
+        :noteSource         bdr:MW30200 ;
+        :noteText           "acknowledges another version of the khrid chen bcu gsum in which the man ngag lta phreng and dkon mchog spyi 'dus are replaced with the khol ri byang chub rgyal mtshan gyi ka dag klong yangs and stong chung bkra shis rgya mtsho'i phyag chen khrid.  the standard enumeration is preferable because the former is similar to the dgongs pa zang thal and the latter is a summary of the phyag chen man ngag rgya mtsho"@en .
+    
+    bdr:T00JR990  a         :Topic ;
+        rdfs:comment        "a collection of contemplative instructions composed over the ages by kaH thog masters and compiled by dge rtse 03 'gyur med rnam rgyal (1886-1952)" ;
+        skos:altLabel       "kaH thog snyan brgyud khrid chen bcu gsum/"@bo-x-ewts ;
+        skos:prefLabel      "kaH thog khrid chen bcu gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4DB49843B1107791 , bdr:NTF39FCF7ACED47BA2 .
+}

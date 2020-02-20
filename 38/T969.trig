@@ -1,0 +1,47 @@
+@base          <bdg:T969> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T969 {
+    bda:LG044F2E07E6474CD8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-10-20T12:37:05.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG366F45A05FCE1268
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:24.622Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T969  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T969 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "38/T969.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T969 ;
+        adm:logEntry        bda:LG044F2E07E6474CD8 , bda:LG366F45A05FCE1268 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDCD88CC003C254C5
+        a                   :Note ;
+        :noteText           "this topic is applied to mudra, specific gestures expressed and symbolic implements employed in the context of tantric rituals and imagery; symbolic hand gesture; symbolic form of a deity; mudra or spiritual consort"@en .
+    
+    bdr:T969  a             :Topic ;
+        skos:altLabel       "mudra/"@bo-x-ewts , "phyag"@bo-x-ewts , "phyag mtshan/"@bo-x-ewts ;
+        skos:prefLabel      "phyag rgya/"@bo-x-ewts , "mudrā"@sa-x-ndia , "手印"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTDCD88CC003C254C5 .
+}

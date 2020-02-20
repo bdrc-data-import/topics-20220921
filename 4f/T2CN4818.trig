@@ -1,0 +1,60 @@
+@base          <bdg:T2CN4818> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4818 {
+    bda:LG58B854FB41D36C3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-25T10:25:36.69Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG60907DA8C3144FED
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:52:48.121Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG668DE250C4069A19
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T17:00:56.004Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG7BF191B4E9A505D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-21T14:54:24.664Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4818  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4818 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4f/T2CN4818.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4818 ;
+        adm:logEntry        bda:LG58B854FB41D36C3A , bda:LG60907DA8C3144FED , bda:LG668DE250C4069A19 , bda:LG7BF191B4E9A505D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA55B5E1B12E96B00
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.10, p.154 ལྷ་མོ་དུཀྟི་ཀ་འདི་ཉིད་ནི་དྲང་སྲོང་ཁྲོ་གཏུམ་ནག་པོའི་ཡུམ་ཡིན་པར་གསལ།"@en .
+    
+    bdr:T2CN4818  a         :Topic ;
+        skos:altLabel       "drang srong gi yum duk+ti ka"@bo-x-ewts ;
+        skos:prefLabel      "lha mo duk+ti ka"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA55B5E1B12E96B00 .
+}

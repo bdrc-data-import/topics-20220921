@@ -1,0 +1,47 @@
+@base          <bdg:T1GS147790> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147790 {
+    bda:LG7245A01EEA408B99
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-21T11:31:09.156Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA823B82C6B926154
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T11:04:49.495Z"^^xsd:dateTime ;
+        adm:logMessage      "edited language settings"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS147790  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147790 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "62/T1GS147790.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147790 ;
+        adm:logEntry        bda:LG7245A01EEA408B99 , bda:LGA823B82C6B926154 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT27472A0882FE0DE0
+        a                   :Note ;
+        :noteText           "under this topic are works instructing how the practitioner should constantly, day and night, endeavor to do good for oneself and others"@en .
+    
+    bdr:T1GS147790  a       :Topic ;
+        skos:altLabel       "nyin zhag phrugs gcig la dge sbyor/"@bo-x-ewts ;
+        skos:prefLabel      "dge sbyor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT27472A0882FE0DE0 .
+}

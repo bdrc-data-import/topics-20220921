@@ -1,0 +1,59 @@
+@base          <bdg:T1PD108900> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108900 {
+    bda:LG40DDC55F12C0B800
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T11:28:52.444Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG53E702DDFF6738D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGAC8F20C55A22E836
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGB06E0F367C72D860
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T11:35:58.659Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108900  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108900 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "af/T1PD108900.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108900 ;
+        adm:logEntry        bda:LG40DDC55F12C0B800 , bda:LG53E702DDFF6738D1 , bda:LGAC8F20C55A22E836 , bda:LGB06E0F367C72D860 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4A6D60F11C00D1A9
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 1403) ཁ་མཆུ་བསྡུམ་པའི་ཡི་གེ་ཞེས་འཁོད།"@en .
+    
+    bdr:T1PD108900  a       :Topic ;
+        skos:prefLabel      "'dum khra/"@bo-x-ewts , "调解书"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4A6D60F11C00D1A9 .
+}

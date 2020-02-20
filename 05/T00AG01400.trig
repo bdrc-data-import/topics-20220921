@@ -1,0 +1,46 @@
+@base          <bdg:T00AG01400> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01400 {
+    bda:LG5FEFCBF72D2A8835
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T13:00:00.795Z"^^xsd:dateTime ;
+        adm:logMessage      "with drawn in favor of t314"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC1467F723133714A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-16T11:18:12.461Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01400  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01400 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "05/T00AG01400.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01400 ;
+        adm:logEntry        bda:LG5FEFCBF72D2A8835 , bda:LGC1467F723133714A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT4A075F946F61932E
+        a                   :Note ;
+        :noteText           "a funerary rite of the klong chen snying thig"@en .
+    
+    bdr:T00AG01400  a       :Topic ;
+        skos:prefLabel      "gsang sgrub thugs rje chen po sdug bsngal rang grol ('jigs med gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4A075F946F61932E .
+}

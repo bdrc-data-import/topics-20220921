@@ -1,0 +1,35 @@
+@base          <bdg:T971> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T971 {
+    bda:T971  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T971 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "3e/T971.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T971 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC547F41616374212
+        a                   :Note ;
+        :locationStatement  "f. 175r" ;
+        :noteSource         bdr:MW21491 ;
+        :noteText           "the group of tantras teaching the tantra of union; this is the third in the classification of the tantra, i. e kriyayoga, caryantantra, yogatantra, and anuttarayogatantra\n\nthere exist two main traditions of the yoga tantra:\nyo ga stod lugs\nyo ga smad lugs\nthe first was taught during the later period of the life of rin chen bzang po and the explanation and rituals were spread in western tibet by kun dga' snying po; the teachings spread to the sa skya through the transmission of mal lo tsaA ba to sa chen\nthe smad lugs were taught during the earlier period of the life of rin chen bzang po in the eastern part of tibet; these teachings were basically according to the system of shAkya bshes gnyen and kun dga' snying po\nthere were several systems: that of rkyang po chos blo of nyang stod; rin spungs sum ston and bo dong 'dang chung"@en .
+    
+    bdr:T971  a             :Topic ;
+        skos:prefLabel      "rnal 'byor rgyud/"@bo-x-ewts , "yogatantra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC547F41616374212 .
+}

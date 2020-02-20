@@ -1,0 +1,53 @@
+@base          <bdg:T00AG0324> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG0324 {
+    bda:LG4F3D3A9A61ACBDDA
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-25T14:48:28.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added main entry"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG6204C0F67752CB75
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-30T11:26:12.682Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE0756980FE185E9A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T10:05:57.385Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added to this topic completion"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T00AG0324  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG0324 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "31/T00AG0324.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG0324 ;
+        adm:logEntry        bda:LG4F3D3A9A61ACBDDA , bda:LG6204C0F67752CB75 , bda:LGE0756980FE185E9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4EA252F7E4A0C289
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, and commentaries to the collected practice of  the praise the 21 tara as taught by suryagupta (nyi ma sbas pa). the twenty-one taras are:\n1) tara the heroic (rab tu dpa' ba'i sgrol ma = pravira tara);\n2) tara white as the moon (dkar mo zla mdangs kyi sgrol ma, sgrol ma dkar mo zla mdangs ma = candraujah-sukla-tara);\n3) golden colored tara (gser mdog can gyi sgrol ma, sgrol ma gser mdog can = kanakavarnatara);\n4) tara the victorious usnisa (gtsug tor rnam par rgyal ma'i sgrol ma; sgrol ma gtsug tor rnam rgyal = usnisavijayatara);\n5) tara proclaiming the sound of hum (hUM sgra sgrog pa'i sgrol ma, sgrol ma hUM sgra sgrog ma = humsabdinitara);\n6) tara victorious over the three worlds ('jig rten gsum las rnam par rgyal ba'i sgrol ma; sgrol ma 'jig rten gsum rgyal = trailokyavijayatara)\n7) tara crushing disputants (rgol ba 'joms pa'i sgrol ma, sgrol ma rgol ba 'joms ma = vadipramardanitara)\n8) tara who bestows supreme powers (dbang mchog ster ba'i sgrol ma; sgrol ma mchog ster ma = paramabhisekadatara? ; vasitottamadatara);\n9) khadiravani tara with two attendants; (seng lden nags kyi sgrol ma, seng ldeng nags sgrol gtso 'khor gsum = khadiravanitara)\n9a) tara granter of boons (mchog stsol ba'i sgrol ma; sgrol ma mchog stsol ma =  varadatara)\n10) tara dispeller of sorrow (mya ngan sel ba'i sgrol ma. sgrol ma mya ngan sel ba = sokavinodanatara)\n11) tara summoner of beings or dispeller of misfortune ('gro ba 'gugs pa'am phongs pa sel ba'i sgrol ma; sgrol ma 'phongs pa sel ba = jagadakarsanatara; apadanasanitara)\n12) tara light of prosperity (bkra shis snang ba'i sgrol ma, sgrol ma bkra shis snang ba=mangalavabhasatara or svastibhasuratara)\n13) tara the ripener (yongs su smin par mdzad pa'i sgrol ma, sgrol ma yongs su smin mdzad ma = paripacanatara)\n14) shaking frowning tara (khro gnyer g.yo ba'i sgrol ma, sgrol ma khro gnyer g.yo ba ma = caladbhrkutitara)\n15) tara the great peaceful one or giver of good (zhi ba chen mo'am dge legs ster ba'i sgrol ma, sgrol ma dge legs ster ma = mahasantitara or kalyanadatara)\n16) tara destroyer of attachment (chags pa 'joms pa'i sgrol ma, sgrol ma chags pa 'joms ma = sanganasanitara);\n17) tara accomplisher of bliss (bde ba sgrub pa'i sgrol ma, sgrol ma bde sgrub ma = sukhasiddhi tara);\n18) tara of increase (rab tu rgyas pa'i sgrol ma, sgrol ma rab rgyas ma = prapustitara);\n19) tara consumer of suffering (sdug bsngal bsreg pa'i sgrol ma, sgrol ma sdug bsngal bsreg ma = dukhkhadahanatara);\n20) tara source of attainments (dngos grub 'byung ba'i sgrol ma, sgrol ma dngos grub 'byung ma = siddhisambhavatara);\n21) tara the perfecter (yongs rdzogs byed pa'i sgrol ma, sgrol ma yongs rdzogs byed ma = paripuranatara).\n\nthere are alternate lists and numbering in some of the commentaries such as khenchen palden sherab rinpoche's the smile of sun and moon : a commentary on the praqise to the twenty-one taras / by khenchen palden sherab rinpoche; translated and edited by anna orlova. -- boca raton, florida : sky dancer press, 2004.\n\n1) sgrol ma myur ma dpa' mo;\n2) sgrol ma blo gter dbyangs can ma;\n3) sgrol ma ser mo bsod nams stobs bekyed;\n4) sgrol ma 'chi med tshe sgrub gtsug tor rnam rgyal ma;  \n5) sgrol ma dbang sdud rigs byed lha mo;  \n6) sgrol ma gdon rigs rnam par 'joms pa 'jigs byed chen mo;\n7) sgrol ma dmag dang thog ser 'joms ma gtum mo gzhan gyis mi thub ma;\n8) gzhan rgod mtshangs 'bru gzhom pa'i sgrol ma gzhan mi rgyal ba'i dpa' mo;  \n9) 'jigs pa'i tshogs thams cad las skyob pa'i seng ldeng nags kyi sgrol ma;\n10) 'jig rten dbang du byed pa'i sgrol ma 'jig rten gsum las rgyal ma;  \n11) dbul sel nor ster rje btsun 'phags ma sgrol ma;  \n12) char chu dang bu dpal dang yul grub bde bar byed pa'i bkra shis don byed sgrol ma;  \n13) dmag sogs bar chad gzugs can gzugs med kyi g.yul las rgyal bar byed pa'i rje btsun sgrol ma;\n14) dam sri bgegs rigs 'gong po spun dgu dang sde brgyad gnod pa 'joms pa'i 'phags ma sgrol ma khro gnyer can ma;  \n15) sdig sgrib zhi bar mdzad pa'i sgrol ma rab zhi ma;  \n16) dgra dang byad ma'i rig sngags stobs gzhom rje btsun 'phags ma sgrol ma;  \n17) dgra jag chom rkun rngon pa'i kha 'ching 'phags ma sgrol ma dpag med gnon ma;  \n18) dug rigs thams cad zhi zhing srung ba'i rje btsun 'phags ma sgrol ma rma bya chen mo;  \n19) rtsod pa dang rmi lam ngan pa sel ba'i rje btsun 'phags ma sgrol ma mi pham rgyal mo gdugs dkar mo;  \n20) rims nad sel ba'i rje btsun 'phags ma sgrol ma ri khrod la ma gyon ma;  \n21) nad pa'i bla tshe blu bar byed pa'i rje btsun 'phags ma sgrol ma lha mo 'od zer can ma."@en .
+    
+    bdr:T00AG0324  a        :Topic ;
+        skos:altLabel       "sgrol ma nyi shu rtsa gcig nyi ma sbas pa'i lugs/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma nyer gcig (nyi sbas lugs)"@bo-x-ewts , "the 21 taras according to the tradition of suryagupta"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT4EA252F7E4A0C289 .
+}

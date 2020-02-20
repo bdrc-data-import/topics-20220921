@@ -1,0 +1,41 @@
+@base          <bdg:T695> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T695 {
+    bda:LGBDD435C0D1869958
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T17:53:01.488Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T695  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T695 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b9/T695.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T695 ;
+        adm:logEntry        bda:LGBDD435C0D1869958 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB513F6B1472C895A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments for the goddess who is red, her right hand brandishes a knife and her left holds at her heart a blood-filled skull; she stands in ardhaprayanka dancing posture with her left leg extended upon a lotus and moon seat; she is wrathful and amorous and has bone ornaments; the practice of prthvidevi is one of the three dmar chung skor gsum transmitted as a part of the sa skya pa gser chos which came into the sa skya tradition from gnyan lo tsA ba\n\ndeities of tibetan buddhism #208.\n\ndeviation: sun seat."@en .
+    
+    bdr:T695  a             :Topic ;
+        skos:altLabel       "ti nu/"@bo-x-ewts ;
+        skos:prefLabel      "lha mo ti nu/"@bo-x-ewts , "the goddess tinu"@en , "prthivi devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB513F6B1472C895A .
+}

@@ -1,0 +1,40 @@
+@base          <bdg:T960> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T960 {
+    bda:LG32BA093EA9407E51
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-28T18:08:42.953Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T960  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T960 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "35/T960.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T960 ;
+        adm:logEntry        bda:LG32BA093EA9407E51 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD56358D700DFF39F
+        a                   :Note ;
+        :noteText           "dharma protector of the yang dag and phur pa ancestral practice of the 'khon lineage of sa skya; the lineage of transmission runs from kun tu bzang po, rdo rje sems dpa', rdo rje 'chang, rdo rje gzhon nu, pad+mA ka ra, 'khon klu dbang srung ba through the successive masters of the 'khon lineage, to the gong ma rnam lnga"@en .
+    
+    bdr:T960  a             :Topic ;
+        skos:prefLabel      "dkar bdud lcam dral 'khon lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD56358D700DFF39F .
+}

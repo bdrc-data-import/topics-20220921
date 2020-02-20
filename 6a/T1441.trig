@@ -1,0 +1,53 @@
+@base          <bdg:T1441> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1441 {
+    bda:LG6D82794CAA211861
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T19:54:00.737Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added and note from chos rnam kun btus"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDAEC68404CDE9B11
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-17T16:35:02.309Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T1441  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1441 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6a/T1441.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1441 ;
+        adm:logEntry        bda:LG6D82794CAA211861 , bda:LGDAEC68404CDE9B11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0364C4072F561CE4
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 84" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus(quoting btsan 'gyur mdo sde ci pa 127 na 6 and citing 'phags pa blo gros mi zad pas bstan pa rgya cher 'grel pa) gives:\n1) tha snyad kyi bden pa; 2) don dam pa'i bden pa.\n\ntwo truths :dvaya satya  satya dvaya: ultimate truth (don dam bden pa,  paramārthasatya) and conventional truth (kun rdzob bden pa, samvṛtisatya)\n\nives waldo: two truths [absolute and relative]; relative truth {kun rdzob kyi bden pa} and ultimate truth {don dam bden pa} syn {bden gnyis}. two truths. relative truth and ultimate truth. relative truth describes the seeming, superficial and apparent mode of all things. ultimate truth describes the real, true and unmistaken mode. these two aspects of reality are defined by the four philosophical schools as well as the tantras of vajrayana in different ways, each progressively deeper and closer to describing things as they are. two truths [thd]"@en .
+    
+    bdr:NTD0C297865A3C1A3A
+        a                   :Note ;
+        :noteText           "this topic is applied to the vast literature of works concerned with the understanding of the relationship between the conventional and absolute truths"@en .
+    
+    bdr:T1441  a            :Topic ;
+        skos:altLabel       "bden pa gnyis (dbu ma)"@bo-x-ewts ;
+        skos:prefLabel      "bden gnyis/"@bo-x-ewts , "the two truths"@en , "dvayasatya, satyadvaya"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT0364C4072F561CE4 , bdr:NTD0C297865A3C1A3A .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T590> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T590 {
+    bda:LGC0EAD2ED33ED13BA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T04:53:45.645Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGECFBAC5B84EB3C52
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T04:58:35.787Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T590  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T590 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cc/T590.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T590 ;
+        adm:logEntry        bda:LGC0EAD2ED33ED13BA , bda:LGECFBAC5B84EB3C52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTABA2CE3C029764F3
+        a                   :Note ;
+        :noteText           "this topic is applied to the form of sahaja sambara with the practitioner identifying with the mother vajrayogini; vajrayogini is white, with one face, two arms, holding the stems of lotuses marked with a vajra and a bell and embracing the father; she is sitting in the vajraparyanka posture; in her lap is sambara who is white, his right hand brandishing a knife, his left, in an embracing position, offering to his mouth a blood-filled skull.  \ndeities of tibetan buddhism #88"@en .
+    
+    bdr:T590  a             :Topic ;
+        skos:altLabel       "go ldog lhan cig skyes ma/"@bo-x-ewts ;
+        skos:prefLabel      "go bzlog lhan cig skyes ma/"@bo-x-ewts , "sahaja reversed"@en ;
+        :isRoot             true ;
+        :note               bdr:NTABA2CE3C029764F3 .
+}

@@ -1,0 +1,59 @@
+@base          <bdg:T1513> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1513 {
+    bda:LG1F28337CF3105E98
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-04T10:13:24.064Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG37D425F8B6B6BA58
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-14T16:15:56.041Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG818CF6C3B663F7BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-10T15:58:48.773Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T1352 bstan rim"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGCB5F26FCAE353A33
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-10T15:49:55.401Z"^^xsd:dateTime ;
+        adm:logMessage      "Released T1513"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGE2E891A3015B83B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-10T15:51:37.27Z"^^xsd:dateTime ;
+        adm:logMessage      "created see also with lam rim"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T1513  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1513 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/T1513.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1513 ;
+        adm:logEntry        bda:LG1F28337CF3105E98 , bda:LG37D425F8B6B6BA58 , bda:LG818CF6C3B663F7BB , bda:LGCB5F26FCAE353A33 , bda:LGE2E891A3015B83B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1513  a            :Topic ;
+        skos:prefLabel      "bstan rim/"@bo-x-ewts ;
+        :isRoot             true .
+}

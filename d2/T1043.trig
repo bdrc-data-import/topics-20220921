@@ -1,0 +1,41 @@
+@base          <bdg:T1043> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1043 {
+    bda:LGD62F766D8529245C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T09:54:13.396Z"^^xsd:dateTime ;
+        adm:logMessage      "T1043 nd T1762 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T1043  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1043 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d2/T1043.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1043 ;
+        adm:logEntry        bda:LGD62F766D8529245C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7BB8E09FBFAD8E4B
+        a                   :Note ;
+        :noteText           "this topic is applied to the grouping of the 84 mahasiddhas in the sevetal forms"@en .
+    
+    bdr:T1043  a            :Topic ;
+        skos:altLabel       "grub thob chen po brgyad cu/"@bo-x-ewts ;
+        skos:prefLabel      "grub chen brgyad cu rtsa bzhi/"@bo-x-ewts , "84 mahasiddhas"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7BB8E09FBFAD8E4B .
+}

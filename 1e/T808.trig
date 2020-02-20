@@ -1,0 +1,42 @@
+@base          <bdg:T808> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T808 {
+    bda:LG385B303A4ECCC48C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T15:41:09.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in english & chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8201A9C5D15AA587
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:07:53.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T808  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T808 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1e/T808.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T808 ;
+        adm:logEntry        bda:LG385B303A4ECCC48C , bda:LG8201A9C5D15AA587 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T808  a             :Topic ;
+        rdfs:seeAlso        bdr:T235 ;
+        skos:prefLabel      "ris med/"@bo-x-ewts , "Rimey/nonsectarian"@en , "利美｜无偏见"@zh-hans ;
+        :isRoot             true .
+}

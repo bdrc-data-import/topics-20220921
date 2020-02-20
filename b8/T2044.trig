@@ -1,0 +1,40 @@
+@base          <bdg:T2044> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2044 {
+    bda:LGF01A6280F9E40A59
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:15:59.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T2044  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2044 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b8/T2044.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2044 ;
+        adm:logEntry        bda:LGF01A6280F9E40A59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT772D2201D0DC09F9
+        a                   :Note ;
+        :noteText           "this key word is applied to forms of hayagriva not relegated to special forms or functions\naccording to the rnying ma tradition as seen in the rin chen gter mdzod: the following cycles of hayagriva practice are seen:\n1) rta mgrin bde gshegs thugs dril (bka' ma form; this cycle comes from karma pa rang byung rdo rje)\n2) rta mgrin yang gsang khros pa lha dgu (representing the fusion of the terma of rkyang po grags pa dbang phyug, sum pa byang chub tshul khrims and 'bre shes rab 'bar; with the teachings of 'dar 'phyar rin chen bzang po)\n3) rta mgrin gsang sgrub (received by skyer sgang chos kyi seng+ge from padmasambhava in a vision and the gter ma of snye mo sangs rgyas dbang chen)\n4) rta mgrin bde gshegs chig dril (mnga' bdag nyang ral nyi ma'i 'od zer)\n5) rta mgrin dregs pa kun sgrol (gru gu yang dbang; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n6) rta mgrin yang lcags me 'khor (mnga' bdag mon mi 'khyil; restored by ''jam dbyangs mkhyen brtse'i dbang po)\n7) rten 'brel chos bdun gyi rta mgrin dregs pa dbang sdud (byang gter)\n8) rta mgrin gsang ba 'dus pa (ratna gling pa)\n9) rta mgrin snying po don sbyor (nyang po mchog ldan rdo rje alias las rab zhing po gling pa; restored by stag sham nus ldan rdo rje)\n10) grol tig dbang chen dregs pa kun 'dul ('phreng po gter chen shes rab 'od zer)\n11) rta phag yid bzhin nor bu ('ja' mtshon snying po)\n12) rta mgrin bar chad kun sel (gnam chos mi 'gyur rdo rje)\n13) yid dam dgongs 'dus rta mchog rol pa (stag sham nus ldan rdo rje)\n14) rta mchog rol pa'i snying tig ('jam dbyangs mkhyen brtse'i dbang po'i snyan brgyud)\n15) zab don dbang zab rta mgrin yang phyungdmar po (mchog gyur gling pa)"@en .
+    
+    bdr:T2044  a            :Topic ;
+        skos:prefLabel      "rta mgrin/"@bo-x-ewts , "hayagrīva"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT772D2201D0DC09F9 .
+}

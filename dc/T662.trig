@@ -1,0 +1,46 @@
+@base          <bdg:T662> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T662 {
+    bda:LG3E683E59F6200451
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T11:32:38.794Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA93DA332DB331066
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T13:51:54.883Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T662  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T662 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dc/T662.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T662 ;
+        adm:logEntry        bda:LG3E683E59F6200451 , bda:LGA93DA332DB331066 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF3E2592C750010E5
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals for hayagriva in the form with the garuda wings; this hayagriva was transmitted by atisa; he has three heads, six arms, the body and central head is red, the right face is white and the left face is black; above the three heads are three green horses' heads; his mouths roar a hundred thousand thunders; his first right hand holds a five-pointed vajra; his second a golden noose; his third a club; the first left holds a human skull (dung chen, lit. a large trumpet filled with blood and the second a sword); the last is flaming, sending out ten million emanated garudas from each outspread finger--white ones from the thumb, blue from the forefinger; yellow from the middle finger; red from the ring finger; and green from the little finger; he has six legs, treading on eight nagas; his right and left vajra wings send out emanated garudas; with a tiger skin loincloth, a fresh elephant hide; a crown of dry skulls, a long necklace (se ral kha) of fresh skulls, and white and black snakes adorning his limbs ; he abides amid a blazing mass of fire; cf. deities of tibetan buddhism, #164"@en .
+    
+    bdr:T662  a             :Topic ;
+        skos:prefLabel      "rta mgrin khyung gshog can jo bo'i lugs/"@bo-x-ewts , "garuda-winged hayagriva in the tradition of atisa"@en , "hayagriva garudapaksavat"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF3E2592C750010E5 .
+}

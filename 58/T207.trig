@@ -1,0 +1,40 @@
+@base          <bdg:T207> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T207 {
+    bda:LG135ECAADB049582D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T07:17:37.805Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T207  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T207 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "58/T207.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T207 ;
+        adm:logEntry        bda:LG135ECAADB049582D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT07BE63BB75D25227
+        a                   :Note ;
+        :noteText           "this topic is applied to works concerned with classic tibetan letter writing"@en .
+    
+    bdr:T207  a             :Topic ;
+        skos:prefLabel      "yig bskur/"@bo-x-ewts , "letter writing"@en ;
+        :isRoot             true ;
+        :note               bdr:NT07BE63BB75D25227 .
+}

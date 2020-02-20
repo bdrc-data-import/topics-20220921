@@ -1,0 +1,40 @@
+@base          <bdg:T1793> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1793 {
+    bda:LGB3C718A2BA3CA0D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-14T07:50:26.39Z"^^xsd:dateTime ;
+        adm:logMessage      "note and indic name added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1793  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1793 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3b/T1793.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1793 ;
+        adm:logEntry        bda:LGB3C718A2BA3CA0D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE78A1183F5B878DC
+        a                   :Note ;
+        :noteText           "hindu almanac; the five are days of the week; lunar days; lunar mansions; yoga (sbyor ba); karana (byed pa)"@en .
+    
+    bdr:T1793  a            :Topic ;
+        skos:prefLabel      "lnga bsdus/"@bo-x-ewts , "pancanga"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE78A1183F5B878DC .
+}

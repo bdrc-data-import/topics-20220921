@@ -1,0 +1,56 @@
+@base          <bdg:T525> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T525 {
+    bda:LG51BF3EB5A2D20DE1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:36.147Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG51F8A744C7693838
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T13:14:27.036Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD00A01DA5F4578A0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-02T16:07:07.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad and chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T525  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T525 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "86/T525.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T525 ;
+        adm:logEntry        bda:LG51BF3EB5A2D20DE1 , bda:LG51F8A744C7693838 , bda:LGD00A01DA5F4578A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT17AB6E018ABB9316
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for avalokita, white as the autumn moon, with eleven faces; the principle face is white, the right gree, and the left red; the three above these are red, white and green\n\n\ndeities of tibetan buddhism #104"@en .
+    
+    bdr:NT27EA39DB701DE821
+        a                   :Note ;
+        :noteText           "a form of mahakarunika received in a vision by the nun dpal mo that is the basis for the smyung gnas tradition"@en .
+    
+    bdr:T525  a             :Topic ;
+        skos:altLabel       "spyan ras gzigs bcu gcig zhal dpal mo lugs/"@bo-x-ewts , "spyan ras gzigs dpal mo lugs/"@bo-x-ewts , "thugs rje chen po bcu gcig zhal dpal mo lugs/"@bo-x-ewts , "thugs rje chen po rgyal po lugs/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po bcu gcig zhal/"@bo-x-ewts , "eleven faced avalokita in the tradition of the nun laksmi"@en , "avalokitesvara ekadasamuka"@sa-alalc97 , "十一面观世音"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT17AB6E018ABB9316 , bdr:NT27EA39DB701DE821 .
+}

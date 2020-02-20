@@ -1,0 +1,47 @@
+@base          <bdg:T581> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T581 {
+    bda:LG49FB337F222DD961
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T13:04:36.296Z"^^xsd:dateTime ;
+        adm:logMessage      "added application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG727FF99C7887F047
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T17:01:06.886Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T581  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T581 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5b/T581.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T581 ;
+        adm:logEntry        bda:LG49FB337F222DD961 , bda:LG727FF99C7887F047 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT828D5B1DE8000932
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas a similar works concerned with the deity the red yamari in union with his consort, vajra vetali (rdo rje ro langs ma); the deity is red; his right hand brandishes a white vajra club; his left holds a skull filled with blood; he embraces his consort.\n\nhe is crowned with vajrasattva.\n\nhis consort similar to himself is vajravetali (rdo rje ro langs ma) with a garland of dry skulls embraces him; she is destroying all the mara and yama.\n\n\n\n\ndeities of tibetan buddhism, #74"@en .
+    
+    bdr:T581  a             :Topic ;
+        skos:altLabel       "gshed dmar lhan skyes/"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje gshed dmar lhan skyes/"@bo-x-ewts , "yamari sahaja (rakta)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT828D5B1DE8000932 .
+}

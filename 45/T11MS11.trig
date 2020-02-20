@@ -1,0 +1,52 @@
+@base          <bdg:T11MS11> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS11 {
+    bda:LG751CB176D3169ED6
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:32.144Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en .
+    
+    bda:LGB787273715C9B177
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:32.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFEFDBC6484AA8844
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:48.583Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T11MS11  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS11 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "45/T11MS11.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS11 ;
+        adm:logEntry        bda:LG751CB176D3169ED6 , bda:LGB787273715C9B177 , bda:LGFEFDBC6484AA8844 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD18AF9246B619323
+        a                   :Note ;
+        :noteText           "This topic is applied generally to instructions, and is used in particular for the transmission of instructions."@en .
+    
+    bdr:T11MS11  a          :Topic ;
+        rdfs:seeAlso        bdr:T00JR398 , bdr:T00KG02748 , bdr:T1112 , bdr:T11MS10 , bdr:T11MS42 , bdr:T200 , bdr:T2366 , bdr:T395 ;
+        skos:prefLabel      "khrid/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD18AF9246B619323 .
+}

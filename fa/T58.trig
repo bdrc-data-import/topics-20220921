@@ -1,0 +1,59 @@
+@base          <bdg:T58> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T58 {
+    bda:LG061A5D334F43C0D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:49.879Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8960975908AB84EA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T14:39:22.976Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGCE033FBB6703A9D5
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-10T15:51:41.799Z"^^xsd:dateTime ;
+        adm:logMessage      "need research for some T#s in similar meaning"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGDDA9043189A3AFA3
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-27T14:41:42.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T58  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T58 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fa/T58.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T58 ;
+        adm:logEntry        bda:LG061A5D334F43C0D7 , bda:LG8960975908AB84EA , bda:LGCE033FBB6703A9D5 , bda:LGDDA9043189A3AFA3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7E77DA7B1178738D
+        a                   :Note ;
+        :noteText           "this keyword is applied generically to oral instructions and written advices given on various occasions to students by accomplished teachers"@en .
+    
+    bdr:T58  a              :Topic ;
+        rdfs:seeAlso        bdr:T613 ;
+        skos:altLabel       "bslab bya/"@bo-x-ewts ;
+        skos:prefLabel      "zhal gdams/"@bo-x-ewts , "instruction"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7E77DA7B1178738D .
+}

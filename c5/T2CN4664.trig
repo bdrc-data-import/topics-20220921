@@ -1,0 +1,58 @@
+@base          <bdg:T2CN4664> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4664 {
+    bda:LG23475333A4DF8026
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-13T12:05:59.364Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG4937D8964FAB4A9B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T15:11:29.105Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG52285EEC283A0A74
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:03:08.512Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG7BB6D1CFDB028D87
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T16:03:34.598Z"^^xsd:dateTime ;
+        adm:logMessage      "update labguage settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4664  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4664 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/T2CN4664.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4664 ;
+        adm:logEntry        bda:LG23475333A4DF8026 , bda:LG4937D8964FAB4A9B , bda:LG52285EEC283A0A74 , bda:LG7BB6D1CFDB028D87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT71A3EAF28D7403B4
+        a                   :Note ;
+        :noteText           "ཕྱག་ཆེན་དང་རྫོགས་ཆེན། དབུ་མ་གསུམ་གྱི་བསྡུས་མིང་།"@bo .
+    
+    bdr:T2CN4664  a         :Topic ;
+        skos:prefLabel      "phyag rdzogs dbu gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT71A3EAF28D7403B4 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T1PD106856> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106856 {
+    bda:LGF2088D51114DA2F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:29:05.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF9B6C0D9F3BE4F43
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T12:10:20.401Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106856  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106856 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fc/T1PD106856.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106856 ;
+        adm:logEntry        bda:LGF2088D51114DA2F9 , bda:LGF9B6C0D9F3BE4F43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1PD106856  a       :Topic ;
+        skos:prefLabel      "dmar bshal/"@bo-x-ewts , "dysentery"@en ;
+        :isRoot             true .
+}

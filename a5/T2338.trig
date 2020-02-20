@@ -1,0 +1,40 @@
+@base          <bdg:T2338> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2338 {
+    bda:LGCEA1F8959C230EF0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T18:07:01.666Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2338  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2338 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a5/T2338.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2338 ;
+        adm:logEntry        bda:LGCEA1F8959C230EF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5285CE3F94B09464
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon this karma mahakala who is dark blue, his right hand brandishing a knife and his left holding a skull full of heart's blood; he is corpulent, dwarfish and of great splendor, wth the garb of a raksasa, wearing high boots of shagreen on his feet; he abides in pratyalidha (right leg bent), trampling the corpse of a hindering enemy, wearing white and green sleeveless vests (sha 'gag) and a nine layer flowing cloak of black silkl he is adorned with snakes and human heads amid a blazing mass of fire\n\ndeities of tibetan buddhism #374"@en .
+    
+    bdr:T2338  a            :Topic ;
+        skos:prefLabel      "mgon po ber nag zangs gri can/"@bo-x-ewts , "black-cloaked mahakala with copper knife"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5285CE3F94B09464 .
+}

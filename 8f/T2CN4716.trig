@@ -1,0 +1,64 @@
+@base          <bdg:T2CN4716> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4716 {
+    bda:LG29C3C724794E1001
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-20T11:49:45.536Z"^^xsd:dateTime ;
+        adm:logMessage      "created and added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG396D5C848AA697E1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-23T10:12:16.672Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG3F2C8BE21D3BFA7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-25T10:25:36.395Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGB6B99FD6C24A9E8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T11:43:25.827Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE0AA3E232302FDEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:22:42.328Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4716  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4716 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8f/T2CN4716.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4716 ;
+        adm:logEntry        bda:LG29C3C724794E1001 , bda:LG396D5C848AA697E1 , bda:LG3F2C8BE21D3BFA7C , bda:LGB6B99FD6C24A9E8E , bda:LGE0AA3E232302FDEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT404EC1F6164DFAAC
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.5, p.424 གསང་བའི་བདག་པོ་ནས་ལྷོ་བྲག་གྲུབ་ཆེན་ལས་ཀྱི་རྡོ་རྗེ་དང་། དེ་རྗེས་འཇམ་མགོན་ཙོང་ཁ་པ་སོགས་རིམ་པར་སྙན་ནས་སྙན་དུ་བརྒྱུད་པའི་གདམས་སྐོར་ཞིག"@bo .
+    
+    bdr:T2CN4716  a         :Topic ;
+        skos:prefLabel      "gsang bdag snyan brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT404EC1F6164DFAAC .
+}

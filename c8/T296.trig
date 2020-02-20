@@ -1,0 +1,41 @@
+@base          <bdg:T296> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T296 {
+    bda:LGF88ADFC37E150A34
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T13:54:25.864Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2317"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T296  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T296 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c8/T296.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T296 ;
+        adm:logEntry        bda:LGF88ADFC37E150A34 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2317 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT0351E6EEBBEE1707
+        a                   :Note ;
+        :noteText           "this topic has been withdrawn in favor of the use of the geographical subject G2317"@en .
+    
+    bdr:T296  a             :Topic ;
+        skos:prefLabel      "mtsho lho khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0351E6EEBBEE1707 .
+}

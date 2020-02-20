@@ -1,0 +1,58 @@
+@base          <bdg:T2MS5993> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS5993 {
+    bda:LG2E0BF9EBD89EF59F
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-15T14:40:35.905Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6089C3FA51029ECD
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-15T14:42:24.525Z"^^xsd:dateTime ;
+        adm:logMessage      "checked annotation"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8D904180ABEC6AB1
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-15T14:47:11.45Z"^^xsd:dateTime ;
+        adm:logMessage      "changed contents to nore"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFAA7E8D624655E6B
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-15T14:38:23.311Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS5993  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS5993 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6c/T2MS5993.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS5993 ;
+        adm:logEntry        bda:LG2E0BF9EBD89EF59F , bda:LG6089C3FA51029ECD , bda:LG8D904180ABEC6AB1 , bda:LGFAA7E8D624655E6B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C872425D9965457
+        a                   :Note ;
+        :noteText           "the five treatises of maitreya are (1) mngon rtogs rgyan (abhisamayalamkara), (2) mdo sde'i rgyan (mahayanasutralamkara), (3) rgyud bla ma (uttaratantra), (4) chos dang chos nyid rnam 'byed (dharmadharmatavibhaga); (5) dbus mtha' rnam 'byed (madhyantavibhaga)"@en .
+    
+    bdr:T2MS5993  a         :Topic ;
+        skos:prefLabel      "byams chos sde lnga /"@bo-x-ewts , "five treatises of maitreya"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6C872425D9965457 .
+}

@@ -1,0 +1,64 @@
+@base          <bdg:T1GS138984> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS138984 {
+    bda:LG51E034BDA15B7A23
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:11:46.215Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG59B8F5B3D7CAB132
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T12:10:30.975Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6BF0B9061AA24407
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-01-20T15:18:16.238Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6CD6BAB5D364F2FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:12:46.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD024C9E80720A9E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-23T13:01:23.504Z"^^xsd:dateTime ;
+        adm:logMessage      "re-publishing"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS138984  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS138984 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a3/T1GS138984.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS138984 ;
+        adm:logEntry        bda:LG51E034BDA15B7A23 , bda:LG59B8F5B3D7CAB132 , bda:LG6BF0B9061AA24407 , bda:LG6CD6BAB5D364F2FD , bda:LGD024C9E80720A9E3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT371B9A65D758001A
+        a                   :Note ;
+        :noteText           "system of lam 'bras practice prevalent in the tshar pa tradition of the sa skya"@en .
+    
+    bdr:T1GS138984  a       :Topic ;
+        rdfs:seeAlso        bdr:T1543 , bdr:T1PD110728 , bdr:T2MS22522 , bdr:T617 ;
+        skos:prefLabel      "lam 'bras slob bshad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT371B9A65D758001A .
+}

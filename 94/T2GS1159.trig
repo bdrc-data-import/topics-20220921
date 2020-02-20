@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1159> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1159 {
+    bda:LGEB972F593B134B03
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T14:44:27.273Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1159  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1159 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "94/T2GS1159.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1159 ;
+        adm:logEntry        bda:LGEB972F593B134B03 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4298239043DEC3AF
+        a                   :Note ;
+        :noteText           "this deity topic applies to rituals and initiations for an uncommon form maitreya practice; the deity is golden, complete with all the marks and signs; his right hand at his heart is explaining the dharma; his left in the meditation position holds the root of a naga tree branch, whose flower opens beside his ear and has a water pot on it; the surface of his topknot of tresses is adorned with a caitya; he has a deerskin covering his left breast and a sacred thread and sits in vajraparyanka, wearing silks and jewel ornaments;  \ndeities of tibetan buddhism  #192"@en .
+    
+    bdr:T2GS1159  a         :Topic ;
+        skos:prefLabel      "rje btsun byams pa ni ri ti pa'i lugs/"@bo-x-ewts , "venerable maitreya in the tradition of nirrtipada"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4298239043DEC3AF .
+}

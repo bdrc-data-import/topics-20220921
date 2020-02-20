@@ -1,0 +1,48 @@
+@base          <bdg:T175> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T175 {
+    bda:LG6548181CA9F282FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-09T11:55:27.455Z"^^xsd:dateTime ;
+        adm:logMessage      "linked to byang chog"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6DDAAE7EB02D3AEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T14:55:34.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC5534000B9F20FEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T16:30:33.067Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T1683"@en .
+    
+    bda:T175  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T175 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "80/T175.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T175 ;
+        adm:logEntry        bda:LG6548181CA9F282FF , bda:LG6DDAAE7EB02D3AEC , bda:LGC5534000B9F20FEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T175  a             :Topic ;
+        rdfs:seeAlso        bdr:T1683 ;
+        skos:altLabel       "sbyangs chog"@bo-x-ewts ;
+        skos:prefLabel      "sbyang chog"@bo-x-ewts , "purification ritual"@en ;
+        :isRoot             true .
+}

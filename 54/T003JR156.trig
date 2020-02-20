@@ -1,0 +1,52 @@
+@base          <bdg:T003JR156> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR156 {
+    bda:LG6EE64A33149DE280
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T11:52:18.81Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T2GS1184 (dpal mgon zhal bzhi pa dmar po dbang sdud)"@en .
+    
+    bda:LGB2369C671E0843B8
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-30T12:10:11Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDAF5C0DFBDC3EBA9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-19T15:41:53.005Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T003JR156  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR156 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "54/T003JR156.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR156 ;
+        adm:logEntry        bda:LG6EE64A33149DE280 , bda:LGB2369C671E0843B8 , bda:LGDAF5C0DFBDC3EBA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0EE433EB079C5622
+        a                   :Note ;
+        :noteText           "under this topic are classed rituals the purpose of which is to bring under one's power; it is sometimes translated as magnetize"@en .
+    
+    bdr:T003JR156  a        :Topic ;
+        rdfs:seeAlso        bdr:T2GS1184 ;
+        skos:prefLabel      "dbang sdud/"@bo-x-ewts , "bringing under one's power or control"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0EE433EB079C5622 .
+}

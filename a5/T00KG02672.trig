@@ -1,0 +1,53 @@
+@base          <bdg:T00KG02672> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02672 {
+    bda:LG7C4AE4AC02654FDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T10:47:45.248Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGAFB12BD7BA6013CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-12T14:16:33.306Z"^^xsd:dateTime ;
+        adm:logMessage      "created a topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGEAD728A2855ACFF3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T19:46:06.285Z"^^xsd:dateTime ;
+        adm:logMessage      "topic application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T00KG02672  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02672 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/T00KG02672.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02672 ;
+        adm:logEntry        bda:LG7C4AE4AC02654FDE , bda:LGAFB12BD7BA6013CD , bda:LGEAD728A2855ACFF3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT721839A78901A4D1
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals for the propitiation of the deity who has one facce, two arms, and three angry eyes like sparks; he wears a flowing cloak of black silk with a gold pattern, a serpent belt and boots of shagreen; a scored magic stick is thrust into his waist; his right hand holds a black trident ensign with four fresh heads attached; his left holds the blood-dripping heart of an enemy with two black, poisonous snakes sucking at it; he sits in a lalita posture in front of him is the razor goddess (lha mo spu gri ma = ksura-devi), ash white, with flames coming from her mouth; her two upraised hands each hold a mass of fire; she is naked, without ornaments, and with loose hair; she abides in a crouching posture, gazing at the principal, bran bdud.  deities of tibetan buddhism #409\n\ndeviant: ksura-devi shown black and with ornaments"@en .
+    
+    bdr:T00KG02672  a       :Topic ;
+        skos:altLabel       "bran bdud/"@bo-x-ewts , "las mgon bran bdud/"@bo-x-ewts , "las mkhan bran bdud gshin rje nag po/"@bo-x-ewts ;
+        skos:prefLabel      "bran bdud gshin rje nag po/"@bo-x-ewts , "black servant-demon yama"@en ;
+        :isRoot             true ;
+        :note               bdr:NT721839A78901A4D1 .
+}

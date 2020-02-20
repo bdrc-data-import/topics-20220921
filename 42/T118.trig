@@ -1,0 +1,46 @@
+@base          <bdg:T118> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T118 {
+    bda:LG81402BCE33CAD75A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T10:45:47.976Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE4CF78847591DF3C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T12:11:10.348Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T118  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T118 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "42/T118.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T118 ;
+        adm:logEntry        bda:LG81402BCE33CAD75A , bda:LGE4CF78847591DF3C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT089F271C6DD5D625
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals which focus upon the king vaisravana, red, radiant, peaceful, smiling, amorous and corpulent; with both hands, he is blowing a white conch coiled to the right, filling the thrice-thousandfold world system with the fame of the practitioners; he is adorned with silks and all the jewel ornaments; his eight yaksa and eight yaksi attendants are all likewise blowing white conches and have the appearance of subjugating the three realms.\n\ndeities of tibetan buddhism #304-306"@en .
+    
+    bdr:T118  a             :Topic ;
+        skos:prefLabel      "rnam sras gsung mchog lus ngan po/"@bo-x-ewts , "kubera supreme speech vaisravana"@en , "vaisravana kubera svarottama"@sa-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT089F271C6DD5D625 .
+}

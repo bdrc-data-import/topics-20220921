@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1205> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1205 {
+    bda:LG00A52C6E94905641
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T10:42:20.719Z"^^xsd:dateTime ;
+        adm:logMessage      "created with note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1205  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1205 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9c/T2GS1205.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1205 ;
+        adm:logEntry        bda:LG00A52C6E94905641 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCEBA0D6FD206791C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 18th of the 21 tara collection according to the tradition of suryagupta; this form of tara is white with four arms, the first pair joined on the crown of her head hold hooks; the other two boon granting and holding a utpala marked with a book; she is in sattvaparyanka; she is crowned with the master of her family amitabha; she is seated on a white lotus, a moon and a goose\n\ndeities of tibetan buddhism #296."@en .
+    
+    bdr:T2GS1205  a         :Topic ;
+        skos:altLabel       "rab tu rgyal ma'i sgrol ma/"@bo-x-ewts , "rab tu rgyas pa'i sgrol ma/"@bo-x-ewts , "sgrol ma rab rgyal ma/"@bo-x-ewts , "tara the victorious"@en ;
+        skos:prefLabel      "sgrol ma rab rgyas ma/"@bo-x-ewts , "tara of increase"@en , "prapustitara"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTCEBA0D6FD206791C .
+}

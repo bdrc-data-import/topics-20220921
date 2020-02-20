@@ -1,0 +1,47 @@
+@base          <bdg:T256> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T256 {
+    bda:LGAFC309C6F7BCB9FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-16T14:47:40.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGBFCE49A8C30775A3
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T17:03:13.773Z"^^xsd:dateTime ;
+        adm:logMessage      "added performing arts"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T256  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T256 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ed/T256.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T256 ;
+        adm:logEntry        bda:LGAFC309C6F7BCB9FA , bda:LGBFCE49A8C30775A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5C80E5AB85D4A503
+        a                   :Note ;
+        :noteText           "here are classed plays or dramas, both classical and modern"@en .
+    
+    bdr:T256  a             :Topic ;
+        skos:altLabel       "performing arts"@en ;
+        skos:prefLabel      "zlos gar/"@bo-x-ewts , "drama"@en , "nataka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5C80E5AB85D4A503 .
+}

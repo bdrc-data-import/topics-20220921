@@ -1,0 +1,46 @@
+@base          <bdg:T4JW5424> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4JW5424 {
+    bda:LG3E65C32936D769A6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T12:47:21.004Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T10MS12837 (dgongs 'grel)"@en .
+    
+    bda:LGCC4525BA358EE91C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:27:48.475Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T132 ('grel pa)"@en .
+    
+    bda:LGD59341C1524FCEAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T15:50:29.461Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T4JW5424  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4JW5424 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0e/T4JW5424.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4JW5424 ;
+        adm:logEntry        bda:LG3E65C32936D769A6 , bda:LGCC4525BA358EE91C , bda:LGD59341C1524FCEAA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T4JW5424  a         :Topic ;
+        rdfs:seeAlso        bdr:T10MS12837 , bdr:T132 ;
+        skos:prefLabel      "rang 'grel/"@bo-x-ewts , "autocommentary"@en ;
+        :isRoot             true .
+}

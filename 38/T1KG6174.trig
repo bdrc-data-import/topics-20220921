@@ -1,0 +1,60 @@
+@base          <bdg:T1KG6174> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG6174 {
+    bda:LG0DD0DC8AEB49F2D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:56:48.94Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG1FB83BB761ACACC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-02T11:22:06.806Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBFC27A05CE612BD8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-09T15:03:08.501Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC3C3329F258C1F45
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-14T10:14:05.143Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGFEB2D2D86CAC6422
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-08T15:53:46.554Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1KG6174  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG6174 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "38/T1KG6174.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG6174 ;
+        adm:logEntry        bda:LG0DD0DC8AEB49F2D1 , bda:LG1FB83BB761ACACC4 , bda:LGBFC27A05CE612BD8 , bda:LGC3C3329F258C1F45 , bda:LGFEB2D2D86CAC6422 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG6174  a         :Topic ;
+        skos:altLabel       "dus rabs bar pa/"@bo-x-ewts ;
+        skos:prefLabel      "dus rabs bar ma/"@bo-x-ewts , "medieval period"@en ;
+        :isRoot             true .
+}

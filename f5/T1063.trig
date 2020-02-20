@@ -1,0 +1,41 @@
+@base          <bdg:T1063> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1063 {
+    bda:LGACCEE52874934DF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T14:38:52.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1063  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1063 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f5/T1063.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1063 ;
+        adm:logEntry        bda:LGACCEE52874934DF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT231D7352244540CE
+        a                   :Note ;
+        :noteText           "based on the new translation of the abhidhanottara of taranatha"@en .
+    
+    bdr:T1063  a            :Topic ;
+        skos:altLabel       "'jam pa'i rdo rje/"@bo-x-ewts , "bde mchog 'jam pa'i rdo rje ngag gi dbang phyug he ru ka lha 25"@bo-x-ewts ;
+        skos:prefLabel      "'khor lo bde mchog 'jam pa'i rdo rje/"@bo-x-ewts , "manjusrivajra"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT231D7352244540CE .
+}

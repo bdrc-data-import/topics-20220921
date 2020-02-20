@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1099> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1099 {
+    bda:LG667FDD885D2489E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-05T14:23:22.805Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1462 and T2GS1099"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG75A51AEB220E5552
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-11T13:10:49.651Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1099  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1099 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f4/T2GS1099.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1099 ;
+        adm:logEntry        bda:LG667FDD885D2489E9 , bda:LG75A51AEB220E5552 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6F14EC56FA7CED1C
+        a                   :Note ;
+        :noteText           "generic topic used for scrolls containing teachings"@en .
+    
+    bdr:T2GS1099  a         :Topic ;
+        rdfs:seeAlso        bdr:T1462 ;
+        skos:prefLabel      "shog dril/"@bo-x-ewts , "instructional scroll"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6F14EC56FA7CED1C .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T689> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T689 {
+    bda:LGFDCA571DF3472D6D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T15:45:17.47Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t2gs1157"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T689  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T689 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7d/T689.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T689 ;
+        adm:logEntry        bda:LGFDCA571DF3472D6D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2GS1157 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTE5D6BD9392DAEFC5
+        a                   :Note ;
+        :noteText           "withdrawn in favor of t2gs1157"@en .
+    
+    bdr:T689  a             :Topic ;
+        skos:prefLabel      "thugs rje chen po yi ge phyed dang bzhi pa/"@bo-x-ewts , "avalokitesvara ardhacaturthaksara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE5D6BD9392DAEFC5 .
+}

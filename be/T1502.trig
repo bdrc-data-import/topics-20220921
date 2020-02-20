@@ -1,0 +1,46 @@
+@base          <bdg:T1502> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1502 {
+    bda:LG5D3A1F978B3739BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T20:07:41.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1502  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1502 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "be/T1502.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1502 ;
+        adm:logEntry        bda:LG5D3A1F978B3739BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6774F2D7283AF8E4
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 233" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus citing the dung dkar tshig mdzod 834-21, the chos kyi phyag rgya gsum are: 1) 'du byed kyi thams cad mi rtag pa; 2) chos thams cad bdag med pa: 3) mya ngan las 'das pa ni zhi ba."@en .
+    
+    bdr:NTBB1486907B13B800
+        a                   :Note ;
+        :noteText           "this topic is applied to works dealing with the concept of chos kyi phyag rgya"@en .
+    
+    bdr:T1502  a            :Topic ;
+        skos:prefLabel      "bdag med chos kyi phyag rgya/"@bo-x-ewts , "anatmamudra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT6774F2D7283AF8E4 , bdr:NTBB1486907B13B800 .
+}

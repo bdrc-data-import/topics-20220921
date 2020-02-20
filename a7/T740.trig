@@ -1,0 +1,46 @@
+@base          <bdg:T740> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T740 {
+    bda:LG2AEB1396DDD2FF8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T14:59:31.112Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF0CB96DD3EB56FFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T01:27:29.731Z"^^xsd:dateTime ;
+        adm:logMessage      "sakyaraksita note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T740  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T740 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a7/T740.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T740 ;
+        adm:logEntry        bda:LG2AEB1396DDD2FF8E , bda:LGF0CB96DD3EB56FFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEA652E778DC6E092
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon dhvajagrakeyura (banner-tip-armlet) vajravetali (rdo rje ro langs ma), a fierce, dark blue female with four blue faces and eight arms, the right holding a sword, a wooden pestle, a wheel, and an arrow; and the left, a trident, a noose, a bow, and a threatening forefinger; she has four legs, trampling the four maras; with a crown of aksobhya, she is complete with the attributes, ornaments, and clothing of a wrathful female deity.\n\ndeities of tibetan buddhism #268.\n\nshe is is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava\n\n\nvariant: three faces and four arms."@en .
+    
+    bdr:T740  a             :Topic ;
+        skos:prefLabel      "rgyal mtshan rtse mo'i dpung rgyan/"@bo-x-ewts , "banner tip armlet"@en , "dhvajagrakeyura"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTEA652E778DC6E092 .
+}

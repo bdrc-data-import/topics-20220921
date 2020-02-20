@@ -1,0 +1,40 @@
+@base          <bdg:T228> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T228 {
+    bda:LGE98568369E96EB94
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T12:04:35.89Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T228  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T228 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "16/T228.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T228 ;
+        adm:logEntry        bda:LGE98568369E96EB94 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA7489533E13483CA
+        a                   :Note ;
+        :noteText           "this topic is applied to works on linguistics, both theoretical and studies of particular languages like tibetan; for specific languages the main topic is the language"@en .
+    
+    bdr:T228  a             :Topic ;
+        skos:prefLabel      "skad brda rig pa/"@bo-x-ewts , "linguistics"@en ;
+        :isRoot             true ;
+        :note               bdr:NTA7489533E13483CA .
+}

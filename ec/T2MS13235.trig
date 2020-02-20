@@ -1,0 +1,58 @@
+@base          <bdg:T2MS13235> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13235 {
+    bda:LG11F084EC59148482
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T18:47:39.642Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG47ECE31B7E09549E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T16:42:29.637Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA3EEC856F9FEAD9F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T11:27:20.139Z"^^xsd:dateTime ;
+        adm:logMessage      "Click error"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGDD992D8E70FDFDEA
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T09:13:15.784Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavour of T1542"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2MS13235  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13235 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ec/T2MS13235.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13235 ;
+        adm:logEntry        bda:LG11F084EC59148482 , bda:LG47ECE31B7E09549E , bda:LGA3EEC856F9FEAD9F , bda:LGDD992D8E70FDFDEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT835457084BE109F4
+        a                   :Note ;
+        :noteText           "this topic is applied to the specific threefold vajra contemplative practice from the lineage of o rgyan rin chen dpal"@en .
+    
+    bdr:T2MS13235  a        :Topic ;
+        skos:prefLabel      "rdo rje gsum gyi bsnyen sgrub/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT835457084BE109F4 .
+}

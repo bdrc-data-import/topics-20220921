@@ -1,0 +1,35 @@
+@base          <bdg:T1KG22573> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG22573 {
+    bda:LG38C8359D055BE7B3
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-05-23T10:12:59.849Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG22573  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG22573 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "59/T1KG22573.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG22573 ;
+        adm:logEntry        bda:LG38C8359D055BE7B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG22573  a        :Topic ;
+        skos:prefLabel      "tshe srog tshan rig"@bo-x-ewts , "life sciences"@en , "生命科学"@zh-hans ;
+        :isRoot             true .
+}

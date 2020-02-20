@@ -1,0 +1,64 @@
+@base          <bdg:T00UNK196> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00UNK196 {
+    bda:LG15524B89F12245DD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T16:11:25.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative spelling and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG526636EA60FBC883
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T14:15:50.739Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG79BEBF7E54386D42
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-10T14:40:13.341Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8412213D475C9E23
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-15T11:11:37.215Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGFE869D2E6931158F
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-15T14:39:30.319Z"^^xsd:dateTime ;
+        adm:logMessage      "variant name added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T00UNK196  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00UNK196 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e5/T00UNK196.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00UNK196 ;
+        adm:logEntry        bda:LG15524B89F12245DD , bda:LG526636EA60FBC883 , bda:LG79BEBF7E54386D42 , bda:LG8412213D475C9E23 , bda:LGFE869D2E6931158F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8ED5C49E5F0525D0
+        a                   :Note ;
+        :noteText           "set of sutras on the definitive meaning"@en .
+    
+    bdr:T00UNK196  a        :Topic ;
+        skos:prefLabel      "nges don gyi mdo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8ED5C49E5F0525D0 .
+}

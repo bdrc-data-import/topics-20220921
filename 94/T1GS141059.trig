@@ -1,0 +1,40 @@
+@base          <bdg:T1GS141059> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS141059 {
+    bda:LGF573341F9AA2AAF7
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-07T16:24:18.693Z"^^xsd:dateTime ;
+        adm:logMessage      "completed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS141059  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS141059 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "94/T1GS141059.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS141059 ;
+        adm:logEntry        bda:LGF573341F9AA2AAF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8A5DC01BDC8862EC
+        a                   :Note ;
+        :noteText           "protector deity of the dge lugs pa tradition"@en .
+    
+    bdr:T1GS141059  a       :Topic ;
+        skos:prefLabel      "mgon po legs ldan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8A5DC01BDC8862EC .
+}

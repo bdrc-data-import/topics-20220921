@@ -1,0 +1,41 @@
+@base          <bdg:T502> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T502 {
+    bda:LGA7BFAD699EAA6BE6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-25T05:50:06.885Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T502  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T502 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2e/T502.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T502 ;
+        adm:logEntry        bda:LGA7BFAD699EAA6BE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF5024F1CFF77D994
+        a                   :Note ;
+        :noteText           "this term is applied to rituals of the rnying ma tradition for the propitiation of a form of rahula, the enemy of the planets; \n\"fiercely wrathful, black in colour, with nine heads, each face has three large eyes and a gaping mouth with exposed fangs; the right faces are green, left red and the central black; the top central face is white; on the stomach is the large face of the original rahula who devoured the nine celestial planets; the body is covered with numerous eyes; in the first pair of hands are a drawn bow and arrow; the second right holds aloft a makara stick and the left a snake lasso; adorned with crowns of five skulls and gold earrings he wears a green scarf and various coloured lower garments; the lower body is that of a coiled naga serpent, dark blue in colour, rising out of a blood filled black triangle enclosure; surrounded by orange flames and black smoke: in a skullcup in front is a large triangular red torma offering (stylized food) with two more offering skullcups arranged at the sides of the enclosure\" himalayan art resources"@en .
+    
+    bdr:T502  a             :Topic ;
+        skos:altLabel       "rA hu la/"@bo-x-ewts ;
+        skos:prefLabel      "gza' bdud rA hu la (srung ma)"@bo-x-ewts , "rahula"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF5024F1CFF77D994 .
+}

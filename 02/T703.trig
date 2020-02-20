@@ -1,0 +1,47 @@
+@base          <bdg:T703> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T703 {
+    bda:LGBA40EB07E33A27EA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T12:47:40.848Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF4C28696B7A5520F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-04-16T12:31:38.095Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by LS, KG and CZ"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T703  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T703 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "02/T703.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T703 ;
+        adm:logEntry        bda:LGBA40EB07E33A27EA , bda:LGF4C28696B7A5520F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1D530E68F20442D3
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focussing upon arya aparajita (gzhan gyis mi thub pa, noble invincible lady), white with a white umbrella with a gold handle above her head; of her three principal faces, the first is white, the right blue, and the left red, each with three eyes; three right hands hold a vajra, an arrow, and a hook; three left have a threatening forefinger, a noose, and a bow; she has a thousand heads, the others having all sorts of expressions; a thousand hands, holding with various indefinite gestures vajra, wheels, gems, lotuses and all kinds of weapons such as swords, arrows, hooks, bows, hammers, and nooses and a million, million eyes of varying shapes, covering every part of her body; she abides amid a blazing mass of fire, emitting rays that are male and female messengers and clouds of offerings; she has a body that is empowered by all the buddhas, honored by all the bodhisattvas, and worshipped, praised and obeyed by all the world guardians (lokapala); she is crowned by vairocana; she sits on a lotus sun seat.\n\ndeviations: moon seat. blue principal right face and red principal left face omitted; in place of six principal hands only two are shown; the right empty and the left holding her umbrella; the deity regularly has a thousand feet, as shown, but strangely not mentioned.\n\nlineage of transmission through ba ri lo tsA ba.\n\ndeities of tibetan buddhism #217."@en .
+    
+    bdr:T703  a             :Topic ;
+        skos:altLabel       "gtsug gtor gdugs dkar mo can/"@bo-x-ewts ;
+        skos:prefLabel      "gtsug tor gdugs dkar/"@bo-x-ewts , "usnisa white umbrella lady"@en , "usnisasitatapatra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1D530E68F20442D3 .
+}

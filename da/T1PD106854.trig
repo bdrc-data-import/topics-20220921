@@ -1,0 +1,47 @@
+@base          <bdg:T1PD106854> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106854 {
+    bda:LG1CAA0DEA02842A54
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:26:23.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD371E62294F8A988
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T12:05:33.832Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106854  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106854 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "da/T1PD106854.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106854 ;
+        adm:logEntry        bda:LG1CAA0DEA02842A54 , bda:LGD371E62294F8A988 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT102D1B740AF7CA8D
+        a                   :Note ;
+        :noteText           "medical treatment of cleansing or purging the bowls"@en .
+    
+    bdr:T1PD106854  a       :Topic ;
+        skos:altLabel       "rsta sbyong /"@bo-x-ewts ;
+        skos:prefLabel      "rtsa sbyongs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT102D1B740AF7CA8D .
+}

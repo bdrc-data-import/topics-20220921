@@ -1,0 +1,47 @@
+@base          <bdg:T2MS24691> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24691 {
+    bda:LG1D19274D26D7788F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-27T13:30:52.657Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG433879CB554DEBC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:31:18.496Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24691  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24691 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fb/T2MS24691.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24691 ;
+        adm:logEntry        bda:LG1D19274D26D7788F , bda:LG433879CB554DEBC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT6A24286E9A14CAB5
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:T2MS24691  a        :Topic ;
+        skos:altLabel       "slob grwa chen mo/"@bo-x-ewts , "college"@en , "university"@en ;
+        skos:prefLabel      "slob grwa/"@bo-x-ewts , "school"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6A24286E9A14CAB5 .
+}

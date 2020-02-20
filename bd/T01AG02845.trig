@@ -1,0 +1,57 @@
+@base          <bdg:T01AG02845> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG02845 {
+    bda:LG8ACEB20076AEBDDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:32:26.444Z"^^xsd:dateTime .
+    
+    bda:LGA416643B3C1B5FCE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:39:07.162Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T1CZ47, T471, T474, T478, and T530"@en .
+    
+    bda:LGA462E9A97C5806CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-12T14:38:44.745Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGDD47D53851FB0B13
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:01:46.461Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF020EBC3FFE9A4EB
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T09:16:04.565Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T01AG02845  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG02845 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bd/T01AG02845.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG02845 ;
+        adm:logEntry        bda:LG8ACEB20076AEBDDE , bda:LGA416643B3C1B5FCE , bda:LGA462E9A97C5806CD , bda:LGDD47D53851FB0B13 , bda:LGF020EBC3FFE9A4EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T01AG02845  a       :Topic ;
+        rdfs:seeAlso        bdr:T1CZ47 , bdr:T471 , bdr:T474 , bdr:T478 , bdr:T530 ;
+        skos:prefLabel      "dril sgrub/"@bo-x-ewts , "a combination of multiple sadhana"@en ;
+        :isRoot             true .
+}

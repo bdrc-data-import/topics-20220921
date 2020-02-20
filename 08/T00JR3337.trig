@@ -1,0 +1,47 @@
+@base          <bdg:T00JR3337> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR3337 {
+    bda:LG4C12EA8F6068E247
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-12T10:21:32.41Z"^^xsd:dateTime ;
+        adm:logMessage      "individual names given; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGDA1BD0452D903F7A
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-12T10:18:19.808Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T00JR3337  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR3337 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "08/T00JR3337.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR3337 ;
+        adm:logEntry        bda:LG4C12EA8F6068E247 , bda:LGDA1BD0452D903F7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT10A2CDED156E69D0
+        a                   :Note ;
+        :noteText           "1.  khye'u snang ba dam pa\n2. ston pa khye'u 'od mi 'khrugs pa\n3. ston pa 'jigs pa skyob\n4. ston pa gzhon nu rol pa rnam par brtse ba\n5. ston pa rdo rje 'chang\n6. ston pa gzhon nu dpa' bo\n7. ston pa drang srong khros pa'i rgyal po\n8. ston pa gser 'od dam pa\n9. ston pa brtse bas rol pa'i blo gros\n10. ston pa 'od srung bgres po\n11. ston pa mngon rdzogs rgyal po\n12. ston pa shA kya thub pa\n[source Rangjung Yeshe Dharma Dictionary]"@en .
+    
+    bdr:T00JR3337  a        :Topic ;
+        skos:altLabel       "rdzogs chen ston pa bcu gnyis/"@bo-x-ewts ;
+        skos:prefLabel      "ston pa bcu gnyis/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT10A2CDED156E69D0 .
+}

@@ -1,0 +1,53 @@
+@base          <bdg:T1GS10597> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS10597 {
+    bda:LG5A05444C5FBC3F28
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-28T15:32:20.473Z"^^xsd:dateTime ;
+        adm:logMessage      "created subject"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9B69FEF0CB7FF51D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-04T19:22:29.361Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBE5FA6AF3E269636
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T11:30:18.057Z"^^xsd:dateTime ;
+        adm:logMessage      "added sgra mdo"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1GS10597  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS10597 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/T1GS10597.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS10597 ;
+        adm:logEntry        bda:LG5A05444C5FBC3F28 , bda:LG9B69FEF0CB7FF51D , bda:LGBE5FA6AF3E269636 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTB9524D4EE07CA3C1
+        a                   :Note ;
+        :noteText           "under this keyword are classified all works concerned with sanskrit grammar"@en .
+    
+    bdr:T1GS10597  a        :Topic ;
+        skos:altLabel       "sgra mdo/"@bo-x-ewts ;
+        skos:prefLabel      "sgra/"@bo-x-ewts , "sanskrit grammar"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB9524D4EE07CA3C1 .
+}

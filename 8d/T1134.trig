@@ -1,0 +1,56 @@
+@base          <bdg:T1134> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1134 {
+    bda:LG7C9E8442870C93E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-09T10:20:09.361Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC1EDF6C546856F06
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-24T17:13:25.07Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGD5FD7DA7E56166D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-25T02:25:07.182Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGE8BA8DCB45D7C752
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-24T17:11:49.022Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGFEAAF405CD8BD196
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-13T11:37:24.428Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1134  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1134 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/T1134.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1134 ;
+        adm:logEntry        bda:LG7C9E8442870C93E3 , bda:LGC1EDF6C546856F06 , bda:LGD5FD7DA7E56166D3 , bda:LGE8BA8DCB45D7C752 , bda:LGFEAAF405CD8BD196 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1134  a            :Topic ;
+        skos:altLabel       "historical works"@en ;
+        skos:prefLabel      "lo rgyus/"@bo-x-ewts , "history"@en ;
+        :isRoot             true .
+}

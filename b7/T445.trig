@@ -1,0 +1,52 @@
+@base          <bdg:T445> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T445 {
+    bda:LG18FCAE9C8F097B31
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T13:03:07.637Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBCEFFCE22D3B9E5C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-10T11:58:13.268Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF0FD72E6BF78FFD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T13:06:33.391Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T445  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T445 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b7/T445.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T445 ;
+        adm:logEntry        bda:LG18FCAE9C8F097B31 , bda:LGBCEFFCE22D3B9E5C , bda:LGF0FD72E6BF78FFD9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFA1079B0E88762D9
+        a                   :Note ;
+        :noteText           "this term is generically used for collections of narratives delivered on various occasions; some of the best examples are those of 'jigs med gling pa; the use of this genre is to be distinguished from tshogs gtam, narratives delivered in an assemblage."@en .
+    
+    bdr:T445  a             :Topic ;
+        rdfs:seeAlso        bdr:T329 ;
+        skos:prefLabel      "gtam tshogs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFA1079B0E88762D9 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T830> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T830 {
+    bda:LG55829BCC12F6F145
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T11:11:30.671Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFE06F2E5C667B882
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-29T02:09:06.468Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T830  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T830 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a9/T830.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T830 ;
+        adm:logEntry        bda:LG55829BCC12F6F145 , bda:LGFE06F2E5C667B882 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCF8BF9C2B60A3F8B
+        a                   :Note ;
+        :locationStatement  "v. 11, f. 218r" ;
+        :noteSource         bdr:MW23681 ;
+        :noteText           "this transmission is called nye brgyud thung mong ma yin pa and passed through thugs sras lo tsA ba rin chen rnam rgyal, the chief disciple of bu ston rin chen grub"@en .
+    
+    bdr:T830  a             :Topic ;
+        skos:prefLabel      "dbyangs can ma dkar mo sa man+ta shrI lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCF8BF9C2B60A3F8B .
+}

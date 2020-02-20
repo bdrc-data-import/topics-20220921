@@ -1,0 +1,41 @@
+@base          <bdg:T1076> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1076 {
+    bda:LGD6B95CD6A7ABEA9F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T09:30:35.5Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1076  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1076 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2a/T1076.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1076 ;
+        adm:logEntry        bda:LGD6B95CD6A7ABEA9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02D714DD1C2CA30B
+        a                   :Note ;
+        :noteText           "special catuhpitha mandala transmitted by the rngog tradition of the bka' brgyud"@en .
+    
+    bdr:T1076  a            :Topic ;
+        skos:altLabel       "jnanesvari 13 devatmaka rngog lugs"@sa-alalc97 ;
+        skos:prefLabel      "gdan bzhi yum bka' ye shes dbang phyug ma lha 13 rngog lugs/"@bo-x-ewts , "catuhpitha yum bka' 13 devatmaka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT02D714DD1C2CA30B .
+}

@@ -1,0 +1,51 @@
+@base          <bdg:T200> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T200 {
+    bda:LG1E247568479242FE
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:42.716Z"^^xsd:dateTime .
+    
+    bda:LG92B18F30873BD7A3
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:49.469Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF0C65F339A14C01E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T06:46:45.392Z"^^xsd:dateTime ;
+        adm:logMessage      "application note checked"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T200  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T200 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/T200.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T200 ;
+        adm:logEntry        bda:LG1E247568479242FE , bda:LG92B18F30873BD7A3 , bda:LGF0C65F339A14C01E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2F5A0145A2AF9DDD
+        a                   :Note ;
+        :noteText           "this topic keyword is applied generically to guidance or instructional manuals for the practice of specific teachings"@en .
+    
+    bdr:T200  a             :Topic ;
+        rdfs:seeAlso        bdr:T11MS11 , bdr:T11MS42 ;
+        skos:prefLabel      "khrid yig"@bo-x-ewts , "instructional manual"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2F5A0145A2AF9DDD .
+}

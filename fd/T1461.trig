@@ -1,0 +1,49 @@
+@base          <bdg:T1461> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1461 {
+    bda:LG41C292DBC4668CAF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T07:45:32.798Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5DF221EE3FA63327
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T08:10:09.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant topic name rngog dkyil 7"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1461  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1461 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fd/T1461.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1461 ;
+        adm:logEntry        bda:LG41C292DBC4668CAF , bda:LG5DF221EE3FA63327 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAD59525E2038805D
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1636" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus citing the dung dkar tshig mdzod 767.9 enumerates the seven mandalas of the rngog tradition as expounded from the teachings transmitted by rngog chos sku rdo rje from mar pa lo tsA ba chos kyi blo gros as: 1) kyai rdo rje lha 9; 2) yum bdag med ma lha mo 15; 3) rdo rje gur rigs bsdus lha 49; 4) rdo rje gdan bzhi'am rdo rje rnal 'byor nam mkha'  lha 97; 5) rdo rje gdan bzhi yum bka' ye shes mkha' gro lha 13; 6) ma hA mA ya'am sgyu ma chen po lha 5; 7) 'jam dpal gsang ldan lha 53. this topic is applied to rituals and explanations treating these seven mandalas together."@en .
+    
+    bdr:T1461  a            :Topic ;
+        skos:altLabel       "rngog dkyil 7"@bo-x-ewts ;
+        skos:prefLabel      "rngog dkyil bdun/"@bo-x-ewts , "seven mandalas of the rngog tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NTAD59525E2038805D .
+}

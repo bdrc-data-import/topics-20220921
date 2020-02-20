@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1185> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1185 {
+    bda:LG20515EF51781A524
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T12:42:44.703Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3B5F7BA71B673355
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T16:33:34.811Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6D7B1F32B8952C6D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T16:31:03.716Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6F6B4BFADC5DD59F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T12:49:49.654Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1185  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1185 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6a/T2GS1185.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1185 ;
+        adm:logEntry        bda:LG20515EF51781A524 , bda:LG3B5F7BA71B673355 , bda:LG6D7B1F32B8952C6D , bda:LG6F6B4BFADC5DD59F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT3C132B228FE5A0F9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the form of mahakala, wealth-increasing, mighty strength sapping field protector (zhing skyong stobs 'phrog dbang po nor 'phel, vasu vardhana bala harendra ksetrapala) who is yellow, having four faces; the principal face yellow, the right white, the left red, and the upper smoke colored; his first pair of hands hold one above the other at the heart a rosary of human bones and a skull full of jewels; the other pair holds a knife and a flask full of gems, his brown hair streams upwards with three eyes and a gaping mouth, he bares sharp fangs and his lower lips hang down; he is adorned with a sacred thread, bones, snakes and strings of bells; with a tiger skin loincloth he abides in standing pratyalidha posture (right leg bent) amid a blazing fire of gnosis \n\nfrom the four directions come his consorts: b) on his right comes the great mother, blue dombini (g.yung mo); c) on his left, the worker (las mdzad), blue candali (gtum mo); d) in front the blue maharaksasi (srin mo chen mo); e) behind is blue simhali (sing+ga gling ma). each is one-faced and two armed holding a sword and a blood-filled skull, extremely fierce and wrathful and with the attributes of a human messenger, three-eyed, naked, without ornaments, in a great hurry, and facing the principal; encircling them round the outside ar twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world;\n\nfrom the four directions come his consorts: b) on his right comes the great mother, yellow dombini (g.yung mo); c) on his left, the worker (las mdzad), yellow candali (gtum mo); d) in front the yellow maharaksasi (srin mo chen mo); e) behind is yellow simhali (sing+ga gling ma). each is one-faced and two armed holding a rosary of bones and a skull full of jewels, extremely fierce and wrathful and with the attributes of a human messenger, three-eyed, naked, without ornaments, in a great hurry, and facing the principal; encircling them round the outside ar twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world; four-faced vajra mahakala, mighty strength sapping field protector is invoked from kailasa, sitavana, potala and the loud laughter charnel ground.\n\ndeities of tibetan buddhism #389"@en .
+    
+    bdr:T2GS1185  a         :Topic ;
+        skos:prefLabel      "dpal mgon zhal bzhi pa ser po nor 'phel/"@bo-x-ewts , "yellow, four faced sri-mahakala, wealth increasing"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3C132B228FE5A0F9 .
+}

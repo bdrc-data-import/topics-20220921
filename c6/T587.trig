@@ -1,0 +1,41 @@
+@base          <bdg:T587> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T587 {
+    bda:LG493B53A7BDD28512
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T12:02:54.199Z"^^xsd:dateTime ;
+        adm:logMessage      "title added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T587  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T587 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c6/T587.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T587 ;
+        adm:logEntry        bda:LG493B53A7BDD28512 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT26609046DDFAE44E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations connected with vajrayogini, white, two arms, three eyes, red as bandhuka flowers\n\n\ndeities of tibetan buddhism #84"@en .
+    
+    bdr:T587  a             :Topic ;
+        skos:altLabel       "phas rgol 'joms pa'i in+dra mkha' spyod ma/"@bo-x-ewts , "rdo rje phag mo gnam zhabs ma/"@bo-x-ewts ;
+        skos:prefLabel      "phag mo gnam zhabs ma/"@bo-x-ewts , "vajravarahi with raised leg"@en , "urdhvapada vajra varahi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT26609046DDFAE44E .
+}

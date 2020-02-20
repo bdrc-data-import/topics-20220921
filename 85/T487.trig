@@ -1,0 +1,40 @@
+@base          <bdg:T487> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T487 {
+    bda:LG1E3ACA63AEE0F63B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T12:13:33.802Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T487  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T487 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "85/T487.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T487 ;
+        adm:logEntry        bda:LG1E3ACA63AEE0F63B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02AE660861D2956E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon vajravidarana who is dark blue, with one face, and two arms; his right hand brandishes a five pointed vajra; his left rests on his side a bell; with yellow, upward streaming hair he is in pratyalidha posture (left leg extended) and wears a tiger skin and snake ornaments; he is in the middle of a blazing mass of fire; instantantaneously he emanates in the ten directions ten wrathful deities of the same form as himself\n\ndeities of tibetan buddhism #212"@en .
+    
+    bdr:T487  a             :Topic ;
+        skos:prefLabel      "rdo rje rnam 'joms mthing ga"@bo-x-ewts , "blue vajravidarana"@en , "nila vajravidarana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT02AE660861D2956E .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1160> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1160 {
+    bda:LG19E37328CEA639B1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T16:09:00.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and info"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF95CDC42DA7BA3FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T14:53:32.035Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1160  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1160 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c4/T2GS1160.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1160 ;
+        adm:logEntry        bda:LG19E37328CEA639B1 , bda:LGF95CDC42DA7BA3FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8CD8AB2024D0E56E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to initiations and rituals for a form of mother of the buddhas of all times; she is yellow and seated in vajraprayanka; she has four hands; the first pair of hands are explainign the dharma and in meditation; the other pair hold a book and a rosary; she is complete in all the characteristics of a goddess;  \n\n\ndeities of tibetan buddhism #191"@en .
+    
+    bdr:T2GS1160  a         :Topic ;
+        skos:prefLabel      "sher phyin ma ser mo/"@bo-x-ewts , "yellow prajnaparamita"@en , "prajnaparamita pita"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT8CD8AB2024D0E56E .
+}

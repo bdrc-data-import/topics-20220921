@@ -1,0 +1,41 @@
+@base          <bdg:T2448> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2448 {
+    bda:LG34F1AAA9DF7DED40
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-27T15:33:41.737Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2448  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2448 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bf/T2448.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2448 ;
+        adm:logEntry        bda:LG34F1AAA9DF7DED40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE1C73A6C4839ED1E
+        a                   :Note ;
+        :noteText           "this topic is used for the buddhist rosary used in tibetan practice; the lbrary of congress controlled subject heading is \"buddhist rosary\""@en .
+    
+    bdr:T2448  a            :Topic ;
+        skos:altLabel       "bgrang 'phreng /"@bo-x-ewts ;
+        skos:prefLabel      "'phreng ba/"@bo-x-ewts , "rosary"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE1C73A6C4839ED1E .
+}

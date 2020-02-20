@@ -1,0 +1,41 @@
+@base          <bdg:T653> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T653 {
+    bda:LG673B59E70E4A41A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T09:56:53.551Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T653  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T653 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "55/T653.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T653 ;
+        adm:logEntry        bda:LG673B59E70E4A41A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT361F1737D98AE9BE
+        a                   :Note ;
+        :noteText           "this deity topic applies to rituals and initiations focusing upon a form of vajrapani who is black as the cloud at the end of time; his right hand brandishes a nine-pointed vajra of thunderbolt iron, his left, with threatening forefinger and noose near his heart, threatens those who do harm; his three eyes glow like live embers; he stands proudly in pratyalidha (right leg bent) on a lotus, moon, and sun seat on top of a a pile of a hundred thousand nagas, ten thousand demons of disease (gnyan), and a thousand lords of the soil (sa bdag); he has a tigerskin loincloth, a crown of five dry skulls and a long necklace of fifty fresh heads, is adorned with spots of blood on the cheeks, smears of fat on the chin, and a dot of human ash between the eyebrows, and wears jewel and bone ornaments and a silk scarf; his beard, eyebrows, and hair are pale yellow and upward blazing;\nyellow vasuki and sankhapala are his crown; red nanda and upananda are his earrings; white padma and varuna his armlets; black suparna and kulika a long necklace (se ral kha); he is as wrathful as yama, with bared fangs and rolled-up tongue; his body is massive, his legs straddling oceans while his head penetrates the brahma heaven; he is shouting fierce mantras, sending out the great garudas of the five families as messengers, and emanating wrathful deities from every pore; full of wrath, he abides amid a mass of five-colored fire that burns up the five poisons; he is crowned with aksobhya.\n\ndeities of tibetan buddhism #153"@en .
+    
+    bdr:T653  a             :Topic ;
+        skos:altLabel       "phyag na rdo rje u tsA rya/"@bo-x-ewts , "vajrapani ucarya/"@bo-x-ewts ;
+        skos:prefLabel      "phyag rdor u tsa rya/"@bo-x-ewts , "ucarya vajrapani"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT361F1737D98AE9BE .
+}

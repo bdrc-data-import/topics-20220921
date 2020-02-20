@@ -1,0 +1,80 @@
+@base          <bdg:T1129> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1129 {
+    bda:LG28A9E03999623B7E
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-10-30T16:34:00.424Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG29CF4449C6CFAD67
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-01-13T10:21:06.523Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG2F97C45965C172FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-01T09:35:00.905Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG42A82BB73F4FB816
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-04T09:09:19.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added title \"bka' bstan\" & chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG482A115BE093897A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-04T13:13:36.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG6B8C764E89773F9F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-30T09:57:02.204Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"skor\" with tibetan names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGAEF5359389DF5096
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-01-28T10:52:02.56Z"^^xsd:dateTime ;
+        adm:logMessage      "edited tibetan title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBFE30AAF90E8829C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-04T09:19:33.391Z"^^xsd:dateTime ;
+        adm:logMessage      "edited englishe name & added description"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1129  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1129 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ee/T1129.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1129 ;
+        adm:logEntry        bda:LG28A9E03999623B7E , bda:LG29CF4449C6CFAD67 , bda:LG2F97C45965C172FF , bda:LG42A82BB73F4FB816 , bda:LG482A115BE093897A , bda:LG6B8C764E89773F9F , bda:LGAEF5359389DF5096 , bda:LGBFE30AAF90E8829C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1129  a            :Topic ;
+        rdfs:comment        "about both Kanjur and Tenjur canonical works." , "bka' 'gyur dang bstan 'gyur gnyis ka'i skor te/ dkar chag sogs 'brel yod rtsom rigs bzhugs pa'i sde tshan zhig" ;
+        rdfs:seeAlso        bdr:T2423 , bdr:T3CN2023 ;
+        skos:altLabel       "bka' bstan 'gyur skor/"@bo-x-ewts , "about canonical works"@en , "有关甘珠尔和丹珠尔"@zh-hans ;
+        skos:prefLabel      "bka' bstan skor/"@bo-x-ewts , "about kanjur and tenjur"@en , "有关藏文大藏经"@zh-hans ;
+        :isRoot             true .
+}

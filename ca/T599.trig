@@ -1,0 +1,41 @@
+@base          <bdg:T599> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T599 {
+    bda:LGC0371451F0A03AAC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T09:44:34.919Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T599  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T599 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ca/T599.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T599 ;
+        adm:logEntry        bda:LGC0371451F0A03AAC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT53C9677FDBD693D7
+        a                   :Note ;
+        :noteText           "this deity topic is applied to initiations and rituals focusing upon kha sarpana, white with one face and two arms; the right hand is boon granting; the left resting on a seat and holding an eight-petaled whit lotus with a stem; he sits in ardhaparyangka lalita posture with right leg extended; he is adorned with silks and jewels, his left breast covered by a deerskin, his body sends out five-colored light-rays benefiting myself and all sentient beings.   \n\n\nform of avalokitesvara taught by mitrayogin; these teachings passed into the tradition through khro phu lo tsA ba\n\ndeities of tibetan buddhism #115 and deities of tibetan buddhism #117 (these two are identical)"@en .
+    
+    bdr:T599  a             :Topic ;
+        skos:altLabel       "sems nyid ngal gso/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po sems nyid ngal gso/"@bo-x-ewts , "mind at rest khasarpana"@en , "avalokitesvara cittavisramana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT53C9677FDBD693D7 .
+}

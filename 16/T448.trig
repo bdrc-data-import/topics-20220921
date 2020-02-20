@@ -1,0 +1,53 @@
+@base          <bdg:T448> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T448 {
+    bda:LG42BD13B20835DF37
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T11:11:22.073Z"^^xsd:dateTime ;
+        adm:logMessage      "language normalized"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGF0C8507A4A147C9C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-23T13:01:23.56Z"^^xsd:dateTime ;
+        adm:logMessage      "re-publishing"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF653E987658ED3D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T11:09:04.399Z"^^xsd:dateTime ;
+        adm:logMessage      "T448 and T10MS11134 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T448  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T448 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/T448.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T448 ;
+        adm:logEntry        bda:LG42BD13B20835DF37 , bda:LGF0C8507A4A147C9C , bda:LGF653E987658ED3D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT57DC9922001F68EC
+        a                   :Note ;
+        :noteText           "general topic covering works dealing with revealed hidden treasures\n\nthis keyword is applied to hidden treasures, teachings and physical objects, usually buried at the time of the guru rinpoche for future revelation"@en .
+    
+    bdr:T448  a             :Topic ;
+        skos:altLabel       "gter chos/"@bo-x-ewts , "treasure revelations"@en ;
+        skos:prefLabel      "gter ma/"@bo-x-ewts , "rediscovered teachings"@en ;
+        :isRoot             true ;
+        :note               bdr:NT57DC9922001F68EC .
+}

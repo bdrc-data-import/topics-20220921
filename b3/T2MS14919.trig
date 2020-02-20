@@ -1,0 +1,48 @@
+@base          <bdg:T2MS14919> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14919 {
+    bda:LG479E22B24A005A53
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-04T11:11:01.278Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14919  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14919 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/T2MS14919.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14919 ;
+        adm:logEntry        bda:LG479E22B24A005A53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0AC78F6BD39DD576
+        a                   :Note ;
+        :noteText           "see also sgrub grwa T2080"@en .
+    
+    bdr:NT11C2D5ECC449E5AF
+        a                   :Note ;
+        :noteText           "see also bshad grwa T2MS14704"@en .
+    
+    bdr:NT4537A7FF12F3DEE5
+        a                   :Note ;
+        :noteText           "this topic is applied to the monastic living quarters or assembly space in a monastery"@en .
+    
+    bdr:T2MS14919  a        :Topic ;
+        skos:prefLabel      "grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0AC78F6BD39DD576 , bdr:NT11C2D5ECC449E5AF , bdr:NT4537A7FF12F3DEE5 .
+}

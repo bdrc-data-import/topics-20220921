@@ -1,0 +1,66 @@
+@base          <bdg:T2CN4932> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4932 {
+    bda:LG374C77CEE422DE6C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T11:25:15.936Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5F3986343EE6631E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:03:09.466Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG7023A1B1EEA30E41
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T11:31:25.289Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGA752D2ED90032BE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-02T12:12:51.319Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE241FBDF79A655F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-28T15:47:11.524Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4932  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4932 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ea/T2CN4932.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4932 ;
+        adm:logEntry        bda:LG374C77CEE422DE6C , bda:LG5F3986343EE6631E , bda:LG7023A1B1EEA30E41 , bda:LGA752D2ED90032BE7 , bda:LGE241FBDF79A655F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6DFE6CFB9C4652F0
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.3, p. 101 དྲེགས་པའི་སྡེ་དཔོན་སུམ་ཅུའི་ནང་ཚན་དང་། ཁྱད་པར་བདུད་མགོན་མཆེད་གསུམ་གྱི་ནང་ཚན་ཞིག་ཏེ། སྐྲག་མེད་ཉི་ཤར་མུན་པའི་མདོག །གཡས་པ་དགྲ་བོའི་ཙིཏྟ་མུར། །གཡོན་པ་རུ་དར་ནག་པོ་བསྣམས། །དར་ནག་བེར་གྱོན་ཁྲོ་ཞིང་གཏུམ། །བདུད་རྟ་ནག་པོ་ཞོན་ནས་རྒྱུག །སྡེ་བརྒྱད་དྲེགས་པའི་དཔུང་གིས་བསྐོར། །ཞེས་སོ།།"@bo .
+    
+    bdr:T2CN4932  a         :Topic ;
+        skos:altLabel       "bdud mgon skrag med nyi shar/"@bo-x-ewts ;
+        skos:prefLabel      "skrag med nyi shar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6DFE6CFB9C4652F0 .
+}

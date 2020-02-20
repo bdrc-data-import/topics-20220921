@@ -1,0 +1,41 @@
+@base          <bdg:T106> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T106 {
+    bda:LGDACAD3E378929AEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:01:50.871Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T106  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T106 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ad/T106.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T106 ;
+        adm:logEntry        bda:LGDACAD3E378929AEC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB44A6C1A9D96089D
+        a                   :Note ;
+        :noteText           "this key word is used for forms of avalokitesvara not classified under a specific form of avalokitesvara\nthe rin chen gter mdzod contains the following cycles for the practice of avalokitesvara according to the rnying ma transmission. these multiple forms include:\n\n1) thugs rje chen po 'gro 'dul yid bzhin nor bu (from the gter chos of grub thob dngos grub and mnga' bdag nyang ral nyi ma 'od zer and the ma Ni bka' 'bum)\nthese related forms exist in many different transmissions including a nye brgyud to 'jam dbyangs mkhyen brtse'i dbang po\n2) thugs rje chen po rgyal ba rgya mtsho (this is the karma pa bka' babs representing a merger of the teachings of the bka' ma grub rgyal ma and the gter ma of mnga' bdag nyang)\n3) thugs chen yang snying 'dus pa (gter ma  of gu ru chos dbang)\n4) thugs chen padma zhi khro (gter ma of nyi ma seng+ge; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n5) thugs chen 'gro 'dul lha drug (from the kun bzang thugs gter of byang chub gling pa dpal gyi rgyal mtshan; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n6) thugs chen 'gro ba kun sgrol (from the byang gter of rig 'dzin rgod kyi ldem 'phru can)\n7) don tig 'gro ba kun sgrol (dri me lhun po), zab tig chos dbyings rang gsal (gar dbang rdo rje), and dgongs 'dus 'gro ba kun sgrol (stag sham nus ldan rdo rje)\n8) thugs chen rgyal ba rgya mtsho ye shes 'od kyi snying po (dri med kun dga'; revealed later by 'jam dbyangs mkhyen brtse'i dbang po)\n9) thugs chen nor bu skor gsum: phyi rgyal po lugs bcu gcig zhal phyag stong spyan stong (sangs rgya sgling pa)\n10) thugs chen nor bu skor gsum: nang klu sgrub bka' srog phyag bzhi pa (sangs rgyas gling pa)\n11) thugs chen nor bu skor gsum: gsang ba bla med lugs kyi mi tra dzo ki'i bka' srol padma gar dbang (sangs rgyas gling pa)\n12) thugs chen bde gshegs ku 'dus (rdo rje gling pa)\n13) thugs chen ngan sogs kun skyob (rdo rje gling pa; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n14) thugs chen gsang ba 'dus pa (rat+na gling pa)\n15) thugs chen mun sel sgron me (padma gling pa)\n16) thugs chen don gsal sgron me ('gro 'dul las 'phro gling pa; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n17) thugs chen gsol 'debs (mnga' ris pa tshul khrims bzang po; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n18) thugs chen 'khor ba dbyings sgrol (legs ldan rje)\n19) thugs chen 'khor ba las sgrol (gar dbang zhig po gling pa)\n20) 'grol thig thugs chen padma'i dbang phyug (phreng po gter ston shes rab 'od zer)\n21) thugs chen rgyal po lugs ngan song rang grol ('ja' tshon snying po)\n22) thugs chen nam mkha'i rgyal po'i phyi sgrub gsang sgrub, yang gsang (spo bo gter chen bdud 'dul rdo rje)\n23) 'jig rten dbang phyug lha dgu dag snang rgya can (rgyal dbang lnga pa)\n24) thugs chen rgyal ba rgya mtsho lha lnga (gnam chos mi 'gyur rdo rje)\n25) thugs chen rtsa gsum snying thig (gar dbang zla ba rgyal mtshan)\n26) thugs chen bde gshegs kun 'dus (gter bdag gling pa)\n27) thugs chen yang gsang bla med (klong gsal snying po)\n28) spyan ras gzigs mi tra snying thig (stag sham nus ldan rdo rje)\n29) thugs chen yid bzhin nor mchog sa'i snying po (chos rje gling pa)\n30) thugs chen padma gar dbang sgyu 'phrul drwa ba (mchog gyur gling pa)\n31) thugs chen padma gtsug tor theg dgu'i sbyong rgyud 'gro 'dul lha lnga (mchog gyur gling pa)\n32) spyan ras gzigs yid bzhin 'khor lo (mchog gyur gling pa)\n33) thugs chen bcu gcig zhal dpal mo lugs"@en .
+    
+    bdr:T106  a             :Topic ;
+        skos:altLabel       "spyan ras gzigs/"@bo-x-ewts , "mahākāruṇika"@sa-x-ndia , "大悲"@zh-hans , "观世音"@zh-hans , "观自在"@zh-hans , "觀自在"@zh-hant ;
+        skos:prefLabel      "thugs rje chen po/"@bo-x-ewts , "avalokiteśvara"@sa-x-ndia , "觀世音"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NTB44A6C1A9D96089D .
+}

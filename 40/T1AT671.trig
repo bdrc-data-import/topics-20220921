@@ -1,0 +1,54 @@
+@base          <bdg:T1AT671> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT671 {
+    bda:LG4D2B507BCFCC9D7F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-16T10:08:27.057Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG554DFEB0DAF1ED42
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-02T15:51:07.126Z"^^xsd:dateTime .
+    
+    bda:LG5F780BB72DB4E67C
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T16:06:03.507Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8E23C93EE5205FC5
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-19T13:06:11.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:T1AT671  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT671 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "40/T1AT671.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT671 ;
+        adm:logEntry        bda:LG4D2B507BCFCC9D7F , bda:LG554DFEB0DAF1ED42 , bda:LG5F780BB72DB4E67C , bda:LG8E23C93EE5205FC5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT406418917BDCDFA7
+        a                   :Note ;
+        :noteText           "supportive teachings, background teachings"@en .
+    
+    bdr:T1AT671  a          :Topic ;
+        skos:prefLabel      "rgyab chos/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT406418917BDCDFA7 .
+}

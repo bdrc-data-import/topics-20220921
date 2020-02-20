@@ -1,0 +1,41 @@
+@base          <bdg:T1GS138764> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS138764 {
+    bda:LG133F787CF2414352
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-01-16T10:32:03.965Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS138764  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS138764 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "49/T1GS138764.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS138764 ;
+        adm:logEntry        bda:LG133F787CF2414352 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT871882DC58CC6E3C
+        a                   :Note ;
+        :noteText           "teaching cycle of byang gter guru practices revealed by bkra shis stobs rgyal"@en .
+    
+    bdr:T1GS138764  a       :Topic ;
+        skos:altLabel       "karma ma hA gu ru (bkra shis stobs rgyal)"@bo-x-ewts ;
+        skos:prefLabel      "karma gu ru (bkra shis stobs rgyal)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT871882DC58CC6E3C .
+}

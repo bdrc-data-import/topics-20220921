@@ -1,0 +1,52 @@
+@base          <bdg:T2308> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2308 {
+    bda:LG36A6D5FED5DA9516
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:31:04.444Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG735F1AC675443133
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T15:53:15.361Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGB974FE59025326EC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:07:31.167Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2308  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2308 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "da/T2308.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2308 ;
+        adm:logEntry        bda:LG36A6D5FED5DA9516 , bda:LG735F1AC675443133 , bda:LGB974FE59025326EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT859CEA57D7225941
+        a                   :Note ;
+        :noteText           "a part of the rdo rje phur pa yang gsang bcud dril called gser gsar"@en .
+    
+    bdr:T2308  a            :Topic ;
+        skos:prefLabel      "tshe sgrub 'chi med srog thig (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT859CEA57D7225941 .
+}

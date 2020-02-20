@@ -1,0 +1,61 @@
+@base          <bdg:T423> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T423 {
+    bda:LG2E2C5AF118E38D71
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:05.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG5EB9552897E7B608
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:03:17.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA560DB2654230D50
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-10-10T20:09:15.076Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected language settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB3DAE2E7DF395D3D
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-03T12:11:25.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGBCE550288C8BBF72
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-12-04T21:10:31.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added 'khor lo sdom pa"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T423  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T423 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c6/T423.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T423 ;
+        adm:logEntry        bda:LG2E2C5AF118E38D71 , bda:LG5EB9552897E7B608 , bda:LGA560DB2654230D50 , bda:LGB3DAE2E7DF395D3D , bda:LGBCE550288C8BBF72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T423  a             :Topic ;
+        rdfs:seeAlso        bdr:T10MS11132 ;
+        skos:altLabel       "'khor lo sdom pa/"@bo-x-ewts , "胜乐"@zh-hans ;
+        skos:prefLabel      "bde mchog"@bo-x-ewts , "cakrasaṃvara"@sa-x-ndia , "勝樂"@zh-hant ;
+        :isRoot             true .
+}

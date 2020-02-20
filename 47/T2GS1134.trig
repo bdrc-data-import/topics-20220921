@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1134> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1134 {
+    bda:LGBA3478BC03312B12
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T11:00:09.75Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised; deviation added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFE0430A20EAC49CE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T20:13:31.431Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1134  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1134 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "47/T2GS1134.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1134 ;
+        adm:logEntry        bda:LGBA3478BC03312B12 , bda:LGFE0430A20EAC49CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5D313A7D8F2F7DE8
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the protector deity and his sister; putra is dark blue in color, with fire coming out and returning, proud with the force of fury, holding a sabre... included in the transmission is from rin chen bzang po to brag steng pa yon tan tshul khrims, mal gyo lo tsA ba, the sa skya gong ma rnam lnga...\n\ndeities of tibetan buddhism #408.\n\ndeviation: putra holds a skull-cup in his left hand instead of a sun."@en .
+    
+    bdr:T2GS1134  a         :Topic ;
+        skos:prefLabel      "pu tra lcam dral (srung ma)"@bo-x-ewts , "putra brother and sister"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5D313A7D8F2F7DE8 .
+}

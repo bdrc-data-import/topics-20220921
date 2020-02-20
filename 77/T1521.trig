@@ -1,0 +1,41 @@
+@base          <bdg:T1521> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1521 {
+    bda:LG8002A39D62723DA9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:22:21.06Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1521  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1521 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "77/T1521.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1521 ;
+        adm:logEntry        bda:LG8002A39D62723DA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT15AAFFD80B06C7B0
+        a                   :Note ;
+        :noteText           "the nineteenth of the jo nang khrid brgya."@en .
+    
+    bdr:T1521  a            :Topic ;
+        skos:altLabel       "bka' gdams thig le bcu drug (khrid)"@bo-x-ewts ;
+        skos:prefLabel      "thig le bcu drug (khrid)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT15AAFFD80B06C7B0 .
+}

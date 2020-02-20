@@ -1,0 +1,51 @@
+@base          <bdg:T00AG01364> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01364 {
+    bda:LG0B697FCAEBADB7A8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T15:32:13.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added more names of gter ston to the gter ma"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:LG4CDC700F82B3741E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-08T16:48:39.381Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG5D5DD5B4643159D6
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-08T15:04:41.842Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01364  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01364 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/T00AG01364.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01364 ;
+        adm:logEntry        bda:LG0B697FCAEBADB7A8 , bda:LG4CDC700F82B3741E , bda:LG5D5DD5B4643159D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA50292774F5B3CA3
+        a                   :Note ;
+        :noteText           "a treasure of mchog gyur gling pa revealed in 1856 at 'og min karma and ye rgyal nam mkha' mdzod. the cycle focusses on seven deities and groups of deities: sgyu ’phrul, yang dag, rta mgrin, 'jam dpal gshin rje, phur pa, rtsa gsum, and ma mo (see andreas doctor, tibetan treasure literature, p.88.)"@en .
+    
+    bdr:T00AG01364  a       :Topic ;
+        skos:altLabel       "zab bdun/"@bo-x-ewts ;
+        skos:prefLabel      "zab pa skor bdun (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA50292774F5B3CA3 .
+}

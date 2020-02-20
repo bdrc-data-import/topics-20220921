@@ -1,0 +1,47 @@
+@base          <bdg:T1523> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1523 {
+    bda:LG08F62D5F912709D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:24:30.251Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG61CC820480FC9E13
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-02T16:42:06.609Z"^^xsd:dateTime ;
+        adm:logMessage      "released with new name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA39640AD58810F72
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T11:33:30.411Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1523  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1523 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "91/T1523.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1523 ;
+        adm:logEntry        bda:LG08F62D5F912709D8 , bda:LG61CC820480FC9E13 , bda:LGA39640AD58810F72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1523  a            :Topic ;
+        skos:prefLabel      "zhi byed lam lnga /"@bo-x-ewts ;
+        :isRoot             true .
+}

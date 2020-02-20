@@ -1,0 +1,53 @@
+@base          <bdg:T221> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T221 {
+    bda:LG4879FCBC8D76CEEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T17:08:22.12Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCD5BA339E7D71256
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T14:47:50.145Z"^^xsd:dateTime ;
+        adm:logMessage      "added gzhung yig"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGE3EBF10166006725
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-04-15T14:36:35.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T221  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T221 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "87/T221.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T221 ;
+        adm:logEntry        bda:LG4879FCBC8D76CEEC , bda:LGCD5BA339E7D71256 , bda:LGE3EBF10166006725 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT54D2DFF7A7820628
+        a                   :Note ;
+        :noteText           "this topic is applied to documents, charters, decrees, official correspondences"@en .
+    
+    bdr:T221  a             :Topic ;
+        skos:altLabel       "gzhung yig"@bo-x-ewts ;
+        skos:prefLabel      "chab shog"@bo-x-ewts , "official letter"@en , "公文｜公涵"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT54D2DFF7A7820628 .
+}

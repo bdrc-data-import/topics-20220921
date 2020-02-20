@@ -1,0 +1,40 @@
+@base          <bdg:T710> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T710 {
+    bda:LG192231E385A51046
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T12:27:03.202Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T710  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T710 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2d/T710.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T710 ;
+        adm:logEntry        bda:LG192231E385A51046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA90A8EFA15A33B71
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the lord who burns on touch, black, his right hand holding on top of a vajra and eight-spoked fire wheel and his left a trident on whose points is a four-spoked wind-wheel; his body is corpulent, dwarfish, and complete with the garb of a wrathful deity; he has the eight charnal-ground requisites and the crown of his head is adorned with a wheel and a crossed vajra; he is in alidha, his extended right leg tramples kalaratri and his left bhairava; his consort embraces him, her right hand holding a knife and her left a trident; both are in the middle of a blazing mass of fire; he is crowned with aksobhya.     \n\ndeviations: wind-wheel is shown with eight spokes; deity is of a slender build.  \n\ndeities of tibetan buddhism #227"@en .
+    
+    bdr:T710  a             :Topic ;
+        skos:prefLabel      "bde mchog khro bo reg tshig"@bo-x-ewts , "wrathful sambara burning on touch"@en , "samvara krodha bhayanasana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA90A8EFA15A33B71 .
+}

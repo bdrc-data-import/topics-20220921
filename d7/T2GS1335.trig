@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1335> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1335 {
+    bda:LG4A247A3983371CDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T14:45:53.701Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG86A063FCED4035BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T18:35:34.918Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application and chos rnam kun btus notes added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1335  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1335 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/T2GS1335.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1335 ;
+        adm:logEntry        bda:LG4A247A3983371CDE , bda:LG86A063FCED4035BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT4F1E05F02105D3AA
+        a                   :Note ;
+        :noteText           "this topic is applied to works concerned with happiness"@en .
+    
+    bdr:NTEC6D41BB03B5C769
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 84" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus (quoting the bstan 'gyur, mdo sde ti pa 153 ba 5, 'phags pa dgongs pa zab mo nges par 'grel pa'i mdo rgya cher 'grel pa): bde ba rnam pa gnyis: 1) rab tu zhi ba'i bde ba; 2) yongs su mkhyen pa'i bde ba"@en .
+    
+    bdr:T2GS1335  a         :Topic ;
+        skos:prefLabel      "bde ba/"@bo-x-ewts , "happiness, bliss"@en , "sukha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT4F1E05F02105D3AA , bdr:NTEC6D41BB03B5C769 .
+}

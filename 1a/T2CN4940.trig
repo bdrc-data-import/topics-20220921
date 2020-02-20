@@ -1,0 +1,59 @@
+@base          <bdg:T2CN4940> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4940 {
+    bda:LG4404B35538C99DC8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-27T09:44:47.264Z"^^xsd:dateTime ;
+        adm:logMessage      "created & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG67FDB42C9C0F141B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T13:11:38.26Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGA30B1BCE98800322
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T15:24:25.236Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGA98F6784F95A1512
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T15:05:32.393Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4940  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4940 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1a/T2CN4940.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4940 ;
+        adm:logEntry        bda:LG4404B35538C99DC8 , bda:LG67FDB42C9C0F141B , bda:LGA30B1BCE98800322 , bda:LGA98F6784F95A1512 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCF2178C7E7F5150D
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.12, p. 194 སླེ་ལུང་རྗེ་དྲུང་བཞད་པའི་རྡོ་རྗེའི་དག་སྣང་ལས་བྱུང་བའི་ཡིད་དམ་ཞིག"@en .
+    
+    bdr:T2CN4940  a         :Topic ;
+        skos:prefLabel      "bla ma rdo rje thod pa rtsal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCF2178C7E7F5150D .
+}

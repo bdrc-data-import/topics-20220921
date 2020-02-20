@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1192> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1192 {
+    bda:LGA29879EABD270E85
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T10:33:08.432Z"^^xsd:dateTime ;
+        adm:logMessage      "created with note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1192  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1192 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ff/T2GS1192.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1192 ;
+        adm:logEntry        bda:LGA29879EABD270E85 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT678C61068A88F208
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the king vaisravana who is green, with one face, thre eyes, and fangs showing; his right hand holds a club marked with a jewel garland; his left hand holds a greasure mongoose against his side; he wears silken garments and golden armor, is adorned with jewel ornaments, and sits on his lion seat in sattvaparyanka, as splendid as a thousand sons: he is crowned with ratnasambhava;\n\naround him like is shadows appear the eight great horsemen each riding a blue horse and surrounded byva a host of ten million yaksas; outside are the eight great naga, all yellow and holding jewels between their joined palms of their two hands\n\nthe eight great horsemen who are his attendants are:\n1) yellow jambhala holding a jewel in the east; 2) yellow purnabhadra (gang ba bzang po) holding a jewel flask in the south; 3) white manibhadra (nor bu bzang po) holding a gem in the west; 4) black kubera holding a sword in the north; 5) yellow samjnaya (yang dag shes) holding a sword in the southeast; 6) black atavaka ('brog gnas) holding a jewel and spear in the southwest; 7) pale yellow pancika (lngas rtsen) holding a storeyed building in the northwest; 8) white picikundalin ('jam po 'khyil ba) his right hand holding a saber (gri) and his left a shield.\n\ndeities of tibetan buddhism #312"@en .
+    
+    bdr:T2GS1192  a         :Topic ;
+        skos:prefLabel      "rnam sras ljang gu seng zhon ma dz+nyA na'i lugs/"@bo-x-ewts , "lion-mounted, green vaisravana in the tradition of jnana"@en ;
+        :isRoot             true ;
+        :note               bdr:NT678C61068A88F208 .
+}

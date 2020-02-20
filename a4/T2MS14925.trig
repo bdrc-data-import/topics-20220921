@@ -1,0 +1,41 @@
+@base          <bdg:T2MS14925> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14925 {
+    bda:LGD1A73A81551C4897
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-04T12:42:26.436Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14925  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14925 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a4/T2MS14925.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14925 ;
+        adm:logEntry        bda:LGD1A73A81551C4897 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBD1D5C43A28B6937
+        a                   :Note ;
+        :noteText           "period of chinese imperial history from approximately 1271 to 1368"@en .
+    
+    bdr:T2MS14925  a        :Topic ;
+        skos:altLabel       "yuan chao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yon rgyal rabs/"@bo-x-ewts , "yuan dynasty"@en , "元朝"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTBD1D5C43A28B6937 .
+}

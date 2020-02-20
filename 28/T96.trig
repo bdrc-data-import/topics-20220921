@@ -1,0 +1,41 @@
+@base          <bdg:T96> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T96 {
+    bda:LGDEC6C9D6C1F8FEB0
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T16:19:25.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T96  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T96 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "28/T96.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T96 ;
+        adm:logEntry        bda:LGDEC6C9D6C1F8FEB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3E873B5AC78EF2E7
+        a                   :Note ;
+        :noteText           "collected topics; under this keyword are classed preliminary manuals of logic studied in the monastic curriculum"@en .
+    
+    bdr:T96  a              :Topic ;
+        skos:altLabel       "collected topics"@en ;
+        skos:prefLabel      "bsdus grwa/"@bo-x-ewts , "logic manual"@en , "摄类学"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT3E873B5AC78EF2E7 .
+}

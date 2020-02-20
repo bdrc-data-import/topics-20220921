@@ -1,0 +1,40 @@
+@base          <bdg:T110> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T110 {
+    bda:LGF5B9D855052A9779
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T10:12:35.435Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T110  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T110 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "77/T110.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T110 ;
+        adm:logEntry        bda:LGF5B9D855052A9779 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7317DCFD4427F352
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the great king vaisravana, who is white, with one face and two arms; his right hand holds a hook, summoning siddhi, his left holds a flask of moon crystal full of nectar of immortal gnosis, its mouth adorned with a golden vajra; peaceful, graceful, and shining in appearance, lhe is adorned with silks and all the jewel ornaments.\n\non the eight petals are eight white k+Sha syllables, which transfom into: east jambhala; south purnabhadra; west manibhadra; north kubera; southeast samjnaya; southwest atavaka; northwest pancika; northeast picikundalin (pi tsi kuN+Da li), each of which is white and holds a hook and a flask; each is adorned with white silk and jewels and is riding on a white horse; on the first ring are the eight nagas; on the second ten million yaksa; and on the last the twenty-eight generals and thirty strong ones, all in white, life-holding aspect.\n\ndeities of tibetan buddhism #311"@en .
+    
+    bdr:T110  a             :Topic ;
+        skos:prefLabel      "rnam sras dkar po tshe 'dzin/"@bo-x-ewts , "life-holding white vaisravana"@en , "vaisravana ayurdhara sita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7317DCFD4427F352 .
+}

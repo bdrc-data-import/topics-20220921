@@ -1,0 +1,35 @@
+@base          <bdg:T012AG03391> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03391 {
+    bda:LG9EE53E8164776DD4
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-22T15:08:43.009Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T012AG03391  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03391 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b2/T012AG03391.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03391 ;
+        adm:logEntry        bda:LG9EE53E8164776DD4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T012AG03391  a      :Topic ;
+        skos:prefLabel      "yi ge drug (thang rgyal lugs)"@bo-x-ewts , "the six syllable mantra of avalokitesvara as transmitted by thang stong rgyal po"@en ;
+        :isRoot             true .
+}

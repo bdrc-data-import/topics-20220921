@@ -1,0 +1,57 @@
+@base          <bdg:T14> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T14 {
+    bda:LG3433385A06B34564
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T18:45:42.615Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T10MS14620 to T221"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG5437B805E296DF18
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-03T10:04:23.926Z"^^xsd:dateTime ;
+        adm:logMessage      "edited and added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGED23382481DAA134
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:17:22.325Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T14  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T14 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a6/T14.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T14 ;
+        adm:logEntry        bda:LG3433385A06B34564 , bda:LG5437B805E296DF18 , bda:LGED23382481DAA134 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3ACF17C6AF0AAF69
+        a                   :Note ;
+        :noteText           "see chab shog 'bris yig (T221)"@en .
+    
+    bdr:NTCE57B10C650D5CC6
+        a                   :Note ;
+        :noteText           "this topic is applied to letters of correspondence and advice, not official letters."@en .
+    
+    bdr:T14  a              :Topic ;
+        rdfs:seeAlso        bdr:T221 ;
+        skos:altLabel       "letters/"@bo-x-ewts ;
+        skos:prefLabel      "spring yig"@bo-x-ewts , "'phrin yig"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3ACF17C6AF0AAF69 , bdr:NTCE57B10C650D5CC6 .
+}

@@ -1,0 +1,54 @@
+@base          <bdg:T1GS110791> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS110791 {
+    bda:LG7F96A45AEDE74856
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-16T13:34:56.625Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCBB4826BCE0FEAE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-12T13:59:36.995Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T1044"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGEA65A9A13FF3A46B
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-16T13:30:24.578Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS110791  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS110791 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2d/T1GS110791.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS110791 ;
+        adm:logEntry        bda:LG7F96A45AEDE74856 , bda:LGCBB4826BCE0FEAE2 , bda:LGEA65A9A13FF3A46B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1044 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT9CBDB8F62B7C6637
+        a                   :Note ;
+        :noteText           "sort of blessing"@en .
+    
+    bdr:T1GS110791  a       :Topic ;
+        skos:altLabel       "ye shes dbab/"@bo-x-ewts ;
+        skos:prefLabel      "byin 'bebs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9CBDB8F62B7C6637 .
+}

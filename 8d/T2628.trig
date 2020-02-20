@@ -1,0 +1,33 @@
+@base          <bdg:T2628> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2628 {
+    bda:T2628  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2628 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "8d/T2628.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2628 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA557F31C9C562F40
+        a                   :Note ;
+        :noteText           "the eight classes of gods and demons. although there exist various desciptions the  general one is\"\ndeva (lha)\nnaga (lha)\nyaksha (gnod sbyin)\ngandharva (dri za)\nasura (lha ma yin)\ngaruda (khyung)\nkinnara (mi 'am ci)\nmahoraga\nthese eight classes can also refer to various types of mundane spirits who can either cause help or harm but remain invisible to normal human beings:\nging\nmara\nbtsan\nyaksa (gnod sbyin)\nraksha\nmamo (ma mo)\nrahula (gza')\nnaga (klu)\nthey also represent the impure manifestation of the eight types of consciousness"@en .
+    
+    bdr:T2628  a            :Topic ;
+        skos:prefLabel      "lha srin sde brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA557F31C9C562F40 .
+}

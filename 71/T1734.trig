@@ -1,0 +1,42 @@
+@base          <bdg:T1734> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1734 {
+    bda:LG10E700F161F0B811
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-09T14:42:59.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added english"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGEC188175D2F33E08
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:15:53.302Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T1734  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1734 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "71/T1734.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1734 ;
+        adm:logEntry        bda:LG10E700F161F0B811 , bda:LGEC188175D2F33E08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1734  a            :Topic ;
+        skos:altLabel       "wrathful manjusri/"@bo-x-ewts , "大威德金刚"@zh-hans ;
+        skos:prefLabel      "gshin rje gshed/"@bo-x-ewts , "yamāntaka"@sa-x-ndia , "大威德金剛"@zh-hant ;
+        :isRoot             true .
+}

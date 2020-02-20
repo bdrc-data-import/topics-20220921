@@ -1,0 +1,46 @@
+@base          <bdg:T2571> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2571 {
+    bda:LG2B001535645584A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-03T15:01:35.013Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn because of not used"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGD20192D24231980A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-02T14:17:54.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added full name and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2571  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2571 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "30/T2571.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2571 ;
+        adm:logEntry        bda:LG2B001535645584A7 , bda:LGD20192D24231980A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2B65163A65D4089E
+        a                   :Note ;
+        :noteText           "four transmissions of precepts associated with mahamudra"@en .
+    
+    bdr:T2571  a            :Topic ;
+        skos:prefLabel      "bka' bzhi brgyud pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2B65163A65D4089E .
+}

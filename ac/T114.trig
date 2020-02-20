@@ -1,0 +1,46 @@
+@base          <bdg:T114> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T114 {
+    bda:LGEA2443A925911597
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T11:14:06.116Z"^^xsd:dateTime ;
+        adm:logMessage      "rule of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF386E86C0AFA1E7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T11:19:28.797Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T114  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T114 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ac/T114.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T114 ;
+        adm:logEntry        bda:LGEA2443A925911597 , bda:LGF386E86C0AFA1E7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2127796A974E8CD1
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the great king vaisravana who is green with one face and two arms; his right hand holds at his heart a club marked with a wish-granting gem; his left holds resting on his left thigh a mongoose that grants siddhis; he is peaceful, smiling, and graceful but with stout limbs and a big belly; he is adorned with silks and all the jewel ornaments; from his mouth falls a rain of gems; from his right and left shoulders come the sun and moon; he sits in sattvaparyanka upon a treasure vase; his consort is the mother padmacuda (pad+ma'i gtsug phud ma) who is red, her right hand holding a gem and her left a flask; her lower half is the coiled tail of a snake, and she has a sevenfold hood of snake heads; she is adorned with silks and jewel ornamentss\n\ndeviations: padmacuda is shown blue and lacks a snake hood.\n\ndeities of tibetan buddhism #302."@en .
+    
+    bdr:T114  a             :Topic ;
+        skos:prefLabel      "rnam sras ljang ser be con/"@bo-x-ewts , "yellow green vaisravana with a club"@en , "vaisravana gadadharasyamapita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2127796A974E8CD1 .
+}

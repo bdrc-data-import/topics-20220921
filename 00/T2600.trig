@@ -1,0 +1,35 @@
+@base          <bdg:T2600> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2600 {
+    bda:T2600  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2600 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "00/T2600.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2600 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT74C63DCAA37029DF
+        a                   :Note ;
+        :locationStatement  "v. 70" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "rituals for protection against disease, malevolent spirits, and obstacles. the rin chen gter mdzod contains 30 separate texts (4 texts are in the dkar chag and seem to be missing when the blocks were carved)\n1) rwa srung dug khrag (rgya phur bu)\n2) bum lcags thun mong rdzas srung (byang bdag bkra shis stobs rgyal)\n3) rwa dong snyan brgyud rdzas srung (rwa ban chos dpal bzang po)\n4) 'go ba'i lha lngas skyob pa'i man ngag dang gsol mchod (grwa pa mngon shes)\n5) byug bdug 'dogs gsum rgyan gyi 'khor lo dang srung 'khor kun thub chen mo (mnga' bdag myang ral)\n6) shing bu drug gi sgrib shing, zhwa srung, yig rgod nyer gcig (zhang khrom)\n7) rdzas srung nag po dgu sbyor, rdzas chen bco brgyad sbyor thabs sogs (gnubs ston kun dga' grags pa)\n8) dpe sna ngan pa kun thub (karma chags med)\n9) bla ma dgongs 'dus kun thub drug gi srung ba (sangs rgyas gling pa)\n10) gur drag nyes sel srung ba dang 'dzul chog dang rta gsang rta nag gi yig sna thod ngan rdzas ngan kun thub (rat+na gling pa)\n11) ye shes rab 'bar gyi sde brgyad srung ba (klong gsal snying po)\n12) go cha lha lnga\n13) 'jigs med rdo rje'i gnod lnga srung ba (gnam chos)\n14) srung ba thor bu phyogs bsdus kyi be bum ('jam dbyangs mkhyen brtse'i dbang po)"@en .
+    
+    bdr:T2600  a            :Topic ;
+        skos:prefLabel      "nad gdon bar chad spyir srung ba/"@bo-x-ewts , "protection from disease, evil spirits, and obstacles"@en ;
+        :isRoot             true ;
+        :note               bdr:NT74C63DCAA37029DF .
+}

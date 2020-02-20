@@ -1,0 +1,36 @@
+@base          <bdg:T1091> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1091 {
+    bda:LG208CFD524E95051D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T09:11:22.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in multi languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1091  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1091 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "66/T1091.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1091 ;
+        adm:logEntry        bda:LG208CFD524E95051D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1091  a            :Topic ;
+        skos:altLabel       "sa bcu lam lnga /"@bo-x-ewts , "sa dang lam/"@bo-x-ewts , "The five paths and the ten bodhisattva levels"@en , "五道十地"@zh-hans ;
+        skos:prefLabel      "sa lam/"@bo-x-ewts , "paths and bhumis"@en , "道地"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,71 @@
+@base          <bdg:T1AT298> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT298 {
+    bda:LG0B5FB833445DDD5B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T15:34:37.446Z"^^xsd:dateTime ;
+        adm:logMessage      "Withdrawn in favor of T1351"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG550DB62486BDE539
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T15:16:50.215Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7DEE4AAFC986BB0B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T00:35:16.491Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG824C66929981CC7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-01T14:11:42.254Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBF6E217BB4897A0B
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:33:48.569Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGE169C064EA6E8AEB
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-25T17:52:13.191Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:T1AT298  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT298 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4c/T1AT298.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT298 ;
+        adm:logEntry        bda:LG0B5FB833445DDD5B , bda:LG550DB62486BDE539 , bda:LG7DEE4AAFC986BB0B , bda:LG824C66929981CC7B , bda:LGBF6E217BB4897A0B , bda:LGE169C064EA6E8AEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1351 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2AB5FC0EA3511D7C
+        a                   :Note ;
+        :noteText           "this topic is used for rituals focusing upon the group of five dakini: the deities are seated on five lotus seats\n1) on the middle one on a moon is the buddhadakini (sangs rgyas mkha' 'gro), white and crowned with vairocana, she is peaceful in sentiment;    \n2) in the east seated on a sun is vajradakini (rdo rje mkha' 'gro), blue and crowned with aksobhya and wrathful in sentiment;  \n3) in the south on a yellow moon is ratnadakini (rin chen mkha' 'gro), crowned with ratnasambhava and cheeful in sentiment;  \n4) in the west on a red, rayless sun, comes padmadakini (pad+ma mkha' 'gro), red, crowned with amitabha, and of passionate sentiment;  \n5) in the north on a crossed vajra, is visvadakini or karmadakini (las kyi mkha' 'gro or karma mkha' 'gro), green and crowned with amoghasiddhi, and of various sentiments including wrath and mirth;\neach plays a damaru with her right hand, while her left holds at her heart a skull full of nectar; they have crowns of five dry skulls, long necklaces of fifty fresh heads, and the five symbolic ornaments of bone; their hair is black and half bound up; under the left arm of each is a khatvanga of the nature of method (=the male consort), marked respectively with a wheel, a vajra, a jewel, a lotus, and a sword; they abide amid five-colored light rays, each surrounded by a hundred thousand principal dakinis similar to herself and by countless attendant dakinis. deities of tibetan buddhism #415-417"@en .
+    
+    bdr:T1AT298  a          :Topic ;
+        skos:altLabel       "mkha' 'gro ma rigs lnga /"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro sde lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2AB5FC0EA3511D7C .
+}

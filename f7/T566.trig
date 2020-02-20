@@ -1,0 +1,40 @@
+@base          <bdg:T566> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T566 {
+    bda:LG134E18EF72BB7971
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T08:52:25.847Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T566  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T566 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f7/T566.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T566 ;
+        adm:logEntry        bda:LG134E18EF72BB7971 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8F9B4035F26D3B3F
+        a                   :Note ;
+        :noteText           "this topic is used for rituals involving the sakyamuni buddha surrounded by the sixteen elders (arhats), the upasaka dharmatrata, the hoshang, and the four kings of the directions;  \ndeities of tibetan buddhism. #16-38;  for the individual sixteen sthavira, etc. see T1154"@en .
+    
+    bdr:T566  a             :Topic ;
+        skos:prefLabel      "thub pa gnas brtan bcu drug dang bcas pa/"@bo-x-ewts , "mahamuni (astadasasthaviraparivara)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT8F9B4035F26D3B3F .
+}

@@ -1,0 +1,60 @@
+@base          <bdg:T2CN5007> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN5007 {
+    bda:LG8EF2DB1F23F7B0D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T16:44:41.831Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9A304C3AFE5A52AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:01:46.251Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9C61A6691BF80A85
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T15:00:52.782Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGFEC40F7BCB835564
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T15:34:40.143Z"^^xsd:dateTime ;
+        adm:logMessage      "created and added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN5007  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN5007 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bc/T2CN5007.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN5007 ;
+        adm:logEntry        bda:LG8EF2DB1F23F7B0D9 , bda:LG9A304C3AFE5A52AD , bda:LG9C61A6691BF80A85 , bda:LGFEC40F7BCB835564 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT76D3D01B7FD7E475
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.2, p.440 སྟེང་དུ། སྐུ་མདོག་མཐིང་ནག་གསུས་པོ་ཆེ། །ཞལ་གཅིག་ཕྱག་བཞི་ཕྱེད་སྐྱིལ་བཞུགས། །གཡས་གཉིས་ཙིཏྟ་རལ་གྲི་བསྣམས། །གཡོན་གཉིས་ཐོད་པ་ཁ་ཊྲཱཾ་བསྣམས། །ཞལ་གདངས་ལྗགས་འདྲིལ་མཆེ་བ་གཙིགས། །ཁྲོ་གཉེར་སྤྱན་གསུམ་དམར་ལ་འཁྲུག །སྨ་ར་སྨིན་མ་དབུ་སྐྲ་སེར། །ཐོད་སྐམ་རིན་ཆེན་སྦྲུལ་གྱིས་བརྒྱན། །མི་མགོའི་དོ་ཤལ་སྟག་ལྤགས་དཀྲིས། །འཇིགས་བྱེད་ཆེན་པོར་ཕྱག་འཚལ་བསྟོད། །ཅེས་སོགསགསལ་ལོ།"@bo .
+    
+    bdr:T2CN5007  a         :Topic ;
+        skos:altLabel       "nyang gter ye shes mgon po/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes mgon po/ (nyang gter/)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT76D3D01B7FD7E475 .
+}

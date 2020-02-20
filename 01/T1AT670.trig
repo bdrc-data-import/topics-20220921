@@ -1,0 +1,74 @@
+@base          <bdg:T1AT670> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT670 {
+    bda:LG463C35A456722BA3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-11T04:36:57.872Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG535C3532C21F2F64
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T19:00:45.727Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T11MS47 to T1029"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG5E82E19DF1F9E960
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-19T09:41:30.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:LG83A5BEA1BAC213A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-25T11:22:32.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG88821867355A1587
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:48.915Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCA2831B9EE73C889
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-08T14:17:45.921Z"^^xsd:dateTime .
+    
+    bda:T1AT670  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT670 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "01/T1AT670.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT670 ;
+        adm:logEntry        bda:LG463C35A456722BA3 , bda:LG535C3532C21F2F64 , bda:LG5E82E19DF1F9E960 , bda:LG83A5BEA1BAC213A2 , bda:LG88821867355A1587 , bda:LGCA2831B9EE73C889 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT09EB92FB24E12F83
+        a                   :Note ;
+        :noteText           "this topic is used generically for the elucidation of particular technical terms"@en .
+    
+    bdr:NTB5F4077CF24E2CFE
+        a                   :Note ;
+        :noteText           "explanation and elucidation of crucial points"@en .
+    
+    bdr:T1AT670  a          :Topic ;
+        rdfs:comment        "explanation and elucidation of crucial points"@en ;
+        rdfs:seeAlso        bdr:T1029 , bdr:T1491 , bdr:T2339 ;
+        skos:altLabel       "gnad gsal/"@bo-x-ewts , "gsal byed/"@bo-x-ewts ;
+        skos:prefLabel      "gnad 'gag gsal byed/"@bo-x-ewts , "explanation and elucidation of crucial points and concepts"@en ;
+        :isRoot             true ;
+        :note               bdr:NT09EB92FB24E12F83 , bdr:NTB5F4077CF24E2CFE .
+}

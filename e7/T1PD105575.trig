@@ -1,0 +1,52 @@
+@base          <bdg:T1PD105575> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD105575 {
+    bda:LG96EE42A61FB056FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-21T11:44:17.582Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGA7882BB26AB60C26
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T10:55:49.331Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1PD105573"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1PD105575  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD105575 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e7/T1PD105575.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD105575 ;
+        adm:logEntry        bda:LG96EE42A61FB056FC , bda:LGA7882BB26AB60C26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1PD105573 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2D0509AFB360D3BE
+        a                   :Note ;
+        :noteText           "this topic refers to the nag bza' group in relation to the nag bza' region"@en .
+    
+    bdr:NTD4B823AC30C9EA10
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1PD105573"@en .
+    
+    bdr:T1PD105575  a       :Topic ;
+        skos:altLabel       "nag bza' sde ba/"@bo-x-ewts , "nag bza' sde pa/"@bo-x-ewts ;
+        skos:prefLabel      "nag bza'"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2D0509AFB360D3BE , bdr:NTD4B823AC30C9EA10 .
+}

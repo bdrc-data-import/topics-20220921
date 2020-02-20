@@ -1,0 +1,53 @@
+@base          <bdg:T11MS67> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS67 {
+    bda:LG07E8CE498B4458D5
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-24T19:55:57.238Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAC639DDA4E525DFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-25T12:13:39.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative name, abbreviation"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF75AF2B22A91DD88
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-24T19:58:17.321Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T11MS67  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS67 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d8/T11MS67.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS67 ;
+        adm:logEntry        bda:LG07E8CE498B4458D5 , bda:LGAC639DDA4E525DFB , bda:LGF75AF2B22A91DD88 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5A86EDCFB47C9618
+        a                   :Note ;
+        :noteText           "subject classification applies to both the deity and tantra"@en .
+    
+    bdr:T11MS67  a          :Topic ;
+        rdfs:seeAlso        bdr:T00JR803 ;
+        skos:altLabel       "gsang snying /"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba'i snying po/"@bo-x-ewts , "guhyagarbha"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT5A86EDCFB47C9618 .
+}

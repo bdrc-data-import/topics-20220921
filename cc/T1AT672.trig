@@ -1,0 +1,61 @@
+@base          <bdg:T1AT672> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT672 {
+    bda:LG1EEDB0EAE8AC9231
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-25T11:34:46.125Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG592A45543A3487FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-21T16:58:51.339Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG7E6AE170DF334376
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-08T10:47:30.99Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:LGA07B39BF9B507AC5
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-08T10:52:19.562Z"^^xsd:dateTime .
+    
+    bda:LGCD95802112CE4133
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-19T15:04:05.497Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:T1AT672  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT672 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cc/T1AT672.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT672 ;
+        adm:logEntry        bda:LG1EEDB0EAE8AC9231 , bda:LG592A45543A3487FF , bda:LG7E6AE170DF334376 , bda:LGA07B39BF9B507AC5 , bda:LGCD95802112CE4133 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5BE829D94AF7B224
+        a                   :Note ;
+        :noteText           "this topic is applied to pointing-out instructions on the nature of mind; a direct introduction to awareness"@en .
+    
+    bdr:T1AT672  a          :Topic ;
+        rdfs:seeAlso        bdr:T10MS14464 ;
+        skos:altLabel       "ngo sprod/"@bo-x-ewts ;
+        skos:prefLabel      "rig pa ngo sprod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5BE829D94AF7B224 .
+}

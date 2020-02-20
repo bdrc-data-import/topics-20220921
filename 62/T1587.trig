@@ -1,0 +1,46 @@
+@base          <bdg:T1587> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1587 {
+    bda:LG2B6E30B03487FED0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-05T12:50:22.853Z"^^xsd:dateTime ;
+        adm:logMessage      "re-released for usage"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD33A97882622373B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:48:55.692Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1587  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1587 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "62/T1587.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1587 ;
+        adm:logEntry        bda:LG2B6E30B03487FED0 , bda:LGD33A97882622373B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT59D05DD95576702D
+        a                   :Note ;
+        :noteText           "six dharmas of the yogini sukhasiddhi"@en .
+    
+    bdr:T1587  a            :Topic ;
+        skos:prefLabel      "su kha chos drug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT59D05DD95576702D .
+}

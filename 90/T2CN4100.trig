@@ -1,0 +1,60 @@
+@base          <bdg:T2CN4100> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4100 {
+    bda:LG18DE62E63F220652
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-04T11:56:15.247Z"^^xsd:dateTime ;
+        adm:logMessage      "created and added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG26A506B76D7D1EF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T13:11:25.288Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG3FD5EF3CFC2E811D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T14:42:16.267Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG4D47914E2690027B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T16:10:15.61Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with the note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4100  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4100 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "90/T2CN4100.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4100 ;
+        adm:logEntry        bda:LG18DE62E63F220652 , bda:LG26A506B76D7D1EF8 , bda:LG3FD5EF3CFC2E811D , bda:LG4D47914E2690027B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA749E5E64A26ABF4
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.3, p.202 ཀླུ་རྒྱལ་འདི་ནི་ངེས་དོན་དུ་བྱང་ཆུབ་སེམས་དཔའ་ནམ་མཁའི་སྙིང་པོ་དང་ངོ་བོ་གཅིག་ཏུ་གསུངས་ལ། སྐུ་མདོག་གནག་པ་སྟོད་ལྷའི་ལུས་ཅན་སྦྲུལ་མགོ་བདུན་གྱི་གདེངས་ཀ་འཕྱོ་ཞིང་། སྐུ་སྨད་སྦྲུལ་མཇུག་ཏུ་འཁྱིལ་བ། གཡས་ཡིད་བཞིན་གྱི་ནོར་བུ་རིན་པོ་ཆེ་དང་། གཡོན་གདུང་སེལ་འཆི་མེད་ཀྱི་བདུད་རྩིས་གང་བའི་གཏེར་བུམ་འཛིན་པ་མཛེས་འཛུམ་ལྟ་ན་སྡུག་པ་ཞིག་ཡོད་པར་གསལ།"@bo .
+    
+    bdr:T2CN4100  a         :Topic ;
+        skos:altLabel       "klu rgyal mal gro gzi can/"@bo-x-ewts ;
+        skos:prefLabel      "mal gro gzi can/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA749E5E64A26ABF4 .
+}

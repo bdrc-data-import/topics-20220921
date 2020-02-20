@@ -1,0 +1,52 @@
+@base          <bdg:T953> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T953 {
+    bda:LG43BA842DD49C3E7D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T07:17:05.365Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGBF44CA42067F2619
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T13:55:32.254Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE987C4C770D13958
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T14:34:55.111Z"^^xsd:dateTime ;
+        adm:logMessage      "note added regarding transmission from sakyaraksita"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T953  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T953 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/T953.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T953 ;
+        adm:logEntry        bda:LG43BA842DD49C3E7D , bda:LGBF44CA42067F2619 , bda:LGE987C4C770D13958 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT311A153F56327BC9
+        a                   :Note ;
+        :noteText           "under this topic are classed empowerments and rituals that have the subject of the eight major bodhisattvas treated together; each of them can be practiced separately\n\neight close sons or the eight major bodhisattvas: \n \n!) maitreya (byams pa) who is orange with one face and two arms, making the gesture of explaining, the left holding a branch of a naga tree with a flower opening beside his ear; he has the attributes of a brahmacarin with a silken lower garment and a deerskin skirt covering his left breast; on the surface of his topknot of tresses is the mahabodhi stupa; he is complete with the marks and signs and is accompanied by the wrathful aparajita; his leg posture is whatever is preferred.\n \n2) samantabhadra (kun tu bzang po) who is red with his right hand pressing to his heart a flask filled with nectar; his left hand holding a sun and a white lotus; he is accompanied by wrathful takkiraja, adorned with silks and jewel ornaments, who sits in sattvaprayanka, with the crown of the conquerors of the five families.\n  \n3) khagarbha; khamgarbha;  akasagarba (nam mkha'i snying po) who is blue with blue garments; both hands make at the heart the gesture of explaining the dharma ; the left holds the root of a lotus wich opens beside the ear and the has on it a blue sword; he is in the midst of a mansion of the nature of space, blazing with blue light rays and surrounded by an entourage of wrathful deities such as niladanda, many knowledge holders wielding weapons and many of his own emanations in various colors; adorned with silks nd jewel ornaments, he sits in sattvaprayanka and has a crown of the conquerors of the five families.  \n\n4) ksitigarbha (sa'i snying po) who is yellow with a yellow scarf; he has peaceful, red eyes and a garland of blue flowers on his head; his right hand holds a fruit; his left hand holds a lotus with a gem on it; he sends out green light rays; he is surrounded by vajrapatala and other attendants, he sits in sattvaparyanka adorned with silks and jewel ornaments with a crown of the conquerors of the five families, in a yellow mansion encirled by jewel-rock and snow mountains.\n\ndeviation both hands holing lotuses with gems. \n\n5) nivarana-viskambhin; sarvanivarana-viskambhin (sgrib pa rnam sel, suppressing obscurations) who is white, his right hand holding a flask full of nectar , his left hand holding the stem of a wite lotus which opens beside his earand has on it a full moon radiating light and without defilements; mahapratyangira (great repulser), usnisacakravartin and may other wrathful deities of knowledge are bowing to him; adorned with silks and jewel ornaments, he sits in sattvaprayanka with a crown of the conquerors of the five families.\n\n6) avalokita; avalokitesvara (spyan ras gzigs) or lokanatha or lord of the world, who is wite as an autumn moon; on the surface of his topknot rests lord amitabha; he either has both hands at his heart in the gesture of explaining the dharma or his right hand is boon granting and his left resting on his seat and holding the stem of a white lotus; a deerskin is over his left shoulder; he has silks and jewel ornaments and abides in the lalita posture with right leg extended; next to him is the wrathful king hayagriva, red with blazing splendor like the fire at the end of the eon, with a green neighing horse head  on top of his head; his right hand is raised in homage and his left holds a white club. \n\ndeviation: hayagriva holding a hook \n\n7) vajrapani (phyag na rdo rje), peaceful vajrapani who is green with a jewel crown and is crowned with the five families, aksobhya serving as the chief; his right hand brandishes at his heart a flaming vajra and his left rests on his seat; he is adorned with superb garments and all the ornaments; he abides in lalita posture, smiling broadly with a backrest of moonlight; alternatively he can be blue in color; next to him is amrtakundalin, complete with the garb of a wrathful deity; he is green or sky ble and holds an axe.\n\ndeviation moon seat\n\n8) manjusri ('jam dpal), who is the color of young saffron, with both hands at his heart making the gesture of explaining the dharma; the left holds the stem of an utpala that is marked with a book; he is in the lalita posture, his head adorned with aksobhya; he has five knots of hair or a topknot of tresses and is adorned with silks and jewels; against his feet is wrathful yamantaka, who is dark blue with a garland of skulls; his right hand rests on manjusri's foot or is raised in homage and his left holding a twenty pointed hammer; he is complete with the apparel of a wrathful deitiy/\n\nthis group of sadhana is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava.\n\n\ndeities of tibetan buddhism 247-251, 272-274;"@en .
+    
+    bdr:T953  a             :Topic ;
+        skos:prefLabel      "nye ba'i sras brgyad/"@bo-x-ewts , "the eight close sons"@en ;
+        :isRoot             true ;
+        :note               bdr:NT311A153F56327BC9 .
+}

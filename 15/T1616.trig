@@ -1,0 +1,41 @@
+@base          <bdg:T1616> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1616 {
+    bda:LG7827896BD516C475
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T14:37:02.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added names of individual gter ston to gter ma if soley discovered by them"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:LGA957932345EEBBF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T16:35:07.991Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan infavor of right t"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1616  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1616 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "15/T1616.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1616 ;
+        adm:logEntry        bda:LG7827896BD516C475 , bda:LGA957932345EEBBF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1616  a            :Topic ;
+        skos:prefLabel      "re manta (gnam chos mi 'gyur rdo rje)"@bo-x-ewts ;
+        :isRoot             true .
+}

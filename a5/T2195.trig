@@ -1,0 +1,36 @@
+@base          <bdg:T2195> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2195 {
+    bda:LG97F4FE53B4D2FAB4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T09:40:02.451Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed, added all names in multi languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2195  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2195 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a5/T2195.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2195 ;
+        adm:logEntry        bda:LG97F4FE53B4D2FAB4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2195  a            :Topic ;
+        skos:altLabel       "学法女"@zh-hans ;
+        skos:prefLabel      "dge slob ma/"@bo-x-ewts , "nun with six precepts"@en , "shikshamana"@sa-x-ndia , "式叉摩那尼"@zh-hans ;
+        :isRoot             true .
+}

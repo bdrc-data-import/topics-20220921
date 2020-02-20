@@ -1,0 +1,59 @@
+@base          <bdg:T10MS14532> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14532 {
+    bda:LG5C0B4DB76CD1732E
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-10-25T16:41:03.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG6A20CCD1FB0DA7F8
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-10-25T16:49:19.554Z"^^xsd:dateTime ;
+        adm:logMessage      "yig nor bcos"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG814092271ABDB69A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-17T13:01:48.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA8475390C0F10E10
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-17T12:54:41.294Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T10MS14532  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14532 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "66/T10MS14532.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14532 ;
+        adm:logEntry        bda:LG5C0B4DB76CD1732E , bda:LG6A20CCD1FB0DA7F8 , bda:LG814092271ABDB69A , bda:LGA8475390C0F10E10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT215950D2D74DAB18
+        a                   :Note ;
+        :noteText           "གྲུབ་ཆེན་གླིང་རས་པ་དང་། འགྲོ་མགོན་གཙང་པ་རྒྱ་རས་ནས་བརྒྱུད་པའི་བཀའ་བརྒྱུད་པ་འདིའི་ནང་གསེས་ལ་སྟོད་སྨད་བར་གསུམ་དུ་ཕྱེ་བའི་སྟོད་འབྲུག་ནི་རྒྱ་རས་ནས་རྒོད་ཚང་པ་བརྒྱུད་དེ་བྱུང་བ་དེ་ཡིན་ལ།"@bo .
+    
+    bdr:T10MS14532  a       :Topic ;
+        skos:altLabel       "stod 'brug bka' brgyud/"@bo-x-ewts , "stod 'brug dkar brgyud/"@bo-x-ewts ;
+        skos:prefLabel      "stod 'brug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT215950D2D74DAB18 .
+}

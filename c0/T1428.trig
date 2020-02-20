@@ -1,0 +1,40 @@
+@base          <bdg:T1428> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1428 {
+    bda:LG5A01C51C60CA9C58
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T11:12:50.927Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application and english name added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1428  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1428 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c0/T1428.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1428 ;
+        adm:logEntry        bda:LG5A01C51C60CA9C58 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9503B5BE64E1776B
+        a                   :Note ;
+        :noteText           "this topic is applied to various instructions describing how various deities are to be drawn; such works were quite common in mongolia"@en .
+    
+    bdr:T1428  a            :Topic ;
+        skos:prefLabel      "lha 'bri ba'i man ngag"@bo-x-ewts , "artistic instruction for drawing deities"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9503B5BE64E1776B .
+}

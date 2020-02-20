@@ -1,0 +1,48 @@
+@base          <bdg:T1894> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1894 {
+    bda:LG39FCECBD317E848C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T15:00:51.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG51A7E2ECE6BDAEC8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-25T01:50:44.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant names; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG553FCEF18E36EA2F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T10:34:19.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in multi languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1894  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1894 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "41/T1894.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1894 ;
+        adm:logEntry        bda:LG39FCECBD317E848C , bda:LG51A7E2ECE6BDAEC8 , bda:LG553FCEF18E36EA2F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1894  a            :Topic ;
+        skos:altLabel       "a ne/"@bo-x-ewts , "btsun ma/"@bo-x-ewts , "dge ma/"@bo-x-ewts , "jo mo/"@bo-x-ewts , "rab byung ma/"@bo-x-ewts , "尼师"@zh-hans ;
+        skos:prefLabel      "dge tshul ma/"@bo-x-ewts , "nuns"@en , "尼姑"@zh-hans ;
+        :isRoot             true .
+}

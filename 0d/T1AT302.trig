@@ -1,0 +1,41 @@
+@base          <bdg:T1AT302> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT302 {
+    bda:LG684C5D6C75A1FBB3
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-10T15:29:59.197Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:T1AT302  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT302 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0d/T1AT302.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT302 ;
+        adm:logEntry        bda:LG684C5D6C75A1FBB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT603BB2C2F790AA2B
+        a                   :Note ;
+        :noteText           "the four visions or four visionary appearances in the Great Perfection (chos nyid mngon sum gi snang ba; nyams gong 'phel ba'i snang ba; rig pa tshad phebs kyi snang ba; and chos nyid du 'dzin pa zad pa'i snang ba)."@en .
+    
+    bdr:T1AT302  a          :Topic ;
+        rdfs:comment        "the four visions or four visionary appearances in the Great Perfection (chos nyid mngon sum gi snang ba; nyams gong 'phel ba'i snang ba; rig pa tshad phebs kyi snang ba; and chos nyid du 'dzin pa zad pa'i snang ba)." ;
+        skos:altLabel       "snang ba bzhi/"@bo-x-ewts ;
+        skos:prefLabel      "snang bzhi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT603BB2C2F790AA2B .
+}

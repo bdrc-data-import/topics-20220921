@@ -1,0 +1,47 @@
+@base          <bdg:T1926> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1926 {
+    bda:LG0B48073408A8208B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T13:33:53.314Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDB84E8E8AAD0FD4E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T13:35:39.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1926  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1926 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/T1926.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1926 ;
+        adm:logEntry        bda:LG0B48073408A8208B , bda:LGDB84E8E8AAD0FD4E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA3EA5107E4A14D0E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the form of this wealth deity transmitted in tibet by zangs dkar lo tsA ba; the deity is of yellow as refined gold with one face and two arms; his right hand holds a banner marked with a wish-fulfilling gem; his left holds a treasure mongoose raining wish-granting gems; he sits in the lalita posture; \nhis eight attendants dwell in eight mansions in the cardinal and secondary points are: 1) yellow jambhala holding a jewel in the east; 2) yellow purnabhadra (gang ba bzang po) holding a jewel flask in the south; 3) white manibhadra (nor bu bzang po) holding a gem in the west; 4) black kubera holding a sword  in the north; 5) yellow samjnaya (yang dag shes) holding a sword in the southeast; 6) black atavaka ('brog gnas) holding a jewel and spear in the southwest; 7) pale yellow pancika (lnga rtsen) holding a storeyed building in the northwest; 8) white picikundalin (dzam po 'khyil ba) his right hand holding a saber (gri) and his left a shield;\n\nin the second ring are the eight great nagas and their attendants; in the outer ring are the hosts of the eight tribed of gods and spirits; they are of various colors, repulsive, shining, and raging, and holding all kinds of weapons; on the inner part of the outer ring are the twenty-eight generals. all dark red and holding swords and shields; and on the outer part the thirty-two strong ones (mahabala), all dark green, with armor and holding spars and weapons, each with his innumerable host; each one holds in his left hand a treasure mongoose, raining siddhis on the practitioner;\n\ndeities of tibetan buddhism #300"@en .
+    
+    bdr:T1926  a            :Topic ;
+        skos:altLabel       "rgyal chen rnam thos sras (zangs dkar lugs)"@bo-x-ewts , "rnam sras ser chen/"@bo-x-ewts ;
+        skos:prefLabel      "rnam thos sras (zangs dkar lugs)"@bo-x-ewts , "great yellow vaisravana"@en ;
+        :isRoot             true ;
+        :note               bdr:NTA3EA5107E4A14D0E .
+}

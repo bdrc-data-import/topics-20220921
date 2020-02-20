@@ -1,0 +1,42 @@
+@base          <bdg:T1385> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1385 {
+    bda:LG7D046912348A19BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T12:57:06.467Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1385  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1385 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6d/T1385.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1385 ;
+        adm:logEntry        bda:LG7D046912348A19BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT092D7DF80705CAD1
+        a                   :Note ;
+        :locationStatement  "f. 16v" ;
+        :noteSource         bdr:MW22446 ;
+        :noteText           "bka' brgyud pa lineage and subsect.\nthis school is one of the four greater lines (che bzhi)  and takes its origins from phag mo gru pa rdo rje rgyal po\ncomprises the tradition which produced the eight lesser lineages (chung brgyad)."@en .
+    
+    bdr:T1385  a            :Topic ;
+        skos:altLabel       "phag mo gru pa bka' brgyud/"@bo-x-ewts ;
+        skos:prefLabel      "phag gru bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT092D7DF80705CAD1 .
+}

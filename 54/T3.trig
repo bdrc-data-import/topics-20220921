@@ -1,0 +1,83 @@
+@base          <bdg:T3> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3 {
+    bda:LG293AEC23B964ABC2
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-30T15:51:05.927Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2E8E3A252438FE70
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-03T17:05:30.153Z"^^xsd:dateTime ;
+        adm:logMessage      "edited see also field"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3F5EEB60557E676C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T09:25:24.07Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG528A30C4D13D21CB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-12T10:59:21.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also topics"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB2276E644D8D0AFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-11T16:28:37.096Z"^^xsd:dateTime ;
+        adm:logMessage      "shad bsnan"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB89644BE256875E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T11:18:39.093Z"^^xsd:dateTime ;
+        adm:logMessage      "shad 'then yod"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGD53C1710598D27BE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-03T12:12:53.454Z"^^xsd:dateTime ;
+        adm:logMessage      "edited typo in Notes"@en .
+    
+    bda:LGF2E20B4B4DC5DBB3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-13T05:34:30.995Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bidirectionality of seeAlso"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T3  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "54/T3.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3 ;
+        adm:logEntry        bda:LG293AEC23B964ABC2 , bda:LG2E8E3A252438FE70 , bda:LG3F5EEB60557E676C , bda:LG528A30C4D13D21CB , bda:LGB2276E644D8D0AFC , bda:LGB89644BE256875E2 , bda:LGD53C1710598D27BE , bda:LGF2E20B4B4DC5DBB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT829C9960EE06F42C
+        a                   :Note ;
+        :noteText           "this is a generic topic under which is assigned to works concerned with the lives of deities, religious figure, laymen;\n\nthe keyword rnam thar is applied to the rtogs brjod of religious teachers or lay officials since these are narrative lives and could well be called rnam thar;  \n\nthe keyword rtogs brjod is applied generically to avadana stories of former lives of buddhas and bodhisattvas (t1779);  \n\nthe keyword or topic skyes rabs or birth stories, jataka, or defined groups of stories of the lives of immediate lives of the buddha and other important teachers (t1342);  \n\ngsang ba'i rnam thar as a keyword topic is applied to accounts of highly esoteric experiences and visions of spiritual masters (t1868);  \n\nthe topic keyword topic rang rnam is applied to autobiographical works (t1cz60)"@en .
+    
+    bdr:T3  a               :Topic ;
+        rdfs:seeAlso        bdr:T11MS64 , bdr:T1342 , bdr:T1779 , bdr:T1868 , bdr:T1CZ60 ;
+        skos:altLabel       "hagiography"@en ;
+        skos:prefLabel      "rnam thar/"@bo-x-ewts , "biography"@en ;
+        :isRoot             true ;
+        :note               bdr:NT829C9960EE06F42C .
+}

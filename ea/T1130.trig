@@ -1,0 +1,42 @@
+@base          <bdg:T1130> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1130 {
+    bda:LGA23AB4386CBC1FC9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T12:08:40.889Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGF325110814241FF1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T12:13:04.67Z"^^xsd:dateTime ;
+        adm:logMessage      "associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1130  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1130 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ea/T1130.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1130 ;
+        adm:logEntry        bda:LGA23AB4386CBC1FC9 , bda:LGF325110814241FF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1130  a            :Topic ;
+        skos:altLabel       "lcang lo can gyi zhing khams/"@bo-x-ewts , "東北楊柳宮"@zh-hant ;
+        skos:prefLabel      "lcang lo can/"@bo-x-ewts , "pure land of Vajrapani"@en , "杨柳宫"@zh-hans ;
+        :isRoot             true .
+}

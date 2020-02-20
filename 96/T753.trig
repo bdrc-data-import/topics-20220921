@@ -1,0 +1,70 @@
+@base          <bdg:T753> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T753 {
+    bda:LG230BEB70761CB2ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T12:15:30.652Z"^^xsd:dateTime ;
+        adm:logMessage      "typocorrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG27AECBB2244455A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T11:46:00.773Z"^^xsd:dateTime ;
+        adm:logMessage      "application topic added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7B92BE0D033CC856
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T12:56:50.419Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG874C509073416EDB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:20:05.331Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB3DA650481542041
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T16:27:35.304Z"^^xsd:dateTime ;
+        adm:logMessage      "none"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCAAF8F02B526473E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T10:53:16.068Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T753  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T753 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "96/T753.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T753 ;
+        adm:logEntry        bda:LG230BEB70761CB2ED , bda:LG27AECBB2244455A2 , bda:LG7B92BE0D033CC856 , bda:LG874C509073416EDB , bda:LGB3DA650481542041 , bda:LGCAAF8F02B526473E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3925525A946F16A5
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the great king vaisravana nada kubera or naaakavara, supreme dancer) who rides a blue turquoise dragon (g.yu 'brug sngon mo) with hair of fire, her head showing to the right; the deity is purple, with three faces the same color as his body and eighteen arms, the first pair of hands hold a basin filled with gems and the other sixteen, the right hands holding a banner, a club, a sword , an arrow, trident, hammer, citron and a read spear; the left hands hold a lotus and a mongoose together, a serpent noose, a wheel, a vajra noose, a bow, a flask, mount meru, the trunk of a parijata tree; he is adorned with silk garments, golden armor with pearl ornaments, snakes and all the jewel ornaments; he is wrathful and has a topknot of tresses. \n\nhis consort is padmacuda, red and holding a flask and jewel.\n\non the six petals, clockwise from the front are: prince suryananda (nyi ma la dga' ba) who is white and holds a jewel and is in heavenly dress; manibhadra, white and sheep headed, holding a banner; purnabhadra, yellow and horse headed and holding a flask; samnjaya, blue and stag headed and holding a gem; trsnavirati (sred spong) who is orange and goat headed and holds a larynx (gre ba)(?); and minister jinarsabha (rgyal ba khyu mchog), green and elephant headed, holding a basin; in the courtyard is a measureless host of yaksas and nagas.\n\ntaranatha adds: gsang sgrub\n\ndeities of tibetan buddhism #303"@en .
+    
+    bdr:T753  a             :Topic ;
+        skos:prefLabel      "rnam sras dmar po gar mkhan mchog gsang sgrub/"@bo-x-ewts , "red nada kubera vaisravana"@en , "nartakavara vaisravana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3925525A946F16A5 .
+}

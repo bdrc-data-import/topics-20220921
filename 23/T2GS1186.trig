@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1186> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1186 {
+    bda:LG4C158AD50FAA069F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T16:54:11.574Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA3A5F023D2D54674
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T13:03:23.109Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1186  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1186 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "23/T2GS1186.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1186 ;
+        adm:logEntry        bda:LG4C158AD50FAA069F , bda:LGA3A5F023D2D54674 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8C46139A5356107C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing on the life increasing, mighty strength sapping field protector (zhing skyong stobs 'phrog dbang po dkar po tshe 'phel = ayur vardhana bala harendra ksetrapala) who is white in color and with four faces with a principal face which is white, the right blue, the left red and the upper smoke colored; his first pair of hands hold a one above the other at his heart a flask full of nector of immortal gnosis and a skull; the other pair holds a knife and a trident to protect from hinderances to long life; his brown hair streams upwards; with three eyes and a gaping mouth, he bares sharp fangs and his lower lips hang down; he is adorned with a sacred thread, bones, snakes and strings of bells; with a tiger skin loincloth he abides in standing pratyalidha posture (right leg bent) amid a blazing fire of gnosis; from the four directions come his consorts: b) on his right comes the great mother, white dombini (g.yung mo); c) on his left, the worker (las mdzad), white candali (gtum mo); d) in front the white maharaksasi (srin mo chen mo); e) behind is white simhali (sing+ga gling ma). each is one-faced and two armed holding a flask full of nectar and a gem, extremely fierce and wrathful and with the attributes of a human messenger, three-eyed, naked, without ornaments, in a great hurry, and facing the principal; encircling them round the outside ar twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world; four-faced vajra mahakala, mighty strength sapping field protector is invoked from kailasa, sitavana, potala and the loud laughter charnel ground.\n\ndeviations: colors of the right and left faces interchanged\n\ndeities of tibetan buddhism #388."@en .
+    
+    bdr:T2GS1186  a         :Topic ;
+        skos:prefLabel      "dpal mgon zhal bzhi pa dkar po tshe 'phel/"@bo-x-ewts , "white, four-faced mahakala, life increasing"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8C46139A5356107C .
+}

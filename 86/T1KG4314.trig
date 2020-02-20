@@ -1,0 +1,57 @@
+@base          <bdg:T1KG4314> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG4314 {
+    bda:LG5D3554DBE0755742
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-25T10:47:34.694Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG72AE7F9466FC37CE
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T15:15:48.496Z"^^xsd:dateTime ;
+        adm:logMessage      "released from orphan"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBB838F642C014861
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-06T11:11:59.689Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD751EDB899452971
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-25T11:00:13.757Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG4314  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG4314 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "86/T1KG4314.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG4314 ;
+        adm:logEntry        bda:LG5D3554DBE0755742 , bda:LG72AE7F9466FC37CE , bda:LGBB838F642C014861 , bda:LGD751EDB899452971 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT126BD58BAC7EA1B3
+        a                   :Note ;
+        :noteText           "the 18 renowned scriptures of philosophy in the Sakya tradition"@en .
+    
+    bdr:T1KG4314  a         :Topic ;
+        skos:prefLabel      "grags chen bco brgyad/"@bo-x-ewts , "the 18 renowned scriptures"@en ;
+        :isRoot             true ;
+        :note               bdr:NT126BD58BAC7EA1B3 .
+}

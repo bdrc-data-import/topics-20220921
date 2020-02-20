@@ -1,0 +1,64 @@
+@base          <bdg:T10MS14311> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14311 {
+    bda:LG4AC962C864ED76DE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T15:08:57.375Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA099C9D36F7884EA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T14:00:18.394Z"^^xsd:dateTime ;
+        adm:logMessage      "testing from admin account"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGB9C1C493AEE87141
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.181Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGDE63864121CC37A0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T12:02:27.66Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T98 (mdos chog)"@en .
+    
+    bda:LGE6EBADD9455896CE
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T20:28:45.295Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T10MS14311  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14311 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "30/T10MS14311.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14311 ;
+        adm:logEntry        bda:LG4AC962C864ED76DE , bda:LGA099C9D36F7884EA , bda:LGB9C1C493AEE87141 , bda:LGDE63864121CC37A0 , bda:LGE6EBADD9455896CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2B7BA7415312C3AD
+        a                   :Note ;
+        :noteText           "this topic applies to the view and practice as a complimentary set"@en .
+    
+    bdr:T10MS14311  a       :Topic ;
+        rdfs:seeAlso        bdr:T1248 , bdr:T381 ;
+        skos:prefLabel      "lta grub/"@bo-x-ewts , "view and realization"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2B7BA7415312C3AD .
+}

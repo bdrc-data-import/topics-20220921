@@ -1,0 +1,47 @@
+@base          <bdg:T2251> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2251 {
+    bda:LGA9B6FFDDCF6553EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T17:03:09.734Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation and name added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE3B2562B6C80AF22
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T15:52:24.625Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2251  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2251 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "37/T2251.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2251 ;
+        adm:logEntry        bda:LGA9B6FFDDCF6553EF , bda:LGE3B2562B6C80AF22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT901AD65641AF8393
+        a                   :Note ;
+        :noteText           "protectress deity; transmitted by tshar chen blo gsal rgya mtsho and regarded as bka' rgya can thun mong ma yin pa; it was passed from tshar chen to mkhyen brtse'i dbang phyug; dbang phyug rab brtan, and so forth in the tshar pa lineage"@en .
+    
+    bdr:T2251  a            :Topic ;
+        skos:altLabel       "lha mo rdo rje rab brtan ma/"@bo-x-ewts , "rab brtan ma/"@bo-x-ewts , "rdo rje rab brtan ma (tshar lugs)"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje rab brtan ma (lha mo)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT901AD65641AF8393 .
+}

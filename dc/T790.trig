@@ -1,0 +1,41 @@
+@base          <bdg:T790> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T790 {
+    bda:LGCB4C733250DB6CE4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-16T16:12:48.646Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G33"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T790  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T790 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dc/T790.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T790 ;
+        adm:logEntry        bda:LGCB4C733250DB6CE4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G33 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTBCA2F3370541DA5B
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G33"@en .
+    
+    bdr:T790  a             :Topic ;
+        skos:prefLabel      "mtshur phu dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBCA2F3370541DA5B .
+}

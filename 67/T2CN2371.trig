@@ -1,0 +1,53 @@
+@base          <bdg:T2CN2371> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN2371 {
+    bda:LG2D0E415B8D044170
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-28T12:57:57.532Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG75041BDFD97D9234
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-11T14:04:47.096Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG860D1FC5C1CB046F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-28T17:15:15.298Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGCB2A08F986E09F05
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T10:20:16.977Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2CN2371  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN2371 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "67/T2CN2371.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN2371 ;
+        adm:logEntry        bda:LG2D0E415B8D044170 , bda:LG75041BDFD97D9234 , bda:LG860D1FC5C1CB046F , bda:LGCB2A08F986E09F05 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2CN2371  a         :Topic ;
+        skos:prefLabel      "khri rabs/"@bo-x-ewts ;
+        :isRoot             true .
+}

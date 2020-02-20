@@ -1,0 +1,53 @@
+@base          <bdg:T574> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T574 {
+    bda:LG0DBC7E947044CD8F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-02T06:59:11.214Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG82D44F7C46D7CAF3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T11:57:19.695Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC11FFF1BE4256F1A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T12:15:08.186Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T574  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T574 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/T574.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T574 ;
+        adm:logEntry        bda:LG0DBC7E947044CD8F , bda:LG82D44F7C46D7CAF3 , bda:LGC11FFF1BE4256F1A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT896B3C8AC319EBFB
+        a                   :Note ;
+        :noteText           "this deity topic is applied to works concerned the six heroes connected with the bde mchog (cakrasamvara);   \nthe six heroes are: \n\n56) vajrasattva (go cha'i rdo rje sems dpa'), white with three faces and six arms; the first pair hold a vajra and a bell and embrace the mother; the other two left hands hold a a skull full of nectar and a khatvanga; the right a damaru and brahma's head; he wears a scarf of human skin and abides on a moon seat\n\n57) vairocana (go cha'i rnam snang), yellow and holding a wheel; \n\n58) padmanartesvara (go cha'i pad+ma gar dbang), red, holding a lotus;\n\n59) sriheruka (go cha'i he ru ka nag po ), black holding a vajra; \n\n60) vajrasurya (go cha'i nyi ma), orange, holding a jewel;  \n\n61) padmasva (go cha'i rta mchog) green, holding a sword: \n\neach holds in his first pair of hands his personal sign and a bell at his heart and in the other pari in the right hand a damaru and in the left a skull and a khatvanga;\n\nthe principal and entourage have a crown of skulls, a long neckalce of heads and a tiger skin loincloth; each has three eyes and abides in alidha posture (right leg extended) on a preta seat.\n\ndeviations vajrasattva on a sun seat; padmanartesvara shown yellow and holding a vajra; vajrasurya holding a vajra.\n   \ndeities of tibetan buddhism #56-61"@en .
+    
+    bdr:T574  a             :Topic ;
+        skos:altLabel       "dpal 'khor lo bde mchog dang 'brel ba'i go cha'i dpa' bo drug"@en , "six armor heroes"@en ;
+        skos:prefLabel      "bde mchog dang 'brel ba'i go cha'i dpa' bo drug"@bo-x-ewts , "kavaca-vira connected with the cakrasamvara tantra"@en ;
+        :isRoot             true ;
+        :note               bdr:NT896B3C8AC319EBFB .
+}

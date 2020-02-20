@@ -1,0 +1,48 @@
+@base          <bdg:T10MS14626> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14626 {
+    bda:LG80CCD7CB7DC07149
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:11:45.829Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAECA6186D5F9BC64
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T11:55:00.607Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavour of T1972"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T10MS14626  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14626 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dc/T10MS14626.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14626 ;
+        adm:logEntry        bda:LG80CCD7CB7DC07149 , bda:LGAECA6186D5F9BC64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTFEC86C135561BA28
+        a                   :Note ;
+        :noteText           "genre refers to types of practice manuals for diagnosing specific signs, insignias, indications"@en .
+    
+    bdr:T10MS14626  a       :Topic ;
+        rdfs:seeAlso        bdr:T00JR2881 , bdr:T1234 , bdr:T1972 ;
+        skos:altLabel       "practice manual/"@bo-x-ewts ;
+        skos:prefLabel      "rtags yig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFEC86C135561BA28 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1213> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1213 {
+    bda:LG584CE4B418D7F513
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T12:52:02.777Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application topic added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1213  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1213 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "45/T2GS1213.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1213 ;
+        adm:logEntry        bda:LG584CE4B418D7F513 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT670475D4F171EFF9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 1st of the 21 tara collection according to the tradition of suryagupta; this form of tara is red and emits blazing fire; she has one face and eight arms; the first lpair of hands, joined at her crown hold a vajra and a bell; the second pair hold an arrow and a bow; the third a wheel and a conch; the fourth a sword and a noose; she has a peaceful form and sits in vajraparyanka adorned with silks and all the jewel ornaments; she sits of a moon seat with a backrest of moonlight;  she is crowned by vairocana, the master of her family; \n\ndeities of tibetan buddhism #276"@en .
+    
+    bdr:T2GS1213  a         :Topic ;
+        skos:altLabel       "rab tu dpa' ba'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma rab tu dpa' ba/"@bo-x-ewts , "tara the heroic"@en , "praviratara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT670475D4F171EFF9 .
+}

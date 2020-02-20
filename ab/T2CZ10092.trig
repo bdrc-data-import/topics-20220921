@@ -1,0 +1,47 @@
+@base          <bdg:T2CZ10092> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CZ10092 {
+    bda:LG89E381947C7AA112
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-15T12:40:37.977Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGA2758DD43F79E2FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-14T12:39:18.619Z"^^xsd:dateTime ;
+        adm:logMessage      "change language settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFD512988BA4A5B8D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-15T12:38:15.535Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2CZ10092  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CZ10092 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ab/T2CZ10092.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CZ10092 ;
+        adm:logEntry        bda:LG89E381947C7AA112 , bda:LGA2758DD43F79E2FC , bda:LGFD512988BA4A5B8D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2CZ10092  a        :Topic ;
+        skos:altLabel       "shog khag"@bo-x-ewts ;
+        skos:prefLabel      "tsho ba/"@bo-x-ewts , "houses, groups of inhabitants"@en ;
+        :isRoot             true .
+}

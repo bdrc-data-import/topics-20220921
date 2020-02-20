@@ -1,0 +1,53 @@
+@base          <bdg:T4CZ16806> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ16806 {
+    bda:LG42910C915585889E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-05T10:58:57.485Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG98E2A94C256F690B
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-29T14:54:21.501Z"^^xsd:dateTime ;
+        adm:logMessage      "edited, added note and see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBB8318E1D43A5754
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-05T11:17:09.4Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ16806  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ16806 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a0/T4CZ16806.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ16806 ;
+        adm:logEntry        bda:LG42910C915585889E , bda:LG98E2A94C256F690B , bda:LGBB8318E1D43A5754 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT11D3642513C8A50A
+        a                   :Note ;
+        :noteText           "mahayana school of philosophy associated with asanga and vasubandhu"@en .
+    
+    bdr:T4CZ16806  a        :Topic ;
+        rdfs:seeAlso        bdr:T2055 , bdr:T385 ;
+        skos:prefLabel      "rnal 'byor spyod pa/"@bo-x-ewts , "yogacara"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT11D3642513C8A50A .
+}

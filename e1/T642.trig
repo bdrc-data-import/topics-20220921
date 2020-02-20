@@ -1,0 +1,41 @@
+@base          <bdg:T642> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T642 {
+    bda:LGDB9A5DE9413B08DC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T12:57:28.153Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T642  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T642 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e1/T642.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T642 ;
+        adm:logEntry        bda:LGDB9A5DE9413B08DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAD4C5835213232E4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiation for the avalokitesvara and his attendants manidhara and sadaksari\n\n\ndeities of tibetan buddhism #100-102"@en .
+    
+    bdr:T642  a             :Topic ;
+        skos:altLabel       "spyan ras gzigs yi ge drug pa jo bo'i lugs/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po yi ge drug pa/"@bo-x-ewts , "six-syllable avalokita in the tradition of atisa"@en , "avalokitesvara sadaksara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTAD4C5835213232E4 .
+}

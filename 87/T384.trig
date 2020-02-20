@@ -1,0 +1,52 @@
+@base          <bdg:T384> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T384 {
+    bda:LG53180B3221DF6AAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T12:55:56.006Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG6F3A09274AFA6B1D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T13:00:33.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8E64EAE49ECD4352
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T11:23:14.3Z"^^xsd:dateTime ;
+        adm:logMessage      "T384 and T1789 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T384  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T384 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "87/T384.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T384 ;
+        adm:logEntry        bda:LG53180B3221DF6AAA , bda:LG6F3A09274AFA6B1D , bda:LG8E64EAE49ECD4352 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4D8E4179B9B01E03
+        a                   :Note ;
+        :noteText           "this topic is applied generally for the rule of law or legal code"@en .
+    
+    bdr:T384  a             :Topic ;
+        skos:altLabel       "khrims yig"@bo-x-ewts ;
+        skos:prefLabel      "khrims/"@bo-x-ewts , "law"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4D8E4179B9B01E03 .
+}

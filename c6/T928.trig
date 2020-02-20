@@ -1,0 +1,46 @@
+@base          <bdg:T928> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T928 {
+    bda:LG8555A61F1BB95ED9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T11:07:52.567Z"^^xsd:dateTime ;
+        adm:logMessage      "typos in application note corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB62F607C41D65995
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T22:59:22.273Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T928  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T928 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c6/T928.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T928 ;
+        adm:logEntry        bda:LG8555A61F1BB95ED9 , bda:LGB62F607C41D65995 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02039FCB29F81C5E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals for invoking and propitiating these predominant sa skya protectors, the hero master of the charnal ground, father and mother, white and radiant, with very terrible skeleton forms; each has one face, two arms, three staring eyes, a rolled-up tongue and bared fangs, brandishing skyward with the right hand a dry-skull club, holding at the heart with the left a skull full of blood, offering it to the mouth and abiding in the ardhapratyanka dancing posture with the toe of the bent right leg pressed against the thigh of the extended left; they have skirts of assorted silks, and are adorned with jewel crowns and earrings; the father and mother abiding amid a blazing fire of gnosis are both surrounded by a measureless entourage of worldly and supermundane dakinis; both are crowned with innate cakrasamvara.\n\ndeities of tibetan buddhism #407\n\nlineage of transmission: yogini, padmaajra, srivajra, rahula, lilavajra, jnanasiddhi, matibhadra, vairocana, glorious rgwa lo tsA ba, sa chen kun dga' snying po..."@en .
+    
+    bdr:T928  a             :Topic ;
+        skos:prefLabel      "dur khrod bdag po yab yum (srung ma)"@bo-x-ewts , "master of the charnal ground brother and sister"@en , "smasana adhipati"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT02039FCB29F81C5E .
+}

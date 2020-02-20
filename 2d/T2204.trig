@@ -1,0 +1,44 @@
+@base          <bdg:T2204> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2204 {
+    bda:LG48DA57DF95AA7617
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-09T15:12:46.375Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of C2MS13778"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2204  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2204 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2d/T2204.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2204 ;
+        adm:logEntry        bda:LG48DA57DF95AA7617 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT39201C7037D67A3A
+        a                   :Note ;
+        :noteText           "withdrawn in favor of C2MS13778"@en .
+    
+    bdr:NTC3387BFEBF5F5ED1
+        a                   :Note ;
+        :noteText           "family of the 14th dalai lama"@en .
+    
+    bdr:T2204  a            :Topic ;
+        skos:prefLabel      "stag 'tsher (yab gzhis)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT39201C7037D67A3A , bdr:NTC3387BFEBF5F5ED1 .
+}

@@ -1,0 +1,49 @@
+@base          <bdg:T00AG01273> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01273 {
+    bda:LG36D14D6DF6D8CDFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:19:28.477Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5AEFDF3B13A7DAE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-15T11:18:50.428Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG7D7C07C82A6D3901
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T14:29:37.829Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01273  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01273 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/T00AG01273.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01273 ;
+        adm:logEntry        bda:LG36D14D6DF6D8CDFB , bda:LG5AEFDF3B13A7DAE7 , bda:LG7D7C07C82A6D3901 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA0C3C5717413932F
+        a                   :Note ;
+        :noteText           "a treasure sadhana to drag po rtsal, a form of padmasambhava, from the secret visions of the fifth dalai lama (dag snang rgya chen), received in 1656"@en .
+    
+    bdr:T00AG01273  a       :Topic ;
+        skos:prefLabel      "thugs sgrub yang snying kun 'dus (dag snang rgya can)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA0C3C5717413932F .
+}

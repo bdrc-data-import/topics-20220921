@@ -1,0 +1,57 @@
+@base          <bdg:T1875> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1875 {
+    bda:LG421C4930A7684816
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-09-29T11:10:42.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG46134F9FD74D7574
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T15:49:29.072Z"^^xsd:dateTime ;
+        adm:logMessage      "Added T003JR4173 (rgyud bcu bdun)"@en .
+    
+    bda:LG756A9B4220000B7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-06T11:17:32.115Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title, add note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG77597BF3619B20B8
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:03:44.631Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T003JR4173 (rgud bcu bdun)"@en .
+    
+    bda:T1875  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1875 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/T1875.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1875 ;
+        adm:logEntry        bda:LG421C4930A7684816 , bda:LG46134F9FD74D7574 , bda:LG756A9B4220000B7C , bda:LG77597BF3619B20B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT72C804D17FCB803C
+        a                   :Note ;
+        :noteText           "applied to instruction section in dzogchen writings and cycles"@en .
+    
+    bdr:T1875  a            :Topic ;
+        rdfs:seeAlso        bdr:T003JR4173 ;
+        skos:prefLabel      "man ngag sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT72C804D17FCB803C .
+}

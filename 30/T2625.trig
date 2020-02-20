@@ -1,0 +1,46 @@
+@base          <bdg:T2625> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2625 {
+    bda:LG05FC26C04EA752D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-18T14:28:20.363Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE8F018C2EC68528F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T14:46:51.065Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T897 (byad 'grol)"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T2625  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2625 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "30/T2625.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2625 ;
+        adm:logEntry        bda:LG05FC26C04EA752D8 , bda:LGE8F018C2EC68528F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6E49EF1FE181A179
+        a                   :Note ;
+        :noteText           "rituals of exorcism or ransoms to avert misfortunes and to subjugate negative forces; these have been said to derive from the ancient bon practices"@en .
+    
+    bdr:T2625  a            :Topic ;
+        rdfs:seeAlso        bdr:T897 ;
+        skos:prefLabel      "gto/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6E49EF1FE181A179 .
+}

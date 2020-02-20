@@ -1,0 +1,46 @@
+@base          <bdg:T2MS12359> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS12359 {
+    bda:LG20F4CED6C8C41E94
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-26T15:33:33.576Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5AD08041BF1C9265
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-26T15:52:35.832Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS12359  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS12359 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "51/T2MS12359.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS12359 ;
+        adm:logEntry        bda:LG20F4CED6C8C41E94 , bda:LG5AD08041BF1C9265 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT422F8C54DE5931C4
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T2186"@en .
+    
+    bdr:T2MS12359  a        :Topic ;
+        skos:altLabel       "caryatantra/"@bo-x-ewts ;
+        skos:prefLabel      "spyod pa'i rgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT422F8C54DE5931C4 .
+}

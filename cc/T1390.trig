@@ -1,0 +1,40 @@
+@base          <bdg:T1390> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1390 {
+    bda:LG0CCC7B2AFC671D95
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-11T16:13:28Z"^^xsd:dateTime ;
+        adm:logMessage      "note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1390  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1390 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cc/T1390.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1390 ;
+        adm:logEntry        bda:LG0CCC7B2AFC671D95 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE71C933E415F87C3
+        a                   :Note ;
+        :noteText           "the six revelations of rig 'dzin 'ja' tshon snying po;  comprising the:\ndkon mchog spyi 'dus; thugs rje chen po ngan song rang grol; tshe dpag med gnam lcags rdo rje dngos grub kun 'dus; rta phag yid bzhin nor bu;  mgon po ma ning"@en .
+    
+    bdr:T1390  a            :Topic ;
+        skos:prefLabel      "'ja' tshon pod drug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE71C933E415F87C3 .
+}

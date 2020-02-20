@@ -1,0 +1,40 @@
+@base          <bdg:T628> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T628 {
+    bda:LGDE08802A83FEE0CF
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:36.288Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T628  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T628 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "03/T628.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T628 ;
+        adm:logEntry        bda:LGDE08802A83FEE0CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE6D4E642DAE9870C
+        a                   :Note ;
+        :noteText           "cakrasamvara according to the tradition transmitted by krsnacarin"@en .
+    
+    bdr:T628  a             :Topic ;
+        skos:altLabel       "'khor lo bde mchog nag po lugs/"@bo-x-ewts , "bde mchog nag po zhabs lugs/"@bo-x-ewts , "grub chen nag po spyod pa'i lugs kyi 'khor lo sdom pa/"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog nag po lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE6D4E642DAE9870C .
+}

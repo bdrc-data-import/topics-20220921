@@ -1,0 +1,46 @@
+@base          <bdg:T4CZ57129> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ57129 {
+    bda:LG9690AA304DB1754E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-18T15:43:50.742Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཟོས།"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGCBCB685540C35B0F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-18T15:48:52.594Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ57129  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ57129 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/T4CZ57129.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ57129 ;
+        adm:logEntry        bda:LG9690AA304DB1754E , bda:LGCBCB685540C35B0F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE19C10BE16F25A79
+        a                   :Note ;
+        :noteText           "ཐུབ་པའི་དབང་པོ་་དགུང་གྲངས་བརྒྱད་ལ་ཕེབས་པའི་སྐུ་ཚད་དང་མཐུན་པའི་སྐུ་འདི་ནི། ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐུ་རིང་ལ་བལ་་བཟའ་ཁྲི་བཙུན་གྱི་་རྟེན་སྐལ་དུ་༼སྤྱི་ལོ་༦༤༠ ཡས་མས་སུ༽བོད་ལ་གདན་དྲངས་།་ད་ལྟ་ར་ར་མོ་ཆེའི་གཙུག་ལག་ཁང་གི་རྟེན་གཙོར་བཞུགས་ཡོད། ཇོ་བོ་ཤཱཀྱ་མུ་ནེ་དང་ཇོ་བོ་མི་བསྐྱོད་རྡོ་རྗེ་རྣམ་གཉིས་ལ་ཇོ་བོ་མཆེད་གཉིས་ཞེས་འབོད།།\nJowo Mikyo Dorje, a small bronze statue of the Buddha when he was eight years old, crafted by Vishvakarman, and brought to Lhasa by the Nepalese queen, Bhrikuti."@en .
+    
+    bdr:T4CZ57129  a        :Topic ;
+        skos:altLabel       "jo bo mi bskyod rdo rje/"@bo-x-ewts ;
+        skos:prefLabel      "ra mo che'i jo bo/"@bo-x-ewts , "Jowo Mikyo Dorje"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE19C10BE16F25A79 .
+}

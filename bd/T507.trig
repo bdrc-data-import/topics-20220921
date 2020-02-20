@@ -1,0 +1,40 @@
+@base          <bdg:T507> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T507 {
+    bda:T507  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T507 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bd/T507.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T507 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7D25AE9281C429C9
+        a                   :Note ;
+        :noteText           "in the gter ma of stag sham these deities are styled the sa'i lha mo and are propitiated from the fertility of the land and the abundance of crops."@en .
+    
+    bdr:NT969F3004435EDE20
+        a                   :Note ;
+        :locationStatement  "p. 167" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "according to this bon source, the bon skyong brtan ma bcu gnyis are (with mounts):\n1) kong btsun de mo stag la chibs\n2) gangs dkar sha med/ ngag pa ser por chibs\n3) rma ting 'phrul mo/ rta dkar por chibs\n4) skye mthing ya ma/ g.yag khams par chibs\n5) ma btsun 'brog chen/ glang sngon por chibs\n6) rma ri rab khyams/ rta sngon por chibs\n7) lha ri ya ma/ rta ngang par chibs\n8) skye thing nag mo/ sha ba sngon por chibs\n9) gangs kyi g.yu sgron/ ne tso sngon por chibs\n10) ka ga ser mo/ ri dwags gtsod la chibs\n11) kha rag khyung btsun/ drel nag por chibs\n12) gda' la btsun mo/ sha ba la chibs"@en .
+    
+    bdr:T507  a             :Topic ;
+        skos:altLabel       "sa'i lha mo/"@bo-x-ewts ;
+        skos:prefLabel      "brtan ma bcu gnyis (srung ma)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7D25AE9281C429C9 , bdr:NT969F3004435EDE20 .
+}

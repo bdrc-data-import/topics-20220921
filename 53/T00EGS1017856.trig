@@ -1,0 +1,48 @@
+@base          <bdg:T00EGS1017856> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00EGS1017856 {
+    bda:LGAD16090231F16201
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T15:17:16.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFB75352F6E01E0EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-09T11:38:38.53Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T00EGS1017856
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00EGS1017856 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "53/T00EGS1017856.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00EGS1017856 ;
+        adm:logEntry        bda:LGAD16090231F16201 , bda:LGFB75352F6E01E0EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT388356C74814204D
+        a                   :Note ;
+        :noteText           "here are classed works about the concepts of kalpa and the eon"@en .
+    
+    bdr:T00EGS1017856
+        a                   :Topic ;
+        skos:prefLabel      "bskal pa/"@bo-x-ewts , "kalpa"@sa-alalc97 , "劫波"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT388356C74814204D .
+}

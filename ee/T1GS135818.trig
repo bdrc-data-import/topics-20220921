@@ -1,0 +1,47 @@
+@base          <bdg:T1GS135818> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS135818 {
+    bda:LG2AE240C010FCBE59
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-24T13:51:21.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added byang gter"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7A708B03C58E3A00
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-24T13:37:20.629Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS135818  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS135818 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ee/T1GS135818.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS135818 ;
+        adm:logEntry        bda:LG2AE240C010FCBE59 , bda:LG7A708B03C58E3A00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7AB0DD55151031A3
+        a                   :Note ;
+        :noteText           "secret sadhana (guhyasadhana) of vajrayogini"@en .
+    
+    bdr:T1GS135818  a       :Topic ;
+        skos:altLabel       "phag mo gsang ba thugs sgrub (byang gter)"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje phag mo gsang sgrub (byang gter)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7AB0DD55151031A3 .
+}

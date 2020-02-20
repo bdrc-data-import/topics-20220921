@@ -1,0 +1,50 @@
+@base          <bdg:T1155> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1155 {
+    bda:LG3F2CC07A55184DD2
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-05T12:25:15.493Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG492B2E3D03E6B949
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-05T12:22:37.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1155  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1155 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1f/T1155.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1155 ;
+        adm:logEntry        bda:LG3F2CC07A55184DD2 , bda:LG492B2E3D03E6B949 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3C6BA4F4712E31FE
+        a                   :Note ;
+        :noteText           "\"six spheres of equal taste.\" the six are: rnam rtog; nyon mongs; na tsha; lha 'dre; sdugs bsngal; and 'chi ba. according to the tradition, these teachings were concealed as treasure by ras chung pa and discovered  by the first 'brug chen, tsang pa rgya ras ye shes rdo rje."@en .
+    
+    bdr:NT5FF9C7DC63D62419
+        a                   :Note ;
+        :noteText           "special instruction of the 'brug pa dkar brgyud pa regarded to ba a gter ma attributed to nA ro pa.\n\n98th of the jo nang khrid brgya."@en .
+    
+    bdr:T1155  a            :Topic ;
+        skos:altLabel       "bla sgrub rten 'brel ro snyoms (khrid)"@bo-x-ewts , "ro snyoms skor drug"@bo-x-ewts , "rten 'brel ro snyoms (khrid)"@bo-x-ewts ;
+        skos:prefLabel      "ro snyoms (khrid)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3C6BA4F4712E31FE , bdr:NT5FF9C7DC63D62419 .
+}

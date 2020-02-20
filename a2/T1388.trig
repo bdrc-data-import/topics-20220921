@@ -1,0 +1,42 @@
+@base          <bdg:T1388> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1388 {
+    bda:LG02895D8BE09207DA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T18:00:18.868Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1388  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1388 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a2/T1388.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1388 ;
+        adm:logEntry        bda:LG02895D8BE09207DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEA481B5594736B98
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 189" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "counter used in describing rdzogs chen practice; this term is applied to instructions and works recounting the way in which these methods are to be practiced.\nthe chos rnam kun btus, citing the tshig don mdzod of the klong chen mdzod bdun (92-2) outlines the khregs chod 'degs lugs rnam pa gsum: 1) chos zad ka dag chen por la bzla ba; 2) bya bral zang thal rjen par 'gag bsdams pa; 3) yongs grol mnyam pa chen po'i chings su bcing ba."@en .
+    
+    bdr:T1388  a            :Topic ;
+        skos:prefLabel      "khregs chod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEA481B5594736B98 .
+}

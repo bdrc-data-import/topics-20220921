@@ -1,0 +1,46 @@
+@base          <bdg:T00AG01245> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01245 {
+    bda:LG54CE6BDC3F3F6222
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-16T11:32:44.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB3F40F1C604A4401
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-08T12:23:31.26Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01245  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01245 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "93/T00AG01245.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01245 ;
+        adm:logEntry        bda:LG54CE6BDC3F3F6222 , bda:LGB3F40F1C604A4401 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT31EBDD054B6EC3A9
+        a                   :Note ;
+        :noteText           "treasure cycle on vajrasattva revealed by gter bdag gling pa from ngam shod gnam lcags brag"@en .
+    
+    bdr:T00AG01245  a       :Topic ;
+        skos:altLabel       "rdo rje sems dpa' (smin gling rdor sems)"@bo-x-ewts ;
+        skos:prefLabel      "smin gling rdor sems/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT31EBDD054B6EC3A9 .
+}

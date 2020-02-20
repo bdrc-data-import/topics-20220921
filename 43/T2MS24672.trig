@@ -1,0 +1,51 @@
+@base          <bdg:T2MS24672> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24672 {
+    bda:LG0474CEC8274FFC07
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:26:57.358Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG80EDD488E91CBA61
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-25T11:48:41.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and notes"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24672  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24672 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/T2MS24672.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24672 ;
+        adm:logEntry        bda:LG0474CEC8274FFC07 , bda:LG80EDD488E91CBA61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT6527965071B95B0B
+        a                   :Note ;
+        :noteText           "this topic is applied to prefectures distinct from the TAR or bod rang skyong ljongs; a division within the zhing chen or provinces (T2MS24675) that include sichuan, qinghai, gansu, and yunnan; various rdzong or county (T2MS24664) are subsumed within it."@en .
+    
+    bdr:NTEACD13A027059138
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:T2MS24672  a        :Topic ;
+        skos:altLabel       "autonomous prefecture"@en ;
+        skos:prefLabel      "rang skyong khul/"@bo-x-ewts , "prefecture"@en , "自治州"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6527965071B95B0B , bdr:NTEACD13A027059138 .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T334> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T334 {
+    bda:LGFE01345A90B4CCC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T07:43:23.843Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of g162"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T334  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T334 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "49/T334.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T334 ;
+        adm:logEntry        bda:LGFE01345A90B4CCC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G162 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT6FD06D6E3BC0BB1F
+        a                   :Note ;
+        :noteText           "this topic has been withdrawn in favor of the use of g162"@en .
+    
+    bdr:T334  a             :Topic ;
+        skos:altLabel       "bkra shis 'khyil dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "bla brang bkra shis 'khyil dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6FD06D6E3BC0BB1F .
+}

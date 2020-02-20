@@ -1,0 +1,53 @@
+@base          <bdg:T732> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T732 {
+    bda:LGD61DC12A9F6477C1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T00:40:23.113Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE4F7DDA7A8B12082
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T06:09:06.182Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF2ABC7187A2E62BD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T00:43:30.988Z"^^xsd:dateTime ;
+        adm:logMessage      "note from taranatha added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T732  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T732 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/T732.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T732 ;
+        adm:logEntry        bda:LGD61DC12A9F6477C1 , bda:LGE4F7DDA7A8B12082 , bda:LGF2ABC7187A2E62BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9DEE0887E3BFDE87
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the vajra goddess mamaki who is sapphire blue, her right hand brandishing a blue, five-pointed vajra that radiates flames; her left hand making the threatening forefinger at her breast with a noose made of a blue utpala; on top of all the haughty chiefs of the eight tribes, fallen upside down she abides in pratyalidha (left leg extended upon a lotus, sun and moon seat; with a blue silk scarf and a tiger-skin skirt, she is adorned with snakes, jewels, and flowers and as youthful as a sixteen year old; she has three eyes and sprouts of fangs bare, with the mingled sentiments of wrath and passion; half her hair is tied at the back of the neck and half loose and crowned with buddha aksobhya, she abides amid a confusion of hot rays. \n\ntaranatha notes: vajra goddess mamaki, an instruction of the great master of dramila, deva-sambhava   \n\ndeities of tibetan buddhism #260"@en .
+    
+    bdr:T732  a             :Topic ;
+        skos:altLabel       "rdo rje lha mo mA ma kI/"@bo-x-ewts ;
+        skos:prefLabel      "mA ma kI/"@bo-x-ewts , "the goddess mamaki"@en , "mamaki devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT9DEE0887E3BFDE87 .
+}

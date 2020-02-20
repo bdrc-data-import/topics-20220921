@@ -1,0 +1,40 @@
+@base          <bdg:T716> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T716 {
+    bda:LGDC658459CC15C8F8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T13:05:07.19Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T716  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T716 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "38/T716.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T716 ;
+        adm:logEntry        bda:LGDC658459CC15C8F8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7CEE4CCE8F6091D1
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the black manjusri with one face and two arms; the right hand is brandishing a sword, the left is holding at his heart an utpala, which opens beside his ear and has a book of the perfection of wisdom on it; his legs are in vajraparyanka; he is just a little wrathful and adorned with silk, bones, and jewels; he abides amid a blazing mass of fire.\n\nthis is one of sa skya gser chos bcu gsum;  \n\n\ndeities of tibetan buddhism #232"@en .
+    
+    bdr:T716  a             :Topic ;
+        skos:prefLabel      "'jam dbyangs nag po/"@bo-x-ewts , "black manjughosa"@en , "manjughosa krsna"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7CEE4CCE8F6091D1 .
+}

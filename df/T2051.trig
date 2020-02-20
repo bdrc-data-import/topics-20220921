@@ -1,0 +1,36 @@
+@base          <bdg:T2051> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2051 {
+    bda:LGC32EAECC9F186049
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T10:12:43.136Z"^^xsd:dateTime ;
+        adm:logMessage      "combined 'gres byang and gres byang"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T2051  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2051 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "df/T2051.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2051 ;
+        adm:logEntry        bda:LGC32EAECC9F186049 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2051  a            :Topic ;
+        skos:altLabel       "gres byang /"@bo-x-ewts ;
+        skos:prefLabel      "'gres byang /"@bo-x-ewts ;
+        :isRoot             true .
+}

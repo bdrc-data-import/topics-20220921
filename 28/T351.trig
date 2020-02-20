@@ -1,0 +1,61 @@
+@base          <bdg:T351> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T351 {
+    bda:LGA5BECA5D83191C73
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-20T12:16:32.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB8B3F6244C19876A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-20T10:04:08.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC67632E3079AEB80
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-20T15:17:01.297Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGFA32874846E04D4D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-23T16:15:13.55Z"^^xsd:dateTime ;
+        adm:logMessage      "nor bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T351  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T351 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "28/T351.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T351 ;
+        adm:logEntry        bda:LGA5BECA5D83191C73 , bda:LGB8B3F6244C19876A , bda:LGC67632E3079AEB80 , bda:LGFA32874846E04D4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT00B854D3B80FFD5D
+        a                   :Note ;
+        :noteText           "see also T2MS20121"@en .
+    
+    bdr:NTE479EA3CDEF4E154
+        a                   :Note ;
+        :noteText           "a treasure revealed by karma gling pa in 1326, at the age of fifteen, from sgam po gdar gyi ri in dwags po. the work is a synthesis of the early rnying ma tantras in the rnying ma rgyud 'bum, particularly the mahayoga guhyagarbha tantra, and is the source from which the well known bar do thos grol was extracted."@en .
+    
+    bdr:T351  a             :Topic ;
+        skos:prefLabel      "zhi khro dgongs pa rang grol/ ( karma gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT00B854D3B80FFD5D , bdr:NTE479EA3CDEF4E154 .
+}

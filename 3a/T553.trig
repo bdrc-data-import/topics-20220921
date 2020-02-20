@@ -1,0 +1,50 @@
+@base          <bdg:T553> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T553 {
+    bda:LG7A6E9AFA69CD4736
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-09T15:13:02.372Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGA4B04AC14605D71A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-08T14:27:24.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGFFC4161DB716C98F
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-08T13:56:55.156Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T553  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T553 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3a/T553.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T553 ;
+        adm:logEntry        bda:LG7A6E9AFA69CD4736 , bda:LGA4B04AC14605D71A , bda:LGFFC4161DB716C98F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3E78FEDC6C276B35
+        a                   :Note ;
+        :noteText           "a treasure of mchog gyur gling pa and mkhyen brtse'i dbang po, revealed (by mchog gling) in 1858 at ke la nor bu in nang chen. the cycle is on padmasambhava in the guise of Padmasambhava in the form of Guru che mchog with a retinue of the following: Guru bde ba chen po, Guru padma sman gyi rgyal, Guru nor lha dbang gyi rgyal, Guru yi dam dbang gyi rgyal, Guru sgrub pa’i ke skong rgyal, Guru dpa’ bo ging gi gtso, Guru ‘byung bzhi dbang sgyur rgyal, Guru ma rungs skrod mdzad che, Guru rdo rje’i go cha can, Guru ‘chi ba’i sdug bsngal sel, Guru bar do’i ‘khrul snang ‘joms, Guru skye ba’i sdug bsngal sbyong, Guru ‘gro drug kun gyi skyabs (see andreas doctor, tibetan treasure literature, p. 91). it is classified by mkhyen brtse'i dbang po as one of four padmasambhava cycles in the mchog gling gter gsar, the inner cycle. the four are as follows: bar chad kun sel (outer), mtsho skyes snying thig (secret), and rdo rje drag rtsal (extra secret). texts are in volume 10 of the rin chen gter mdzod, v. 28-29 of the mchog gling gter gsar rgyas pa, and v. 15 of mkhyen brtse'i gsung 'bum"@en .
+    
+    bdr:T553  a             :Topic ;
+        skos:prefLabel      "bla ma'i thugs sgrub yid bzhin nor bu bsam pa lhun grub/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3E78FEDC6C276B35 .
+}

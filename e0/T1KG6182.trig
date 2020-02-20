@@ -1,0 +1,53 @@
+@base          <bdg:T1KG6182> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG6182 {
+    bda:LG0FD499CF23D2E4CC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-02T14:39:08.82Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG2605802E094308F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-02T11:22:21.302Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG3CAB17845C63A03C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-14T10:15:52.096Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGE2AAF8B1590C1891
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-09T15:04:47.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG6182  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG6182 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e0/T1KG6182.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG6182 ;
+        adm:logEntry        bda:LG0FD499CF23D2E4CC , bda:LG2605802E094308F6 , bda:LG3CAB17845C63A03C , bda:LGE2AAF8B1590C1891 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG6182  a         :Topic ;
+        skos:altLabel       "dmag spyi/"@bo-x-ewts , "army general"@en , "commander-in-chief"@en ;
+        skos:prefLabel      "dmag dpon/"@bo-x-ewts , "army commander"@en ;
+        :isRoot             true .
+}

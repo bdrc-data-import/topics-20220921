@@ -1,0 +1,47 @@
+@base          <bdg:T2MS14924> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14924 {
+    bda:LG923F29B1806B2AF9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-04T12:39:11.954Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG92EEC14BA1C2B8DD
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:20:39.115Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14924  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14924 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "17/T2MS14924.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14924 ;
+        adm:logEntry        bda:LG923F29B1806B2AF9 , bda:LG92EEC14BA1C2B8DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTB358874F4119A3BE
+        a                   :Note ;
+        :noteText           "period of chinese imperial history from approximately 960 to 1279"@en .
+    
+    bdr:T2MS14924  a        :Topic ;
+        skos:altLabel       "song chao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sung rgyal rabs/"@bo-x-ewts , "song dynasty"@en , "宋朝"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTB358874F4119A3BE .
+}

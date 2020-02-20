@@ -1,0 +1,41 @@
+@base          <bdg:T2603> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2603 {
+    bda:LGAEAD5AD777ED3F09
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-07-20T12:26:42.765Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2603  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2603 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d9/T2603.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2603 ;
+        adm:logEntry        bda:LGAEAD5AD777ED3F09 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT40E08699B8EEF24F
+        a                   :Note ;
+        :locationStatement  "v. 72" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "under this subject heading are classed rituals for the protection of the individual against weapons\nin the rin chen gter mdzod chen mo we find the following rituals\n1) mtshon srung (tshe brtan rgyal mtshan)\n2) thugs sgrub go cha brgyad kyi man ngag (rig 'dzin rgod kyi ldem 'phru can)\n3) gur drag mtshon srung rnams gter gzhung (rat+na gling pa)\n4) gur drag mtshon srung rnams gter gzhung gi lag len ('jam dbyangs mkhyen brtse'i dbang po)\n5) mtshon srung dar mdung ma\n6) sgom bzlas\n7) ral gri ma\n8) sngags rgod (byang gling)\n9) rgya zi nag po'i mtshon srung lugs gnyis"@en .
+    
+    bdr:T2603  a            :Topic ;
+        skos:prefLabel      "mtshon cha srung ba/"@bo-x-ewts , "protection against weapons"@en ;
+        :isRoot             true ;
+        :note               bdr:NT40E08699B8EEF24F .
+}

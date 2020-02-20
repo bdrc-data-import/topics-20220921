@@ -1,0 +1,40 @@
+@base          <bdg:T658> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T658 {
+    bda:LGF74E4B4ACD95F7C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T10:53:55.711Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T658  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T658 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7c/T658.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T658 ;
+        adm:logEntry        bda:LGF74E4B4ACD95F7C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA6CEF5C1824ED426
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for a red form of vajrapani, with right hand brandishing a black, five-pointed vajra; his left holds a noose at his heart; he wears a tiger-skin and silk skirt, and is adorned with jewels and snakes and crowned with aksobhya; complete with all of the ornaments and garb of a wrathful deity; he abides amid blazing fire.   \n\n\ndeities of tibetan buddhism #158"@en .
+    
+    bdr:T658  a             :Topic ;
+        skos:prefLabel      "phyag rdor gtum chung dmar po/"@bo-x-ewts , "slightly fierce red vajrapani"@en , "vajrapani rakta alpacanda"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA6CEF5C1824ED426 .
+}

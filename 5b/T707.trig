@@ -1,0 +1,40 @@
+@base          <bdg:T707> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T707 {
+    bda:LGAFEB77EB0D08602D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T11:50:24.189Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T707  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T707 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5b/T707.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T707 ;
+        adm:logEntry        bda:LGAFEB77EB0D08602D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT20B051C47FF30114
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the wrathful king rme btsegs stobs po che (mahabala); who has three faces and six arms; his principal face and body are smoke colored; his right face white and his left red; each face has three eyes and four bared fangs; he is crowned with five dry skulls; his pale yellow upward-streaming hair is tied with a blue snake with a yellow belly; he has a beard and eyebrows; his first right hand holds a crossed vajra; the second a five-pointed vajra; the third a vajra hook; the first left a vajra club; the second a vajra noose; the third makes the vajra threatening forefinger; all the arms are outstretched; he has a long necklace (se ral kha) of dry skulls and his limbs are adorned with snakes; he has a tiger-skin loincloth; his two legs straddled he stands proudly on a sun seat amid blazing fire of gnosis; he is crowned with aksobhya.   \n\n\ndeities of tibetan buddhism #224"@en .
+    
+    bdr:T707  a             :Topic ;
+        skos:prefLabel      "khro bo'i rgyal po rme brtsegs dud kha ba ri lo tsA ba'i lugs/"@bo-x-ewts , "smoke colored wrathful king ucchusma"@en , "dhumavarna-krodha-bhurkunkuta"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT20B051C47FF30114 .
+}

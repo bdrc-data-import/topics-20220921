@@ -1,0 +1,60 @@
+@base          <bdg:T2CN4867> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4867 {
+    bda:LG04F3F2D618EDBEF0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-25T15:18:58.823Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG521790AA1C979F04
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T17:07:42.118Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG90359CA408D73E09
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:51:06.087Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFA6E747F6EEAD0D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T15:00:17.473Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2CN4867  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4867 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2f/T2CN4867.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4867 ;
+        adm:logEntry        bda:LG04F3F2D618EDBEF0 , bda:LG521790AA1C979F04 , bda:LG90359CA408D73E09 , bda:LGFA6E747F6EEAD0D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF16DD304FD692EF8
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.9, p.82 & V.11, p.489 སླེ་ལུང་རྗེ་དྲུང་བཞད་པའི་རྡོ་རྗེས། རྒྱལ་ཡུམ་ཉི་མ་གཞོན་ནུ་འདི་ཉིད་ངེས་པའི་དོན་དུ་རྡོ་རྗེ་རྣལ་འབྱོར་མ་སྟེ། འདོད་ཁམས་དབང་ཕྱུག་དམག་ཟོར་མ་དང་དབྱེ་བ་མེད་ཅིང་། རྣམ་པའང་ཡེ་ཤེས་ཀྱི་ལས་ཀྱི་སྲུང་མ་ཐམས་ཅད་ཀྱི་གཙོ་མོར་བཞུགས་པ་སྐྱབས་གཅིག་སྲིད་གསུམ་བདག་མོར་གསུངས་སོ།"@bo .
+    
+    bdr:T2CN4867  a         :Topic ;
+        skos:altLabel       "rgyal yum nyi ma gzhon nu/"@bo-x-ewts ;
+        skos:prefLabel      "lha gcig nyi ma gzhon nu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF16DD304FD692EF8 .
+}

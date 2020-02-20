@@ -1,0 +1,59 @@
+@base          <bdg:T00JR2928> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR2928 {
+    bda:LG05D129E2929A1E6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T19:38:20.627Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG18EFFD614BDE74C6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T15:01:39.588Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1808 (mngon spyod)"@en .
+    
+    bda:LG6F1788D4A09E4EE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-28T12:13:24.944Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG7F39064AA5187CAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-28T12:15:17.4Z"^^xsd:dateTime ;
+        adm:logMessage      "edited; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGA33117EDCF1DB45C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-02T14:49:24.229Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T00JR2928  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR2928 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "37/T00JR2928.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR2928 ;
+        adm:logEntry        bda:LG05D129E2929A1E6F , bda:LG18EFFD614BDE74C6 , bda:LG6F1788D4A09E4EE2 , bda:LG7F39064AA5187CAB , bda:LGA33117EDCF1DB45C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T00JR2928  a        :Topic ;
+        rdfs:seeAlso        bdr:T1808 ;
+        skos:prefLabel      "drag po'i las/"@bo-x-ewts ;
+        :isRoot             true .
+}

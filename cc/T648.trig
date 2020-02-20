@@ -1,0 +1,41 @@
+@base          <bdg:T648> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T648 {
+    bda:LG5320EBAD556AEB2E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T09:57:42.079Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T648  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T648 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cc/T648.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T648 ;
+        adm:logEntry        bda:LG5320EBAD556AEB2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT70C3D3E5C427F25D
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for a white form of tara with one face and two arms; the right hand is boon-granting; the left holds a blue utpala; she has tha rdhaparyanka posture with her left leg extended; she wears a blue silk scarf and pearl ornaments; she is crowned with amoghasiddhi; this is according to the sastra expounded by candramitra.\n\n\ndeities of tibetan buddhism #144"@en .
+    
+    bdr:T648  a             :Topic ;
+        skos:altLabel       "sgrol ma rmi lam ston pa/"@bo-x-ewts , "svapnatara"@sa-alalc97 ;
+        skos:prefLabel      "rmi lam ston pa'i sgrol ma/"@bo-x-ewts , "dream-showing tara"@en , "tara svapnadesaka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT70C3D3E5C427F25D .
+}

@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1188> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1188 {
+    bda:LG4811DE01CAC4670C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-06T15:11:02.847Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5ADEF5823427F598
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T00:07:49.942Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG84AC5CC7DBE8BB09
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T16:33:45.083Z"^^xsd:dateTime ;
+        adm:logMessage      "created with application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD99344E3CEF74E7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-06T15:14:25.208Z"^^xsd:dateTime ;
+        adm:logMessage      "updated"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1188  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1188 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f1/T2GS1188.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1188 ;
+        adm:logEntry        bda:LG4811DE01CAC4670C , bda:LG5ADEF5823427F598 , bda:LG84AC5CC7DBE8BB09 , bda:LGD99344E3CEF74E7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT228DE192FEE54B26
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon an agent (las mkhan) of a form of mahakala, black yak-face ('brong zhal nag po) with one face and two arms; his right hand holds a blazing club and his left a blood-dripping knife; he has a tiger skin quiver and a leopard skin bow case; he wears a three-layered, flowing cloak of black silk, tied with a precious gold belt, and high boots on his feet; iron hair locks envelop him like darkness; he has bared fangs three eyes, flaming beard, a crown of dry skulls, and a long necklace of fresh heads; he rides a small black mule with white fetlocks, and great in magic power and ferocity, he abides amid a blazing mass of fire.\n\ndeities of tibetan buddhism #383"@en .
+    
+    bdr:T2GS1188  a         :Topic ;
+        skos:prefLabel      "mgon po trak+Shad 'brong zhal can/"@bo-x-ewts , "yak-faced traksad mahakala"@en ;
+        :isRoot             true ;
+        :note               bdr:NT228DE192FEE54B26 .
+}

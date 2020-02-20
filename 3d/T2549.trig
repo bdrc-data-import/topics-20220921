@@ -1,0 +1,47 @@
+@base          <bdg:T2549> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2549 {
+    bda:LG8069A25F95B194B6
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T15:43:07.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDA1D52FB45D90B3F
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:02.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T2549  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2549 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3d/T2549.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2549 ;
+        adm:logEntry        bda:LG8069A25F95B194B6 , bda:LGDA1D52FB45D90B3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8EE4A732852235CA
+        a                   :Note ;
+        :noteText           "under this category are classed works relating to general forms of vajravidarana"@en .
+    
+    bdr:T2549  a            :Topic ;
+        skos:altLabel       "rnam 'joms/"@bo-x-ewts , "摧破金刚"@zh-hans ;
+        skos:prefLabel      "rdo rje rnam 'joms/"@bo-x-ewts , "vajravidāraṇa"@sa-x-ndia , "摧破金剛"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NT8EE4A732852235CA .
+}

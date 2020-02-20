@@ -1,0 +1,53 @@
+@base          <bdg:T366> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T366 {
+    bda:LG152F2F82DCFCA946
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:11:53.8Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T247 (bon)"@en .
+    
+    bda:LG33CAE13DEBD3A6E8
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-16T09:05:00.562Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3170"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGE4D1F64AABB9F98F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T11:26:22.244Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted see also field"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF72A10365F76467B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-28T10:58:59.8Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T366  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T366 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/T366.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T366 ;
+        adm:logEntry        bda:LG152F2F82DCFCA946 , bda:LG33CAE13DEBD3A6E8 , bda:LGE4D1F64AABB9F98F , bda:LGF72A10365F76467B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3170 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T366  a             :Topic ;
+        rdfs:seeAlso        bdr:T247 ;
+        skos:prefLabel      "zhang zhung /"@bo-x-ewts ;
+        :isRoot             true .
+}

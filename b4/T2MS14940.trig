@@ -1,0 +1,68 @@
+@base          <bdg:T2MS14940> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14940 {
+    bda:LG5DFFDD85D3E77684
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-24T16:18:45.096Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9B04DA01467A971D
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T15:27:24.09Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGA5504362B6A93291
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T15:29:22.228Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from  to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGAC00D5B54F3C762E
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T15:29:44.571Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGE6F032F7760C0F78
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-15T10:07:32.023Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14940  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14940 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b4/T2MS14940.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14940 ;
+        adm:logEntry        bda:LG5DFFDD85D3E77684 , bda:LG9B04DA01467A971D , bda:LGA5504362B6A93291 , bda:LGAC00D5B54F3C762E , bda:LGE6F032F7760C0F78 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT1C67F1484832C55A
+        a                   :Note ;
+        :noteText           "see also dkon mchog gsum, T1760"@en .
+    
+    bdr:NT49AB95338D61AB9A
+        a                   :Note ;
+        :noteText           "this topic is applied generally to the community of buddhist practitioners"@en .
+    
+    bdr:T2MS14940  a        :Topic ;
+        skos:prefLabel      "dge 'dun/"@bo-x-ewts , "sangha"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT1C67F1484832C55A , bdr:NT49AB95338D61AB9A .
+}

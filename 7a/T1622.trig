@@ -1,0 +1,40 @@
+@base          <bdg:T1622> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1622 {
+    bda:LG6C5EEC5E5AFA9DE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-12-02T10:13:15.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1622  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1622 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7a/T1622.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1622 ;
+        adm:logEntry        bda:LG6C5EEC5E5AFA9DE7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE8EF1EB5E301022E
+        a                   :Note ;
+        :noteText           "a type of preta; ghost of poverty."@en .
+    
+    bdr:T1622  a            :Topic ;
+        skos:prefLabel      "bse rag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE8EF1EB5E301022E .
+}

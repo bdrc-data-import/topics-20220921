@@ -1,0 +1,41 @@
+@base          <bdg:T608> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T608 {
+    bda:LG1F6E52DC199BED19
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T16:30:15.977Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T608  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T608 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "27/T608.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T608 ;
+        adm:logEntry        bda:LG1F6E52DC199BED19 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCEE3CDA6F800C4A0
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the white tara transmitted by kha che paN chen shAkya shrI; she is white crowned with amitabha and sitting in vajraparyanka; her right hand is boon-granting; her left hand holds at her heart the stem of a white utpala, which opens beside her ear; she is a youthful as a sixteen year old and adorned with silks and all the jewel ornaments; her body emits countless rays of light; on the eight petals are eight white taras, resembling her like her shadows, facing inwards as attendants; \n\ndeities of tibetan buddhism #135"@en .
+    
+    bdr:T608  a             :Topic ;
+        skos:altLabel       "white tara in the tradition of the great pandita of kashmir"@en ;
+        skos:prefLabel      "sgrol dkar kha che paN chen lugs/"@bo-x-ewts , "sita tara according to the tradition of kha che paN chen"@en , "tara (sita)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTCEE3CDA6F800C4A0 .
+}

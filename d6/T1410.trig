@@ -1,0 +1,40 @@
+@base          <bdg:T1410> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1410 {
+    bda:LG130E9EE915FB4791
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T12:50:49.338Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added or amplified"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1410  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1410 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d6/T1410.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1410 ;
+        adm:logEntry        bda:LG130E9EE915FB4791 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT78EB2F393417CC88
+        a                   :Note ;
+        :noteText           "this topic is applied to subjects and ritual practices concerning tsong kha pa blo bzang grags pa and his two chief disciples, rgyal tshab rje dar ma rin chen and mkhas grub rje dge legs dpal bzang.  in the early period of the dge lugs tradition mkhas grub rje was replaced by 'dul 'dzin grags pa rgyal mtshan.\n\ntsong kha pa is shown as he is visualized in guryoga practices.  \n\non a jewel throne supported by lions, on a lotus, sun and moon seat sits the essence of your own guru and of all the gurus of the ten directions in the form of tsong kha pa; his skin is white but shining and beautiful pink in places such as the lips and cheeks; his two hands are in the gesture of explaining the dharma; the right hand faces outwards, reflecting the teaching of others; the the left hand faces inward representing  the inner practice and realization of the teachings within oneself; both hands hold the stems of lotuses, the flowers opening at the level of his ears; on the right hand flower is a wisdom sword and on the left a book of the perfection of wisdom, radiating light and sound of the scripture and compassion and the wisdom that arises from it; he wears the three robes of a monk, symbols of pure morality and a pointed yellow hat, yellow for the clarity of his understanding and teachings and pointed for his sharp wisdom; his legs are crossed in vajraparyanka, symbolizing is attainment of the two bodies of a fully enlightened buddha.\n\nat his heart is orange manjughosa, at his heart vajradhara, patron of tantra, and at his heart is a dark blue hUM symbol.\n\non a lower throne on tsong kha pa's right is his disciple rgyal tshab dar ma rin chen, called rgyal tshab because he was the lineage holder following tsong kha pa's passing; he is very calm and peaceful.\n\non tsong kha pa's left is mkhas grub rje dge legs dpal bzang, somewhat younger than rgyal tshab, and slight wrathful, with large eyes, giving the impression of of great power; both of these disciples have their right hands in the gesture of explaining the dharma, their left is that of meditation and holding a book; they too wear monks' robes and yellow hats and sit cross-legged; they have the markes and signs of a buddha and radiate light;\n\nat their hearts are the deities they are emanations of, four armed avalokita and wrathful vajrapani respective; at each deity's heart is vajradhara and his heart is a blue hUM.\n\n\ndeities of tibetan buddhism #1-3"@en .
+    
+    bdr:T1410  a            :Topic ;
+        skos:prefLabel      "rje yab sras gsum/"@bo-x-ewts , "rje tsong kha pa and his two chief disciples"@en ;
+        :isRoot             true ;
+        :note               bdr:NT78EB2F393417CC88 .
+}

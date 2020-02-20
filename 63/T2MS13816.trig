@@ -1,0 +1,65 @@
+@base          <bdg:T2MS13816> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13816 {
+    bda:LG1AE47439D0A792B6
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T15:31:54.577Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG24790C41539FEE77
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T20:18:48.386Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG4B71BA94E18C89A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T20:18:34.226Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG6C703901907006E6
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T15:28:37.063Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGEA1E7945F024783C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-23T11:34:12.98Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13816  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13816 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "63/T2MS13816.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13816 ;
+        adm:logEntry        bda:LG1AE47439D0A792B6 , bda:LG24790C41539FEE77 , bda:LG4B71BA94E18C89A2 , bda:LG6C703901907006E6 , bda:LGEA1E7945F024783C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTAB2544ABB7CDBD83
+        a                   :Note ;
+        :noteText           "This topic refers to the period of the Tibetan empire and the kings of Tibet."@en .
+    
+    bdr:T2MS13816  a        :Topic ;
+        skos:altLabel       "spur rgyal/"@bo-x-ewts ;
+        skos:prefLabel      "pur rgyal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAB2544ABB7CDBD83 .
+}

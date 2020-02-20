@@ -1,0 +1,52 @@
+@base          <bdg:T313> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T313 {
+    bda:LG3A063A19DFC6B6C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T15:53:05.564Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB6656A21574BB31D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T14:41:40.176Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised; note from chos rnam kun btus added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T313  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T313 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f6/T313.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T313 ;
+        adm:logEntry        bda:LG3A063A19DFC6B6C7 , bda:LGB6656A21574BB31D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT52B890574EB396FC
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 398" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the bstan 'gyur mdo sde thi pa 113 ba 1) describes zhi gnas kyi dbye ba gsum:\nde yang/ 'phags pa dgongs pa zab mo nges par 'grel pa'i mdo rgya cher 'grel pa las byung bas ste/\n1) zhi gnas gsum rnam pa bstan pa; 2) zhi gnas rnam pa brgyad bstan pa; 3) zhi gnas rnam pa bzhi bstan pa."@en .
+    
+    bdr:NTF36AA88ADEF8062A
+        a                   :Note ;
+        :noteText           "this topic is applied to describe works on equanimity practice; \naccording to the wikipedia samatha (pāli), śamatha (sanskrit; also orthographically romanized to shamatha) \"calm abiding,\" comprises a suite, type or style of Buddhist meditation or concentration practices designed to enhance sustained voluntary attention, culminating in an attention that can be sustained effortlessly for hours on end. samatha is a subset of the broader family of samādhi (\"concentration\") meditation practices."@en .
+    
+    bdr:T313  a             :Topic ;
+        skos:prefLabel      "zhi gnas/"@bo-x-ewts , "samatha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT52B890574EB396FC , bdr:NTF36AA88ADEF8062A .
+}

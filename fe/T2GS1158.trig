@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1158> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1158 {
+    bda:LGA7D33D5D534C6BF4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T14:34:50.632Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1158  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1158 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fe/T2GS1158.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1158 ;
+        adm:logEntry        bda:LGA7D33D5D534C6BF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2D1CD4C4D9D6EB7D
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the practice of a white sarasvati descending from candrakumara; she is white; with three white faces and four arms; her first pair on hands hold a sword and an utpala; the other pair support a vina; she sits in vajraparyanka on a lotus and moon, youthful as a sixteen year old and adorned with silks and jewels;  \n\n\ndeities of tibetan buddhism #193"@en .
+    
+    bdr:T2GS1158  a         :Topic ;
+        skos:altLabel       "dbyangs can ma dkar mo phyag bzhi ma slob dpon zla ba gzhon nu'i lugs/"@bo-x-ewts ;
+        skos:prefLabel      "dbyangs can ma dkar mo phyag bzhi pa/"@bo-x-ewts , "four-armed white sarasvati"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2D1CD4C4D9D6EB7D .
+}

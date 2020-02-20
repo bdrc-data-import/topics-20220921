@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1331> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1331 {
+    bda:LG4EAD9DE665DAC773
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T16:36:02.573Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG93CB9D707C396DAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T01:50:30.809Z"^^xsd:dateTime ;
+        adm:logMessage      "created and application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1331  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1331 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ab/T2GS1331.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1331 ;
+        adm:logEntry        bda:LG4EAD9DE665DAC773 , bda:LG93CB9D707C396DAB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2CF70F1D0FB13D42
+        a                   :Note ;
+        :noteText           "this topic is applied to special works concerned with the creation and use of these magical devices; it should not be used for yogic postures used in meditative practice"@en .
+    
+    bdr:NT424A8C1B9F93FD1F
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 2745" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1375-3 which follows the explanation found in the kalacakra tantra (dus kyi 'khor lo'i rgyud)) notes the existence of 12 of these 'phrul 'khor:\n1) sgyogs kyi 'phrul 'khor; 2) gru'i 'phrul 'khor; 3) gri gug gi 'phrul 'khor; 4) gur gyi 'phrul 'khor; 5) lcags mda'i 'phrul 'khor; 6) ral gri'i 'phrul 'khor; 7) me'i 'phrul 'khor; 8) rlung gi 'phrul 'khor; 9) shing rta'i 'phrul 'khor; 10) khang bzang; 11) khyogs kyi mtshan nyid; 12) chu gyen du 'dren pa'i 'phrul 'khor."@en .
+    
+    bdr:T2GS1331  a         :Topic ;
+        skos:prefLabel      "'phrul 'khor/"@bo-x-ewts , "magical wheel, mechanism"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2CF70F1D0FB13D42 , bdr:NT424A8C1B9F93FD1F .
+}

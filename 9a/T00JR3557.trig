@@ -1,0 +1,59 @@
+@base          <bdg:T00JR3557> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR3557 {
+    bda:LG1D586F98C9F98603
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-18T16:05:05.873Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG651758C16D1B8D63
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-16T14:09:00.196Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG65E051AE39B1B53B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-18T12:52:44.597Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created or expanded on; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGD722E260A2575C7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-16T14:07:19.574Z"^^xsd:dateTime ;
+        adm:logMessage      "newly creted; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T00JR3557  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR3557 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/T00JR3557.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR3557 ;
+        adm:logEntry        bda:LG1D586F98C9F98603 , bda:LG651758C16D1B8D63 , bda:LG65E051AE39B1B53B , bda:LGD722E260A2575C7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBA96EE9AA6966A6E
+        a                   :Note ;
+        :noteText           "rong lugs and sna nam lugs are synonymous and refer to the tradition of vajrakilaya teachings propagated by rong zom chos kyi bzang po (11th cen.)"@en .
+    
+    bdr:T00JR3557  a        :Topic ;
+        skos:altLabel       "phur pa (snan nam lugs)"@bo-x-ewts ;
+        skos:prefLabel      "phur pa (rong lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBA96EE9AA6966A6E .
+}

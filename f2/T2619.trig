@@ -1,0 +1,40 @@
+@base          <bdg:T2619> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2619 {
+    bda:LGCA7A436BDBF95F38
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:20:35.586Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2619  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2619 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f2/T2619.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2619 ;
+        adm:logEntry        bda:LGCA7A436BDBF95F38 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTF874D3A9E34C0AF7
+        a                   :Note ;
+        :noteText           "the twenty four great tantras of the mental class are::\n1) sems nyid bya rtsol las 'das pa nam mkha' che rtsa ba'i rgyud dang phyi ma'i rgyud\n2) nam mkha' che phyi ma phyi ma'i rgyud\n3) sems nyid 'pho 'gyur med pa chos nyid rgyal po'i rgyud\n4) sems nyid thig le nyag gcig tu ston pa byang chub kyi sems thig le'i rgyud\n5) sems nyid rang byung gi ye shes su bstan pa ye shes thig le'i rgyud\n6) sems nyid thams cad kyi rtsa bar bstan pa man ngag phreng ba'i rgyud\n7) sems nyid kun khyab chen por bstan pa gsang ba rgyal po'i rgyud\n8) sems nyid rang rig tu bstan pa ye shes dam pa'i rgyud\n9) sems nyid kun tu bzang po'i rol par ston pa mkha' dbyings rnam dag gi rgyud\n10) sems nyid kun gyi snying po ston pa man ngag snying po'i rgyud\n11) sems nyid rang rig tu yid ches pa snying po gsang ba'i rgyud\n12) sems nyid kun gyi rtsa ba nam mkha' che rtsa ba can gyi rgyud\n13) sems nyid gcig tu 'dus pa nyag gcig dgongs pa'i rgyud\n14) sems nyid ji bzhin par bzhag pa bsam gtan chen po'i rgyud\n15) sems nyid rgyun chags su goms pa bsam gtan rgyun chags kyi rgyud\n16) sems nyid thams cad du gsungs pa sgo mang mdo'i rgyud\n17) sems nyid dbang dang sbyar ba nam mkha' che dbang gi rgyud\n18) sems nyid sgra tshig las 'das pa nam mkha' che yi ge med pa'i rgyud\n19) sems nyid gdod ma'i gnas su bstan pa nam mkha' che gzhi'i rgyud\n20) sems nyid 'od gsal du bstan pa rin chen 'bar ba'i rgyud\n21) sems nyid yon tan lhun grub tu bstan pa rin po che phreng ba'i rgyud\n22) sems nyid khams gsum la gsal ba khams gsum sgron ma'i rgyud\n23) sems nyid spang blang las 'das par ston pa nges pa snying po'i rgyud\n24) sems nyid 'pho 'gyur med par ston pa rdo rje gsang ba'i rgyud"@en .
+    
+    bdr:T2619  a            :Topic ;
+        skos:prefLabel      "sems sde'i rgyud chen 24"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF874D3A9E34C0AF7 .
+}

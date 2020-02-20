@@ -1,0 +1,36 @@
+@base          <bdg:T1972> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1972 {
+    bda:LG1B79FBA5DA9EEBEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:04:14.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1972  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1972 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "58/T1972.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1972 ;
+        adm:logEntry        bda:LG1B79FBA5DA9EEBEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1972  a            :Topic ;
+        rdfs:seeAlso        bdr:T10MS14626 , bdr:T1188 , bdr:T1189 ;
+        skos:prefLabel      "nad rtags/"@bo-x-ewts , "diagnosis of disease"@en ;
+        :isRoot             true .
+}

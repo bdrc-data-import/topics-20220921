@@ -1,0 +1,43 @@
+@base          <bdg:T2343> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2343 {
+    bda:LG931C071E8C4D9475
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T14:04:07.088Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed, added all names & description..."@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEADFEAFEFF56318A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T14:23:28.338Z"^^xsd:dateTime ;
+        adm:logMessage      "added associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2343  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2343 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5a/T2343.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2343 ;
+        adm:logEntry        bda:LG931C071E8C4D9475 , bda:LGEADFEAFEFF56318A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2343  a            :Topic ;
+        rdfs:comment        "Prasangika, \"consequentialist / -ism\", the \"consequentialist\" system of Madhyamika, founded by Buddhapaalita and disseminated by Chandrakirti, a Consequentialist, a Madhyamika who mainly states refutations of an opponents assertion of any of the four extremes through the expression of a correct contradictory consequence, consequence school." ;
+        skos:altLabel       "dbu ma thal 'gyur pa/"@bo-x-ewts ;
+        skos:prefLabel      "thal 'gyur pa/"@bo-x-ewts , "consequentialist"@en , "Prasangika"@sa-x-ndia , "应成派"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T709> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T709 {
+    bda:LGDC2BCA7F9CE901F0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T12:00:12.985Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T709  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T709 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bf/T709.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T709 ;
+        adm:logEntry        bda:LGDC2BCA7F9CE901F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT34312166203CB340
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the dakini ucchusma, black as charcoal, with the appearance of a wrathful female deity; she has three eyes; her two hands hold at her heart a flask filled with purifying nectar; her hair is loose and abundant; without ornaments and in a loose hanging garment of black silk, she stands with feet together on a lotus and sun; she is crowned with aksobhya\n\n\ndeities of tibetan buddhism #226"@en .
+    
+    bdr:T709  a             :Topic ;
+        skos:altLabel       "bhurkunkuti krodhi/"@bo-x-ewts , "khro mo rme brtsegs/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro rme brtsegs khro mo/"@bo-x-ewts , "wrathful female ucchusma"@en ;
+        :isRoot             true ;
+        :note               bdr:NT34312166203CB340 .
+}

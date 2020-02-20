@@ -1,0 +1,66 @@
+@base          <bdg:T233> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T233 {
+    bda:LG13AA5AF5F88FBAA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-21T10:31:35.51Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2272EC5FF9A29F92
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T13:46:32.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGAC9ADC19FA4B356E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T14:59:12.328Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted dbu ma pa"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGD16AFB8D6D60B692
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T16:20:58.901Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in multi languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGD2DAD219D1F75A65
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T15:06:20.509Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T233  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T233 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d5/T233.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T233 ;
+        adm:logEntry        bda:LG13AA5AF5F88FBAA2 , bda:LG2272EC5FF9A29F92 , bda:LGAC9ADC19FA4B356E , bda:LGD16AFB8D6D60B692 , bda:LGD2DAD219D1F75A65 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7F3E74C51898F8E3
+        a                   :Note ;
+        :noteText           "this topic is assigned to general works on madhyamaka"@en .
+    
+    bdr:T233  a             :Topic ;
+        rdfs:seeAlso        bdr:T385 ;
+        skos:altLabel       "中观"@zh-hans ;
+        skos:prefLabel      "dbu ma/"@bo-x-ewts , "middle way"@en , "madhyamaka"@sa-alalc97 , "中道"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT7F3E74C51898F8E3 .
+}

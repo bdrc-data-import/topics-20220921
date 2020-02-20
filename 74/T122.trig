@@ -1,0 +1,41 @@
+@base          <bdg:T122> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T122 {
+    bda:LG8C54C21AC24FC796
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T09:59:17.291Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T122  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T122 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "74/T122.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T122 ;
+        adm:logEntry        bda:LG8C54C21AC24FC796 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT207ECBB01F7731E5
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the great king vaisravana, who is dark blue, with one face and two arms; he has two round, red eyes, looking with angry gaze at hindering enemies and is frowning, with bared fangs; his right hand brandishes a sword blazing with fire, his left holds a poppy-colored arrow-headed banner (mda' dar) resting on his shoulder; he wears a large cloak of black silk and a purple corslet of laquered leather; on his head is an iron helmet with gold dots; his beard and eyebrows blaze like fire; on his feet he wears boots of shagreen patterned in tuquoise; he is riding on a superbly dextrous horse, the color of vaidurya, with golden saddle and magic stirrups; with the appearance of of an extremely terrifying raksasa, he abides amid a gale of fire; at his heart on a sun is a dark blue vai (wai).\n\nIn the four lakes appear four demonesses described as riding on a gayal, a buffalo, a wild yak, and a wild ass respectively, each with a hundred thousand maidens of her own color; in the intermediate points are the four great kings respectively riding on an elephant, a buffalo, a sea monster and a lion.\n\ndeities of tibetan buddhismm #310."@en .
+    
+    bdr:T122  a             :Topic ;
+        skos:altLabel       "black vaisravana with a blue horse/"@bo-x-ewts ;
+        skos:prefLabel      "rnam sras nag po rta sngon can/"@bo-x-ewts , "vaisravana nilasva krsna"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT207ECBB01F7731E5 .
+}

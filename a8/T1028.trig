@@ -1,0 +1,71 @@
+@base          <bdg:T1028> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1028 {
+    bda:LG07373724C91903CC
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T19:12:30.057Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T934 to T1028"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3876CABBF43D4309
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:31.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG527CD8A27316FD9D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:22:13.527Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T977 (cho ga)"@en .
+    
+    bda:LG666BE0D1E5C38327
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T14:20:08.974Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG974418E366E4D2D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T12:42:17.4Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T934"@en .
+    
+    bda:LGF5863212EA2C9B1F
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T14:14:27.667Z"^^xsd:dateTime ;
+        adm:logMessage      "removed see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF99DE8501227C0EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:01:29.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T1028  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1028 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a8/T1028.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1028 ;
+        adm:logEntry        bda:LG07373724C91903CC , bda:LG3876CABBF43D4309 , bda:LG527CD8A27316FD9D , bda:LG666BE0D1E5C38327 , bda:LG974418E366E4D2D3 , bda:LGF5863212EA2C9B1F , bda:LGF99DE8501227C0EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1028  a            :Topic ;
+        rdfs:seeAlso        bdr:T00KG02673 , bdr:T225 , bdr:T977 ;
+        skos:altLabel       "开光"@zh-hans ;
+        skos:prefLabel      "rab gnas/"@bo-x-ewts , "consecration"@en , "開光"@zh-hant ;
+        :isRoot             true .
+}

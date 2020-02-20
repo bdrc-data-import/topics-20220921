@@ -1,0 +1,41 @@
+@base          <bdg:T4CZ326967> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ326967 {
+    bda:LG2F52785D98F9A25D
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:17:31.501Z"^^xsd:dateTime ;
+        adm:logMessage      "removed worng topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ326967  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ326967 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "68/T4CZ326967.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ326967 ;
+        adm:logEntry        bda:LG2F52785D98F9A25D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE1BE116A83581B9D
+        a                   :Note ;
+        :noteText           "1) lha grags ldan chos skyong /\n2) klu rgyal 'jog po/\n3) gnod sbyin skar mda' gdong /\n4) srin po blo gros thabs ldan/ \n5) mi li tsa+tsha byi dri ma med pa/ (dung dkkar tshig mdzod)\n\n\n1) lha grags chos skyong bzang po/\n2) klu rgyal 'jog po/\n3) gnod sbyin skar mda' gdong /\n4) srin po blo gros thabs ldan/ \n5) mi li tsa+tsha byi dri ma med pa/ (she sbya kun khyab/)"@en .
+    
+    bdr:T4CZ326967  a       :Topic ;
+        skos:altLabel       "dam pa'i rigs can dra ma lnga /"@bo-x-ewts ;
+        skos:prefLabel      "rigs can dra ma lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE1BE116A83581B9D .
+}

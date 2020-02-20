@@ -1,0 +1,61 @@
+@base          <bdg:T67> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T67 {
+    bda:LG7B24658B992B0450
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-07T17:16:27.932Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB30BB7BA44063106
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:12:03.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGB678C898A575E0B3
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T07:47:05.687Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD9082C3C5CA57263
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-05T10:53:43.709Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T67  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T67 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "88/T67.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T67 ;
+        adm:logEntry        bda:LG7B24658B992B0450 , bda:LGB30BB7BA44063106 , bda:LGB678C898A575E0B3 , bda:LGD9082C3C5CA57263 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT51F7AC841132D792
+        a                   :Note ;
+        :noteText           "see also topic 901, bsngags pa"@en .
+    
+    bdr:NT6321829F34A7E0E1
+        a                   :Note ;
+        :noteText           "under this keyword are classed generically the versified formulae of praise of the buddha, bodhisattvas, deities, and spiritual teachers who have transmitted teachings; \nthe subject is the deity or teacher to whom the praise is addressed"@en .
+    
+    bdr:T67  a              :Topic ;
+        skos:altLabel       "verses of praise"@en , "誉"@zh-hans , "赞"@zh-hans , "譽"@zh-hant ;
+        skos:prefLabel      "bstod pa/"@bo-x-ewts , "bsngags brjod"@en , "stotra"@sa-alalc97 , "讚"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT51F7AC841132D792 , bdr:NT6321829F34A7E0E1 .
+}

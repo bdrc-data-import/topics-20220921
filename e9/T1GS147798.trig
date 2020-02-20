@@ -1,0 +1,52 @@
+@base          <bdg:T1GS147798> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147798 {
+    bda:LG794B9157C075E460
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-21T15:20:43.171Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF3DACC29B6327A0B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T17:23:35.915Z"^^xsd:dateTime ;
+        adm:logMessage      "note added on the defects of the land on which lha sa is built"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147798  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147798 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e9/T1GS147798.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147798 ;
+        adm:logEntry        bda:LG794B9157C075E460 , bda:LGF3DACC29B6327A0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEEBC4B2084B1CD96
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 1309" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus (quoting the lde'u chos 'byung, 278-13) the five earth defects of lha sa (lha sa'i sa'i skyon legs) are:\n1) klu'i pho brang; 2) 'dre'i mdun sa; 3) ma mo'i nyal sa; 4) btsan rgyi rgyu srang; 5) 'byung ba bzhi ba'i sa dgra."@en .
+    
+    bdr:NTF702D49CA3F4398A
+        a                   :Note ;
+        :noteText           "under this topic are classed ritual for the selection and preparation of land for contruction of temples and other sacred constructions"@en .
+    
+    bdr:T1GS147798  a       :Topic ;
+        skos:prefLabel      "sa brtag bslang sbyang sbyang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEEBC4B2084B1CD96 , bdr:NTF702D49CA3F4398A .
+}

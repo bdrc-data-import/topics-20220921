@@ -1,0 +1,53 @@
+@base          <bdg:T693> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T693 {
+    bda:LG068DD4FE5DB89F9D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T10:58:14.609Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG0C48F5B6D99FBC9C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T12:02:48.807Z"^^xsd:dateTime ;
+        adm:logMessage      "application note and one name revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG1B35A345CFD591BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T15:51:15.562Z"^^xsd:dateTime ;
+        adm:logMessage      "title added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T693  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T693 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "12/T693.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T693 ;
+        adm:logEntry        bda:LG068DD4FE5DB89F9D , bda:LG0C48F5B6D99FBC9C , bda:LG1B35A345CFD591BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFE08DDFF559497D0
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon a form of laksmi (dpal mo), green, her right hand giving refuge, her left with an utpala; she sits in lalita with the right leg extended; she is surrounded by eight attendants: 1) east white purnabhadra holding a jewel-marked flask; 2) south yellow ganapati holding a jewel and a golden amulet box; 3) west red vaisravana holding with a jewel and a tree; 4)  north black jambhala with jewel and a mongoose; 5) southeast green subjugating tara with a jewel and an utpala; 6) southwest red kurukulla with an utpala and a gem-marked hook; 7) northwest yellow vasudhara with a jewel and a rosary; 8) northeast sitatapatra, with a jewel and a jewel-marked lotus. \n\none of the dmar chung of the sa skya tradition.\n\ndeities of tibetan buddhism #206"@en .
+    
+    bdr:T693  a             :Topic ;
+        skos:altLabel       "ku ru kul+le dpal mo snying gi gser thig can/"@bo-x-ewts , "hrt-suvarnabindulaksmi"@sa-alalc97 ;
+        skos:prefLabel      "dpal mo snying gi gser thig can/"@bo-x-ewts , "sri garbhasuvarnasutra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTFE08DDFF559497D0 .
+}

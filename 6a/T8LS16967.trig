@@ -1,0 +1,46 @@
+@base          <bdg:T8LS16967> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16967 {
+    bda:LGBBC14C53DD18A5AE
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:13:18.172Z"^^xsd:dateTime ;
+        adm:logMessage      "T538"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGC24FDAB4092689AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-08T09:44:20.062Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16967  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16967 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6a/T8LS16967.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16967 ;
+        adm:logEntry        bda:LGBBC14C53DD18A5AE , bda:LGC24FDAB4092689AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTC101ABFB18173CF0
+        a                   :Note ;
+        :noteText           "newly discovered treasure revelations from 19th and early 20th century"@en .
+    
+    bdr:T8LS16967  a        :Topic ;
+        skos:prefLabel      "gter gsar/"@bo-x-ewts , "new revelation"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC101ABFB18173CF0 .
+}

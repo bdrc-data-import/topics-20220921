@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1184> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1184 {
+    bda:LG08606A063EA07B6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T11:54:31.489Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1003JR156 (dbang sdud)"@en .
+    
+    bda:LG1A97B8A0E774E724
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T12:38:09.333Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG876190FD3B3E523C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T16:13:11.772Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1184  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1184 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1f/T2GS1184.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1184 ;
+        adm:logEntry        bda:LG08606A063EA07B6F , bda:LG1A97B8A0E774E724 , bda:LG876190FD3B3E523C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT06A536A31788F023
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals for the subjugating mahakala, might strength sapping field protector (zhing skyong stobs 'phrog dbang po dbang sdud mgon po; vasamkara mahabala harendra ksetrapala) who is red; his principal face is red; the right white; the left blue; the upper smoke colored; his first pair of hands pierce the heart or the object of practice with a hook and bind his or her neck with a noose; the other pair hold a bone rosary and a flask of liquor; his brown hair streams upwards; three eyed and gaping mouthed, he bears sharp fangs and his lower lips hang down; he is adorned with a sacred thread, bones, snakes, and strings of bells; with a tiger skin loincloth, he abids in standing pratyalidha posture (right leg bent) amid a fiercely blazing fire of gnosis;\n\nfrom the four directions come his consorts: b) on his right comes the great mother, red dombini (g.yung mo); c) on his left, the worker (las mdzad), red candali (gtum mo); d) in front the red maharaksasi (srin mo chen mo); e) behind is red simhali (sing+ga gling ma), each is one-faced and two armed holding a hook and a noose, extremely fierce and wrathful and with the attributes of a human messenger, three-eyed, naked, without ornaments, in a great hurry, and facing the principal; encircling them round the outside are twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world.\n\ndeities of tibetan buddhism #390"@en .
+    
+    bdr:T2GS1184  a         :Topic ;
+        rdfs:seeAlso        bdr:T003JR156 ;
+        skos:prefLabel      "dpal mgon zhal bzhi pa dmar po dbang sdud/"@bo-x-ewts , "red, four faced sri-mahakala subjugating"@en ;
+        :isRoot             true ;
+        :note               bdr:NT06A536A31788F023 .
+}

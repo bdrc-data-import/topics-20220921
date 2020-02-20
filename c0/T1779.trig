@@ -1,0 +1,70 @@
+@base          <bdg:T1779> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1779 {
+    bda:LG06C4851377A78374
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-05T15:47:27.731Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3D976BA3A92DAB9E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-09T05:37:36.161Z"^^xsd:dateTime ;
+        adm:logMessage      "removed newline character in name"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG6B1B3BB9CA35B20B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T09:31:45.167Z"^^xsd:dateTime ;
+        adm:logMessage      "topic application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG983AB18A960039E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-08T21:11:56.17Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected title"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGB76E2E40752A97EB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-10T11:33:51.337Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFF5B78C7CEAC20B2
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added diacritics on sanskrit"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:T1779  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1779 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c0/T1779.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1779 ;
+        adm:logEntry        bda:LG06C4851377A78374 , bda:LG3D976BA3A92DAB9E , bda:LG6B1B3BB9CA35B20B , bda:LG983AB18A960039E9 , bda:LGB76E2E40752A97EB , bda:LGFF5B78C7CEAC20B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDE7AA8A23067F504
+        a                   :Note ;
+        :noteText           "the topic keyword rtogs brjod is applied generically to avadana stories of former lives of buddhas and bodhisattvas;  \n\nthe keyword skyes rabs or birth stories, usually jataka, of defined groups of stories of the lives of immediate lives of the buddha and other important teachers (t1342);  \n\nthe topic keyword rnam thar is applied to the rtogs brjod of spiritual leaders and lay officials since these are narrative lives and could well be called rnam thar (t3);  \n\ngsang ba'i rnam thar as a topic is applied to accounts of highly esoteric experiences and visions of religious teachers (t1868); \n\nrang rnam (t1cz60) as a topic is applied to narrative about the life of a writer, an \"I\" story, an autobiography"@en .
+    
+    bdr:T1779  a            :Topic ;
+        rdfs:seeAlso        bdr:T3 ;
+        skos:prefLabel      "rtogs brjod/"@bo-x-ewts , "avadāna"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NTDE7AA8A23067F504 .
+}

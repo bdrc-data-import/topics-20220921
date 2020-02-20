@@ -1,0 +1,40 @@
+@base          <bdg:T1GS9766> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS9766 {
+    bda:LG759D8531BF13ED54
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-23T16:48:56.494Z"^^xsd:dateTime ;
+        adm:logMessage      "first created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS9766  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS9766 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bb/T1GS9766.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS9766 ;
+        adm:logEntry        bda:LG759D8531BF13ED54 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT69C96A4BA0B3F827
+        a                   :Note ;
+        :noteText           "special form of gtor ma offering"@en .
+    
+    bdr:T1GS9766  a         :Topic ;
+        skos:prefLabel      "su rU pa'i gtor ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT69C96A4BA0B3F827 .
+}

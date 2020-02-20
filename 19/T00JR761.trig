@@ -1,0 +1,75 @@
+@base          <bdg:T00JR761> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR761 {
+    bda:LG061878DE8D0EAD56
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-26T15:13:15.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added See Also T01AG03287 (dbang tho)"@en .
+    
+    bda:LG1D9B60FC5B3A2642
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.321Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG80AD1C05CF6FFA53
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-31T14:22:50.275Z"^^xsd:dateTime ;
+        adm:logMessage      "Deleted See Also khrus dbang"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG965EC75EBD768CA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-13T17:35:39.578Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB802D9D75ED43241
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T10:21:04.088Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGC36E179DB6D90134
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-31T14:37:04.377Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGD32486FEDA04F47E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:56.75Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T00JR761  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR761 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "19/T00JR761.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR761 ;
+        adm:logEntry        bda:LG061878DE8D0EAD56 , bda:LG1D9B60FC5B3A2642 , bda:LG80AD1C05CF6FFA53 , bda:LG965EC75EBD768CA2 , bda:LGB802D9D75ED43241 , bda:LGC36E179DB6D90134 , bda:LGD32486FEDA04F47E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCD1F43ED40296D18
+        a                   :Note ;
+        :noteText           "abhiseka in which water is used"@en .
+    
+    bdr:T00JR761  a         :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "khrus dbang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCD1F43ED40296D18 .
+}

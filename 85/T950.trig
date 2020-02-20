@@ -1,0 +1,60 @@
+@base          <bdg:T950> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T950 {
+    bda:LG199C756592451269
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-04T07:02:36.36Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3B60512A4CE71384
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:23.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG485FA865D1E95A10
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-03T16:52:46.858Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T950  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T950 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "85/T950.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T950 ;
+        adm:logEntry        bda:LG199C756592451269 , bda:LG3B60512A4CE71384 , bda:LG485FA865D1E95A10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT589A754B41B1D1D6
+        a                   :Note ;
+        :locationStatement  "prelims." ;
+        :noteSource         bdr:MW12422 ;
+        :noteText           "according to the yi dam rgya mtsho'i sgrub thabs rin chen 'byung gnas there are five mgon po bka' lnga:\nphyag drug pa bar chad kun sel:      \nmgon dkar yid bzhin nor bu:  \nmgon ser blo 'phel:  \nmgon dmar dbang gi rgyal po:  \nmgon ljang tshe bdag:"@en .
+    
+    bdr:NTE516815F2990F858
+        a                   :Note ;
+        :locationStatement  "v. 58-60" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "under this deity key word are classed rituals for unidentified forms of mahakala of the gsar ma traditions; \nunder this key word are also classed various forms of mahakala according to the rnying ma tradition not otherwise differentiated;  \naccording to the rin chen gter mdzod the various protectors of the mahakala class who are included in these volumes are:  \n1) rgyud mgon legs ldan (bka' ma);  \n2) mgon po legs ldan (mchog gling zab bdun bka' srung gtso bo);  \n3) las mgon, sras mchog ber nag ,dang re ti zhal sbyor (gter gzhung);  \n4) ye shes mgon po phyag bzhi pa (mnga' bdag nyang ral nyi ma 'od zer);  \n5) phyag bzhi pa (mchog gling zab bdun);  \n6) gur mgon srog gi spu gri (gu rus 'khon klu dbang la gnang ba bka' ma);  \n7) gur mgon (rgya pad+ma dbang phyug);  \n8) mgon po phyag drug pa (mchog gling thugs chen pad+ma sgyu 'phrul drwa ba);  \n9) phyag drug pa zab mo skor dgu'i phyi sgrub (mchog gling);  \n10) mgon po ma ning (chos dbang dang rdor gling rat gling pad gling 'ja' tshon rnams kyi gter kha gcig 'dus);  \n11) mgon po trak+Shad"@en .
+    
+    bdr:T950  a             :Topic ;
+        skos:prefLabel      "mgon po/"@bo-x-ewts , "mahākāla"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT589A754B41B1D1D6 , bdr:NTE516815F2990F858 .
+}

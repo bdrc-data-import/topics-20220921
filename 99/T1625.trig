@@ -1,0 +1,35 @@
+@base          <bdg:T1625> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1625 {
+    bda:LG0B7EF9DB6B4D4A9A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:28:41.095Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1625  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1625 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "99/T1625.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1625 ;
+        adm:logEntry        bda:LG0B7EF9DB6B4D4A9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1625  a            :Topic ;
+        skos:prefLabel      "glang chen (bal po a hUM)"@bo-x-ewts ;
+        :isRoot             true .
+}

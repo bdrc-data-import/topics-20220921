@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1209> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1209 {
+    bda:LGF13FF5281CCEDA8A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T12:05:30.367Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1209  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1209 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "be/T2GS1209.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1209 ;
+        adm:logEntry        bda:LGF13FF5281CCEDA8A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6DDBB3E1D2A06632
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 14th of the 21 tara collection according to the tradition of suryagupta; this form of tara is blue with three faces, black, white and red, contracted in frowns and devouring human entrails in their mouths; she has six arms, the right hands holding a sword, a book,, and a club; the left a skull, a noose, and brahma's head; she has a crown and a long necklace of human heads and is adorned with a tiger skin and snakes; outside the eight cardinal and secondary points, grow shoots of jewel trees; he is crowned by amoghasiddhi, the master of her family. \n\ndeities of tibetan buddhism #292"@en .
+    
+    bdr:T2GS1209  a         :Topic ;
+        skos:altLabel       "khro gnyer g.yo ba'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma khro gnyer g.yo ma/"@bo-x-ewts , "shaking frowning tara"@en , "caladbhrkutitara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT6DDBB3E1D2A06632 .
+}

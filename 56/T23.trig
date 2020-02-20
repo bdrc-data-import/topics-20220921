@@ -1,0 +1,46 @@
+@base          <bdg:T23> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T23 {
+    bda:LGB7145FA3BAD09C7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T15:31:49.305Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE737EB65807D4C29
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-08T15:38:05.076Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T23  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T23 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "56/T23.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T23 ;
+        adm:logEntry        bda:LGB7145FA3BAD09C7C , bda:LGE737EB65807D4C29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT01AAD8D0931289CE
+        a                   :Note ;
+        :noteText           "this keyword is assigned to all texts for the turning of the merit of actions to the benefit of all sentient creatures, both generically and explaining the concept of parinamana; it can be used as a genre and as an explanation of the meaning of parinamana"@en .
+    
+    bdr:T23  a              :Topic ;
+        skos:prefLabel      "bsngo ba/"@bo-x-ewts , "turning the merit"@en , "parinamana"@sa-alalc97 , "回向"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT01AAD8D0931289CE .
+}

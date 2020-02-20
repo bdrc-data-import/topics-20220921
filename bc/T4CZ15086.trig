@@ -1,0 +1,69 @@
+@base          <bdg:T4CZ15086> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15086 {
+    bda:LG3BA2A171A9E9EFAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-19T14:23:55.12Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG4B9FCF13A3C57F51
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T09:23:40.671Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG721AEF409808EA78
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-22T14:41:51.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and delete shad"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGB5527D9AFDDADDAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:42:11.138Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE4CBFDF1E43EDF5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:22:23.546Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFAB8EB52F8653166
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-12T19:30:15.898Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T4CZ15086  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15086 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "bc/T4CZ15086.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15086 ;
+        adm:logEntry        bda:LG3BA2A171A9E9EFAB , bda:LG4B9FCF13A3C57F51 , bda:LG721AEF409808EA78 , bda:LGB5527D9AFDDADDAB , bda:LGE4CBFDF1E43EDF5A , bda:LGFAB8EB52F8653166 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD8719A10DEC44EDE
+        a                   :Note ;
+        :noteText           "སོ་སོའི་ཁྱད་པར་རྣམ་པར་འབྱེད་པའམ། སྐབས་ལ་ལར་ལེའུའི་མིང་གི་རྣམ་གྲངས་ལ་་གོའོ།།"@bo .
+    
+    bdr:T4CZ15086  a        :Topic ;
+        skos:altLabel       "rab dbye/"@bo-x-ewts , "rab tu 'byed pa/"@bo-x-ewts , "rab tu rnam par 'byed pa/"@bo-x-ewts ;
+        skos:prefLabel      "rab 'byed/"@bo-x-ewts , "fully able to separate. analyze, treatise, dissertation, accurate analysis."@en ;
+        :isRoot             true ;
+        :note               bdr:NTD8719A10DEC44EDE .
+}

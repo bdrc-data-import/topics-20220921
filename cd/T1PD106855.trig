@@ -1,0 +1,47 @@
+@base          <bdg:T1PD106855> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106855 {
+    bda:LG700C9B1390D82B96
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T12:06:55.522Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGF943FFA8BF3D1CEA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:24:37.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1PD106855  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106855 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cd/T1PD106855.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106855 ;
+        adm:logEntry        bda:LG700C9B1390D82B96 , bda:LGF943FFA8BF3D1CEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT494AF33FEBF04D2B
+        a                   :Note ;
+        :noteText           "disease of the small intestine causing vomiting and diarrhea"@en .
+    
+    bdr:T1PD106855  a       :Topic ;
+        skos:altLabel       "bshal skyug"@bo-x-ewts , "cholera/"@bo-x-ewts ;
+        skos:prefLabel      "bshal skyugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT494AF33FEBF04D2B .
+}

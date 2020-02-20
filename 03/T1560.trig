@@ -1,0 +1,46 @@
+@base          <bdg:T1560> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1560 {
+    bda:LG41F1EC6975AE41D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-07-03T17:40:56.616Z"^^xsd:dateTime ;
+        adm:logMessage      "added sbas bshad tag"@en .
+    
+    bda:LG58017AA39ACF15E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-04T11:02:38.885Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG78BCD3BE8F7FC898
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-07-02T14:06:11.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en .
+    
+    bda:T1560  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1560 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/T1560.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1560 ;
+        adm:logEntry        bda:LG41F1EC6975AE41D7 , bda:LG58017AA39ACF15E7 , bda:LG78BCD3BE8F7FC898 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1560  a            :Topic ;
+        rdfs:seeAlso        bdr:T00UNK1 ;
+        skos:prefLabel      "lam sbas bshad/"@bo-x-ewts ;
+        :isRoot             true .
+}

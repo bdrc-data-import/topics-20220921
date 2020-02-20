@@ -1,0 +1,58 @@
+@base          <bdg:T2CN4663> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4663 {
+    bda:LG1816923EE4DEE4DE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:20:35.996Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB922FB94F12488D4
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T12:50:25.349Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGD10AF197F25CE32E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T12:58:44.678Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGF5FA35D04F3D6F4C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:59:50.533Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2CN4663  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4663 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4e/T2CN4663.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4663 ;
+        adm:logEntry        bda:LG1816923EE4DEE4DE , bda:LGB922FB94F12488D4 , bda:LGD10AF197F25CE32E , bda:LGF5FA35D04F3D6F4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT303461063718D46C
+        a                   :Note ;
+        :noteText           "འདི་ནི་གསང་བདག་ངུར་སྨྲིག་གར་རོལ་གྲུབ་ཆེན་ལས་ཀྱི་རྡོ་རྗེའི་དག་སྣང་སྙན་བརྒྱུད་ཀྱི་ནང་ཚན་ཡང་གསང་བདུད་རྩིའི་རྒྱ་མཚོ་ལས་གསུངས།"@bo .
+    
+    bdr:T2CN4663  a         :Topic ;
+        skos:prefLabel      "gsang bdag gtum po me 'bar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT303461063718D46C .
+}

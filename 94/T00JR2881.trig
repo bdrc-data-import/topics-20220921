@@ -1,0 +1,58 @@
+@base          <bdg:T00JR2881> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR2881 {
+    bda:LG11AD9E676E09E797
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T13:20:06.958Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG4611F6A8F7A061E4
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-27T23:50:09.107Z"^^xsd:dateTime ;
+        adm:logMessage      "added english trans; jann"@en .
+    
+    bda:LG7024C5A857E8C6B5
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-12T12:43:09.371Z"^^xsd:dateTime ;
+        adm:logMessage      "sgrub rtags zhes pa grub rtags la bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG72A630AD590438D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-27T11:46:49.834Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGEE0D1E385E17860D
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:18:11.307Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00JR2881  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR2881 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "94/T00JR2881.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR2881 ;
+        adm:logEntry        bda:LG11AD9E676E09E797 , bda:LG4611F6A8F7A061E4 , bda:LG7024C5A857E8C6B5 , bda:LG72A630AD590438D8 , bda:LGEE0D1E385E17860D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00JR2881  a        :Topic ;
+        rdfs:seeAlso        bdr:T10MS14626 ;
+        skos:prefLabel      "grub rtags/"@bo-x-ewts , "signs indicative of success in tantric practice"@en ;
+        :isRoot             true .
+}

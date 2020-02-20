@@ -1,0 +1,60 @@
+@base          <bdg:T1KG6119> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG6119 {
+    bda:LG51AF636CBB9AAF21
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-10T12:00:07.242Z"^^xsd:dateTime ;
+        adm:logMessage      "removed end lines from names"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG7C05AEFD8A1FFD19
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:23:02.169Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC9ED570718F73E48
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T15:26:19.225Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD07361934A122599
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T12:25:11.39Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGDC71EBC8152B8B65
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:06:41.011Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1KG6119  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG6119 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ce/T1KG6119.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG6119 ;
+        adm:logEntry        bda:LG51AF636CBB9AAF21 , bda:LG7C05AEFD8A1FFD19 , bda:LGC9ED570718F73E48 , bda:LGD07361934A122599 , bda:LGDC71EBC8152B8B65 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG6119  a         :Topic ;
+        skos:altLabel       "khams stod kyi yul skad/"@bo-x-ewts , "yul shul gyi yul skad/"@bo-x-ewts ;
+        skos:prefLabel      "yul shul skad/"@bo-x-ewts , "yulshul dialect"@en ;
+        :isRoot             true .
+}

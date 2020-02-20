@@ -1,0 +1,36 @@
+@base          <bdg:T1391> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1391 {
+    bda:LGF7ABC0F0A0B21A8F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T15:32:21.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added more names of gter ston to the gter ma"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:T1391  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1391 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "3f/T1391.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1391 ;
+        adm:logEntry        bda:LGF7ABC0F0A0B21A8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1391  a            :Topic ;
+        skos:altLabel       "thugs rje chen po ngan song rang grol ('ja' tshon snying po)"@bo-x-ewts ;
+        skos:prefLabel      "thugs chen ngan song rang grol ('ja' tshon snying po)"@bo-x-ewts ;
+        :isRoot             true .
+}

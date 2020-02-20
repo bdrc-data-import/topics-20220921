@@ -1,0 +1,35 @@
+@base          <bdg:T2228> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2228 {
+    bda:LG2917B00CFD9EA6F0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T10:51:19.961Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2228  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2228 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "c1/T2228.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2228 ;
+        adm:logEntry        bda:LG2917B00CFD9EA6F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2228  a            :Topic ;
+        skos:prefLabel      "indo tibetan relations/"@bo-x-ewts ;
+        :isRoot             true .
+}

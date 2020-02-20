@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1130> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1130 {
+    bda:LG901BAC6F6F620B65
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T14:32:03.157Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9D5B5B9A4BEF9C4D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T07:53:36.613Z"^^xsd:dateTime ;
+        adm:logMessage      "sakyaraksita note added to application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1130  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1130 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e9/T2GS1130.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1130 ;
+        adm:logEntry        bda:LG901BAC6F6F620B65 , bda:LG9D5B5B9A4BEF9C4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0F4B95E1AC8A4280
+        a                   :Note ;
+        :noteText           "one of the nye ba'i sras bdun, the seven primary bodhisattvas; the deity term is applied to rituals for the empowerment and rituals connected with this bodhisattva; this bodhisattva is blue with blue garments; both hands make at the heart the gesture of explaining the dharma; the left holding the root of a lotus which opens beside his right ear and has on it a sky-blue sword; he is in the middle of a mansion of the nature of space, blazing with blue light rays and surrounded by an entourage of wrathful deities such as niladanda, many knowledge holders wielding weapons and many of his own emanations in various colors; light from his eyes fill all space with light and sweet scents; adorned with silks and jewel ornaments, he sits in sattvaparyanka and has a crown of the conquerors of the five families.\n\nhis group of sadhana is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava.\n\ndeities of tibetan buddhism #249"@en .
+    
+    bdr:T2GS1130  a         :Topic ;
+        skos:altLabel       "akasagarbha"@sa-alalc97 ;
+        skos:prefLabel      "nam mkha'i snying po/"@bo-x-ewts , "khagarba"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT0F4B95E1AC8A4280 .
+}

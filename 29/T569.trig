@@ -1,0 +1,59 @@
+@base          <bdg:T569> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T569 {
+    bda:LG0C5FC8E68B674529
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T10:01:09.505Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG63296EF485C6937B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:12.198Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG7BCC9FC0E6BD0D73
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.883Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGB798E8C1F60825DC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T10:33:07.437Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T569  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T569 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "29/T569.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T569 ;
+        adm:logEntry        bda:LG0C5FC8E68B674529 , bda:LG63296EF485C6937B , bda:LG7BCC9FC0E6BD0D73 , bda:LGB798E8C1F60825DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5928CDE0D856EBFB
+        a                   :Note ;
+        :noteText           "this topic is applied to empowerments and rituals focusing on the buddha in the form as ruler of the nagas; his color is described as that of an unextracted jewel (rin po che mi pogs pa), his face is white and his body blue; he sits in vajraparyanka, his two hands at his heart making the gesture of removing sentient beings from places of rebirth in realms of woe; he is complete with the marks and signs and wears the three dull red robes of a monk and has the attributes of a brahmacarin; he has a back rest of all kinds of flowers and a sevenfold hood of snakes' heads;  he has four attendants: \n\n1) in front of him is nivaranaviskambhin (sgrib pa rnam sel, white); his right hand holds a jewel spout and his left a flask;\n\n \n2) on his right is maitreya (byams pa, red); holding a naga tree flower and a waterpot;\n\n\n3) behind is manjusri ('jam dpal, yellow), holding an utpala;  \n\n4) on his left is avalokita (spyan ras gzigs, white) holding a lotus;  all four are sitting on lotus and moon seats and looking at the lord's face; in addition to the right is a sangha of bodhisattva and to the left a host of arhat; below is a measureless host of naga.\n\ndeviations: maitreya shown as orange not red.\n\ndeities of tibetan buddhism, #49-51"@en .
+    
+    bdr:T569  a             :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "klu dbang rgyal po/"@bo-x-ewts , "nagesvararaja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5928CDE0D856EBFB .
+}

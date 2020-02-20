@@ -1,0 +1,46 @@
+@base          <bdg:T1548> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1548 {
+    bda:LGD41234062A3A7801
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:32:24.406Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF5DB76FB77398EBD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-05T12:40:41.014Z"^^xsd:dateTime ;
+        adm:logMessage      "re-released for usage"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1548  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1548 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3a/T1548.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1548 ;
+        adm:logEntry        bda:LGD41234062A3A7801 , bda:LGF5DB76FB77398EBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT210F4FEA2C6FCD5B
+        a                   :Note ;
+        :noteText           "practice of alignment"@en .
+    
+    bdr:T1548  a            :Topic ;
+        skos:prefLabel      "yon po bsrang ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT210F4FEA2C6FCD5B .
+}

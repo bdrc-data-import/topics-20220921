@@ -1,0 +1,41 @@
+@base          <bdg:T1047> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1047 {
+    bda:LGCA9A36F8570B2811
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T12:56:19.237Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1047  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1047 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "79/T1047.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1047 ;
+        adm:logEntry        bda:LGCA9A36F8570B2811 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT44B75D7B528C8679
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations according to the rngog tradition following the rin byung of taranatha and its derivatives; the deity is sridevi, black, her body thin as a skeleton, with one face, four arms, and two legs; her first right hand holds a sword; the second a skull containing human blood; the first left a sakti dagger, the second a trident with a silk ribbon; she has a stiff human corpse inserted in her mouth, bared fangs, and three red eyes; her hair tresses are tawny and upward streaming; the braids twisted to the left; she is adorned with a snake with a bell around its neck; she has a necklace of asuras' heads, a scarf of elephant hide and an ox hair skirt with a yellow hair petticoat and naga kings arranged as a girdle; her feet are adorned with chains; she sits btsan demon style on a white-nosed ass; she is shouting in a charnel ground, surrounded by a hundred thousand matrkas, dakinis, and pisachas.\n\nher entourage includes a hundred thousand kalis, all naked ascetics, their right hands holdin human hearts and their left skulls complete with hair\n\ndeities of tibetan buddhism #394"@en .
+    
+    bdr:T1047  a            :Topic ;
+        skos:altLabel       "dpal ldan lha mo dud sol mar grags pa 'dod khams dbang phyug ma (rngog lugs)"@bo-x-ewts ;
+        skos:prefLabel      "lha mo dud sol ma (rngog lugs)"@bo-x-ewts , "the lady of the desire realm known as the smoke-clad glorious goddess"@en ;
+        :isRoot             true ;
+        :note               bdr:NT44B75D7B528C8679 .
+}

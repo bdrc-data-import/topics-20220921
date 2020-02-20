@@ -1,0 +1,47 @@
+@base          <bdg:T00EGS1017686> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00EGS1017686 {
+    bda:LG56791752F39370AE
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-06T12:13:52.741Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDF625B7B0C01F5CA
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T14:17:02.329Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T00EGS1017686
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00EGS1017686 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3e/T00EGS1017686.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00EGS1017686 ;
+        adm:logEntry        bda:LG56791752F39370AE , bda:LGDF625B7B0C01F5CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8D5DED09721A8822
+        a                   :Note ;
+        :noteText           "here are classed works concerned with causality, the hetu and phala"@en .
+    
+    bdr:T00EGS1017686
+        a                   :Topic ;
+        skos:prefLabel      "rgyu 'bras/"@bo-x-ewts , "hetu phala"@sa-alalc97 , "因果"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT8D5DED09721A8822 .
+}

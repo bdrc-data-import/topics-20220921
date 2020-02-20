@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1137> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1137 {
+    bda:LGC161F8BF11770B88
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-29T02:33:51.574Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDC1EE600EE3897E6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T15:53:58.078Z"^^xsd:dateTime ;
+        adm:logMessage      "change made to rule of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1137  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1137 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "aa/T2GS1137.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1137 ;
+        adm:logEntry        bda:LGC161F8BF11770B88 , bda:LGDC1EE600EE3897E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFD33A1440E5718D9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to texts classifying the sadhanas, permissions to invoke, etc. of this white protectress, of semi-wrathful (zhi khro) aspect; her right hand brandishes skyward a flaming crystal sword, her left holding a treasure mongoose, raining siddhis on the practitioner; her hair is black, loose, and partial tied up; she wears on her body a go zu of white silk with a rainbow design and is complete with the charnel-ground requisites. \n\n\ndeities of tibetan buddhism #397\n\ndeviation: color of hair"@en .
+    
+    bdr:T2GS1137  a         :Topic ;
+        skos:altLabel       "dung skyong ma (srung ma)"@bo-x-ewts ;
+        skos:prefLabel      "lha mo dung skyong ma/"@bo-x-ewts , "conch-protector goddess"@en , "sridevi sankhapali"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTFD33A1440E5718D9 .
+}

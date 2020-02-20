@@ -1,0 +1,59 @@
+@base          <bdg:T575> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T575 {
+    bda:LG1AD10A6BED0C5446
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T12:13:41.308Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3A2CD87E95EFF249
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T12:52:34.307Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3B594941EF95A8A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-02T07:38:31.809Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG648D7599C49C443E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T12:17:49.694Z"^^xsd:dateTime ;
+        adm:logMessage      "cleared"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T575  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T575 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1d/T575.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T575 ;
+        adm:logEntry        bda:LG1AD10A6BED0C5446 , bda:LG3A2CD87E95EFF249 , bda:LG3B594941EF95A8A4 , bda:LG648D7599C49C443E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB348F5D8915554A8
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals connected with the empowerment and ritual practices connected with the six armor heroines connected with the cakrasamvara tantra;  \n\nthe six heroines are:\n62) vajravarahi (go cha'i rdo rje phag mo); red with three faces, (red, blue, and green), and six arms; her three right hands hold a knife, brahma's head, and a hook; the three left a skull, a khatvanga, and a noose;  \n63)  yamini (go cha'i gshin rjes), blue;  \n64)  mohani (go cha'i rmongs byed ma, deluder), white;  \n66)  sancalini (go che'i bskod byed ma, shaker), yellow;  \n65)  santrasini (go cha'i sgrag byed ma, terrifier), green;  \n67)  candika (go cha'i tsaN+Di ka, wrathful), smoke colored;\nmohani is on a moon disk; the rest are on sun disks; they each have one face and four arms\n\nthe principal and entourage are all three-eyed, naked, with loose hair and adorned with the five symbolic ornaments; each has a crown of five dry human heads and a long necklace of fifty fresh ones and abides in alidha posture (right leg extended) and sits of a female preta seat.\n\nthe principal either enters union with her consort vajrasattva or assumes his marks and embraces vajravarahi similar to himself.\n\ndeviation: mohani on a sun disk\n\ndeities of tibetan buddhism #62-67"@en .
+    
+    bdr:T575  a             :Topic ;
+        skos:altLabel       "six armor heroines"@en ;
+        skos:prefLabel      "bde mchog dang 'brel ba'i go cha'i dpa' mo drug"@bo-x-ewts , "kavaca yogini connected with the cakrasamvara tantra"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB348F5D8915554A8 .
+}

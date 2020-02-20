@@ -1,0 +1,41 @@
+@base          <bdg:T1PD116111> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD116111 {
+    bda:LG03D46D41A1973DF4
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-07-05T10:32:38.595Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD116111  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD116111 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ce/T1PD116111.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD116111 ;
+        adm:logEntry        bda:LG03D46D41A1973DF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD56A684BDEC435D8
+        a                   :Note ;
+        :noteText           "སྐྱེས་བུ་ཆེན་པོ་རྡོ་རྗེ་ལེགས་པ་ནི། སངས་རྒྱས་ཀྱི་བསྟན་པ་སྲུང་བའི་ཆོས་སྐྱོང་ཞིག་སྟེ། སྐུ་མདོག་མཐིང་ནག །ཞལ་གཅིག་ཕྱག་གཉིས་སྤྱན་གསུམ་པ། ཞལ་གདང་ཞིང་མཆེ་བ་གཙིགས་པ། དབུ་སྐྲ་དམར་སེར་གྱེན་དུ་འབར་བ། ཞལ་ནས་དུག་གི་ཁ་རླངས་འཐུལ་བ། ཕྱག་གཡས་ན་ཁྲོ་ཆུའི་ཐོ་བ། གཡོན་ན་མགར་གྱི་སྦུད་པ་ཐོག་པ། དར་ནག་གི་བེར་དགུ་བརྩེགས་གསོལ་བ། འཁོར་མཆེད་ཟླ་སུམ་བརྒྱ་དྲུག་ཅུ་དང་བཅས་པ་ཞིག་གོ༎"@bo .
+    
+    bdr:T1PD116111  a       :Topic ;
+        skos:altLabel       "dam can rdo rje legs pa/"@bo-x-ewts , "skyes bu chen po rdo rje legs pa/"@bo-x-ewts ;
+        skos:prefLabel      "dam can skyes bu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD56A684BDEC435D8 .
+}

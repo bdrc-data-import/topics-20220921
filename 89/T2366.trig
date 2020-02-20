@@ -1,0 +1,46 @@
+@base          <bdg:T2366> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2366 {
+    bda:LGBB9B9AF0CEEF2B19
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:42.805Z"^^xsd:dateTime .
+    
+    bda:LGC88FD212465F3616
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-06T15:36:50.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added smar khrid"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2366  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2366 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/T2366.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2366 ;
+        adm:logEntry        bda:LGBB9B9AF0CEEF2B19 , bda:LGC88FD212465F3616 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT46D55D521CF04E77
+        a                   :Note ;
+        :noteText           "practical instruction for a deity yoga practice"@en .
+    
+    bdr:T2366  a            :Topic ;
+        rdfs:seeAlso        bdr:T11MS11 ;
+        skos:altLabel       "smar khrid/"@bo-x-ewts ;
+        skos:prefLabel      "dmar khrid/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT46D55D521CF04E77 .
+}

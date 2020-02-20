@@ -1,0 +1,54 @@
+@base          <bdg:T8LS15611> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS15611 {
+    bda:LG1172750A03B6EFBD
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-10-16T09:40:38.973Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG3730903A24FBF72B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:22:33.853Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of right topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGD6BCEAF0BF80723C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T11:15:49.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T8LS15611  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS15611 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ee/T8LS15611.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS15611 ;
+        adm:logEntry        bda:LG1172750A03B6EFBD , bda:LG3730903A24FBF72B , bda:LGD6BCEAF0BF80723C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT23322F38C7757216
+        a                   :Note ;
+        :locationStatement  "vol. e, f. 100v7" ;
+        :noteSource         bdr:MW29706 .
+    
+    bdr:T8LS15611  a        :Topic ;
+        skos:altLabel       "slob dpon dga' rab rdo rje/"@bo-x-ewts ;
+        skos:prefLabel      "dga' rab rdo rje/"@bo-x-ewts , "prahevajra"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT23322F38C7757216 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T1151> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1151 {
+    bda:LG88626ECC237C38D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T15:15:41.13Z"^^xsd:dateTime ;
+        adm:logMessage      "added tibetan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC12811D2C1918D5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-01-07T09:56:52.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added rang dbang 'thab rtsod"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC861FEECB8F308B3
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-01T16:54:52.731Z"^^xsd:dateTime ;
+        adm:logMessage      "changed font to english"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1151  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1151 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "86/T1151.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1151 ;
+        adm:logEntry        bda:LG88626ECC237C38D0 , bda:LGC12811D2C1918D5A , bda:LGC861FEECB8F308B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1151  a            :Topic ;
+        skos:altLabel       "bod mi'i rang dbang 'thab rtsod/"@bo-x-ewts , "tibetan freedom struggle"@en ;
+        skos:prefLabel      "rang dbang 'thab rtsod/"@bo-x-ewts , "freedom struggle"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T1GS135820> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS135820 {
+    bda:LG519D828464143D59
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-11-24T14:50:45.689Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG65C8D01F1A607565
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T13:41:04.766Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T1769 to T194"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE24DC69FFF3BFEE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T12:10:28.95Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS135820  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS135820 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e0/T1GS135820.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS135820 ;
+        adm:logEntry        bda:LG519D828464143D59 , bda:LG65C8D01F1A607565 , bda:LGE24DC69FFF3BFEE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT651CFB5F49EA13C9
+        a                   :Note ;
+        :noteText           "practices uniting the zhi byed and gcod, primarily from the revelations of gar dbang rdo rje and practiced in the tibeto-nepal borderlands"@en .
+    
+    bdr:T1GS135820  a       :Topic ;
+        rdfs:seeAlso        bdr:T194 ;
+        skos:prefLabel      "gcod yul nyong mongs zhi byed/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT651CFB5F49EA13C9 .
+}

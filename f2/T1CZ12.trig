@@ -1,0 +1,71 @@
+@base          <bdg:T1CZ12> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ12 {
+    bda:LG16B78FFBC0321277
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-28T10:15:28.766Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG68F321C8E223522C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T12:04:02.223Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added and corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC2E756213A40A9AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-01T14:41:54.088Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGCEB26831CEF0D174
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T10:12:03.406Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD6895735E9972A6A
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:35.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD95DD364BD9CB02B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-11-21T11:49:52.196Z"^^xsd:dateTime ;
+        adm:logMessage      "add info"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ12  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ12 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f2/T1CZ12.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ12 ;
+        adm:logEntry        bda:LG16B78FFBC0321277 , bda:LG68F321C8E223522C , bda:LGC2E756213A40A9AD , bda:LGCEB26831CEF0D174 , bda:LGD6895735E9972A6A , bda:LGD95DD364BD9CB02B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C6224E2A16D68F5
+        a                   :Note ;
+        :noteText           "generically a homavidhi for performing the fire offerings of the pacifying, increasing, and magnetizing aspects; the destructive or wrathful magic fire puja is excluded from this ritual"@en .
+    
+    bdr:T1CZ12  a           :Topic ;
+        rdfs:seeAlso        bdr:T1020 , bdr:T8 ;
+        skos:altLabel       "las bzhi'i sbyin sreg"@bo-x-ewts ;
+        skos:prefLabel      "zhi rgyas dbang gi sbyin sreg gi cho ga"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6C6224E2A16D68F5 .
+}

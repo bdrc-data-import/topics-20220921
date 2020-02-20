@@ -1,0 +1,41 @@
+@base          <bdg:T2198> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2198 {
+    bda:LG156B9CFEAF5DD3D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:32:36.216Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG38633AA67A9491B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T12:11:06.416Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2198  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2198 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "48/T2198.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2198 ;
+        adm:logEntry        bda:LG156B9CFEAF5DD3D9 , bda:LG38633AA67A9491B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2198  a            :Topic ;
+        skos:prefLabel      "rta phag (chos rgyal ngag gi dbang po'i dgongs gter)"@bo-x-ewts ;
+        :isRoot             true .
+}

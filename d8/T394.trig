@@ -1,0 +1,70 @@
+@base          <bdg:T394> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T394 {
+    bda:LG1EB2CB0BBD7033E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-19T12:06:50.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG6D986D4930690462
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-10T11:23:38.019Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9029AE4DC858E3F8
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-21T16:58:52.481Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGDC2FC923ABC83B73
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T16:19:45.426Z"^^xsd:dateTime ;
+        adm:logMessage      "application note and description from chos rnam kun btus added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFCAD08764990003F
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-08T16:32:22.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T394  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T394 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d8/T394.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T394 ;
+        adm:logEntry        bda:LG1EB2CB0BBD7033E2 , bda:LG6D986D4930690462 , bda:LG9029AE4DC858E3F8 , bda:LGDC2FC923ABC83B73 , bda:LGFCAD08764990003F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1011FEB18C1E413D
+        a                   :Note ;
+        :noteText           "this topic is applied to manuals and other works describing all six of the teachings together; separate works for the six yogas individually are to be found under gtum mo, sgyu lus, etc."@en .
+    
+    bdr:NT5F252C560D2A4CA5
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1426" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1196-22) notes that the nA ro chos drug precepts were taught and put together by the indian master narotapa: 1) gtum mo (ma rgyud kyai rdo rje dang bde mchog nas bshad pa; 2) sgyu lus (pha rgyud gsang ba 'dus pa nas bshad pa); 3) 'od gsal (pha rgyud gsang ba 'dus pa nas bshad pa). these three are the rtsa ba gsum; 4) 'pho ba (ma rgyud gdan bzhi nas bshad pa); 5) grong 'jug (ma rgyud gdan bzhi nas bshad pa); 6) bar do'i gdams ngag. these three are called the yan lag gsum."@en .
+    
+    bdr:T394  a             :Topic ;
+        rdfs:seeAlso        bdr:T10MS14462 , bdr:T1592 ;
+        skos:altLabel       "chos drug"@bo-x-ewts ;
+        skos:prefLabel      "nA ro chos drug"@bo-x-ewts , "six yogas of nāropa (nA ro pa)"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1011FEB18C1E413D , bdr:NT5F252C560D2A4CA5 .
+}

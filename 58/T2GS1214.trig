@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1214> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1214 {
+    bda:LG169841281A91252A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T13:52:00.558Z"^^xsd:dateTime ;
+        adm:logMessage      "created; appliction note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1214  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1214 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "58/T2GS1214.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1214 ;
+        adm:logEntry        bda:LG169841281A91252A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE88FEB9540F5C83A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 2nd of the 21 tara collection according to the tradition of suryagupta; this form of tara is white with three faces, white, blue, and yellow and twelve arms; the first pair of hands are in contemplation; the other right hands holds a khatvanga, a wheel, a gem, and a vajra, and a garland of flowers; the other left a water pot, an utpala, a bell, a flask (according to suryagupta a treasure vase) and a book; she is crowned by amitabha, who is the master of her family; she sits on a lotus and a moon.\n\ndeities of tibetan buddhism #276"@en .
+    
+    bdr:T2GS1214  a         :Topic ;
+        skos:altLabel       "dkar mo zla mdangs kyi sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma dkar mo zla mdangs ma/"@bo-x-ewts , "tara white as the moon"@en , "candraujahsuklatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE88FEB9540F5C83A .
+}

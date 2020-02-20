@@ -1,0 +1,47 @@
+@base          <bdg:T925> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T925 {
+    bda:LG24A3A89BC7D53830
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T12:37:01.334Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF7E50DD89CC06E0F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-05T10:29:55.239Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T925  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T925 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5d/T925.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T925 ;
+        adm:logEntry        bda:LG24A3A89BC7D53830 , bda:LGF7E50DD89CC06E0F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD608AB2662A913A6
+        a                   :Note ;
+        :noteText           "this topic is applied to empowerments and rituals focusing upon the three excellent black brothers who are dark blue and hold large sandalwood clubs; they wear flowing cloaks of black silk, gold belts, and high boots of shagreen and are adorned with human heads and snakes; fierce and raging they abide amid a blazing mass of fire in the middle of a charnel ground: they are crowned with a wrathful vajra.\n\ndeities of tibetan buddhism #365"@en .
+    
+    bdr:T925  a             :Topic ;
+        skos:altLabel       "legs ldan mched gsum/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po legs ldan mched gsum/"@bo-x-ewts , "excellent mahakala, the three brothers"@en ;
+        :isRoot             true ;
+        :note               bdr:NTD608AB2662A913A6 .
+}

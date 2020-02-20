@@ -1,0 +1,41 @@
+@base          <bdg:T706> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T706 {
+    bda:LG16A6E4C7A2E2CA12
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T11:17:17.639Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T706  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T706 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ca/T706.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T706 ;
+        adm:logEntry        bda:LG16A6E4C7A2E2CA12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT649A0EC84F51F4EF
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for vidya-rajni graha matrka, white; her faces are white, blue and red; all have three eyes; she has six arms; the first pair are explaining the dharma; the second pair hold a vajra and lotus; the last pair an arrow and a bow; she sits in vajraparyanka and has ornaments and garments of heavenly stuffs; she is crowned with vairocana.\n\ndeities of tibetan buddhism #223"@en .
+    
+    bdr:T706  a             :Topic ;
+        skos:altLabel       "rig pa'i rgyal mo/"@bo-x-ewts , "grahamatrka"@sa-alalc97 ;
+        skos:prefLabel      "gza' yum rig pa'i rgyal mo/"@bo-x-ewts , "queen of knowledge, the mother of the planets"@en , "vidyarajni grahamatrka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT649A0EC84F51F4EF .
+}

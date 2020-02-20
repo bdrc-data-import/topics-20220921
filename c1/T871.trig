@@ -1,0 +1,48 @@
+@base          <bdg:T871> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T871 {
+    bda:LG2564BB4A78A72B0B
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:13:33.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG9FBFB7C4C62251A8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-31T14:12:17.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGF7555878115C0FDF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-10-23T10:46:31.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T871  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T871 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c1/T871.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T871 ;
+        adm:logEntry        bda:LG2564BB4A78A72B0B , bda:LG9FBFB7C4C62251A8 , bda:LGF7555878115C0FDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T871  a             :Topic ;
+        skos:altLabel       "akshobhya"@en-x-mixed , "不动佛"@zh-hans ;
+        skos:prefLabel      "mi 'khrugs pa/"@bo-x-ewts , "aksobhya"@en-x-mixed , "akṣobhya"@sa-x-ndia , "不動佛"@zh-hant ;
+        :isRoot             true .
+}

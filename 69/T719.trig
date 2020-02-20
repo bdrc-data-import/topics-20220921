@@ -1,0 +1,71 @@
+@base          <bdg:T719> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T719 {
+    bda:LG09C9CDF1413D38E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T13:32:39.734Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5EF20207ADDFE27B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T05:02:45.113Z"^^xsd:dateTime ;
+        adm:logMessage      "renoved second test formatting note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6AFBB6063AB22AE4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T14:37:44.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added note on transmission from sakyaraksita"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6FA1712D0CC9963D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T04:09:11.494Z"^^xsd:dateTime ;
+        adm:logMessage      "application note heavily revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8E4D8B063BFAF21C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T20:28:34.842Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from the chos rnam kun btus"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T719  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T719 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "69/T719.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T719 ;
+        adm:logEntry        bda:LG09C9CDF1413D38E7 , bda:LG5EF20207ADDFE27B , bda:LG6AFBB6063AB22AE4 , bda:LG6FA1712D0CC9963D , bda:LG8E4D8B063BFAF21C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT06EFD59A6540C077
+        a                   :Note ;
+        :noteText           "this topic is applied to works which are concerned with the empowerments and propitiations of the seven buddhas:  \nthe seven hero buddhas are:  \n\n1) in the center rgyal ba sakya thub pa (sakyamuni) who makes the gesture of explaining the dharma;\n2) in the east rnam gzigs (vipasyin) who makes the earth touching and meditating gesture;  \n3) in the northeast gtsug tor can (buddha sikhin), who is boon granting and in meditation;  \n4) in the southeast thams cad skyob (buddha visvabhu) who is boon granting and in meditation;  \n5) in in the west 'khor ba 'jig (buddha krakucchanda) who makes the gesture of concentration;  \n6) in the southwest gser thub (buddha kanakamuni) explaining the dharma and in meditation;  \n7) in the northwest 'od srung (buddha kasyapa) whose right hand is boon granting and whose left is holding corner of his monks robe like the ear of a deer; all are golden in color and arrayed with all the marks and signs and wear the garments of the three robes of a monk; each sits in vajraparyanka at the foot of each's own bodhi tree; \n\ntheir attendants are:  \n8) to the south is blue khro bo chen po (mahakrodha, great wrathful one), palms folded with a noose inserted between them and a sword under the arm; he is complete with the dress of a wrathful deity; \n \n9) to the north is green, peaceful phyag na rdo rje (vajrapani) whose right hand is pressing a vajra to his heart and his left hand is resting on the seat; he sits in lalita, adorned with silk and jewels; \n\nat the four gates are 1) eastern dhrtarasta; 2) south virudhaka; 3) west virupaksa; 4) north vaisravana\n\nthis group of sadhana is is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava.\n\nin this sadhana buddha vipasyin is sitting by a an asoka tree; conqueror sikhin is sitting before a white lotus; buddha visvabhu is sitting beneath a sal tree; brahmin krakucchanda is sitting by a sirisa tree; kanakamuni is sitting by a glomerate fig tree (udumbara); kasyapa is sitting beneath a banyan tree; supreme sakyamuni is sitting by a a pippala (asvattha) tree; gautama is the last to gain enlightenment\n\ndeities of tibetan buddhism #237-245"@en .
+    
+    bdr:NT62E2AF8D0E9A9CAC
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1652" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (quoting dung dkar tshig mdzod 1049-29) lists the thub pa bdun: 1) rnam gzigs; 2) gtsug tor can; 3) thams cad skyob; 4) 'khor ba 'jig; 5) gser thub; 6) 'od srungs; 7) shAkya thub pa"@en .
+    
+    bdr:T719  a             :Topic ;
+        skos:altLabel       "thub pa bdun/"@bo-x-ewts ;
+        skos:prefLabel      "sangs rgyas dpa' bo bdun/"@bo-x-ewts , "the seven hero buddhas"@en ;
+        :isRoot             true ;
+        :note               bdr:NT06EFD59A6540C077 , bdr:NT62E2AF8D0E9A9CAC .
+}

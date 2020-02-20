@@ -1,0 +1,47 @@
+@base          <bdg:T700> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T700 {
+    bda:LG5393346188EADD7A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T11:24:13.378Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG60FD7974DC459460
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T15:46:34.312Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T700  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T700 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "66/T700.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T700 ;
+        adm:logEntry        bda:LG5393346188EADD7A , bda:LG60FD7974DC459460 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT33B7A68D790FB7D8
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon amrtakundalin (bdud rtsi 'khyil ba, circle of nectar) who is green or black, with three faces and six arms; his principal face is the same as his body; the right white and the left red; the first pair of arms embrace a consort similar to himself; the other two right hands hold a black open-ended vajra and a sword; the other two left hold a jewel and a lotus; he sits in pratyalidha, his bent left leg trampling mara, the evil one, and his wife; his extended lef leg tramples ganapati; he has three eyes, yellow hair, and all the ornaments and apparel of a wrathful deity such as a tiger skin loincloth; the blue naga king ananta binds his hair; red taksaka is his earrings; many colored kulika his armlets; yellow sankhapala his bracelets; white padma his neclace; green karkotaka his sacred thread; nectar colored vasuki his girdle; and white mahapadma his anklets; he abides amid a blazing mass of fire of gnosis produced from his body.\n\ndeities of tibetan buddhism #214."@en .
+    
+    bdr:T700  a             :Topic ;
+        skos:altLabel       "vighnantaka krodha"@sa-alalc97 ;
+        skos:prefLabel      "khro bo bgegs pa mthar byed gsang 'dus las byung ba/"@bo-x-ewts , "wrathful vignantaka (hindrance slayer) from the guhyasamaja"@en , "krodha vighnantaka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT33B7A68D790FB7D8 .
+}

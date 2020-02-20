@@ -1,0 +1,40 @@
+@base          <bdg:T2354> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2354 {
+    bda:LGD9596D71405B8C71
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:36.092Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2354  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2354 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7a/T2354.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2354 ;
+        adm:logEntry        bda:LGD9596D71405B8C71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDD49CE3E4044480A
+        a                   :Note ;
+        :noteText           "these ten wrathful deities form the retinue of vajrabhairava in the ekavira extraordinary mandala. they are:\nkhro bo gzhan gyis mi thub pa -- krodha aparajita\nkhro bo gshin rje gshed -- krodha yamantak\nkhro bo rta mgrin -- krodha hayagriva\nkhro bo 'dod rgyal -- krodha kamaraja\nkhro bo bdud rtsi 'khyil ba -- krodha amrtakundalin\nkhro bo dbyug sngon can -- krodha niladanda\nkhro bo gtsug tor 'khor ba sgyur -- krodha usnisacakravartin\nkhro bo stobs po che --- krodha mahabala\nkhro bo mi g.yo ba -- krodha acala\nkhro bo rdo rje sa 'og -- krodha vajrapatala"@en .
+    
+    bdr:T2354  a            :Topic ;
+        skos:altLabel       "khro bo lha bcu/"@bo-x-ewts ;
+        skos:prefLabel      "khro bcu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDD49CE3E4044480A .
+}

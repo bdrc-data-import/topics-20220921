@@ -1,0 +1,34 @@
+@base          <bdg:T1112> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1112 {
+    bda:LGB5E9E08B484E0C44
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:42.515Z"^^xsd:dateTime .
+    
+    bda:T1112  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1112 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "0a/T1112.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1112 ;
+        adm:logEntry        bda:LGB5E9E08B484E0C44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1112  a            :Topic ;
+        rdfs:seeAlso        bdr:T11MS11 ;
+        skos:prefLabel      "sems khrid/"@bo-x-ewts ;
+        :isRoot             true .
+}

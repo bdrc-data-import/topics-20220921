@@ -1,0 +1,58 @@
+@base          <bdg:T1AT304> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT304 {
+    bda:LG3C9788D493446BD1
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-11T16:07:11.177Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:LG9D42289F9AF6C898
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T12:41:23.75Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t847"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF14976FF5863F5F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:14:46.643Z"^^xsd:dateTime ;
+        adm:logMessage      "added note of withdraw"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1AT304  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT304 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "41/T1AT304.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT304 ;
+        adm:logEntry        bda:LG3C9788D493446BD1 , bda:LG9D42289F9AF6C898 , bda:LGF14976FF5863F5F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T847 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT5883C7655EF790C8
+        a                   :Note ;
+        :noteText           "reppeling ritual against annoyances, dissolutness, and/or irritation"@en .
+    
+    bdr:NT7B2AF8D8DADC8135
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T847"@en .
+    
+    bdr:T1AT304  a          :Topic ;
+        rdfs:comment        "reppeling ritual against annoyances, dissolutness, and/or irritation" ;
+        skos:altLabel       "bsun zlog"@bo-x-ewts ;
+        skos:prefLabel      "bsun bzlog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5883C7655EF790C8 , bdr:NT7B2AF8D8DADC8135 .
+}

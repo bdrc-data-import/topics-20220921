@@ -1,0 +1,53 @@
+@base          <bdg:T10MS14575> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14575 {
+    bda:LG3450E3B2F33D69BF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T11:00:19.491Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG7CB3E3F94DBF2FE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:32.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC511D9B931CAFD3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-09T10:43:25.923Z"^^xsd:dateTime ;
+        adm:logMessage      "created new"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T10MS14575  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14575 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5e/T10MS14575.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14575 ;
+        adm:logEntry        bda:LG3450E3B2F33D69BF , bda:LG7CB3E3F94DBF2FE7 , bda:LGC511D9B931CAFD3A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE5FC970C0E48536D
+        a                   :Note ;
+        :noteText           "genre topic is appllied to ritual texts for performing oblations"@en .
+    
+    bdr:T10MS14575  a       :Topic ;
+        rdfs:seeAlso        bdr:T173 , bdr:T93 ;
+        skos:prefLabel      "bsangs yig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE5FC970C0E48536D .
+}

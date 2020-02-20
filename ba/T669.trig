@@ -1,0 +1,46 @@
+@base          <bdg:T669> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T669 {
+    bda:LG6E4209B5C2B4CF7A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-03T09:57:50.923Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF42B3EBBDC2BD7C6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:33:43.967Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T669  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T669 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ba/T669.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T669 ;
+        adm:logEntry        bda:LG6E4209B5C2B4CF7A , bda:LGF42B3EBBDC2BD7C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2BE01B88B94DC188
+        a                   :Note ;
+        :noteText           "this topic is applied to the form of the four legged acala, black as smoke, with one face, two arms, and four legs; his right hand brandishes a sword; his left hand holds at his heart a blood filled skull; he has three eyes, bared fangs, and yellow, upward streaming hair and body-hair; his first leg tramples on the mouth of the obect of practice; the second on his heart; the third kneels on the navel; the fourth, outstretched, treads on his feet; he is adorned with a tiger-skin loincloth and snakes; he has a crown and long necklace of human heads; he is crowned with the conqueror aksobhya; he is in the middle of a blazing mass of fire; deities of tibetan buddhism #177"@en .
+    
+    bdr:T669  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba zhabs bzhi pa/"@bo-x-ewts , "four-legged acala"@en , "acala catuspada"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2BE01B88B94DC188 .
+}

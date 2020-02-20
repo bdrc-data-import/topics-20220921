@@ -1,0 +1,46 @@
+@base          <bdg:T696> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T696 {
+    bda:LG42A4664B1B1342E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-10-20T12:36:45.6Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBC6194F850818C46
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T10:31:26.029Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T696  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T696 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "67/T696.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T696 ;
+        adm:logEntry        bda:LG42A4664B1B1342E3 , bda:LGBC6194F850818C46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTABF9B908D8B6C58E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a form of vajrayogini, red, with one face, four arms, and three eyes; she has a lion's face, with mane hanging down, and is adorned with bone ornaments; her first right hand holds a knife, the second brandishes a sword, the first left offers a blood filled skull to her mouth and the second holds a trident khatvanga; upon stacked lotus, sun, and moon dakinis of the four classes support a jewel seat fitted with human corpses; she is on top of this throne in ardhaparyanka with left leg extended; she is called in the dkar chag to the rin lhn: dakini with skull ornaments\n\ndeities of tibetan buddhism #209"@en .
+    
+    bdr:T696  a             :Topic ;
+        skos:altLabel       "rje btsun ma thod pa can/"@bo-x-ewts ;
+        skos:prefLabel      "thod pa rgyan/"@bo-x-ewts , "venerable lady with skull ornaments"@en , "kapalini"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTABF9B908D8B6C58E .
+}

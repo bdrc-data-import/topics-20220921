@@ -1,0 +1,41 @@
+@base          <bdg:T2627> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2627 {
+    bda:LGF4FAFB1B65C0BC0E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T13:17:28.006Z"^^xsd:dateTime ;
+        adm:logMessage      "edited enlgish note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2627  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2627 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "59/T2627.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2627 ;
+        adm:logEntry        bda:LGF4FAFB1B65C0BC0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB83DB68E5EC4BA7D
+        a                   :Note ;
+        :noteText           "The Four Noble Truths taught by Shakyamuni Buddha in the first turning of the wheel that include all the causes and results of samsara and nirvana, what is to be accepted and rejected: \n\n1) sdug bsngal gyi bden pa -- the truth of suffering\n2) kun 'byung gi bden pa -- the truth of of the source or arising (of suffering)\n3) 'gog pa'i bden pa -- the truth of the cessation (of suffering)\n4) lam gyi bden pa -- the truth of the path (to cessation of suffering)"@en .
+    
+    bdr:T2627  a            :Topic ;
+        skos:altLabel       "'phags pa'i bden pa bzhi/"@bo-x-ewts ;
+        skos:prefLabel      "bden pa bzhi/"@bo-x-ewts , "four noble truths"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB83DB68E5EC4BA7D .
+}

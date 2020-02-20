@@ -1,0 +1,53 @@
+@base          <bdg:T21> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T21 {
+    bda:LG06ECA191F5B73EE3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T16:59:26.413Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG91A1ED40A464BABF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.703Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGB1331B038DD13124
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.977Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T21  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T21 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2a/T21.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T21 ;
+        adm:logEntry        bda:LG06ECA191F5B73EE3 , bda:LG91A1ED40A464BABF , bda:LGB1331B038DD13124 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7127EFAA97694FB2
+        a                   :Note ;
+        :noteText           "generic topic used for the initiation texts for the mandala of a particular deity or group of deities; the main topic is the name of the deity or group of deities"@en .
+    
+    bdr:T21  a              :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "dkyil 'khor dbang chog"@bo-x-ewts , "initiations into the mandala"@en , "mandala abhiseka vidhi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7127EFAA97694FB2 .
+}

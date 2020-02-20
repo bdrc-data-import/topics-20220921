@@ -1,0 +1,43 @@
+@base          <bdg:T3CN2031> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN2031 {
+    bda:LGDABC3EAFC640148E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T13:07:12.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added description & associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEE06C8E352B276AC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T12:55:46.301Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T3CN2031  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN2031 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e1/T3CN2031.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN2031 ;
+        adm:logEntry        bda:LGDABC3EAFC640148E , bda:LGEE06C8E352B276AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T3CN2031  a         :Topic ;
+        rdfs:comment        "One of the two main Hinayana schools of philosophy. School of Buddhist philosophy based on the Abhidharma teachings compiled in the Mahavidhasa." ;
+        skos:altLabel       "bye smra/"@bo-x-ewts ;
+        skos:prefLabel      "bye brag smra ba/"@bo-x-ewts , "Vaibhashika school"@en , "Vaibhashika"@sa-x-ndia , "毘婆沙部｜有部"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T711> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T711 {
+    bda:LG43F26E41C93E95FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T12:54:51.081Z"^^xsd:dateTime ;
+        adm:logMessage      "application topic added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T711  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T711 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b3/T711.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T711 ;
+        adm:logEntry        bda:LG43F26E41C93E95FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3C7E038E8BC01AE4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon cakra-sambara who is blue in color; his principal face is black; the right faces are smoke-colored and red; the left green and smoke-colored; the upper a red garuda's face; he has the splendor of twelve suns; his first pair of arms, holding a vajra and a bell embrace the mother; the next pair hold a knife and brahma's head; his third right hand flourishes a blazing cakra encicled by ananta; the fourth hand holds a hook encircled by padma; the fifth a damaru encircled by anavatapta; the third left holds vasuki as a noose, with threatening forefinger; the fourth holds a khatvanga with taksaka attached as a flag and a skull; the fifth a spear encircled by mahapadma; the last pair of hands hold up indra's skin as a scarf with the right holding karkotaka and the left sankhapala; he abides in alidha posture(right leg extended) upon varuna and varuni, beating his five-colored vajra wings and complete with the ornaments and apparel of a heruka; his consort is vajravarahi who is yellow and holds a knife and skull embraces him; they are in the middle of a blazing mass of fire; some fifty female and male deities with garuda faces and vajra wings, plus the six armor heroes ard distributed over the father's body, while the mother bears the six armor heroines; the father is crowned with vajrasattva; the mother vajravarahi is crowned with aksobhya.\n\nthis deity is transmitted by rwa lo tsA ba rdo rje grags;  \n\ndeviations: color of vajravarahi; R3 axe in place of blazing vajra; l1 knife instead of bell; l4 skull omitted; indra's skin is shown as an elephant skin\n\n\n\ndeities of tibetan buddhism #228"@en .
+    
+    bdr:T711  a             :Topic ;
+        skos:altLabel       "rdo rje mkha' lding bde mchog"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog rdo rje mkha' lding /"@bo-x-ewts , "vajra garuda sambara"@en , "vajragaruda samvara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3C7E038E8BC01AE4 .
+}

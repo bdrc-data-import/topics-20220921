@@ -1,0 +1,85 @@
+@base          <bdg:T218> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T218 {
+    bda:LG5802676ACF6AA41C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:22:14.324Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC2D5DF0258AC3EFD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-19T15:46:30.413Z"^^xsd:dateTime ;
+        adm:logMessage      "added 5 names and 4 notes (brda dag, brda sprod, brda yig, brda gsar rnying, brda'i rnam gzhag)"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGF9DF634C9FFBA707
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-19T16:17:45.636Z"^^xsd:dateTime ;
+        adm:logMessage      "edited notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFB36F23A068C9F29
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-23T11:29:17.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in english"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFB69E1373BAF54E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-19T16:19:19.535Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T218  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T218 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8c/T218.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T218 ;
+        adm:logEntry        bda:LG5802676ACF6AA41C , bda:LGC2D5DF0258AC3EFD , bda:LGF9DF634C9FFBA707 , bda:LGFB36F23A068C9F29 , bda:LGFB69E1373BAF54E3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT23E9CF1FFD32B642
+        a                   :Note ;
+        :noteText           "this key word is applied to texts and dictionaries that deal with the correct spelling in tibetan"@en .
+    
+    bdr:NT5832376DCB94C6C9
+        a                   :Note ;
+        :noteSource         bdr:MW1KG21089 ;
+        :noteText           "བརྡ་དག་མིང་ཚིག་གསལ་བ་ཞེས་པ་ལྟ་བུ་ལས་\"བརྡ་དག་\"དང་དག་ཡིག་ནི་དོན་གཅིག་མིང་གི་རྣམ་གྲངས་ཡིན་པ་ཤེས།"@bo .
+    
+    bdr:NT7D9460F2BBFEFD24
+        a                   :Note ;
+        :noteSource         bdr:MW3CN1654 ;
+        :noteText           "བརྡ་སྤྲོད་ངག་གི་སྒྲོན་མ་ཞེས་པ་ལྟ་བུ་ལས་\"བརྡ་སྤྲོད་\"ནི་དག་ཡིག་ལ་ཡང་གོ་བ་ཤེས།"@bo .
+    
+    bdr:NTABFE0F4E45CB4915
+        a                   :Note ;
+        :noteSource         bdr:MW3CN1665 ;
+        :noteText           "བརྡ་ཡིག་ཉེར་མཁོ་ཞེས་པ་འདི་ལྟ་བུ་ལས། \"བརྡ་ཡིག་\"དང་\"བརྡ་གསར་རྙིང་གི་རྣམ་གཞག་་གཉིས་དོན་གཅིག་ཏེ། མདོར་ན་དག་ཡིག་ལ་གོ་བ་གསལ།"@bo .
+    
+    bdr:NTB7334B3BE3710170
+        a                   :Note ;
+        :noteSource         bdr:MW3CN1660 ;
+        :noteText           "བོད་ཀྱི་བརྡའི་རྣམ་གཞག་ཞེས་པ་ལྟ་བུ་ལས་\"བརྡའི་རྣམ་གཞག་\"ཀྱང་དག་ཡིག་ལ་གོ་བ་ཤེས།"@bo .
+    
+    bdr:T218  a             :Topic ;
+        skos:altLabel       "brda'i rnam gzhag"@bo-x-ewts , "brda dag"@bo-x-ewts , "brda gsar rnying gi rnam gzhag"@bo-x-ewts , "brda sprod/"@bo-x-ewts , "brda yig"@bo-x-ewts , "orthographical dictionaries"@en , "orthography"@en ;
+        skos:prefLabel      "dag yig"@bo-x-ewts , "spelling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT23E9CF1FFD32B642 , bdr:NT5832376DCB94C6C9 , bdr:NT7D9460F2BBFEFD24 , bdr:NTABFE0F4E45CB4915 , bdr:NTB7334B3BE3710170 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T1501> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1501 {
+    bda:LGB8F9EE4870E59898
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-26T11:34:48.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also T1634 (lo glud)"@en .
+    
+    bda:LGC67BCC4A577E822F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T13:21:59.104Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T437 (ser lam gcod pa)"@en .
+    
+    bda:T1501  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1501 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "81/T1501.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1501 ;
+        adm:logEntry        bda:LGB8F9EE4870E59898 , bda:LGC67BCC4A577E822F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT492E4FF56A5A15F0
+        a                   :Note ;
+        :locationStatement  "v. 71" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "rituals for the prevention of frost\nthe gter ma found in the rin chen gter mdzod often groups rituals for the prevention of damage to crops by hail and frost together\n'jam mgon kong sprul includes in the rin chen gter mdzod chen mo \n1) thugs sgrub sad srung gnyis ( rig 'dzin rgod kyi ldem 'phru can byang gter)\n2) lo glud (byang gter)\n3) sad srung man ngag zab dgu bsdus pa (brag dmar kun bzang blo gros)"@en .
+    
+    bdr:T1501  a            :Topic ;
+        rdfs:seeAlso        bdr:T1634 , bdr:T437 ;
+        skos:altLabel       "prevention of damage to crops from frost"@en ;
+        skos:prefLabel      "sad srung ba/"@bo-x-ewts , "frost prevention"@en ;
+        :isRoot             true ;
+        :note               bdr:NT492E4FF56A5A15F0 .
+}

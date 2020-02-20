@@ -1,0 +1,50 @@
+@base          <bdg:T1PD106851> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106851 {
+    bda:LG913C0FE27C298942
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:09:02.789Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAD0A8A9F8D0B3E4D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T10:38:21.691Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106851  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106851 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "db/T1PD106851.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106851 ;
+        adm:logEntry        bda:LG913C0FE27C298942 , bda:LGAD0A8A9F8D0B3E4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT68D38BDC86511F25
+        a                   :Note ;
+        :noteText           "pebbles used as analogies and examples for explanation"@en .
+    
+    bdr:NT76DCAA46112CF608
+        a                   :Note ;
+        :noteText           "often used for explanation of anatomy along with sdong 'grel"@en .
+    
+    bdr:T1PD106851  a       :Topic ;
+        skos:prefLabel      "rdel 'grel/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT68D38BDC86511F25 , bdr:NT76DCAA46112CF608 .
+}

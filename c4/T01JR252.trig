@@ -1,0 +1,47 @@
+@base          <bdg:T01JR252> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01JR252 {
+    bda:LG3AC49C94B6992E3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-15T21:29:36.022Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGF534AF6D77C8136D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:35.777Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T01JR252  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01JR252 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c4/T01JR252.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01JR252 ;
+        adm:logEntry        bda:LG3AC49C94B6992E3E , bda:LGF534AF6D77C8136D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT84AF044241D186E5
+        a                   :Note ;
+        :noteSource         bdr:MW20916 ;
+        :noteText           "[p. 323] jo mos (ye shes mtsho rgyal) rang gi ming po mkhar chen dpal gyi dbang phyug la bshad nas rim par dar ro/"@bo-x-ewts .
+    
+    bdr:T01JR252  a         :Topic ;
+        skos:altLabel       "phur pa (mtsho rgyal snyan brgyud)"@bo-x-ewts , "rdo rje phur pa/ (jo mo lugs/"@bo-x-ewts ;
+        skos:prefLabel      "phur pa jo mo lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT84AF044241D186E5 .
+}

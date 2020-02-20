@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1322> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1322 {
+    bda:LG1EDB0627CF716736
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:45:01.035Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3AF01E37EA8E4D35
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T11:17:36.502Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG972DE9DFE52DE4E1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T19:05:01.646Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1322  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1322 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e5/T2GS1322.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1322 ;
+        adm:logEntry        bda:LG1EDB0627CF716736 , bda:LG3AF01E37EA8E4D35 , bda:LG972DE9DFE52DE4E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0EDDD000ECD950A9
+        a                   :Note ;
+        :noteText           "this topic is applied to works which discuss the general concept of the acquisition of merit and through what action it is achieved"@en .
+    
+    bdr:NTF8C9203D0C4BF9D4
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 988" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "dge ba rnam pa lnga\nthe chos rnam kun btus, quoting the rnal 'byor spyod pa'i sa (bstan 'gyur, sems tsam tshi, 31ba5) lists the five as: 1) sbyin pa las byung ba; 2) tshul khrims las byung ba; 3) bsgoms pa las byung ba; 4) sdug pa'i 'bras bu; 5) bral ba'i 'bras bu"@en .
+    
+    bdr:T2GS1322  a         :Topic ;
+        skos:prefLabel      "dge ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0EDDD000ECD950A9 , bdr:NTF8C9203D0C4BF9D4 .
+}

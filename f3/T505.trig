@@ -1,0 +1,36 @@
+@base          <bdg:T505> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T505 {
+    bda:LG8989E79F681E56F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T15:59:10.11Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T505  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T505 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f3/T505.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T505 ;
+        adm:logEntry        bda:LG8989E79F681E56F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T505  a             :Topic ;
+        skos:altLabel       "bdud mgon seng gdong can/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong can (srung ma)"@bo-x-ewts ;
+        :isRoot             true .
+}

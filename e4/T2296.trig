@@ -1,0 +1,47 @@
+@base          <bdg:T2296> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2296 {
+    bda:LG06E18F50473E3D18
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T14:52:20.106Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG1DA41EA88F6BEB86
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:07:16.585Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG7A906236550D25CE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:30:51.964Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2296  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2296 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/T2296.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2296 ;
+        adm:logEntry        bda:LG06E18F50473E3D18 , bda:LG1DA41EA88F6BEB86 , bda:LG7A906236550D25CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2296  a            :Topic ;
+        skos:prefLabel      "gsang bdag nyi ma mdung gang ma g.ya' bzang lugs/"@bo-x-ewts ;
+        :isRoot             true .
+}

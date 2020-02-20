@@ -1,0 +1,50 @@
+@base          <bdg:T1309> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1309 {
+    bda:LGBCFA3B79C8A123ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T15:23:40.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added application note and description from the chos rnam kun btus"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1309  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1309 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "29/T1309.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1309 ;
+        adm:logEntry        bda:LGBCFA3B79C8A123ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD4D87C6BCDECC6D5
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1396" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus (citing the dung dkar tshig mdzod 1046-22) the thun drug are described: 1) skya rengs shar na nyi ma ma shar bar nyin thun dang po; 2) nyi ma shar nas nyin gung ma zin par nyin thun gnyis pa; 3) nyin gung yol nas nyi ma nub bar nyin thun gsum pa; 4) nyi ma nub nas srod ma yol bar mtshan thun dang po; 5) sa srod yol nas gung ma shar bar mtshan thun gnyis pa; 6) nam gung yol nas skya rengs ma shar bar mtshan thun gsum pa"@en .
+    
+    bdr:NTF3876778430C0CD5
+        a                   :Note ;
+        :noteText           "this topic is used for works applying to the practice and calculation of the regular six fold meditation sessions."@en .
+    
+    bdr:NTFDAF0B1207D7B8F7
+        a                   :Note ;
+        :noteText           "according to ry: syn {dum drug}. six periods. The six periods of day and night. khenpo könchok mönlam says that it was the indian tradition to do six sessions within a 24 hour duration, while in tibet four sessions were more popular. tsikey chokling rinpoche says that they mean three during the day and three during the night. sometimes a period is defined as three hours; sometimes two before noon, two after noon, and two during the early and the last part of the night. [epk].\njames valby defines thun: meditation session, meditation period, period of practice, dosage, dose, period of 3 hours, 8th part of day, fixed length of time, shift of 6 or 4 or 3 hours, junction of day and night, twilight, daybreak, state of abstraction and isolation, substances possessed of magic virtues, one who collects, gatherer, practice session, sessions of meditation, sessions of practice, various substances like a kind of mustard seed, session"@en .
+    
+    bdr:T1309  a            :Topic ;
+        skos:prefLabel      "thun drug"@bo-x-ewts , "six meditation sessions"@en ;
+        :isRoot             true ;
+        :note               bdr:NTD4D87C6BCDECC6D5 , bdr:NTF3876778430C0CD5 , bdr:NTFDAF0B1207D7B8F7 .
+}

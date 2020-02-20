@@ -1,0 +1,36 @@
+@base          <bdg:T1957> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1957 {
+    bda:LG249731B94D70088A
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-05T15:00:11.918Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T1111"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1957  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1957 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "29/T1957.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1957 ;
+        adm:logEntry        bda:LG249731B94D70088A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1111 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1957  a            :Topic ;
+        skos:prefLabel      "rta skad/"@bo-x-ewts ;
+        :isRoot             true .
+}

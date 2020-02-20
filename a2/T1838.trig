@@ -1,0 +1,42 @@
+@base          <bdg:T1838> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1838 {
+    bda:LG1754B165358692BD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T15:32:04.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added li thu'i mgo rgyan"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG5169FD87BDC72E81
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-08-01T11:58:24.655Z"^^xsd:dateTime ;
+        adm:logMessage      "name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1838  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1838 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a2/T1838.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1838 ;
+        adm:logEntry        bda:LG1754B165358692BD , bda:LG5169FD87BDC72E81 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1838  a            :Topic ;
+        skos:altLabel       "le'u tho'i mgo rgyan/"@bo-x-ewts , "li'u tho'i 'go brjod/"@bo-x-ewts , "li thu'i mgo rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "li tho 'go brjod/"@bo-x-ewts , "preface for an almanac"@en ;
+        :isRoot             true .
+}

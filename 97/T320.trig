@@ -1,0 +1,46 @@
+@base          <bdg:T320> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T320 {
+    bda:LG5C304FB02135BBC7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T13:35:16.524Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG88E9E3B19A631655
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T16:23:38.249Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T320  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T320 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "97/T320.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T320 ;
+        adm:logEntry        bda:LG5C304FB02135BBC7 , bda:LG88E9E3B19A631655 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTD5EE274895D2AE62
+        a                   :Note ;
+        :noteText           "this cycle of revelations of the rtsa gsum gsang ba snying thig is very rare because it was not included in the rin chen gter mdzod"@en .
+    
+    bdr:T320  a             :Topic ;
+        skos:prefLabel      "rtsa gsum gsang ba snying thig (nyi ma grags pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD5EE274895D2AE62 .
+}

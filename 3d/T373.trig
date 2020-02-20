@@ -1,0 +1,41 @@
+@base          <bdg:T373> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T373 {
+    bda:LGF2C7706C450AABCE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-02T11:31:05.539Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFAE95ECE0F08838E
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T17:01:45.647Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T373  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T373 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3d/T373.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T373 ;
+        adm:logEntry        bda:LGF2C7706C450AABCE , bda:LGFAE95ECE0F08838E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T373  a             :Topic ;
+        skos:prefLabel      "dancing /"@bo-x-ewts ;
+        :isRoot             true .
+}

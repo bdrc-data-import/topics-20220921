@@ -1,0 +1,47 @@
+@base          <bdg:T8LS15659> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS15659 {
+    bda:LG2838EA20513D0BF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-10-17T13:58:30.66Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG33EA1156FD393EF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T12:49:32.963Z"^^xsd:dateTime ;
+        adm:logMessage      "whithdrawn in favor of T4CZ326967"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T8LS15659  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS15659 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8e/T8LS15659.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS15659 ;
+        adm:logEntry        bda:LG2838EA20513D0BF8 , bda:LG33EA1156FD393EF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTCA59414C92C45C85
+        a                   :Note ;
+        :noteSource         bdr:MW1KG16278 .
+    
+    bdr:T8LS15659  a        :Topic ;
+        skos:altLabel       "lha grags ldan phyogs skyong /"@bo-x-ewts ;
+        skos:prefLabel      "grags ldan phyogs skyong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCA59414C92C45C85 .
+}

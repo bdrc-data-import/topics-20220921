@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1143> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1143 {
+    bda:LG0E52957DE9FFCBB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T16:01:35.598Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG0EC5BB01D6FC4725
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T13:59:39.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added deities of tibetan buddhis record"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG54EAE212442975AB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T14:09:45.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added spacing in note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6D0E11AD9A09C70B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T16:45:39.759Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1143  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1143 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "31/T2GS1143.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1143 ;
+        adm:logEntry        bda:LG0E52957DE9FFCBB7 , bda:LG0EC5BB01D6FC4725 , bda:LG54EAE212442975AB , bda:LG6D0E11AD9A09C70B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6DBC52EDDCADDF8D
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas and permissions to invoke the form of the red yama surrounded by the four marutse; the deity is red and terrible in appearance; his right hand brandishes a flaming sword; his left hand is encircled by a blazing wind wheel; his mouth is agape, his tongue rolled up; he has three round red eyes and a yellow-brown upward swinging beard; with a scarf of human skin, he abides on a buffalo seat in pratyalidha (left leg extended); on his left is his consort, ekajati, black, enveloped in hair-tresses like darkness; she holds a hook and a blood filled skull and wears a human skin; her head is bound with entrails; the father and mother are surrounded with a hundred thousand attendants each, yamas, and demonesses; out of their hearts come four ja, b) becoming in the east raksasa marutse (srin po ma ru tse); c) in the south, yama marutse; d) in the west mara (bdud po) marutse; e) in the north yaksa marutse; these four are red, hold razors and nooses, and abide on leather birds (bse bya).\n\n\ndeities of tibetan buddhism #405\n\n\n\n(marutse is the name of a charnel ground in the northeast, where the protector beg tse resides; marutse is also the name of the red medicinal berry called in sanskrit gunja (abrus precatorius))"@en .
+    
+    bdr:T2GS1143  a         :Topic ;
+        skos:prefLabel      "las gshin dmar po ma ru tse bzhis skor ba/"@bo-x-ewts , "red karma-yama surrounded by four marutse"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6DBC52EDDCADDF8D .
+}

@@ -1,0 +1,53 @@
+@base          <bdg:T2GS1129> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1129 {
+    bda:LG4F8D9B12C594D5E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T16:05:39.474Z"^^xsd:dateTime ;
+        adm:logMessage      "proofreading"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9EE23A1000C8DEBF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T12:36:59.297Z"^^xsd:dateTime ;
+        adm:logMessage      "revised titles; added deities #"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD0DD96FC1B48649B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:29:33.42Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1129  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1129 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c7/T2GS1129.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1129 ;
+        adm:logEntry        bda:LG4F8D9B12C594D5E9 , bda:LG9EE23A1000C8DEBF , bda:LGD0DD96FC1B48649B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT407B6786D0E93033
+        a                   :Note ;
+        :noteText           "this topic is applied to rituals for the propitiation of the six armed mahakala\n\ndeities of tibetan buddhism #340-342"@en .
+    
+    bdr:T2GS1129  a         :Topic ;
+        skos:altLabel       "mgon po phyag drug pa nag po bar chad kun sel/"@bo-x-ewts , "myur mdzad ye shes kyi mgon po phyag drug pa nag po bar chad kun sel/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes kyi mgon po phyag drug pa nag po bar chad kun sel/"@bo-x-ewts , "black, six-armed, quick acting gnosis mahakala, remover of all obstacles"@en ;
+        :isRoot             true ;
+        :note               bdr:NT407B6786D0E93033 .
+}

@@ -1,0 +1,54 @@
+@base          <bdg:T536> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T536 {
+    bda:LG910C6FDC1F042DEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T11:25:48.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added 'dzab dgongs"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG97B6D1E32A845A0D
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T11:56:17.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA19F389834B85202
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:17:52.925Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA5D2250A381C86C5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T12:27:27.785Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T637 ('don thabs)"@en .
+    
+    bda:T536  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T536 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0f/T536.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T536 ;
+        adm:logEntry        bda:LG910C6FDC1F042DEC , bda:LG97B6D1E32A845A0D , bda:LGA19F389834B85202 , bda:LGA5D2250A381C86C5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T536  a             :Topic ;
+        rdfs:seeAlso        bdr:T2579 , bdr:T637 ;
+        skos:altLabel       "'dzab dgongs/"@bo-x-ewts ;
+        skos:prefLabel      "ngag 'don/"@bo-x-ewts , "liturgical recitation"@en ;
+        :isRoot             true .
+}

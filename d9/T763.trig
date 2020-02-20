@@ -1,0 +1,46 @@
+@base          <bdg:T763> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T763 {
+    bda:LG2C31142CFB85342C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:34:03.353Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD9216AC130C5541D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T17:31:23.179Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T763  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T763 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d9/T763.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T763 ;
+        adm:logEntry        bda:LG2C31142CFB85342C , bda:LGD9216AC130C5541D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF0D270C74FD65E26
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a white ganapati seated on a lotus and moon seat, who has an elephant's face with two right hands holding a radish and a rosary; his two left hands hold a mongoose and an axe; he is potbellied and wears jewel ornaments and a tiger skin scarf and skirt; he has a topknot of tresses and abides in lalita with right leg extended on a red cantasa (flat sacrificial cup or ladle) either upon or with his back resting on a rat.\n\ndeities of tibetan buddhism #335"@en .
+    
+    bdr:T763  a             :Topic ;
+        skos:prefLabel      "tshogs bdag dkar po phyag bzhi jo bo'i lugs bsdus pa/"@bo-x-ewts , "four armed, white ganapati, condensed in the tradition of atisa"@en , "ganapati sita caturbhuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF0D270C74FD65E26 .
+}

@@ -1,0 +1,49 @@
+@base          <bdg:T1225> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1225 {
+    bda:LG52B91301A22EEC00
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:51:11.517Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGDBA0EE6CEDD6B74D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-01T13:51:23.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added T27 (tshe sgrub) SeeAlso"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGEC2E3A5D0EA17BA4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-01T11:35:33.934Z"^^xsd:dateTime ;
+        adm:logMessage      "added T2511 (zhabs brtan) as SeeAlso, added a description"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T1225  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1225 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "10/T1225.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1225 ;
+        adm:logEntry        bda:LG52B91301A22EEC00 , bda:LGDBA0EE6CEDD6B74D , bda:LGEC2E3A5D0EA17BA4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1225  a            :Topic ;
+        rdfs:comment        "ritual for summoning forces of longevity" ;
+        rdfs:seeAlso        bdr:T2511 , bdr:T27 ;
+        skos:prefLabel      "tshe 'gugs/"@bo-x-ewts ;
+        :isRoot             true .
+}

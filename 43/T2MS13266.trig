@@ -1,0 +1,50 @@
+@base          <bdg:T2MS13266> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13266 {
+    bda:LG4D4CBB523689C837
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-30T10:26:55.773Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5BC46EDF461B920E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-27T10:30:35.594Z"^^xsd:dateTime ;
+        adm:logMessage      "created new"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13266  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13266 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/T2MS13266.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13266 ;
+        adm:logEntry        bda:LG4D4CBB523689C837 , bda:LG5BC46EDF461B920E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2C52DFA0E15D7B90
+        a                   :Note ;
+        :noteText           "Often transmitted through the shangs pa bka' brgyud; especially associated with the transmissions of thang stong rgyal po."@en .
+    
+    bdr:NT3FEA0D7386FF730A
+        a                   :Note ;
+        :noteText           "This topic is applied to the whispered or oral lineage of esoteric yoga practices."@en .
+    
+    bdr:T2MS13266  a        :Topic ;
+        skos:prefLabel      "gsang spyod snyan brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2C52DFA0E15D7B90 , bdr:NT3FEA0D7386FF730A .
+}

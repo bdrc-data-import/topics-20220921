@@ -1,0 +1,49 @@
+@base          <bdg:T3CN16182> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN16182 {
+    bda:LG5342EC258EF20E53
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-06-19T10:19:37.284Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG82A2C7DBB3B8B925
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-06-19T10:56:10.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9EB6F3FB92D43B20
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-06-19T10:37:33.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T3CN16182  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN16182 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b0/T3CN16182.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN16182 ;
+        adm:logEntry        bda:LG5342EC258EF20E53 , bda:LG82A2C7DBB3B8B925 , bda:LG9EB6F3FB92D43B20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T3CN16182  a        :Topic ;
+        rdfs:seeAlso        bdr:T2CZ8059 ;
+        skos:altLabel       "brag brkos yig ris/"@bo-x-ewts , "rdo ring gi yi ge"@bo-x-ewts ;
+        skos:prefLabel      "rdo brkos yi ge"@bo-x-ewts , "stone inscriptions"@en , "石刻碑文"@zh-hans ;
+        :isRoot             true .
+}

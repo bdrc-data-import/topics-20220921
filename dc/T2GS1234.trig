@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1234> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1234 {
+    bda:LG0CC0F3F7B5B8FD22
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-06T14:50:57.255Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1234  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1234 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dc/T2GS1234.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1234 ;
+        adm:logEntry        bda:LG0CC0F3F7B5B8FD22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCCB104AC9919458B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon gnosis mahakala (dpal ye shes kyi mgon po), dark purple, four armed, with unbearable sharp fangs, inordinately bared; glaring he crushes the spirits of black enemies; his first right hand holds a sword, the second a trident with a poppy colored spear flack (rtse gsum mdung dar le brgan can); the first left brandishes a bull banner; the second holds a demon noose (bdud zhags);he has a crown of dry skulls and a long necklace of fresh heads and is adorned with jewls and snakes and headed with the sun and the moon; he wears a scarf of fresh elephant hide and a tiger skin loincloth and sits in lalita posture.\n\non the spokes in the four directons from four ma syllables come the four mothers:\nb) in front is vetali (be ta li), green and with loose hair, her right hand feeding herself with entrails and her left holding a blood-filled skull, sitting in a cross-legged posture;\nc) on the right is white duti (pho nya mo, messenger; mantra jvalakuli , flame well born lady), with dark brown hair, holding a ritual dagger and a red noose;\nd) behind is blue-green attendant (bka' sdod ma, mantra ekacati), wearing a human skin and holding a sandalwood club; both these are either kneeling or in alidha (right leg extended;\ne) on the left is red presaka (mngag gzhug ma, maidservant; mantra kankari, crane lady), holding a corpse club and a piece of human corpse;\noutside from seven bhyauH syllable come the saptamatrka:\nbrahmani, indrani, kaumari, mahadevi, kalpakama (rtog 'dod ma); vrddhottara (rgan byang ma); mahanasa (sna chen mo); these seven are all of raksasi form, dark red, and holding trident and flood filled skulls; in the gates are for more matrka with eyes of crystal, gold, copper and turquoise holding vajra and noose.\n\n\n\ndeities of tibetan buddhism #376."@en .
+    
+    bdr:T2GS1234  a         :Topic ;
+        skos:altLabel       "mgon po yon tan rigs/"@bo-x-ewts ;
+        skos:prefLabel      "tshogs bdag mgon po seng+ge'i gdan can/"@bo-x-ewts , "lion seated ganapati mahakala"@en ;
+        :isRoot             true ;
+        :note               bdr:NTCCB104AC9919458B .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T1725> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1725 {
+    bda:LGA59933F448E23E8A
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:15:52.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGFADBECBF9B4716FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-05T12:50:12.554Z"^^xsd:dateTime ;
+        adm:logMessage      "name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1725  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1725 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fd/T1725.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1725 ;
+        adm:logEntry        bda:LGA59933F448E23E8A , bda:LGFADBECBF9B4716FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1725  a            :Topic ;
+        skos:altLabel       "白伞盖佛顶"@zh-hans ;
+        skos:prefLabel      "gdugs dkar mo can/"@bo-x-ewts , "sitātapatrā"@sa-x-ndia , "白傘蓋佛頂"@zh-hant ;
+        :isRoot             true .
+}

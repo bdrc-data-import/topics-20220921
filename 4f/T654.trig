@@ -1,0 +1,41 @@
+@base          <bdg:T654> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T654 {
+    bda:LG4D5EC0464E4E9FF7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T10:06:54.962Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T654  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T654 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4f/T654.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T654 ;
+        adm:logEntry        bda:LG4D5EC0464E4E9FF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT051DCF1EE22E358B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon a form of vajrapani, dark blue with one face and two arms; the right holds a vajra; the left is with a threatening forefinger; he is in pratyalidha on a lotus seat; his bent right leg tramples the sun and his extended left the moon; he has a tiger-skin loincloth, snake ornaments, and a jewel crown, and three eyers; he bares his fangs; his beard, eyebrows and hair blaze like fire; he abides amid a blazing mass of fire; he is crowned with aksobhya.\n\n\ndeities of tibetan buddhism #154"@en .
+    
+    bdr:T654  a             :Topic ;
+        skos:altLabel       "phyag na rdo rje gos sngon can jo bo lugs/"@bo-x-ewts , "dharani sambhuta nilambara dhara vajrapani"@sa-alalc97 ;
+        skos:prefLabel      "phyag rdor gos sngon can gyi gzungs las byung ba/"@bo-x-ewts , "blue-clad vajrapani from the dharani"@en , "vajrapani nilambaradhara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT051DCF1EE22E358B .
+}

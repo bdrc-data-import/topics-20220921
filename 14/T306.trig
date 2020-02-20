@@ -1,0 +1,57 @@
+@base          <bdg:T306> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T306 {
+    bda:LG11507A3BE4FFBA29
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T09:21:53.336Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG1E56CC3BF9BDB892
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T15:22:27.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7C8D73460AFFE1D4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T14:28:56.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added extrnal reference to tsadra.org"@en .
+    
+    bda:LGF5E812F24D4ACBB1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T15:42:41.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added description for external reference"@en .
+    
+    bda:T306  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T306 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "14/T306.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T306 ;
+        adm:logEntry        bda:LG11507A3BE4FFBA29 , bda:LG1E56CC3BF9BDB892 , bda:LG7C8D73460AFFE1D4 , bda:LGF5E812F24D4ACBB1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT76213A876A6E7F1E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the group of five sister protective deities of the dharma; the five deities are:\n1) bkra shis tshe ring ma--she is white with one face and two arms and holds a golden nine-pronged vajra in her right hand and a long-life vase ornamented with an auspicious knot and swastika in her left hand; her mount is a white snow-lioness;  \n2) mthing gi zhal bzang ma -- she is blue with one face and two arms, holding a silver mirror in her right hand and a banner of the gods in her left hand; her mount is a mare;  \n3) mi g.yo blo bzang ma-- she is yellow with one face and two arms, holding a bowl with food in her right hand and a mongoose in her left hand; her mount is a tigress;  \n4) cod pan mgrin bzang ma -- she is red with one face and two arms, holding a wish-fulfilling jewel in her right hand and a jewel encrusted casket in her left hand; she rides a red female deer;  \n5) gtal dkar 'gro bzang ma--she is green with one face and two arms, holding a bundle of durva grass in her right hand and a snake noose in her left hand; her mount is a female turquoise dragon.  \n\ndeities of tibetan buddhism #418-420"@en .
+    
+    bdr:T306  a             :Topic ;
+        skos:altLabel       "bkra shis tshe ring mched lnga /"@bo-x-ewts , "bkra shis tshe ring ma and her four sisters"@en ;
+        skos:prefLabel      "tshe ring mched lnga (srung ma)"@bo-x-ewts , "five sisters of long life"@en ;
+        :isRoot             true ;
+        :note               bdr:NT76213A876A6E7F1E .
+}

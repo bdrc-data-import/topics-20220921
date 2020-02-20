@@ -1,0 +1,46 @@
+@base          <bdg:T188> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T188 {
+    bda:LG8D7AF39BB5568FDF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-17T11:18:20.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added annotation"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD12160B49F112FB5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T14:25:29.578Z"^^xsd:dateTime ;
+        adm:logMessage      "language order changed"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T188  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T188 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "86/T188.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T188 ;
+        adm:logEntry        bda:LG8D7AF39BB5568FDF , bda:LGD12160B49F112FB5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT05F0BA280A63DFC1
+        a                   :Note ;
+        :noteText           "calendrical calculations based on chinese astrological systems"@en .
+    
+    bdr:T188  a             :Topic ;
+        skos:prefLabel      "rgya rtsis/"@bo-x-ewts , "chinese calculations"@en ;
+        :isRoot             true ;
+        :note               bdr:NT05F0BA280A63DFC1 .
+}

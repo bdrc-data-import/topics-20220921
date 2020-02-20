@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1142> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1142 {
+    bda:LG4001D697FCD6FA7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:54:22.323Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFF1F046094079CCC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T15:35:49.937Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1142  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1142 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ad/T2GS1142.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1142 ;
+        adm:logEntry        bda:LG4001D697FCD6FA7B , bda:LGFF1F046094079CCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT4D2647334C38BA99
+        a                   :Note ;
+        :noteText           "this topic is applied to sadhanas and practice texts focusing on the four great kings of the four directions:\n1) vaisravana (rnam thos sras) from the north; he is golden colored, holding a club marked with a gem and a treasure mongoose; he is corpulent and full of mirth; on either side of him are treasure vases and rivers of jewels flowing; he sits on a jewel throne and a lion;  \n2) dhrtarastra (yul 'khor srung) from the east; he is white with a greenish tint; he is playing a lute (vina); he has a peaceful manner and sits on a jewel throne and elephant seat;  \n3) virudhaka ('phags skyes po) from the south; he is sky-lue, holding a blazing swrod; he is slightly wrathful in sentiment and sits on a jewel throne and a buffalo seat;  \n4) virupaksa (mig mi bzang) from the west; he is red and smiling; his right hand holds a serpent noose and his left a precious caitya, at which he is looking; he has red eyes, blazing, yellow hair, and a sevenfold hood of snakes' heads and sits on a jewel throne and a naga seat;  \nall are adorned with silks and all the jewel ornaments; their eyes full of pleasure are round and wide open; they wear jewel armor and are complete with all the attributes of a monarch, such as the crown (ze'u kha) with a wish-granting gem tiara.  \ndeities of tibetan buddhism #411-414"@en .
+    
+    bdr:T2GS1142  a         :Topic ;
+        skos:prefLabel      "rgyal po chen po bzhi/"@bo-x-ewts , "the four great kings"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4D2647334C38BA99 .
+}

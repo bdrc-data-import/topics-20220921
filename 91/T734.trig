@@ -1,0 +1,40 @@
+@base          <bdg:T734> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T734 {
+    bda:LGC089465E7EE6ACA8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T01:14:00.377Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T734  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T734 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "91/T734.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T734 ;
+        adm:logEntry        bda:LGC089465E7EE6ACA8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2FF7D47B41F0EE93
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the goddess who is white, her right hand holding a crossed vajra and her left an alms-bowl of nectar; she is adorned with all the ornaments.  \n\n\ndeities of tibetan buddhism #262"@en .
+    
+    bdr:T734  a             :Topic ;
+        skos:prefLabel      "gtsug tor rnam rgyal phyag gnyis ma/"@bo-x-ewts , "two-armed usnisavijaya"@en , "usnisavijaya dvibhuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2FF7D47B41F0EE93 .
+}

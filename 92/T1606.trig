@@ -1,0 +1,47 @@
+@base          <bdg:T1606> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1606 {
+    bda:LG91A2CE88C7CD9AE3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-27T10:34:37.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative spelling"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG99A320164916B2F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-01T15:24:35.841Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9D7E6CB4A7A519BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-08T09:33:22.253Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1606  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1606 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/T1606.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1606 ;
+        adm:logEntry        bda:LG91A2CE88C7CD9AE3 , bda:LG99A320164916B2F3 , bda:LG9D7E6CB4A7A519BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1606  a            :Topic ;
+        skos:prefLabel      "snyan brgyud steng sgo chos drug"@bo-x-ewts ;
+        :isRoot             true .
+}

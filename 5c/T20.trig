@@ -1,0 +1,40 @@
+@base          <bdg:T20> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T20 {
+    bda:LG56552F517F875DB6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T16:54:13.985Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T20  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T20 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5c/T20.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T20 ;
+        adm:logEntry        bda:LG56552F517F875DB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT35694E6EEBD5174B
+        a                   :Note ;
+        :noteText           "generic topic applied to the inscriptions on the back of hanging paintings; the main topic may be the place the painting is preserved or the name of the artist who has painted the piece of art"@en .
+    
+    bdr:T20  a              :Topic ;
+        skos:prefLabel      "thang ka'i kha byang /"@bo-x-ewts , "thangka labels & inscriptions"@en ;
+        :isRoot             true ;
+        :note               bdr:NT35694E6EEBD5174B .
+}

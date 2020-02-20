@@ -1,0 +1,41 @@
+@base          <bdg:T45> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T45 {
+    bda:LG0C0AAB1433AA5528
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T12:17:22.4Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T45  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T45 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "71/T45.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T45 ;
+        adm:logEntry        bda:LG0C0AAB1433AA5528 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAA92457DBD1823AE
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for a gter ma form of vajrapani from the revelations of grwa pa mngon shes; vajrapani is the color of space, black, his right hand brandishing skyward a golden, five-pointed vajra, his left handing holding at his heart, a blood-filled skull; he is in pratyalidha posture (right hand bent) on a lotus and sun, trampling mahesvara and umadevi; he wears a tiger skin, blue silk garments, and a lion-skin scarf; he is adorned with jewels, snakes, and a garland of human heads; he abides amid a blazing mass of fire; he is crowned with aksobhya.   \n\ndeities of tibetan buddhism #160"@en .
+    
+    bdr:T45  a              :Topic ;
+        skos:altLabel       "phyag na rdo rje khang brtsegs ma grwa pa mngon shes lugs/"@bo-x-ewts , "phyag rdor khang brtsegs ma/"@bo-x-ewts ;
+        skos:prefLabel      "phyag rdor khang bu brtsegs pa/"@bo-x-ewts , "storied mansion (kutagara) vajrapani"@en , "vajrapani kutagara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTAA92457DBD1823AE .
+}

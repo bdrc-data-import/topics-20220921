@@ -1,0 +1,59 @@
+@base          <bdg:T2037> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2037 {
+    bda:LG0147C662B1E49520
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T16:20:56.042Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG340ABAE5C983D65D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T15:03:29.6Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG99A3BB118BF13F2A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGE4DDB6D7173CA86E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T2037  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2037 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "10/T2037.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2037 ;
+        adm:logEntry        bda:LG0147C662B1E49520 , bda:LG340ABAE5C983D65D , bda:LG99A3BB118BF13F2A , bda:LGE4DDB6D7173CA86E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT33BFF5C8C9CD0C37
+        a                   :Note ;
+        :locationStatement  "p. 2768" ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "directions, guide book"@en .
+    
+    bdr:T2037  a            :Topic ;
+        skos:prefLabel      "lam yig ('gro lam mi nor ba'i lam yig)"@bo-x-ewts , "旅游指南，旅途纪实"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT33BFF5C8C9CD0C37 .
+}

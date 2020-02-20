@@ -1,0 +1,49 @@
+@base          <bdg:T3JT12482> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3JT12482 {
+    bda:LG6FD9A3C7BBB63E4C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-08-08T12:20:54.701Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF08C8A563FB74F17
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-08-08T12:06:54.708Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T3JT12482  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3JT12482 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d6/T3JT12482.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3JT12482 ;
+        adm:logEntry        bda:LG6FD9A3C7BBB63E4C , bda:LGF08C8A563FB74F17 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1BBE4DE09EFB94BB
+        a                   :Note ;
+        :noteText           "'khor lo rin po che/ nor bu rin po che/ btsun mo rin po che/ blon po rin po che/ glang po rin po che/ rta mchog rin po che/ dmag dpon rin po che/"@bo-x-ewts .
+    
+    bdr:NTBA178ED50AA47084
+        a                   :Note ;
+        :noteText           "the precious wheel, jewel, queen, elephant, minister, horse, and general"@en .
+    
+    bdr:T3JT12482  a        :Topic ;
+        skos:prefLabel      "rgyal srid sna bdun/"@bo-x-ewts , "seven royal possessions"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1BBE4DE09EFB94BB , bdr:NTBA178ED50AA47084 .
+}

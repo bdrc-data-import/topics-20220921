@@ -1,0 +1,41 @@
+@base          <bdg:T1302> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1302 {
+    bda:LG72230B0EDD593FAE
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T12:02:29.765Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1302  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1302 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9e/T1302.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1302 ;
+        adm:logEntry        bda:LG72230B0EDD593FAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT59E9DBB2FC503C2B
+        a                   :Note ;
+        :noteText           "sindhura. red or deep orange substance often used in tantric rituals. Syn si 'dur ra [RY];  minium, red lead [JV]"@en .
+    
+    bdr:T1302  a            :Topic ;
+        skos:altLabel       "red lead"@en ;
+        skos:prefLabel      "sin+d+hU ra/"@bo-x-ewts , "minium"@en ;
+        :isRoot             true ;
+        :note               bdr:NT59E9DBB2FC503C2B .
+}

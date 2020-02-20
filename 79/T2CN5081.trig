@@ -1,0 +1,54 @@
+@base          <bdg:T2CN5081> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN5081 {
+    bda:LG109B8B9402C3F42E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-10T11:50:34.296Z"^^xsd:dateTime ;
+        adm:logMessage      "created & added 2 notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2FA87570FE85B76F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T13:14:24.158Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB67D9BD0B7D68318
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:39:38.863Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T2CN5081  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN5081 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "79/T2CN5081.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN5081 ;
+        adm:logEntry        bda:LG109B8B9402C3F42E , bda:LG2FA87570FE85B76F , bda:LGB67D9BD0B7D68318 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA9CFAD0A9D2472D3
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོའི་ལྡེབ་ངོས་ p. 1384 ལ་བོད་རྒྱལ་མུ་ནེ་བཙན་པོའི་སྐབས་བསམ་ཡས་སུ་བཙུགས་པའི་དུས་མཆོད་ཆེན་པོ་ཞིག་ཅེས་གསལ"@bo .
+    
+    bdr:T2CN5081  a         :Topic ;
+        skos:altLabel       "bsam yas mdo sde mchod pa/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde'i mchod pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA9CFAD0A9D2472D3 .
+}

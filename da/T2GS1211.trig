@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1211> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1211 {
+    bda:LGFBFB80D6DD04B4A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T12:30:18.365Z"^^xsd:dateTime ;
+        adm:logMessage      "topic created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1211  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1211 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "da/T2GS1211.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1211 ;
+        adm:logEntry        bda:LGFBFB80D6DD04B4A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF3D8D68A138877F4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 12th of the 21 tara collection according to the tradition of suryagupta; this form of tara is yellow with one face and eight arms; the right hands holding a trident, a hook, a vajra and a sword; the left hands hold a jewel pressed to her heart, a hook, a club, and a flask; she is crowned with vairocana, the master of her family; she sits on a polylotus and moon.\n\n\ndeities of tibetan buddhism #290"@en .
+    
+    bdr:T2GS1211  a         :Topic ;
+        skos:altLabel       "bkra shis gnang ba'i sgrol ma/"@bo-x-ewts , "bkra shis snang ba'i sgrol ma/"@bo-x-ewts , "tara granting prosperity"@en , "svastibhasuratara"@sa-alalc97 ;
+        skos:prefLabel      "sgrol ma bkra shis snang ba/"@bo-x-ewts , "tara light of prosperity"@en , "manggalavabhasatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF3D8D68A138877F4 .
+}

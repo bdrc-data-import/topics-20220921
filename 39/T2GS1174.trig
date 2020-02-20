@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1174> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1174 {
+    bda:LGFC11B230EC86C705
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T12:47:02.219Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1174  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1174 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "39/T2GS1174.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1174 ;
+        adm:logEntry        bda:LGFC11B230EC86C705 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT279639B41AE396DE
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the form of vajrapani, as black as kohl, with three round, red eyes, gaping mouth, rolled-up tongue, bared fangs, and tawny, upward streaming bearn, eyebrows and hair; he has four arms. the first pair of hands, at the heart, make the spirit-subduing gesture; the other right hand brandishes a flaming vajra; the other left threatens with a threatening forefinger and noose; his legs are in prayalidha (right bent) trampling an elephant-faced ganapati; he has a tiger-skin loincloth, a crown of five dry human heads, and a long necklace of fifty fresh ones and is adorned with the eight great nagas; he is crowned with aksobhya and abides amid a \nblazing mass of fire; this form is identical with phyag rdor 'byung po 'dul byed (t660). the difference is that at his heart there is a dark, blue hUM, like a hair-thin line (shad, the verticle line used as a punctuation); this is a gsar ma tradition as opposed to deities of tibetan buddhism #161), citing geshe sopa.\n\n\n\n  deities of tibetan buddhism #162"@en .
+    
+    bdr:T2GS1174  a         :Topic ;
+        skos:altLabel       "phyag rdor 'byung 'dul gsar ma/"@bo-x-ewts ;
+        skos:prefLabel      "phyag rdor 'byung po 'dul byed gsar ma/"@bo-x-ewts , "vajrapani spirit-subduer, new tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NT279639B41AE396DE .
+}

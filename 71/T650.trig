@@ -1,0 +1,46 @@
+@base          <bdg:T650> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T650 {
+    bda:LG75C5F258B0A61F3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T12:13:32.046Z"^^xsd:dateTime ;
+        adm:logMessage      "english form added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDA47C35BEC77EFAF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T16:24:09.182Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T650  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T650 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "71/T650.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T650 ;
+        adm:logEntry        bda:LG75C5F258B0A61F3E , bda:LGDA47C35BEC77EFAF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1BE6C4A24E2A488B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the eight-armed form of tara; her body and four faces green and each with three eyes; her first pair of hands make the utpala gesture at her heart; the remaining three right hands hold a rosary, an arrow, and a wheel; the three left a banner, a bow, and a flask; she sits in lalita with right leg extended; she is adorned with silks and jewels; she is crowned with amoghasiddhi.  \n\n\ndeities of tibetan buddhism #150"@en .
+    
+    bdr:T650  a             :Topic ;
+        skos:prefLabel      "sgrol ma phyag brgyad/"@bo-x-ewts , "eight-armed tara"@en , "tara astabhuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1BE6C4A24E2A488B .
+}

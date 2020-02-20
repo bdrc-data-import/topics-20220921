@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1203> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1203 {
+    bda:LG68C7B2ABB5CC6AEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T10:26:31.376Z"^^xsd:dateTime ;
+        adm:logMessage      "created and topic outline"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1203  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1203 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cd/T2GS1203.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1203 ;
+        adm:logEntry        bda:LG68C7B2ABB5CC6AEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA7F2A36DE85648BB
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 20th of the 21 tara collection according to the tradition of suryagupta; this form of tara is orange, her two hands at her heart hold a golden vase; she sits in sattvaparyanka; she is crowned by the master of her family: amoghasiddhi.\n\ndeities of tibetan buddhism #298."@en .
+    
+    bdr:T2GS1203  a         :Topic ;
+        skos:altLabel       "dngos grub 'byung ba'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma dngos grub 'byung ba/"@bo-x-ewts , "tara source of attainments"@en , "siddhisambhavatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA7F2A36DE85648BB .
+}

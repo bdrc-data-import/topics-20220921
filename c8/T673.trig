@@ -1,0 +1,40 @@
+@base          <bdg:T673> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T673 {
+    bda:LG68F02FA4969BF272
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-03T10:27:13.305Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T673  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T673 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c8/T673.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T673 ;
+        adm:logEntry        bda:LG68F02FA4969BF272 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT79AEDFC3BA1A1615
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas and similar ritual texts relating to the conqueror amitayus, a long- life deity: he is white, with one face, four arms, and three peaceful eyes; his first right hand holds a white vajra; his first left hand a crystal rosary; the other pair of arms, embrace the consort, making the meditation gesture, upon which they hold a crystal flask filled with white nectar; the mother, padma kundali (pad+ma kun+d+ha li) is red, her two hands holding a coral rosary and bell; the other pair embrace the father, holding a ruby flask filled with red nectar; she sits in padma-paryanka; both mother and father are adorned with with silks and jewel ornaments; on their crowns is vairocana; on their throats amitabha; at their hearts is aksobhya; at their navels, ratnasambhava; at their genitalia is amogasiddhi, each with a consort similar to the father; deities of tibetan buddhism #181"@en .
+    
+    bdr:T673  a             :Topic ;
+        skos:prefLabel      "tshe dpag med dkar po phyag bzhi pa/"@bo-x-ewts , "four-armed white amitayus"@en , "amitayus caturbhuja sita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT79AEDFC3BA1A1615 .
+}

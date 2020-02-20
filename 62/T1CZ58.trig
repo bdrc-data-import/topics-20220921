@@ -1,0 +1,54 @@
+@base          <bdg:T1CZ58> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ58 {
+    bda:LG47158A298000FFAC
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-07T11:51:45.172Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG896487432CCCFC3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:31:05.982Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCC7DC66DC6F8B9C8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-06T12:31:08.322Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGD83E791E70FCA0BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:18:51.198Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1CZ58  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ58 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "62/T1CZ58.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ58 ;
+        adm:logEntry        bda:LG47158A298000FFAC , bda:LG896487432CCCFC3E , bda:LGCC7DC66DC6F8B9C8 , bda:LGD83E791E70FCA0BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1CZ58  a           :Topic ;
+        skos:altLabel       "the giving and taking [practice of bodhi chitta]"@bo-x-ewts ;
+        skos:prefLabel      "gtong len/"@bo-x-ewts ;
+        :isRoot             true .
+}

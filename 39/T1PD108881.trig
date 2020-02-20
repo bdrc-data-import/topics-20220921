@@ -1,0 +1,78 @@
+@base          <bdg:T1PD108881> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108881 {
+    bda:LG210F85DCEE83C753
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-02T10:25:23.038Z"^^xsd:dateTime ;
+        adm:logMessage      "name normalized"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG22172ECD39668645
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:34:23.627Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG88D2AA43182C0967
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T16:22:25.28Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG996A07E38A807777
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGB8C82566ABB3DE98
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGBC2AA3862C40971F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T11:40:03.294Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGE48A16150008F3FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T00:26:53.851Z"^^xsd:dateTime ;
+        adm:logMessage      "removed withdrawn topics from taxonomy"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T1PD108881  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108881 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "39/T1PD108881.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108881 ;
+        adm:logEntry        bda:LG210F85DCEE83C753 , bda:LG22172ECD39668645 , bda:LG88D2AA43182C0967 , bda:LG996A07E38A807777 , bda:LGB8C82566ABB3DE98 , bda:LGBC2AA3862C40971F , bda:LGE48A16150008F3FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT566F6689D645D651
+        a                   :Note ;
+        :locationStatement  "p. 2768" ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "passport, permit to travel, travel documents"@en .
+    
+    bdr:T1PD108881  a       :Topic ;
+        skos:altLabel       "'gro chog pa'i lam yig"@bo-x-ewts , "lam yig"@bo-x-ewts ;
+        skos:prefLabel      "lag khyer/"@bo-x-ewts , "护照，通行证"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT566F6689D645D651 .
+}

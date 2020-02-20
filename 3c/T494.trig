@@ -1,0 +1,59 @@
+@base          <bdg:T494> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T494 {
+    bda:LG2AA5FB93552FD93E
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-01-18T13:34:20.062Z"^^xsd:dateTime ;
+        adm:logMessage      "added annotation"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG54EC73BC6F60A3B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T12:00:06.032Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5876CA404EF7F76D
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T16:17:04.218Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation modified"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7CBAA58AD69D465C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-05T09:42:09.797Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T494  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T494 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3c/T494.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T494 ;
+        adm:logEntry        bda:LG2AA5FB93552FD93E , bda:LG54EC73BC6F60A3B9 , bda:LG5876CA404EF7F76D , bda:LG7CBAA58AD69D465C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE6C829502FE9F29B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the dharma protector dpal ye shes kyi mgon po che btsan nag po (glorious gnosis lord black greatness), name of a dharma protector; according to taranatha he reckons mgon po stag zhon ma as belonging to the sku'i rigs; he is black as the cloud at the end of time; his right hand brandishes skyward a large sandalwood club (beng chen); his left hand holds a small iron bowl (par bu) full of human blood and offering it to his mouth; he has three blazing eyes and four extraordinary bared fangs; his beard, eyebrows, and hair blaze like fire; he wears a nine-layered large cloak of black silk, tied with a golden girdle and high boots of shagreen; he is adorned with a crown of dry skulls, a long necklace of fresh heads, a black snake headband, and golden earrings; he rides a large ravenous tiger as a mount and leads a white lion as a pet; a iron halk soars overhead and a jackal, a tawny bear and a snow bear follow him; he is close if not identical in his attributes to mgon po beng bka' ma.\n\nfrom his left comes his consort devi, dkar red and three eyed, with her hair hanging down as a single braid; she hlds a scored magic stick and a bag of diseases and is riding a small, three legged iron mule amid a black shirlwind.\n\nfrom the principal's heart emanates mon tribesmen, such as:\nmon pa of body, life owner (srog bdag), pale blue, brandishing a banner of a human corpse impaled on the tip of a trident;\nmon pa of speech, butcher (shan pa), dark red, sounding a buffalo horn with his right hand and with his left wielding an iron ritual dagger and holding a black noose tied to the neck of a criminal (nyams pa);\nmon pa of mind, seal (the'u) black, holding a razor and a human heart;\nalso flesh eating mon pa, blood drinking mon pa, life cutting mon pa, soul summoning mon pa, heart ripping mon pa, nailing mon pa, and life stealing mon pa, dressed as emissaries of yama (las mkhan) their right hands holding sworda and other weaons, their left hands holding blood-filled skulls.\naround them are the seven matrka and countless other matrka, dakini and pisaca.\n\ndeities of tibetan buddhism #362;\n\nother forms of mgon po stag zhon pa occur as the dharma protectors of cycles of gter ma such as of the 'jam dpal tshe bdag nag po and other cycles; other forms of this dharma protector occur in the 17th century revelations of spo bo gter ston bdud 'dul rdo rje."@en .
+    
+    bdr:T494  a             :Topic ;
+        skos:altLabel       "mgon po beng stag zhon ma/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po stag zhon ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE6C829502FE9F29B .
+}

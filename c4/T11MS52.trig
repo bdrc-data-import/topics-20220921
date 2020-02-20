@@ -1,0 +1,70 @@
+@base          <bdg:T11MS52> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS52 {
+    bda:LG1824EF90BC6744DE
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-14T13:45:00.498Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5DFA95E542E9535F
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-23T13:02:46.009Z"^^xsd:dateTime ;
+        adm:logMessage      "re-publishing"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG84958BB11BCA4206
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:22:28.167Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of right topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGAA46558BD8B314C0
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-14T13:46:56.203Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF491AEAE5D6147A0
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T11:03:46.893Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T208"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T11MS52  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS52 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c4/T11MS52.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS52 ;
+        adm:logEntry        bda:LG1824EF90BC6744DE , bda:LG5DFA95E542E9535F , bda:LG84958BB11BCA4206 , bda:LGAA46558BD8B314C0 , bda:LGF491AEAE5D6147A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T208 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT52675C4AD9DF7E93
+        a                   :Note ;
+        :noteText           "the most famous collection of this genre is the ma Ni bka' 'bum, a terma revelation focusing on Avalokitesvara; there are however other such collections"@en .
+    
+    bdr:NTADD2EDF574EABDB5
+        a                   :Note ;
+        :noteText           "this genre classification refers to a collection of spoken teachings"@en .
+    
+    bdr:T11MS52  a          :Topic ;
+        rdfs:seeAlso        bdr:T310 ;
+        skos:prefLabel      "bka' 'bum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT52675C4AD9DF7E93 , bdr:NTADD2EDF574EABDB5 .
+}

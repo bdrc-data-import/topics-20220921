@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1195> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1195 {
+    bda:LG11C70722C77AFE45
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T11:51:07.516Z"^^xsd:dateTime ;
+        adm:logMessage      "created with rule of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9D8167C160876666
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:33:58.454Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF5EA9CEF4CC2A73A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T16:30:24.427Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1195  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1195 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/T2GS1195.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1195 ;
+        adm:logEntry        bda:LG11C70722C77AFE45 , bda:LG9D8167C160876666 , bda:LGF5EA9CEF4CC2A73A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTBFA69070D694AAC6
+        a                   :Note ;
+        :noteText           "his deity topic is applied to empowerments and rituals for the inner practice  focusing upon zhang blon rdo rje bdud 'dul, who is dark blue, extremely wrathful and shining, with three eyes, bared fangs, and rolled-up tongue; his right hand holds a precious gem and his left a golden vase full of jewels; his beard, eyebrows, and hair are dark brown and upward streaming; he wears a flowing cloak of black silk and boots of shagreen and he is adorned with all kinds of ornaments, with a jewel crown, a golden girdle and a long necklace of human heads; he abides in lalita posture amidst a blazing mass of fire; on his left comes his consort, vajrasamsiddhi (rdo rje kun 'grub ma, vajra fulfillment). blue with her right hand offering food to the principal and her left holding a bag of diseases; she has white silk garments and a long necklace of heads and tawny hair handing down.\n\nhe has four attendants on the spokes of the four spoked wheel: b) east: vasudeva (nor lha, wealth deity) white with white silk garments and jewel ornaments; his right hand holds a gem and his left a box of jewels; he abides in alidha posture (right leg extended) upon a set of male and female gandharvas together and peaceful in manner; c) south: mahakala (mgon po) black, very wrathful, wearing black silk with a green border; he is adorned with snakes and human heads; his right hand holds a large, sandalwood club (beng chen) and his left a small iron bowl; he abides in alidha posture (right leg extended) upon a seat of male and female yamas together; d) west: atavaka ('brog gnas), red, with five faces the central a lions's, the right a horse's and sheep's; the left a goat's and a monkey's, and six arms; the first pair of hands hold a box of jewels; the second pair of hands a golden wheel and fruit (shing 'bras); the last rice and a bowl full of assorted medicines; adorned with silks and jewels, he abides in alidha posture (right leg extended) upon a seat of male and female nagas together; e) north: vaisravana, green, stout and shining, adorned with silks and jewel ornaments, and wearing a corslet of lacquered leather and a helmet; he holds a golden horse-whip and a basin full of assorted medicines and gems; riding the horse ngang ser (golden goose), he is treading upon male and female yaksas; the principal is crowned with vajrapani and the attendants with five pointed vajras.\n\naccording to others the four attendants are not generated and the vajramaradama is dark blue and extremely wrathful, with three eyes, his right hand hods a trident khatvanga and his left a blood filled skul; his legs, in pratyalidha (right bent) crush male and female raksasas; his dress is as before; his consort is as above; they are brother and sister (side by sid).\n\ndeviation: moon seat\n\ndeities of tibetan buddism #331"@en .
+    
+    bdr:T2GS1195  a         :Topic ;
+        skos:prefLabel      "gnod sbyin zhang blon rdo rje bdud 'dul nang sgrub/"@bo-x-ewts , "the yaksa zhang blon vajramaradama inner practice"@en ;
+        :isRoot             true ;
+        :note               bdr:NTBFA69070D694AAC6 .
+}

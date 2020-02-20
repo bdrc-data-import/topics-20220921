@@ -1,0 +1,41 @@
+@base          <bdg:T752> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T752 {
+    bda:LG44EC34C35CC42BE8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T06:43:24.083Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T752  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T752 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "94/T752.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T752 ;
+        adm:logEntry        bda:LG44EC34C35CC42BE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB6A964DFCEB2F5CC
+        a                   :Note ;
+        :noteText           "this term relates to the subject deity of rituals dealing with this deity in the retinue of vaisravana;  he is yellow, mounted on a running blue horse; his right hand holds a blazing gem and his left a treasure mongoose; he is adorned with silks and jewels;  deities of tibetan buddhism #322"@en .
+    
+    bdr:T752  a             :Topic ;
+        skos:altLabel       "gnod sbyin nor bu bzang po/"@bo-x-ewts , "yaksa manibhadra"@sa-alalc97 ;
+        skos:prefLabel      "nor bu bzang po/"@bo-x-ewts , "excellent gem"@en , "manibhadra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB6A964DFCEB2F5CC .
+}

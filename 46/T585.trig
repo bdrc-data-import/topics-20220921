@@ -1,0 +1,46 @@
+@base          <bdg:T585> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T585 {
+    bda:LG5F705C7237451D86
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T01:50:43.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added to note: deities of tibetan buddhism"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF1ECF0130D74FE0F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T01:43:27.665Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T585  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T585 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "46/T585.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T585 ;
+        adm:logEntry        bda:LG5F705C7237451D86 , bda:LGF1ECF0130D74FE0F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT674AEA9F56D28543
+        a                   :Note ;
+        :noteText           "this topic is applied to the rituals and similar texts concerned with the maitri mkha' spyod; the deity is bright red; she has one face and two hands; her face is frowning with bared fangs; she has three round, red, upward gazing eyes; her left hand holds a skull cup full of nectar; her right hand holds a five-pointed vajra;  \ndeities of tibetan buddhism, #78"@en .
+    
+    bdr:T585  a             :Topic ;
+        skos:prefLabel      "mai tri mkha' spyod/"@bo-x-ewts , "maitri khecari"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT674AEA9F56D28543 .
+}

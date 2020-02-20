@@ -1,0 +1,52 @@
+@base          <bdg:T8LS16583> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16583 {
+    bda:LG52118D392E9BC243
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-27T09:07:14.591Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG6D6E782605B49E83
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-26T16:30:34.737Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16583  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16583 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6f/T8LS16583.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16583 ;
+        adm:logEntry        bda:LG52118D392E9BC243 , bda:LG6D6E782605B49E83 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA9958428A64CCCDA
+        a                   :Note ;
+        :noteText           "see also Tibetan-Sanskrit Dictionary by Lokesh Chandra, p 1200-1201"@en .
+    
+    bdr:NTFE065229434C08A0
+        a                   :Note ;
+        :locationStatement  "p. 453" ;
+        :noteSource         bdr:MW00EGS1016962 .
+    
+    bdr:T8LS16583  a        :Topic ;
+        rdfs:comment        "sdom pa slar yang gso ba/ dper na dge tshul dang dge slong gi phyir bcos lta bu/"@bo-x-ewts ;
+        skos:altLabel       "phyir bcos pa/"@bo-x-ewts , "pratikAr"@sa-x-ndia ;
+        skos:prefLabel      "phyir bcos/"@bo-x-ewts , "pratividhAn"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTA9958428A64CCCDA , bdr:NTFE065229434C08A0 .
+}

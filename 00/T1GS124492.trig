@@ -1,0 +1,40 @@
+@base          <bdg:T1GS124492> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS124492 {
+    bda:LG7D8A8DDEBFE863EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-02T12:44:24.584Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS124492  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS124492 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "00/T1GS124492.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS124492 ;
+        adm:logEntry        bda:LG7D8A8DDEBFE863EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8B8DF42E943EC8A2
+        a                   :Note ;
+        :noteText           "longevity ritual invoking amitayus from the revelations of zhig po gling pa"@en .
+    
+    bdr:T1GS124492  a       :Topic ;
+        skos:prefLabel      "tshe sgrub rgyal ba 'dus pa (zhig po gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B8DF42E943EC8A2 .
+}

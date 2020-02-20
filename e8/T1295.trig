@@ -1,0 +1,47 @@
+@base          <bdg:T1295> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1295 {
+    bda:LGEAD89797B7E29CBD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:40:20.134Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFE1D8E9A072A70BD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-05T11:29:43.41Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T10MS14317 (dbang bskur) and T48 (dbang chog) as parents"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T1295  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1295 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e8/T1295.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1295 ;
+        adm:logEntry        bda:LGEAD89797B7E29CBD , bda:LGFE1D8E9A072A70BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTCCF5E91DEC87CE8F
+        a                   :Note ;
+        :noteText           "this category refers to the induction of the student into the dharani for invocation"@en .
+    
+    bdr:T1295  a            :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "gzungs dbang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCCF5E91DEC87CE8F .
+}

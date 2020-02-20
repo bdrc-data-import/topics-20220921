@@ -1,0 +1,60 @@
+@base          <bdg:T10MS14290> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14290 {
+    bda:LG0B02DCB64B0DD041
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-22T12:32:35.745Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2139C7C7D58B0B51
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.639Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG42C9A619CACF6C18
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T11:48:10.033Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavour of T00JR140"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG448CEB19B54AA516
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.11Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T10MS14290  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14290 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a4/T10MS14290.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14290 ;
+        adm:logEntry        bda:LG0B02DCB64B0DD041 , bda:LG2139C7C7D58B0B51 , bda:LG42C9A619CACF6C18 , bda:LG448CEB19B54AA516 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTF633A831332DC19B
+        a                   :Note ;
+        :noteText           "synonymous with the 4th empowerment, dbang bzhi pa, in some contexts"@en .
+    
+    bdr:T10MS14290  a       :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:altLabel       "word empowerment/"@bo-x-ewts ;
+        skos:prefLabel      "tshig dbang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF633A831332DC19B .
+}

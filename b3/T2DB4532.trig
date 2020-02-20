@@ -1,0 +1,81 @@
+@base          <bdg:T2DB4532> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2DB4532 {
+    bda:LG0736205E59175657
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:19:16.517Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T338 (sems bskyed)"@en .
+    
+    bda:LG62559502A2E9962B
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T11:01:11.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG82722ED9E3369B0C
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-08-22T13:10:59.75Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00003 .
+    
+    bda:LG9C01D0C7C0FD8F65
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-14T16:21:35.966Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA7D4F393E9B81952
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T20:38:42.474Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGCA46754AC1D10D6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-09T03:01:07.839Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGCE8C3BE6972CA7B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-02-25T10:57:41.249Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T2064, mapped all works"@en .
+    
+    bda:LGD56E62FA77534488
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T14:22:40.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2DB4532  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2DB4532 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b3/T2DB4532.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2DB4532 ;
+        adm:logEntry        bda:LG0736205E59175657 , bda:LG62559502A2E9962B , bda:LG82722ED9E3369B0C , bda:LG9C01D0C7C0FD8F65 , bda:LGA7D4F393E9B81952 , bda:LGCA46754AC1D10D6F , bda:LGCE8C3BE6972CA7B9 , bda:LGD56E62FA77534488 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2064 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT717BE1325953E9B5
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T2064."@en .
+    
+    bdr:T2DB4532  a         :Topic ;
+        skos:prefLabel      "byang chub kyi sems/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT717BE1325953E9B5 .
+}

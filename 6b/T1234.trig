@@ -1,0 +1,46 @@
+@base          <bdg:T1234> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1234 {
+    bda:LGEA5D90A470DBCBB8
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T16:17:09.528Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFEC3A1AF15F0E8A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-01-17T12:23:42.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also, additional name, note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1234  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1234 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6b/T1234.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1234 ;
+        adm:logEntry        bda:LGEA5D90A470DBCBB8 , bda:LGFEC3A1AF15F0E8A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0513C7F9FB742DCC
+        a                   :Note ;
+        :noteText           "referes to the critical methods for examining a variety of objects including art, jewels, horses, etc."@en .
+    
+    bdr:T1234  a            :Topic ;
+        rdfs:seeAlso        bdr:T1775 , bdr:T826 ;
+        skos:prefLabel      "brtag thabs/"@bo-x-ewts , "methods for examinations"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0513C7F9FB742DCC .
+}

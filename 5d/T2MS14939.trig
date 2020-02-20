@@ -1,0 +1,52 @@
+@base          <bdg:T2MS14939> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14939 {
+    bda:LG15DEA9EB666ABF41
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:06:01.828Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8F27F18775D91518
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-15T10:08:17.879Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD8438D89A472EE1B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-10T11:54:35.44Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14939  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14939 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5d/T2MS14939.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14939 ;
+        adm:logEntry        bda:LG15DEA9EB666ABF41 , bda:LG8F27F18775D91518 , bda:LGD8438D89A472EE1B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT571A6597D28041FE
+        a                   :Note ;
+        :noteText           "this topic is applied to trust or confidence and the conviction in that. most commonly used in reference to the dharma"@en .
+    
+    bdr:T2MS14939  a        :Topic ;
+        skos:altLabel       "conviction/"@bo-x-ewts ;
+        skos:prefLabel      "yid ches/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT571A6597D28041FE .
+}

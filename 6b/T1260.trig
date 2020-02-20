@@ -1,0 +1,47 @@
+@base          <bdg:T1260> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1260 {
+    bda:LG3C971F81CD662883
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T20:28:04.617Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7ACF6B849F4A8972
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:18:29.696Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1260  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1260 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6b/T1260.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1260 ;
+        adm:logEntry        bda:LG3C971F81CD662883 , bda:LG7ACF6B849F4A8972 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE04D0F8302F106E9
+        a                   :Note ;
+        :noteText           "this topic is applied to the form of the white wish-fulfilling tara as transmitted by ba ri lo tsA ba; she is white and is differentiated from the form taught by atisa in that she has only two eyes, not seven; the utpala she holds at her heart divides into three branches, with three flowers by her ear, respectively small and closed, opening, and fully developed, symbolizing the buddhas of the three times; rather than \"proudly\", she sits with upright body; she is crowned with amitabha; deities of tibetan buddhism #5"@en .
+    
+    bdr:T1260  a            :Topic ;
+        skos:altLabel       "ba ri lugs ki sgrol dkar yid bzhin 'khor lo/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol dkar yid bzhin 'khor lo ba ri lugs/"@bo-x-ewts , "wish-fulfilling-wheel white tara in the tradition of ba ri lo tsa ba"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE04D0F8302F106E9 .
+}

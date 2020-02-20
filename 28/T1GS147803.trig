@@ -1,0 +1,40 @@
+@base          <bdg:T1GS147803> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147803 {
+    bda:LG152B0BF5A70A6CB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T11:27:36.64Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147803  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147803 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "28/T1GS147803.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147803 ;
+        adm:logEntry        bda:LG152B0BF5A70A6CB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF538CA71F30E9F2E
+        a                   :Note ;
+        :noteText           "calendrical wheel used in calculations"@en .
+    
+    bdr:T1GS147803  a       :Topic ;
+        skos:prefLabel      "rtsis kyi 'khor lo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF538CA71F30E9F2E .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1178> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1178 {
+    bda:LG47B3B4B6673FC09D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T12:18:48.185Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9721A47120A2A439
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T01:40:26.877Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1178  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1178 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/T2GS1178.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1178 ;
+        adm:logEntry        bda:LG47B3B4B6673FC09D , bda:LG9721A47120A2A439 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF6685C1F4B5D01E9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals for the black lady parnasabari (leaf-clad wild woman) whose color is black, with one face, two arms, and three eyes; her right hand holds a cutting axe and her left a fly-whisk of fresh leaves; she has upward-streaming hair and is very wrathful; she is adorned with a tiger skin, silks and jewels; she abides in pratyalidha posture (left leg extended) upon a crane; she is crowned with vairocana\n\naccording to taranatha she is called black crane mounted sabari (ri khrod nag mo kang+ka la chibs pa); there also exists a white crane-mounted sabari, semi-peaceful in sentiment.  \n\ndeities of tibetan buddhism #221"@en .
+    
+    bdr:T2GS1178  a         :Topic ;
+        skos:altLabel       "parnasabari kali/"@bo-x-ewts , "ri khrod ma nag mo kang+ka la chibs pa/"@bo-x-ewts , "black, crane mounted sabari"@en ;
+        skos:prefLabel      "ri khrod ma lo ma gyon ma nag mo/"@bo-x-ewts , "black parna sabari"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF6685C1F4B5D01E9 .
+}

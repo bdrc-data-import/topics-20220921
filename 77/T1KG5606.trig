@@ -1,0 +1,41 @@
+@base          <bdg:T1KG5606> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG5606 {
+    bda:LGD49DE06D84CE8954
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T09:58:04.483Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG5606  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG5606 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "77/T1KG5606.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG5606 ;
+        adm:logEntry        bda:LGD49DE06D84CE8954 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4B4E3AC84A14DF06
+        a                   :Note ;
+        :noteText           "deity of wealth; from the bka' ma transmission of gnubs chen sangs rgyas ye shes"@en .
+    
+    bdr:T1KG5606  a         :Topic ;
+        skos:altLabel       "rnam sras gsang sgrub drag po rta sngon ma/"@bo-x-ewts ;
+        skos:prefLabel      "rnam sras drag po rta sngon ma (gnubs chen lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4B4E3AC84A14DF06 .
+}

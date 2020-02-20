@@ -1,0 +1,47 @@
+@base          <bdg:T126> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T126 {
+    bda:LG8CEAE8065A5E9A1C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-23T10:37:45.652Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGEDC5E771D17ED587
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T15:44:39.016Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T126  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T126 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c6/T126.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T126 ;
+        adm:logEntry        bda:LG8CEAE8065A5E9A1C , bda:LGEDC5E771D17ED587 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3F4FBC04A2FCD893
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing on the great king vaisravana, who is red with one face and two arms; his right hand holds a tiger banner and a red spear; his left a mongoose and a hook; he has three round, red eyes, bared fangs and a diadem of red silk, and is adorned with all the jewel ornaments; he wears fluttering garments of assorted silks and a corslet of lacquered leather, a golden girdle, a helmet on his head and scored leaves of lacquered leather on his feet; he abides amid blazing light rays that subjugate all the three realms.\n\n\nhis four attendants are in the four directions: b) from the east vasudhara; c) from the south sarasvati; e) from the west dhanapala (nor skyong ma); e) from the north bharali (b+ha ra li). they are red and peaceful-wrathful (zhi ma khro), adorned with bone ornaments, and hold hooks in their right hands and fly-whisks in their left.\n\nin the eight outer mansions are the eight horsemen as in deities of tibetan buddhism #300 b-j  with the spellings lngas rtsen and 'jam po 'khyil ba except that each holds in his right hand his own emblem and a red spear and in his left a hook and a mongoose.\n\ndeviation: sun disk.\n\n\n\ndeities of tibetan buddhism #313."@en .
+    
+    bdr:T126  a             :Topic ;
+        skos:altLabel       "catus cihnaguhya vaisravana"@sa-alalc97 ;
+        skos:prefLabel      "rnam sras yang gsang phyag mtshan bzhi pa/"@bo-x-ewts , "four emblem very secret vaisravana"@en , "vaisravana caturyudha atiguhya"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3F4FBC04A2FCD893 .
+}

@@ -1,0 +1,54 @@
+@base          <bdg:T381> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T381 {
+    bda:LG0DC6178B916625F4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T16:52:51.536Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & description, cleanup the note \"...meditative outlook\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG51A907D6695B6CE6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T14:55:50.817Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG90EC4BE17290C1FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T20:28:45.295Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T10MS14311 to T385"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGDE53FD82E484CA7C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-22T15:57:41.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes, see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T381  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T381 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/T381.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T381 ;
+        adm:logEntry        bda:LG0DC6178B916625F4 , bda:LG51A907D6695B6CE6 , bda:LG90EC4BE17290C1FA , bda:LGDE53FD82E484CA7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T381  a             :Topic ;
+        rdfs:comment        "philosophical position" ;
+        rdfs:seeAlso        bdr:T1335 , bdr:T385 , bdr:T395 ;
+        skos:prefLabel      "lta ba/"@bo-x-ewts , "view"@en , "见地"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T481> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T481 {
+    bda:LG328CA9CE726D4259
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:39:24.511Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8B8149ACC69B9A9F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T15:42:48.631Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE9B917D2E71A4F82
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-19T12:43:17.694Z"^^xsd:dateTime ;
+        adm:logMessage      "No Need withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T481  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T481 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4d/T481.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T481 ;
+        adm:logEntry        bda:LG328CA9CE726D4259 , bda:LG8B8149ACC69B9A9F , bda:LGE9B917D2E71A4F82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T481  a             :Topic ;
+        skos:prefLabel      "rgyal ba'i spyi sgrub (mnga' ris paN chen)"@bo-x-ewts ;
+        :isRoot             true .
+}

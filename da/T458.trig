@@ -1,0 +1,40 @@
+@base          <bdg:T458> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T458 {
+    bda:LG61DD5CAE08809E8B
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-09T11:42:56.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added english term"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T458  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T458 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "da/T458.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T458 ;
+        adm:logEntry        bda:LG61DD5CAE08809E8B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCCE20154113F20BE
+        a                   :Note ;
+        :noteText           "short initiation using the bali cakes"@en .
+    
+    bdr:T458  a             :Topic ;
+        skos:prefLabel      "gtor dbang /"@bo-x-ewts , "torma empowerment"@en ;
+        :isRoot             true ;
+        :note               bdr:NTCCE20154113F20BE .
+}

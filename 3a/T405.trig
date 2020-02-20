@@ -1,0 +1,40 @@
+@base          <bdg:T405> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T405 {
+    bda:LGA3B569254F9DDAE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-11T11:38:51.692Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGEC4390DD12248E74
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T14:58:56.243Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T405  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T405 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3a/T405.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T405 ;
+        adm:logEntry        bda:LGA3B569254F9DDAE2 , bda:LGEC4390DD12248E74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T405  a             :Topic ;
+        skos:prefLabel      "rno mthong /"@bo-x-ewts , "dice prognostication"@en ;
+        :isRoot             true .
+}

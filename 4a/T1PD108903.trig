@@ -1,0 +1,60 @@
+@base          <bdg:T1PD108903> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108903 {
+    bda:LG0109E57A1EB29481
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T12:06:45.467Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG10E7959B5B3722CF
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG84128CEC0F1C045B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:52:46.607Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC13BB7F5E65D1420
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108903  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108903 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4a/T1PD108903.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108903 ;
+        adm:logEntry        bda:LG0109E57A1EB29481 , bda:LG10E7959B5B3722CF , bda:LG84128CEC0F1C045B , bda:LGC13BB7F5E65D1420 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT6D6D09D62352EAA0
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 2332) ཛམྦུ་གླིང་། [ལེགས་] འཛམ་གླིང་གླིང་ཞེས་འཁོད།"@en .
+    
+    bdr:T1PD108903  a       :Topic ;
+        skos:altLabel       "dzam+bu gling /"@bo-x-ewts ;
+        skos:prefLabel      "'dzam bu gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6D6D09D62352EAA0 .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T1945> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1945 {
+    bda:LG54C6C2008A7FA487
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:35:20.371Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1945  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1945 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f2/T1945.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1945 ;
+        adm:logEntry        bda:LG54C6C2008A7FA487 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT515F8B88BDB23898
+        a                   :Note ;
+        :locationStatement  "pp. 83-87" ;
+        :noteSource         bdr:MW24997 ;
+        :noteText           "copper working industry"@en .
+    
+    bdr:T1945  a            :Topic ;
+        skos:prefLabel      "zangs bzo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT515F8B88BDB23898 .
+}

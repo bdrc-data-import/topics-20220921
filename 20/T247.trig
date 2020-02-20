@@ -1,0 +1,81 @@
+@base          <bdg:T247> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T247 {
+    bda:LG19A8C39FF55F8FED
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-24T10:28:31.946Z"^^xsd:dateTime ;
+        adm:logMessage      "changed new bon to bon gsar"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG41C189AAB0EA2EB1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-24T09:59:31.921Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG46FE2198A252F88A
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T16:26:24.093Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG546B46BE2567F16D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-24T09:57:41.871Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note, added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8469FB4BE978E202
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-24T10:22:22.167Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8EEB41958592026C
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-02-11T15:00:32.932Z"^^xsd:dateTime ;
+        adm:logMessage      "added english & chinese name"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGAFE751EFBA695513
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:11:25.392Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T366 (bon gsar)"@en .
+    
+    bda:LGF55A2F1E25AF1DC7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-24T11:00:21.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added CDATA to zhang zhung"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T247  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T247 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "20/T247.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T247 ;
+        adm:logEntry        bda:LG19A8C39FF55F8FED , bda:LG41C189AAB0EA2EB1 , bda:LG46FE2198A252F88A , bda:LG546B46BE2567F16D , bda:LG8469FB4BE978E202 , bda:LG8EEB41958592026C , bda:LGAFE751EFBA695513 , bda:LGF55A2F1E25AF1DC7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF4D8104BEFDEEE77
+        a                   :Note ;
+        :noteText           "Tibetan religious tradition; considered to derive from native practices of Tibet that predate the introduction of Buddhism. Bon originated in the ancient province of Guge in western Tibet, west of Lake Manasarovar in the kingdom of Zhang zhung."@en .
+    
+    bdr:T247  a             :Topic ;
+        rdfs:seeAlso        bdr:T1710 ;
+        skos:prefLabel      "bon/"@bo-x-ewts , "bon"@en , "苯"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTF4D8104BEFDEEE77 .
+}

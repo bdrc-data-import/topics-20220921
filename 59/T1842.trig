@@ -1,0 +1,64 @@
+@base          <bdg:T1842> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1842 {
+    bda:LG36977CEA56BB6374
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-05T14:31:08.918Z"^^xsd:dateTime ;
+        adm:logMessage      "updated the spelling to conform to ETWS; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG5F3CAEB132D8195A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-04T15:37:46.66Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected wylie and added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5F7AEFEA32446FC1
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:04:55.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG7D3558E874062C4E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-23T16:16:56.656Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos + mistakes"@en ;
+        adm:logWho          bdr:U00009 .
+    
+    bda:LGF9FE1B274133B4C8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T00:05:46.124Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1842  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1842 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "59/T1842.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1842 ;
+        adm:logEntry        bda:LG36977CEA56BB6374 , bda:LG5F3CAEB132D8195A , bda:LG5F7AEFEA32446FC1 , bda:LG7D3558E874062C4E , bda:LGF9FE1B274133B4C8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB2BE1099820E22D9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals connected with various forms of the mahakala, both gsar ma and rnying ma not further relegated to more specific forms;\n\nfor the gsar ma traditions the forms of mgon po trak+Shad are:\n1) mgon po lcam dral trak+Shad gnyos lugs;\n2) mgon po trak+Shad dwags po'i lugs;\n3) mgon po trak+Shad seng zhon jo bo'i lugs;\n4) mgon po trak+Sad gri gug sbrags sgrub ma\n5) mgon po trak+Sad rkang thang ma;\n6) mgon po trak+Sad ma ning ma;\n6) mgon po trak+Sad 'brong zal can\n7) mgon po trak+Sad gsang sgrub shwa na'i zhal can;\n\nforms of mgon po trak+Shad comprise the main protector deity of the jo nang pa"@en .
+    
+    bdr:T1842  a            :Topic ;
+        skos:prefLabel      "mgon po trak+Shad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB2BE1099820E22D9 .
+}

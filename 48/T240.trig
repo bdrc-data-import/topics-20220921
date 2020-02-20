@@ -1,0 +1,76 @@
+@base          <bdg:T240> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T240 {
+    bda:LG12425FC577C4F144
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-18T15:39:07.403Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"skad shan sbyar\" with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG1B0DD394807D217C
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-10T15:33:33.196Z"^^xsd:dateTime ;
+        adm:logMessage      "added skad lnga shan sbyar"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG39EA8DFA971AB22B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-04T14:18:54.639Z"^^xsd:dateTime ;
+        adm:logMessage      "added fourlingual"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG48ED7890854E95C2
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-13T15:31:17.63Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG77BD7AAA4BAD135F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-17T10:35:14.704Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC90BAAB25AAEF0E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-13T11:29:46.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added name as \"skad yig shan sbyar\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T240  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T240 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "48/T240.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T240 ;
+        adm:logEntry        bda:LG12425FC577C4F144 , bda:LG1B0DD394807D217C , bda:LG39EA8DFA971AB22B , bda:LG48ED7890854E95C2 , bda:LG77BD7AAA4BAD135F , bda:LGC90BAAB25AAEF0E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3078B7C6ADBA427D
+        a                   :Note ;
+        :locationStatement  "2. ff" ;
+        :noteSource         bdr:MW3CN1657 ;
+        :noteText           "དཔེ་ཆ་འདིའི་ཤོག་སྣེའི་མཚན་བྱང་ལ་\"སྐད་ཤན་སྦྱར་\"ཞེས་གསལ།"@bo .
+    
+    bdr:NT783EA872F822208C
+        a                   :Note ;
+        :noteText           "this topic is generically assigned to bilingual and multilingual dictionaries and texts"@en .
+    
+    bdr:T240  a             :Topic ;
+        skos:altLabel       "skad gnyis shan sbyar/ skad gsum shan sbyar/ skad bzhi shan sbyar/ skad lnga shan sbyar/"@bo-x-ewts , "skad yig shan sbyar/"@bo-x-ewts ;
+        skos:prefLabel      "skad shan sbyar/"@bo-x-ewts , "dictionaries, bilingual, trilingual and quadrilingual"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3078B7C6ADBA427D , bdr:NT783EA872F822208C .
+}

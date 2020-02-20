@@ -1,0 +1,58 @@
+@base          <bdg:T00KG02670> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02670 {
+    bda:LG20FDFE412E37E794
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-06T10:46:29.129Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan from t58"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG6853107AB5B77424
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T09:57:08.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added note to withdrawn record"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE1875B0DDDBF7315
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-06T10:47:40.481Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGF9B3E4C3A4277D5B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-12T13:08:50.077Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG02670  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02670 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "59/T00KG02670.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02670 ;
+        adm:logEntry        bda:LG20FDFE412E37E794 , bda:LG6853107AB5B77424 , bda:LGE1875B0DDDBF7315 , bda:LGF9B3E4C3A4277D5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTB7B7251C55CBD7F0
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T58"@en .
+    
+    bdr:T00KG02670  a       :Topic ;
+        skos:prefLabel      "zhal gdams don lnga ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB7B7251C55CBD7F0 .
+}

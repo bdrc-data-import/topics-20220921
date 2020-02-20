@@ -1,0 +1,46 @@
+@base          <bdg:T1171> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1171 {
+    bda:LG3189C463A2B6C3B1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-22T12:15:50.306Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1171 mo dpe"@en .
+    
+    bda:LG777E9A8CB4BAC11D
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-07-06T09:41:08.977Z"^^xsd:dateTime ;
+        adm:logMessage      "note added: terms reversed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1171  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1171 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "42/T1171.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1171 ;
+        adm:logEntry        bda:LG3189C463A2B6C3B1 , bda:LG777E9A8CB4BAC11D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA1CD5CFFF8CA35ED
+        a                   :Note ;
+        :noteText           "this topic is applied to works which describe magical methods of prognostication and also for works which describe protection from unfortunate results"@en .
+    
+    bdr:T1171  a            :Topic ;
+        rdfs:seeAlso        bdr:T1PD106860 ;
+        skos:prefLabel      "mo dpe/"@bo-x-ewts , "prognostication"@en ;
+        :isRoot             true ;
+        :note               bdr:NTA1CD5CFFF8CA35ED .
+}

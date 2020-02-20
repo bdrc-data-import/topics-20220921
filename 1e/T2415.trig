@@ -1,0 +1,42 @@
+@base          <bdg:T2415> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2415 {
+    bda:LGF5149FA1AB6878F7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T13:08:14.623Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1619 (rta glud) and T1CZ25 (phyugs glud)"@en .
+    
+    bda:T2415  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1e/T2415.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2415 ;
+        adm:logEntry        bda:LGF5149FA1AB6878F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD3766A5076518750
+        a                   :Note ;
+        :locationStatement  "v. 69" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "this key word is applied to rituals for clearing of obstacles through the use of thread crosses and effigies used in ransoms\naccording to the rin chen gter mdzod some of the rituals belonging to this group ('phral rkyen bar chad sel ba mdos glud kyi skor) are:\n1) brgya bzhi'i cho ga (gnubs lugs; smin gling lugs)\n2) snang brgyad cho ga (sangs rgyas gling pa ; chags med gsung)\n3) rak+Sa'i mdos bcu (ra shag bsod nams rdo rje)\n4) stod 'phyong smad 'phyong (gter chos)5) 5) brtan ma bcu gnyis kyi mdos (mnga' bdag nyang ral gter ma; chags med gsung)\n6) bran ma'i sun zlog (ratna gling pa'i thugs sgrub)\n7) brtan mdos\n8) rgyal po drug mdos gzhung dang smad 'phyong\n9) bca' thabs bskyed bstim dang stod 'phyong las thabs (rgyal sras legs pa)\n10) rgyal po dkar po drug mdos (ra shag dang grwa sgom zung gi gter ma)\n11) kha 'bar ma dkar nag khrag gsum (gu ru chos dbang) and kha 'bar ma dkar mo'i lag len (byang bdag bkra shis stobs rgyal)\n12) gling bzhi srid pa'i spyi mdos (ratna gling pa'i thugs sgrub yang snying 'dus pa)\n13) btsan mdos (bon po drag rtsal)\n14) ma mo'i mdos (khyung po dpal dge)\n15) gtsug lag snang srid spyi skong gi mdos chog (byang bdag gi dag snang)\n16) srid pa khod snyoms mdos (klong gsal snying po'i bde gshegs yongs 'dus)\n17) gling bzhi spyi mdos (klong gsal snying po)\n18) bdud mo khrag ral ma'i mdos (klong gsal snying po)\n19) rigs gsum mgon po'i dril sgrub (gnam chos)\n20) las hur drag mo dang kag zlog rnam dgu (gnam chos)\n21) ha sa gar+b+ha'i sgrub thabs bka' gtad\n22) ma mo'i khrag mdos bka' gtad\n23) brag gter gtum po dregs 'dul gyi lha chog (rol pa'i rdo rje)\n24) sde brgyad khengs mdos (mchog gling thugs sgrub bar chad kun sel)\n25) sha brgya zan brgya (gu ru jo tshe)\n26) mi phyugs glud rdzong (bstan gnyis gling par rmi lam du stsal ba'i)\n27) rig 'dzin srog sgrub kyi lan chags chu bsgyur (lha btsun nam mkha' 'jigs med)\n28) glud chog (bka' gter gzhung spyir sbyar ba)\n29) glud gtor bsdus pa brgya rtsa gtong thabs (karma chags med)\n30) gtum po dregs 'dul las phrang dam sri glud mdos (rol pa'i rdo rje)\ngdon gsum mdos (rig 'dzin thugs kyi rdo rje\n31) grib glud\n32) rta glud\n33) phyugs glud\n34) shi 'dre glud bsngo"@en .
+    
+    bdr:T2415  a            :Topic ;
+        rdfs:seeAlso        bdr:T1619 , bdr:T1CZ25 ;
+        skos:prefLabel      "mdos glud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD3766A5076518750 .
+}

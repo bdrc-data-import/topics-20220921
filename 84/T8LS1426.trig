@@ -1,0 +1,45 @@
+@base          <bdg:T8LS1426> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS1426 {
+    bda:LG210C46D6BB03BA53
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-04T14:40:32.679Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGEC8973C4C8CBC0FA
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-05T12:37:10.697Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T8LS1426  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS1426 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "84/T8LS1426.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS1426 ;
+        adm:logEntry        bda:LG210C46D6BB03BA53 , bda:LGEC8973C4C8CBC0FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT53B0904C9F4E6406
+        a                   :Note ;
+        :noteText           "national flag"@en .
+    
+    bdr:T8LS1426  a         :Topic ;
+        skos:prefLabel      "rgyal dar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT53B0904C9F4E6406 .
+}

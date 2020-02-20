@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1326> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1326 {
+    bda:LGC69DE2A6B50C6D7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T13:50:54.961Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1326  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1326 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "db/T2GS1326.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1326 ;
+        adm:logEntry        bda:LGC69DE2A6B50C6D7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3201E83DD71CA0F3
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1551" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "ro rnam pa drug (medical and food)\nthe chos rnam kun btus (citing the bstan 'gyur, gso rig he, 447-1) enumerates these as 1) mngar ba, sweet; 2) skyur ba, sour; 3) tsha bro ba, pungent; 4) kha ba, salty ; 5) tsha ba, bitter; 6) bska ba, astringent."@en .
+    
+    bdr:NT9EF1DF1B4D4D1ADC
+        a                   :Note ;
+        :noteText           "this topic is applied to works referring to six tastes in medical works"@en .
+    
+    bdr:T2GS1326  a         :Topic ;
+        skos:prefLabel      "ro/"@bo-x-ewts , "taste, flavor"@en , "rāsa"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3201E83DD71CA0F3 , bdr:NT9EF1DF1B4D4D1ADC .
+}

@@ -1,0 +1,69 @@
+@base          <bdg:T2GS1230> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1230 {
+    bda:LG18CDF5EF9EAC400C
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T10:25:00.405Z"^^xsd:dateTime ;
+        adm:logMessage      "changed from withdrawn to released"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG47F5C959825071D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T06:42:11.598Z"^^xsd:dateTime ;
+        adm:logMessage      "note added gur lha 13"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG69E9AC5CC466A67C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T12:00:56.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added name from T2160"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFEB87A4670DDD462
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T15:31:01.839Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1230  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1230 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "af/T2GS1230.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1230 ;
+        adm:logEntry        bda:LG18CDF5EF9EAC400C , bda:LG47F5C959825071D9 , bda:LG69E9AC5CC466A67C , bda:LGFEB87A4670DDD462 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7E5643A2C3A97BA9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a group of eight deities:\na)  black mahakala; b) black devi (ekajati);\nc) black yaksa (nag po gnod sbyin), his right hand brandishing a knife and his left with a sun shining in from his open palm; he wears a flayed human skin and has golden earrings;\nd) from his left comes black yaksi (nag mo gnod sbyin), her right hand with a golden razor, her left with a moon shining from its open palm; she has black silk garments and a coral ornament on the end of her braid of hair; from their hearts emanate, from the fathers two tri and from the mother's one h+hyauH which become putra and his brother and sister (pu tra ming sring gsum) in front of them;\ne) from tri, black putra (pu tra nag po) with one face and two arms, his right hand brandishing a long saber, his left holding a skull full of warm blood and brains and offering it to his mouth; he has a mon kri sash (ga sha) and black silk garments;\nf) from tri black bhratr (b+ha tra nag po) wearing a silk sash and a tiger skin coat, holding in his right hand a dam shing (pledge stick) and in his left a human heart, which he is eating;\ng) from the b+hyauh, ekajata raksasi (srin mo ral gcig ma), her right hand holding a golden razor and her left entrails with blood dripping from her eyes and fire blazing from her mouth;\nall five are dark blue and dressed as children of the mon hill tribes, with the ornaments of human heads; extremely wrathful and raging with anger, they are haughty in the attitude of annihilating all the vicious amid a gale of fire; they are all surrounded bya a hundred men with tiger skin accouterments leading the right wing, a hundred in the forms of bhiksus, leading the left, a hundred black monks (bandhe = ban+de) bearing daggers following just behind, a hundred black women making a way in front and in addition inconceivable messengers such as black birds, black dogs and jackals, who track dwon breakers of pledges)\nabodes: a,b) from akanistha and the abode of pure nature;\nc-g) the karmamahakala (las mgon) from the summit of vajrasana in india and the special seats of high lamas.\n\ndeities of tibetan buddhism #358"@en .
+    
+    bdr:NT806543B0A8A77743
+        a                   :Note ;
+        :noteText           "the 114th mandala of the rgyud sde kun btus; from the bka' babs rnam bzhi"@en .
+    
+    bdr:NT9B99D252212B8407
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1567" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "gur mgon lha 13: the chos rnam kun btus (citing dung dkar tshig mdzod 521-26)calls the group gur lha bcu bdun (in error because there are only bcu gsum) enumerates: 1) mgon po gur; 2) e ka dza ti; 3) lha mo  dud sol ma; 4) gnod sbyin nag po; 5) nag mo gnod sbyin; 6) pu tra nag po; 7) b+ha dra nag po; 8) srin mo khrag mig ma; 9) lcags kyu ma; 10) zhags pa ma; 11) lcags sgrog ma; 12) dril bu ma; 13) las mkhan gcer bu zangs gri can"@en .
+    
+    bdr:T2GS1230  a         :Topic ;
+        skos:altLabel       "gur gyi mgon po lha brgyad/"@bo-x-ewts , "gur mgon lha 13 ma/"@bo-x-ewts , "rdo rje nag po chen po gur gyi mgon po lha brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "gur mgon lha brgyad ma/"@bo-x-ewts , "eight deity panjara mahakala"@en , "vajramahakalapanjaranatha 8-devatmaka"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT7E5643A2C3A97BA9 , bdr:NT806543B0A8A77743 , bdr:NT9B99D252212B8407 .
+}

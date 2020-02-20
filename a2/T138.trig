@@ -1,0 +1,46 @@
+@base          <bdg:T138> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T138 {
+    bda:LG2849F8088D2CD886
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-22T11:16:36.297Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG51EE11977B9369F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-28T15:04:36.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBF44EC50DF5337A8
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-22T11:21:05.539Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T138  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T138 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a2/T138.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T138 ;
+        adm:logEntry        bda:LG2849F8088D2CD886 , bda:LG51EE11977B9369F9 , bda:LGBF44EC50DF5337A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T138  a             :Topic ;
+        skos:altLabel       "bla mchod/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma mchod pa/"@bo-x-ewts , "worship of the guru"@en , "gurupuja"@sa-alalc97 ;
+        :isRoot             true .
+}

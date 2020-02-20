@@ -1,0 +1,46 @@
+@base          <bdg:T2480> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2480 {
+    bda:LG213E8BA17617A0CA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:31:44.115Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG859460BF1C68CD13
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-10T10:13:00.578Z"^^xsd:dateTime ;
+        adm:logMessage      "sanskrit name added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2480  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2480 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0d/T2480.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2480 ;
+        adm:logEntry        bda:LG213E8BA17617A0CA , bda:LG859460BF1C68CD13 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTF1E62F962A9F1537
+        a                   :Note ;
+        :noteText           "a local deity of bog ta su rug shog, a mountain near the qing emperor's palace"@en .
+    
+    bdr:T2480  a            :Topic ;
+        skos:prefLabel      "rat+na ba dz+ra sUrya/"@bo-x-ewts , "ratnavajrasurya"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF1E62F962A9F1537 .
+}

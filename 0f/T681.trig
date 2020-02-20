@@ -1,0 +1,53 @@
+@base          <bdg:T681> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T681 {
+    bda:LG7BA02737DB0B1AF7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T07:45:44.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added sakyraksita note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD20BAF0E8503026F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T15:20:52.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added other name work"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF23FD3A687AFCBB6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T14:03:24.787Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T681  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T681 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0f/T681.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T681 ;
+        adm:logEntry        bda:LG7BA02737DB0B1AF7 , bda:LGD20BAF0E8503026F , bda:LGF23FD3A687AFCBB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAC92D440D9C3B8D7
+        a                   :Note ;
+        :noteText           "under this topic are classed works relating to the propitiation of the bodhisattva maitreya; he is orange with one face and two arms, making the gesture of explaining; the left holding a branch of a naga tree with a flower opening beside his ear; he has the attributes of a brahmacarin with a silken lower garment and a deerskin covering his left breast; on the surface of his topknot of tresses is the mahabodhistupa; he is complete with the marks and signs and accompanied by wrathful aparajita; his leg posture is in whatever is preferred.  \n\nhis group of sadhana is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava.\n\n\ndeities of tibetan buddhism #247"@en .
+    
+    bdr:T681  a             :Topic ;
+        skos:altLabel       "byams pa mgon po/"@bo-x-ewts , "rgyal ba byams pa/"@bo-x-ewts , "maitreyanatha"@sa-x-ndia ;
+        skos:prefLabel      "byams pa/"@bo-x-ewts , "maitreya"@sa-alalc97 , "慈尊"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTAC92D440D9C3B8D7 .
+}

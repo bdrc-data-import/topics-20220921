@@ -1,0 +1,40 @@
+@base          <bdg:T701> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T701 {
+    bda:LG9AE96F96CEFD263A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T11:09:43.872Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T701  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T701 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8b/T701.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T701 ;
+        adm:logEntry        bda:LG9AE96F96CEFD263A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5B7C6968461FF2F4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon lady visvamatr (universal mother), white as the light of the moonstone, and tranquil and amorous in sentiment with one face, two arms, and three eyes; her right hand is boon granting; her left holds at her heart with thumb and ring finger, the root of a white lotus, which unfolds a hundred petals near her ear; she is adorned with jewel ornaments and white silk garments; she sits in vajraparyanka, radiating moonlight and is crowned with vajrasattva.\n\nthis deity is invoked to subdue ailments caused by rdo rje tsher ma (rdo rje tsher ma'i sdig nad 'joms pa...)\n\ndeities of tibetan buddhism #215"@en .
+    
+    bdr:T701  a             :Topic ;
+        skos:prefLabel      "sna tshogs yum dkar mo/"@bo-x-ewts , "white visvamatr"@en , "visvamatr sita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5B7C6968461FF2F4 .
+}

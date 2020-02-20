@@ -1,0 +1,53 @@
+@base          <bdg:T10MS14648> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14648 {
+    bda:LG09A8C3C5DA379786
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-16T12:06:17.362Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted census"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG09DBB618BBF558A1
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-25T13:01:31.729Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG7A176CAE34F7A384
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:50:30.525Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG93E0E5BD41D9CF52
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-19T12:43:42.715Z"^^xsd:dateTime ;
+        adm:logMessage      "released because topic is used and needed"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T10MS14648  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14648 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e7/T10MS14648.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14648 ;
+        adm:logEntry        bda:LG09A8C3C5DA379786 , bda:LG09DBB618BBF558A1 , bda:LG7A176CAE34F7A384 , bda:LG93E0E5BD41D9CF52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T10MS14648  a       :Topic ;
+        skos:prefLabel      "zhib bsher/"@bo-x-ewts , "survey"@en ;
+        :isRoot             true .
+}

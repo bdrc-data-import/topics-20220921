@@ -1,0 +1,52 @@
+@base          <bdg:T01AG03005> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG03005 {
+    bda:LG0B1FCC3BA322DE03
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-03T10:29:29.571Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG701190B4B197190A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-03T12:52:21.112Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGCF47DC6D22729A18
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-03T10:46:02.677Z"^^xsd:dateTime ;
+        adm:logMessage      "error"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T01AG03005  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG03005 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "91/T01AG03005.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG03005 ;
+        adm:logEntry        bda:LG0B1FCC3BA322DE03 , bda:LG701190B4B197190A , bda:LGCF47DC6D22729A18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT70213510CB3EB910
+        a                   :Note ;
+        :noteText           "a treasure of mkhyen brtse'i dbang po"@en .
+    
+    bdr:T01AG03005  a       :Topic ;
+        skos:prefLabel      "phrin las phur pa'i gnad tig (mkhyen brtse'i dbang po)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT70213510CB3EB910 .
+}

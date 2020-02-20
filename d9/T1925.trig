@@ -1,0 +1,41 @@
+@base          <bdg:T1925> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1925 {
+    bda:LG14908A5B83A44BFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T15:54:32.949Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1925  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1925 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d9/T1925.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1925 ;
+        adm:logEntry        bda:LG14908A5B83A44BFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBE97513F11A2481E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon karma mahakala, dark blue, with a terrible wrathful form, of dwarfish aspect with one face and two arms, his limbs short and sturdy; his face is a raven's with vajra thunderbolt iron beak, frowning and three eyed; his right hand brandishes a vajra knife like blazing fire, his left holds at his heart a skull full of blood, which he is drawing into his mouth; his eyebrows, hair and beard blaze upwards; his mouth gapes widely, its vapor a swirling gale of fire, dribbling rivers of blood, baring sharp fangs and yelling in a furious roar; in stride changing alidha posture, he is adorned with black, poisonous snakes and has a crown of five-dry skulls and a long necklace of fifty fresh heads; from the parting of his hair he is sending out vajra garuda birds; he has a tiger skin loincloth; with the splendor of a thousand suns, he abides amid a blazing mass of fire, subduing with his stamping feet the head of a malevolent enemy.\n\nhe is surrounded by infinite attendants, including a thousand black, raven faced ones, a hundred thousand pisaca, the eight tribes of gods and spirits, emanations in the image of his head, secondary emanations as birds , with beaks and claws, and host of dangerous beasts of pray, and in particular, vicious dark blue naga holding razors and serpent nooses\n\nabode: sitavanas charnel ground\n\ndeities of tibetan buddhism #356"@en .
+    
+    bdr:T1925  a            :Topic ;
+        skos:altLabel       "las mgon bya rog gdong can/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po bya rog gdong /"@bo-x-ewts , "raven faced karma mahakala"@en ;
+        :isRoot             true ;
+        :note               bdr:NTBE97513F11A2481E .
+}

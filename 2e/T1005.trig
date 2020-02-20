@@ -1,0 +1,33 @@
+@base          <bdg:T1005> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1005 {
+    bda:T1005  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1005 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "2e/T1005.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1005 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC7FA7BF02794A6C5
+        a                   :Note ;
+        :noteText           "the 4th mandala from the rgyud sde kun btus; these teachings follow the tradition of zhwa lu\nthe dkar chag reads for the early lineage of this mandala:\n\nde bzhin gshegs pa'i rigs kyi gtso bo 'od zer dri ma med pa rnam par dag pa'i 'od kyi gzungs gtso bor brten nas slob dpon zhi ba 'tsho sogs kyis bkral ba'i 'phags pa 'od zer dri med lha drug gi dkyil 'khor du dbang bskur ba rin chen blo gsal bstan skyong gi yig steng nas thob pa'i brgyud pa ni\nbcom ldan 'das thub pa'i dbang po\nrje btsun 'phags pa 'jam dpal\nmkhan chen zhi ba 'tsho\nchos rgyal khri song lde'u btsan\nlha sras mu ne btsan po\nlha sras sad na legs 'jing yon\nlha sras gtsang ma khri ral can\nlha lung dpal gyi rdo rje\nmnga' bdag 'od srung\nmnga' bdag dpal 'khor btsan\nskyid lde nyi ma mgon\nkhri sde bkra shis mgon\nlha bla ma ye shes 'od\nlha btsun byang chub 'od\npho brang zhi ba 'od\nmnga' bdag 'od lde\nmnga' bdag rtse lde\n\nan alternative lineage to the transmission to the abhiseka of this mandala:\nmkhan chen zhi ba 'tsho\nrgyal po dge ba dpal\njo bo a ti sha\nnag tsho tshul khrims rgyal ba\nrong pa phyag sor ba shes rab 'bar\n'phan yul gong kha pa\nshangs kyi rgya phug pa can\ng.yag sde'i tang (nyang) rgyal mtshan"@en .
+    
+    bdr:T1005  a            :Topic ;
+        skos:prefLabel      "'od zer dri med lha 6"@bo-x-ewts , "rasmivimala 6 devatmaka"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC7FA7BF02794A6C5 .
+}

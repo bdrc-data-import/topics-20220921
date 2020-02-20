@@ -1,0 +1,50 @@
+@base          <bdg:T1AT287> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT287 {
+    bda:LG07C8DB6E47BD0A7E
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-03T12:04:45.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added information"@en .
+    
+    bda:LG19E9C66CC7F03E62
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-03T12:07:48.834Z"^^xsd:dateTime .
+    
+    bda:LG339CA6B1C30C39DA
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-03T12:01:13.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:T1AT287  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT287 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6d/T1AT287.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT287 ;
+        adm:logEntry        bda:LG07C8DB6E47BD0A7E , bda:LG19E9C66CC7F03E62 , bda:LG339CA6B1C30C39DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3AD7818DE42EF4DB
+        a                   :Note ;
+        :noteText           "fierceful manifestation of Hayagriva"@en .
+    
+    bdr:T1AT287  a          :Topic ;
+        rdfs:comment        "fierceful manifestation of Hayagriva" ;
+        skos:altLabel       "yang gsang rta mgrin rdo rje me char/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin rdo rje me char/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3AD7818DE42EF4DB .
+}

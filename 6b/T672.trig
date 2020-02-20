@@ -1,0 +1,40 @@
+@base          <bdg:T672> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T672 {
+    bda:LG229263907BE63223
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-03T07:47:52.824Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T672  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T672 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6b/T672.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T672 ;
+        adm:logEntry        bda:LG229263907BE63223 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5F6118714352C305
+        a                   :Note ;
+        :noteText           "this deity term is applied to rituals and initiations for the conqueror amitayus, red, with one face and two arms; both hands making the gesture of meditation and holding upon them a flask filled with the nectar of immortal gnosis; sitting in vajraparyanka, he is adorned with silks and jewel ornaments; he is crowned with vairocana;  deities of tibetan buddhism #180"@en .
+    
+    bdr:T672  a             :Topic ;
+        skos:prefLabel      "tshe dpag med ba ri lugs/"@bo-x-ewts , "amitayus in the tradition of ba ri lo ts+tsha ba"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5F6118714352C305 .
+}

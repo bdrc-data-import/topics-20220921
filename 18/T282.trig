@@ -1,0 +1,87 @@
+@base          <bdg:T282> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T282 {
+    bda:LG26ADA455DDB0F2A8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-18T19:08:56.258Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG3D8D3AC9AC214D9B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-18T19:10:41.184Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant name; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG7B508761D760B559
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-18T18:03:36.409Z"^^xsd:dateTime ;
+        adm:logMessage      "changed english"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG8431B3A874BF7ACC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-07T09:31:44.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added legs sbyar gyi sgra mdo/"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG8682A5AF80691202
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-18T19:11:41.544Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG929C91FAA05B7E3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T16:31:58.566Z"^^xsd:dateTime ;
+        adm:logMessage      "added english name"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGE8BC9AC6AABF4295
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and note"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LGF85883DFFC92EAC1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T17:28:00.856Z"^^xsd:dateTime ;
+        adm:logMessage      "english topic title changed to sanskrit grammar; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T282  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T282 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "18/T282.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T282 ;
+        adm:logEntry        bda:LG26ADA455DDB0F2A8 , bda:LG3D8D3AC9AC214D9B , bda:LG7B508761D760B559 , bda:LG8431B3A874BF7ACC , bda:LG8682A5AF80691202 , bda:LG929C91FAA05B7E3A , bda:LGE8BC9AC6AABF4295 , bda:LGF85883DFFC92EAC1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCC5756B11C7C141A
+        a                   :Note ;
+        :noteText           "vyākaraṇa can also have the sense of prediction or prophecy in some contexts, in which case it is a different topic"@en .
+    
+    bdr:NTDCAD97B87895108C
+        a                   :Note ;
+        :noteText           "under this keyword are classified all works concerned with sanskrit grammar"@en .
+    
+    bdr:T282  a             :Topic ;
+        skos:altLabel       "legs sbyar gyi sgra mdo/"@bo-x-ewts , "sgra/"@bo-x-ewts , "sgra rig pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgra mdo/"@bo-x-ewts , "sanskrit grammar"@en , "vyākaraṇa"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NTCC5756B11C7C141A , bdr:NTDCAD97B87895108C .
+}

@@ -1,0 +1,54 @@
+@base          <bdg:T00JR758> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR758 {
+    bda:LG1A2CC748DE56AAAD
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T14:28:44.453Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG34F60384AAC4ADF7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.268Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG5AF7FE67B2C94CCA
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T10:16:38.623Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG77514FDFCE1D357D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:56.685Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T00JR758  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR758 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/T00JR758.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR758 ;
+        adm:logEntry        bda:LG1A2CC748DE56AAAD , bda:LG34F60384AAC4ADF7 , bda:LG5AF7FE67B2C94CCA , bda:LG77514FDFCE1D357D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00JR758  a         :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "me dbang /"@bo-x-ewts ;
+        :isRoot             true .
+}

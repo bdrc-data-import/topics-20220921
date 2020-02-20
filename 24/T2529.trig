@@ -1,0 +1,43 @@
+@base          <bdg:T2529> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2529 {
+    bda:LG7350786F85F09822
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T15:02:59.65Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2529  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2529 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "24/T2529.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2529 ;
+        adm:logEntry        bda:LG7350786F85F09822 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTFF2FDACE0C6245CA
+        a                   :Note ;
+        :locationStatement  "pp. 169-171" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "one of the protective deities belonging to the bdud mo mched bzhi; the bdud mo mched gnyis are one of the three groups belonging to the bstan ma bcu gnyis"@en .
+    
+    bdr:T2529  a            :Topic ;
+        skos:altLabel       "dpal ldan ha ri/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje g.ya ma skyong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFF2FDACE0C6245CA .
+}

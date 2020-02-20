@@ -1,0 +1,47 @@
+@base          <bdg:T2310> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2310 {
+    bda:LG43D63ED3D168706E
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T14:52:20.86Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGDB6795C40E389FC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:31:25.473Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGE564350608077E93
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:07:44.265Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2310  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2310 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ae/T2310.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2310 ;
+        adm:logEntry        bda:LG43D63ED3D168706E , bda:LGDB6795C40E389FC4 , bda:LGE564350608077E93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2310  a            :Topic ;
+        skos:prefLabel      "thugs rje chen po pad+ma gar dbang /(mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true .
+}

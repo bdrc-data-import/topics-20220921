@@ -1,0 +1,41 @@
+@base          <bdg:T1AT288> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT288 {
+    bda:LG3F5C40056F2C6F64
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-11T13:03:08.175Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:T1AT288  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT288 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6e/T1AT288.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT288 ;
+        adm:logEntry        bda:LG3F5C40056F2C6F64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD3BCD46F27C42490
+        a                   :Note ;
+        :noteText           "name of a protective deity of the srung ma class"@en .
+    
+    bdr:T1AT288  a          :Topic ;
+        rdfs:comment        "name of a protective deity of the srung ma class" ;
+        skos:altLabel       "ngan ne/"@bo-x-ewts , "ngan ne ma/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje ngan ne ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD3BCD46F27C42490 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1128> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1128 {
+    bda:LG1F0A1A8E9537A8CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T10:34:15.349Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG931AD0C50CF5866C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T10:25:30.47Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1128  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1128 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "01/T2GS1128.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1128 ;
+        adm:logEntry        bda:LG1F0A1A8E9537A8CD , bda:LG931AD0C50CF5866C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT950E00FE994D19E1
+        a                   :Note ;
+        :noteText           "this term is applied to the goddess (lha mo), dark blue, or pale blue, with one face, two arms, and three eyes; she is angry with loose hair and adorned with a human skin, jewels, and a long necklace of human heads; her body is smeared wih sesame oil; her fangs are extraordinarily bared, he tongue vibrates like lightning, her blood-red eyes gaze on an enemy as if piecing him with a dagger; he right hand is holding a knife and her left a blood-filled skull. deities of tibetan buddhism #403"@en .
+    
+    bdr:T2GS1128  a         :Topic ;
+        skos:altLabel       "lha mo nam mkha'i gos can/"@bo-x-ewts ;
+        skos:prefLabel      "nam mkha'i gos can (lha mo)"@bo-x-ewts , "the sky-clad goddess"@en ;
+        :isRoot             true ;
+        :note               bdr:NT950E00FE994D19E1 .
+}

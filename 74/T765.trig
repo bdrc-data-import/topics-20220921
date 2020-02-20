@@ -1,0 +1,58 @@
+@base          <bdg:T765> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T765 {
+    bda:LG01BD0C1EA7E303CA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:34:03.535Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG29CCE2F208BA98D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T18:58:25.597Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG501874193AE1B709
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T17:17:40.225Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG52A07F0A25CE3CDC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T18:55:30.488Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T765  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T765 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "74/T765.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T765 ;
+        adm:logEntry        bda:LG01BD0C1EA7E303CA , bda:LG29CCE2F208BA98D1 , bda:LG501874193AE1B709 , bda:LG52A07F0A25CE3CDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT80DD3A4B22B91A0C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the naga king apalala who is golden-colored, with a sevenfold hood of snakes' heads; his two hands hold at his heart a golden flask of nectar; he is adorned with all the ornaments; from the navel down he is a snake's coiled tail; he is accompanied by his children, wife, and other relatives and sixty thousand attendants and servants.\n\ntaranatha adds that this is a kadampa instruction in the lineage of atisa.\n\ndeities of tibetan buddhism #337"@en .
+    
+    bdr:T765  a             :Topic ;
+        skos:prefLabel      "klu rgyal sog ma med jo bo rje'i lugs/"@bo-x-ewts , "naga king apalala"@en , "apalala nagaraja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT80DD3A4B22B91A0C .
+}

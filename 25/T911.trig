@@ -1,0 +1,41 @@
+@base          <bdg:T911> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T911 {
+    bda:LGAF291B83E71DBACD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T09:58:47.218Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T911  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T911 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "25/T911.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T911 ;
+        adm:logEntry        bda:LGAF291B83E71DBACD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5A351D7E24F2D504
+        a                   :Note ;
+        :noteText           "this topic is applied to the red simha mukhi as transmitted by ba ri lo tsa ba: this is probably the form found in the rin 'byung; deities of tibetan buddhism ; deities of tibetan buddhism #235;  \nthe red simha mukhi is red with one face and two arms; the right hand brandishes skyward a golden-colored knife; the left holds at her heart a blood-filled skull, with a khatvanga in the crook of the elbow; she has three eyes and yellow, upward streaming hair; she is adorned with a crown of five dry skulls, a long necklace of fifty fresh heads, a tiger-skin loincloth, and the five symbolic ornaments"@en .
+    
+    bdr:T911  a             :Topic ;
+        skos:altLabel       "seng gdong ma dmar mo ba ri lugs/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong ma ba ri lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5A351D7E24F2D504 .
+}

@@ -1,0 +1,40 @@
+@base          <bdg:T1230> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1230 {
+    bda:LG26DEDFD00F533E1F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-17T08:11:23.062Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1230  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1230 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "50/T1230.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1230 ;
+        adm:logEntry        bda:LG26DEDFD00F533E1F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1480F169F9506F8F
+        a                   :Note ;
+        :noteText           "according to rangjung yeshe: the serenity of cessation [RY]; absorption /samapatti/ equilibrium of cessation [IW] ; abbr. of 'gog pa'i snyoms 'jug; absorption of cessation [RY] \n\nRetrieved from \"http://rywiki.tsadra.org/index.php/%27gog_snyoms\""@en .
+    
+    bdr:T1230  a            :Topic ;
+        skos:prefLabel      "'gog snyoms/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1480F169F9506F8F .
+}

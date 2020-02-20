@@ -1,0 +1,47 @@
+@base          <bdg:T847> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T847 {
+    bda:LG60C645D426DCA8C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-06T15:22:08.247Z"^^xsd:dateTime ;
+        adm:logMessage      "variant spelling added"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG8B4CD1EA0467D625
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T12:48:34.812Z"^^xsd:dateTime ;
+        adm:logMessage      "merge sun bzlog and bsun zlog; add annotation"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T847  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T847 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "58/T847.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T847 ;
+        adm:logEntry        bda:LG60C645D426DCA8C9 , bda:LG8B4CD1EA0467D625 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT83C5D984556921F2
+        a                   :Note ;
+        :noteText           "ritual for sending back the call of the dakinis; repelling ritual against annoyances and dissoluteness"@en .
+    
+    bdr:T847  a             :Topic ;
+        skos:altLabel       "bsun bzlog"@bo-x-ewts , "bsun zlog"@bo-x-ewts , "sun bzlog"@bo-x-ewts ;
+        skos:prefLabel      "sun zlog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT83C5D984556921F2 .
+}

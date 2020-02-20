@@ -1,0 +1,47 @@
+@base          <bdg:T1PD94645> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD94645 {
+    bda:LG6C6E7030284B6A1A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-31T13:11:51.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added translation and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA5E3DE3320557958
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-10-07T11:26:47.73Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD94645  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD94645 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "51/T1PD94645.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD94645 ;
+        adm:logEntry        bda:LG6C6E7030284B6A1A , bda:LGA5E3DE3320557958 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9388DB85AB58D36B
+        a                   :Note ;
+        :noteText           "this topic is applied to the six symbols of long life or longevity, derived from chinese folk culture:\n\n1) brag tshe ring \n2) chu tshe ring \n3) shing tshe ring \n4) mi tshe ring \n5) bya tshe ring \n6) ri dwags tshe ring"@en .
+    
+    bdr:T1PD94645  a        :Topic ;
+        skos:altLabel       "tshe ring rnam drug skor/"@bo-x-ewts ;
+        skos:prefLabel      "tshe ring rnam drug"@bo-x-ewts , "six symbols of longevity"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9388DB85AB58D36B .
+}

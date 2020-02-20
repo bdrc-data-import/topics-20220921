@@ -1,0 +1,41 @@
+@base          <bdg:T1KG6083> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG6083 {
+    bda:LG74B903ED464627A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-21T16:55:56.684Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGEA0BA59DC449D772
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T15:22:08.695Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1KG6083  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG6083 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "14/T1KG6083.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG6083 ;
+        adm:logEntry        bda:LG74B903ED464627A2 , bda:LGEA0BA59DC449D772 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG6083  a         :Topic ;
+        skos:prefLabel      "rtsed mo/"@bo-x-ewts , "games"@en ;
+        :isRoot             true .
+}

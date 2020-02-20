@@ -1,0 +1,58 @@
+@base          <bdg:T00AG01318> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01318 {
+    bda:LG2942760E1815F17D
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T19:14:41.603Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG78DCFBCD19049A08
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-21T13:47:43.489Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGED9A092ACAE91611
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-04T16:38:35.631Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T1432"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF99F70672C2ECF76
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-21T14:00:02.497Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01318  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01318 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "db/T00AG01318.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01318 ;
+        adm:logEntry        bda:LG2942760E1815F17D , bda:LG78DCFBCD19049A08 , bda:LGED9A092ACAE91611 , bda:LGF99F70672C2ECF76 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1432 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTF431D116E72AF991
+        a                   :Note ;
+        :noteText           "withdrawn in favor of T1432"@en .
+    
+    bdr:T00AG01318  a       :Topic ;
+        skos:altLabel       "dzam+b+ha la/"@bo-x-ewts , "dzaM b+ha la/"@bo-x-ewts ;
+        skos:prefLabel      "jambhala/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF431D116E72AF991 .
+}

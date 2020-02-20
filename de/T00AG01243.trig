@@ -1,0 +1,51 @@
+@base          <bdg:T00AG01243> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01243 {
+    bda:LGC8B040F0A9B4923B
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-23T18:50:17.588Z"^^xsd:dateTime ;
+        adm:logMessage      "edited the note for the bi ma snying thig and newly created the rgyud bcu bdun; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGCACB1508960E6DCD
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-23T18:52:42.193Z"^^xsd:dateTime ;
+        adm:logMessage      "edited the note; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGD594825EB1CDA1F7
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-06T15:39:26.245Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01243  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01243 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/T00AG01243.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01243 ;
+        adm:logEntry        bda:LGC8B040F0A9B4923B , bda:LGCACB1508960E6DCD , bda:LGD594825EB1CDA1F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF7DDCE1536205793
+        a                   :Note ;
+        :noteText           "writings attributed to vimalamitra, manjusrimitra, srisimha, jnanasutra, syrativajra, et. el., and related to the rgyud bcu bdun. purportedly re-discovered in the zhva'i lha khang north of lhasa in the eleventh century by the caretaker monk ldang ma lhun rgyal and systematized by lce btsun seng+ge dbang phyug. the tradition maintains that the texts were transmitted by vimalamitra to myang ting nge 'dzin, who passed them to 'brom rin chen 'bar, who concealed them in the temple. for a chart of contributors to the bi ma snying thig see ramon prats, contributo allo studio biographico del primi gter ston (naples: i.u.o) 1982."@en .
+    
+    bdr:T00AG01243  a       :Topic ;
+        skos:prefLabel      "bi ma snying thig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF7DDCE1536205793 .
+}

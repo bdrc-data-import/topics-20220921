@@ -1,0 +1,52 @@
+@base          <bdg:T00JR775> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR775 {
+    bda:LG361759DDC1C180B1
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T08:19:44.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added annotation"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG89ABA79F9F443281
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T15:31:39.467Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T2373 (dgra bgegs sgrol gtad) and T1333 (gshor gsum)"@en .
+    
+    bda:LGB87E3C2692E9A3A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T11:34:19.875Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T00JR775  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR775 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9f/T00JR775.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR775 ;
+        adm:logEntry        bda:LG361759DDC1C180B1 , bda:LG89ABA79F9F443281 , bda:LGB87E3C2692E9A3A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE21C3D4FA894632D
+        a                   :Note ;
+        :noteText           "according to Ives Waldo killing an enemy by wrathful application of the karma of destroying; destructive ritual resulting in the death of an enemy"@en .
+    
+    bdr:T00JR775  a         :Topic ;
+        rdfs:seeAlso        bdr:T1333 , bdr:T2373 ;
+        skos:prefLabel      "bsgral las/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE21C3D4FA894632D .
+}

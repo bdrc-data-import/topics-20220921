@@ -1,0 +1,46 @@
+@base          <bdg:T612> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T612 {
+    bda:LG46644E1C4D3B06C5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T11:01:55.662Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG721AB73B410199BA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T17:12:57.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added long application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T612  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T612 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3c/T612.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T612 ;
+        adm:logEntry        bda:LG46644E1C4D3B06C5 , bda:LG721AB73B410199BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1D29A84717204926
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations from the revelations of sangs rgyas gling pa from bya rgod gshong (long po); the red deity is seated on a polylotus and sun seat and has a blue horse, with a dextrous body and a golden saddle with jewel ornaments; the deity is red with one face and two arms; his right hand brandishes a red spear with a large flag (dar chen); his left holds a treasure mongoose, raining siddhis on the practitioner; he wears fluttering garments of assorted silks and a corslet  of laquered leather, a golden girdle, a helmet on his head and scored leaves of laquered leather (bse'i lo khram) on his feet; he abides amid blazing light rays that subjugate all the three realms;  \n\nhis retinue comprises: 1) from the east rahula, the supreme great planetary prince, smoke-colored; the upper part of his body that of a raksasa, the lower the coiled tail of a snake; on top of his nine heads is a raven head; his heads and body are all covered with eyes; his right hand holds a sea-monster (makara) banner; his left a serpent noose; 2) from the south the yaksa dhana. yellow with one face, two arms and two legs, holding a trident and a blazing blood filled skull; 3) from the west, the yaksa kala (purple and holding a club and a skull); 4) from the north the yaksa kubera (green and holding a club and a skull); in the area outside these from the east, south, west and north come the yaksas bum sna (pot-nose), dung sna (conch nose), sna gsum (three nose), and sna bo che (big nose), each is a shade of green holding his emblem, banner, red spear, trident red spear, and blazing club and a mongoose); all seven are short and pot-bellied, with terrifying bodies, adorned with silks and jewels and abide in pratyalidha posture (left leg extended); at the east gate white ankusi; at the south gate yellow pasi; at the west gate red sphota; at the north gate green ghanta; all are smiling and wrathful; in alidha posture (right leg extended) and adorned with silks and jewels.\n\ndeviation: arrangement of attendants\n\n\ndeities of tibetan buddhism #301"@en .
+    
+    bdr:T612  a             :Topic ;
+        skos:prefLabel      "rnam sras mdung dmar rta sngon can/"@bo-x-ewts , "vaisravana with red spear and blue horse"@en , "vaisravana nilasva raktasula"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1D29A84717204926 .
+}

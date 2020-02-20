@@ -1,0 +1,40 @@
+@base          <bdg:T1GS6338> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS6338 {
+    bda:LG3F5A091F210D39A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-13T11:32:20.329Z"^^xsd:dateTime ;
+        adm:logMessage      "created and released"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS6338  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS6338 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4a/T1GS6338.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS6338 ;
+        adm:logEntry        bda:LG3F5A091F210D39A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT506D63125D8EC3EE
+        a                   :Note ;
+        :noteText           "type of ritual for performance of ransoms"@en .
+    
+    bdr:T1GS6338  a         :Topic ;
+        skos:prefLabel      "sha brgya zan brgya/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT506D63125D8EC3EE .
+}

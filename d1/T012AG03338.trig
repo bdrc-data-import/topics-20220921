@@ -1,0 +1,48 @@
+@base          <bdg:T012AG03338> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03338 {
+    bda:LG0CDC87876BA3ECDC
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-20T10:36:50.058Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGE62D981DFF4CA5AA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:56.843Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGFD6C5AB2277F03B2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.385Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T012AG03338  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03338 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d1/T012AG03338.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03338 ;
+        adm:logEntry        bda:LG0CDC87876BA3ECDC , bda:LGE62D981DFF4CA5AA , bda:LGFD6C5AB2277F03B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T012AG03338  a      :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "'jam dpal chos dbyings gsung dbang /"@bo-x-ewts ;
+        :isRoot             true .
+}

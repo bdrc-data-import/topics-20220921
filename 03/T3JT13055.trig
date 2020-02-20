@@ -1,0 +1,52 @@
+@base          <bdg:T3JT13055> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3JT13055 {
+    bda:LG0F49F77444220721
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-10-25T16:45:57.374Z"^^xsd:dateTime ;
+        adm:logMessage      "aded note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG20A0E0BF2C4A24FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-02-05T09:12:47.457Z"^^xsd:dateTime ;
+        adm:logMessage      "changed title"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG3EBE5F984B80691F
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-10-25T16:41:49.117Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T3JT13055  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3JT13055 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "03/T3JT13055.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3JT13055 ;
+        adm:logEntry        bda:LG0F49F77444220721 , bda:LG20A0E0BF2C4A24FD , bda:LG3EBE5F984B80691F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA8ECB79237F4EB02
+        a                   :Note ;
+        :noteText           "གྲུབ་ཆེན་གླིང་རས་པ་དང་། འགྲོ་མགོན་གཙང་པ་རྒྱ་རས་ནས་བརྒྱུད་པའི་བཀའ་བརྒྱུད་པ་འདིའི་ནང་གསེས་ལ་སྟོད་སྨད་བར་གསུམ་དུ་ཕྱེ་བའི་སྨད་འབྲུག་ནི་རྒྱ་རས་ནས་ལོ་རས་བརྒྱུད་དེ་བྱུང་བ་དེ་ཡིན་ལ།"@bo .
+    
+    bdr:T3JT13055  a        :Topic ;
+        skos:altLabel       "smad 'brug dkar brgyud/"@bo-x-ewts ;
+        skos:prefLabel      "smad 'brug bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA8ECB79237F4EB02 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T10MS14283> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14283 {
+    bda:LG83E68645EE1659B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-21T12:20:20.969Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD6D1DDE69AE97D44
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T16:07:56.186Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T1762 to T1043"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T10MS14283  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14283 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dd/T10MS14283.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14283 ;
+        adm:logEntry        bda:LG83E68645EE1659B9 , bda:LGD6D1DDE69AE97D44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD93CE4D6D3961E66
+        a                   :Note ;
+        :noteText           "this topic is applied in reference to a siddha or mystic adept, singularly or in any of their enumerated groupings"@en .
+    
+    bdr:T10MS14283  a       :Topic ;
+        rdfs:seeAlso        bdr:T1043 , bdr:T463 ;
+        skos:altLabel       "grub thob chen po/"@bo-x-ewts , "mahasiddha"@en ;
+        skos:prefLabel      "grub thob/"@bo-x-ewts , "siddha"@en ;
+        :isRoot             true ;
+        :note               bdr:NTD93CE4D6D3961E66 .
+}

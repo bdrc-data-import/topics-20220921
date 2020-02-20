@@ -1,0 +1,40 @@
+@base          <bdg:T219> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T219 {
+    bda:LGE9D3717C5B53ED3D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:35:51.699Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T219  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T219 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "60/T219.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T219 ;
+        adm:logEntry        bda:LGE9D3717C5B53ED3D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT56560099F41D71A0
+        a                   :Note ;
+        :noteText           "this topic is used to refer to the genre of tibetan verse in which every line begins with the successive 30 letters of the tibetan alphabet: \n\nཀ་དག་སཱ་ལའི་སྨན་གྱི་ལྗོངས་ན།།\nཁ་བ་བོད་ཞེས་གྲགས་པའི་ཡུལ་དེར།།\nག་ས་གང་ན་ནོར་ལུག་གིས་ཁྱབ།།\nང་ཁྱོད་ཕྱོགས་རེས་མེད་པའི་ས་ཆ།།\nཅ་དག་བོད་ལེགས་ལྷུང་གྱིས་གྲུབ་ཤིང།།\nཆ་ལུགས་ཕལ་ཆེར་ལྷ་ལ་འགྲན་ས།།\nཇ་ཤིང་ལོ་འབྲས་ཕང་ཕུང་ཆགས་པའི།།\nཉ་རྒྱས་བཞིན་ཅན་ཀོང་ཇོའི་ཕ་ཡུལ།།\n \nRY: composition using the alphabetical order; each following line beginning with the next letter"@en .
+    
+    bdr:T219  a             :Topic ;
+        skos:prefLabel      "ka bshad/"@bo-x-ewts , "alphabetic verse"@en ;
+        :isRoot             true ;
+        :note               bdr:NT56560099F41D71A0 .
+}

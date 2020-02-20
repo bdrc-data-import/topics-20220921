@@ -1,0 +1,40 @@
+@base          <bdg:T301> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T301 {
+    bda:LG8AEEDDA88BD443EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T09:35:29.217Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T301  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T301 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b4/T301.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T301 ;
+        adm:logEntry        bda:LG8AEEDDA88BD443EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF565BBBB0467E247
+        a                   :Note ;
+        :noteText           "this topic is applied to modern works concerned with animal husbandry, treatment of the diseases of domesticated animals, etc."@en .
+    
+    bdr:T301  a             :Topic ;
+        skos:prefLabel      "phyugs las/"@bo-x-ewts , "animal husbandry"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF565BBBB0467E247 .
+}

@@ -1,0 +1,66 @@
+@base          <bdg:T00KG03985> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG03985 {
+    bda:LG0351D7D62A6E57CB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-18T08:49:12.984Z"^^xsd:dateTime ;
+        adm:logMessage      "connected T00KG03985 to T548"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG2F267A870CACC41A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-18T08:45:18.656Z"^^xsd:dateTime ;
+        adm:logMessage      "removed T2482 and T2483 in favor of snang brnyan/"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG4DE2F3635F213E83
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-27T15:36:28.698Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5D5E429BADA69FEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-18T14:47:18.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9A609FE5587B9670
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-11-26T10:03:33.598Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic and published first time"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG03985  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG03985 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/T00KG03985.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG03985 ;
+        adm:logEntry        bda:LG0351D7D62A6E57CB , bda:LG2F267A870CACC41A , bda:LG4DE2F3635F213E83 , bda:LG5D5E429BADA69FEC , bda:LG9A609FE5587B9670 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT538FF348F1284E0E
+        a                   :Note ;
+        :noteText           "This topic is applied to illustrations in manuscripts or printed books."@en .
+    
+    bdr:T00KG03985  a       :Topic ;
+        rdfs:seeAlso        bdr:T548 ;
+        skos:altLabel       "par/"@bo-x-ewts , "sku par/"@bo-x-ewts , "photograph"@en ;
+        skos:prefLabel      "snang brnyan/"@bo-x-ewts , "picture, illustration"@en ;
+        :isRoot             true ;
+        :note               bdr:NT538FF348F1284E0E .
+}

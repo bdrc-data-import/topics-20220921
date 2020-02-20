@@ -1,0 +1,47 @@
+@base          <bdg:T1GS149121> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS149121 {
+    bda:LG8637D74BA515AC27
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-30T14:33:52.453Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDF4470FF0CD8A9D6
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T15:25:54.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added colors"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1GS149121  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS149121 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "17/T1GS149121.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS149121 ;
+        adm:logEntry        bda:LG8637D74BA515AC27 , bda:LGDF4470FF0CD8A9D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7B2D30E284D4EC70
+        a                   :Note ;
+        :noteText           "under this topic are classed works dealing with colors and colored pigments"@en .
+    
+    bdr:T1GS149121  a       :Topic ;
+        skos:altLabel       "kha dog"@bo-x-ewts , "tshon mdog"@bo-x-ewts , "colored pigments"@en ;
+        skos:prefLabel      "tshos/"@bo-x-ewts , "colors"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7B2D30E284D4EC70 .
+}

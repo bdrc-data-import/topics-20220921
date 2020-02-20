@@ -1,0 +1,41 @@
+@base          <bdg:T2MS13270> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13270 {
+    bda:LG18BC67D62D908019
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T11:24:20.048Z"^^xsd:dateTime ;
+        adm:logMessage      "language order changed"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG4D13F6C6013A2C3B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-27T16:26:25.367Z"^^xsd:dateTime ;
+        adm:logMessage      "created new"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13270  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13270 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "da/T2MS13270.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13270 ;
+        adm:logEntry        bda:LG18BC67D62D908019 , bda:LG4D13F6C6013A2C3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2MS13270  a        :Topic ;
+        skos:prefLabel      "gangs ri/"@bo-x-ewts , "snow mountain"@en-x-mixed ;
+        :isRoot             true .
+}

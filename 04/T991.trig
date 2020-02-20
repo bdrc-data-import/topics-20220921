@@ -1,0 +1,41 @@
+@base          <bdg:T991> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T991 {
+    bda:LG16D2FD9E9F313C5B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T16:26:27.522Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG4154D493A0146DB3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:36:31.958Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T991  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T991 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "04/T991.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T991 ;
+        adm:logEntry        bda:LG16D2FD9E9F313C5B , bda:LG4154D493A0146DB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T991  a             :Topic ;
+        skos:prefLabel      "gshin rje gshed lha 13 dpal 'dzin lugs/"@bo-x-ewts , "rakta yamari 13 devatmaka mahasiddha sridhara krama"@sa-alalc97 ;
+        :isRoot             true .
+}

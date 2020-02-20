@@ -1,0 +1,39 @@
+@base          <bdg:T1320> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1320 {
+    bda:LGC6C7634C97D447DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T14:39:47.323Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1320  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1320 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3a/T1320.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1320 ;
+        adm:logEntry        bda:LGC6C7634C97D447DF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF3702BE55421DCBA
+        a                   :Note ;
+        :noteText           "from the secret visions of the fifth dalai lama, received in 1672 (karmay secret visions, p. 29)"@en .
+    
+    bdr:T1320  a            :Topic ;
+        skos:prefLabel      "tshe dpag med dwangs ma bcud 'dren (dag snang rgya can)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF3702BE55421DCBA .
+}

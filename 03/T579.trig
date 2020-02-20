@@ -1,0 +1,58 @@
+@base          <bdg:T579> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T579 {
+    bda:LG35472CAEBD75713B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T16:45:10.591Z"^^xsd:dateTime ;
+        adm:logMessage      "application topic corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG490D5B4630F8CD3F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T13:17:37.899Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG87FD5144B8249733
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-04T15:02:38.972Z"^^xsd:dateTime ;
+        adm:logMessage      "*description added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGBB634B35008A1034
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T15:28:13.009Z"^^xsd:dateTime ;
+        adm:logMessage      "application note formatting changed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T579  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T579 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "03/T579.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T579 ;
+        adm:logEntry        bda:LG35472CAEBD75713B , bda:LG490D5B4630F8CD3F , bda:LG87FD5144B8249733 , bda:LGBB634B35008A1034 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT15E2FD49CEB6EC2A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the empowerments and rituals focusing upon kalacakra in union with his consort\n\nthe deity is blue, with one face and two arms holding a vajra and a bell; his bent left leg which is white tramples on the heart of white isvara and his extended red right leg on that of red kamadeva (mara, the god of love); he has a topknot of tresses and the crown of his head is adorned with a wish-granting gem and a crescent moon; he has vajra ornaments and a tiger skin loincloth; his thumbs are yellow and his forefingers white; the middle fingers are red and the ring fingers black; his little fingers are green; on the palm side the first sets of finger joints are black, the second red, the third white; he is crowned with vajrasattva and is in the middle of a five colored fire mountain.\n\nhis consort is visvamatr (sna thogs yum) sho is yellow with one face, two arms, and three eyes; she holds a knife and a skull and is in union with him; she is naked and adorned with the five symbolic ornaments; her hair is loose.\n\ndeviation: kalacakra's legs are not white but red\n\ndeities of tibetan buddhism #72"@en .
+    
+    bdr:T579  a             :Topic ;
+        skos:prefLabel      "dus 'khor lhan skyes/"@bo-x-ewts , "innate (sahaja) kalacakra"@en , "sahaja kalacakra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT15E2FD49CEB6EC2A .
+}

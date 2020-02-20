@@ -1,0 +1,41 @@
+@base          <bdg:T11MS5> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS5 {
+    bda:LG3F737609A2434D5E
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-12T14:54:32.96Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic, w/ see also and note"@en .
+    
+    bda:T11MS5  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS5 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3a/T11MS5.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS5 ;
+        adm:logEntry        bda:LG3F737609A2434D5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF79871DF555C7AB2
+        a                   :Note ;
+        :noteText           "this topic refers to the transmission of a lineage of vinaya precepts"@en .
+    
+    bdr:T11MS5  a           :Topic ;
+        rdfs:seeAlso        bdr:T1900 , bdr:T2GS983 , bdr:T55 ;
+        skos:altLabel       "sdom rgyun/"@bo-x-ewts ;
+        skos:prefLabel      "sdom brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF79871DF555C7AB2 .
+}

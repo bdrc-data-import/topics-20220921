@@ -1,0 +1,59 @@
+@base          <bdg:T1PD108899> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108899 {
+    bda:LG018B0F15ACB74CE6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:32:33.465Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG380002F1BD832516
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG9F27C0C6CDB7A4C8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T13:02:03.827Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA11FCF08CCCA634A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108899  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108899 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "75/T1PD108899.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108899 ;
+        adm:logEntry        bda:LG018B0F15ACB74CE6 , bda:LG380002F1BD832516 , bda:LG9F27C0C6CDB7A4C8 , bda:LGA11FCF08CCCA634A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTD0939C59438C322D
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 2429) གཞུང་དོན་གྱི་ཡི་གེ་ཞེས་འཁོད།"@en .
+    
+    bdr:T1PD108899  a       :Topic ;
+        skos:prefLabel      "gzhung yig"@bo-x-ewts , "公函，公文"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTD0939C59438C322D .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T1GS1589> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS1589 {
+    bda:LG6E0069D584115BE9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T15:49:51.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in multi languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8A93F9F64F429B60
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-22T16:55:01.538Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS1589  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS1589 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "14/T1GS1589.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS1589 ;
+        adm:logEntry        bda:LG6E0069D584115BE9 , bda:LG8A93F9F64F429B60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9F73C8FE39C63D33
+        a                   :Note ;
+        :noteText           "here are classed the four elements in the understanding of medicine"@en .
+    
+    bdr:T1GS1589  a         :Topic ;
+        skos:altLabel       "'byung bzhi/"@bo-x-ewts ;
+        skos:prefLabel      "'byung ba bzhi/"@bo-x-ewts , "four elements"@en , "四大"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT9F73C8FE39C63D33 .
+}

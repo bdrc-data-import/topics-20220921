@@ -1,0 +1,51 @@
+@base          <bdg:T1193> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1193 {
+    bda:LG134E6CB101523F6C
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-17T11:06:39.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 variant names; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG50D07D4B56F28A97
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-06T16:49:28.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1193  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1193 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e7/T1193.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1193 ;
+        adm:logEntry        bda:LG134E6CB101523F6C , bda:LG50D07D4B56F28A97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT89D9D41420DC456C
+        a                   :Note ;
+        :noteText           "the deities associated the eight means of attainment in the sgrub sde brgyad of the  mahayoga class of rnying ma tantra"@en .
+    
+    bdr:NTE48CF0F05472B84E
+        a                   :Note ;
+        :noteText           "under this key word are classed the general group of teachings of the eight classes of sadhanas of the rnying ma bka' ma and gter ma traditions; defined bka' brgyad groups are classed under the particular revelations\nthe rin chen gter mdzod includes the following bka' brgyad collections\n1) bka' brgyad bde gshegs 'dus pa (mnga' bdag nyang ral)\n2) bka' brgyad gsang ba yongs rdzogs (gu ru chos kyi dbang phyug)\n3) bka' brgyad drag po rang byung rang shar (byang gter of rig 'dzin rgod kyi ldem 'phru can)\n4) bka' 'dus chos kyi rgya mtsho (yar rje o rgyan gling pa; renewed by 'jam dbyangs mkhyen brtse'i dbang po)\n5) bka' brgyad yang gsang thugs kyi me long (pad+ma gling pa)\n6) bka' brgyad yang gsang dregs 'dul (bsam gtan bde chen gling pa; renewed by 'jam dbyangs mkhyen brtse'i dbang po)\n7) tshe sgrub gnam lcas rdo rje'i bar gcod dregs 'dul gyi bka' brgyad dngos grub snying po ('ja' tshon snying po)\n8) bka' brgyad bde gshegs yongs 'dus (klong gsal snying po)\n9) bka' brgyad lus dkyil (gnam chos mi 'gyur rdo rje)\n10) bka' 'dus snying po yid bzhin nor bu (pad+ma bde chen gling pa)\n11) grub thob thugs thig gi khrag 'thung bde gshegs 'dus pa ('jam dbyangs mkhyen brtse'i dbang po'i dgongs gter)\n12) rdzogs pa chen po bka' 'dus rtsa ba'i snying thig (mchog gyur gling pa)"@en .
+    
+    bdr:T1193  a            :Topic ;
+        skos:altLabel       "bka' ma'i yan lag brgyad/"@bo-x-ewts , "bka' ma brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT89D9D41420DC456C , bdr:NTE48CF0F05472B84E .
+}

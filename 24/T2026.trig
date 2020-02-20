@@ -1,0 +1,46 @@
+@base          <bdg:T2026> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2026 {
+    bda:LG82E02619F17751AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-23T16:56:52.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE2B4D68C609ADA79
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-30T11:57:04.656Z"^^xsd:dateTime ;
+        adm:logMessage      "english added and note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2026  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2026 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "24/T2026.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2026 ;
+        adm:logEntry        bda:LG82E02619F17751AD , bda:LGE2B4D68C609ADA79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT440F529B563FB092
+        a                   :Note ;
+        :noteText           "according to the rangjung yeshe wiki: three gates of emancipation, emptiness, signlessness, and wishlessness; james valby uses three liberations or 3 doors of emancipation: stong pa nyid ｛空门（s/u’nyata’）｝, mtshan med｛无相门（animitta）｝, smon med｛无愿门（apran!ihita）｝。"@en .
+    
+    bdr:T2026  a            :Topic ;
+        skos:prefLabel      "rnam thar sgo gsum/"@bo-x-ewts , "three gates of emancipation"@en , "三解脱门"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT440F529B563FB092 .
+}

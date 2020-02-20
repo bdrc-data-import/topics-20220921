@@ -1,0 +1,46 @@
+@base          <bdg:T1378> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1378 {
+    bda:LG72D57F46526B0A69
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-30T15:37:12.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGC3E371691AA58806
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-04T16:12:07.24Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCE40A0D6701788F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-13T11:53:06.992Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1378  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1378 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b8/T1378.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1378 ;
+        adm:logEntry        bda:LG72D57F46526B0A69 , bda:LGC3E371691AA58806 , bda:LGCE40A0D6701788F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1378  a            :Topic ;
+        skos:altLabel       "dzambhala dkar po/"@bo-x-ewts , "jambhala sita/"@bo-x-ewts , "white jambhala/"@bo-x-ewts ;
+        skos:prefLabel      "dzaM b+ha la dkar po/"@bo-x-ewts ;
+        :isRoot             true .
+}

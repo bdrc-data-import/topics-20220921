@@ -1,0 +1,47 @@
+@base          <bdg:T1868> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1868 {
+    bda:LG10D66119074A9069
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T09:46:31.199Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB48B5031959BBF93
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-05T15:47:28.637Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1868  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1868 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "30/T1868.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1868 ;
+        adm:logEntry        bda:LG10D66119074A9069 , bda:LGB48B5031959BBF93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7A28A08D91665B42
+        a                   :Note ;
+        :noteText           "the topic keyword gsang ba'i rnam thar is applied to accounts of the highly esoteric experiences and visions of religious teachers (t1868);  \nthe key work topic rang rnam is applied to narratives about the life of a writer, an \"I\" story, an autobiography; \nthe keyword skyes rabs or birth stories, usually jataka, of defined groups of stories of the lives of immediate lives of the buddha and other important teachers (t1342);  \nthe keyword rtogs brjod is applied generically to avadana stories of former lives of buddhas and bodhisattvas (t1779);  \nthe topic keyword rnam thar is applied to the rtogs brjod of spiritual leaders and lay officials since these are narrative lives and could well be called rnam thar (t3);  \ngsang ba'i rnam thar is a topic keyword applied to accounts of highly esoteric experiences and visions of religious teachers (t1868)"@en .
+    
+    bdr:T1868  a            :Topic ;
+        rdfs:seeAlso        bdr:T3 ;
+        skos:altLabel       "gsang rnam/"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba'i rnam thar/"@bo-x-ewts , "esoteric experiences"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7A28A08D91665B42 .
+}

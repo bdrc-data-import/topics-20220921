@@ -1,0 +1,52 @@
+@base          <bdg:T00KG02746> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02746 {
+    bda:LG04DF8A17E9F2CD80
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T09:14:28.85Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG1AC4DAFD35FA845A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-31T11:17:50.971Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG6618BF2998B9514A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T16:38:14.649Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG6AA7828809A52A74
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-31T11:44:13.565Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG02746  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02746 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7a/T00KG02746.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02746 ;
+        adm:logEntry        bda:LG04DF8A17E9F2CD80 , bda:LG1AC4DAFD35FA845A , bda:LG6618BF2998B9514A , bda:LG6AA7828809A52A74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00KG02746  a       :Topic ;
+        skos:prefLabel      "bsad mnan/"@bo-x-ewts ;
+        :isRoot             true .
+}

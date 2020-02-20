@@ -1,0 +1,46 @@
+@base          <bdg:T699> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T699 {
+    bda:LG2ED13860B290BEAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T16:03:12.812Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6E864FBD11532AD6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T11:00:07.569Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T699  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T699 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "19/T699.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T699 ;
+        adm:logEntry        bda:LG2ED13860B290BEAA , bda:LG6E864FBD11532AD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT348FD5188B5B546B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon vajravidarana (vajra crusher or cleaver) white, with one face and two arms, the right hand pressing to the heart a nine-pointed vajra; the left resting on his side a bell; he sits in sattvaprayanka; with fangs just showing he is adorned in silks and all the jewel ornaments and has a back-rest of moonlight; his mount is a lotus and moon.\n\ndeviation: right holding an ordinary five pointed vajra.\n\ndeities of tibetan buddhism #211"@en .
+    
+    bdr:T699  a             :Topic ;
+        skos:prefLabel      "rdo rje rnam 'joms dkar po/"@bo-x-ewts , "white vajravidarana"@en , "vajravidarana sita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT348FD5188B5B546B .
+}

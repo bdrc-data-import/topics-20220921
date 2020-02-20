@@ -1,0 +1,59 @@
+@base          <bdg:T2CN4589> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4589 {
+    bda:LG24ED1564226A88D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T12:36:43.244Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG3A8DFB6B24FE06A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:39:37.847Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG97FC7229A24AAC6D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T12:52:01.08Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9D2FCE5941423069
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T14:59:04.823Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4589  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4589 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "83/T2CN4589.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4589 ;
+        adm:logEntry        bda:LG24ED1564226A88D2 , bda:LG3A8DFB6B24FE06A7 , bda:LG97FC7229A24AAC6D , bda:LG9D2FCE5941423069 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8A72C578820F2A62
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.5, p.372 རྒྱལ་བའི་བསྟན་སྲུང་ཀུན་གྱི་གཙོ་བོར་གྱུར་ཅིང་། ངེས་དོན་དུ་བཅོམ་ལྡན་འདས་ཧེ་རུ་ཀ་ཉིད་ཐུན་མོང་གདུལ་བྱའི་སྣང་ངོར་མྱུར་མཛད་མ་ཧཱ་ཀ་ལའི་རྣམ་པར་བསྟན་ཅིང་། དེ་ཉིད་དྲེགས་པའི་རྣམ་པར་ཤར་བ་ལ་མཚན་གྱི་རྣམ་གྲངས་ཇི་སྙེད་ཅིག་མཆིས་པ་ལས། བདུད་མགོན་རོང་ལྷ་རྒྱལ་མཚན་འདི་ཉིད་མཐུ་རྩལ་ཆེ་ཞིང་ཆོས་སྒྲུབ་པ་ལ་སྙིང་ཉེ་དམ་ཅན་གཞན་ལས་ཁྱད་པར་དུ་འཕགས་ཞེས་གསལ།"@bo .
+    
+    bdr:T2CN4589  a         :Topic ;
+        skos:prefLabel      "bdud mgon rong lha rgyal mtshan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8A72C578820F2A62 .
+}

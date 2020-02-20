@@ -1,0 +1,74 @@
+@base          <bdg:T202> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T202 {
+    bda:LG019E68677BCBBC45
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:43:00.764Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5917DA2412C03AB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T07:00:05.321Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG639EC56AD3D28152
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T15:13:34.235Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG6CDB8A80862B707A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-11T12:25:53.586Z"^^xsd:dateTime ;
+        adm:logMessage      "variant name added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGC7977B5FDAFC54F4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-10T10:12:25.215Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD631F5F7FF2D38CB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:45:17.421Z"^^xsd:dateTime ;
+        adm:logMessage      "released from withdrawn in favor of W21833"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T202  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T202 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e3/T202.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T202 ;
+        adm:logEntry        bda:LG019E68677BCBBC45 , bda:LG5917DA2412C03AB7 , bda:LG639EC56AD3D28152 , bda:LG6CDB8A80862B707A , bda:LGC7977B5FDAFC54F4 , bda:LGD631F5F7FF2D38CB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3CEE056AE1CDB98A
+        a                   :Note ;
+        :noteText           "do not apply this topic T202 but use instead W21833"@en .
+    
+    bdr:NTF4E15CAFDAD1A5F5
+        a                   :Note ;
+        :noteText           "this topic has been assigned to editions and commentaries on the guhyagarbha tantra; see also under works w21833 for other commentaries and related literature."@en .
+    
+    bdr:T202  a             :Topic ;
+        skos:altLabel       "dpal gsang ba snying po/"@bo-x-ewts ;
+        skos:prefLabel      "gsang snying /"@bo-x-ewts , "guhyagarbha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3CEE056AE1CDB98A , bdr:NTF4E15CAFDAD1A5F5 .
+}

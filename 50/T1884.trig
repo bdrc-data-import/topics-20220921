@@ -1,0 +1,46 @@
+@base          <bdg:T1884> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1884 {
+    bda:LG6371FC11372AEE30
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T12:39:12.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added lhug rtsom 'dems sgrig"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG96D698BE2773C390
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-05T15:04:55.36Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1884  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1884 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "50/T1884.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1884 ;
+        adm:logEntry        bda:LG6371FC11372AEE30 , bda:LG96D698BE2773C390 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1F96D78101139848
+        a                   :Note ;
+        :noteText           "this generic topic is assigned to composition of prose and selected works of prose"@en .
+    
+    bdr:T1884  a            :Topic ;
+        skos:altLabel       "lhug rtsom 'dems sgrig"@bo-x-ewts ;
+        skos:prefLabel      "lhug rtsom/"@bo-x-ewts , "prose"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1F96D78101139848 .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T220> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T220 {
+    bda:LG4896AF7352E2879C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-23T11:27:11.902Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE631279172D2AA3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:37:25.751Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE920FA6AE45B58D6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T09:45:43.107Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T220  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T220 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cd/T220.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T220 ;
+        adm:logEntry        bda:LG4896AF7352E2879C , bda:LGE631279172D2AA3A , bda:LGE920FA6AE45B58D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC9BF20054BA27276
+        a                   :Note ;
+        :noteText           "generic term applied to lexical material; the primary term may be the source language, the target language, or a specialized subject such as medicine"@en .
+    
+    bdr:T220  a             :Topic ;
+        skos:altLabel       "dictionaries"@en ;
+        skos:prefLabel      "tshig mdzod/"@bo-x-ewts , "dictionary"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC9BF20054BA27276 .
+}

@@ -1,0 +1,40 @@
+@base          <bdg:T584> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T584 {
+    bda:LGB2B6D2FD8419E0BF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T02:01:54.585Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T584  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T584 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "98/T584.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T584 ;
+        adm:logEntry        bda:LGB2B6D2FD8419E0BF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAC95533C28E03F98
+        a                   :Note ;
+        :noteText           "this topic is used to classify sadhanas and similar rituals; the teachings were descended from the dpyal tradition; the deity is a form of vajrayogini, dark ruby red; she has two faces, the principal face is of the goddess aspect, smiling; her right face is that of a pig, wrathful and looking upwards; her right hand brandishes a vajra knife; her left holds a skull of blood at her heart.  \ndeities of tibetan buddhism  #76"@en .
+    
+    bdr:T584  a             :Topic ;
+        skos:prefLabel      "phag mo zhal gnyis ma dpyal lugs/"@bo-x-ewts , "vajravarahi according to the dpyal tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NTAC95533C28E03F98 .
+}

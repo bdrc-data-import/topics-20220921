@@ -1,0 +1,47 @@
+@base          <bdg:T10MS11174> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS11174 {
+    bda:LG3ECFF1C6AB8AD0EB
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T11:17:00.343Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG740CBDE9F1F09541
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T20:23:47.758Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG9227F7FE1D97B702
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-28T10:53:34.348Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T10MS11174  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS11174 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/T10MS11174.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS11174 ;
+        adm:logEntry        bda:LG3ECFF1C6AB8AD0EB , bda:LG740CBDE9F1F09541 , bda:LG9227F7FE1D97B702 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T10MS11174  a       :Topic ;
+        skos:prefLabel      "tshig le'u/"@bo-x-ewts , "karika"@sa-x-ndia ;
+        :isRoot             true .
+}

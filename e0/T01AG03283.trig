@@ -1,0 +1,46 @@
+@base          <bdg:T01AG03283> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG03283 {
+    bda:LG03B3C3B59769C3C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-13T12:08:06.174Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG73590C2F1EE1F9B0
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T19:53:44.316Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG8C8DD7C3A0F550EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T09:17:18.807Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T01AG03283  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG03283 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e0/T01AG03283.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG03283 ;
+        adm:logEntry        bda:LG03B3C3B59769C3C9 , bda:LG73590C2F1EE1F9B0 , bda:LG8C8DD7C3A0F550EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T01AG03283  a       :Topic ;
+        skos:prefLabel      "gtum po thugs sgrub/"@bo-x-ewts ;
+        :isRoot             true .
+}

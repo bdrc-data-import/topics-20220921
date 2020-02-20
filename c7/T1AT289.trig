@@ -1,0 +1,41 @@
+@base          <bdg:T1AT289> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT289 {
+    bda:LGD1314FB6CAEA2FAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-12T09:37:10.881Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:T1AT289  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT289 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c7/T1AT289.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT289 ;
+        adm:logEntry        bda:LGD1314FB6CAEA2FAA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD9EADBA1E18AE94B
+        a                   :Note ;
+        :noteText           "one of the deities of the dge bsnyen (upasaka) class"@en .
+    
+    bdr:T1AT289  a          :Topic ;
+        rdfs:comment        "one of the deities of the dge bsnyen (upasaka) class" ;
+        skos:altLabel       "ston rgyal/"@bo-x-ewts , "ston rgyal dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "dge bsnyen ston rgyal dkar po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD9EADBA1E18AE94B .
+}

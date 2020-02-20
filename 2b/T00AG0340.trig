@@ -1,0 +1,45 @@
+@base          <bdg:T00AG0340> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG0340 {
+    bda:LG9EBAD3305D9F18D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-26T14:35:54.711Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGF4C67439F7B7C9E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-16T14:12:56.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG0340  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG0340 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2b/T00AG0340.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG0340 ;
+        adm:logEntry        bda:LG9EBAD3305D9F18D1 , bda:LGF4C67439F7B7C9E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4082F43F011A388F
+        a                   :Note ;
+        :noteText           "a form of padmasambhava, as the sambhokaya buddha vajradhara. he is in sexual union with mandarava"@en .
+    
+    bdr:T00AG0340  a        :Topic ;
+        skos:prefLabel      "mtsho skye rdo rje/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4082F43F011A388F .
+}

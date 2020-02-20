@@ -1,0 +1,40 @@
+@base          <bdg:T2264> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2264 {
+    bda:LG5EEF88E628FB91B4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T16:05:54.179Z"^^xsd:dateTime ;
+        adm:logMessage      "topic created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2264  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2264 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7b/T2264.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2264 ;
+        adm:logEntry        bda:LG5EEF88E628FB91B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT385BED5F6E614466
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with this unnumbered 9th empowerment of the 21 tara collection according to the tradition of suryagupta; this form of tara is identical with the basic blue green tara (deities of tibetan buddhism #275) with one face and two arms; the right hand is boon giving and the left holds at her heart with the thumb and ring finger the stem of an utpala; she sits in the ardhaparyanka lalita posture with right leg extended; adorned with silks and all the jewel ornaments she has a backrest of moonlight on her lotus and moon seat; she has two attendants:\n\non her right comes marici, who is yellow and holds a vajra and a branch of an asoka tree; she has the dress of a peaceful deity;  on the left comes ekajata, black and holding a knife and a blood-filled skull; she has three eyes and tiger skin and elephant skin garments; she is complete with the garb of a fierce female deity; both are sitting in lalita posture.\n\ndeviations: khadiravani tara the sources including suryagupta make no mention of the second utpala shown as springing from her right hand; apart from this she is a standard green tara\n\n\ndeities of tibetan buddhism #284-286."@en .
+    
+    bdr:T2264  a            :Topic ;
+        skos:prefLabel      "seng ldeng nags kyi sgrol ma gtso 'khor gsum/"@bo-x-ewts , "khadiravani tara with two attendants"@en , "khadiravani tara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT385BED5F6E614466 .
+}

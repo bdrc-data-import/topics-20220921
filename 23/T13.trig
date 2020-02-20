@@ -1,0 +1,64 @@
+@base          <bdg:T13> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T13 {
+    bda:LG3258304AE5A78A4A
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-19T15:27:43.161Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T1886 to T1GS44553"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG6A85D06757F25585
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T09:30:16.825Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8037F2DCFD1A963B
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-10-31T12:58:49.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8ED926D3DD215CC9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T15:03:53.431Z"^^xsd:dateTime ;
+        adm:logMessage      "application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF56A774CD2931B7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-15T14:32:14.766Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T13  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T13 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "23/T13.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T13 ;
+        adm:logEntry        bda:LG3258304AE5A78A4A , bda:LG6A85D06757F25585 , bda:LG8037F2DCFD1A963B , bda:LG8ED926D3DD215CC9 , bda:LGF56A774CD2931B7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8788535971EA5096
+        a                   :Note ;
+        :noteText           "generic topic applied to works containing notices of contents; the main subject topic is a collection of works (gsung 'bum), contents of a temple or stupa, etc."@en .
+    
+    bdr:T13  a              :Topic ;
+        rdfs:seeAlso        bdr:T00KG02662 , bdr:T1218 , bdr:T1GS44553 , bdr:T2123 , bdr:T2196 , bdr:T298 ;
+        skos:prefLabel      "dkar chag"@bo-x-ewts , "notice of contents"@en , "目录"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT8788535971EA5096 .
+}

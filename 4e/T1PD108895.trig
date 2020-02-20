@@ -1,0 +1,59 @@
+@base          <bdg:T1PD108895> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108895 {
+    bda:LG013EF69B9E5177B1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG68ED61F11291EE4D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:26:44.77Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG7F2C65931ECECE24
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGD288902DA74DB2BE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:28:16.359Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108895  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108895 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4e/T1PD108895.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108895 ;
+        adm:logEntry        bda:LG013EF69B9E5177B1 , bda:LG68ED61F11291EE4D , bda:LG7F2C65931ECECE24 , bda:LGD288902DA74DB2BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD49F182DABC65814
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 1643) （1）དཔྱད་མཚམས་ཁྲ་མའི་བསྡུས་མིང་།（2）སྔར་བོད་ས་གནས་སྲིད་གཞུང་གིས་རིམ་གྲོ་སྒྲུབ་སྐབས་དགོས་ཆའི་གྲངས་འབོར་ཐག་བཅད་པའི་ཡི་གེ་སྦུག་དམ་འབྱར་མ་ཞེས་འཁོད།"@bo .
+    
+    bdr:T1PD108895  a       :Topic ;
+        skos:prefLabel      "dpyad khra/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD49F182DABC65814 .
+}

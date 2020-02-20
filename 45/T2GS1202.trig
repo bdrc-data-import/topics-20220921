@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1202> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1202 {
+    bda:LG22FD600029F40EA5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T10:21:05.831Z"^^xsd:dateTime ;
+        adm:logMessage      "topic with application note created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1202  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1202 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "45/T2GS1202.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1202 ;
+        adm:logEntry        bda:LG22FD600029F40EA5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT71F9AF471B55B8E4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 21st of the 21 tara collection according to the tradition of suryagupta; she is visualized as white with three eyes, slightly wrathful, her right hand holds a trident and spear and her left a pearl rosary; she is in ardhaparyanka and has a tiger skin loincloth; she is crowned with ratnasambhava, the master of her family; she is mounted on a magnificent white bull upon which are a lotus and a moon.\n\ndeities of tibetan buddhism #299."@en .
+    
+    bdr:T2GS1202  a         :Topic ;
+        skos:altLabel       "yongs rdzogs byed pa'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma yongs rdzogs byed ma/"@bo-x-ewts , "tara the perfecter"@en , "paripuranatara"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT71F9AF471B55B8E4 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T22> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T22 {
+    bda:LG74E87BF77B85B85D
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-08-01T10:43:28.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T22  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T22 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "23/T22.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T22 ;
+        adm:logEntry        bda:LG74E87BF77B85B85D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT309A0B4759616D33
+        a                   :Note ;
+        :noteText           "this keyword is generically assigned to all rituals for the invoking of deities to ensure prosperity"@en .
+    
+    bdr:T22  a              :Topic ;
+        skos:altLabel       "g.yang chog"@bo-x-ewts , "nor sgrub/"@bo-x-ewts ;
+        skos:prefLabel      "g.yang 'gugs/"@bo-x-ewts , "prosperity rituals"@en ;
+        :isRoot             true ;
+        :note               bdr:NT309A0B4759616D33 .
+}

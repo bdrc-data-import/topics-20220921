@@ -1,0 +1,52 @@
+@base          <bdg:T1CZ55> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ55 {
+    bda:LG1CC9A1A0C0BD4CFE
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-01-04T10:30:10.627Z"^^xsd:dateTime ;
+        adm:logMessage      "fix typo"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGBF12D70A656BB083
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T19:34:44.555Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGCA50AB1083E7881D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-28T13:49:40.002Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGDF42C78351F93670
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-06T10:55:01.488Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ55  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ55 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1a/T1CZ55.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ55 ;
+        adm:logEntry        bda:LG1CC9A1A0C0BD4CFE , bda:LGBF12D70A656BB083 , bda:LGCA50AB1083E7881D , bda:LGDF42C78351F93670 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1CZ55  a           :Topic ;
+        skos:prefLabel      "drang nges rnam 'byed/"@bo-x-ewts ;
+        :isRoot             true .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T1800> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1800 {
+    bda:LG42A5B7D259E69CD5
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:13:11.911Z"^^xsd:dateTime ;
+        adm:logMessage      "T538"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGD3E567475864CFFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-10T10:19:02.781Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1800  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1800 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7d/T1800.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1800 ;
+        adm:logEntry        bda:LG42A5B7D259E69CD5 , bda:LGD3E567475864CFFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTFC2909A923A17E57
+        a                   :Note ;
+        :noteText           "probably the name of a deity; there is an abhiseka by the 3rd karmapa"@en .
+    
+    bdr:T1800  a            :Topic ;
+        skos:prefLabel      "pad+ma snang ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFC2909A923A17E57 .
+}

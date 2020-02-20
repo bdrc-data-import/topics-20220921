@@ -1,0 +1,52 @@
+@base          <bdg:T1AT436> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT436 {
+    bda:LG5E4B61C260B4DEF4
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-10T12:11:31.94Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:LG94C378D01CA54C65
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T16:00:55.704Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB04166D8E386D639
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T09:50:36.693Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1AT436  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT436 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "08/T1AT436.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT436 ;
+        adm:logEntry        bda:LG5E4B61C260B4DEF4 , bda:LG94C378D01CA54C65 , bda:LGB04166D8E386D639 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT976FE342DCF4945B
+        a                   :Note ;
+        :noteText           "this topic is used for all transmissions of the red lion-headed dakini, both dge lugs and rnying ma gter ma; the red simha mukhi is red with one face and two arms; the right hand brandishes skyward a golden-colored knife; the left holds at her heart a blood-filled skull, with a khatvanga in the crook of the elbow; she has three eyes and yellow, upward streaming hair; she is adorned with a crown of five dry skulls, a long necklace of fifty fresh heads, a tiger-skin loincloth, and the five symbolic ornaments"@en .
+    
+    bdr:T1AT436  a          :Topic ;
+        skos:altLabel       "lcags sgrog ma/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong ma dmar mo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT976FE342DCF4945B .
+}

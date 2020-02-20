@@ -1,0 +1,37 @@
+@base          <bdg:T1873> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1873 {
+    bda:LG076310CED5FCEF54
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T12:20:10.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & descriptions"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1873  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1873 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "2b/T1873.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1873 ;
+        adm:logEntry        bda:LG076310CED5FCEF54 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1873  a            :Topic ;
+        rdfs:comment        "Three yanas/ spiritual approaches/ vehicles; 1) {nyan thos kyi theg pa} vehicle of listeners. {rang sangs rgyas kyi theg pa} vehicle of lone-learners. {theg pa chen po} vehicle of altruistic saints. Three Vehicles. three causal vehicles of the pious attendants, self-centered buddhas, and bodhisattvas. 2) To the vehicle of directing the cause of suffering {kun 'byung 'dren pa} the vehicle of austere awareness {dka' thub rig} and the vehicle of overpowering means {dbang bsgyur thabs kyi theg pa} 3) Three vehicles. Hinayana, Mahayana and Vajrayana" , "ཐེག་པ་གསུམ་ལ་གོ་ཚུལ་མི་འདྲ་བ་གསུམ་ཙམ་མཆིས་པ་གཤམ་གསལ་ལྟར།" ;
+        skos:altLabel       "theg gsum/"@bo-x-ewts , "Triyana"@sa-x-ndia ;
+        skos:prefLabel      "theg pa gsum/"@bo-x-ewts , "The three yanas/ vehicles"@en , "triyāna"@sa-x-ndia , "三乘"@zh-hans ;
+        :isRoot             true .
+}

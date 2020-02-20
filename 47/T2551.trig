@@ -1,0 +1,48 @@
+@base          <bdg:T2551> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2551 {
+    bda:LG2995CBFD5D3EB3A1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-14T11:30:18.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG66BBBB1C96F6DF45
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-25T12:36:51.443Z"^^xsd:dateTime ;
+        adm:logMessage      "english added"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGF03502B39123073D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T12:21:35.423Z"^^xsd:dateTime ;
+        adm:logMessage      "edited & merge T1PD109542 & T1PD109543 & T1PD109544 to here"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2551  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2551 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "47/T2551.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2551 ;
+        adm:logEntry        bda:LG2995CBFD5D3EB3A1 , bda:LG66BBBB1C96F6DF45 , bda:LGF03502B39123073D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2551  a            :Topic ;
+        skos:altLabel       "'jig rten chags tshul/"@bo-x-ewts , "outer and inner world"@en ;
+        skos:prefLabel      "snod bcud kyi 'jig rten/"@bo-x-ewts , "cosmos"@en ;
+        :isRoot             true .
+}

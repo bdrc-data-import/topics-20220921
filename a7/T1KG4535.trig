@@ -1,0 +1,52 @@
+@base          <bdg:T1KG4535> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG4535 {
+    bda:LG5C0B73EB14714504
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-31T11:56:57.992Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG6C5B6F4A64ABDD78
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-08T22:21:57.077Z"^^xsd:dateTime ;
+        adm:logMessage      "removed new lines from names"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG945CC66E50B3A97C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-09T17:01:50.281Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1KG4535  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG4535 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a7/T1KG4535.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG4535 ;
+        adm:logEntry        bda:LG5C0B73EB14714504 , bda:LG6C5B6F4A64ABDD78 , bda:LG945CC66E50B3A97C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA64DBE3428C942E1
+        a                   :Note ;
+        :noteText           "hindu deity"@en .
+    
+    bdr:T1KG4535  a         :Topic ;
+        skos:prefLabel      "khyab 'jug"@bo-x-ewts , "vishnu"@en ;
+        :isRoot             true ;
+        :note               bdr:NTA64DBE3428C942E1 .
+}

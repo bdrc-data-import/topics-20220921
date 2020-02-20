@@ -1,0 +1,46 @@
+@base          <bdg:T496> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T496 {
+    bda:LG10AFEE48ACA07674
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:18:04.346Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG164098E31CE19AED
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T13:01:33.826Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T496  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T496 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fa/T496.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T496 ;
+        adm:logEntry        bda:LG10AFEE48ACA07674 , bda:LG164098E31CE19AED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT8F73E332EAB17B81
+        a                   :Note ;
+        :noteText           "this term is applied to works referring to the seven\nclasses of protectors of the tantrayana. these are: 1) e ka dza ti; 2) legs ldan lcam dral; 3) re ma ti; 4) srog sgrub ma; 5) khyab 'jug; 6) gza' rgod bshan pa mig dmar; 7) rdo rje legs pa; this is from the 4th volume of the gsan yig gang+gA'i chu rgyun of the 5th dalai lama and is found on f. 75v which quotes klong chen rab 'byams pa. I am greatful to dan martin for this search;  \n\n\"This ought to be at fol. 75v of the 4th vol. of HHDL V's Gsan-yig: \"sde bdun dbang gi cho ga'i steng nas ae ka dza ti  /   legs ldan lcam dral  /   re ma t'i  /   srog sgrub ma  /   khyab 'jug  /   gza' rgod bshan pa mig dmar  /   rdo rje legs pa ste dam can sde bdun gyi gter ma la brten pa'i sku gsung thugs dbang  /   mtha' rten dam rdzas  /   spyan gzigs phyag mtshan gyi dbang rnams dang  /   lung la  /   kun mkhyen chen pos dam can sde bdun gyi dbang chog phyi rabs don du bkod pa  /   des mdzad pa'i dam can sde bdun gyi bkang gso dngos grub 'byung gter gyi stod las kyi bkang gso dang mnga' gsol gyi mchod pa chen mo dang bcas pa bde legs phun sum tshogs par mdzod kyi mtha' can yan dang bcas pa thob pa'i brgyud pa ni  /   kun mkhyen klong chen pa yan snying tig spyi ltar ram yang na slob dpon padma thod 'phreng  /   rgyal yum ye shes 'tsho rgyal  /   rgyal sras dri med 'od zer  /   bde legs rgya mtsho  /   ma ti mam ga  /   stag mgo yon tan dpal ba  /   sprul sku bsam rgyal ba  /   rje nam mkha' gzhon nu  /   rgyal sras mkha' klong yangs pa  /   sman rtse ba blo gros rgyal mtshan  /   sprul sku sna tshogs rang grol  /   rje bstan 'dzin grags pa  /   dpal ri karma rgyal sras kun bzang  /   sdom brtson rin cen dar rgyas  /   rje 'phrin las lhun grub  /   de sras gter bdag gling pa  /   des bdag la'o  /   /\" on the basis of electronic input of the 4 volumes of the gang+ga'i chu rgyun"@en .
+    
+    bdr:T496  a             :Topic ;
+        skos:prefLabel      "sngags srung sde bdun/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8F73E332EAB17B81 .
+}

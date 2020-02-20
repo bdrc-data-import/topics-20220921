@@ -1,0 +1,41 @@
+@base          <bdg:T00KG02666> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02666 {
+    bda:LG66D66B773934FAB1
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T10:10:11.844Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan infavour of T00KG02665"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG925F126CC6FAF74D
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-11T16:11:42.909Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG02666  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02666 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3b/T00KG02666.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02666 ;
+        adm:logEntry        bda:LG66D66B773934FAB1 , bda:LG925F126CC6FAF74D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T00KG02666  a       :Topic ;
+        skos:prefLabel      "las khrigs kyi gsal byed/"@bo-x-ewts ;
+        :isRoot             true .
+}

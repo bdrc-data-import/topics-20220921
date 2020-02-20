@@ -1,0 +1,56 @@
+@base          <bdg:T1808> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1808 {
+    bda:LG311E027384B6B14A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T14:59:05.411Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T00JR2928 (drag po'i las)"@en .
+    
+    bda:LG36841ACEC1B263A5
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:36Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGA29649CEBBF61335
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-12T14:24:15.344Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGCEAB79E9A581568A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T15:02:12.639Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T00JR2928 (drag po'i las)"@en .
+    
+    bda:T1808  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1808 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7e/T1808.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1808 ;
+        adm:logEntry        bda:LG311E027384B6B14A , bda:LG36841ACEC1B263A5 , bda:LGA29649CEBBF61335 , bda:LGCEAB79E9A581568A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT80D0EC460095BA0B
+        a                   :Note ;
+        :noteText           "wrathful rites for subjugation and liberation"@en .
+    
+    bdr:T1808  a            :Topic ;
+        skos:altLabel       "drag po'i las/"@bo-x-ewts ;
+        skos:prefLabel      "mngon spyod/"@bo-x-ewts , "direct wrathful intervention"@en ;
+        :isRoot             true ;
+        :note               bdr:NT80D0EC460095BA0B .
+}

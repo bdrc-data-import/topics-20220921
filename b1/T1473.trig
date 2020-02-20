@@ -1,0 +1,33 @@
+@base          <bdg:T1473> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1473 {
+    bda:T1473  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1473 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b1/T1473.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1473 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT97DB550DA6604E8B
+        a                   :Note ;
+        :noteText           "the five most important dge lugs pa prayers; the most important commentaries to each are:\n1) bzang spyod smon lam\nthere exist commentaries by klu sgrub, phyogs glang, shAkya bshes gnyen, rgyan bzang po, zhwa lu ba ye shes rgya mtsho, kun mkhyen stobs 'bar 'od zer, jo nang tA ra nA tha, gtsang chung chos grags rgya mtsho, grags pa bshad sgrub, g.yer gshong sngags rams pa ngag dbang 'jam dbyangs blo gros, khri rgya nag pa blo bzang bstan pa'i nyi ma, tshe 'phel ku shri, and lcang skya rol pa'i rdo rje\n2) byams pa'i smon lam\nthere are a number of commentaries on this such as those of paN chen byams pa gling pa bsod nams rnam rgyal, zhwa lu ba ye shes rgya mtsho, and tA ra nA tha; the dge lugs tradition regards most highly 'jam dbyangs dga' ba'i blo gros' TIkka bde ldan gsum ldan gyi shing rta\n3) spyod 'jug smon lam\nthere are many commentaries but the dge lugs tradition interprets it according to the tradition of rgyal tshab dar ma rin chen's rgyal sras 'jug ngogs\n4) thog mtha' 'bar du dge ba'i smon lam\nthe dge lugs tradition regards lcang skya blo bzang chos ldan's 'grel pa dgongs don gsal byed legs bshad sgron me most highly\n5) bde ba can du skye ba'i smon lam.\nmany commentaries exist"@en .
+    
+    bdr:T1473  a            :Topic ;
+        skos:prefLabel      "smon lam lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT97DB550DA6604E8B .
+}

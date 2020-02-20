@@ -1,0 +1,41 @@
+@base          <bdg:T609> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T609 {
+    bda:LG23C7E5EA511D4BA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T16:21:30.659Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T609  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T609 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6e/T609.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T609 ;
+        adm:logEntry        bda:LG23C7E5EA511D4BA2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT357E7C29C9A68550
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for two forms of tara, blue-green, her right hand book granting and her left holding the stem of a blue utpalal; seated in lalita with right leg extended, she is adorned with silks and jewels; half her hair is tied up on th left and some hangs down on the right; above the crescent moon she is marked with amitabha;\nat night she is tara, white and exceedingly fierce, with three eyes and yellow upwaqrd streaming hair; her right hand brandishes a vajra; her left smiting towards the earth and making the threatening forefinger gesture; she wears a tiger skin scarf and green serpent long necklace' above a crescent moon on the crown of her head, she is marked with amitabha; she abides in pratyalidha (right leg bent) on a lotus and sun amid a blazing mass of fire;\n\ndeities of tibetan buddhism #136"@en .
+    
+    bdr:T609  a             :Topic ;
+        skos:altLabel       "tara (divasanta ratrikruddha)"@sa-alalc97 ;
+        skos:prefLabel      "sgrol ma nyin zhi mtshan khro/"@bo-x-ewts , "tara peaceful by day and wrathful by night"@en , "divasanta ratrikruddha tara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT357E7C29C9A68550 .
+}

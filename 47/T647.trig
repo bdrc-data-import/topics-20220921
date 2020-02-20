@@ -1,0 +1,41 @@
+@base          <bdg:T647> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T647 {
+    bda:LGCDC45AF2DDF061DE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T10:11:32.693Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T647  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T647 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/T647.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T647 ;
+        adm:logEntry        bda:LGCDC45AF2DDF061DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5E885B2E1F021D4F
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for a yellow form of tara, her right hand boon-granting, her left hand holding a yellow utpala marked with a jewel; she sits in sattva paryanka on a lotus and moon; on her right is yellow jambhala, on a treasure vase, holding a citron and a mongoose; on the left of the principal deity is yellow vaisravana mounted on a lion, holding a jewel-marked club and a mongoose; this follows the tradition of kha che paN chen shAkya shrI. \n\ndeities of tibetan buddhism #141-143"@en .
+    
+    bdr:T647  a             :Topic ;
+        skos:altLabel       "sgrol ma ser mo gtso 'khor gsum/"@bo-x-ewts , "yellow tara with two attendants"@en ;
+        skos:prefLabel      "sgrol ma ser mo skor gsum kha che paN chen lugs/"@bo-x-ewts , "tara pita according to the transmission of kha che paN chen"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5E885B2E1F021D4F .
+}

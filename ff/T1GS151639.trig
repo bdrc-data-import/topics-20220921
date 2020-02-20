@@ -1,0 +1,52 @@
+@base          <bdg:T1GS151639> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS151639 {
+    bda:LG50D040659F78D70A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:20:31.029Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8EF990EDBEFB3C73
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-07-15T13:00:55.828Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG935FFD0C5EDB292C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:05:33.451Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS151639  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS151639 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/T1GS151639.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS151639 ;
+        adm:logEntry        bda:LG50D040659F78D70A , bda:LG8EF990EDBEFB3C73 , bda:LG935FFD0C5EDB292C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT123BFA998513D1CC
+        a                   :Note ;
+        :noteText           "under this topic are classed rituals for calling upon the bla spirit"@en .
+    
+    bdr:T1GS151639  a       :Topic ;
+        skos:prefLabel      "bla 'gugs/"@bo-x-ewts , "summoning of the bla spirit"@en ;
+        :isRoot             true ;
+        :note               bdr:NT123BFA998513D1CC .
+}

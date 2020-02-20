@@ -1,0 +1,58 @@
+@base          <bdg:T2624> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2624 {
+    bda:LG36320B99F9A583E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T16:53:04.377Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG7D3B7727C79C64A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T16:20:23.248Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC1FEFCC4183F92AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-17T10:55:26Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaned up english descriptions"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGC6B9455208043BEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-28T14:07:21.577Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T2624  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2624 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5c/T2624.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2624 ;
+        adm:logEntry        bda:LG36320B99F9A583E7 , bda:LG7D3B7727C79C64A4 , bda:LGC1FEFCC4183F92AD , bda:LGC6B9455208043BEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT8EE7F9863C06B132
+        a                   :Note ;
+        :noteText           "The five essential subjects and treatises studied in dge lugs pa tradition:\n\n1. phar phyin\n2. dbu ma\n3. tshad ma rnam 'grel\n4. 'dul\n5. mdzod"@en .
+    
+    bdr:T2624  a            :Topic ;
+        skos:prefLabel      "gzhung pod lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8EE7F9863C06B132 .
+}

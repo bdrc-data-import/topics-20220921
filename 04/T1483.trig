@@ -1,0 +1,56 @@
+@base          <bdg:T1483> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1483 {
+    bda:LG2D4FDD3CB2D041EC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-21T16:58:50.1Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG41B8A6DB6581E880
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T16:01:10.419Z"^^xsd:dateTime ;
+        adm:logMessage      "application note and description from the chos rnam kun btus added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1483  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1483 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "04/T1483.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1483 ;
+        adm:logEntry        bda:LG2D4FDD3CB2D041EC , bda:LG41B8A6DB6581E880 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0F76C6B91BCE0B5B
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1426-1427" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1208-8) enumerates these six teachings or doctrines: 1) gtum mo bde drod rang 'bar; 2) sgyu lus chags sdang rang grol; 3) rmi lam nying 'phrul rang dag; 4) 'od gsal gti mug rang sangs; 5) 'pho ba ma sgom sangs rgyas; 6) bar do rgyal ba longs sku."@en .
+    
+    bdr:NTDBC5985D29076AB7
+        a                   :Note ;
+        :noteText           "this topic is applied to manuals and other works outlining the essential teachings of the rdzogs rim of the shangs pa bka' brgyud tradition"@en .
+    
+    bdr:NTFFAEA0532A49018F
+        a                   :Note ;
+        :noteText           "this topic is applied as a subject to manuals and other works describing all of six; individual teachings and instructions on single items of the six are treated under the name of the individual doctrine"@en .
+    
+    bdr:T1483  a            :Topic ;
+        rdfs:seeAlso        bdr:T10MS14462 ;
+        skos:prefLabel      "ni gu chos drug"@bo-x-ewts , "six teachings of niguma"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0F76C6B91BCE0B5B , bdr:NTDBC5985D29076AB7 , bdr:NTFFAEA0532A49018F .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T00JR774> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR774 {
+    bda:LG3FE3B0533B2CC387
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T09:09:04.296Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA8EEAB2C995C45CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T11:31:58.026Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGE943D6A33C5F1CCF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-04T12:39:03.121Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00JR774  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR774 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/T00JR774.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR774 ;
+        adm:logEntry        bda:LG3FE3B0533B2CC387 , bda:LGA8EEAB2C995C45CD , bda:LGE943D6A33C5F1CCF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCDC17EDBA5CD2782
+        a                   :Note ;
+        :noteText           "the deity topic is applied to rituals and initiations for a form of re ma ti of plagues, black, wearing a black silk go zu with a rainbow design and a pair of black snake straps; she has four arms, the first right hand holds a magic mirror; the second, a serpent noose; the first left holds a trident; the second holds an iron ritual dagger; she is complete with all the charnel ground requisites (as in deities of tibetan buddhism #395) and surrounded by inconceivable hosts of gnosis matrkas, karmamatrkas, wordly matrkas, goddesses, nagis, yaksas, gandarvas, kumbhandas and raksasis;\n\ndeities of tibetan buddhism #396"@en .
+    
+    bdr:T00JR774  a         :Topic ;
+        skos:altLabel       "rang byung rgyal mo/"@bo-x-ewts ;
+        skos:prefLabel      "lha mo srog sgrub lcags phur ma rang byung rgyal mo/"@bo-x-ewts , "goddess with iron ritual dagger for vitality-practice, the self-arisen queen"@en , "devi pranasadhana ayahkila svayambhurajni"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTCDC17EDBA5CD2782 .
+}

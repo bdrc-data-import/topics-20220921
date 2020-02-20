@@ -1,0 +1,59 @@
+@base          <bdg:T324> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T324 {
+    bda:LG563961F468D29825
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-13T15:23:18.26Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG899161654C76256F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-29T16:10:34.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"ma Ni ...\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC846CBF6006177CF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T16:34:32.277Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF614CC06DB86FB9A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T14:46:13.906Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T324  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T324 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "80/T324.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T324 ;
+        adm:logEntry        bda:LG563961F468D29825 , bda:LG899161654C76256F , bda:LGC846CBF6006177CF , bda:LGF614CC06DB86FB9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTB4D883401C04DC72
+        a                   :Note ;
+        :noteText           "this topic is applied to the mantra of avalokitesvara, who holds a jewel (maNi) and lotus (padma)"@en .
+    
+    bdr:T324  a             :Topic ;
+        skos:altLabel       "oM maNi padme hUM/"@bo-x-ewts , "yi ge drug pa/"@bo-x-ewts ;
+        skos:prefLabel      "ma Ni yig drug"@bo-x-ewts , "sadaksara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB4D883401C04DC72 .
+}

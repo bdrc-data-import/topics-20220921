@@ -1,0 +1,53 @@
+@base          <bdg:T561> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T561 {
+    bda:LG39A863C94DC90CE3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T21:58:19.501Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7E44FF68A45F06D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T13:52:15.364Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD9D6FFA909EC6122
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:36:29.711Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T561  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T561 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/T561.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T561 ;
+        adm:logEntry        bda:LG39A863C94DC90CE3 , bda:LG7E44FF68A45F06D9 , bda:LGD9D6FFA909EC6122 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC2BB27CAB449E8F0
+        a                   :Note ;
+        :noteText           "this topic or term is applied to one of the dmar po skor gsum, three deities especially propitiated by the followers  of the sa skya tradition.\n\nthis deity topic is applied to empowerments and rituals focussing upon takkiraja who he is ruby red and blazing with light, having with one face, two arms, and three eyes; his right hand brandishes a hook, summoning the three worlds; the left with threatening forefinger holds a noose at the heart; he abides in pratyalidha (right leg bent); he has a topknot of tresses and is adorned with jewels and snakes; he wears a red silk scarf and a skirt made of various silks; he is crowned with amitabha; his abode is sukhavati\n\nin his lap is the mother, increaser of bliss (bde ba rgyas byed ma, sukhavardhana), red with one face, two arms and three eyes; her right hand brandishes a hook and her left holding a flask full of nectar and embracing the father; her legs too are in alidha (right extended) are would round the father; both father and mother are amid a mass of blazing fire of gnosis.\n\n\n \ndeities of tibetan buddhism #11"@en .
+    
+    bdr:T561  a             :Topic ;
+        skos:altLabel       "'dod rgyal dmar po/"@bo-x-ewts , "rakta takkiraja"@sa-alalc97 ;
+        skos:prefLabel      "'dod pa'i rgyal po/"@bo-x-ewts , "red sri takkiraja"@en , "kamaraja (rakta)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC2BB27CAB449E8F0 .
+}

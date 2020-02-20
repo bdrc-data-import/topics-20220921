@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1229> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1229 {
+    bda:LG2886723CC6EEEF87
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T13:04:46.135Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8BF3DB24ABB0E0D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:39:31.017Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1229  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1229 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5f/T2GS1229.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1229 ;
+        adm:logEntry        bda:LG2886723CC6EEEF87 , bda:LG8BF3DB24ABB0E0D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT17F6EE476DF5B170
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon sri mahakala, dark blue, with one face, two arms and three eyes; he holds in his right hand a knife and in his left a skull full of blood, one above the other straight in front of his heart; he embraces the mother, his consort; in his armpit he bears a khatvanga of the nature of union; he is terrible with bared fangs, standing with both feet together on a human corpse; from the corner of his mouth trickles a tream of blood; his beard, eyebrows, and hair are tawny and blaze like fire; he is crowned with aksobhya; his loincloth of fresh tiger skin is hitched up and he is adorned with a crown of five dry human heads. a long necklace of fifty fresh ones, the eight great nagas, and the five symbolic ornaments.\n\nhis consort is mahakali (nag mo chen mo), naked and without ornaments, holding a knife and a skull and embracing the father with her arms and calves; she is similar to the father and just a little peaceful; both are amid a blazing fire of gnosis.\n\nthere are four attendants: in the east comes kali (nag mo); to the south comes karali (gtsigs ma; mantra karali); to the west comes varadi (ba ra di ma); to the north comes vetali (ro langs ma; mantra vaitali); these are naked, black, hold knife and skull and abide on lotus, sun and corpse seats.\n\ndeities of tibetan buddhism #360."@en .
+    
+    bdr:T2GS1229  a         :Topic ;
+        skos:altLabel       "gur mgon yum can klu sgrub lugs/"@bo-x-ewts ;
+        skos:prefLabel      "gur gyi mgon po yum can klu sgrub lugs/"@bo-x-ewts , "panjara mahakala with consort in the tradition of nagarjuna"@en ;
+        :isRoot             true ;
+        :note               bdr:NT17F6EE476DF5B170 .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T873> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T873 {
+    bda:LG20E1ED883B0D1C47
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T15:58:43.966Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGAC8C9BF6CD0CE537
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T13:31:53.02Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGED2297C48641350C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:36:47.483Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T873  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T873 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d1/T873.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T873 ;
+        adm:logEntry        bda:LG20E1ED883B0D1C47 , bda:LGAC8C9BF6CD0CE537 , bda:LGED2297C48641350C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT58D9F673FE2CCFD5
+        a                   :Note ;
+        :noteText           "the six yi dam teachings of rdo rje gdan pa are:\n1) 'od zer can ma (phyi'i bar chad sel ba'i gzungs las 'byung ba...; to pacify external obstacles such as enemies)\n2) thub pa ma ru shi Sa (tshe ring po sgrub pa...; to achieve longevity)\n3) spyan ras gzigs yi ge phyed dang bzhi pa (rmi lam ngan pa zlog pa...; to avert such obstacles as bad dreams)\n4) sangs rgyas spyan ma (nad zhi bar byed pa...; to pacify diseases)\n5) dam tshig gsum bkod gtso rkyang (de bzhin gshegs pa'i yi ge brgya pa'i sdig sbyong gi cho gar grags pa...; to cleanse sins and obscurations through the recitation of the tathagata (trisamayavyuha's hundred-syllalble mantra)\n6) mi g.yo ba sngon po (to pacify internal obstacles such as hindering demons)"@en .
+    
+    bdr:T873  a             :Topic ;
+        skos:prefLabel      "rdo rje gdan pa'i lha drug"@bo-x-ewts , "the six vajrasana yidam deities"@en ;
+        :isRoot             true ;
+        :note               bdr:NT58D9F673FE2CCFD5 .
+}

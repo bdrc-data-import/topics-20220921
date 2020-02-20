@@ -1,0 +1,47 @@
+@base          <bdg:T2411> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2411 {
+    bda:LG7EB5A28DE63C9C1D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T10:33:07.371Z"^^xsd:dateTime ;
+        adm:logMessage      "created New record & released again"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGA85E9564BB97161D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T12:35:58.26Z"^^xsd:dateTime ;
+        adm:logMessage      "added 19 associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE120A6FA3F4794BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-03T13:36:58.79Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2411  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2411 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f8/T2411.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2411 ;
+        adm:logEntry        bda:LG7EB5A28DE63C9C1D , bda:LGA85E9564BB97161D , bda:LGE120A6FA3F4794BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2411  a            :Topic ;
+        skos:prefLabel      "legs sbyar chos dpe/"@bo-x-ewts , "buddhist texts in sanskrit"@en , "梵文佛典"@zh-hans ;
+        :isRoot             true .
+}

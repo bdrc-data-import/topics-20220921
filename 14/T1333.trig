@@ -1,0 +1,42 @@
+@base          <bdg:T1333> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1333 {
+    bda:LG84663B9160695742
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:27:47.425Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG9BC06DE9906BBCA3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T15:29:31.061Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T2373 (dgra bgegs sgrol gtad) and T00JR775 (bsgral las)"@en .
+    
+    bda:T1333  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1333 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "14/T1333.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1333 ;
+        adm:logEntry        bda:LG84663B9160695742 , bda:LG9BC06DE9906BBCA3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1333  a            :Topic ;
+        rdfs:seeAlso        bdr:T00JR775 , bdr:T2373 ;
+        skos:altLabel       "spyi gshor/"@bo-x-ewts ;
+        skos:prefLabel      "gshor gsum/"@bo-x-ewts ;
+        :isRoot             true .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T1173> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1173 {
+    bda:LG3F5C824D566D426A
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-20T20:19:39.199Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGFA55169D98FC5BB2
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-23T15:24:10.325Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1173  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1173 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/T1173.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1173 ;
+        adm:logEntry        bda:LG3F5C824D566D426A , bda:LGFA55169D98FC5BB2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT2F6183538725C614
+        a                   :Note ;
+        :noteText           "this topic is applied to a special dance performed for auspiciousness"@en .
+    
+    bdr:T1173  a            :Topic ;
+        skos:prefLabel      "bro/"@bo-x-ewts , "dance"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2F6183538725C614 .
+}

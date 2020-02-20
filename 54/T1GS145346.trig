@@ -1,0 +1,40 @@
+@base          <bdg:T1GS145346> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS145346 {
+    bda:LG780918764A7E8186
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-15T12:37:16.808Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS145346  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS145346 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "54/T1GS145346.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS145346 ;
+        adm:logEntry        bda:LG780918764A7E8186 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC141AA91A543AC1A
+        a                   :Note ;
+        :noteText           "ritual practice"@en .
+    
+    bdr:T1GS145346  a       :Topic ;
+        skos:prefLabel      "nam mkha'i zas su za ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC141AA91A543AC1A .
+}

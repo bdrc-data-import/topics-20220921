@@ -1,0 +1,47 @@
+@base          <bdg:T419> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T419 {
+    bda:LG3C844887721115F1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T11:52:36.419Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7F830D686C6A6527
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:38.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T419  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T419 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a6/T419.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T419 ;
+        adm:logEntry        bda:LG3C844887721115F1 , bda:LG7F830D686C6A6527 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDC858E740F7D2125
+        a                   :Note ;
+        :noteText           "specialized generic term for a fire puja, often used for drag po'i rituals;  a fire puja according to IW where 1 does 1/10 of the mantras accumulated (to amend the mantra); according to RY the fire puja of One Tenth [of the number of recitations]"@en .
+    
+    bdr:T419  a             :Topic ;
+        rdfs:seeAlso        bdr:T8 ;
+        skos:prefLabel      "bcu cha'i sbyin sreg"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDC858E740F7D2125 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T4CZ15543> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15543 {
+    bda:LG772A03CFABD7555C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-06T14:46:30.049Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF16E2F31BF166B89
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-06T11:02:40.82Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ15543  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15543 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "58/T4CZ15543.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15543 ;
+        adm:logEntry        bda:LG772A03CFABD7555C , bda:LGF16E2F31BF166B89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8BC1F95D355DCBA8
+        a                   :Note ;
+        :noteText           "sku mdog gangs ltar dkar bazhal brgyad spyan gsum ma/ phyag bcu drug dbu skra kham ser rgyen du 'khyil ba 'dzag pa dang ldan pa'i mi mgo'i phreng bas do shal can/ phyag gyas pa rnams ni ral gri dabg / ut+pal dang / mda' dang rdo rje dang dbyug to dang gri gug dang mi 'jigs pa'i phyag rgya'o/ g.yon rnam sni zhags pa dang sdig mdzub dang thod pa dang ghzu dang kha TwaM ga dang rdo rje dang zhags pa dang tshangs pa'i mgo bo dang rin po che'i bum pa bsnam spa'o//"@en .
+    
+    bdr:T4CZ15543  a        :Topic ;
+        skos:altLabel       "'phags ma sgrol ma rab tu dang ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma rab tu dang ba/"@bo-x-ewts , "prasannataraya"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT8BC1F95D355DCBA8 .
+}

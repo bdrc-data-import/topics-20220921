@@ -1,0 +1,46 @@
+@base          <bdg:T01JR184> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01JR184 {
+    bda:LGCDDC9F0E658A44B7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T14:36:34.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added names of individual gter ston to gter ma if soley discovered by them"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:LGEBB02CFF4C85C39C
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-09T18:51:02.219Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T01JR184  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01JR184 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "50/T01JR184.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01JR184 ;
+        adm:logEntry        bda:LGCDDC9F0E658A44B7 , bda:LGEBB02CFF4C85C39C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT58C60EC8E9E2174E
+        a                   :Note ;
+        :noteText           "treasure discovered by pad+ma las 'brel rtsal (b. 1248)"@en .
+    
+    bdr:T01JR184  a         :Topic ;
+        skos:prefLabel      "mkha' 'gro snying thig (pad+ma las 'brel rtsal)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT58C60EC8E9E2174E .
+}

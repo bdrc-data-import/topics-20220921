@@ -1,0 +1,48 @@
+@base          <bdg:T1924> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1924 {
+    bda:LG927F06896E2C4ADE
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T12:22:39.67Z"^^xsd:dateTime ;
+        adm:logMessage      "with drawn in favor of corect T"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGECD944FFCC526373
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:35:13.454Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1924  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1924 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "43/T1924.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1924 ;
+        adm:logEntry        bda:LG927F06896E2C4ADE , bda:LGECD944FFCC526373 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT09D11EE0EB3AB9A9
+        a                   :Note ;
+        :noteSource         bdr:MW24924 ;
+        :noteText           "protective deity\nstyled dge bsnyen dpal zla"@en .
+    
+    bdr:T1924  a            :Topic ;
+        skos:altLabel       "dge bsnyen dpal zla/"@bo-x-ewts ;
+        skos:prefLabel      "dpal zla/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT09D11EE0EB3AB9A9 .
+}

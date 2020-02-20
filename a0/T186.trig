@@ -1,0 +1,42 @@
+@base          <bdg:T186> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T186 {
+    bda:LG32CEE62D2A19F0BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T16:38:07.011Z"^^xsd:dateTime ;
+        adm:logMessage      "edited tibetan name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGDB7D8079C2C9697B
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-23T13:01:23.448Z"^^xsd:dateTime ;
+        adm:logMessage      "re-publishing"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T186  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T186 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a0/T186.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T186 ;
+        adm:logEntry        bda:LG32CEE62D2A19F0BB , bda:LGDB7D8079C2C9697B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T186  a             :Topic ;
+        rdfs:seeAlso        bdr:T4CZ16893 ;
+        skos:prefLabel      "sum rtags/"@bo-x-ewts , "grammar"@en ;
+        :isRoot             true .
+}

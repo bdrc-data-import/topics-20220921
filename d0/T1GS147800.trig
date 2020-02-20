@@ -1,0 +1,46 @@
+@base          <bdg:T1GS147800> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147800 {
+    bda:LGC8623407B5CF3562
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T13:29:36.912Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1470 (skrad pa)"@en .
+    
+    bda:LGDCB6BB4A39915769
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T10:33:03.796Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147800  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147800 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d0/T1GS147800.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147800 ;
+        adm:logEntry        bda:LGC8623407B5CF3562 , bda:LGDCB6BB4A39915769 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT01265D00C8457B9E
+        a                   :Note ;
+        :noteText           "rituals for expulsion of malevolent spirits and illness"@en .
+    
+    bdr:T1GS147800  a       :Topic ;
+        rdfs:seeAlso        bdr:T1470 ;
+        skos:prefLabel      "tshogs mchod brgya rtsa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT01265D00C8457B9E .
+}

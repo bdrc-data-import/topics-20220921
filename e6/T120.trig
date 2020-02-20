@@ -1,0 +1,40 @@
+@base          <bdg:T120> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T120 {
+    bda:LGE3DA199C109DF609
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T16:23:25.527Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T120  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T120 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e6/T120.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T120 ;
+        adm:logEntry        bda:LGE3DA199C109DF609 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0AFFB1B809D41147
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals that focus upon the great king vaisravana, exceedingly black like the cloud at the end of time, and terrifying, with one face and two arms; his right hand brandishes skyward a vajra club from which dangles a flag of benares muslin; his left hand holds at his heart a black caitya; he has three round, red eyes, bared fangs, a frown, and pale yellow upward streaming beard, eyebrows and hair; with a tiger skin loincloth and a silk scarf, he is adorned with the great nagas and a jewel crown; from his right and left shoulders shine the sun and moon; sending out from his upper body measureless hosts of dangerous birds of prey, from his midriff hosts of yaksas and raksasas, from his lower body hosts of dangerousl beasts of prey such as lions; he abides in pratyalidha posture (left leg extended) amid a blazing mass of fire; on ethe eight petals are the eight great nags, all dark blue and wrathful, with slightly bared fangs; their hands are at their hearts, palms folded and holding gems; each has a seven-fold hood of snakes; their lower parts are snakes' tails, coiled; their crest jewels emit light, while their mouths his phuT; outside, they are surrounded by hosts of ten million yaksas and of the eight tribes of gods and spirits.\n\ndeviations: sun seat; the nagas all have five snakes hoods\n\ndeities of tibetan buddhism #307-309"@en .
+    
+    bdr:T120  a             :Topic ;
+        skos:prefLabel      "rnam sras drag byed/"@bo-x-ewts , "terrible vaisravana"@en , "vaisravana raudra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT0AFFB1B809D41147 .
+}

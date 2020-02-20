@@ -1,0 +1,54 @@
+@base          <bdg:T10MS14620> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS14620 {
+    bda:LG51CE7466AF9B1199
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:48:47.926Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGA7BB6981AA4EEC7D
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T12:05:27.313Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFD3C693FFC654C26
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T18:45:42.615Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T10MS14620  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS14620 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "40/T10MS14620.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS14620 ;
+        adm:logEntry        bda:LG51CE7466AF9B1199 , bda:LGA7BB6981AA4EEC7D , bda:LGFD3C693FFC654C26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT6274317ADEF6424D
+        a                   :Note ;
+        :noteText           "this genre refers to letters and official correspondences"@en .
+    
+    bdr:T10MS14620  a       :Topic ;
+        rdfs:seeAlso        bdr:T14 ;
+        skos:altLabel       "letters/"@bo-x-ewts ;
+        skos:prefLabel      "gzhung yig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6274317ADEF6424D .
+}

@@ -1,0 +1,53 @@
+@base          <bdg:T1PD108883> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108883 {
+    bda:LG3A7A6E14F201C7C0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG72D7CA4CF49E38BE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGD4BBB60584E1987B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T09:43:56.053Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108883  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108883 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ae/T1PD108883.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108883 ;
+        adm:logEntry        bda:LG3A7A6E14F201C7C0 , bda:LG72D7CA4CF49E38BE , bda:LGD4BBB60584E1987B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6B1BCD5D38F6FA37
+        a                   :Note ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "སྙན་ཞུ་ནི་འོག་རིམ་ནས་གོང་རིམ་ལ་གནས་ཚུལ་སྙན་སེང་ཞུ་བའི་ཡི་གེ་སྟེ། བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོར་ (p. 2768)  ཞུ་ཡིག་ཅེས་འཁོད།"@bo .
+    
+    bdr:T1PD108883  a       :Topic ;
+        skos:prefLabel      "snyan zhu/"@bo-x-ewts , "呈文"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6B1BCD5D38F6FA37 .
+}

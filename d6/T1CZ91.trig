@@ -1,0 +1,57 @@
+@base          <bdg:T1CZ91> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ91 {
+    bda:LG05B2B9F99AEBCB68
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T16:37:46.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added note from T1GS108078"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG4CF87EFFFF273571
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-12T14:33:48Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGBF1C5F9A07D7B10D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-12T10:35:36.864Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1CZ91  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ91 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d6/T1CZ91.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ91 ;
+        adm:logEntry        bda:LG05B2B9F99AEBCB68 , bda:LG4CF87EFFFF273571 , bda:LGBF1C5F9A07D7B10D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAEA78C02E372992B
+        a                   :Note ;
+        :noteText           "(mo lha 'am zhang lha, srog lha, dgra lha, pho lha, yul lha), five deities of the individual"@en .
+    
+    bdr:NTEAFF9901E54E0E3A
+        a                   :Note ;
+        :noteText           "group of protectors often propitiated in mongolia and amdo"@en .
+    
+    bdr:T1CZ91  a           :Topic ;
+        skos:altLabel       "the five patron deities/"@bo-x-ewts ;
+        skos:prefLabel      "'go ba'i lha lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAEA78C02E372992B , bdr:NTEAFF9901E54E0E3A .
+}

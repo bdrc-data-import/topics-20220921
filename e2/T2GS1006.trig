@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1006> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1006 {
+    bda:LGCE18C5BF65EFB84C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-10T15:50:31.555Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1006  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1006 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e2/T2GS1006.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1006 ;
+        adm:logEntry        bda:LGCE18C5BF65EFB84C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA4F1FBF7C1A53435
+        a                   :Note ;
+        :noteText           "here are classed works on spaces, particularly sacred places and mystical body locations"@en .
+    
+    bdr:T2GS1006  a         :Topic ;
+        rdfs:comment        "sthana" ;
+        skos:prefLabel      "gnas/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA4F1FBF7C1A53435 .
+}

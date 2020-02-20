@@ -1,0 +1,51 @@
+@base          <bdg:T1PD109547> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD109547 {
+    bda:LG1A28E86B41A4CC92
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-28T12:33:52.705Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG37DC62419B141DCC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-22T11:45:36.896Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG829C1758B334CAD4
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-25T12:10:07.695Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD109547  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD109547 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "81/T1PD109547.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD109547 ;
+        adm:logEntry        bda:LG1A28E86B41A4CC92 , bda:LG37DC62419B141DCC , bda:LG829C1758B334CAD4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC3BA368AB351BB17
+        a                   :Note ;
+        :noteText           "teaching, learning and study"@en .
+    
+    bdr:T1PD109547  a       :Topic ;
+        skos:prefLabel      "'chad nyan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC3BA368AB351BB17 .
+}

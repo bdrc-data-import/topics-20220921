@@ -1,0 +1,54 @@
+@base          <bdg:T310> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T310 {
+    bda:LG24D3D8C8E6859F8A
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:49.727Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAE76072C5A499C96
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T15:41:36.428Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC5EEBF957DEB7D66
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-11T11:02:08.061Z"^^xsd:dateTime ;
+        adm:logMessage      "removed T1129 as classification"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T310  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T310 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "18/T310.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T310 ;
+        adm:logEntry        bda:LG24D3D8C8E6859F8A , bda:LGAE76072C5A499C96 , bda:LGC5EEBF957DEB7D66 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT53AA15D2A49DA829
+        a                   :Note ;
+        :noteText           "this topic is used for the classification of those teachings that have been transmitted in an unbroken lineage to the present day masters; they are distinguished by the teachings which have been rediscovered; these are called gter ma; these teachings, both bka' ma and gter ma, are primarily teachings of the rnying ma tradition"@en .
+    
+    bdr:T310  a             :Topic ;
+        rdfs:seeAlso        bdr:T11MS52 ;
+        skos:altLabel       "rnying lugs bka' ma/"@bo-x-ewts , "snga 'gyur bka' ma/"@bo-x-ewts ;
+        skos:prefLabel      "bka' ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT53AA15D2A49DA829 .
+}

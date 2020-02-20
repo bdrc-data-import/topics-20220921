@@ -1,0 +1,46 @@
+@base          <bdg:T635> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T635 {
+    bda:LG4A1B35BD42389351
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-18T14:58:11.672Z"^^xsd:dateTime ;
+        adm:logMessage      "name and note change entirely."@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG78611BE0C092A1FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-18T15:01:41.783Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T635  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T635 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5a/T635.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T635 ;
+        adm:logEntry        bda:LG4A1B35BD42389351 , bda:LG78611BE0C092A1FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2758BD60C7C5A5A8
+        a                   :Note ;
+        :noteText           "ཐུབ་པའི་དབང་པོ་ལོངས་སྐུའི་ཆ་བྱད་ཅན་གྱི་སྐུ་། བཅོམ་ལྡན་འདས་ཤཱཀྱ་ཐུབ་པ་དགུང་གྲངས་བཅུ་གཉིས་ལ་ཕེབས་པའི་སྐུ་ཚད་དང་མཐུན་པའི་སྐུ་འདི་ནི། ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐུ་རིང་ལ་རྒྱ་བཟའ་ཀོང་ཇོའི་རྟེན་སྐལ་དུ་༼སྤྱི་ལོ་༦༤༡ ལོར་༽བོད་ལ་གདན་དྲངས་།་ད་ལྟ་ར་ས་འཕྲུལ་སྣང་གཙུག་ལག་ཁང་དུ་འགྲོ་བའི་མགོན་དུ་བཞུགས།།\n\nIt came to be owned by the king of Magadha, who gave it to a Tang emperor of China. One of the emperor's clansman's daughter, Wenchen Kongjo. In the year 641 took it to Lhasa via Lhagang in a wooden cart when she married King Songtsen Gampo."@en .
+    
+    bdr:T635  a             :Topic ;
+        skos:altLabel       "jo bo rin po che/"@bo-x-ewts , "jo bo shAkya mu ni/"@bo-x-ewts , "jo bo shAk yid bzhin nor bu/"@bo-x-ewts , "lha sa'i jo bo/"@bo-x-ewts , "The Jowo Rinpoche"@en ;
+        skos:prefLabel      "jo bo (lha sa)"@bo-x-ewts , "Jowo Shakyamuni"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2758BD60C7C5A5A8 .
+}

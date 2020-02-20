@@ -1,0 +1,40 @@
+@base          <bdg:T1514> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1514 {
+    bda:LG6EDF92410F85B377
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-04T10:15:06.55Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG83FA5E96A0672076
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-02T15:43:32.011Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted note, and (khrid)"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1514  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1514 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "95/T1514.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1514 ;
+        adm:logEntry        bda:LG6EDF92410F85B377 , bda:LG83FA5E96A0672076 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1514  a            :Topic ;
+        skos:prefLabel      "srid zhi mnyam nyid/"@bo-x-ewts ;
+        :isRoot             true .
+}

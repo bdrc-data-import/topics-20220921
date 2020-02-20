@@ -1,0 +1,57 @@
+@base          <bdg:T349> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T349 {
+    bda:LG29B85C615DBF6489
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:45:34.598Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG3F3C2CCB284F6A07
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-25T14:56:20.703Z"^^xsd:dateTime ;
+        adm:logMessage      "T349 and T2410 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG47162E6F5F6918F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-24T10:42:33.034Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5F838DD3D11BFA5B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:42:28.464Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGE832D743AD6B177A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:40:53.051Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T349  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T349 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8c/T349.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T349 ;
+        adm:logEntry        bda:LG29B85C615DBF6489 , bda:LG3F3C2CCB284F6A07 , bda:LG47162E6F5F6918F3 , bda:LG5F838DD3D11BFA5B , bda:LGE832D743AD6B177A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T349  a             :Topic ;
+        skos:altLabel       "dran gso/"@bo-x-ewts , "rjes dran/"@bo-x-ewts ;
+        skos:prefLabel      "dran tho/"@bo-x-ewts , "memoirs"@en ;
+        :isRoot             true .
+}

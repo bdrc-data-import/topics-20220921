@@ -1,0 +1,60 @@
+@base          <bdg:T2560> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2560 {
+    bda:LG2CA9BAB008F9A2E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T16:07:22.088Z"^^xsd:dateTime ;
+        adm:logMessage      "added SeeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBE17195C2A7868BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T11:56:43.598Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC0FBAF5C4CB14411
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-28T11:55:56.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"sdig bshags\" & the chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2560  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2560 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ce/T2560.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2560 ;
+        adm:logEntry        bda:LG2CA9BAB008F9A2E9 , bda:LGBE17195C2A7868BC , bda:LGC0FBAF5C4CB14411 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT69BCA9A0A5624F40
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 1112" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus citing the 'dul ba gzhi'i rgya cher 'grel pa, bstan 'gyur, 'dul ba, tsu, 206-7, cites the sdig to las lnga: these five great sins are: 1) bram ze gsod pa; 2) ba lang gsod pa; 3) gser rku ba; 4) bla ma'i chung ma'i 'gam du 'gro ba; 5) chang 'thung ba"@en .
+    
+    bdr:NT8E403F4EBA94A1EC
+        a                   :Note ;
+        :noteText           "this topic is applied to ritual texts for confession and expiation of the sins, large and great, some of which cannot easily be expiated"@en .
+    
+    bdr:T2560  a            :Topic ;
+        rdfs:seeAlso        bdr:T337 ;
+        skos:altLabel       "sdig pa bshags thabs/"@bo-x-ewts ;
+        skos:prefLabel      "sdig bshags/"@bo-x-ewts , "method for making amends for transgressions"@en , "忏罪"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT69BCA9A0A5624F40 , bdr:NT8E403F4EBA94A1EC .
+}

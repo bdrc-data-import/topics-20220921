@@ -1,0 +1,71 @@
+@base          <bdg:T003JR155> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR155 {
+    bda:LG33076D25C00029AB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-06T11:26:33.795Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3E48F463D9E5E357
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-27T16:41:34.105Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG41F9FCDCC1777DBA
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-19T15:25:42.854Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG576F86E87705CFB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-06T16:39:52.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added ."@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG65D3B34D2C913408
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-18T12:44:58.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFA16CDA2882312AA
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-24T11:33:02.6Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T003JR155  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR155 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "43/T003JR155.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR155 ;
+        adm:logEntry        bda:LG33076D25C00029AB , bda:LG3E48F463D9E5E357 , bda:LG41F9FCDCC1777DBA , bda:LG576F86E87705CFB7 , bda:LG65D3B34D2C913408 , bda:LGFA16CDA2882312AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3FD1D0B0D2FA25CC
+        a                   :Note ;
+        :noteText           "this generic topic is applied to research results; the primary topic is the subject of the research."@en .
+    
+    bdr:T003JR155  a        :Topic ;
+        rdfs:seeAlso        bdr:T11MS60 , bdr:T258 , bdr:T299 ;
+        skos:altLabel       "research paper"@en ;
+        skos:prefLabel      "dpyad rtsom/"@bo-x-ewts , "essay"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3FD1D0B0D2FA25CC .
+}

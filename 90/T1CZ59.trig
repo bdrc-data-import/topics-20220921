@@ -1,0 +1,41 @@
+@base          <bdg:T1CZ59> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ59 {
+    bda:LG2E713DAD12B6A5E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-07T11:51:51.594Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGD1C297488116934D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T21:47:28.762Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1CZ59  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ59 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "90/T1CZ59.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ59 ;
+        adm:logEntry        bda:LG2E713DAD12B6A5E7 , bda:LGD1C297488116934D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1CZ59  a           :Topic ;
+        skos:prefLabel      "lam gtso gsum/"@bo-x-ewts , "three chief things on the path [an upadesa of tsong kha pa]"@en ;
+        :isRoot             true .
+}

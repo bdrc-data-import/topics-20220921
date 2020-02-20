@@ -1,0 +1,72 @@
+@base          <bdg:T2CN4717> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4717 {
+    bda:LG34582EB0CEB76404
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-13T14:32:37.47Z"^^xsd:dateTime ;
+        adm:logMessage      "created records"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG82078E1F9CEC245A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T12:47:40.376Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGACC4FEBC07D69D02
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:03:08.902Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGDB40EA76E9389C3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:58:16.322Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE3207E77ABC5CD78
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-09-14T10:09:57.528Z"^^xsd:dateTime ;
+        adm:logMessage      "added note with klong chen pa's text"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4717  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4717 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b5/T2CN4717.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4717 ;
+        adm:logEntry        bda:LG34582EB0CEB76404 , bda:LG82078E1F9CEC245A , bda:LGACC4FEBC07D69D02 , bda:LGDB40EA76E9389C3A , bda:LGE3207E77ABC5CD78 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6E617FC3A68851DB
+        a                   :Note ;
+        :locationStatement  "V.7, PP.135" ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "གསང་བདག་སྙན་བརྒྱུད་ཀྱི་བཀའི་སྲུང་མ་སྡེ་བདུན་ལ་ཡང་དམ་ཅན་སྡེ་བདུན་ཞེསའཁོད་ཡོད་དེ། ལྷ་མཆོག་གྲི་གུག་མགོན་པོ། མ་གཅིག་ཨེ་ཀ་ཛ་ཊི། རྒྱལ་ཆེན་རྣམ་ཐོས་སྲས། དཔལ་མགོན་སྟག་གཞོན་ཅན། ལྷ་ཆེན་ཚངས་པའི་རྒྱལ་པོ། ཆོས་རྒྱལ་ལི་བྱིན་ཧ་ར། དམ་ཅན་སྐྱེས་བུ་ཆེན་པོ་བཅས་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NT91F3EB89E1114F83
+        a                   :Note ;
+        :locationStatement  "V. 5, PP. 594" ;
+        :noteSource         bdr:MW00EGS1016299 ;
+        :noteText           "ཀུན་མཁྱེན་ཀློང་ཆེན་པས་མཛད་པའི་དམ་ཅན་སྡེ་བདུན་གྱི་དབང་ཆོག་ལས། སྔགས་སྲུང་དབུས། ཤན་པ་ཤར། གཟའ་ལྷོ། གནོད་སྦྱིན་ནུབ། དམ་ཅན་བྱང་། ལེགས་ལྡན་ལྕམ་དྲལ་བྱང་ཤར་ཞེས། སོ་སོའི་གྲལ་དང་བཅས་གསལ།"@bo .
+    
+    bdr:T2CN4717  a         :Topic ;
+        skos:prefLabel      "dam can sde bdun/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6E617FC3A68851DB , bdr:NT91F3EB89E1114F83 .
+}

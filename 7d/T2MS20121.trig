@@ -1,0 +1,50 @@
+@base          <bdg:T2MS20121> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS20121 {
+    bda:LG697698207D65FF07
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-20T09:56:52.383Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE5BE2FF5E3D84AB4
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-20T10:04:08.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS20121  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS20121 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7d/T2MS20121.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS20121 ;
+        adm:logEntry        bda:LG697698207D65FF07 , bda:LGE5BE2FF5E3D84AB4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5A4EA961E613608D
+        a                   :Note ;
+        :noteText           "this is generally applied to set of works related to the ritual performances associated with death rites; popularly known in english as the \"tibetan book of the dead\""@en .
+    
+    bdr:NT7688082C9BB4B9C4
+        a                   :Note ;
+        :noteText           "see also T351"@en .
+    
+    bdr:T2MS20121  a        :Topic ;
+        skos:prefLabel      "bar do thos grol/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5A4EA961E613608D , bdr:NT7688082C9BB4B9C4 .
+}

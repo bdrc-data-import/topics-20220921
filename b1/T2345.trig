@@ -1,0 +1,48 @@
+@base          <bdg:T2345> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2345 {
+    bda:LG623B437C0023F440
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T15:24:31.939Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & released, added all names & associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB38968A6D6F75959
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T16:59:17.071Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB7E5B8F2EB9BB1F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T18:51:05.456Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2345  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2345 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b1/T2345.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2345 ;
+        adm:logEntry        bda:LG623B437C0023F440 , bda:LGB38968A6D6F75959 , bda:LGB7E5B8F2EB9BB1F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2345  a            :Topic ;
+        rdfs:seeAlso        bdr:T535 ;
+        skos:prefLabel      "sprul sku/"@bo-x-ewts , "apparitional body"@en , "nirmanakaya"@sa-x-ndia , "化身"@zh-hans ;
+        :isRoot             true .
+}

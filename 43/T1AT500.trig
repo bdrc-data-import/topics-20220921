@@ -1,0 +1,44 @@
+@base          <bdg:T1AT500> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT500 {
+    bda:LG08F91065AD37CCA7
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-15T12:37:13.255Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGB319EDA8357F42AB
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-05T12:33:17.954Z"^^xsd:dateTime .
+    
+    bda:T1AT500  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT500 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "43/T1AT500.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT500 ;
+        adm:logEntry        bda:LG08F91065AD37CCA7 , bda:LGB319EDA8357F42AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3F4EC85A3949A970
+        a                   :Note ;
+        :noteText           "white fire offering ritual or burning of non-meat edibles such as diary products"@en .
+    
+    bdr:T1AT500  a          :Topic ;
+        rdfs:comment        "white fire offering ritual or burning of non-meat edibles such as diary products" ;
+        skos:prefLabel      "dkar gsur/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3F4EC85A3949A970 .
+}

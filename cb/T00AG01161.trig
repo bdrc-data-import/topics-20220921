@@ -1,0 +1,61 @@
+@base          <bdg:T00AG01161> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01161 {
+    bda:LG2516ED5F7BC821B3
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-29T13:18:34.531Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG423CB6EE2DFE417F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:14:31.209Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG8E871459155D03F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-22T14:43:12.181Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG8EFB1B75C2BD67C6
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-29T13:42:23.804Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG960CA413CB75C716
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-29T13:29:44.227Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01161  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01161 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cb/T00AG01161.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01161 ;
+        adm:logEntry        bda:LG2516ED5F7BC821B3 , bda:LG423CB6EE2DFE417F , bda:LG8E871459155D03F3 , bda:LG8EFB1B75C2BD67C6 , bda:LG960CA413CB75C716 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTD2A6A404D142E426
+        a                   :Note ;
+        :noteText           "a form of mahakarunika received in a vision by the nun dpal mo that is the basis for the smyung gnas tradition"@en .
+    
+    bdr:T00AG01161  a       :Topic ;
+        skos:altLabel       "dge slong ma'i dpal mo lugs kyi thugs rje chen po/"@bo-x-ewts , "spyan ras gzigs dpal mo lugs/"@bo-x-ewts ;
+        skos:prefLabel      "spyan ras gzigs dpal mo lugs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD2A6A404D142E426 .
+}

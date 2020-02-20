@@ -1,0 +1,47 @@
+@base          <bdg:T559> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T559 {
+    bda:LG33E02E6FD47FE496
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T03:03:58.237Z"^^xsd:dateTime ;
+        adm:logMessage      "formatting for application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7D35868356AF8E2E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T21:00:53.889Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T559  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T559 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ee/T559.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T559 ;
+        adm:logEntry        bda:LG33E02E6FD47FE496 , bda:LG7D35868356AF8E2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA4BFA8F68B7EE256
+        a                   :Note ;
+        :noteText           "the topic is used for empowerments and rituals transmitted by gnyan lo tsa ba; the goddess is green with one face and two arms, the right making a gesture of granting boons, the left holding at her heart with thumb and ring finger the root of a blue utpala, its flowers opening beside her ear; she is smiling and very peaceful; her curly hair is tied on the left and hanging down twisted on the right; she has the appearance of a 16 year old; her back rests on the moon; a scarf of thin silk covers her breast and she wears a skirt of various silks; she is sitting in the lalita posture, her right leg slightly extended and her left bent; she is crowned by amoghasiddhi.\n\ndeities of tibetan buddhism #9"@en .
+    
+    bdr:T559  a             :Topic ;
+        skos:altLabel       "gnyan sgrol yan lag drug pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ljang yan lag drug pa gnyan lugs/"@bo-x-ewts , "six-armed tara after gnyan lo tsa ba"@en , "tara (syama sadanga), gnyan lugs"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA4BFA8F68B7EE256 .
+}

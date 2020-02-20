@@ -1,0 +1,47 @@
+@base          <bdg:T504> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T504 {
+    bda:LG75606DB4ACDF7B71
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-25T06:16:14.605Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE50953FEB22DEFBB
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-14T11:37:51.056Z"^^xsd:dateTime ;
+        adm:logMessage      "variant names added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T504  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T504 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fd/T504.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T504 ;
+        adm:logEntry        bda:LG75606DB4ACDF7B71 , bda:LGE50953FEB22DEFBB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAE1A358F37FBE460
+        a                   :Note ;
+        :noteText           "this dharma protector deity of the rnying ma tradition belongs to the yaksha class\n\"above a lotus and sun and a gelded goat, or a white radiant lion, ... is the excellent dorje legpa, maroon, one face, two hands, three eyes. the face is radiant with bared fangs, exhaling a poisonous breath, with red hair and mustache flowing upward. the right hand holds a vajra striking the heads of enemies and the left a human heart. wearing a cloak of red silk, dwelling in a fierce and wrathful manner\"-himalayan art resources"@en .
+    
+    bdr:T504  a             :Topic ;
+        skos:altLabel       "ging chen/"@bo-x-ewts , "gnod sbyin rdo rje legs pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje legs pa (srung ma)"@bo-x-ewts , "vajrasadhu"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTAE1A358F37FBE460 .
+}

@@ -1,0 +1,35 @@
+@base          <bdg:T00AG01322> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01322 {
+    bda:LG37F5ED1D07D2CBE3
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-21T16:27:23.365Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01322  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01322 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "83/T00AG01322.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01322 ;
+        adm:logEntry        bda:LG37F5ED1D07D2CBE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00AG01322  a       :Topic ;
+        skos:altLabel       "jambhala syama from the byang gter tradition/"@bo-x-ewts ;
+        skos:prefLabel      "dzaM b+ha la ljang khu (byang gter lugs)"@bo-x-ewts ;
+        :isRoot             true .
+}

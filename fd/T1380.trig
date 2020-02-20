@@ -1,0 +1,40 @@
+@base          <bdg:T1380> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1380 {
+    bda:LGF845719932F17B00
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-10T10:34:08.921Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1380  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1380 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fd/T1380.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1380 ;
+        adm:logEntry        bda:LGF845719932F17B00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2025C3389B82644E
+        a                   :Note ;
+        :noteText           "ritual utterance of the syllables oM, aH, hUM"@en .
+    
+    bdr:T1380  a            :Topic ;
+        skos:prefLabel      "'bru gsum rdor bzlas/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2025C3389B82644E .
+}

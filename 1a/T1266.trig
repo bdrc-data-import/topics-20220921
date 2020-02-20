@@ -1,0 +1,40 @@
+@base          <bdg:T1266> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1266 {
+    bda:LG99D8FE6A67C4A7B1
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T16:22:17.25Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1266  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1266 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1a/T1266.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1266 ;
+        adm:logEntry        bda:LG99D8FE6A67C4A7B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT620C6446A2E3F0DA
+        a                   :Note ;
+        :noteText           "extract maximal benefit, to make progress, enhancement, enhancement [JV] \n\nEnhancement. Various practices with the purpose of stabilizing insight. According to Tulku Urgyen Rinpoche, the main enhancement practice is the cultivation of devotion and compassion [RY] \n\nimprovement, enhancing practice; ex. gegs sel bogs 'don enhancing practice and removing obstacles [RY] \n\n1) improve[ment], increase; 2) gain benefit, profit; 3) utilize (/ [set off to advantage, enhance, strengthen, heighten] [IW] \n\nRetrieved from \"http://rywiki.tsadra.org/index.php/bogs_%27don\""@en .
+    
+    bdr:T1266  a            :Topic ;
+        skos:prefLabel      "bogs 'don/"@bo-x-ewts , "enhancement or progress in practice"@en ;
+        :isRoot             true ;
+        :note               bdr:NT620C6446A2E3F0DA .
+}

@@ -1,0 +1,53 @@
+@base          <bdg:T1462> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1462 {
+    bda:LG226AD26910C6BE95
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:11:55.474Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG44E8DB0F2CF36744
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-05T13:02:40.139Z"^^xsd:dateTime ;
+        adm:logMessage      "re-released for usage"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE0A96A24712A299E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-05T14:23:22.437Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1462 and T2GS1099"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T1462  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1462 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "45/T1462.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1462 ;
+        adm:logEntry        bda:LG226AD26910C6BE95 , bda:LG44E8DB0F2CF36744 , bda:LGE0A96A24712A299E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT01B7CF5E7B5E599A
+        a                   :Note ;
+        :noteText           "special teachings of the mar pa bka' brgyud pa tradition."@en .
+    
+    bdr:T1462  a            :Topic ;
+        rdfs:seeAlso        bdr:T2GS1099 ;
+        skos:prefLabel      "snyan gyi shog dril bzhi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT01B7CF5E7B5E599A .
+}

@@ -1,0 +1,50 @@
+@base          <bdg:T1556> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1556 {
+    bda:LGC030192B70178FFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-18T15:29:22.34Z"^^xsd:dateTime ;
+        adm:logMessage      "released, added note"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGC0ABEB0EE9869C50
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:38:27.483Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1556  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1556 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "49/T1556.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1556 ;
+        adm:logEntry        bda:LGC030192B70178FFC , bda:LGC0ABEB0EE9869C50 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT416FF3DCF214A608
+        a                   :Note ;
+        :noteText           "the three types of suffering"@en .
+    
+    bdr:NTBF8107EF553F45B9
+        a                   :Note ;
+        :noteText           "instruction on is 55th in the jo nang khrid brgya"@en .
+    
+    bdr:T1556  a            :Topic ;
+        skos:prefLabel      "sdug bsngal gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT416FF3DCF214A608 , bdr:NTBF8107EF553F45B9 .
+}

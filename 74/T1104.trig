@@ -1,0 +1,58 @@
+@base          <bdg:T1104> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1104 {
+    bda:LG05CC600DD23C0DF2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-21T16:58:45.422Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG28EA7D66D9620682
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T11:26:41.674Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA7F30363284A174D
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-17T11:07:48.682Z"^^xsd:dateTime ;
+        adm:logMessage      "dkar' bka' la bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGE4EB959352168808
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-27T08:17:59.312Z"^^xsd:dateTime ;
+        adm:logMessage      "checked orthography dkar brgyud for 'brug pa and 'ba' ra"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1104  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1104 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "74/T1104.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1104 ;
+        adm:logEntry        bda:LG05CC600DD23C0DF2 , bda:LG28EA7D66D9620682 , bda:LGA7F30363284A174D , bda:LGE4EB959352168808 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT422A1D1E4D86D647
+        a                   :Note ;
+        :noteText           "a subgroup of the stod 'brug bka' brgyud pa"@en .
+    
+    bdr:T1104  a            :Topic ;
+        rdfs:seeAlso        bdr:T10MS14532 ;
+        skos:prefLabel      "'ba' ra bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT422A1D1E4D86D647 .
+}

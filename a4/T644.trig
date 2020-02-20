@@ -1,0 +1,41 @@
+@base          <bdg:T644> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T644 {
+    bda:LGF7C2451E16F92736
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T15:09:44.518Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T644  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T644 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a4/T644.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T644 ;
+        adm:logEntry        bda:LGF7C2451E16F92736 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4CF72CDDA248AB4A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to initiations and rituals focusing on tara of the wish-granting gem, yellow and youthful, her left hand plucking a wish-granting gem fruit from the branch of a wish-granting tree; her right hand holding one so as to give it to sentient beings; she stands in a graceful posture on a lotus and moon seat and is adorned with silks and all the jewel ornaments;  she is crowned with ratnasambhava;  \n\n\nthe lineage of transmission is through the mahapandita ratnaraksita;  \n\n\ndeities of tibetan buddhism #138"@en .
+    
+    bdr:T644  a             :Topic ;
+        skos:altLabel       "tara cintamani/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma yid bzhin nor bu/"@bo-x-ewts , "wish-fulfilling gem tara"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4CF72CDDA248AB4A .
+}

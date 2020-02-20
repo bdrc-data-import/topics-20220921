@@ -1,0 +1,68 @@
+@base          <bdg:T1253> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1253 {
+    bda:LG37C0F0E626F2ACF1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-01T12:00:10.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8FDA1791EC274A3D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:15:49.574Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA5E8FDDA61641713
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-26T10:16:24.008Z"^^xsd:dateTime ;
+        adm:logMessage      "Deleted double See Also T1253 (jo nang)"@en .
+    
+    bda:LGCEB2E28F1EE6B60F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T15:53:10.623Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso t360"@en .
+    
+    bda:T1253  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1253 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "4c/T1253.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1253 ;
+        adm:logEntry        bda:LG37C0F0E626F2ACF1 , bda:LG8FDA1791EC274A3D , bda:LGA5E8FDDA61641713 , bda:LGCEB2E28F1EE6B60F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1A3E891F65FA2457
+        a                   :Note ;
+        :noteText           "Contents:\n\n1) zhen pa bzhi bral\n2) blo sbyong don bdun ma\n3) rten 'brel snying po\n4) skyid sdug lam khyer\n5) sum pa'i blo sbyong\n6) ma gcig gi gcod\n7) snying po don gsum\n8) sems nyid ngal gso\n9) skyes bu gsum\n10) bstan rim\n11) srid zhi mnyam nyid\n12) dbu ma chen po\n13) bka' gdams lkog khrid\n14) thub pa'i khrid\n15) mi g.yo ba\n16) spyan ras gzigs\n17) sgrol ma\n18) po to ba'i dpe chos\n19) thig le bcu drug\n20) sher phyin bka' babs\n21) zhi byed lam lnga\n22) sgom rim thog mtha' bar gsum\n23) byams chos lnga\n24) rang stong lta khrid\n25) gzhan stong lta khrid\n26) sbas don\n27) tshe khrid\n28) sgrol dkar\n29) tshe dpag med dkar po\n30) dmar khrid tshem bu lugs\n31) dmar khrid dpal mo lugs\n32) dmar khrid zla rgyal lugs\n33) dmar khrid skyer sgang pa'i lugs\n34) bde mchog dmar khrid\n35) kye rdo rje'i dmar khrid\n36) phyag rdor 'khor chen\n37) gtum po\n38) phag mo kurma pA da\n39) ku ru kulle\n40) dus 'khor snyan brgyud\n41) o rgyan bsnyen sgrub\n42) lam 'bras\n43) bsam mi khyab\n44) zab pa'i tshul dgu\n45) lhan cig skyes grub\n46) gtum mo lam rdzogs\n47) yon po bsrang ba\n48) phyag rgya lam khrid\n49) phyag rgya chen po yi ge med pa\n50) mchod rten drung thob\n51) mdo rgyud bsre ba\n52) phyi rol gdon gyi bar chad sel ba\n53) 'byung ba lus 'khrugs kyi bar chad sel ba\n54) ting nge 'dzin gyi bar chad sel ba\n55) sdug bsngal gsum sel\n56) gnyug ma dran gsal\n57) dag pa gsum\n58) rang byin rlabs\n59) lam sbas bshad\n60) brda don gsal ba\n61) gsang 'dus rim lnga\n62) grol ba'i thig le\n63) spros med\n54) rnal 'byor bzhi rim\n65) 'jigs byed\n66) yab la brten rtsa dbu ma\n67) yum gyi rtsa dbu ma\n68) dril bu rim lnga\n69) nag po rim bzhi\n70) bde mchog dkar po\n71) gdan bzhi\n72) ma hA mA ya\n73) bde mchog bong zhal can\n74) phag mo'i sgom drug\n75) nA ro'i chos drug\n76) ni gu'i chos drug\n77) phyag rgya chen po ga'u ma\n78) lam 'khyer\n79) sems 'chi med\n80) su kha chos drug\n81) bdag med ma'i nang khrid\n82) lhan cig skyes sbyor\n83) phyag chen lnga ldan\n84) phyag rgya chen po yi ge bzhi pa\n85) sku gsum ngo sprod\n86) rlung sems gnyis med\n87) sras mkhar ma\n88) rngog pa'i bsre 'pho\n89) snyan gyi shog dril bzhi\n90) sbyor drug\n91) snyan brgyud steng sgo chos drug\n92) lus med mkha' 'gro'i chos skor dgu\n93) zhang gi zab rgya\n94) dpal chen rgwa lo'i sbyor drug\n95) phag gru phyag chen thel skor\n96) dgongs gcig\n97) stag lung pa'i chos drug\n98) bla sgrub rten 'brel ro snyoms\n99) lo ras thub pa lnga ldan\n100) ri chos snying po ma drug\n101) mgon po sku rags ma\n102) dpal gur gyi mgon po'i nang khrid\n103) do ha skor gsum\n104) grub thob chos drug\n105) padma lam rim\n106) rgyal po bka' 'bum\n107) nor bu mthong grol\n108) sems khrid yid bzhin nor bu"@en .
+    
+    bdr:NT393362736A72358B
+        a                   :Note ;
+        :noteText           "The compilation includes a little collection of histories on each of the 108 instructions. It was included by 'Jam mgon Kong sprul in the last volume of the Gdams ngag mdzod. One might even say that the Jo nang khrid brgya was the inspiration for his own Gdams ngag mdzod. The yig cha in the Gdams ngag mdzod contains other works of the ris med tradition."@en .
+    
+    bdr:NT826D52B3569C78B3
+        a                   :Note ;
+        :noteText           "A collection of 108 instructions compiled by Jo nang Kun dga' grol mchog."@en .
+    
+    bdr:NTC03FB74B9426D872
+        a                   :Note ;
+        :noteText           "The Jo nang khrid brgya is a remarkable collection of brief instructions on special teachings which appeared in India and Tibet. This collection was put together by Kun dga' grol mchog (1507-1565/1566) and completed by Rje btsun TA ra nA tha (1575-1635), the sucessor in his incarnation lineage."@en .
+    
+    bdr:T1253  a            :Topic ;
+        rdfs:seeAlso        bdr:T360 ;
+        skos:prefLabel      "jo nang khrid brgya/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1A3E891F65FA2457 , bdr:NT393362736A72358B , bdr:NT826D52B3569C78B3 , bdr:NTC03FB74B9426D872 .
+}

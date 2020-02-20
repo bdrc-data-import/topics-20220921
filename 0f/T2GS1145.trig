@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1145> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1145 {
+    bda:LG5ECA4D1F01EA7519
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T12:02:40.082Z"^^xsd:dateTime ;
+        adm:logMessage      "proofreading of application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE6F0CEA900FD5323
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T17:25:40.313Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1145  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1145 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0f/T2GS1145.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1145 ;
+        adm:logEntry        bda:LG5ECA4D1F01EA7519 , bda:LGE6F0CEA900FD5323 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT31E9795663C78150
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas and rituals focusing on a special form of the four faced mahakala described in the rin 'byung; the deity is black and terrible with four faces that devour the three realms and threaten the gods and asuras; the principal face is mahakala, wratfhul like yama; the right is the white elephant-face of a wrathful god; the left is the red buffalo face of a wrathful raksasa; the rear is the blue lion face of a wrathful king; the first pair of hands hold a knife and a blood filled skull, one above the other at his heart; the second right a club, the third an axe; the second left the left foot of his own elephant skin scarf; the third a noose; he is stamping his feet on the ground in rage; his other attributes such as his hair is like the four-faced mahakala with the (dpal mgon zhal bzhi pa bsnen dus dag 'brel ba); he is accompanied from the four directions by b) on the right the blue candali, her right hand holding a skull and her left black silk; c) on the left the red dombini, holding a tethering chain and a noose; d) in front raksasi; e) behind, simhali, black and holding a knife and a skull; the latter two and the outer attendants match the description found for dpal mgon zhal bzhi pa bsnyen dus dang 'brel ba in deities of tibetan buddhism #385\n\n\ndeities of tibetan buddhism #392"@en .
+    
+    bdr:T2GS1145  a         :Topic ;
+        skos:altLabel       "four faced mahakala with a cruel face/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po zhal bzhi pa gdong gnyan can/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT31E9795663C78150 .
+}

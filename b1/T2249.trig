@@ -1,0 +1,41 @@
+@base          <bdg:T2249> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2249 {
+    bda:LG2BD78F5F657F093C
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-31T14:18:48.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T2249  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2249 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b1/T2249.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2249 ;
+        adm:logEntry        bda:LG2BD78F5F657F093C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFE5CB19AE4EE44C5
+        a                   :Note ;
+        :noteText           "the yoga to be observed while sleeping"@en .
+    
+    bdr:T2249  a            :Topic ;
+        skos:altLabel       "dream yoga"@bo-x-ewts , "nyal bsgom/"@bo-x-ewts ;
+        skos:prefLabel      "nyal ba gnyid kyi rnal 'byor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFE5CB19AE4EE44C5 .
+}

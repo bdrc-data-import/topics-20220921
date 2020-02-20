@@ -1,0 +1,55 @@
+@base          <bdg:T151> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T151 {
+    bda:LG01E5C8F2F5865ED1
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-07-25T14:05:42.029Z"^^xsd:dateTime ;
+        adm:logMessage      "replace extraneous external by seeAlso"@en ;
+        adm:logWho          bdr:U00006 .
+    
+    bda:LG5F2F3040BFA8A5C0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T16:57:37.052Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG7CB5A2E3AB29AC6A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T14:47:21.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC90D07A48EC357D7
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:03:51.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T151  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T151 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/T151.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T151 ;
+        adm:logEntry        bda:LG01E5C8F2F5865ED1 , bda:LG5F2F3040BFA8A5C0 , bda:LG7CB5A2E3AB29AC6A , bda:LGC90D07A48EC357D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T151  a             :Topic ;
+        rdfs:seeAlso        bdr:T1CZ28 ;
+        skos:altLabel       "bsnyen thabs/"@bo-x-ewts ;
+        skos:prefLabel      "bsnyen sgrub/"@bo-x-ewts , "method for invoking"@en , "seva-vidhi"@sa-alalc97 , "近修"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1218> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1218 {
+    bda:LG2EC1BE1D0788334E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T14:14:38.815Z"^^xsd:dateTime ;
+        adm:logMessage      "created; note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1218  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1218 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8e/T2GS1218.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1218 ;
+        adm:logEntry        bda:LG2EC1BE1D0788334E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT27439766A0A69E0B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 6th of the 21 tara collection according to the tradition of suryagupta; this form of tara is red with one face and four arms; the first right hand is holding a vajra and the second a sword; the first left with a threatening forefinger and the second holding a noose; she sits in sattvaparyanka; her seat is a red lotus and sun seat; she is crowned with amitabha, who is master of her family.\n\ndeviation: moon seat.\n\ndeities of tibetan buddhism #281"@en .
+    
+    bdr:T2GS1218  a         :Topic ;
+        skos:altLabel       "'jig rten gsum rgyal las rnam par rgyal ba'i sgrol ma/"@bo-x-ewts , "tara victorious ofver the three worlds/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma 'jig rten gsum rgyal/"@bo-x-ewts , "trailokyavijayatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT27439766A0A69E0B .
+}

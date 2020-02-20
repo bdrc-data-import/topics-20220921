@@ -1,0 +1,46 @@
+@base          <bdg:T174> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T174 {
+    bda:LG00847D0ACF2FABF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-15T10:36:54.011Z"^^xsd:dateTime ;
+        adm:logMessage      "added new name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG543B7EA097704702
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:07:28.38Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T174  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T174 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "31/T174.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T174 ;
+        adm:logEntry        bda:LG00847D0ACF2FABF8 , bda:LG543B7EA097704702 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2FADD31586910FB0
+        a                   :Note ;
+        :noteText           "this deity topic is applied to works concerned with the special protector of the 'bri gung bka' brgyud tradition; \na chos srung deity."@en .
+    
+    bdr:T174  a             :Topic ;
+        skos:prefLabel      "a phyi chos kyi sgrol ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2FADD31586910FB0 .
+}

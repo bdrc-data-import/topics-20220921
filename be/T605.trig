@@ -1,0 +1,41 @@
+@base          <bdg:T605> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T605 {
+    bda:LG1C73A2CE56EEA120
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T11:13:43.721Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T605  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T605 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "be/T605.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T605 ;
+        adm:logEntry        bda:LG1C73A2CE56EEA120 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA308F2AA222408D7
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon the avalokita in the form simhanada.\n\nthis tradition comes from candragomin through lo chen rin chen bzang po;\n\n\ndeities of tibetan buddhism #131"@en .
+    
+    bdr:T605  a             :Topic ;
+        skos:altLabel       "seng+ge sgra/"@bo-x-ewts , "simhanada/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po seng+ge sgra/"@bo-x-ewts , "avalokitesvara simhanada"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA308F2AA222408D7 .
+}

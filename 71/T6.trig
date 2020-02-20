@@ -1,0 +1,58 @@
+@base          <bdg:T6> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T6 {
+    bda:LG502AD435B65DF525
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T15:03:30.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added mgur glu"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG54BD2042F65510DC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-05T15:47:35.472Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9FCFC060448DC44D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T10:08:49.533Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC3F1CA45F5F1C79E
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-16T21:35:49.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant name; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T6  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T6 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "71/T6.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T6 ;
+        adm:logEntry        bda:LG502AD435B65DF525 , bda:LG54BD2042F65510DC , bda:LG9FCFC060448DC44D , bda:LGC3F1CA45F5F1C79E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBAAC9E93D982C851
+        a                   :Note ;
+        :noteText           "this generic topic is also applied to the indic doha; for linked collections of songs of realization comprising lyrical biographies one should use t184"@en .
+    
+    bdr:T6  a               :Topic ;
+        skos:altLabel       "mgur glu/"@bo-x-ewts , "nyams mgur/"@bo-x-ewts ;
+        skos:prefLabel      "mgur/"@bo-x-ewts , "songs of realization"@en ;
+        :isRoot             true ;
+        :note               bdr:NTBAAC9E93D982C851 .
+}

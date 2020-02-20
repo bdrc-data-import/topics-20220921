@@ -1,0 +1,50 @@
+@base          <bdg:T958> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T958 {
+    bda:LG1F2F7CA183874C0F
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-18T13:20:39.812Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8F52493673F18198
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T19:52:39.038Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T958  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T958 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "55/T958.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T958 ;
+        adm:logEntry        bda:LG1F2F7CA183874C0F , bda:LG8F52493673F18198 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT1F016777138F5206
+        a                   :Note ;
+        :noteText           "see also: rigs gsum mgon po"@en .
+    
+    bdr:NT8BB91EFCC7EDAB76
+        a                   :Note ;
+        :noteText           "the rigs gsum are manjughosa ('jam pa'i dbyangs), avalokitesvara (spyan ras gzigs), and vajrapani (phyag na rdo rje); this is the name of the first mandala of the rgyud sde kun btus"@en .
+    
+    bdr:T958  a             :Topic ;
+        skos:prefLabel      "rigs gsum spyi/"@bo-x-ewts , "trikulanatha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1F016777138F5206 , bdr:NT8BB91EFCC7EDAB76 .
+}

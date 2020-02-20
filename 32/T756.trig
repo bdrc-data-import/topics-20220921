@@ -1,0 +1,47 @@
+@base          <bdg:T756> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T756 {
+    bda:LG0A910680926A228D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T14:22:27.263Z"^^xsd:dateTime ;
+        adm:logMessage      "notes of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8C97D2CA606A5AEB
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:16.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T756  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T756 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "32/T756.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T756 ;
+        adm:logEntry        bda:LG0A910680926A228D , bda:LG8C97D2CA606A5AEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT590D3C726780AA49
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the goddess vasudhara who is yellow, with one face and two arms; the right hand boon-granting and raining gems from its palm; the left holding a fully developed ear of rice and a jewel rosary; she sits in sattvaparyanka. graceful, youthful, and adorned with silks and jewels; around her are the whole host of female treasure owners such as dhanasri (nor dpal mo) and above all buddhas and bodhisattvas; she is crowned with ratnasambhava.  \n\naccording to taranatha this is the basic sadhana of the goddess vasudhara (lha mo nor rgyun ma rtsa ba'i sgrub thabs).  \n\ndeities of tibetan buddhism #326"@en .
+    
+    bdr:T756  a             :Topic ;
+        skos:altLabel       "gzungs las byung ba'i lha mo nor rgyun ma/"@bo-x-ewts ;
+        skos:prefLabel      "nor rgyun ma rtsa ba/"@bo-x-ewts , "the goddess vasudhara from the dharani"@en , "vasudhārā"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT590D3C726780AA49 .
+}

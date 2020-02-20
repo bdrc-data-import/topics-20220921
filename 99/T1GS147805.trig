@@ -1,0 +1,47 @@
+@base          <bdg:T1GS147805> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147805 {
+    bda:LG087C8487CD72CB08
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T13:11:29.093Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t837"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG181E38A002391820
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-24T13:08:37.828Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147805 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "99/T1GS147805.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147805 ;
+        adm:logEntry        bda:LG087C8487CD72CB08 , bda:LG181E38A002391820 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T837 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT201E62F86977C554
+        a                   :Note ;
+        :noteText           "a seven day ritual for long life"@en .
+    
+    bdr:T1GS147805  a       :Topic ;
+        skos:prefLabel      "tshe sgrub zhag bdun ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT201E62F86977C554 .
+}

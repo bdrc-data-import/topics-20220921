@@ -1,0 +1,53 @@
+@base          <bdg:T495> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T495 {
+    bda:LG83B1C74B63241537
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T17:24:28.248Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD8DFBB1AA5D616C5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T12:26:14.143Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFDA1A71C27260C49
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-17T00:09:41.593Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T495  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T495 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8f/T495.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T495 ;
+        adm:logEntry        bda:LG83B1C74B63241537 , bda:LGD8DFBB1AA5D616C5 , bda:LGFDA1A71C27260C49 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT26BD29749B0956FF
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the glorious gnosis mahakala, dark blue with one face and two arkes; his righ hand hold a large sandalwood club; his left a long spear of a raksasi's leg bone; he wears a large cloak of glossy silk; he is surrounded by the seven matrka.\n\nspecial forms of the dharma protector mahakala holding a club. deities of tibetan buddhism, #363-364; these forms of mahakala holding a club were transmitted in both the bka' ma unbroken lineage and through various revelatory transmissions; the bka' ma form is dark blue with one face and two arms, his right hand holds a large begemmed sandalwood club, its upper end flaming and its lower end gushing water; his left holds resting on his side a small iron bowl full of all kinds of diseases; he wears a cloak of glossy silk and five dry human heads; is three found red eyes gaze angrily at hindering enemies;  \n2) the revelaton (gter ma) form is iconographically the same"@en .
+    
+    bdr:T495  a             :Topic ;
+        skos:altLabel       "mgon po beng gter ma gnub lugs/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po beng gter ma/"@bo-x-ewts , "dandadhara mahakala"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT26BD29749B0956FF .
+}

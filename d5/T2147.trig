@@ -1,0 +1,40 @@
+@base          <bdg:T2147> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2147 {
+    bda:LG3741F553A9CD5A63
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-16T13:11:10.593Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2147  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2147 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d5/T2147.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2147 ;
+        adm:logEntry        bda:LG3741F553A9CD5A63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT479D4DB81DD2429B
+        a                   :Note ;
+        :noteText           "formula calling upon the guru used in practice"@en .
+    
+    bdr:T2147  a            :Topic ;
+        skos:prefLabel      "ba dz+ra gu ru/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT479D4DB81DD2429B .
+}

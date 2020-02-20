@@ -1,0 +1,46 @@
+@base          <bdg:T1GS10764> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS10764 {
+    bda:LG02EF3D7735D02F97
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T12:50:39.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T1307 (sa dpyad)"@en .
+    
+    bda:LG541B8D6037E52D01
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-30T12:11:53.254Z"^^xsd:dateTime ;
+        adm:logMessage      "separation of sa dpyad and sa chog"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS10764  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS10764 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fe/T1GS10764.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS10764 ;
+        adm:logEntry        bda:LG02EF3D7735D02F97 , bda:LG541B8D6037E52D01 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT77E661D086A065A4
+        a                   :Note ;
+        :noteText           "under this category are classed rituals for the consecration of the mandala; this category is to be distinguished from sa dpyad rituals which are used for geomantic examinations in building"@en .
+    
+    bdr:T1GS10764  a        :Topic ;
+        rdfs:seeAlso        bdr:T1307 ;
+        skos:prefLabel      "sa chog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT77E661D086A065A4 .
+}

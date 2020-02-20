@@ -1,0 +1,33 @@
+@base          <bdg:T1440> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1440 {
+    bda:T1440  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1440 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "66/T1440.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1440 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEB1541B811D85E3F
+        a                   :Note ;
+        :noteText           "a local deity near urga in outer mongolia sacred to ri bo dge rgyas dga' ldan bshad sgrub gling and dge gsol gling"@en .
+    
+    bdr:T1440  a            :Topic ;
+        skos:prefLabel      "bog to ha kang a kwo la/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEB1541B811D85E3F .
+}

@@ -1,0 +1,58 @@
+@base          <bdg:T330> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T330 {
+    bda:LG53F8B3B5C683CA56
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-15T02:51:23.593Z"^^xsd:dateTime ;
+        adm:logMessage      "puja added to sanskrit"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9E5D1DDBF19576AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-11T10:02:52.887Z"^^xsd:dateTime ;
+        adm:logMessage      "name, note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGA36F1AE157ED0629
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:09:21.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGDE4974D46E7E9365
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T16:54:56.853Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T330  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T330 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "43/T330.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T330 ;
+        adm:logEntry        bda:LG53F8B3B5C683CA56 , bda:LG9E5D1DDBF19576AD , bda:LGA36F1AE157ED0629 , bda:LGDE4974D46E7E9365 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7F7B64F9FEC9AFF1
+        a                   :Note ;
+        :noteText           "this topic is applied generically to texts of various tantric feast offerings; or as a subject to the tshogs mchod themselves as a concept"@en .
+    
+    bdr:T330  a             :Topic ;
+        skos:prefLabel      "tshogs mchod/"@bo-x-ewts , "gaṇacakrapuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7F7B64F9FEC9AFF1 .
+}

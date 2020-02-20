@@ -1,0 +1,36 @@
+@base          <bdg:T1159> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1159 {
+    bda:LG914A89E121864D52
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T13:02:46.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added lde'u"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1159  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1159 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "4f/T1159.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1159 ;
+        adm:logEntry        bda:LG914A89E121864D52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1159  a            :Topic ;
+        skos:altLabel       "gab tshig"@bo-x-ewts , "khed/"@bo-x-ewts , "lde'u/"@bo-x-ewts ;
+        skos:prefLabel      "khe/"@bo-x-ewts , "riddles"@en , "prahelika"@sa-alalc97 ;
+        :isRoot             true .
+}

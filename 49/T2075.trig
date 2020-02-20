@@ -1,0 +1,46 @@
+@base          <bdg:T2075> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2075 {
+    bda:LG5D7F76A1F866C3B7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-16T10:50:33.386Z"^^xsd:dateTime ;
+        adm:logMessage      "modified rule of application to include the black hat"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7EAAE07CC2EE5DF1
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T09:07:22.781Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2075  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2075 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "49/T2075.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2075 ;
+        adm:logEntry        bda:LG5D7F76A1F866C3B7 , bda:LG7EAAE07CC2EE5DF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA128B261533D3C98
+        a                   :Note ;
+        :noteText           "refers to the incarnation lineage of the black hat karma pa, stemming from dus gsum mkhyen pa; also used for the black hat which this line of incarnations wears"@en .
+    
+    bdr:T2075  a            :Topic ;
+        skos:prefLabel      "zhwa nag"@bo-x-ewts , "black hat"@en ;
+        :isRoot             true ;
+        :note               bdr:NTA128B261533D3C98 .
+}

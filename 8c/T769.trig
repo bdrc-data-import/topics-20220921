@@ -1,0 +1,43 @@
+@base          <bdg:T769> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T769 {
+    bda:LGB8705088B3288DEC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-02T11:44:52.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"mdo sde\" and description"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEF0FC4196A9FE991
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-28T13:41:28.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T769  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T769 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8c/T769.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T769 ;
+        adm:logEntry        bda:LGB8705088B3288DEC , bda:LGEF0FC4196A9FE991 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T769  a             :Topic ;
+        rdfs:comment        "sde snod gsum gyi nang nas mdo sde la'o/" ;
+        skos:altLabel       "mdo sde/"@bo-x-ewts ;
+        skos:prefLabel      "mdo/"@bo-x-ewts , "sutra"@sa-alalc97 , "经"@zh-hans ;
+        :isRoot             true .
+}

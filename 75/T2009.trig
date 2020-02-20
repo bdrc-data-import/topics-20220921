@@ -1,0 +1,47 @@
+@base          <bdg:T2009> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2009 {
+    bda:LG6471FE399D434F93
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-15T16:04:35.196Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected error"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG9CCDF8A9CE431FD0
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T10:46:26.946Z"^^xsd:dateTime ;
+        adm:logMessage      "added multi language names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2009  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2009 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "75/T2009.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2009 ;
+        adm:logEntry        bda:LG6471FE399D434F93 , bda:LG9CCDF8A9CE431FD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7B686591FB9A165A
+        a                   :Note ;
+        :noteText           "the eastern buddha field of aksobhya"@en .
+    
+    bdr:T2009  a            :Topic ;
+        skos:altLabel       "mngon par dga'i ba'i zhing /"@bo-x-ewts , "shar phyogs mngon par dga'i ba'i zhing khams/"@bo-x-ewts ;
+        skos:prefLabel      "mngon dga'i zhing /"@bo-x-ewts , "abhirati"@sa-x-ndia , "妙喜世界"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT7B686591FB9A165A .
+}

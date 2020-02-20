@@ -1,0 +1,48 @@
+@base          <bdg:T1PD114150> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD114150 {
+    bda:LG4D59087E60D0811F
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T10:52:38.496Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG670B713631D8ACC2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T16:12:09.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added sman bla mdo chog Uncontrolled topic"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGD090F9E75EFC3EB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-20T10:20:10.284Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD114150  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD114150 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/T1PD114150.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD114150 ;
+        adm:logEntry        bda:LG4D59087E60D0811F , bda:LG670B713631D8ACC2 , bda:LGD090F9E75EFC3EB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1PD114150  a       :Topic ;
+        rdfs:seeAlso        bdr:T870 ;
+        skos:prefLabel      "mdo chog"@bo-x-ewts ;
+        :isRoot             true .
+}

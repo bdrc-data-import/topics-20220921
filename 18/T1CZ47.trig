@@ -1,0 +1,52 @@
+@base          <bdg:T1CZ47> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ47 {
+    bda:LG653991D841D56F4F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:39:56.484Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T01AG02845"@en .
+    
+    bda:LGC988F61804FEA5FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:01:46.461Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T01AG02845 to T1CZ47"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGE28583AC6678066D
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-05T10:18:02.817Z"^^xsd:dateTime ;
+        adm:logMessage      "GSAR PA"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ47  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ47 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "18/T1CZ47.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ47 ;
+        adm:logEntry        bda:LG653991D841D56F4F , bda:LGC988F61804FEA5FD , bda:LGE28583AC6678066D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD801D93161BF1331
+        a                   :Note ;
+        :noteText           "mgon po dang rnal 'byor ma/ spyan ras gzigs/ sgrol ma bcas sbrag te sgrub pa dben sa pa nas brgyud pa/"@bo-x-ewts .
+    
+    bdr:T1CZ47  a           :Topic ;
+        rdfs:seeAlso        bdr:T1CZ47 ;
+        skos:prefLabel      "lha bzhi dril sgrub/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD801D93161BF1331 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T1384> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1384 {
+    bda:LG6D5CF4A67092A87B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T09:25:10.761Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGAB285674F606C9E3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:03:17.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1384  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1384 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "12/T1384.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1384 ;
+        adm:logEntry        bda:LG6D5CF4A67092A87B , bda:LGAB285674F606C9E3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02653F520EEAAE15
+        a                   :Note ;
+        :locationStatement  "f. 16v" ;
+        :noteSource         bdr:MW22446 ;
+        :noteText           "bka' brgyud lineage and subsect.\nthis school is one of the four greater lines and takes its origins from 'ba' rom pa dar ma dbang phyug.\nwidely spread in the nang chen area in khams.\nabsorbed by the mchog gling gter gsar."@en .
+    
+    bdr:T1384  a            :Topic ;
+        skos:prefLabel      "'ba' rom bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT02653F520EEAAE15 .
+}

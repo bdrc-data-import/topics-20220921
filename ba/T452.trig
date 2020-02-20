@@ -1,0 +1,41 @@
+@base          <bdg:T452> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T452 {
+    bda:LG4FFD97F51936BFBE
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-06-18T14:56:28.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"rdor sems\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T452  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T452 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ba/T452.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T452 ;
+        adm:logEntry        bda:LG4FFD97F51936BFBE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT01760E32E9E103EC
+        a                   :Note ;
+        :noteText           "this key word is applied to forms of vajrasattva practice not relegated to special forms or functions\naccording to the rnying ma tradition vajrasatva practice represents the quiescent form of the yang dag (heruka) practice\nin the rin chen gter mdzod the following forms of vajrasattva practice are seen:\n1) lta ba klong yangs kyi 'bru gsum rgyal ba'i spyi sgrub (rdo rje gling pa)\n2) rgyal 'dus gsang sgrub rigs 'dus rdor sems sgrub thabs (rol pa'i rdo rje mtsho gter)\n3) rdor sems snyan brgyud (thse dbang nor bu'i dgongs gter)\n4) dam chos shog sde drug pa'i rdo sems thugs kyi snying po (mchog gyur gling pa)\n5) zab dun rgyud zab lcags byang ma'i rdor sems rtsa sgrub nyi zla'i rgya can (mchog gyur gling pa)\n6) gsang thig rdor sems phyag rgya gcig pa (mchog gyur gling pa)"@en .
+    
+    bdr:T452  a             :Topic ;
+        skos:altLabel       "rdor sems/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje sems dpa'"@bo-x-ewts , "vajrasattva"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT01760E32E9E103EC .
+}

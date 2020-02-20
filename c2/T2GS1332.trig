@@ -1,0 +1,48 @@
+@base          <bdg:T2GS1332> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1332 {
+    bda:LG474CEEA40EA8CB44
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T15:11:30.083Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB80F0B18BF69122E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T13:00:32.244Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1332  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1332 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c2/T2GS1332.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1332 ;
+        adm:logEntry        bda:LG474CEEA40EA8CB44 , bda:LGB80F0B18BF69122E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT3037F90232718897
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 398" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus (quoting the dung dkar tshig mdzod, 1768-28): zhal che'i byang bu gsum\n\n1) zangs yag; 2) sked khra; 3) kha dmar rgya byang"@en .
+    
+    bdr:T2GS1332  a         :Topic ;
+        skos:prefLabel      "zhal lce'i byang bu/"@bo-x-ewts , "legal decision"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3037F90232718897 .
+}

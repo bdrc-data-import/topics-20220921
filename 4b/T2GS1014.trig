@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1014> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1014 {
+    bda:LGD5B1159D90823924
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T09:24:47.143Z"^^xsd:dateTime ;
+        adm:logMessage      "changed dgu to 9"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF3754151DB5F91FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T09:21:27.218Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1014  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1014 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4b/T2GS1014.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1014 ;
+        adm:logEntry        bda:LGD5B1159D90823924 , bda:LGF3754151DB5F91FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFBDE5CF732767371
+        a                   :Note ;
+        :noteText           "the 9-deity mandala of the guru vajrasattva"@en .
+    
+    bdr:T2GS1014  a         :Topic ;
+        skos:prefLabel      "bla ma rdo rje sems dpa' lha 9"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFBDE5CF732767371 .
+}

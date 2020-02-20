@@ -1,0 +1,46 @@
+@base          <bdg:T664> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T664 {
+    bda:LG3142B970410D1C81
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T14:16:19.145Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7E904E9A3908ECA1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T11:14:10.149Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T664  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T664 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d4/T664.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T664 ;
+        adm:logEntry        bda:LG3142B970410D1C81 , bda:LG7E904E9A3908ECA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0B9815E4B9C60E35
+        a                   :Note ;
+        :noteText           "this deity topic is applied to works and initiations concerned with the form of hayagriva as transmitted from kha che paN chen sakyasri; hayagriva is red, and very wrathful with a terrifying body, with two arms and two legs; his right hand brandishes a vajra,  his left raises a threatening forefinger at his heart; he holds a vajra-marked club; he abides in pratyalidha (left let bent); he subdues all hindering demons from the peak of samsara down; above his head he has a black horse's head; he is crowned with amitabha and adorned with a crown of dry skulls, snakes, bones, and jewels; his upper teeth press his lip; with the inspiration of all the buddhas, the nagas such as vasuki accept his instruction; his body emits light rays of five colors and a mass of fire; he is complete with the garb of a wrathful deity;  deities of tibetan buddhism, #170"@en .
+    
+    bdr:T664  a             :Topic ;
+        skos:prefLabel      "rta mgrin kha che paN chen lugs/"@bo-x-ewts , "hayagriva in the tradition of the great pandita of kashmir"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0B9815E4B9C60E35 .
+}

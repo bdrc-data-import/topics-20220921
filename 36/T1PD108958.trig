@@ -1,0 +1,47 @@
+@base          <bdg:T1PD108958> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108958 {
+    bda:LG074A7C4EAC6C8159
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T16:20:55.409Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG10B0D877B2C0D90F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-01T14:51:42.865Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGFB5E82E756F36217
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-04T10:59:14.825Z"^^xsd:dateTime ;
+        adm:logMessage      "added mchog lha"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108958  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108958 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "36/T1PD108958.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108958 ;
+        adm:logEntry        bda:LG074A7C4EAC6C8159 , bda:LG10B0D877B2C0D90F , bda:LGFB5E82E756F36217 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1PD108958  a       :Topic ;
+        skos:altLabel       "mchog lha/"@bo-x-ewts ;
+        skos:prefLabel      "dbu lha/"@bo-x-ewts ;
+        :isRoot             true .
+}

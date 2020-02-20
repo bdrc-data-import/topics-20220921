@@ -1,0 +1,58 @@
+@base          <bdg:T003JR4920> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR4920 {
+    bda:LG0A2E593CFFA9A092
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T15:14:01.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added T1GS129601 (rjes chog) uncontrolled topic"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG7151AF146222439C
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-05T11:43:59.733Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LG96C5B275F2B7014A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:51:40.113Z"^^xsd:dateTime ;
+        adm:logMessage      "Deleted SeeAlso T173"@en .
+    
+    bda:LGBD58FB829D8B305D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T14:15:36.587Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T173"@en .
+    
+    bda:LGC587552830CF474F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T13:35:36.156Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T249"@en .
+    
+    bda:T003JR4920  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR4920 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/T003JR4920.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR4920 ;
+        adm:logEntry        bda:LG0A2E593CFFA9A092 , bda:LG7151AF146222439C , bda:LG96C5B275F2B7014A , bda:LGBD58FB829D8B305D , bda:LGC587552830CF474F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T003JR4920  a       :Topic ;
+        rdfs:seeAlso        bdr:T249 , bdr:T529 ;
+        skos:altLabel       "bsgral ba'i mchod pa/"@bo-x-ewts , "bsgral bstab/"@bo-x-ewts ;
+        skos:prefLabel      "bsgral mchod/"@bo-x-ewts , "liberation offering"@en ;
+        :isRoot             true .
+}

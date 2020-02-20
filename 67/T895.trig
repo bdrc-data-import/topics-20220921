@@ -1,0 +1,60 @@
+@base          <bdg:T895> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T895 {
+    bda:LG44D32E807483D4B4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T19:39:05.557Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T1AT291 to T1116"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG4E5751038770C61D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-06T15:26:25.639Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5A364E79DAB41A44
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T11:49:49.162Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T012AG03493 (ri khrus)"@en .
+    
+    bda:LG697B8007831E2520
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-26T14:06:40.356Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T895 (khrus tshul)"@en .
+    
+    bda:T895  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T895 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/T895.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T895 ;
+        adm:logEntry        bda:LG44D32E807483D4B4 , bda:LG4E5751038770C61D , bda:LG5A364E79DAB41A44 , bda:LG697B8007831E2520 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFCAAED86FF2D8E1B
+        a                   :Note ;
+        :locationStatement  "v. 68" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "this keyword is applied to purificatory rituals through the use of the sprinkling of water\nthere are large number of these in both rnying ma and gsar ma traditions\n'jam mgon kong sprul includes four titles in this group under category gnas chen byin 'bebs)\n1) rnam 'joms bag chags stobs sbyong (byang gter thugs sgrub chos tshan bcu pa)\n2) rdo rje lte skor sgron ma lnga pa bka' nan rab brjid (byang chub gling pa dpal gyi rgyal mtshan)\n3) khrus chog (mchog gling thugs sgrub bar chad kun sel)\n4) bka' nan rab brjid ('jam mgon kong sprul)"@en .
+    
+    bdr:T895  a             :Topic ;
+        rdfs:seeAlso        bdr:T012AG03493 , bdr:T1116 ;
+        skos:altLabel       "khrus tshul/"@bo-x-ewts ;
+        skos:prefLabel      "khrus chog"@bo-x-ewts , "purificatory methods through the use of water"@en ;
+        :isRoot             true ;
+        :note               bdr:NTFCAAED86FF2D8E1B .
+}

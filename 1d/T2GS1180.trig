@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1180> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1180 {
+    bda:LG6CB8ABC95C581856
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:14:17.045Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC35B61958968FA8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T15:13:53.297Z"^^xsd:dateTime ;
+        adm:logMessage      "added the khyung khra man ngag lugs"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDBF12A6ECEC5F786
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T13:31:06.185Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1180  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1180 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1d/T2GS1180.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1180 ;
+        adm:logEntry        bda:LG6CB8ABC95C581856 , bda:LGC35B61958968FA8E , bda:LGDBF12A6ECEC5F786 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT85D04FD281792DA1
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations of the thirteen golden teachings of the sakya;  \nthese are:\nthe three dakinis (deities of tibetan buddhism #77-79); the three major red deities (deities of tibetan buddhism #10-12); the three minor red deities (deities of tibetan buddhism #206-208); amaravajradevi (deities of tibetan buddhism #184); red jambhala (deities of tibetan buddhism #319); simhamukhi (deities of tibetan buddhism #234-235);\nkhyung khra man ngag lugs (deities of tibetan buddhism #230)\nblack manjusri (deities of tibetan buddhism #232)\n\nnA ro mkha' spyod;\nmai tri mkha' spyod;  \nin+dra mkha' spyod;  \nku ru ku l+le dmar po;  \n'dod pa'i rgyal po;  \ntshogs bdag dmar po;  \ndpal mo snying gi gser thig can;  \nnor rgyun dmar mo;  \nlha mo ti nu;  \n'chi med rdo rje lha mo;  \ndzam+b+ha la dmar po;  \nseng gdong ma sngon po;  \nseng gdong ma dmar mo; \nkhyung khra man ngag lug;   \n'jam dbyangs nag po.\n\nprobably only one seng gdong ma is included among the 13.."@en .
+    
+    bdr:T2GS1180  a         :Topic ;
+        skos:prefLabel      "sa skya gser chos bcu gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT85D04FD281792DA1 .
+}

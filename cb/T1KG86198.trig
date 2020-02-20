@@ -1,0 +1,42 @@
+@base          <bdg:T1KG86198> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG86198 {
+    bda:LGBC4CCC0B810381E4
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-01-12T12:46:27.787Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG86198  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG86198 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cb/T1KG86198.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG86198 ;
+        adm:logEntry        bda:LGBC4CCC0B810381E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBA011D5519DFF4CA
+        a                   :Note ;
+        :noteSource         bdr:MW1KG15886 ;
+        :noteText           "manifestations of deity mu kha le"@en .
+    
+    bdr:T1KG86198  a        :Topic ;
+        skos:altLabel       "rdo rje ma mo mched bdun/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje ma bdun ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBA011D5519DFF4CA .
+}

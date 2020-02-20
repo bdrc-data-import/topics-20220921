@@ -1,0 +1,46 @@
+@base          <bdg:T688> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T688 {
+    bda:LG4F9A2216DA12CDBE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T13:42:39.777Z"^^xsd:dateTime ;
+        adm:logMessage      "deities of tibetan buddhism number added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA6347D0BE2F28D0D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T13:40:50.938Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T688  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T688 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d3/T688.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T688 ;
+        adm:logEntry        bda:LG4F9A2216DA12CDBE , bda:LGA6347D0BE2F28D0D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD1BB9780EB999CFB
+        a                   :Note ;
+        :noteText           "the deity topic is applied to rituals and intitiations for this form of buddha, one of the six vajrasana yi dam deities; this is a form of the tathagatha sakyamuni; golden colored, sitting cross legged under the bo tree; his left hand holds at the level of his navel a corner of his robe; the right makes the gesture of giving refuge; the purpose of the practice of this form is to achieve long life\n\ndeities of tibetan buddhism #197"@en .
+    
+    bdr:T688  a             :Topic ;
+        skos:prefLabel      "thub pa me ru shi sa/"@bo-x-ewts , "the sage of meru peak"@en , "merusikhara muni"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTD1BB9780EB999CFB .
+}

@@ -1,0 +1,57 @@
+@base          <bdg:T1780> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1780 {
+    bda:LG0CE30885005A7404
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T16:07:04.908Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG10D2032C235CB4BD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T15:22:10.985Z"^^xsd:dateTime ;
+        adm:logMessage      "application note created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG33E405FAD89476EA
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:35.936Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFC7B4FDB9917BEC7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-13T16:54:20.022Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1780  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1780 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c6/T1780.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1780 ;
+        adm:logEntry        bda:LG0CE30885005A7404 , bda:LG10D2032C235CB4BD , bda:LG33E405FAD89476EA , bda:LGFC7B4FDB9917BEC7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT67BDA0AD4284BCAC
+        a                   :Note ;
+        :noteText           "this topic is applied to works referring to this longevity deity; the principal deity is white with three faces and eight arms, the principal face is white, the right is yellow, and the left blue and just a little wrathful; each has three peaceful eyes; the first right hand holds at her heart a crossed vajra, the second a lotus on which sits amitabha; the third an arrow; the fourth makes a boon-granting gesture; the first left hand holds a noose, with a threatening forefinger; the second holds a bow; the third makes the gesture of giving refuge; the fourth the gesture of concentration with a flask of nectar upon it; she sits in vajraparyanka, adorned with silks and all the jewel ornaments; the attendants are as deities of tibetan buddhism #425\nto her right is white avalokita, his left hand holding the stem of a white lotus; to her left is blue vajrapani, his left hand holding a blue vajra; each holds in his right hand a fly-whisk and stands upright; in the four directions from these three are four wrathful deities: to the east is acala (mi g.yo ba), his right hand holding a sword; to the south is takkiraja ('dod pa'i rgal po), his right hand holding a hook; to the west is niladanda (dbyug sngon can, his right and holding a club; in the north mahabala (stobs po che), his right hand holding a three pointed vajra; all four are blue and very wrathful, making the threatening forefinger at the heart\n\ndeities of tibetan buddhism #183"@en .
+    
+    bdr:T1780  a            :Topic ;
+        skos:altLabel       "rnam rgyal ma lha dgu/"@bo-x-ewts , "usnisavijaya navadevatmaka"@sa-x-ndia ;
+        skos:prefLabel      "gtsug tor rnam rgyal lha dgu/"@bo-x-ewts , "nine-deity usnisavijaya"@en , "usnisavijaya"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT67BDA0AD4284BCAC .
+}

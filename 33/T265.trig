@@ -1,0 +1,41 @@
+@base          <bdg:T265> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T265 {
+    bda:LG878F9ECB2CDBB30F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T12:37:14.895Z"^^xsd:dateTime ;
+        adm:logMessage      "added bod kyi skad yig"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T265  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T265 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "33/T265.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T265 ;
+        adm:logEntry        bda:LG878F9ECB2CDBB30F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE5240B8036785ABC
+        a                   :Note ;
+        :noteText           "this topic is applied to works of tibetan language"@en .
+    
+    bdr:T265  a             :Topic ;
+        skos:altLabel       "bod kyi skad yig"@bo-x-ewts ;
+        skos:prefLabel      "bod skad/"@bo-x-ewts , "tibetan language"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE5240B8036785ABC .
+}

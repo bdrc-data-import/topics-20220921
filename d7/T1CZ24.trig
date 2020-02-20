@@ -1,0 +1,46 @@
+@base          <bdg:T1CZ24> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ24 {
+    bda:LG450F2199A96C6A77
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-13T11:36:07.737Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8765FC0C524EC4E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-28T17:22:09.145Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ24  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ24 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d7/T1CZ24.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ24 ;
+        adm:logEntry        bda:LG450F2199A96C6A77 , bda:LG8765FC0C524EC4E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT41D98747C4B47E57
+        a                   :Note ;
+        :noteText           "ritual of ransom for protecting children stricken by gdon spirits"@en .
+    
+    bdr:T1CZ24  a           :Topic ;
+        skos:prefLabel      "byis pa'i gdon glud/"@bo-x-ewts , "gdon ransom for protecting children"@en ;
+        :isRoot             true ;
+        :note               bdr:NT41D98747C4B47E57 .
+}

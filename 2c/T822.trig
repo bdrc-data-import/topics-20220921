@@ -1,0 +1,40 @@
+@base          <bdg:T822> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T822 {
+    bda:LG2F6B0071720F16DC
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T09:41:26.531Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T822  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T822 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2c/T822.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T822 ;
+        adm:logEntry        bda:LG2F6B0071720F16DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT71C3F2AD87272B16
+        a                   :Note ;
+        :noteText           "the form of vajrapani withhout consort usually practiced by followers of the dge lugs tradition"@en .
+    
+    bdr:T822  a             :Topic ;
+        skos:prefLabel      "phyag rdor 'khor chen gtso rkyang (dge ldan lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT71C3F2AD87272B16 .
+}

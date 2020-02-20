@@ -1,0 +1,41 @@
+@base          <bdg:T00KG02661> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02661 {
+    bda:LG436FD9EF766604B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-11T12:39:54.271Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG89EFBE8568460940
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-08-17T15:08:38.148Z"^^xsd:dateTime ;
+        adm:logMessage      "added english"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG02661  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02661 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "aa/T00KG02661.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02661 ;
+        adm:logEntry        bda:LG436FD9EF766604B9 , bda:LG89EFBE8568460940 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00KG02661  a       :Topic ;
+        skos:prefLabel      "ru mtshon bca' thabs/"@bo-x-ewts , "technique of making banner"@en ;
+        :isRoot             true .
+}

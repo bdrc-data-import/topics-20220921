@@ -1,0 +1,42 @@
+@base          <bdg:T2614> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2614 {
+    bda:LGC5607C38A6D99296
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:06:40.943Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2614  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2614 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "34/T2614.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2614 ;
+        adm:logEntry        bda:LGC5607C38A6D99296 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT86D545D32E0CCD1B
+        a                   :Note ;
+        :locationStatement  "v. 54-58" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "under mkha' 'gro are generally classified various forms of practices focussing upon the female principle; these are the third of the roots of practice ('phrin las kyi rtsa ba)\nthe rin chen gter mdzod chen mo includes under this group the following initiations and las byang:\n1) rdo rje phag mo khros ma nag mo (mnga' bdag myang ral nyi ma 'od zer according to the system of smin grol gling)\n2) sgrol dkar tshe sgrub and d+hA ki gtsug rgyan mtsho rgyal sgrub thabs (gu ru chos kyi dbang phyug)\n3) mkha' 'gro gsang ba kun 'dus (jo mo sman mo; restored by 'jam dbyangs mkhyen brtse'i dbang po)\n4) sgrol ma 'jigs pa kun skyob (first revealed by g.yag phyag sngon mo rin chen rgyal po; then hidden again for revelation by rong pa bdud 'dul gling pa rdo rje bdud 'joms and hidden again; finally revealed by 'jam dbyangs mkhyen brtse'i dbang po)\n5) bla ma dgongs 'dus mkha' 'gro'i phrin las tshogs mchod (sangs rgyas gling pa)\n6) mtsho rgyal skor gsum (ratna gling pa rta gsang them med)\n7) phag mo zasb rgya (first revealed by rig 'dzin rgod kyi ldem 'phru can and then reconcealed for final recovery by bstan gnyis gling pa padma tshe dbang rgyal po)\n8) phag dkar ye shes 'khor lo gsang chen thugs tig (revealed by e sbel lcog pa gar dbang las 'phro gling pa and revealed again by 'jam dbyangs mkhyen brtse'i dbang po)\n9) sgrol dkar yid bzhin 'khor lo (from the rdzogs chen gsang ba snying thig revealed by gar dbang zhig po gling pa)\n10) 'phags ma yid bzhin zla ba tshe sbyin ma (based on nine but received in a dag snang by tshe dbang nor bu)\n11) sgrol dkar yid bzhin 'khor lo (from the dam chos sprul sku'i snying tig of bdud 'dul rdo rje)\n12) rig 'dzin srog sgrub kyi yum bka' phag dmar zhal gnyis ma (from the dag snang visions of lha btsun nam mkha' 'jigs med)\n13) thugs chen bde gshegs kun 'dus kyi yum bka' gsang ba ye shes (gter bdag gling pa)\n14) zab mo gsang ba yongs 'dus mkha' 'gro mtsho rgyal tshogs mchod (stag sham nus ldan rdo rje)\n15) bla ma drag po'i yum bka' khros ma nang mo (chos gling)\n16) bla ma rgyal 'dus yum bka' rdo rje phag mo (rol pa'i rdo rje'i mtsho gter)\n17) rtsa gsum dbang chen 'dus pa'i sgrol dkar yid bzhin 'khor lo (rwa ston thugs kyi rdo rje)\n18) klong chen snying thig yum bka' bde chen rgyal mo ('jigs med gling pa)\n19) 'chi med 'phags ma'i snying thig gi sgrol gzhung rgyas pa ('jam dbyangs mkhyen brtse'i dbang po'i dgongs gter)\n20) sgrol ma maNDal bzhi chog (smin gling lo chen; 'jam dbyangs mkhyen brtse'i dbang po)\n21) mkha' 'gro dgongs 'dus snying po (mchog gyur gling pa)\n22) sgrol ma 'jigs pa kun sel (from the thugs sgrub bar chad kun sel of mchog gyur gling pa)\n23) sgrol ma'i zab tig (mchog gyur gling pa'i dgongs gter)\n24) zur bza'i thugs dam skor drug gi mkha' 'gro'i sgrub skor (mchog gyur gling pa)\n25) mkha' 'gro gsang ye (mchog gyur gling pa)"@en .
+    
+    bdr:T2614  a            :Topic ;
+        rdfs:seeAlso        bdr:T01AG03135 ;
+        skos:prefLabel      "mkha' 'gro/"@bo-x-ewts , "dakini"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT86D545D32E0CCD1B .
+}

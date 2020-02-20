@@ -1,0 +1,55 @@
+@base          <bdg:T744> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T744 {
+    bda:LG76EE3DE268EF12C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-30T14:53:31.439Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t00ag00324"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8FA480CF4D392CDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-29T14:20:54.544Z"^^xsd:dateTime ;
+        adm:logMessage      "re-released as general topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA515F6A3C1C75F26
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-30T11:23:28.834Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T744  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T744 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ad/T744.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T744 ;
+        adm:logEntry        bda:LG76EE3DE268EF12C7 , bda:LG8FA480CF4D392CDE , bda:LGA515F6A3C1C75F26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8B83B1A9081F2CAE
+        a                   :Note ;
+        :noteText           "this topic is applied generally to the 21 forms of tara and the associated bstod pa or praise"@en .
+    
+    bdr:NTB97C096783A4CACD
+        a                   :Note ;
+        :noteText           "see also T00AG00324"@en .
+    
+    bdr:T744  a             :Topic ;
+        skos:prefLabel      "sgrol ma nyer gcig"@bo-x-ewts , "21 forms of tara"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8B83B1A9081F2CAE , bdr:NTB97C096783A4CACD .
+}

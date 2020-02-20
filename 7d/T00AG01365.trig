@@ -1,0 +1,40 @@
+@base          <bdg:T00AG01365> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01365 {
+    bda:LG5AC1B218A975488A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-08T16:43:24.756Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01365  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01365 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7d/T00AG01365.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01365 ;
+        adm:logEntry        bda:LG5AC1B218A975488A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7902B1BEDF5C7FA1
+        a                   :Note ;
+        :noteText           "a form of white amitayus based on the mayajala from the zab pa skor bdun treasure cycle of mchog gyur gling pa"@en .
+    
+    bdr:T00AG01365  a       :Topic ;
+        skos:altLabel       "tshe dkar/"@bo-x-ewts ;
+        skos:prefLabel      "zab bdun rtsa gsum tshe dpag med dkar po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7902B1BEDF5C7FA1 .
+}

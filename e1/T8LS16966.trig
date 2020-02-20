@@ -1,0 +1,40 @@
+@base          <bdg:T8LS16966> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16966 {
+    bda:LG879357701EBD784C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-08T09:35:38.388Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16966  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16966 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e1/T8LS16966.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16966 ;
+        adm:logEntry        bda:LG879357701EBD784C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF021ACF9A1F9206B
+        a                   :Note ;
+        :noteText           "Treasure revelation mainly focussed on the smin grol gling school of rnying ma tradition of Tibetan buddhism."@en .
+    
+    bdr:T8LS16966  a        :Topic ;
+        skos:prefLabel      "lho gter/"@bo-x-ewts , "southern revelation"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF021ACF9A1F9206B .
+}

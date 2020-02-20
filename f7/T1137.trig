@@ -1,0 +1,54 @@
+@base          <bdg:T1137> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1137 {
+    bda:LG81609DDC55D9468C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T14:45:28.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"rig pa\" to name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG91A9E335F4616DA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-18T11:54:02.971Z"^^xsd:dateTime ;
+        adm:logMessage      "made tibetan primary language name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC65599B64B6424C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-20T15:45:26.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added skye khams rig pa"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGD69AFEFA716E1597
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T12:18:11.086Z"^^xsd:dateTime ;
+        adm:logMessage      "language order changed"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1137  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1137 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f7/T1137.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1137 ;
+        adm:logEntry        bda:LG81609DDC55D9468C , bda:LG91A9E335F4616DA2 , bda:LGC65599B64B6424C7 , bda:LGD69AFEFA716E1597 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1137  a            :Topic ;
+        skos:altLabel       "skye khams rig pa/"@bo-x-ewts ;
+        skos:prefLabel      "skye dngos rig pa/"@bo-x-ewts , "biology"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T1504> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1504 {
+    bda:LGC3327C37ABC58236
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T14:52:23.639Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & description"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE719ABA67AD3A817
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-02T16:09:19.437Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1504  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1504 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "18/T1504.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1504 ;
+        adm:logEntry        bda:LGC3327C37ABC58236 , bda:LGE719ABA67AD3A817 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1504  a            :Topic ;
+        rdfs:comment        "1) four sakya oral instructions on freedom from attachment; 2) mind training free from the four attachments" ;
+        skos:prefLabel      "zhen pa bzhi bral/"@bo-x-ewts , "free from the four attachments"@en , "远离四种执着"@zh-hans ;
+        :isRoot             true .
+}

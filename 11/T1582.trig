@@ -1,0 +1,40 @@
+@base          <bdg:T1582> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1582 {
+    bda:LG166BF1DF886E0D20
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-03T10:02:07.692Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1582  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1582 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "11/T1582.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1582 ;
+        adm:logEntry        bda:LG166BF1DF886E0D20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTDA6928BD55790B29
+        a                   :Note ;
+        :noteText           "75th of the jo nang khrid brgya.\naccording to the bka' yang dag pa'i tshad ma the six are:\ngtum mo las kyi phyag rgya dang\nsgyu ma rmi lam 'od gsal dang\nbar do 'pho ba grong jug go\nthe gdams ngag mdzod dkar chag (f. 25r) describes the teachings as:\ngtum mo lam gyi rtsa ba\nlas rgya lam gyi bogs 'don\nsgyu lus lam gyi drod tshad\n'od gsal lam gyi snying po\nbar do lam gyi blo chod\n'pho ba lam gyi sun ma\ngrong 'jug lam gyi chad mthud\nthe rtsa ba'i chos bzhi are gtum mo, sgyu lus, rmi lam, and 'od gsal; to these are added the las rgya and grong 'jug\nthere are different ways of classing the six or eight"@en .
+    
+    bdr:T1582  a            :Topic ;
+        skos:prefLabel      "na ro chos drug (khrid)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDA6928BD55790B29 .
+}

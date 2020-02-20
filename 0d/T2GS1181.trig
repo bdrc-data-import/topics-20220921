@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1181> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1181 {
+    bda:LGD9283024F8584CFA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T06:54:22.508Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1181  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1181 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0d/T2GS1181.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1181 ;
+        adm:logEntry        bda:LGD9283024F8584CFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEF42B21F03B883C5
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon mahakala black like cosmic darkness, who has one face and two arms; his right hand brandishes a knife; his left holds at his heart a blood filled skull; he is in pratyalidha posture (left leg extended) on a human corpse seat; he is adorned with a tiger skin and snakes and has a crown of dry skulls and a long necklace of fresh heads; with three eyes and yellow upward streaming beard, eyebrows and hair; he is of dwarfish aspect and extremely angry; he has a crown of aksobhya and emits intense fire light.\n\n\ndeities of tibetan buddhism #371"@en .
+    
+    bdr:T2GS1181  a         :Topic ;
+        skos:prefLabel      "mgon po gri gug kha che paN chen gyi lugs/"@bo-x-ewts , "knife mahakala in the tradition of the great pandita of kashmir"@en ;
+        :isRoot             true ;
+        :note               bdr:NTEF42B21F03B883C5 .
+}

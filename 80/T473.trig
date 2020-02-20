@@ -1,0 +1,42 @@
+@base          <bdg:T473> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T473 {
+    bda:LG9BD3A943A0A073D4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:12.083Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGA238F0E918212C56
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.819Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T473  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T473 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/T473.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T473 ;
+        adm:logEntry        bda:LG9BD3A943A0A073D4 , bda:LGA238F0E918212C56 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T473  a             :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "tshe dbang /"@bo-x-ewts ;
+        :isRoot             true .
+}

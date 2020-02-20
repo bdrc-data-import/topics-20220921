@@ -1,0 +1,51 @@
+@base          <bdg:T2567> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2567 {
+    bda:LG02A39A7C4D8C9899
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-10T10:24:39.796Z"^^xsd:dateTime ;
+        adm:logMessage      "note modified"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9D4CE7000A4E344D
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-09-04T16:22:29.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2567  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2567 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c5/T2567.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2567 ;
+        adm:logEntry        bda:LG02A39A7C4D8C9899 , bda:LG9D4CE7000A4E344D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7B54D5D7E7156BB9
+        a                   :Note ;
+        :noteText           "name of a local deity of mdo smad gser stod; there exists a bsangs mchod to the deity written by 'ba' mda' dge legs"@en .
+    
+    bdr:NT99A3E7FE97517A77
+        a                   :Note ;
+        :noteText           "see also G2CN11109"@en .
+    
+    bdr:T2567  a            :Topic ;
+        skos:altLabel       "'bros ri smug po/"@bo-x-ewts ;
+        skos:prefLabel      "'brong ri smug po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7B54D5D7E7156BB9 , bdr:NT99A3E7FE97517A77 .
+}

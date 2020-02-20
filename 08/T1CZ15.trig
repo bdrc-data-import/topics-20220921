@@ -1,0 +1,40 @@
+@base          <bdg:T1CZ15> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ15 {
+    bda:LG175C749D3F33D0EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-28T10:13:44.265Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ15  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ15 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/T1CZ15.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ15 ;
+        adm:logEntry        bda:LG175C749D3F33D0EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA77F0E453EAF9CDC
+        a                   :Note ;
+        :noteText           "rje tsong kha pa nas nye bar brgyud pa'i gdams pa/ ri bo dge ldan pa'i snyn brgyud thun mong ma yin pa"@en .
+    
+    bdr:T1CZ15  a           :Topic ;
+        skos:prefLabel      "phyag rdor gtum po khyung lnga (dge ldan lugs )"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA77F0E453EAF9CDC .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T497> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T497 {
+    bda:LG55D135949B2E5CC1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T11:22:13.147Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added from dan martin"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T497  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T497 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2a/T497.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T497 ;
+        adm:logEntry        bda:LG55D135949B2E5CC1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT15066CB1D2AAB1FC
+        a                   :Note ;
+        :noteText           "this term is applied to the five classes of rnying ma and bon protectors of the ma mo class; according to a recent e-mail from Dan Martin:  Bon text in  Tshe dbang Bod yul ma [longer title: Yang zab Bla med Rdzogs pa Chen po'i Gdams Khrid Tshe dbang Bod yul ma'i Sgrub pa bcas kyi Gsung Pod], \"a cycle of Bonpo life consecration precepts and ritual and meditational instructions rediscovered from its place of concealment at Nyang stod Phyug mo dpal by Bon zhig G.yung drung gling pa, copied from a blockprint from Hor Bon tha belonging to Tenzin Namdak,\" G.yung drung rgyal mtshan, TBMC (Dolanji 1973), pp. 523‑4."@en .
+    
+    bdr:T497  a             :Topic ;
+        skos:altLabel       "ma mo sngags kyi bdag mo/"@bo-x-ewts ;
+        skos:prefLabel      "sngags srung sde lnga (srung ma)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT15066CB1D2AAB1FC .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1222> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1222 {
+    bda:LG0045731B145660CE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T15:34:11.486Z"^^xsd:dateTime ;
+        adm:logMessage      "topic record created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1222  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1222 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9a/T2GS1222.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1222 ;
+        adm:logEntry        bda:LG0045731B145660CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT24F2AA94315D8618
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 9th of the 21 tara collection according to the tradition of suryagupta; this form of tara is red with four arms; the first pair of hands hold a vajra and a bell, make the gesture of joy on the crown of her head; the second right is snapping its fingers in dancing fashion, whilt the second left is holding a branch of an asoka (a shwa ka) tree, rains jewels on sentient beings; her crown is amoghasiddhi; she is mounted on a red lotus and moon seat.\n\ndeities of tibetan buddhism #287"@en .
+    
+    bdr:T2GS1222  a         :Topic ;
+        skos:altLabel       "mchog stsol ba'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma mchog stsol ma/"@bo-x-ewts , "tara granter of boons"@en , "varadatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT24F2AA94315D8618 .
+}

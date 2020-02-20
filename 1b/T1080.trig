@@ -1,0 +1,51 @@
+@base          <bdg:T1080> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1080 {
+    bda:LG7F81EE8637D21FFF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-09T14:44:43.267Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3998"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG938FBAD5B52A33FB
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T16:49:00.609Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1080  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1080 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/T1080.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1080 ;
+        adm:logEntry        bda:LG7F81EE8637D21FFF , bda:LG938FBAD5B52A33FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3998 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT7653A02C2A68ECA8
+        a                   :Note ;
+        :noteText           "name of a place and monastery  in eastern tibet"@en .
+    
+    bdr:NTF73AA929F93D1E31
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G3998"@en .
+    
+    bdr:T1080  a            :Topic ;
+        skos:prefLabel      "cha 'phreng /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7653A02C2A68ECA8 , bdr:NTF73AA929F93D1E31 .
+}

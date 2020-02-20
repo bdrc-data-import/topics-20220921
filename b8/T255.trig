@@ -1,0 +1,46 @@
+@base          <bdg:T255> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T255 {
+    bda:LG640101BF8B0803FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-12T16:37:45.623Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDFB0845B71DFC618
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T16:43:53.5Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T255  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T255 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b8/T255.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T255 ;
+        adm:logEntry        bda:LG640101BF8B0803FD , bda:LGDFB0845B71DFC618 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC7C294CF8211838E
+        a                   :Note ;
+        :noteText           "this topic is used for chronologies, and more specifically works concerned with the duration of the buddha's teaching; a famous example of this is the bstan rtsis of tshe tan zhabs drung"@en .
+    
+    bdr:T255  a             :Topic ;
+        skos:prefLabel      "bstan rtsis/"@bo-x-ewts , "chronology of the buddha's teaching"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC7C294CF8211838E .
+}

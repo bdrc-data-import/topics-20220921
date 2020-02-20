@@ -1,0 +1,56 @@
+@base          <bdg:T01AG03221> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG03221 {
+    bda:LG024060E4220D2178
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-11T11:38:25.857Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG2EA80279DF578D68
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T02:43:32.228Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG628F3FD4888D640F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:40:53.139Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T235"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T01AG03221  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG03221 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "87/T01AG03221.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG03221 ;
+        adm:logEntry        bda:LG024060E4220D2178 , bda:LG2EA80279DF578D68 , bda:LG628F3FD4888D640F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT0AF0F67ED50F1776
+        a                   :Note ;
+        :noteText           "1) rnying ma, 2) bka’ gdams, 3) dmar pa bka’ brgyud, 4) shangs pa bka’ brgyud, 5) lam ’bras, 6) zhi byed and gcod, 7) rdo rje rnal ’byor/ dus ’khor/ 'byor drug,  8) rdo rje gsum gyi bsnyen grub/ o rgyan bsnyen sgrub"@en .
+    
+    bdr:NT192F7DBAAEE8D282
+        a                   :Note ;
+        :noteText           "withdrew in favor of T235"@en .
+    
+    bdr:T01AG03221  a       :Topic ;
+        skos:prefLabel      "sgrub brgyud shing rta chen po brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0AF0F67ED50F1776 , bdr:NT192F7DBAAEE8D282 .
+}

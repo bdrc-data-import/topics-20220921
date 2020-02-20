@@ -1,0 +1,42 @@
+@base          <bdg:T2537> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2537 {
+    bda:LGC98D91A2F572DC55
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T15:03:41.778Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2537  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2537 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7b/T2537.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2537 ;
+        adm:logEntry        bda:LGC98D91A2F572DC55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT69F82AC3149F7C19
+        a                   :Note ;
+        :locationStatement  "pp. 186-187" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "one of the protective deities belonging to the sman mo class; the sman mo bzhi are one of the three groups belonging to the bstan ma bcu gnyis"@en .
+    
+    bdr:T2537  a            :Topic ;
+        skos:prefLabel      "rdo rje g.yar mo bsil/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT69F82AC3149F7C19 .
+}

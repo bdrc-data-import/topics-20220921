@@ -1,0 +1,45 @@
+@base          <bdg:T11MS3> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS3 {
+    bda:LG72E4972F854469D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-12T14:54:32.566Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic, w/ see also and note"@en .
+    
+    bda:LG7AA7E97FDAA62B79
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-12T14:46:44.491Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic, w / see also and note"@en .
+    
+    bda:T11MS3  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS3 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9d/T11MS3.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS3 ;
+        adm:logEntry        bda:LG72E4972F854469D8 , bda:LG7AA7E97FDAA62B79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD04C95518643D29D
+        a                   :Note ;
+        :noteText           "this topic refers to the intimately close or direct transmission of a particular lineage"@en .
+    
+    bdr:T11MS3  a           :Topic ;
+        rdfs:seeAlso        bdr:T11MS4 , bdr:T2MS13267 ;
+        skos:prefLabel      "nye brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD04C95518643D29D .
+}

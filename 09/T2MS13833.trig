@@ -1,0 +1,52 @@
+@base          <bdg:T2MS13833> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13833 {
+    bda:LG484343274490C3BC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-23T13:12:23.369Z"^^xsd:dateTime ;
+        adm:logMessage      "changed typos \"ta lai\" to \"tA la'i\" & language encoding"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5905D97F8923E26D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-29T16:02:01.224Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8D75E8D747F23AD3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-29T16:04:43.031Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13833  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13833 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "09/T2MS13833.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13833 ;
+        adm:logEntry        bda:LG484343274490C3BC , bda:LG5905D97F8923E26D , bda:LG8D75E8D747F23AD3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT25EDF846D483B4F9
+        a                   :Note ;
+        :noteText           "this topic refers to the institutionalized seat and office of the figure known as the dalai lama in the dge lugs tradition."@en .
+    
+    bdr:T2MS13833  a        :Topic ;
+        skos:prefLabel      "tA la'i bla ma/"@bo-x-ewts , "dalai lama"@en ;
+        :isRoot             true ;
+        :note               bdr:NT25EDF846D483B4F9 .
+}

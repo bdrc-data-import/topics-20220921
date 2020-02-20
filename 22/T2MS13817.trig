@@ -1,0 +1,54 @@
+@base          <bdg:T2MS13817> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13817 {
+    bda:LG1693041B5D5CB6A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-29T14:41:34.685Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG65982DCA07A47CB8
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T16:14:19.482Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2MS13817  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13817 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "22/T2MS13817.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13817 ;
+        adm:logEntry        bda:LG1693041B5D5CB6A2 , bda:LG65982DCA07A47CB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT51ADEBFCB438C900
+        a                   :Note ;
+        :noteText           "See also, dga' ldan phyag chen (T1357)"@en .
+    
+    bdr:NTAC575F40A6014A86
+        a                   :Note ;
+        :noteText           "this topic is applied to the transmission lineage of the bka' brgyud through tshong kha pa and, the 1st paN chen bla ma, and later dge lugs masters."@en .
+    
+    bdr:NTB736A243B44A7078
+        a                   :Note ;
+        :noteText           "See also, dben sa bka' brgyud (T2MS13818)"@en .
+    
+    bdr:T2MS13817  a        :Topic ;
+        skos:prefLabel      "dge ldan bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT51ADEBFCB438C900 , bdr:NTAC575F40A6014A86 , bdr:NTB736A243B44A7078 .
+}

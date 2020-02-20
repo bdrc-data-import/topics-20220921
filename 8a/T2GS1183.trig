@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1183> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1183 {
+    bda:LG99048213CC4A09E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T13:51:48.594Z"^^xsd:dateTime ;
+        adm:logMessage      "created and application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFCBF397F4CB956CF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T12:52:30.456Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1183  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1183 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8a/T2GS1183.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1183 ;
+        adm:logEntry        bda:LG99048213CC4A09E2 , bda:LGFCBF397F4CB956CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3B3B43190B901FF6
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing on the soul releasing, mighty strength sapping field protector (zhing skyong stobs 'phrog dbang po nyams sgrol = moksana bala harendra ksetrapala) who is blue and with foue faces with a principal face which is blue, the right red, the left red and the upper smoke colored; his first pair of hands hold a knife and a skull; the other pair a sword and a trident; his brown hair streams upwards with three eyes and a gaping mouth, he bares sharp fangs and his lower lips hang down; he is adorned with a sacred thread, bones, snakes and strings of bells; with a tiger skin loincloth he abides in standing pratyalidha posture (right leg bent) amid a blazing fire of gnosis; from the four directions come his consorts: b) on his right comes the great mother, blue dombini (g.yung mo); c) on his left, the worker (las mdzad), blue candali (gtum mo); d) in front the blue maharaksasi (srin mo chen mo); e) behind is blue simhali (sing+ga gling ma). each is one-faced and two armed holding a sword and a blood-filled skull, extremely fierce and wrathful and with the attributes of a human messenger, three-eyed, naked, without ornaments, in a great hurry, and facing the principal; encircling them round the outside ar twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world; four-faced vajra mahakala, mighty strength sapping field protector is invoked from kailasa, sitavana, potala and the loud laughter charnel ground.\n\ndeities of tibetan buddhism #391."@en .
+    
+    bdr:T2GS1183  a         :Topic ;
+        skos:prefLabel      "dpal mgon zhal bzhi pa sngon po nyams sgrol/"@bo-x-ewts , "blue, four-faced sri-mahakala, soul releasing"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3B3B43190B901FF6 .
+}

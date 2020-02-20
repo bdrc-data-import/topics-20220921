@@ -1,0 +1,46 @@
+@base          <bdg:T328> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T328 {
+    bda:LG717E24C2C4CC8862
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-10T17:07:46.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGC094C613B12233F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T16:47:35.421Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T328  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T328 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "41/T328.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T328 ;
+        adm:logEntry        bda:LG717E24C2C4CC8862 , bda:LGC094C613B12233F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT554DEE13E3417A54
+        a                   :Note ;
+        :noteText           "the topic is to be applied to the cycle of gter ma (dgongs gter) discovered by 'jigs med gling pa; one of the most important practice lineages existing in tibet today"@en .
+    
+    bdr:T328  a             :Topic ;
+        skos:prefLabel      "klong chen snying thig ('jigs med gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT554DEE13E3417A54 .
+}

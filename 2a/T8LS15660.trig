@@ -1,0 +1,42 @@
+@base          <bdg:T8LS15660> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS15660 {
+    bda:LG1259E751574F1E23
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-10-17T13:58:31.038Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS15660  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS15660 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2a/T8LS15660.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS15660 ;
+        adm:logEntry        bda:LG1259E751574F1E23 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE12B5621B3C4D2F8
+        a                   :Note ;
+        :locationStatement  "p. 124" ;
+        :noteSource         bdr:MW1KG16278 .
+    
+    bdr:T8LS15660  a        :Topic ;
+        skos:altLabel       "lha mo yongs 'khyud bde ma/"@bo-x-ewts ;
+        skos:prefLabel      "yongs 'khyud bde ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE12B5621B3C4D2F8 .
+}

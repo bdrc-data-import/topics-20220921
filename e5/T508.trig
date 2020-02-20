@@ -1,0 +1,36 @@
+@base          <bdg:T508> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T508 {
+    bda:T508  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T508 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "e5/T508.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T508 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02422EA3A0B4FA5E
+        a                   :Note ;
+        :locationStatement  "p. 2322" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1544. 'bras spungs su gnas chung rdo rje grags ldan mi'i khog tu thog mar phebs\nthis is the first manifestation of the gnas chung oracle taking possession of it voice at 'bras spungs"@en .
+    
+    bdr:T508  a             :Topic ;
+        skos:altLabel       "pe har/"@bo-x-ewts , "rdo rje grags ldan/"@bo-x-ewts ;
+        skos:prefLabel      "pe ha ra (srung ma)"@bo-x-ewts , "pehar"@en ;
+        :isRoot             true ;
+        :note               bdr:NT02422EA3A0B4FA5E .
+}

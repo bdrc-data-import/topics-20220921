@@ -1,0 +1,66 @@
+@base          <bdg:T1859> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1859 {
+    bda:LG4AB9EA7F669293FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-27T15:07:47.995Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternate spelling and note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG55C41B94B4BEF9A5
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-04-30T11:58:33.985Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00003 .
+    
+    bda:LG6C2ED4E73788D97B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T19:43:56.781Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG8C4EEFC889A513CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T12:22:39.31Z"^^xsd:dateTime ;
+        adm:logMessage      "with drawn in favor of corect T"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG9473AB7F6516DD24
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T13:11:10.659Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T1743"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBD71CB50C21FE229
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T12:53:07.829Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1859  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1859 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e6/T1859.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1859 ;
+        adm:logEntry        bda:LG4AB9EA7F669293FD , bda:LG55C41B94B4BEF9A5 , bda:LG6C2ED4E73788D97B , bda:LG8C4EEFC889A513CD , bda:LG9473AB7F6516DD24 , bda:LGBD71CB50C21FE229 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1859  a            :Topic ;
+        skos:altLabel       "gsur mchod/"@bo-x-ewts ;
+        skos:prefLabel      "bsur mchod/"@bo-x-ewts ;
+        :isRoot             true .
+}

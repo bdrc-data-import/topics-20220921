@@ -1,0 +1,40 @@
+@base          <bdg:T2446> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2446 {
+    bda:LG430ECF4F2BA55CBB
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-09T08:53:00.64Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2446  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2446 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c9/T2446.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2446 ;
+        adm:logEntry        bda:LG430ECF4F2BA55CBB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF0984CD626E88D4B
+        a                   :Note ;
+        :noteText           "branch lineage of the kaM tshang or karma bka' brgyud tradition"@en .
+    
+    bdr:T2446  a            :Topic ;
+        skos:prefLabel      "zur mang bka' brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF0984CD626E88D4B .
+}

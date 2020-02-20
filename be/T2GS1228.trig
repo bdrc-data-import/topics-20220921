@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1228> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1228 {
+    bda:LG477EBBEB008E9836
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:29:46.086Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCAC9DCE5E693D80D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T11:44:59.771Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1228  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1228 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "be/T2GS1228.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1228 ;
+        adm:logEntry        bda:LG477EBBEB008E9836 , bda:LGCAC9DCE5E693D80D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT30D4EAA4990AF927
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon sri mahakala, dark blue, with one face, two arms, and three eyes; his right hand holds a knife and his left a blood filled skull one above the other; he is terible, with bared fangs, standing with both feet together on a human corpse seat; from the corner of his mouth blood drips; his beard, eyebrows and hair are tawny and blaze like fire; he is crowned by aksobhya; he has a loincloth of fresh tiger skin and is adorned with a crown of five dry human heads, a long necklace of fifty fresh ones, and the eight great nagas.\n\nbased on the sadhana of mahakala from the vajrapanjara tantra as in the instructions of naropa and maitripa; taranatha notes mahakala of the tradition taught in the srivajrapanjaratantra; also tantra mahakala in the tradition of rngog (rgyud mgon rngog lugs)\n\ndeities of tibetan buddhism #361."@en .
+    
+    bdr:T2GS1228  a         :Topic ;
+        skos:altLabel       "gur gyi mgon po rngog lugs/"@bo-x-ewts ;
+        skos:prefLabel      "gur rkyang ngog lugs/"@bo-x-ewts , "panjara mahakala alone in the rngog tradition"@en ;
+        :isRoot             true ;
+        :note               bdr:NT30D4EAA4990AF927 .
+}

@@ -1,0 +1,40 @@
+@base          <bdg:T11MS65> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11MS65 {
+    bda:LG15CA6382515073E9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-10T11:08:05.36Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn. no need."@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6F2E0FC52D7AFBB4
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-25T12:52:18.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, note, see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T11MS65  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11MS65 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6f/T11MS65.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11MS65 ;
+        adm:logEntry        bda:LG15CA6382515073E9 , bda:LG6F2E0FC52D7AFBB4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T11MS65  a          :Topic ;
+        :isRoot             true .
+}

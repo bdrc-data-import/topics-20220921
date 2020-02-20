@@ -1,0 +1,40 @@
+@base          <bdg:T649> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T649 {
+    bda:LGC80197C11A258675
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T16:42:58.36Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T649  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T649 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0b/T649.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T649 ;
+        adm:logEntry        bda:LGC80197C11A258675 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9B8ABB5537643263
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations relating to the five deity tara: these five goddesses are tara, pratisara, marici, varahi, and ekajata  \na) tara (sgrol ma) is blue green, her right hand granting refuge; her left holding an utpala, sitting in ardhaprayanka with her right leg extended;  \nb) pratisara (so sor 'brang ma) in in the east; she is white holding a gem and a white lotus marked with a flask;  \nc) marici ('od zer can ma) is in the south; she is yellow and holds a vajra and a branch of an asoka tree;  \nd) varahi (phag mo) is in the west; she is red and pig-faced; she has a tiger skin and holds a knife and skull;  \ne) ekajata (ral gcig ma) is in the north; she is black and very wrathful; she has a tiger skin and holds a knife and skull;  \nall are three-eyed and sit cross-legged;  \nthe principal is crowned with amoghasiddhi; the attendants are crowned with vairocana, ratnasambhava, amitabha, and aksobhya;   \n\ndeities of tibetan buddhism #145-149"@en .
+    
+    bdr:T649  a             :Topic ;
+        skos:prefLabel      "sgrol ma lha lnga /"@bo-x-ewts , "five-deity tara"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9B8ABB5537643263 .
+}

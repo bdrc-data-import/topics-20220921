@@ -1,0 +1,50 @@
+@base          <bdg:T00AG01276> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01276 {
+    bda:LG766C9C029D7547A9
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T14:24:05.78Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGBD9D913CE987A943
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T14:15:36.623Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGC4687C19CD9889F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:19:30.704Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00AG01276  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01276 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/T00AG01276.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01276 ;
+        adm:logEntry        bda:LG766C9C029D7547A9 , bda:LGBD9D913CE987A943 , bda:LGC4687C19CD9889F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT54D8975BD7BCE2BE
+        a                   :Note ;
+        :noteText           "mahakarunika lokesvara from the fifth dalai lama's secret visions (dag snang rgya can), received in a vision in 1656 that served as a means of his self-identification as an incarnation of avalokitesvara. see samten karmay's secret vision of the fifth dalai lama p. 19 and 36."@en .
+    
+    bdr:T00AG01276  a       :Topic ;
+        skos:altLabel       "rgya can 'jigs rten dbang phyug"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po 'jigs rten dbang phyug (dag snang rgya can lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT54D8975BD7BCE2BE .
+}

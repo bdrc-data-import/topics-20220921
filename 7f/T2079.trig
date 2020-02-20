@@ -1,0 +1,48 @@
+@base          <bdg:T2079> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2079 {
+    bda:LG1614B50DC819D812
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-14T14:47:04.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9117DB2D038E90B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-14T14:59:08.5Z"^^xsd:dateTime ;
+        adm:logMessage      "added asssociated works & nodes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGDBA6764E03833CFA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T18:14:53.968Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2079  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2079 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/T2079.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2079 ;
+        adm:logEntry        bda:LG1614B50DC819D812 , bda:LG9117DB2D038E90B9 , bda:LGDBA6764E03833CFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2079  a            :Topic ;
+        skos:altLabel       "kaM tshang sgar chen 'dzam gling rgyan/"@bo-x-ewts , "karma'i sgar chen/"@bo-x-ewts , "sgar chen 'dzam gling rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "kaM tshang sgar chen/"@bo-x-ewts , "traveling encampment of the karma pa lama"@en , "噶玛大营寺"@zh-hans ;
+        :isRoot             true .
+}

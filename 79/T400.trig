@@ -1,0 +1,58 @@
+@base          <bdg:T400> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T400 {
+    bda:LG528F089483AF4B77
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-07-05T11:37:36.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added seng+ge'i gdong pa can"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG560D9554122AC3E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T09:43:56.285Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9745ED249BF6D11F
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-08-14T14:48:54.57Z"^^xsd:dateTime ;
+        adm:logMessage      "name edited"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG984F5AF512BBC5A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-08-28T08:25:01.208Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T400  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T400 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "79/T400.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T400 ;
+        adm:logEntry        bda:LG528F089483AF4B77 , bda:LG560D9554122AC3E2 , bda:LG9745ED249BF6D11F , bda:LG984F5AF512BBC5A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEBE29FBBD404888C
+        a                   :Note ;
+        :noteText           "this topic is applied generically to the lion-faced dakini; she exists as the blue simha mukhi and the red simha mukhi in the rin 'byung; see deities of tibetan buddhism #234 and 235;  \nthe blue simha mukhi was transmitted in tibet by ba ri lo ts+tshA ba; she is dark blue, her huge body covering the three realms, her limbs and minor parts robust and hard; her very wrathful lion's mouth gapes with a rolled up tongue and bared fangs, obscured with a poisonous, fog-like vapor; she has three round, red eyes; her beard, eyebrows, and hair are tawny and hang down like fire; her right hand brandishes skyward a vajra knife; her left hand holds at her heart a blood-filled skull, within the crook of her elow is a khatvanga, from which hang a damaru and a triple banderole;  \nthe red simha mukhi is red with one face and two arms; the right hand brandishes skyward a golden-colored knife; the left holds at her heart a blood-filled skull, with a khatvanga in the crook of the elbow; she has three eyes and yellow, upward streaming hair; she is adorned with a crown of five dry skulls, a long necklace of fifty fresh heads, a tiger-skin loincloth, and the five symbolic ornaments;  \nthere are several forms of simha mukhi found in various gter ma revelations"@en .
+    
+    bdr:T400  a             :Topic ;
+        skos:altLabel       "jnanadakini/"@bo-x-ewts , "seng+ge'i gdong pa can/"@bo-x-ewts , "ye shes mkha' 'gro ma/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong ma/"@bo-x-ewts , "simhamukhi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTEBE29FBBD404888C .
+}

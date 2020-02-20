@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1190> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1190 {
+    bda:LG7EF8A57B65497C2E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T17:04:14.73Z"^^xsd:dateTime ;
+        adm:logMessage      "created with note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDDE7EAAF7B8D1A22
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T00:11:35.677Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1190  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1190 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0f/T2GS1190.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1190 ;
+        adm:logEntry        bda:LG7EF8A57B65497C2E , bda:LGDDE7EAAF7B8D1A22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBFC9EFEA4DEFA243
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon sri-mahakala, black as the cloud at the end of time, with one face and two arms; he is riding a black horse, but has a tiger skin quiver at his right side, a leopard skin bow case, rushing ('khyug pa) at his left, a black iron bow worn on his elbow, and a large sandalwood club is stuck in his waist.\n\nto his right comes his consort, vajra remati, riding a black, three-legged, small mule; she bears on her back a net with nine eyes; her right hand holds a demon cross-stick (khram bam) and her left a bag of diseases; she has fluttering garments of of black silk, a flayed human skin and a hair petticoat and is complete with the charnel-ground requisites such as a crown of dry skulls, a long necklace of fresh heads, snake girdle, and a dot of human ash.\n\naround like shadows of a body are the emanated agents; six male and six female mon tribes people, with an army of a thousand million million demons; black birds soar overhead, black dogs pant below and a jackal, tawny bear, and snow bear are led as pets.\n\nabode: great ucala charnel ground.\n\ndeities of tibetan buddhism #382"@en .
+    
+    bdr:T2GS1190  a         :Topic ;
+        skos:prefLabel      "mgon po trak+Shad ma ning /"@bo-x-ewts , "eunuch traksad mahakala"@en ;
+        :isRoot             true ;
+        :note               bdr:NTBFC9EFEA4DEFA243 .
+}

@@ -1,0 +1,45 @@
+@base          <bdg:T00AG01279> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01279 {
+    bda:LG722EE3BD6091E120
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:19:34.501Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBA28529995F85076
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T16:47:34.969Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01279  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01279 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ed/T00AG01279.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01279 ;
+        adm:logEntry        bda:LG722EE3BD6091E120 , bda:LGBA28529995F85076 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE2720F653106E68B
+        a                   :Note ;
+        :noteText           "a form of white tara from the secret visions of the fifth dalai lama"@en .
+    
+    bdr:T00AG01279  a       :Topic ;
+        skos:altLabel       "sgrol ma dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol dkar (dag snang rgya can lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE2720F653106E68B .
+}

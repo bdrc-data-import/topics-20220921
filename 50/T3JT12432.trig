@@ -1,0 +1,50 @@
+@base          <bdg:T3JT12432> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3JT12432 {
+    bda:LG15ED106B3D1CFE72
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-18T11:21:27.266Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGB4DFC1ECEDB77B34
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-30T15:51:06.053Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T3JT12432  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3JT12432 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "50/T3JT12432.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3JT12432 ;
+        adm:logEntry        bda:LG15ED106B3D1CFE72 , bda:LGB4DFC1ECEDB77B34 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTCB7F778A9AA67357
+        a                   :Note ;
+        :noteText           "withdrawn in favor of"@en .
+    
+    bdr:NTEC6B3B82DA55F7FB
+        a                   :Note ;
+        :noteText           "explanatory tantra [on medicine]"@en .
+    
+    bdr:T3JT12432  a        :Topic ;
+        skos:altLabel       "bshad pa'i rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "bshad rgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCB7F778A9AA67357 , bdr:NTEC6B3B82DA55F7FB .
+}

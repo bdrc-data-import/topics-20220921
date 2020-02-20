@@ -1,0 +1,47 @@
+@base          <bdg:T697> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T697 {
+    bda:LG3A181E1959508D5F
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-16T14:24:35.54Z"^^xsd:dateTime ;
+        adm:logMessage      "note added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGF73F916D7FCA59E5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T10:50:31.435Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T697  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T697 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a7/T697.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T697 ;
+        adm:logEntry        bda:LG3A181E1959508D5F , bda:LGF73F916D7FCA59E5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT30192AB70A13453B
+        a                   :Note ;
+        :noteText           "this deity topic is assigned to empowerments and rituals connected with the form of the secret dakini, red, with one face and four arms, abiding in dancing posture upon a lotus; she combines the wrathful and amorous sentiments; her first right hand holds a knife, the other a sword; the first left hand holds a blood-filled skull, the other a trident marked khatvanga; naked and with hair loose, she has garlands of heads and bone ornaments.\n\ndakinis of the four families hold up her seat in the four directions; she is subjugating gods, evil spirits ('dre) and human beings.\n\nin addition to the iconographic form found in the rin 'byung rgya mtsho, there is an identical form from the revelations from the terma of gter bdag gling pa 'gyur med rdo rje and amplified in the cycle of sle lung bzhad pa'i rdo rje.\n\ndeities of tibetan buddhism #210"@en .
+    
+    bdr:T697  a             :Topic ;
+        skos:altLabel       "mkha' 'gro gsang ba ye shes/"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba ye shes/"@bo-x-ewts , "guhyajnana dakini"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT30192AB70A13453B .
+}

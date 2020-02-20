@@ -1,0 +1,35 @@
+@base          <bdg:T2630> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2630 {
+    bda:T2630  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2630 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "21/T2630.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2630 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8B7B0CDBE81201FE
+        a                   :Note ;
+        :locationStatement  "pp. 706-707" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "according to tibetan astronomical-astrological science there are twenty eight different constellations. below is a listing of their representations and numbers assigned\nin the east are:\n1) smin drug drug ste shing rta'i dbyibs\n2) snar ma lnga ste shing rta'i 'phang lo 'dra\n3) mgo la gsum ste ri dwags mgo bo 'dra\n4) lag la gcig ste thig le lta bu\n5) nabs so gnyis te rkang pa 'dra\n6) rgyal la gsum ste ril ba'i dbyibs\n7) skag ni gcig yin thig le 'dra ('di drug yin pa'ang zer)\nin the south are:\n8) mchu la lnga yod chu bo'i mgur\n9) gre ni gnyis yin rkang pa 'dra\n10) dbo la grangs gnyis khri'i dbyibs\n11) me bzhi'i grangs lnga lag pa 'dra\n12) nag pa gcig nyid yin pas snying 'dra ba\n13) sa ri gcig yin thig le 'dra\n14) sa ga bzhi ste rwa'i rten gyi mgo 'dra\nin the west are\n15) lha mtshams bzhi ste glang chen mgo dang rna ba gnyis\n16) na ni grangs gsum them skas 'dra\n17) bas ni grangs dgu sdigs pa'i gzugs\n18) chu stod bzhi ste ba mjug sgreng ba 'dra\n19) chu smad bzhi ste glang chen 'phyong ba 'dra\n20) 'gro bzhin gsum ste rnga'i dbyibs\n21) byi bzhin gsum ste ba lang mgo bo 'dra\nin the north\n22) mon gre la bzhi bya yi dbyibs\n23) mon gru gcig yin thig le 'dra (bzhi yod kyang zer)\n24) khrums stod gnyis yin rta pa 'dra\n25) khrums smad gnyis yin rkang pa'i dbyibs\n26) nam gru so gnyis skar ma'i tshogs\n27) tha skar gsum ste bya mchu 'dra\n28) bra nye gsum ni mo rtags 'dra"@en .
+    
+    bdr:T2630  a            :Topic ;
+        skos:prefLabel      "rgyu skar/"@bo-x-ewts , "constellation"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8B7B0CDBE81201FE .
+}

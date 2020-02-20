@@ -1,0 +1,53 @@
+@base          <bdg:T2MS24692> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24692 {
+    bda:LG2BF65494414C159F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-27T13:35:44.593Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5BB26E8E2FF1C6A1
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-27T13:50:12.213Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG811D7495FF5311D5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:32:01.724Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24692  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24692 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ef/T2MS24692.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24692 ;
+        adm:logEntry        bda:LG2BF65494414C159F , bda:LG5BB26E8E2FF1C6A1 , bda:LG811D7495FF5311D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT441B27BE27C29920
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:T2MS24692  a        :Topic ;
+        skos:altLabel       "khang khyim/"@bo-x-ewts , "khang khyim 'dug sa/"@bo-x-ewts ;
+        skos:prefLabel      "gzims khang /"@bo-x-ewts , "residential house"@en ;
+        :isRoot             true ;
+        :note               bdr:NT441B27BE27C29920 .
+}

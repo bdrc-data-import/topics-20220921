@@ -1,0 +1,77 @@
+@base          <bdg:T2552> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2552 {
+    bda:LG0BF380DAE8154334
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T16:24:18.968Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note and added alternative names"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2B85F9B69609A431
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-28T14:11:32.595Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG53A0CAC66B72EB3D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T08:26:04.732Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from the chos rnam kun btus"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6D459C08079B899C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T15:46:09.043Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGBAEE9D5E8AC8CE27
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T20:14:19.569Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGFA2F23DC019AD8FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-28T14:09:14.393Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T2552  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2552 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c9/T2552.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2552 ;
+        adm:logEntry        bda:LG0BF380DAE8154334 , bda:LG2B85F9B69609A431 , bda:LG53A0CAC66B72EB3D , bda:LG6D459C08079B899C , bda:LGBAEE9D5E8AC8CE27 , bda:LGFA2F23DC019AD8FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT13F0A777460A467B
+        a                   :Note ;
+        :noteText           "this topic is applied to the main sampannakrama practice for the kalacakra tantra. \n\nthe successive sixfold yoga is:\n\n1) so sor sdud pa -- pratyahara\n2) bsam gtan -- dhyana\n3) srog rtsol -- pranayama\n4) 'dzin pa -- dharana\n5) rjes dran -- anusmrti\n6) ting nge 'dzin -- samadhi"@en .
+    
+    bdr:NT81F900E5389FDF22
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 1541" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1582-6) lists the six yan lag or branches: 1) sor sdud kyi yan lag; 2) bsam gtan gyi yan lag; 3) srog rtsol gyi yan lag; 4) 'dzin pa'i yan lag; 5) rjes dran gyi yan lag; 6) ting nge 'dzin gyi yan lag."@en .
+    
+    bdr:T2552  a            :Topic ;
+        skos:altLabel       "rdo rje rnal 'byor sbyor ba yan lag drug"@bo-x-ewts , "sbyor ba yan lag drug"@bo-x-ewts , "yan lag drug pa/"@bo-x-ewts ;
+        skos:prefLabel      "sbyor drug"@bo-x-ewts , "sadangayoga"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT13F0A777460A467B , bdr:NT81F900E5389FDF22 .
+}

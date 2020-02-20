@@ -1,0 +1,59 @@
+@base          <bdg:T1229> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1229 {
+    bda:LG3B40D667427D839C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T12:49:44.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added associated works from T2624"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG7188368336799F47
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-17T10:52:48.133Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaned up english description"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGDEE95E4C2190BC6C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T13:32:45.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGF53B2ED6F1C20B46
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T11:21:01.263Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1229  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1229 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "54/T1229.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1229 ;
+        adm:logEntry        bda:LG3B40D667427D839C , bda:LG7188368336799F47 , bda:LGDEE95E4C2190BC6C , bda:LGF53B2ED6F1C20B46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT93C6801ABCF76E27
+        a                   :Note ;
+        :noteText           "This topic is applied to works relating to the five major subjects of exoteric Buddhist study:\n\n1. pramana (tshad ma), logic and episemology\n2. prajnaparamita (phar phyin) or perfection of wisdom\n3) madhyamika (dbu ma), the middle way view\n4) abhidharma (mngon pa), phenomenology\n5) vinaya ('dul ba), monastic discipline\n\nThese are principal topics studied in monastic curriculum of the various dge lugs colleges."@en .
+    
+    bdr:T1229  a            :Topic ;
+        skos:altLabel       "bka' pod lnga /"@bo-x-ewts , "gzhung bka' pod lnga /"@bo-x-ewts , "gzhung pod lnga /"@bo-x-ewts , "wu bu da lun"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gzhung chen bka' pod lnga /"@bo-x-ewts , "The five essential subjects and treatises"@en , "五部大论"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT93C6801ABCF76E27 .
+}

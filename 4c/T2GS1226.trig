@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1226> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1226 {
+    bda:LG62AC2B0EFE2421D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T11:21:34.69Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1226  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1226 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4c/T2GS1226.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1226 ;
+        adm:logEntry        bda:LG62AC2B0EFE2421D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7D5C632FBE176827
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon vajramahakala (rdo rje nag po), who is black, the color of cosmic darkness, large and brightly blazing, with one face and two arms; the right hand holds a knife and the left a blood-filled skull one above the other at his heart; between both arms he bears a magic wooden gong (gandi); he has three eyes, bared fangs and yellow, upward-streaming hair, a crown of five dry human heads and a long necklace of fifty fresh ones dripping blood and is adorned with the six bone ornaments and snakes; he wears a tiger skin loincloth and a diadem and fluttering garments of assorted silks, he abides in fleshy dwarf (mi'u thung 'gel ba'i) posture on a corpse.\n\nhe sends out as emanated messengers, a black bird to his right and a black dog to his left, an iron wolf behind, a black man in front and a garuda above; he has a crown of aksobhya and is in the midst of a brightly blazing mass of fire of gnosis, surrounded by a measureless host of attendants, emanated agents, and secondary emanations of the eight tribes.\n\nhis consorts are from the left ekajati, blue with one face and two arms, both holding at her heart a flask full of nectar; she is scarfed in a white silk garment and has a tiger skin loincloth; her hair tresses are in a single braid hanging down on the left; she is of wrathful female aspect.\n\ninside ekajati's vast belly comes an ocean of blood in the center of which comes sridevi (lady of the desire realm); she is dark blue and rides a white nosed ass; she has one face and four arms; her first right arm holds a sword and the second a blood filled skull; her first left hand holds a spear and the second a trident; she has a crown of five dry human heads and a long necklace of fifty fresh ones and the six bone ornaments, a scarf of elephant hide, an ox hide skirt and a hair petticoat with a naga king girdle; she is three eyed, bares her fangs and is putting a stiff human corpse into her mouth; he right ear is adorned with a poisonous snake and her left with a lion; on her are spots of blood, smears of fat and a dot of human ash; she is very emaciated; from the direction of her navel shine the sun and moon; amid hundreds of thousands of matrka, dakini, and pisaca she is shouting hUM and b+hyoM\n\n\n\ndeities of tibetan buddhism #357."@en .
+    
+    bdr:T2GS1226  a         :Topic ;
+        skos:altLabel       "gur mgon lcam dral/"@bo-x-ewts ;
+        skos:prefLabel      "gur gyi mgon po lcam dral/"@bo-x-ewts , "panjara mahakala brother and sister"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7D5C632FBE176827 .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T50> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T50 {
+    bda:LG92478D76D41150DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T13:39:51.602Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFCBE03B63F03DA67
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T11:03:05.297Z"^^xsd:dateTime ;
+        adm:logMessage      "revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T50  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T50 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/T50.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T50 ;
+        adm:logEntry        bda:LG92478D76D41150DF , bda:LGFCBE03B63F03DA67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB4287C056802DD9E
+        a                   :Note ;
+        :noteText           "this deity topic is used to classify rituals for the form of the guhyasadhana of hayagriva transmitted from the shangs pa bka' brgyud pa master, skyer sgang pa; the deity is red, with three faces and six arms, the principal faces are red, green, and white; above the three heads protrude three dark green horses' heads, neighing; from between their manes, sparks spread, covering the universe from the brahma world down to the hells with a fire-net tent; he has three-eyes and gaping mouthed with bared fangs; his first right hand holds a vajra; the second a three-pointed spear, the last a sword; the first left makes the threatening forefinger; the second holds a sakti dagger; and the last a noose of entrails; on the lotus and sun, his eight feet trample eight serpents; he has a crown of five dry human heads on each head and a long necklace of fifty fresh ones and is adorned with a tiger-skin loincloth; a flayed human skin, a fresh elephant hide; the six bone ornaments, spots of blood (on the cheeks), smears of fat (on the chin) and a dot of human ash (between the eyebrows) and a bunch of black snakes; he is in the middle of an intensely hot mass of fire like the fire at the end of the eon; and covered from neck to calves by innumerable emanated fierce deities similar to himself in the aspect of killing the vicious and unruly.  deities of tibetan buddhism #171"@en .
+    
+    bdr:T50  a              :Topic ;
+        skos:prefLabel      "rta mgrin gsang sgrub skyer sgang lugs/"@bo-x-ewts , "hayagriva guhyasahana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB4287C056802DD9E .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T1GS147931> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147931 {
+    bda:LG2287F7A6AE3DD532
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T16:38:11.703Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147931  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147931 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "43/T1GS147931.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147931 ;
+        adm:logEntry        bda:LG2287F7A6AE3DD532 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT121DDABE81DC99CA
+        a                   :Note ;
+        :noteText           "a form of mahakala carrying a red club; this dharma protector was transmitted by mitryogin and passed from khro phu lo tsa ba to the zhwa lu tradition; the lineage of transmission according to the sgrub thabs kun btus passed from rdo rje 'chang; spyan ras gzigs; mi tra dzo ki; khro phu lo tsA ba byams pa'i dpal; bsod nams dbangs phyug; bsod nams seng+ge; rin chen seng+ge; bu ston rin chen grub"@en .
+    
+    bdr:T1GS147931  a       :Topic ;
+        skos:altLabel       "mgon po beng dmar lha gnyis pa (mi tra dzo ki nas brgyud pa)"@bo-x-ewts , "mgon po beng dmar lha gnyis pa khro phu lugs/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po beng dmar lha gnyis pa (zhwa lu lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT121DDABE81DC99CA .
+}

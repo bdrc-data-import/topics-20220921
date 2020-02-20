@@ -1,0 +1,46 @@
+@base          <bdg:T2401> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2401 {
+    bda:LG4F0CC0037D999AE8
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:17:31.174Z"^^xsd:dateTime ;
+        adm:logMessage      "removed worng topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG6422F6BE55ABF7ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-10T10:00:08.437Z"^^xsd:dateTime ;
+        adm:logMessage      "explanatory note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2401  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2401 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "80/T2401.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2401 ;
+        adm:logEntry        bda:LG4F0CC0037D999AE8 , bda:LG6422F6BE55ABF7ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT47DA0E8EA5AFAAF4
+        a                   :Note ;
+        :noteText           "Artistic style of the kaM tshang bka' brgyud tradition; began with the so-called three \"bkra shis\"; later developed by the 10th karma pa chos dbyings rdo rje and further amplified by si tu paN chen chos kyi 'byung gnas"@en .
+    
+    bdr:T2401  a            :Topic ;
+        skos:prefLabel      "karma sgar bris/"@bo-x-ewts , "Karma Gadri Thangka"@en ;
+        :isRoot             true ;
+        :note               bdr:NT47DA0E8EA5AFAAF4 .
+}

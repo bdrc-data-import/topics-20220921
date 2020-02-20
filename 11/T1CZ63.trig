@@ -1,0 +1,36 @@
+@base          <bdg:T1CZ63> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ63 {
+    bda:LGE3C5643A7F580D9E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-07T11:52:05.735Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ63  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ63 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "11/T1CZ63.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ63 ;
+        adm:logEntry        bda:LGE3C5643A7F580D9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1CZ63  a           :Topic ;
+        skos:altLabel       "outer sadhana/"@bo-x-ewts ;
+        skos:prefLabel      "phyi sgrub/"@bo-x-ewts ;
+        :isRoot             true .
+}

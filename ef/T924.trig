@@ -1,0 +1,49 @@
+@base          <bdg:T924> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T924 {
+    bda:LG38F11D29408663CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-30T17:04:08.497Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFCC6E33CEAD9C549
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-28T14:57:49.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T924  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T924 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ef/T924.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T924 ;
+        adm:logEntry        bda:LG38F11D29408663CD , bda:LGFCC6E33CEAD9C549 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT397D7BFE7CA07910
+        a                   :Note ;
+        :locationStatement  "pp. 112-122" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "this deity topic is applied to the four-faced mahakala when a more specific form is not ascertainable:\nthe special forms are:\n385) dpal mgon zhal bzhi pa bsnyen dus dang 'brel ba;  \n386) dpal mgon zhal bzhi pa sgrub dus dang 'brel ba;  \n387) dpal mgon zhal bzhi las sbyor mgon po;  \n388) dpal mgon zhal bzhi pa dkar po tshe 'phel;  \n389) dpal mgon zhal bzi pa ser po nor 'phel;  \n390) dpal mgon zal bzhi pa dmar po dbang sdud;  \n391) dpal mgon zhal zhi pa sngon po nyams sgrol\n\ndeities of tibetan buddhism"@en .
+    
+    bdr:T924  a             :Topic ;
+        skos:altLabel       "mgon po gdong bzhi pa/"@bo-x-ewts , "stobs 'phrog nag po chen po zhal bzhi pa/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po zhal bzhi pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT397D7BFE7CA07910 .
+}

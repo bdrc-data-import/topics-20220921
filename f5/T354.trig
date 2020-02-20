@@ -1,0 +1,71 @@
+@base          <bdg:T354> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T354 {
+    bda:LG21DFE5E9885E2CE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T15:59:25.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG63EAA4D38F030D42
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T12:37:04.508Z"^^xsd:dateTime ;
+        adm:logMessage      "descriptive and application notes added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE1132688E1D137C1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-21T11:14:09.776Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE656910F2A2DFA5D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T13:36:50.908Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected << >>"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T354  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T354 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f5/T354.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T354 ;
+        adm:logEntry        bda:LG21DFE5E9885E2CE7 , bda:LG63EAA4D38F030D42 , bda:LGE1132688E1D137C1 , bda:LGE656910F2A2DFA5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6DA60052B5D48C74
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 397" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (quoting from the dung dkar tshig mdzod 1749-20) speaks of the systems of contemplative practice according to the rdzogs chen tradition (rdzogs pa chen po'i sgom tshul gsum):\n1) sems sde rig stong chos sku'i ngang du 'jog; 2) klong sde chos nyid bya rtsol med pa'i ngang du 'jog; 3) man ngag gi sde ye grol spang blang dang bral ba'i ngang du 'jog."@en .
+    
+    bdr:NT86D7225E11BFCE5D
+        a                   :Note ;
+        :noteText           "this topic is applied to general works on the practice of rdzogs chen; works on specific methods and approaches such as sems sde, klong sde, and man ngag sde should be classified under their separate topic"@en .
+    
+    bdr:NTBFC8DCC8E53B591F
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 396" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1748-7) describes and elucidates the three approaches of rdzogs chen:\nrdzogs chen gyi sems klong man ngag gi sde gsum\n1) sems sde ni/ 'di la ma bu bsdoms pa'i bco brgyad yod pa las lnga ni lo chen bai ro tsA na dang / bcu gsum ni paN chen bi ma la las brgyud pa yin la rdzogs pa chen po sems phyogs su grags pa ni/ lo chen bai ro tsa na dang g.yu sgra snying po gnyis la gnyags dz+nya na ku ma ras zhus/ khong la bka' yi chu bo chen po bzhi 'dus shing slob ma'i mchog bcu la sogs pa byung ba nas sog po sangs rgyas ye shes sogs la brgyud nas byung ba yin/ yang lo chen bai ro tsa na'i slob ma spangs sangs rgyas mgon pos rba rak+Shi ta la gsungs/ des ya zi dar ma shes rab sogs nas brgyud pa dang / yang bai ro tsa nas jo mo sgre mo la gsungs pa sogs brgyud pa mi 'dra ba yin/ 'di'i lta grub ni/ rang byung gi ye shes chos nyid kun tu bzang po'i klong du chos can gyi snang ba thams cad rab snang bkod pa'i rgyan tsam las 'ching grol dang / shar bya shar byed du ma grub pas yod med dang / yin min gang du'ang mi dpyod par ye grol phyogs 'byams chen por gtan la 'bebs pa de yin/\n2) klong sde ni/ rdzogs pa chen po klong sde ni paN chen bi ma la las byung/ des <<dpal nam mkha' dang mnyam pa'i rgyud>> kyi don klong dgus bstan pa dang <<ye shes gsang ba>> la sogs pa'i rgyud la brten nas rdo rje zam pa'i man ngag rnams bai ro tsa nas dpang mi pham mgon po la gsungs pa rnams rim gyis 'dzeng d+harma bo d+hi sogs nas rim gyis brgyud pa las 'phel rgyas byung / 'di'i lta grub ni/ sems nyid rang byung gi ye shes kyis 'khor 'das kun la khyab kyang / snang ba dngos por rgya ma chad/ stong pa dngos med du rgya ma chad/ gnyis ka ma yin pa zung 'jug gi phyogs su'ang ma lhung la/ ngo bo stong pas rtag pa'i mtha' las grol zhing / rang rtsal ma 'gag pa chad pa'i mtha' las grol bas bya bral bde sdug las 'das pa'i lta ba gtan la 'bebs par byed pa de yin/\n3) man ngag gi sde ni/ snying tig gi skor rnams te/ slob dpon pad+ma 'byung gnas nas brgyud pa'i man ngag mkha' 'gro snying tig dang paN chen bi ma mi tra nas brgyud pa'i bi ma snying tig sogs yin zhing / 'di'i lta grub ni/ 'khor 'das spang blang dang bral zhing re dogs phyogs lhung las brgal zhing re dogs phyogs lhung las brgal nas blo dang yid dpyod las 'das pa'i chos nyid de/ gzhi dbyings ka dag mkhregs chod dang / lam snang lhun grub thod rgal bsgoms pas blo 'das rang byung gi ye shes skad cig la 'char bar byed pa de yin/ yang de las zab pa'i rdzogs pa chen po snying tig ni paN chen bi ma la mi tra (snga ma) bod du byon skabs rgyal po khri srong lde btsan dang myang ting 'dzin bzang po gnyis la gsungs shing / myang gis dbu ru 'bri gung zhwa yi lha khang du gter du sbas nas/ chig brgyud kyi man ngag rnams 'brom rin chen 'bar la gsungs pa las rim par brgyud/  lce btsun seng+ge dbang phyug bar byung / des gdams ngag rnams gter kha gsum du sbas pa las/ rong snar mda'i lce sgom nag po dang / mal dro 'chad pa stag gi shangs pa ras pa/ yar 'brog g.yu mtsho'i 'gram du 'khrungs pa'i zhang bkra shis rdo rje rnams kyis gter nas bton te/ man ngag rnams rim bzhin kun mkhyen klong chen pas rdzogs pa chen po snying tig gi chos skor rnams gzhung dang man ngag gang ci'i thad nas dar rgyas su mdzad pas bod yongs su klong chen snying tig ces grags pa 'di byung / yang mkha' 'gro snying tig ni/ slob dpon dga' rab rdo rje nas rig 'dzin shrI sing ha la gnang / de la slob dpon chen po pad+ma 'byung gnas kyis gsan nas bod du mkha' 'gro ye shes mtsho rgyal la gnang / des gter du sbas pa rnams gter ston pad+ma las 'brel rtsal gyis gter nas bton te rgyal sras legs pa rgyal mtshan sogs nas rim par brgyud de dar rgyas su byung ba yin/ lo rgyus zhib pa thub bstan 'od zer bstan pa'i nyi mas mdzad pa'i \"gsang chen snga 'gyur nges don zab mo'i chos 'byung\" dang / nam pa mkha' spyod kyis mdzad pa'i \"gter ma'i lo rgyus gter ston chos 'byung\" dang kong sprul yon tan rgya mtshos mdzad pa'i \"gter ston brgya rtsa'i rnam thar\" bcas su gsal/"@en .
+    
+    bdr:T354  a             :Topic ;
+        skos:altLabel       "rdzogs pa chen po/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs chen/"@bo-x-ewts , "great perfection"@en , "mahasanti"@sa-alalc97 , "大圆满"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6DA60052B5D48C74 , bdr:NT86D7225E11BFCE5D , bdr:NTBFC8DCC8E53B591F .
+}

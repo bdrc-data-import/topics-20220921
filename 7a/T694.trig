@@ -1,0 +1,46 @@
+@base          <bdg:T694> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T694 {
+    bda:LG654B54D997F24606
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T10:49:52.818Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC9B98AA96527971A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T11:55:53.073Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T694  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T694 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7a/T694.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T694 ;
+        adm:logEntry        bda:LG654B54D997F24606 , bda:LGC9B98AA96527971A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2BF8F9F7BE8E6DD8
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the red goddess vasudhara (stream of wealth) abiding in alidha (right leg extended) on a sun seat; her right hand holds a jewel ear of grain and her left a blood filled skull; with yellow upward streaming hair, smiling and wrathful. she is looking with pleasure at the practitioner; she is youthful and adorned with jewels and bones.\n\ndeviation: moon seat.\n\n\nshe is one of the dmar chung skor sum of the sa skya which comprises one of the gser chos bcu gsum of the sa skya; this group comes from gnyan lo tsA ba\n\ndeities of tibetan buddhism #207"@en .
+    
+    bdr:T694  a             :Topic ;
+        skos:prefLabel      "nor rgyun ma dmar mo/"@bo-x-ewts , "red vasudhara"@en , "vasudhara rakta"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2BF8F9F7BE8E6DD8 .
+}

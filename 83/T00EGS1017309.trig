@@ -1,0 +1,59 @@
+@base          <bdg:T00EGS1017309> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00EGS1017309 {
+    bda:LG312D7C69302278E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T12:48:49.441Z"^^xsd:dateTime ;
+        adm:logMessage      "orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG54EFF7EF0C59DCBA
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:33:59.492Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG59ACF2A35BBE5B89
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-15T02:35:18.078Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8AFC7AEED8B1EBEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-04-26T16:35:21.386Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00EGS1017309
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00EGS1017309 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "83/T00EGS1017309.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00EGS1017309 ;
+        adm:logEntry        bda:LG312D7C69302278E7 , bda:LG54EFF7EF0C59DCBA , bda:LG59ACF2A35BBE5B89 , bda:LG8AFC7AEED8B1EBEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTEBF6F806AEB6F9F5
+        a                   :Note ;
+        :noteText           "protective deity revealed by grwa sgom"@en .
+    
+    bdr:T00EGS1017309
+        a                   :Topic ;
+        skos:altLabel       "grwa sgom pa'i chos skyong /"@bo-x-ewts ;
+        skos:prefLabel      "rtog bzo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEBF6F806AEB6F9F5 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T655> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T655 {
+    bda:LG55B46875DB507609
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T10:17:41.472Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T655  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T655 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e7/T655.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T655 ;
+        adm:logEntry        bda:LG55B46875DB507609 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEF9E54F642280A10
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon the blue vajrapani, with one face and two arms; the right hand brandishes skywards a five pointed vajra; the left raises a threatening forefinger at the heart; he has three round red eyes and yellow upward streaming hair; he is adorned with eight great nagas and jewels and wears a tiger-skin loincloth; he stands in pratyalidha posture (right leg bent on a lotus and sun seat; he is crowned with aksobhya and abides amid a blazing mass of fire of gnosis.  \n\n\ndeities of tibetan buddhism 155"@en .
+    
+    bdr:T655  a             :Topic ;
+        skos:altLabel       "phyag rdor gos sngon can ba ri lugs/"@bo-x-ewts , "sri-guhyakadhipati vajrapani"@sa-alalc97 ;
+        skos:prefLabel      "phyag rdor gos sngon can sa lugs/"@bo-x-ewts , "vajrapani in the sakya tradition"@en , "vajrapani nilambaradhara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTEF9E54F642280A10 .
+}

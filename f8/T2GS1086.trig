@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1086> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1086 {
+    bda:LG0C832838D7579BD7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T20:48:45.23Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG503C78324E4519D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:28:15.482Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFFB2AD3AEAE4DDF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T11:55:28.793Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised and enhanced"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1086  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1086 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f8/T2GS1086.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1086 ;
+        adm:logEntry        bda:LG0C832838D7579BD7 , bda:LG503C78324E4519D1 , bda:LGFFB2AD3AEAE4DDF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDB3F0B01B503B9A6
+        a                   :Note ;
+        :noteText           "this deity term is applied to empowerments and rituals invoking the generic goddess of sound, white sarasvati, with one face and two arms; she is in a crouching ardhaparyanka posture; she has one face and two arms; her face like the full moon is embellished with a pair of darting eyes, as bright as utpala; she carries in her left hand the vina (indian lute) made of vaidurya while the fingers of her right hand pay it, producing an ocean of musical sounds; half of her hair, as black as bees, is tied at the back of her neck and half is loose in individual strands covering the upper part of her body; her topknot is bound with a garland of white lotuses and the fringe of her hair is adorned with various jewels; she is like a sixteen year old, with prominent, full breasts, a slender waist and fluttering lower garments, variegated like a rainbow are moving; she is adorned with many ornaments of precious gems, such as a jewel on top of the head, earrings, choker, bracelets, anklets, rings, girdle, pendant necklace, long necklace andstrings of little bells on the feet.\n\nthere exist two specific transmissions, one through the samantasri and the other through bram ze phur bu.\n\ndeviation: the vina is not of vaidurya, which is dark blue, but apparently of wood.\n\ndeities of tibetan buddhism #8"@en .
+    
+    bdr:T2GS1086  a         :Topic ;
+        skos:prefLabel      "dbyangs can ma dkar mo/"@bo-x-ewts , "white sarasvati"@en , "sita sarasvati"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTDB3F0B01B503B9A6 .
+}

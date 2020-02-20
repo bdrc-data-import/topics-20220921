@@ -1,0 +1,49 @@
+@base          <bdg:T8LS14945> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS14945 {
+    bda:LG9E4F89109F45E65E
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-11-27T10:47:36.244Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE2FDF62849F6324B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-10T15:45:55.674Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T1804"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T8LS14945  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS14945 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "08/T8LS14945.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS14945 ;
+        adm:logEntry        bda:LG9E4F89109F45E65E , bda:LGE2FDF62849F6324B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1804 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT70EEEE6D13D3EB8E
+        a                   :Note ;
+        :locationStatement  "vol. kha, p. 319" ;
+        :noteSource         bdr:MW29307 .
+    
+    bdr:T8LS14945  a        :Topic ;
+        skos:altLabel       "chos sku kun tu bzang po/"@bo-x-ewts , "dharmakaya samantabhadra/"@bo-x-ewts ;
+        skos:prefLabel      "kun tu bzang po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT70EEEE6D13D3EB8E .
+}

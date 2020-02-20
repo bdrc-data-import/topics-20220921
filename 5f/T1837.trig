@@ -1,0 +1,36 @@
+@base          <bdg:T1837> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1837 {
+    bda:LG60D393E69FEB566C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-06-07T15:38:49.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added nyi 'dzin/"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1837  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1837 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "5f/T1837.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1837 ;
+        adm:logEntry        bda:LG60D393E69FEB566C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1837  a            :Topic ;
+        skos:altLabel       "nyi ma sgra gcan/"@bo-x-ewts ;
+        skos:prefLabel      "nyi 'dzin/"@bo-x-ewts , "solar eclipse"@en ;
+        :isRoot             true .
+}

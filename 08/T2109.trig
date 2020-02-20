@@ -1,0 +1,35 @@
+@base          <bdg:T2109> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2109 {
+    bda:LG46799DA78FDC4193
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T16:35:10.503Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan infavor of right t"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2109  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2109 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "08/T2109.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2109 ;
+        adm:logEntry        bda:LG46799DA78FDC4193 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2109  a            :Topic ;
+        skos:prefLabel      "lha gsum/"@bo-x-ewts ;
+        :isRoot             true .
+}

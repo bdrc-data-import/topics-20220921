@@ -1,0 +1,46 @@
+@base          <bdg:T666> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T666 {
+    bda:LG6F94A5A957434628
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:19:53.305Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8033E4668F59BE18
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T12:37:13.892Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T666  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T666 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e2/T666.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T666 ;
+        adm:logEntry        bda:LG6F94A5A957434628 , bda:LG8033E4668F59BE18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT90D131C2BB7E1084
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations concerning white fierce acala, white as snow, with one face and two arms; his right hand brandishes a brightly blazing sword of gnosis; the left makes the threatening forefinger at his heart, wound twice round with a vajra noose, whose ends soar over his shoulder; he has three round, red eyes, whose gaze diverges up, down and in beween; his fangs bite his lower lip; his hair, eyebrows and beard are tawny and  stream upwards; he is beautified with all kinds of jewel ornaments, girdled with snakes and adorned below with a silk skirt; white aksobhya sits on his crown;  \n\n\ndeities of tibetan buddhism #175"@en .
+    
+    bdr:T666  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba dkar po/"@bo-x-ewts , "white acala"@en , "acala (sita)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT90D131C2BB7E1084 .
+}

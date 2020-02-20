@@ -1,0 +1,41 @@
+@base          <bdg:T1571> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1571 {
+    bda:LG2802CFDA5F73B1FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-03T11:01:12.816Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG5AE80B2AAF007FCD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:50:06.628Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1571  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1571 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a9/T1571.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1571 ;
+        adm:logEntry        bda:LG2802CFDA5F73B1FF , bda:LG5AE80B2AAF007FCD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1571  a            :Topic ;
+        skos:prefLabel      "rnal 'byor bzhi rim/"@bo-x-ewts ;
+        :isRoot             true .
+}

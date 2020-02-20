@@ -1,0 +1,58 @@
+@base          <bdg:T1KG8477> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG8477 {
+    bda:LGD83A6E9AFB547280
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-14T10:20:15.357Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGEE55CE287F140E49
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-08T15:55:33.734Z"^^xsd:dateTime ;
+        adm:logMessage      "released w / works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF78F9C9425D98DE4
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-21T14:13:38.917Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGFB4E56B770BF3956
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:30:22.288Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1KG8477  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG8477 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7b/T1KG8477.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG8477 ;
+        adm:logEntry        bda:LGD83A6E9AFB547280 , bda:LGEE55CE287F140E49 , bda:LGF78F9C9425D98DE4 , bda:LGFB4E56B770BF3956 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT521C586C91989BAE
+        a                   :Note ;
+        :noteText           "local deity of the gnyan po g.yu rtse of mgo log"@en .
+    
+    bdr:T1KG8477  a         :Topic ;
+        skos:prefLabel      "gnyan po g.yu rtse/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT521C586C91989BAE .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T00JR765> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR765 {
+    bda:LGAE403F1FE407F602
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-27T10:42:25.691Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGE751EAB2B26DE022
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:01:05.284Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00JR765  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR765 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0b/T00JR765.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR765 ;
+        adm:logEntry        bda:LGAE403F1FE407F602 , bda:LGE751EAB2B26DE022 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T00JR765  a         :Topic ;
+        skos:prefLabel      "gu ru rdo rje drag po rtsal/"@bo-x-ewts ;
+        :isRoot             true .
+}

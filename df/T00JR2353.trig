@@ -1,0 +1,54 @@
+@base          <bdg:T00JR2353> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR2353 {
+    bda:LG40144ED1CE3AE22D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T18:52:19.564Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG7AD759B9210A0301
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.204Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGC5E3C71A509F4351
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-12T18:48:04.985Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGE892D8EFC303FBB2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:56.617Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T00JR2353  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR2353 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "df/T00JR2353.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR2353 ;
+        adm:logEntry        bda:LG40144ED1CE3AE22D , bda:LG7AD759B9210A0301 , bda:LGC5E3C71A509F4351 , bda:LGE892D8EFC303FBB2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T00JR2353  a        :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
+        skos:prefLabel      "smin dbang /"@bo-x-ewts ;
+        :isRoot             true .
+}

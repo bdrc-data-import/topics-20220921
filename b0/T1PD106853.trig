@@ -1,0 +1,46 @@
+@base          <bdg:T1PD106853> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106853 {
+    bda:LG66D15B2EB38F9D6A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:16:01.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGA0264EBC176A30C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T11:27:01.929Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106853  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106853 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b0/T1PD106853.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106853 ;
+        adm:logEntry        bda:LG66D15B2EB38F9D6A , bda:LGA0264EBC176A30C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6BAF95DA386B9352
+        a                   :Note ;
+        :noteText           "treatment of a wound or skin injury"@en .
+    
+    bdr:T1PD106853  a       :Topic ;
+        skos:prefLabel      "rma bcos/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6BAF95DA386B9352 .
+}

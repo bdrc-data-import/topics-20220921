@@ -1,0 +1,41 @@
+@base          <bdg:T4CZ15633> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15633 {
+    bda:LG74C187BC5A52BF9C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-06-09T09:58:41.666Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ15633  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15633 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "14/T4CZ15633.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15633 ;
+        adm:logEntry        bda:LG74C187BC5A52BF9C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBBE3EBB61436678B
+        a                   :Note ;
+        :noteText           "སྐུ་མདོག་དམར་པོ་ཞལ་གཅིག་ཕྱག་བཞི་པ། མཆེ་བ་རྣམ་པར་གཙིགས་ཤིང་རྡོ་རྗེ་དང་བཅས་པས་མགོ་བོའི་ཕྲེང་བའི་དབུ་རྒྱན་ཅན། ཕྱག་དང་པོ་གཉིས་དགྲ་སྟ་དང་རྡོ་རྗེ་གཞན་གཉིས་སྡིགས་མཛུབ་དང་སྦྲུལ་གྱི་ཞགས་པ་སྦྲུལ་ནག་མོའི་སྐེ་རགས་བཅིངས་པའོ།།"@bo .
+    
+    bdr:T4CZ15633  a        :Topic ;
+        skos:altLabel       "khro bo chen po rdo rje sa 'og"@bo-x-ewts , "mahakrodhavajrapatalasadhana"@sa-x-ndia ;
+        skos:prefLabel      "rdo rje sa 'og"@bo-x-ewts , "krodhavajrapatala"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTBBE3EBB61436678B .
+}

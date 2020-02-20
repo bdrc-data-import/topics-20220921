@@ -1,0 +1,51 @@
+@base          <bdg:T4CZ2733> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ2733 {
+    bda:LG396BA63907CFC08D
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T15:02:26.168Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGC401BEE6A1FB0C0C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-22T15:28:54.574Z"^^xsd:dateTime ;
+        adm:logMessage      "add topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ2733  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ2733 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dc/T4CZ2733.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ2733 ;
+        adm:logEntry        bda:LG396BA63907CFC08D , bda:LGC401BEE6A1FB0C0C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT51A39DAFC6F8298D
+        a                   :Note ;
+        :noteSource         bdr:MW00EGS1016962 ;
+        :noteText           "སྒོམ་སྡེ་ལྷ་རམས་པས་མཛད་པའི་ཚིག་མཛོད་རིས་མེད་མཁས་པའི་ཞལ་ལུང་(p. 548) མེ་ལྷ་ཞེས་པར་གསལ།"@bo .
+    
+    bdr:NT6B370E968A1C60B6
+        a                   :Note ;
+        :noteText           "ཕྱོགས་སྐྱོང་བརྒྱད་ཀྱི་ཡ་གྱལ་ཏེ། མེ་ལྷ་དམར་པོ་ར་སྐྱེས་ལ་ཞོན་པ།"@bo .
+    
+    bdr:T4CZ2733  a         :Topic ;
+        skos:prefLabel      "me lha/"@bo-x-ewts , "Agnideva, god of fire, gods in general, fire deity associated with the fire offering rites"@en ;
+        :isRoot             true ;
+        :note               bdr:NT51A39DAFC6F8298D , bdr:NT6B370E968A1C60B6 .
+}

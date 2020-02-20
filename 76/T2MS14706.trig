@@ -1,0 +1,46 @@
+@base          <bdg:T2MS14706> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14706 {
+    bda:LG2E7F123D6858DC65
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-20T11:13:48.438Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFE847D569128F48C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T16:45:27.705Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2MS14706  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14706 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "76/T2MS14706.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14706 ;
+        adm:logEntry        bda:LG2E7F123D6858DC65 , bda:LGFE847D569128F48C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT72D91F7102D2FCE6
+        a                   :Note ;
+        :noteText           "this topic is applied generally to managers and administrators, particularly those administering a monastery"@en .
+    
+    bdr:T2MS14706  a        :Topic ;
+        skos:prefLabel      "las 'dzin/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT72D91F7102D2FCE6 .
+}

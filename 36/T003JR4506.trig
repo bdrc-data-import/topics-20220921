@@ -1,0 +1,52 @@
+@base          <bdg:T003JR4506> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR4506 {
+    bda:LG53E3A383FBC50AE9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-14T12:09:43.437Z"^^xsd:dateTime ;
+        adm:logMessage      "restructured outlines for sets of deities"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:LGA0DEA9800F1F8B04
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-06T15:24:08.422Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC0260B24665DC9E4
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-11T15:31:07.408Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T003JR4506  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR4506 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "36/T003JR4506.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR4506 ;
+        adm:logEntry        bda:LG53E3A383FBC50AE9 , bda:LGA0DEA9800F1F8B04 , bda:LGC0260B24665DC9E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT82E4BC2B26AA53AB
+        a                   :Note ;
+        :noteText           "the central deity of the fourth of the eight bka' brgyad deities/means of attainment"@en .
+    
+    bdr:T003JR4506  a       :Topic ;
+        skos:altLabel       "bdud rtsi yon tan/"@bo-x-ewts ;
+        skos:prefLabel      "bdud rtsi lha/"@bo-x-ewts , "anuttara"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT82E4BC2B26AA53AB .
+}

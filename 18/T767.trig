@@ -1,0 +1,46 @@
+@base          <bdg:T767> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T767 {
+    bda:LG6B79B48A3B2FD984
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T19:19:44.533Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF3C2DC1082172EF6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T19:17:05.665Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T767  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T767 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/T767.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T767 ;
+        adm:logEntry        bda:LG6B79B48A3B2FD984 , bda:LGF3C2DC1082172EF6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBD7039844DC6A57A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a deity connected with the white ganapati (see deities of tibetan buddhism #335); he is the yaksha kundhali, white, his right hand holding a hook and his left leading an elephant by the trunk; each evening he can encircle the thrice-thousandfold world system.\n\nthis is a bka' gdams pa instruction in the lineage of atisa.\n\ndeities of tibetan buddhism #339."@en .
+    
+    bdr:T767  a             :Topic ;
+        skos:prefLabel      "khol po kun+d+ha li/"@bo-x-ewts , "the servant kundhali"@en , "kundhali"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTBD7039844DC6A57A .
+}

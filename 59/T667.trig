@@ -1,0 +1,46 @@
+@base          <bdg:T667> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T667 {
+    bda:LG2CE049E94906B83A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:13:46.536Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD0A221B50342BD71
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T12:47:16.254Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T667  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T667 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "59/T667.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T667 ;
+        adm:logEntry        bda:LG2CE049E94906B83A , bda:LGD0A221B50342BD71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA5DF34C4F71B8D69
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the rituals for propitiation and initiation for the special form of acala propitiated by the bka' gdams tradition and transmitted by atisa; the deity is wrathful, fierce, dark blue with one face, two arms and two round red eyes;  his right hand brandishes skyward a flaming sword of gnosis; his left presses to his heart a threatening forefinger with a vajra noose; his legs in pratyalidha (right bent) tread on all hindering demons, including elephant-trunked ganapati and mahesvara; his tawny beard, eyebrows and hair stream upward; he is adorned with a tiger skin loincloth, jewels and snakes; he is crowned with aksobhya;  \ndeities of tibetan buddhism #173"@en .
+    
+    bdr:T667  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba khro bo gtum po jo bo rje'i lugs/"@bo-x-ewts , "wrathful fierce blue acala in the kadampa tradition"@en , "acala (nila candarosana)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA5DF34C4F71B8D69 .
+}

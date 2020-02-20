@@ -1,0 +1,41 @@
+@base          <bdg:T715> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T715 {
+    bda:LGBCAB63AF5F43BF5D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T13:38:34.646Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T715  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T715 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ed/T715.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T715 ;
+        adm:logEntry        bda:LGBCAB63AF5F43BF5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT221786E14D331B9F
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the ascentic goddess, who is blue, tranquil, and graceful sitting on mount meru as on a bench; she is adorned with silks and jewels; her right hand holds a mirror or a fly whisk; her left a branch of a wish-fulfilling tree.\n\ndeities of tibetan buddhism #233"@en .
+    
+    bdr:T715  a             :Topic ;
+        skos:altLabel       "shra ma Na/"@bo-x-ewts ;
+        skos:prefLabel      "lha mo shra ma Na/"@bo-x-ewts , "ascetic goddess"@en , "sramana devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT221786E14D331B9F .
+}

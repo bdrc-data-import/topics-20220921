@@ -1,0 +1,46 @@
+@base          <bdg:T52> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T52 {
+    bda:LGDA4A153EFCD58A00
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T16:11:57.846Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDC7B990E991D53EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T13:44:43.974Z"^^xsd:dateTime ;
+        adm:logMessage      "*application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T52  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T52 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4b/T52.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T52 ;
+        adm:logEntry        bda:LGDA4A153EFCD58A00 , bda:LGDC7B990E991D53EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5284DA21FEF90405
+        a                   :Note ;
+        :noteText           "this deity key word is applied generically to rituals and initiations focusing upon the the most wrathful form of hayagriva  not relegated to special forms or functions, primarily the form followed in the gsar ma ba traditions;  \"rta mgrin nag po'i skor (shin tu drag por khros pa rdo rje'i rigs sam las kyi lha mchog\"\n\n\naccording to the rnying ma tradition as seen in the rin chen gter mdzod: the following cycles of the black hayagriva practice are found:\n1) rta nag (byang sems zla ba rgyal mtshan)\n2) rta mgrin lcags ral yang phyung nag po (mnga' bdag myang ral nyi ma 'od zer)\n3) rta nag lcags ral (gu ru chos kyi dbang phyug)\n4) rta gsang rta nag lcags ral (rat+na gling pa)\n5) rta nag nA ga klu 'dul (gar dbang zhig po gling pa);\n\n\nthis form of hayagriva in the gsar ma ba traditions, is black wih one face, two arms, and three eyes; cf. deities of tibetan buddhism, #172"@en .
+    
+    bdr:T52  a              :Topic ;
+        skos:prefLabel      "rta mgrin nag po lcags ral can/"@bo-x-ewts , "hayagriva lohakhadga"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5284DA21FEF90405 .
+}

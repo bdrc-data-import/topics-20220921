@@ -1,0 +1,37 @@
+@base          <bdg:T1871> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1871 {
+    bda:LG6A746CEED8C86DCC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-30T14:09:11.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & description"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1871  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1871 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "42/T1871.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1871 ;
+        adm:logEntry        bda:LG6A746CEED8C86DCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1871  a            :Topic ;
+        rdfs:comment        "བྱ་རྒྱུད། Kriya; སྤྱོད་རྒྱུད། Charya tantra; རྣལ་འབྱོར་རྒྱུད། yoga tantra; རྣལ་འབྱོར་བླ་མེད་རྒྱུད། Anuttara Yoga tantra." ;
+        skos:altLabel       "four sections of tantra"@en ;
+        skos:prefLabel      "rgyud sde bzhi/"@bo-x-ewts , "four classes of tantra"@en , "四部密续"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1208> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1208 {
+    bda:LG39F8667224918970
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T11:56:02.818Z"^^xsd:dateTime ;
+        adm:logMessage      "topic created; note of application created as well"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1208  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1208 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "48/T2GS1208.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1208 ;
+        adm:logEntry        bda:LG39F8667224918970 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE69C6908DC46823A
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 15th of the 21 tara collection according to the tradition of suryagupta; this form of tara is white with three white hands with a rosary, boon granting, and a club; with three left hands holding a lotus, a water pot (ril ba spyi blugs), and a book (which is resting on an utpala); she is crowned with amitabha, the master of her family; she is seated on a white lotus.\n\ndeviations: the third left hand holds a bowl instead of a book.\n\ndeities of tibetan buddhism #293"@en .
+    
+    bdr:T2GS1208  a         :Topic ;
+        skos:altLabel       "dge legs ster ba'i sgrol ma/"@bo-x-ewts , "sgrol ma dge legs ster ma/"@bo-x-ewts , "zhi ba chen mo'i sgrol ma/"@bo-x-ewts , "tara giver of good"@en , "kayanadatara"@sa-alalc97 ;
+        skos:prefLabel      "sgrol ma zhi ba chen mo/"@bo-x-ewts , "tara the great peaceful one"@en , "mahasantitara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE69C6908DC46823A .
+}

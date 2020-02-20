@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1161> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1161 {
+    bda:LG334DEEE2C182275E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T15:02:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG420CD45C9F0F6013
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T16:09:00.272Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and info"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG5033FE87212E8854
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:09:00.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T2GS1161  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1161 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/T2GS1161.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1161 ;
+        adm:logEntry        bda:LG334DEEE2C182275E , bda:LG420CD45C9F0F6013 , bda:LG5033FE87212E8854 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5106730F22F5B1ED
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the white form of prajnaparamita; she is white as the autumn moon; with one face and two arms, seated in vajraparyanka; her hair, as black as bees, is twisted to the left; her hands make at her heart the gesture of explaining the dharma; from the right palm grows the root of a white lotus; from the left that of a red one; both open beside her ears and have books of the perfection of wisdom on them; with slim waist and full breasts, and youthful as a sixteen year old, she is adorned with silks and all the jewel ornaments; she is crowned with amitabha.\n\n\ndeities of tibetan buddhism #190"@en .
+    
+    bdr:T2GS1161  a         :Topic ;
+        skos:prefLabel      "sher phyin ma dkar mo/"@bo-x-ewts , "white prajnaparamita"@en , "prajnaparamita (sita)"@sa-x-ndia , "白般若佛母"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5106730F22F5B1ED .
+}

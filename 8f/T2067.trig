@@ -1,0 +1,41 @@
+@base          <bdg:T2067> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2067 {
+    bda:LG05933AB00BA385AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-03T09:39:25.378Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG39B17A0771F7DA4B
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T12:33:52.77Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2067  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2067 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8f/T2067.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2067 ;
+        adm:logEntry        bda:LG05933AB00BA385AF , bda:LG39B17A0771F7DA4B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2067  a            :Topic ;
+        skos:prefLabel      "lam gcig chod/"@bo-x-ewts ;
+        :isRoot             true .
+}

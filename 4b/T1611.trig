@@ -1,0 +1,48 @@
+@base          <bdg:T1611> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1611 {
+    bda:LG1B95041C8AEC7009
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T12:12:02.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8AD1184832E0233A
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T11:55:29.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB53776E22B28D9B6
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T12:15:21.914Z"^^xsd:dateTime ;
+        adm:logMessage      "merge T2MS14921 to here"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1611  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1611 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4b/T1611.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1611 ;
+        adm:logEntry        bda:LG1B95041C8AEC7009 , bda:LG8AD1184832E0233A , bda:LGB53776E22B28D9B6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1611  a            :Topic ;
+        rdfs:seeAlso        bdr:T82 ;
+        skos:prefLabel      "dge slong /"@bo-x-ewts , "Bhiksu"@en , "Bhikṣu"@sa-x-ndia , "比丘"@zh-hans ;
+        :isRoot             true .
+}

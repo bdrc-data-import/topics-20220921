@@ -1,0 +1,57 @@
+@base          <bdg:T132> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T132 {
+    bda:LG09A7B06D3515C4F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-18T13:27:23.344Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T4JW5424 (rang 'grel)"@en .
+    
+    bda:LG0BA62A32D104B396
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T12:47:01.239Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T10MS12837 (dgongs 'grel)"@en .
+    
+    bda:LGA1B497A902DCD69C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T13:57:38.03Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCA00804F5B1949EB
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:02:44.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGCCC9BD63EB131A72
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-06-14T12:57:19.207Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T132  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T132 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f9/T132.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T132 ;
+        adm:logEntry        bda:LG09A7B06D3515C4F2 , bda:LG0BA62A32D104B396 , bda:LGA1B497A902DCD69C , bda:LGCA00804F5B1949EB , bda:LGCCC9BD63EB131A72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T132  a             :Topic ;
+        rdfs:seeAlso        bdr:T10MS12837 , bdr:T11MS21 , bdr:T4JW5424 ;
+        skos:altLabel       "说疏"@zh-hans , "释疏"@zh-hans , "釋疏"@zh-hant ;
+        skos:prefLabel      "'grel pa/"@bo-x-ewts , "commentary"@en , "ṭīkā"@sa-x-ndia , "說疏"@zh-hant ;
+        :isRoot             true .
+}

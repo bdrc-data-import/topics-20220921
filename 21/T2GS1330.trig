@@ -1,0 +1,58 @@
+@base          <bdg:T2GS1330> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1330 {
+    bda:LG1079C09F29E09815
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T11:18:58.906Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5716374034804BBB
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:53:29.431Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE439EA8292C63C25
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-25T21:31:19.439Z"^^xsd:dateTime ;
+        adm:logMessage      "rdzas bcu from the chos rnam kun btus and application note made"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1330  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1330 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "21/T2GS1330.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1330 ;
+        adm:logEntry        bda:LG1079C09F29E09815 , bda:LG5716374034804BBB , bda:LGE439EA8292C63C25 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT22C40C0F62092EF4
+        a                   :Note ;
+        :locationStatement  "v. 2, p. 2432" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "rdzas bcu. the chos rnam kun btus (citing bstan 'gyur, dbu ma, ha pa 119 ba 1) lists and enumerates these as: 'dus byas dang 'dus ma byas rnam par nges pa las byung ba lus kyi dbang po min pa'i dbang po gzhan rnams ni rdzas bcu ldan du gsungs pa'i rdzas bcu ste: 1) sa; 2) chu; 3) me; 4) rlung; 5) gzugs; 6) dri; 7) ro; 8) reb bya; 9) lus kyi dbang po; 10) dbang po rang rang gi rdzas"@en .
+    
+    bdr:NT2D0C33BC1A5EDFF5
+        a                   :Note ;
+        :noteText           "this term is applied to works concerned with substance in philosophy"@en .
+    
+    bdr:T2GS1330  a         :Topic ;
+        skos:prefLabel      "rdzas/"@bo-x-ewts , "substance"@en ;
+        :isRoot             true ;
+        :note               bdr:NT22C40C0F62092EF4 , bdr:NT2D0C33BC1A5EDFF5 .
+}

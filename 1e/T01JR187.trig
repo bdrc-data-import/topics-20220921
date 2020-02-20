@@ -1,0 +1,57 @@
+@base          <bdg:T01JR187> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01JR187 {
+    bda:LG065E45BFD4D80B84
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T13:03:18.717Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG787A8148F28A2E20
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-10T11:34:10.809Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGDC1FC9430CAADDDE
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-09T08:56:49.796Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T01JR187  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01JR187 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/T01JR187.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01JR187 ;
+        adm:logEntry        bda:LG065E45BFD4D80B84 , bda:LG787A8148F28A2E20 , bda:LGDC1FC9430CAADDDE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTD34E5C301EFEDC3D
+        a                   :Note ;
+        :noteText           "perhaps the same as stag sman zor gdong ma"@en .
+    
+    bdr:NTF345FD4C9D8DDC4F
+        a                   :Note ;
+        :noteText           "name of a protector of gter ma cache in khams"@en .
+    
+    bdr:T01JR187  a         :Topic ;
+        skos:altLabel       "gter srung zor gdong /"@bo-x-ewts ;
+        skos:prefLabel      "zor gdong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD34E5C301EFEDC3D , bdr:NTF345FD4C9D8DDC4F .
+}

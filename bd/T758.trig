@@ -1,0 +1,41 @@
+@base          <bdg:T758> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T758 {
+    bda:LGA230C0904031AE99
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T10:05:11.688Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T758  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T758 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bd/T758.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T758 ;
+        adm:logEntry        bda:LGA230C0904031AE99 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE8A846EB526EFFD4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a form of vasudhara who is red, adorned with silks and all the jewel ornaments, shining with red light and full radiance; she holds a hook and a mongoose and abides in the lalita posture.  \n\ndeities of tibetan buddhism #329"@en .
+    
+    bdr:T758  a             :Topic ;
+        skos:altLabel       "yid 'phrog nor rgyun ma/"@bo-x-ewts ;
+        skos:prefLabel      "nor rgyun ma yid 'phrog"@bo-x-ewts , "captivating manohara vasudhara"@en , "vasudhara manohara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE8A846EB526EFFD4 .
+}

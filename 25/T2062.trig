@@ -1,0 +1,49 @@
+@base          <bdg:T2062> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2062 {
+    bda:LG1D17119946F0DFFE
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T11:22:02.274Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2D1DC23074EE21CD
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T11:18:10.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC5A96341DFB307E8
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T16:51:56.931Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrita & chinese names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2062  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2062 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "25/T2062.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2062 ;
+        adm:logEntry        bda:LG1D17119946F0DFFE , bda:LG2D1DC23074EE21CD , bda:LGC5A96341DFB307E8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2062  a            :Topic ;
+        rdfs:seeAlso        bdr:T1343 ;
+        skos:altLabel       "kA ri ka"@bo-x-ewts , "tshigs su bcad pa/"@bo-x-ewts , "偈句"@zh-hans , "偈文"@zh-hans , "章、节"@zh-hans ;
+        skos:prefLabel      "tshig le'ur byas pa/"@bo-x-ewts , "karika"@sa-x-ndia , "偈品"@zh-hans ;
+        :isRoot             true .
+}

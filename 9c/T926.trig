@@ -1,0 +1,47 @@
+@base          <bdg:T926> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T926 {
+    bda:LGAB9FE79EB5D3DFB0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T09:38:07.979Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF6EBF073B8DD65A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-29T01:57:21.89Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T926  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T926 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9c/T926.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T926 ;
+        adm:logEntry        bda:LGAB9FE79EB5D3DFB0 , bda:LGF6EBF073B8DD65A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF4CA9A499E12AB80
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focused upon a goddess who is dark blue, with one face and two arms; her right hand brandishes a large sandalwood club marked with a vajra; her left holds at her heart a misbegotten skull (nal thod, the skull of a child of an illicit or incestuous union) full of charm blood (thun khrag); she is complete with the charnal ground requisites, such as fluttering garments of black silk, a flayed human skin, a hair petticoat, a crown of dry skulls, a long necklace of fresh heads, a snake girdle, and a dot of human ash; she has three eyes, bared fangs, and upward-streaming hair; she rides a small mule; her scored magic stick is thrust into her waistband; at the front part of her saddle are her bag of diseases and her dice; at the back part her ball of thread and bundle of red curses; her head is crowned with the queens of the four seasons and has above it a peacock umbrella; innumerable demon children surround her and black birds, black dogs and black sheep follow behind; she is accompanied by four attendants, the queens of the four seasons (dus bzhi'i rgyal mo); these are not described in the rin byung lhan thabs but occur elsewhere;\n1) dpyid kyi rgyal mo, the queen of spring, who is dark blue, holding in her right hand a wavy-bladed knife (chu gri) and riding a mule; 2) dbyar gyi rgyal mo, the queen of summer, who is dark red and holds and axe and rides a buffalo; 3) ston gyi rgyal mo, the queen of autumn, who is yellow and holds a hook and wears a kind of collar of peacock feathers and rides a stag; 4) dgun gyi rgyal mo, the queen of winter, who is dark blue and holds a magic scored stick and rides a camel; each holds in her left hand a blood-filled skull.\n\n\nthe dmag zor is a kind of magic spell or charm for turning back an army; the sanskrit is unknown; the incorrect conjecture that the name can be equated to parvati (correctly ri skyes ma) should surely be put aside according to \"deities of tibetan buddhism\"; \n\n\nshe is widely regarded as the wrathful form of the deity sarasvati;\n\n\ndeities of tibetan buddhism #395"@en .
+    
+    bdr:T926  a             :Topic ;
+        skos:altLabel       "'dod khams dbang phyug dmag zor rgyal mo/"@bo-x-ewts , "dpal ldan dmag zor rgyal mo/"@bo-x-ewts , "lha mo dmag zor ma/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo/"@bo-x-ewts , "glorious army-repulsing queen"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF4CA9A499E12AB80 .
+}

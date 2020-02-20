@@ -1,0 +1,46 @@
+@base          <bdg:T1PD106852> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106852 {
+    bda:LG35DDE3EE23712FAD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-05T11:13:28.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG58F90CC81566AD0A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T11:23:08.014Z"^^xsd:dateTime ;
+        adm:logMessage      "creaded"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106852  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106852 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ff/T1PD106852.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106852 ;
+        adm:logEntry        bda:LG35DDE3EE23712FAD , bda:LG58F90CC81566AD0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAE6F2BA1073C3240
+        a                   :Note ;
+        :noteText           "this topic refers to the prognostics and diagnosis of children by examining the ear"@en .
+    
+    bdr:T1PD106852  a       :Topic ;
+        skos:prefLabel      "byis pa'i rna pra/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAE6F2BA1073C3240 .
+}

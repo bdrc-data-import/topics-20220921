@@ -1,0 +1,46 @@
+@base          <bdg:T00KG010092> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG010092 {
+    bda:LG3ED56FA0A82376B2
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-07-09T11:35:00.36Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBCE11872348FF2E0
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-09-27T13:15:03.067Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFC9E63845DB43E4A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-12T12:18:03.769Z"^^xsd:dateTime ;
+        adm:logMessage      "language order changed"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T00KG010092  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG010092 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cb/T00KG010092.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG010092 ;
+        adm:logEntry        bda:LG3ED56FA0A82376B2 , bda:LGBCE11872348FF2E0 , bda:LGFC9E63845DB43E4A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00KG010092  a      :Topic ;
+        skos:prefLabel      "cha 'phrin lag rtsal/"@bo-x-ewts , "information technology"@en ;
+        :isRoot             true .
+}

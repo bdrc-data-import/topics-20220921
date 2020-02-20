@@ -1,0 +1,51 @@
+@base          <bdg:T00EGS1018105> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00EGS1018105 {
+    bda:LG5A7C9082200DB918
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-11T17:17:55.468Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG6ACE906DE1622AA4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T12:28:14.393Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG78610ABFD9281E4D
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-11T17:46:53.781Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T00EGS1018105
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00EGS1018105 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ac/T00EGS1018105.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00EGS1018105 ;
+        adm:logEntry        bda:LG5A7C9082200DB918 , bda:LG6ACE906DE1622AA4 , bda:LG78610ABFD9281E4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB65BB83ACE805F6F
+        a                   :Note ;
+        :noteText           "under this category are listed works on tea in tibet"@en .
+    
+    bdr:T00EGS1018105
+        a                   :Topic ;
+        skos:prefLabel      "ja/"@bo-x-ewts , "tea"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB65BB83ACE805F6F .
+}

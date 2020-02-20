@@ -1,0 +1,52 @@
+@base          <bdg:T2MS24667> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24667 {
+    bda:LG56D9D20DDCF64BB5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:25:32.197Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGBE8EBDD79092FDCF
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-25T10:26:28.517Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGE664B8F239288474
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-25T10:31:47.75Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24667  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24667 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6c/T2MS24667.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24667 ;
+        adm:logEntry        bda:LG56D9D20DDCF64BB5 , bda:LGBE8EBDD79092FDCF , bda:LGE664B8F239288474 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT54C09C04FAB4BC22
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:T2MS24667  a        :Topic ;
+        skos:altLabel       "town"@en ;
+        skos:prefLabel      "grong khyer/"@bo-x-ewts , "city"@en ;
+        :isRoot             true ;
+        :note               bdr:NT54C09C04FAB4BC22 .
+}

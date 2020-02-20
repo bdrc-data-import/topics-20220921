@@ -1,0 +1,47 @@
+@base          <bdg:T2622> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2622 {
+    bda:LG4621F13A5EB9714D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T13:03:08.089Z"^^xsd:dateTime ;
+        adm:logMessage      "reversed name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGDD2BA45B60AA20A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-28T12:34:41.33Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name variant to be tibetan-wylie"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T2622  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2622 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d3/T2622.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2622 ;
+        adm:logEntry        bda:LG4621F13A5EB9714D , bda:LGDD2BA45B60AA20A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2B7D2D923AC969A4
+        a                   :Note ;
+        :noteText           "this topic is applied generally to the government in Tibet"@en .
+    
+    bdr:T2622  a            :Topic ;
+        skos:altLabel       "tibetan government/"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi chab srid/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2B7D2D923AC969A4 .
+}

@@ -1,0 +1,60 @@
+@base          <bdg:T10MS11185> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS11185 {
+    bda:LG76ACD100E780BF69
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-28T13:57:51.277Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG87F4CDB1F54822E4
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T16:35:05.976Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan infavor of right t"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG8A13169D1561A2DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-19T12:17:59.721Z"^^xsd:dateTime ;
+        adm:logMessage      "english name changed"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG96F23E81B7929652
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T12:19:52.268Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGADF1D74910674E1F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T11:42:24.28Z"^^xsd:dateTime ;
+        adm:logMessage      "note deleted"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T10MS11185  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS11185 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/T10MS11185.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS11185 ;
+        adm:logEntry        bda:LG76ACD100E780BF69 , bda:LG87F4CDB1F54822E4 , bda:LG8A13169D1561A2DF , bda:LG96F23E81B7929652 , bda:LGADF1D74910674E1F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T10MS11185  a       :Topic ;
+        skos:altLabel       "attachment/"@bo-x-ewts ;
+        skos:prefLabel      "'dod pa/"@bo-x-ewts , "abhikaMShin"@sa-x-ndia ;
+        :isRoot             true .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1007> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1007 {
+    bda:LG84329E76656F1B07
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T14:26:33.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"dge 'bras\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9A8FB8872E79B009
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-11T12:31:53.687Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1007  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1007 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e3/T2GS1007.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1007 ;
+        adm:logEntry        bda:LG84329E76656F1B07 , bda:LG9A8FB8872E79B009 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT07CFC7242AF33B35
+        a                   :Note ;
+        :noteText           "this topic is applied to the fruits resulting from virtuous activity"@en .
+    
+    bdr:T2GS1007  a         :Topic ;
+        skos:altLabel       "dge ba'i 'bras bu/"@bo-x-ewts , "dge rtsa/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'bras/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT07CFC7242AF33B35 .
+}

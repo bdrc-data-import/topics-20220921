@@ -1,0 +1,41 @@
+@base          <bdg:T651> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T651 {
+    bda:LGA94BC9A52895B1A6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T16:11:04.811Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T651  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T651 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "55/T651.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T651 ;
+        adm:logEntry        bda:LGA94BC9A52895B1A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA658EB65CFDDAEAB
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon a form of tara, blue-green, with one face, two arms, and smiling; her hair is bound with fine cloth, the color of red lead; her right hand is boon-granting; her left with the gesture of giving refuge, holds the stem of a blue utpala;  she is adorned with silks and jewel ornaments; she stands with feet together, her back resting on a fully developed heavenly tree; she is crowned with amoghasiddhi;\n\n\ndeities of tibetan buddhism #151"@en .
+    
+    bdr:T651  a             :Topic ;
+        skos:altLabel       "rje btsun ma kA pa li tA ra/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma kA pa li/"@bo-x-ewts , "venerabla kapali-tara"@en , "kapala tara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTA658EB65CFDDAEAB .
+}

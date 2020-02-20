@@ -1,0 +1,52 @@
+@base          <bdg:T665> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T665 {
+    bda:LG94DFE6D4250AAA86
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:03:30.126Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9CF74DC68FFA9B60
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T14:21:23.66Z"^^xsd:dateTime ;
+        adm:logMessage      "revision made to application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA4522DEC2248E6BB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T12:18:36.749Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T665  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T665 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3a/T665.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T665 ;
+        adm:logEntry        bda:LG94DFE6D4250AAA86 , bda:LG9CF74DC68FFA9B60 , bda:LGA4522DEC2248E6BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT81A78C3C3096946D
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals connected with the rituals and initiations of candamaharosana, the kneeling blue two-armed acala; he has one face and two arms, the right hand brandishing skyward a sword of gnosis; the left pressing to his heart a vajra noose wound twice round his threatening forefinger; he abides in standing posture with his left knee and right sole on the polylotus and sun seat; he has three round red eyes, the right gazing upwards, annihilating mara, the left gazing down subduing asura and naga demons, and the middle one gazing straight forwards, overcoming all obstructions on the surface of the earth; his face is contracted in a frown with exceeding fury and wrath; he bares his fangs, his upper teeth pressing his lower lip; he has yellow hair tied up in a topknot and five knots; he is crowned with the aksobhya buddha; with a skirt of assorted silks, jewel ornaments, and a long necklace (se ral kha) of white snakes, he has a most terrible body and abides amid the blazing fire of gnosis; \nthis is one of the rdo rje gdan gyi yi dam drug; it is practiced to pacify internal obstacles such as hindering demons;  \n \ndeities of tibetan buddhism #173"@en .
+    
+    bdr:T665  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba sngon po phyag gnyis pa pus btsugs ma/"@bo-x-ewts , "kneeling, blue, wrathful king arya-acala"@en , "acala (krodharaja avaninihitajanu nila)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT81A78C3C3096946D .
+}

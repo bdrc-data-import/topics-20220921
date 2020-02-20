@@ -1,0 +1,40 @@
+@base          <bdg:T1663> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1663 {
+    bda:LGDAA307CBCDF5140E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T09:29:46.428Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1663  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1663 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "68/T1663.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1663 ;
+        adm:logEntry        bda:LGDAA307CBCDF5140E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT5DA52F1CD2DEC79C
+        a                   :Note ;
+        :noteText           "this forms part of the gu ru drag po cycle of ratna gling pa."@en .
+    
+    bdr:T1663  a            :Topic ;
+        skos:prefLabel      "khyung nag ( rat+na gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5DA52F1CD2DEC79C .
+}

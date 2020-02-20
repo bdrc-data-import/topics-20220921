@@ -1,0 +1,47 @@
+@base          <bdg:T1364> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1364 {
+    bda:LG65AC122EE69EBD14
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-08T16:37:42.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG7846592961CF79D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-03T10:20:49.653Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1364  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1364 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/T1364.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1364 ;
+        adm:logEntry        bda:LG65AC122EE69EBD14 , bda:LG7846592961CF79D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAB485C365062E77B
+        a                   :Note ;
+        :noteText           "a special man ngag transmitted by mitrayogin"@en .
+    
+    bdr:T1364  a            :Topic ;
+        skos:altLabel       "mi tra dzo ki'i gdams pa snying po don gsum/"@bo-x-ewts ;
+        skos:prefLabel      "snying po don gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAB485C365062E77B .
+}

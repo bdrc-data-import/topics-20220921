@@ -1,0 +1,59 @@
+@base          <bdg:T1CZ68> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ68 {
+    bda:LG1896AE001975B070
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T06:53:54.656Z"^^xsd:dateTime ;
+        adm:logMessage      "revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7A733066FEF88E44
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T06:40:15.562Z"^^xsd:dateTime ;
+        adm:logMessage      "checked"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG810F24434B511863
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-23T16:23:16.873Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG81B57F4FCF6249D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-08T11:43:43.589Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ68  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ68 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e8/T1CZ68.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ68 ;
+        adm:logEntry        bda:LG1896AE001975B070 , bda:LG7A733066FEF88E44 , bda:LG810F24434B511863 , bda:LG81B57F4FCF6249D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFDC2C28E57D7C1BE
+        a                   :Note ;
+        :noteText           "the mirror; curd; panicum dactylo grass; wood apple fruit; right coiled conch shell; bezoar or elephant bile; vermillion powder; white mustard seeds--\nme long; zho; rtswa dur ba; shing tog bil ba; dung g.yas 'khyil; g+hi wang; li khri; yungs dkar"@en .
+    
+    bdr:T1CZ68  a           :Topic ;
+        skos:altLabel       "eight auspicious articles or substances/"@bo-x-ewts ;
+        skos:prefLabel      "bkra shis rdzas brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFDC2C28E57D7C1BE .
+}

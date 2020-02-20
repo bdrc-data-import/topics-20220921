@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1216> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1216 {
+    bda:LG587041C4AE84204B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T14:00:12.116Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1216  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1216 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f0/T2GS1216.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1216 ;
+        adm:logEntry        bda:LG587041C4AE84204B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT02535EB66AAF7D95
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 4th of the 21 tara collection according to the tradition of suryagupta; this form of tara is yellow with one face and four arms; the right hands are boon granting and holding a rosary; the left hold a water pot and a club; she is sitting in sattvaparyanka; she is crowned with amoghsiddhi, the master of her family; she sits on a yellow lotus and moon seat.\n\ndeviation: the painting in deities of tibetan buddhism shows her in vajraparyanka posture, making the deity identical to bhrkuti; however the blockprint shows the left foot beneath the right shin, a variation of the classical sattvaparyank posture.\n \n\ndeities of tibetan buddhism #279"@en .
+    
+    bdr:T2GS1216  a         :Topic ;
+        skos:altLabel       "gtsug tor rnam rgyal ma'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma gtsug tor rnam rgyal ma/"@bo-x-ewts , "tara the victorious usnisa"@en , "usnisavijayatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT02535EB66AAF7D95 .
+}

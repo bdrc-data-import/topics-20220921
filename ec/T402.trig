@@ -1,0 +1,40 @@
+@base          <bdg:T402> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T402 {
+    bda:LG3125261EEEB428C5
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:52:37.661Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG858079D89316ABA1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T11:53:39.541Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T402  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T402 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ec/T402.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T402 ;
+        adm:logEntry        bda:LG3125261EEEB428C5 , bda:LG858079D89316ABA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T402  a             :Topic ;
+        skos:prefLabel      "renovation rituals/"@bo-x-ewts ;
+        :isRoot             true .
+}

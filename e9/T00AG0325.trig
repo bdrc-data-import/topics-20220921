@@ -1,0 +1,41 @@
+@base          <bdg:T00AG0325> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG0325 {
+    bda:LG218A5899CE8DBDCE
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-25T14:59:50.881Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG72C72B7625786F58
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T15:01:03.467Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00AG0325  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG0325 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e9/T00AG0325.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG0325 ;
+        adm:logEntry        bda:LG218A5899CE8DBDCE , bda:LG72C72B7625786F58 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00AG0325  a        :Topic ;
+        skos:altLabel       "rig byed ma/"@bo-x-ewts ;
+        skos:prefLabel      "ku ru kul+le/"@bo-x-ewts ;
+        :isRoot             true .
+}

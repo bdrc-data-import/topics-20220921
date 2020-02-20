@@ -1,0 +1,60 @@
+@base          <bdg:T2CN3469> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN3469 {
+    bda:LGA48F0C75A4718210
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T15:51:44.843Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGA8A1B4EF5D98B223
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T13:20:53.666Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBCEE32D1487E5551
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-04T11:54:31.455Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEF7F1A03FA45A819
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:57:42.144Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2CN3469  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN3469 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "09/T2CN3469.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN3469 ;
+        adm:logEntry        bda:LGA48F0C75A4718210 , bda:LGA8A1B4EF5D98B223 , bda:LGBCEE32D1487E5551 , bda:LGEF7F1A03FA45A819 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C88017B01B8FEFE
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.3 p.188 གཏུམ་ཞིང་ཁྲོས་པའི་ཉམས་ཅན་སྐུ་མདོག་དམར་ནག་རྟ་མཆོག་དམར་པོར་ཆིབས་པ། གཡས་སུ་བཙན་རྒོད་ནམ་མཁའ་ཐོག་འབེབས་བནྡེའི་ཆས་ཅན་དང་གཡོན་དུ་བཙན་རྒོད་གཞོན་ནུ་རྒྱལ་མཚན་སོགས་འཁོར་དུ་མས་སྐོར་བ་ཞིག་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:T2CN3469  a         :Topic ;
+        skos:altLabel       "ging chen rdo rje 'od ldan dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'od ldan dkar po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6C88017B01B8FEFE .
+}

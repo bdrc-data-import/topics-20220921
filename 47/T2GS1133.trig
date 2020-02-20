@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1133> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1133 {
+    bda:LG2D9DCBE43817DDC6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T19:31:00.833Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1133  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1133 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/T2GS1133.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1133 ;
+        adm:logEntry        bda:LG2D9DCBE43817DDC6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6005A5693E52A2E1
+        a                   :Note ;
+        :noteText           "this deity topic is applied to sadhanas and invocations for the goddess gauri and her brother; she is white with one face and two arms; her right hand plays with mount meru as if it were an egg; her left hand holds at her heart the four continents as a pouring vessel (byo yol); the sun and moon multiplied nine hundred and ninety nine times make her long necklace, while a garland of one sun and one moon and skulls bind her head; she is adorned with snakes and jewels; with a tiger skin loincloth and a white-silk scarf, she is surrounded by ten million dakinis; her brother is the demon king hero with skull-rosary (bdud rgyal dpa' bo thod 'phreng can); he is black with one face and two arms; his right hand brandishes a long spear with a flag; his left hand holds a rosary of human heads; he has black garments and ornaments and rides a black demon horse with white fetlocks, surrounded by ten million demons (mara). deities of tibetan buddhism #410."@en .
+    
+    bdr:T2GS1133  a         :Topic ;
+        skos:prefLabel      "dkar mo nyi zla lcam dral (srung ma)"@bo-x-ewts , "sun and moon gauri, sister and brother"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6005A5693E52A2E1 .
+}

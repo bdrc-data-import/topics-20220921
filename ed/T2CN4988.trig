@@ -1,0 +1,59 @@
+@base          <bdg:T2CN4988> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4988 {
+    bda:LG48EE86C40EFAE4CC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T14:50:48.001Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9213DB29E615666E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T15:16:30.791Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGD0CA0999C98F7F6B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:39:38.349Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGD4F9109224E6C812
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-29T12:12:24.651Z"^^xsd:dateTime ;
+        adm:logMessage      "created & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4988  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4988 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ed/T2CN4988.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4988 ;
+        adm:logEntry        bda:LG48EE86C40EFAE4CC , bda:LG9213DB29E615666E , bda:LGD0CA0999C98F7F6B , bda:LGD4F9109224E6C812 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3B6DD0FB2175BE2A
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.13, p.16 གོང་ས་ལྔ་པ་ཆེན་པོའི་ཟབ་མོ་དག་སྣང་གི་ཆོས་སྐོར་ཡང་གསང་རྒྱ་ཅན་གྱི་ནང་ཚན་ཞིག"@en .
+    
+    bdr:T2CN4988  a         :Topic ;
+        skos:prefLabel      "bla ma bde chen dbang phyug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3B6DD0FB2175BE2A .
+}

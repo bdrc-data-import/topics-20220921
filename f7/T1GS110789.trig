@@ -1,0 +1,69 @@
+@base          <bdg:T1GS110789> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS110789 {
+    bda:LG33AE19662A4A31A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T11:06:44.211Z"^^xsd:dateTime ;
+        adm:logMessage      "Added T975 (sta gon)"@en .
+    
+    bda:LG3A65003E5F84EDE0
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-16T12:32:06.796Z"^^xsd:dateTime ;
+        adm:logMessage      "topic created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG63D9D432FD1C575B
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T16:54:46.174Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T975 to T1GS110789"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG845FAC22A33EAD12
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T12:08:11.875Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG8A405E5B0F75BE2E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-01T11:38:57.529Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGE157DCDDC6AC0F15
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T11:02:12.674Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T975 (sta gon)"@en .
+    
+    bda:T1GS110789  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS110789 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f7/T1GS110789.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS110789 ;
+        adm:logEntry        bda:LG33AE19662A4A31A2 , bda:LG3A65003E5F84EDE0 , bda:LG63D9D432FD1C575B , bda:LG845FAC22A33EAD12 , bda:LG8A405E5B0F75BE2E , bda:LGE157DCDDC6AC0F15 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDF45BE9070752D55
+        a                   :Note ;
+        :noteText           "work detailing the preparations for the initiation"@en .
+    
+    bdr:T1GS110789  a       :Topic ;
+        rdfs:seeAlso        bdr:T10MS14317 , bdr:T1GS110789 , bdr:T48 ;
+        skos:prefLabel      "dbang gi sta gon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDF45BE9070752D55 .
+}

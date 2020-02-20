@@ -1,0 +1,54 @@
+@base          <bdg:T235> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T235 {
+    bda:LG02D1B388EDA27C03
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-11T12:08:00.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG08F02CAA0659F6EE
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T15:48:29.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added names \"sgrub brgyud shing rta che brgyad\" & the chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGED9F914C23AA168C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T15:22:02.093Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T235  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T235 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6e/T235.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T235 ;
+        adm:logEntry        bda:LG02D1B388EDA27C03 , bda:LG08F02CAA0659F6EE , bda:LGED9F914C23AA168C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT521151E37921C528
+        a                   :Note ;
+        :noteText           "this topic refers to works about the eight practice systems; this is basically the organizing system for the gdams ngag mdzod; the eight practice systems are:\n1) gsang sngags rnying ma; \n2) bka' gdams;  \n3) sa skya lam 'bras;  \n4) mar pa bka' brgyud;  \n5) shangs pa bka' brgyud;  \n6) zhi byed dang gcod;  \n7) dus 'khor zhwa lu lugs dang jo nang lugs;  \n8) o rgyan bsnyen sgrub"@en .
+    
+    bdr:T235  a             :Topic ;
+        rdfs:seeAlso        bdr:T808 ;
+        skos:altLabel       "sgrub brgyud shing rta che brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "sgrub brgyud brgyad/"@bo-x-ewts , "eight practice systems"@en , "八大修证传承"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT521151E37921C528 .
+}

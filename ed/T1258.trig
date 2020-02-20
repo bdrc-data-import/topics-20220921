@@ -1,0 +1,59 @@
+@base          <bdg:T1258> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1258 {
+    bda:LG3F335C3D00EAFAAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T11:03:08.063Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG49921F73EA493B99
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:53:48.239Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG91603FEE34824FF2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T11:16:37.923Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted extra SeeAlso"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG9ABB9DA2A8F07EED
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T15:14:11.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added T1GS129601 (rjes chog) uncontrolled topic"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGAC35DD89A1964729
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-28T11:13:02.364Z"^^xsd:dateTime ;
+        adm:logMessage      "added T1257, T941, and T1256"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T1258  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1258 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ed/T1258.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1258 ;
+        adm:logEntry        bda:LG3F335C3D00EAFAAA , bda:LG49921F73EA493B99 , bda:LG91603FEE34824FF2 , bda:LG9ABB9DA2A8F07EED , bda:LGAC35DD89A1964729 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1258  a            :Topic ;
+        rdfs:seeAlso        bdr:T1256 , bdr:T1257 , bdr:T941 ;
+        skos:prefLabel      "rdo'i bcud len/"@bo-x-ewts ;
+        :isRoot             true .
+}

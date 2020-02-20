@@ -1,0 +1,41 @@
+@base          <bdg:T303> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T303 {
+    bda:LG6EDA5B73488CD2B4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T14:38:22.122Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t336"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T303  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T303 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d3/T303.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T303 ;
+        adm:logEntry        bda:LG6EDA5B73488CD2B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T336 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTCEB35260C0623BFB
+        a                   :Note ;
+        :noteText           "this topic has been withdrawn in favor of t336"@en .
+    
+    bdr:T303  a             :Topic ;
+        skos:prefLabel      "tantric vow"@en ;
+        :isRoot             true ;
+        :note               bdr:NTCEB35260C0623BFB .
+}

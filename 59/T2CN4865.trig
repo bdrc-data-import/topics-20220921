@@ -1,0 +1,60 @@
+@base          <bdg:T2CN4865> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4865 {
+    bda:LG41932CAC1B090377
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:59:43.55Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG6FCD088518F3444E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-25T11:37:27.292Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGAD8A76727A12401E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T17:10:22.618Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBBF16403613768D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T16:45:29.54Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4865  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4865 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "59/T2CN4865.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4865 ;
+        adm:logEntry        bda:LG41932CAC1B090377 , bda:LG6FCD088518F3444E , bda:LGAD8A76727A12401E , bda:LGBBF16403613768D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7982BFE39590D88B
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.11, p.124 སླེ་ལུང་རྗེ་དྲུང་བཞད་པའི་རྡོ་རྗེར་བརྒྱུད་པའི་ཁྱད་ཆོས་ཤིག་ལས། མཁའ་འགྲོ་གསང་བ་ཡེ་ཤེས་ཀྱི་རྣམ་འགྱུར་ཞིང་སྐྱོང་མ་མོའི་ཚུལ་འཛིན་པ་ཉི་མ་མུན་སེལ་ཞེས་སུ་གསལ།"@bo .
+    
+    bdr:T2CN4865  a         :Topic ;
+        skos:altLabel       "zhing skyong nyi ma mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "lha gcig nyi ma mun sel/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7982BFE39590D88B .
+}

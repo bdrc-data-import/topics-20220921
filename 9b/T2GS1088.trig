@@ -1,0 +1,53 @@
+@base          <bdg:T2GS1088> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1088 {
+    bda:LG34A34DC35058D860
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T13:37:07.546Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB9CAC18BCDFC78C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T16:25:17.866Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGED6807FCCF30C23E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T14:53:46.823Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1088  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1088 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9b/T2GS1088.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1088 ;
+        adm:logEntry        bda:LG34A34DC35058D860 , bda:LGB9CAC18BCDFC78C9 , bda:LGED6807FCCF30C23E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8EF938FE2A9F71EF
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing on the form of avalokita with seven syllables as described in the cakrasamvara tantra according to the teachings transmitted by mitrayogin; the deity avalokita is blue with three faces, black, white, and red; he is in union with his consort the red lasya (sgeg mo); he has six arms; the first pair of arms hold a vajra and a bell, embrace the mother lasya who is holding an arrow and a bow; the second pair of arms hold a human skin as a scarf; the last pair hold a damaru and a blood filled skull; while in the armpit is a khatvanga; he is adorned with a long necklace of pieces of bone and with flowers and jewels; his legs are in alidha, the bent left one tramples isvara and the extended right gauri (dkar mo also possibly sita); in his tawny, twisted hair there are udumbara flowers and he has the full apparel of a heruka; on the six spokes are six goddesses anticlockwise from the front; these are:\n1) blue heruka (he ru ka ma); 2) yellow bhima ('jigs ma); 3) red rudrani (drag mo); 4) green vasavartini (dbang byed ma); 5) smoke-colored vyavalokita (rnam ltas ma); 6) white vajradakini (rdo rje mkha' 'gro ma); all have one face and four arms and hold a damaru and bell and a human skin and abide on sun and corpse seats; their aspect is similar to that of the principals.\n\ndeities of tibetan buddhism #70"@en .
+    
+    bdr:T2GS1088  a         :Topic ;
+        skos:altLabel       "bde mchog spyan ras gzigs mi tra dzo ki'i lugs/"@bo-x-ewts , "mi tra dzo ki'i lugs kyi bde mchog spyan ras gzigs/"@bo-x-ewts , "sambara avalokita/"@bo-x-ewts ;
+        skos:prefLabel      "'jig rten dbang phyug yi ge bdun pa mi tra'i lugs/"@bo-x-ewts , "seven syllable lokesvara in the tradition of mitrayogin"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8EF938FE2A9F71EF .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T40> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T40 {
+    bda:LGACB79CD64419DE74
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-04T07:00:40.446Z"^^xsd:dateTime ;
+        adm:logMessage      "revised and application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T40  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T40 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "12/T40.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T40 ;
+        adm:logEntry        bda:LGACB79CD64419DE74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2F13A6A9651006C3
+        a                   :Note ;
+        :noteText           "this deity topic is applied to initiations and rituals for this form of manjughosa, like a mass of red lead in color; he has two hands making the gesture of explaining the dharma; from between the thumbs and forefingers spring the stems of utpalas which open beside his ears, with a sword on the right one and a book on the left; he has the youthfuluness of a sixteen year old; with five knots of hair, he sits in the posture of royal dignity upon the blue lion, adorned with silks and all the jewel ornaments, peaceful, smiling, and of graceful appearance;   \n\nin front of him is sarasvati, sapphire blue, with all the attire of a goddess, in crouching, ardhaparyanka posture, proud with the pride of an illusory woman; all her other characteristics are the same as the father's; both are crowned with aksobhya;  \n\ndeities of tibetan buddhism #188"@en .
+    
+    bdr:T40  a              :Topic ;
+        skos:altLabel       "'jam dpal smra ba'i seng+ge"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs smra ba'i seng+ge"@bo-x-ewts , "manjughosa, lion of debaters"@en , "manjusri vadisimha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2F13A6A9651006C3 .
+}

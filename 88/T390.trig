@@ -1,0 +1,58 @@
+@base          <bdg:T390> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T390 {
+    bda:LG5604CE4860664AFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-18T14:39:16.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad and chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG8F22446F750E695A
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-09-09T11:34:12.096Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9038E3BBB93A53E5
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-25T14:47:02.591Z"^^xsd:dateTime ;
+        adm:logMessage      "added gsang ba'i bdag po and gsang bdag"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB5519B0375434B88
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:10:58.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T390  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T390 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "88/T390.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T390 ;
+        adm:logEntry        bda:LG5604CE4860664AFC , bda:LG8F22446F750E695A , bda:LG9038E3BBB93A53E5 , bda:LGB5519B0375434B88 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6CBB7F9933CCE42A
+        a                   :Note ;
+        :noteText           "this key word is applied to forms of vajrapani  not relegated to special forms or functions\naccording to the rnying ma tradition as seen in the rin chen gter mdzod: the following cycles of vajrapani practice are found:\n1) phyag rdor dmar po (grwa pa mngon shes dbangs phyug 'bar)\n2) phyag rdor rdo rje me 'bar (shAkya 'od; restored by 'jam dbyangs mkhyen brtse'i dbang po\n3) bla ma gsang 'dus them med gtum po seng sgrog me lce phreng ba (gu ru chos kyi dbang phyug)\n4) phyag rdor dregs pa kun 'dul (las 'brel rtsal, rdo rje gling pa, padma gling pa gsum 'dus)\n5) phyag na rdo rje khyung gsang ba yang khol (sangs rgyas gling pa)\n6) rta gsang thugs sgrub gsang bdag rdo rje gtum po (ratna gling pa)\n7) phyag rtor gtum po (padma gling pa)\n8) phyag rdor stobs po che (gar dbang zhig po gling pa)\n9) thugs sgrub bde gshegs kun 'dus phyag rdor drag sngags kun 'dus (zur mkhar zla ba'i 'od zer)"@en .
+    
+    bdr:T390  a             :Topic ;
+        skos:altLabel       "gsang ba'i bdag po/"@bo-x-ewts , "gsang bdag"@bo-x-ewts , "lag na rdo rje/"@bo-x-ewts , "phyag na rdo rje/"@bo-x-ewts , "秘密主"@zh-hans , "金剛手"@zh-hant ;
+        skos:prefLabel      "phyag rdor/"@bo-x-ewts , "vajrapāṇi"@sa-x-ndia , "金刚手"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6CBB7F9933CCE42A .
+}

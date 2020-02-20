@@ -1,0 +1,52 @@
+@base          <bdg:T213> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T213 {
+    bda:LGC7785F1E0E78F29F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-13T10:20:42.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added yig gzugs"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGDE5986784EC7B4F4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-22T10:57:21.293Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGE613AAFEC9D541AB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:06:11.797Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T213  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T213 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0a/T213.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T213 ;
+        adm:logEntry        bda:LGC7785F1E0E78F29F , bda:LGDE5986784EC7B4F4 , bda:LGE613AAFEC9D541AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBC3E89F80315228B
+        a                   :Note ;
+        :noteText           "this topic is used to classify works concerned with tibetan calligraphy"@en .
+    
+    bdr:T213  a             :Topic ;
+        skos:altLabel       "yig bris/"@bo-x-ewts ;
+        skos:prefLabel      "yig gzugs/"@bo-x-ewts , "calligraphy"@en ;
+        :isRoot             true ;
+        :note               bdr:NTBC3E89F80315228B .
+}

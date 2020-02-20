@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1198> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1198 {
+    bda:LG46433C614D15B1A2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T14:42:00.19Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added and created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7CD2B2D73BBB5FE3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T16:48:34.236Z"^^xsd:dateTime ;
+        adm:logMessage      "update"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1198  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1198 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/T2GS1198.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1198 ;
+        adm:logEntry        bda:LG46433C614D15B1A2 , bda:LG7CD2B2D73BBB5FE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTACBC97845B798596
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals for the the four faced mahakala, whos principal face is black and eating a human corpse; he is very wrathful and fierce; his right face is white and loudly laughing; his left red, smiling and terrible; his upper face is smoke colored with bared fangs; the skull in his first left hand is filled simply with the heart of the hindering enemy; his other left hand brandishes a bone rosary in stopping manner ('gag thabs su) and holds a trident; under his arm is tucked a golden flask full of nectar.\n\nhis attendants are just as in deities of tibetan buddhism #385: b) on his right is the great mother, black dombini (g.yung mo); c) on his left, the worker (las mkhan) green candali (gtum mo); d) in front dark red maharaksasi (srin mo chen mo); e) behind dark yellow simhali (sing+ga gling ma), each is one-faced and two armed holding a knife and a skull, extremely fiece and wrathful and with the attributes of a female messenger, three eyed, naked and without ornaments, in  a great hurry and facing the principal;  encircling them round the outside are twenty-one demon-slashing butchers, twenty-one thousand demon-subduing soldiers, and the proud beings of the eight tribes of gods and spirits, with an entourage as numerous as the atoms of the world.\n\nthe four faced vajra mahakala, mighty strength sapping field protector is invoked from kailash, sitavana, potala and the loud laughing charnel ground\n\ndeviations: the colors of e)\n\n\ndeities of tibetan buddhism #346"@en .
+    
+    bdr:T2GS1198  a         :Topic ;
+        skos:altLabel       "dpal mgon zhal bzhi pa sgrub dus dang 'brel ba/"@bo-x-ewts ;
+        skos:prefLabel      "zhal bzhi pa sgrub dus dang 'brel ba/"@bo-x-ewts , "four faced sri mahakala connected with the period of accomplishment"@en ;
+        :isRoot             true ;
+        :note               bdr:NTACBC97845B798596 .
+}

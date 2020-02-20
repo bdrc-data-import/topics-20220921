@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1201> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1201 {
+    bda:LG2D00F5F0200EF992
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T14:57:33.388Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1201  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1201 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d4/T2GS1201.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1201 ;
+        adm:logEntry        bda:LG2D00F5F0200EF992 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE8315CDA96CFF1FC
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals connected with the lord king of the array of the triple samaya (bcom ldan 'das dam tshig gsum bkod rgyal po, bhagavan trisamayavyuharaja); the principal deity is of a shining golden color with the attributes of a brahmacarin complete with the marks and signs; his legs are in vajraparyanka, his two hands make at his heart the gesture of explaining the dharma; he is wearing the three robes of a monk;\n\nb) to his right is the yellow vajradhara (rdo rje 'dzin) his two hands at his heart with folded palms holding a yellow vajra; c) on his left is yellow vajradhara (rdo rje 'dzin ma), her right hand holding a gem and her left a vajra; d) in front on the left is green anantadarika (bu mo mtha' yas ma), her right hand raised in homage and her left holding a lotus; these three are peaceful and adorned with silks and jewels;  \n\ne) in front on the right is red anantadaraka (khye'u mtha' yas pa), his right hand holding a knife and his left a skull full of flowers; with all the wrathful attributes and adorned with a tiger skin and snakes; he sits with his left leg extended;\n\nthe lord is crowned with vairocana and the attendants with the principal deity.\n\ncompare with topic t565 (dam tshig gsum bkod lha lnga) as a mandala of the kriya class, the second of the rgyud sde kun btus mandala\n\n\ndeities of tibetan buddhism #15"@en .
+    
+    bdr:T2GS1201  a         :Topic ;
+        skos:altLabel       "bcom ldan 'das dam tshig gsum bkod lha lnga /"@bo-x-ewts ;
+        skos:prefLabel      "dam tshig gsum bkod lha lnga /"@bo-x-ewts , "lord of the array of the triple samaya"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE8315CDA96CFF1FC .
+}

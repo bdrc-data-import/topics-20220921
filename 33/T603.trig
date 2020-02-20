@@ -1,0 +1,71 @@
+@base          <bdg:T603> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T603 {
+    bda:LG28134FB3629CF8A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T10:56:32.631Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG2C645738A9758964
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T00:47:59.355Z"^^xsd:dateTime ;
+        adm:logMessage      "rypo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG339BECE3A45480D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T17:30:35.656Z"^^xsd:dateTime ;
+        adm:logMessage      "typos corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG473943B763C2B32E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T15:56:25.233Z"^^xsd:dateTime ;
+        adm:logMessage      "changes from skyobs to skyob made"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG98D21FB47473C0B8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T17:20:59.737Z"^^xsd:dateTime ;
+        adm:logMessage      "appication note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE8B25C518464CC96
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-18T17:23:48.06Z"^^xsd:dateTime ;
+        adm:logMessage      "checking"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T603  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T603 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "33/T603.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T603 ;
+        adm:logEntry        bda:LG28134FB3629CF8A7 , bda:LG2C645738A9758964 , bda:LG339BECE3A45480D2 , bda:LG473943B763C2B32E , bda:LG98D21FB47473C0B8 , bda:LGE8B25C518464CC96 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFE5BF695D2E7DDCC
+        a                   :Note ;
+        :noteText           "these deity topics are applied to rituals and empowerments for the the special forms of avalokita who protect from various perils; \n\nthe principal deity is the eleven-faced one whose principal face is white; in the palm of each hand is an eye; he sits in vajraparyanka; there are eight petals from which each of the individual eight avalokitas who protect from the eight perils (astabhayatrana)\ndeities of tibetan buddhism #121\n\ndeities of tibetan buddhism #122: to the east is the protector from the peril of fire (me'i 'jigs pa las skyob pa, agnibhayatrana), white, his right hands giving refuge, and holding a fly-whisk, his left hand holding a lotus and a moon crystal;  \n\ndeities of tibetan buddhism #123: to the south, the protector from the peril of water (chu'i 'jigs pa las skyob pa, jalabhayatrana), while; his right hands giving refuge and holding a jewel; his left hand holding a lotus and a wheel;  \n\ndeities of tibetan buddhism #124: to the west, the the protector from the peril of lions (seng+ge'i 'jigs skyob, simhabhayatrana), yellow, his first pair of hands giving refuge and holding a lotus; the other two holding a gem and a hook:  \n\ndeities of tibetan buddhism #125: to the north the protector from the peril of elephants (glang po'i 'jigs skyob; hastibhayatrana); orange, his first pair of hands giving refuge and holding a lotus; the other pair holding an utpala and a sun crystal;  \n\ndeities of tibetan buddhism #126: to the southeast, the protector from the peril of punishment (chad pa'i 'jigs skyob; dandabhayatrana); red, his first pair of hands, giving refuge and holding a lotus; the other pair holding a hook and a noose;  \n\ndeities of tibetan buddhism #127: to the southwest, the protector from the peril of nagas (klu'i 'jigs skyob; nagabhayatrana); green, his first pair of hands, giving refuge and holding a lotus; the other pair holding a banner and a water-pot (ghunda); he rests on a sea monster;  \n\ndeities of tibetan buddhism #128: to the northwest, the protector from the peril of witches (mkha' 'gro'i 'jigs skyob, daka-/dakinibhayatrana), black, his first pair of hands giving refuge and holding a lotus; the other pair holding a trident and a flag;  \n\ndeities of tibetan buddhism #129: to the northeast, the protector from the peril of robbers (or wild men or yetis) (mi rgod 'jigs skyob, corabhayatrana). red, his first pair of hands giving refuge and holding a lotus; the other pair holding a vajra and a bell;  \n\nall of them are of wrathful manner, complete with all the wrathful ornaments and dress, and abide in the pratyalidha posture (with left leg extended); on their brows is oM; on their throats AH; at their hearts is hUM; and at the center of the heart on a moon is hrIH; \n\nthe abode is the potala in the south. \n\naccording to taranatha this was an oral instruction of atisa.\n\ndeities of tibetan buddhism #121-129\n\ncompare also avalokita protecting from the eight perils: deities of tibetan buddhism #252\n\nthis is included in the transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #228-260 which were received by purnavajra in south india from devasambhava:\n\nspyan ras gzigs 'jigs pa brgyad skyobs: avalokita is visualised as white, crowned with amitabha, with one face and eight arms; the four right arms hold a lion, an elephant, a poisonous snake, and a planet; the four left hold fire, water, a chain, and a human being; in dancing posture with left leg extended; he is adorned with silks and jewel ornaments; in front of him comes his consort yellow tara, her two hands folded and holding a gem and bowing to the principal."@en .
+    
+    bdr:T603  a             :Topic ;
+        skos:altLabel       "bcu gcig zhal 'jigs pa brgyad skyob/"@bo-x-ewts , "spyan ras gzigs bcu gcig zhal 'jigs pa brgyad skyob/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po bcu gcig zhal 'jigs pa brgyad skyob/"@bo-x-ewts , "eleven-faced arya-avalokita protecting from the eight perils"@en , "avalokitesvara ekadasamukha astabhayatrana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTFE5BF695D2E7DDCC .
+}

@@ -1,0 +1,53 @@
+@base          <bdg:T742> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T742 {
+    bda:LG0DE7841A032B9CCB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T20:01:53.516Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG81EADEA294634777
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T01:02:52.859Z"^^xsd:dateTime ;
+        adm:logMessage      "sakyaraksita note added; typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB88481C635E49F34
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T19:48:54.683Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T742  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T742 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6a/T742.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T742 ;
+        adm:logEntry        bda:LG0DE7841A032B9CCB , bda:LG81EADEA294634777 , bda:LGB88481C635E49F34 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT320535F11D9AECE2
+        a                   :Note ;
+        :noteText           "this term is applied to the rituals for a female deity:\nthe goddess is orange, her right hand holds a hook and her left a mongoose with a noose; she is beautiful and graceful and adorned with all of the ornaments; she is surrounded by her five hundred children, all pale yellow and holding clubs and bowls full of balls of tsampa doug (chang bu = pinda). \n\nshe is is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava\n\n\ndeities of tibetan buddhism #270"@en .
+    
+    bdr:T742  a             :Topic ;
+        skos:altLabel       "gnod sbyin mo 'phrog ma/"@bo-x-ewts , "hariti yaksi"@sa-alalc97 ;
+        skos:prefLabel      "'phrog ma/"@bo-x-ewts , "hariti yaksini"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT320535F11D9AECE2 .
+}

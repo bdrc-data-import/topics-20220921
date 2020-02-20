@@ -1,0 +1,54 @@
+@base          <bdg:T1PD110095> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD110095 {
+    bda:LG0CA15D0DA3E59293
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T14:16:25.103Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG440A8FCDF3EC8B9A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T14:39:37.225Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGD6335838A43F36F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T15:04:24.259Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1PD110095  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD110095 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/T1PD110095.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD110095 ;
+        adm:logEntry        bda:LG0CA15D0DA3E59293 , bda:LG440A8FCDF3EC8B9A , bda:LGD6335838A43F36F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT5AEEC11B66637310
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 10"@en .
+    
+    bdr:T1PD110095  a       :Topic ;
+        skos:altLabel       "rdo rje dril bu/"@bo-x-ewts ;
+        skos:prefLabel      "rdo dril/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5AEEC11B66637310 .
+}

@@ -1,0 +1,48 @@
+@base          <bdg:T1CZ4665> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ4665 {
+    bda:LG353C76243FFBDA39
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-05-27T12:07:28.122Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGBA21E59CC3840B54
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-25T12:52:19.042Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, note, see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1CZ4665  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ4665 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "eb/T1CZ4665.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ4665 ;
+        adm:logEntry        bda:LG353C76243FFBDA39 , bda:LGBA21E59CC3840B54 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC0E4ABBDC9E81633
+        a                   :Note ;
+        :noteText           "genre classification applied to commentarial writings that discern and analyze subjects, often categorically"@en .
+    
+    bdr:T1CZ4665  a         :Topic ;
+        rdfs:seeAlso        bdr:T61 ;
+        skos:altLabel       "rnam 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "rnam dbye/"@bo-x-ewts , "detailed analysis"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC0E4ABBDC9E81633 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T739> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T739 {
+    bda:LG486A9AAD9BB6B886
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T14:11:04.498Z"^^xsd:dateTime ;
+        adm:logMessage      "appliction note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5F8083A0F0A671E0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T05:05:42.922Z"^^xsd:dateTime ;
+        adm:logMessage      "sakyaraksita note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T739  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T739 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fd/T739.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T739 ;
+        adm:logEntry        bda:LG486A9AAD9BB6B886 , bda:LG5F8083A0F0A671E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT661EB175AAC11825
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon marici who is the color of red lead, with three faces and six arms; her right hands hold a vajra, a needle and thread together and an arrow; her left holds a noose,with a threatening forefinger, an asoka tree (a shva ka), and a bow; she is in pratyalidha (right leg bent), adorned with silks, jewels, and flowers; she has the sun as a backrest; on her head are the conquerors of the five families; she rests on a cart drawn by several horses; light rays from the heart make ground of the vajra, a wall of the pigs (sic); a pavilion of the bow and arrow, and a net of the needle, thread and noose, surrounded outside by asoka trees.\n\nthis group of sadhana is is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava.\n\ndeities of tibetan buddhism #267.\n\nthe color harita (or hari) is a typically ambivalent sanskrit color name, though the tibetan translation with green horses is literal; haritasva or hayasva or harita-hari) means having bay horses and is a title of the sun; marici is a solar deity, her name coming from marici, \"a ray of sunlight\"."@en .
+    
+    bdr:T739  a             :Topic ;
+        skos:altLabel       "haritasva-marici"@sa-alalc97 ;
+        skos:prefLabel      "'od zer can ma rta ljang can/"@bo-x-ewts , "marici with green (bay) horses"@en , "marici syamasva"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT661EB175AAC11825 .
+}

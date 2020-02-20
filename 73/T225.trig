@@ -1,0 +1,71 @@
+@base          <bdg:T225> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T225 {
+    bda:LG134942053ABC8054
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-11-18T11:37:12.907Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup chinese \"法行\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG1FDEA9E615BA5CF5
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-05-22T14:52:03.952Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG20EC2F6BD866C5D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:07:47.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG608A494E139332BD
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-07-30T10:31:08.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added zhal 'don and kha ton"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG68FBE0EF1411F597
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-25T14:17:56.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added SeeAlso T977 (cho ga)"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGFB99E1ED3A49FC61
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T11:08:13.597Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T225  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T225 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "73/T225.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T225 ;
+        adm:logEntry        bda:LG134942053ABC8054 , bda:LG1FDEA9E615BA5CF5 , bda:LG20EC2F6BD866C5D2 , bda:LG608A494E139332BD , bda:LG68FBE0EF1411F597 , bda:LGFB99E1ED3A49FC61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4CE713BA38DF849C
+        a                   :Note ;
+        :noteText           "this topic is applied generically to collections of ritual prayers recited among the followers of a specific group, a sectarian group or monastery; the main topic is the name of the monastery, sectarian group, etc."@en .
+    
+    bdr:T225  a             :Topic ;
+        rdfs:seeAlso        bdr:T1028 , bdr:T977 ;
+        skos:altLabel       "kha ton/"@bo-x-ewts , "zhal 'don/"@bo-x-ewts ;
+        skos:prefLabel      "chos spyod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4CE713BA38DF849C .
+}

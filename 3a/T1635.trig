@@ -1,0 +1,40 @@
+@base          <bdg:T1635> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1635 {
+    bda:LG99E0921AD69398A1
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-14T08:21:18.359Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1635  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1635 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3a/T1635.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1635 ;
+        adm:logEntry        bda:LG99E0921AD69398A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCF960BC760843B8E
+        a                   :Note ;
+        :noteText           "ritual performed for the benefit of the crops"@en .
+    
+    bdr:T1635  a            :Topic ;
+        skos:prefLabel      "lo tog la phan pa'i cho ga"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCF960BC760843B8E .
+}

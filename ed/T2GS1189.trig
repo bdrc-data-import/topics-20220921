@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1189> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1189 {
+    bda:LGEF5B026F8B0854C0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T00:09:58.764Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF35C3E0E99715123
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T16:49:56.076Z"^^xsd:dateTime ;
+        adm:logMessage      "created with application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1189  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1189 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ed/T2GS1189.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1189 ;
+        adm:logEntry        bda:LGEF5B026F8B0854C0 , bda:LGF35C3E0E99715123 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF0F577CAE9B9EC18
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon a form of vajramahakala in raksasa form, dark red, with one face and two arms, with a fierce and grinning dog's face; he has three staring eyes; his right hand brandishes a trident khatvanga marked with a human head; his left hand holds the lungs and heart of an enemy, feeding them into his mouth; on his tawny, upward-streaming hair is a spotted white snake headband, and the crown of his head is adorned with a sun and a moon; he has a tiger skin loincloth and a human skin scarf and is adorned with black snakes and abides in pratyalidha posture (right leg bent); alternatively he can be wearing a three layered, flowing cloak of black silk.\n\nin front of him is b) his consort the golden-eyed bitch (khyi mo gser mig ma); to the six corners clockwise come: c) turquoise eyed (g.yu mig ma); d) carnelian eyed (mchong mig ma); e) copper eyed (zangs mig ma); f) shell eyed (dung mig ma); g) bronze eyed ('khar mig ma); h) iron eyed (lcags mig ma); all seven hold vajra and noose, are dog-faced and adorned with human skin, tiger skin, bone ornamens and so forth and have the attributes of raksasis.\n\ndeities of tibetan buddhism #384"@en .
+    
+    bdr:T2GS1189  a         :Topic ;
+        skos:prefLabel      "mgon po trak+Shad gsang sgrub shwa na'i zhal can/"@bo-x-ewts , "dog faced traksad mahakala for secret practice"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF0F577CAE9B9EC18 .
+}

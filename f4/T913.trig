@@ -1,0 +1,35 @@
+@base          <bdg:T913> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T913 {
+    bda:LG1ABD848FDACC9F41
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T12:41:28.391Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T913  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T913 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f4/T913.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T913 ;
+        adm:logEntry        bda:LG1ABD848FDACC9F41 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T913  a             :Topic ;
+        skos:prefLabel      "bha ya nA sa ni/"@bo-x-ewts ;
+        :isRoot             true .
+}

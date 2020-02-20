@@ -1,0 +1,53 @@
+@base          <bdg:T810> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T810 {
+    bda:LG79DCAB935C9746F1
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-13T14:01:55.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added term"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG9E1A1C9B2235D22E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-13T14:04:06.551Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGE8666127736BCC46
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T14:38:52.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T810  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T810 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "93/T810.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T810 ;
+        adm:logEntry        bda:LG79DCAB935C9746F1 , bda:LG9E1A1C9B2235D22E , bda:LGE8666127736BCC46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3224312D9D07394D
+        a                   :Note ;
+        :noteText           "funerary rites; to guide to a new abode"@en .
+    
+    bdr:T810  a             :Topic ;
+        skos:altLabel       "gnas 'dren/"@bo-x-ewts , "gshin po rjes 'dzin/"@bo-x-ewts ;
+        skos:prefLabel      "gnas lung /"@bo-x-ewts , "funeral rites"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3224312D9D07394D .
+}

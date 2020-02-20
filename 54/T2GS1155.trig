@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1155> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1155 {
+    bda:LGBE513F0ACE83F05D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T10:38:12.557Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1155  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1155 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "54/T2GS1155.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1155 ;
+        adm:logEntry        bda:LGBE513F0ACE83F05D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT92BA22C8CF2008DC
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for a form of hayagriva, black as kohl, with one face, two arms, and three eyes; from the crown of his head, a green, neighing horse's head emerges, subjugating the three realms; his right hand brandishes a sword; the left flames fire from the tip of a threatening forefinge; white ksatriya nagas make his crown; red brahmanas his necklace; yellow vaisyas his bracelets; black candalas his sash and variegated yellow sudras his anklets; he wears a crown of five dry skulls and a long necklace of fifty fresh heads and is complete with eight requisites of glory (dpal gyi chas brgyad); he abides in pratyalidha posture (left leg extended) upon rudra and rudrani) amid a mass of fire;  he is crowned with amitabha;  deities of tibetan buddhism #172"@en .
+    
+    bdr:T2GS1155  a         :Topic ;
+        skos:prefLabel      "rta mgrin lcags ral ran/"@bo-x-ewts , "hayagriva with an iron sword"@en ;
+        :isRoot             true ;
+        :note               bdr:NT92BA22C8CF2008DC .
+}

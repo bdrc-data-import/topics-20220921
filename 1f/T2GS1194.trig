@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1194> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1194 {
+    bda:LGBD98BE06A5FD9B78
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:33:57.725Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD8AE93D79DBBD07D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-24T11:19:24.294Z"^^xsd:dateTime ;
+        adm:logMessage      "created with note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1194  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1194 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/T2GS1194.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1194 ;
+        adm:logEntry        bda:LGBD98BE06A5FD9B78 , bda:LGD8AE93D79DBBD07D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2AC875FD158A622E
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals connected with the attendant to wealth bestowing deity vaisravana from the suvarnaprabhasa; the prince is seated on a lotus and moon seat; he is the yaksa jinarsabha (bull among conquerors), the color of refined gold, emitting blazing light rays; he has one face and four arms, the first pair of hands hold a small box full of gems; the other pair hold a club marked with a wish granting gem and mongoose; he has a youthful body and is adorned with silks and jewels.\n\ndeities of tibetan buddhism #324"@en .
+    
+    bdr:T2GS1194  a         :Topic ;
+        skos:prefLabel      "sras rgyal ba khyu mchog gser 'od las byung ba/"@bo-x-ewts , "prince jinarsabha"@en ;
+        :isRoot             true ;
+        :note               bdr:NT2AC875FD158A622E .
+}

@@ -1,0 +1,58 @@
+@base          <bdg:T326> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T326 {
+    bda:LG3E5C4BBBABCE8B2A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T11:24:55.26Z"^^xsd:dateTime ;
+        adm:logMessage      "Added T2045 (sman sgrub bdud rtsi sman dngos)"@en .
+    
+    bda:LG63FD666985EBD657
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T11:27:42.947Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T2045"@en .
+    
+    bda:LG80CD2D93D3F03DB2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T16:43:18.749Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8C0F4EAEFFDC4B46
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-11T16:10:17.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T326  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T326 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f9/T326.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T326 ;
+        adm:logEntry        bda:LG3E5C4BBBABCE8B2A , bda:LG63FD666985EBD657 , bda:LG80CD2D93D3F03DB2 , bda:LG8C0F4EAEFFDC4B46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT49742D7EC662A365
+        a                   :Note ;
+        :noteText           "this topic is used to refer to medical preparations made using special ritual formulae"@en .
+    
+    bdr:T326  a             :Topic ;
+        rdfs:seeAlso        bdr:T2045 ;
+        skos:altLabel       "bdud rtsi sman sgrub/"@bo-x-ewts ;
+        skos:prefLabel      "sman sgrub/"@bo-x-ewts , "preparation of medicine"@en ;
+        :isRoot             true ;
+        :note               bdr:NT49742D7EC662A365 .
+}

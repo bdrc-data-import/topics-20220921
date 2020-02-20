@@ -1,0 +1,45 @@
+@base          <bdg:T00AG01362> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01362 {
+    bda:LG373127396E84C1F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-05T11:47:12.098Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG73F04859C8D5D155
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T15:32:11.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added more names of gter ston to the gter ma"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:T00AG01362  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01362 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "df/T00AG01362.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01362 ;
+        adm:logEntry        bda:LG373127396E84C1F3 , bda:LG73F04859C8D5D155 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE7EDB3310342485B
+        a                   :Note ;
+        :noteText           "a treasure cycle dedicated to avalokitesvara revealed by mchog gyur gling pa at na bun rdzong, in nang chen, in 1849 and 1851."@en .
+    
+    bdr:T00AG01362  a       :Topic ;
+        skos:prefLabel      "thugs rje chen po pad+ma gtsug tor (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE7EDB3310342485B .
+}

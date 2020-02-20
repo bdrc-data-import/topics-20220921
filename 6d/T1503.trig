@@ -1,0 +1,59 @@
+@base          <bdg:T1503> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1503 {
+    bda:LG2C025BE9F19FB31F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-28T10:33:47.039Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG32AFD3F2B74AC350
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T16:35:07.711Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwan infavor of right t"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG5D7CE55A4F984C69
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T12:22:37.487Z"^^xsd:dateTime ;
+        adm:logMessage      "with drawn in favor of corect T"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGEE673B42DFB6057B
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T16:31:49.642Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFDC168D679A6ACA0
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:22:28.491Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of right topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1503  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1503 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6d/T1503.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1503 ;
+        adm:logEntry        bda:LG2C025BE9F19FB31F , bda:LG32AFD3F2B74AC350 , bda:LG5D7CE55A4F984C69 , bda:LGEE673B42DFB6057B , bda:LGFDC168D679A6ACA0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1503  a            :Topic ;
+        skos:prefLabel      "nyes ltung /"@bo-x-ewts , "vow damaging"@en ;
+        :isRoot             true .
+}

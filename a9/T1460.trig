@@ -1,0 +1,41 @@
+@base          <bdg:T1460> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1460 {
+    bda:LG98A40656439E97C4
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-23T15:11:02.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1460  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1460 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a9/T1460.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1460 ;
+        adm:logEntry        bda:LG98A40656439E97C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6627CBFFA69F37C9
+        a                   :Note ;
+        :noteText           "class of tantra known as the Unexcelled Yoga Tantra or Highest Yoga tantra according to Sarma classifications"@en .
+    
+    bdr:T1460  a            :Topic ;
+        skos:altLabel       "bla na med pa'i rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "bla med rgyud/"@bo-x-ewts , "anuttarayoga tantra"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NT6627CBFFA69F37C9 .
+}

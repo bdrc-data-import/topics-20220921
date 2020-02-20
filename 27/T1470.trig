@@ -1,0 +1,47 @@
+@base          <bdg:T1470> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1470 {
+    bda:LG02921B0999BFBFB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T13:29:06.153Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1GS147800 (tshogs mchod brgya rtsa)"@en .
+    
+    bda:LGD5742859F4EAF5A3
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T08:58:19.078Z"^^xsd:dateTime ;
+        adm:logMessage      "english terms added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1470  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1470 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/T1470.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1470 ;
+        adm:logEntry        bda:LG02921B0999BFBFB7 , bda:LGD5742859F4EAF5A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT978BC9EE331B0C20
+        a                   :Note ;
+        :noteText           "here are classified works relating to  expulsion rites"@en .
+    
+    bdr:T1470  a            :Topic ;
+        rdfs:seeAlso        bdr:T1GS147800 ;
+        skos:altLabel       "expulsion"@en ;
+        skos:prefLabel      "bskrad pa/"@bo-x-ewts , "sorcery"@en ;
+        :isRoot             true ;
+        :note               bdr:NT978BC9EE331B0C20 .
+}

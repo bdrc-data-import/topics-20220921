@@ -1,0 +1,47 @@
+@base          <bdg:T208> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T208 {
+    bda:LG273E6339E2CD2061
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T07:19:54.667Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG64ED2789B9D2B566
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T09:31:00.538Z"^^xsd:dateTime ;
+        adm:logMessage      "T208 and T11MS52 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T208  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T208 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9b/T208.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T208 ;
+        adm:logEntry        bda:LG273E6339E2CD2061 , bda:LG64ED2789B9D2B566 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT15BF06B1CBC947DB
+        a                   :Note ;
+        :noteText           "keyword applied generically to collections of writings, usually by a single author or an author and his immediate disciple, such as the collected works of bu ston rin chen grub and his disciple sgra tshad pa rin chen rnam rgyal"@en .
+    
+    bdr:T208  a             :Topic ;
+        skos:altLabel       "bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/"@bo-x-ewts , "collected works"@en ;
+        :isRoot             true ;
+        :note               bdr:NT15BF06B1CBC947DB .
+}

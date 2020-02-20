@@ -1,0 +1,50 @@
+@base          <bdg:T2MS13232> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13232 {
+    bda:LG17CA5AA297BA01A0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T15:48:45.417Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5A2924795CE40FF2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T15:46:41.122Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAF566F387EE888D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-09T15:45:11.786Z"^^xsd:dateTime ;
+        adm:logMessage      "created and made application note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13232  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13232 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b7/T2MS13232.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13232 ;
+        adm:logEntry        bda:LG17CA5AA297BA01A0 , bda:LG5A2924795CE40FF2 , bda:LGAF566F387EE888D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB9B19033152B2FE9
+        a                   :Note ;
+        :noteText           "this topic is applied in association with the second or later diffusion of the buddha's teachings in tibet; this refers to the dissemination period post-11th century and includes all gsar ma traditions."@en .
+    
+    bdr:T2MS13232  a        :Topic ;
+        skos:prefLabel      "bstan pa phyi dar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB9B19033152B2FE9 .
+}

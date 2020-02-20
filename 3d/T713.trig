@@ -1,0 +1,41 @@
+@base          <bdg:T713> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T713 {
+    bda:LG5E78029EC99CCA5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T15:08:51.539Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T713  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T713 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3d/T713.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T713 ;
+        adm:logEntry        bda:LG5E78029EC99CCA5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE1CB30ED8BD93B14
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focus upon the many-colored gnosis garuda crouching; from the thighs down he is the nature of earth, yellow, his belly is of the nature of water, white; his upper body is of the nature of fire, red; his head is of the nature of air, black;  his crown is of the nature of gnosis, blue; his wings are of the nature of space, many-colored; his back resting on five kinds of cloud; his right hand is giving refuge while his left makes the threatening forefinger; between his two horns of thunderbolt iron the naga king's stolen crowning gem acts as an ornament; he abides amid a fierce, violent mass of fire; at his throat are garudas of the five families; and at his heart the five syllable heart mantra; he is crowned with aksobhya.\n\ndeviation: colors omitted.  \n\nthis form of the deity is one of the 13 golden teachings of the sa skya (sa skya'i gser chos) and comes from the transmission of mal lo tsA ba.\n\n\ndeities of tibetan buddhism #230"@en .
+    
+    bdr:T713  a             :Topic ;
+        skos:altLabel       "sa skya pa'i gser chos bcu gsum gyi nang gi khyung khra man ngag lugs/"@bo-x-ewts , "sabala jnana garuda"@sa-alalc97 ;
+        skos:prefLabel      "khyung khra man ngag lugs/"@bo-x-ewts , "many-colored garuda in the tradition of the instructions from the thirteen golden dharmas of the sakyapas"@en , "garuda upadesakrama sabala"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE1CB30ED8BD93B14 .
+}

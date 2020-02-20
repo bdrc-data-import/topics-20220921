@@ -1,0 +1,42 @@
+@base          <bdg:T2072> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2072 {
+    bda:LGA5E1376E7C14EF75
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-04-03T11:44:03.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"stog nyid\" & corrected name \"空\" to \"空性\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGBC9BDDA3BACAA4DD
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:06:24.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T2072  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2072 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a4/T2072.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2072 ;
+        adm:logEntry        bda:LGA5E1376E7C14EF75 , bda:LGBC9BDDA3BACAA4DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2072  a            :Topic ;
+        skos:altLabel       "stong pa nyid/"@bo-x-ewts ;
+        skos:prefLabel      "stong nyid/"@bo-x-ewts , "emptiness"@en , "śūnyatā"@sa-x-ndia , "空性"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T203> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T203 {
+    bda:LGFEE6F35A72DFA3FB
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-13T16:33:07.127Z"^^xsd:dateTime ;
+        adm:logMessage      "subjects added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T203  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T203 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bc/T203.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T203 ;
+        adm:logEntry        bda:LGFEE6F35A72DFA3FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFEFE3649BC68A022
+        a                   :Note ;
+        :noteText           "under this topic are classified works relating to calculations and astronomy in general"@en .
+    
+    bdr:T203  a             :Topic ;
+        skos:altLabel       "astronomy"@en ;
+        skos:prefLabel      "rtsis/"@bo-x-ewts , "calculation"@en , "gaṇanā"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTFEFE3649BC68A022 .
+}

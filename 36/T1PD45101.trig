@@ -1,0 +1,47 @@
+@base          <bdg:T1PD45101> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD45101 {
+    bda:LG28A241AFFA26D42B
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-23T16:33:36.779Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00003 .
+    
+    bda:LGB710344540A51578
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T19:14:23.508Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGEFB5B90E9362C615
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T19:21:19.111Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1PD45101  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD45101 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "36/T1PD45101.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD45101 ;
+        adm:logEntry        bda:LG28A241AFFA26D42B , bda:LGB710344540A51578 , bda:LGEFB5B90E9362C615 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1PD45101  a        :Topic ;
+        skos:prefLabel      "bod kyi skad yig"@bo-x-ewts ;
+        :isRoot             true .
+}

@@ -1,0 +1,45 @@
+@base          <bdg:T503> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T503 {
+    bda:LGB51F3186CE4FD15F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-25T06:02:42.132Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCE7EC034129C7ECE
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T08:10:14.421Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T503  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T503 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "46/T503.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T503 ;
+        adm:logEntry        bda:LGB51F3186CE4FD15F , bda:LGCE7EC034129C7ECE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT57181F070AE24FE2
+        a                   :Note ;
+        :noteText           "protective deities of the rnying ma tradition, belonging to the yaksha class; these were the father and mother of the protector kun dga' gzhon nu"@en .
+    
+    bdr:T503  a             :Topic ;
+        skos:prefLabel      "bshan pa dmar nag (srung ma)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT57181F070AE24FE2 .
+}

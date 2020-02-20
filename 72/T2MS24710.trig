@@ -1,0 +1,47 @@
+@base          <bdg:T2MS24710> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24710 {
+    bda:LG5D557305E2A57AD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:44:23.089Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG72D49167FB8D87F5
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-27T14:17:28.306Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24710  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24710 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "72/T2MS24710.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24710 ;
+        adm:logEntry        bda:LG5D557305E2A57AD9 , bda:LG72D49167FB8D87F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT8E9075B4E7F6D4BF
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:T2MS24710  a        :Topic ;
+        skos:altLabel       "empire"@en ;
+        skos:prefLabel      "rgyal kham/"@bo-x-ewts , "kingdom"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8E9075B4E7F6D4BF .
+}

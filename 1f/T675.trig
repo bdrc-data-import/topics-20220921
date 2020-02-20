@@ -1,0 +1,47 @@
+@base          <bdg:T675> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T675 {
+    bda:LG37D54F7FF186DE2C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:25:44.287Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG626872166799A2AE
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-24T16:07:10.167Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG9CD1F92F8F4929E0
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:21:10.601Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T675  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T675 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/T675.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T675 ;
+        adm:logEntry        bda:LG37D54F7FF186DE2C , bda:LG626872166799A2AE , bda:LG9CD1F92F8F4929E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T675  a             :Topic ;
+        skos:prefLabel      "rnam rgyal ma lha dgu/"@bo-x-ewts , "usnisavijaya navadevatmaka"@sa-alalc97 ;
+        :isRoot             true .
+}

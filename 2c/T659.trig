@@ -1,0 +1,40 @@
+@base          <bdg:T659> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T659 {
+    bda:LG19BC2E1C1A3E7A40
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T11:06:04.276Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T659  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T659 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2c/T659.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T659 ;
+        adm:logEntry        bda:LG19BC2E1C1A3E7A40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT46FE0BD97A13CCBA
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the rituals and initiations focusing upon vajrapani, dark blue, with one face, two arms, and three round red eyes; he is fierce and wrathful and like a sixteen-year old, laughing with fangs bared; he has brown, upward streming hair, a vajra crown, and blazing beard and eyebrows; his right eye is of the nature of the moon; his left of the sun, and his central one of fire; his right hand brandishes a five-pointed vajra and his left at his heart threatens with a threatening forefinger all who do harm; he abides in pratyalidha posture (right leg bent), wears a tiger-skin loincloth and a blue silk scarf; he is adorned with a jewel crown and eight great nagas; he is in the middle of a blazing mass of the fire of gnosis; he is crowned with aksobhya.   \n\n\ndeities of tibetan buddhism #159"@en .
+    
+    bdr:T659  a             :Topic ;
+        skos:prefLabel      "phyag rdor gos sngon can 'gro bzang lugs/"@bo-x-ewts , "blue-clad vajrapani in the tradition of sugatigarbha"@en , "vajrapani nilambaradhara sugatigarbha krama"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT46FE0BD97A13CCBA .
+}

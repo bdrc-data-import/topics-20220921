@@ -1,0 +1,52 @@
+@base          <bdg:T2GS1334> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1334 {
+    bda:LG0B9EF79B4408ECBE
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:59:07.791Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG1DC330A70C3E3FCF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T15:48:43.705Z"^^xsd:dateTime ;
+        adm:logMessage      "explanatory note added from the chos rnam kun btus and the application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1334  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1334 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "94/T2GS1334.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1334 ;
+        adm:logEntry        bda:LG0B9EF79B4408ECBE , bda:LG1DC330A70C3E3FCF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT06B614D86CEEAC1F
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 398" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "zhang gsum: clans having a relationship of maternal uncle to the btsan po during the royal dynastic period; \naccording to the chos rnam kun btus (quoting the lde'u jo sras chos 'byung 112-4) the term zhang po is used for the three clans related by marriage and who were given the title of maternal uncle (zhang po):\n1) sna nam; 2) mchims; 3) 'bro"@en .
+    
+    bdr:NTAE0D7E03717B182A
+        a                   :Note ;
+        :noteText           "this topic is applied to works about the lineages and families that bore a relationship of father-in-law to the rulers, the btsan po or lineages like the sa skya 'khon"@en .
+    
+    bdr:T2GS1334  a         :Topic ;
+        skos:prefLabel      "zhang, zhang po/"@bo-x-ewts , "maternal uncle, maternal kinsmen"@en ;
+        :isRoot             true ;
+        :note               bdr:NT06B614D86CEEAC1F , bdr:NTAE0D7E03717B182A .
+}

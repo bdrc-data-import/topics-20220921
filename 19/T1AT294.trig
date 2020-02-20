@@ -1,0 +1,46 @@
+@base          <bdg:T1AT294> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT294 {
+    bda:LG5F08409110F29A7D
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-12T16:10:36.803Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en .
+    
+    bda:LGEDD58EF501A525EF
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T14:36:19.786Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1AT294  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT294 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "19/T1AT294.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT294 ;
+        adm:logEntry        bda:LG5F08409110F29A7D , bda:LGEDD58EF501A525EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT3BDE55C5259252F4
+        a                   :Note ;
+        :noteText           "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha"@en .
+    
+    bdr:T1AT294  a          :Topic ;
+        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha" ;
+        skos:prefLabel      "bde chen zhing /"@bo-x-ewts , "sukhavati"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3BDE55C5259252F4 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T1PD181163> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD181163 {
+    bda:LG4746127D87993541
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-12-18T05:06:25.756Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD181163  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD181163 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bd/T1PD181163.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD181163 ;
+        adm:logEntry        bda:LG4746127D87993541 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF93C49EAA9D86387
+        a                   :Note ;
+        :noteSource         bdr:MW1PD181159 .
+    
+    bdr:T1PD181163  a       :Topic ;
+        skos:altLabel       "sgrol byed dug phur nag po/"@bo-x-ewts ;
+        skos:prefLabel      "dug phur/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF93C49EAA9D86387 .
+}

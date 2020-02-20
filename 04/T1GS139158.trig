@@ -1,0 +1,60 @@
+@base          <bdg:T1GS139158> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS139158 {
+    bda:LG3C7916F41E6E64A9
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-01-27T13:05:38.764Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG450D9F9F43593D40
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T12:58:50.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC099A4F1B07C8A28
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T15:02:07.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS139158  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS139158 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "04/T1GS139158.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS139158 ;
+        adm:logEntry        bda:LG3C7916F41E6E64A9 , bda:LG450D9F9F43593D40 , bda:LGC099A4F1B07C8A28 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7240F902EDA654D2
+        a                   :Note ;
+        :locationStatement  "pp. 198-203" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "Protective deity regarded to be a form of sridevi, the youngest of the offspring of the sde dpon of gshin rje, long ba'i rgyal po, and the mother kha la me 'bar ba."@en .
+    
+    bdr:NT9CB996BA5A027D57
+        a                   :Note ;
+        :noteText           "special form of dpal ldan lha mo"@en .
+    
+    bdr:T1GS139158  a       :Topic ;
+        rdfs:seeAlso        bdr:T401 ;
+        skos:altLabel       "dpal ldan lha mo dus mtshan 'od chen 'bar ma/"@bo-x-ewts , "dus mtshan 'od chen 'bar ma/"@bo-x-ewts ;
+        skos:prefLabel      "'od chen 'bar ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7240F902EDA654D2 , bdr:NT9CB996BA5A027D57 .
+}

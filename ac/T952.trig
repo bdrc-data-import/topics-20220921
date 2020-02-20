@@ -1,0 +1,41 @@
+@base          <bdg:T952> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T952 {
+    bda:LG4525F28D9C9AD5D5
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-05T12:24:40.334Z"^^xsd:dateTime ;
+        adm:logMessage      "name and note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T952  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T952 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ac/T952.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T952 ;
+        adm:logEntry        bda:LG4525F28D9C9AD5D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9C2897AB593328C4
+        a                   :Note ;
+        :noteText           "the eight great bodhisattva:\n'jam dbyangs/\nphyag na rdo rje/ \nspyan ras gzigs/ \nsa yi snying po/ \nsgrib pa rnam sel/ \nnam mkha'i snying po/\nbyams pa/\nkun tu bzang po ste brgyad"@en .
+    
+    bdr:T952  a             :Topic ;
+        skos:altLabel       "nye ba'i sras chen brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "thub dbang nye sras brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9C2897AB593328C4 .
+}

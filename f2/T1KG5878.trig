@@ -1,0 +1,64 @@
+@base          <bdg:T1KG5878> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG5878 {
+    bda:LG0C627AC0ABC49E3D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T14:49:29.857Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2AF8949F0ED003B5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-01T14:37:35.367Z"^^xsd:dateTime ;
+        adm:logMessage      "rigs bzhi"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG982319BDB2F76064
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-30T14:55:02.599Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGBB044555675896AA
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:14:14.555Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGEEDBD0B3A9F6E339
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:21:45.471Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1KG5878  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG5878 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f2/T1KG5878.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG5878 ;
+        adm:logEntry        bda:LG0C627AC0ABC49E3D , bda:LG2AF8949F0ED003B5 , bda:LG982319BDB2F76064 , bda:LGBB044555675896AA , bda:LGEEDBD0B3A9F6E339 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT99D6B22DD95EB233
+        a                   :Note ;
+        :noteText           "this topic is applied to the fourfold caste system of premodern India"@en .
+    
+    bdr:T1KG5878  a         :Topic ;
+        skos:prefLabel      "rigs bzhi/"@bo-x-ewts , "four castes"@en ;
+        :isRoot             true ;
+        :note               bdr:NT99D6B22DD95EB233 .
+}

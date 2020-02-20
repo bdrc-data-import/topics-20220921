@@ -1,0 +1,46 @@
+@base          <bdg:T283> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T283 {
+    bda:LG210B10618EC9923C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-12-07T16:04:40.992Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9C6FBBBDCB924047
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-12-05T14:21:53.883Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name fields"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFAECFB2F80F9D4F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-11-09T13:15:10.119Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T283  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T283 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "12/T283.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T283 ;
+        adm:logEntry        bda:LG210B10618EC9923C , bda:LG9C6FBBBDCB924047 , bda:LGFAECFB2F80F9D4F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T283  a             :Topic ;
+        skos:prefLabel      "dbyangs can sgra mdo/"@bo-x-ewts , "sarasvativyakarana"@sa-alalc97 ;
+        :isRoot             true .
+}

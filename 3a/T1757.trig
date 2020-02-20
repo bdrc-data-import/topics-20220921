@@ -1,0 +1,36 @@
+@base          <bdg:T1757> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1757 {
+    bda:LG8A7C5B49A6F26DBC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:37:15.221Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1757  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1757 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "3a/T1757.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1757 ;
+        adm:logEntry        bda:LG8A7C5B49A6F26DBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1757  a            :Topic ;
+        skos:altLabel       "female lay devotee"@en ;
+        skos:prefLabel      "dge bsnyen ma/"@bo-x-ewts , "upasika"@en , "aup'as'ik'a"@sa-x-ndia ;
+        :isRoot             true .
+}

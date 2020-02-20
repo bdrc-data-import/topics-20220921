@@ -1,0 +1,40 @@
+@base          <bdg:T331> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T331 {
+    bda:LGF41F5D346F3BC58D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-26T17:10:41.557Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T331  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T331 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "45/T331.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T331 ;
+        adm:logEntry        bda:LGF41F5D346F3BC58D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE2AD9F44DFAB0A40
+        a                   :Note ;
+        :noteText           "this yaksha is one of the major protectors of tibetan buddhism; he is known as the the main protector of the great monastery of bsam yas; he is red in color, wrathful with one face and two hands; in his right hand he holds a spear upraised; in the left he holds a heart held to his mouth; his mount is a pink horse; he is accompanied by his six brothers; the term is applied to various rituals for his propitiation"@en .
+    
+    bdr:T331  a             :Topic ;
+        skos:prefLabel      "tsi'u dmar po (srung ma)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE2AD9F44DFAB0A40 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T4CZ15540> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15540 {
+    bda:LG20FE9FED74126384
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-06T11:02:15.096Z"^^xsd:dateTime ;
+        adm:logMessage      "new topics"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ15540  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15540 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b6/T4CZ15540.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15540 ;
+        adm:logEntry        bda:LG20FE9FED74126384 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1CEFAA982E751FDD
+        a                   :Note ;
+        :noteText           "sku mdog dmar mo zhal gcig phyag bzhi ma/ g.yas pa'i phyag gnyis na bgrang phreng dang mchog sbyin/ g.yon gnyis na rdo rje dang lcags dkyu snying ga na gnas pa'i pu sti dang ldan pa'o"@bo-x-ewts .
+    
+    bdr:T4CZ15540  a        :Topic ;
+        skos:altLabel       "'phags ma bsil ba'i tshal chen mo/"@bo-x-ewts ;
+        skos:prefLabel      "bsil ba'i tshal chen mo/"@bo-x-ewts , "mahacitavati"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT1CEFAA982E751FDD .
+}

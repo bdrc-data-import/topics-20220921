@@ -1,0 +1,42 @@
+@base          <bdg:T00KG02673> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02673 {
+    bda:LG341D355A8F0B81AC
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-12T14:26:55.806Z"^^xsd:dateTime ;
+        adm:logMessage      "created a topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG8A4B6B574C88ACFD
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:27:30.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T00KG02673  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02673 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c7/T00KG02673.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02673 ;
+        adm:logEntry        bda:LG341D355A8F0B81AC , bda:LG8A4B6B574C88ACFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T00KG02673  a       :Topic ;
+        rdfs:seeAlso        bdr:T1028 ;
+        skos:prefLabel      "rab gnas zhag bdun ma/"@bo-x-ewts ;
+        :isRoot             true .
+}

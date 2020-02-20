@@ -1,0 +1,54 @@
+@base          <bdg:T2CN4931> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4931 {
+    bda:LG8171A85DF3528BF0
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T13:11:25.569Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGA3FCA4C39001860E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T16:32:28.872Z"^^xsd:dateTime ;
+        adm:logMessage      "linked work with note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGF7E2DE9D8B0B3149
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-28T15:45:57.5Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4931  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4931 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d5/T2CN4931.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4931 ;
+        adm:logEntry        bda:LG8171A85DF3528BF0 , bda:LGA3FCA4C39001860E , bda:LGF7E2DE9D8B0B3149 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD180C536279190B4
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.12, p.34 གཏེར་བདག་ཆེན་པོ་རྫོང་བཙན་པ་འདིའི་མཚན་གྱི་རྣམ་གྲངས་ལ་འབར་བ་སྤུན་བདུན་ཡང་འཁོད་ཅིང་།  P.507 ལ་འདིའི་སྐུ་མདོག་དམར་པོ་ཡིན་ཅིང་འཕྲིན་ལས་སྣ་ཚོགས་ལ་མངའ་བརྙེས་པའི་ལྷ་དྲག་པོ་ཞིག་ཡིན་པ་གསལ།"@bo .
+    
+    bdr:T2CN4931  a         :Topic ;
+        skos:altLabel       "'bar ba spun bdun/"@bo-x-ewts , "gter bdag chen po rdzong btsan pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdzong btsan pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD180C536279190B4 .
+}

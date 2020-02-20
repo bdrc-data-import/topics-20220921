@@ -1,0 +1,78 @@
+@base          <bdg:T942> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T942 {
+    bda:LG144080C74C5FE497
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-11T13:20:08.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2AC8D0490DF47CAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T15:31:18.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added note, separated /"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG4248E96CA6B2429D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T15:53:16.253Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG54558C8CA678A44D
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T15:33:08.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added names \"drang nges\" &  edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGE2A9FEC39021188C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-17T15:37:00.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added associated works from T1CZ55"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFAC1531029E4FDBB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T15:55:00.872Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFCCAB8ECDF240341
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-22T15:34:40.744Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T942  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T942 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ca/T942.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T942 ;
+        adm:logEntry        bda:LG144080C74C5FE497 , bda:LG2AC8D0490DF47CAB , bda:LG4248E96CA6B2429D , bda:LG54558C8CA678A44D , bda:LGE2A9FEC39021188C , bda:LGFAC1531029E4FDBB , bda:LGFCCAB8ECDF240341 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT03B786A283FFA851
+        a                   :Note ;
+        :noteText           "definitive meaning and provisional meaning"@en .
+    
+    bdr:NTF9338880F7A3A4F5
+        a                   :Note ;
+        :noteText           "topic applied to works associated with sets of sutras; used as hermeneutical terms in reference to the three turnings"@en .
+    
+    bdr:T942  a             :Topic ;
+        skos:altLabel       "drang don dang nges don/"@bo-x-ewts ;
+        skos:prefLabel      "drang nges/"@bo-x-ewts , "provisional meaning and true meaning"@en , "了义不了义｜了義不了義"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NT03B786A283FFA851 , bdr:NTF9338880F7A3A4F5 .
+}

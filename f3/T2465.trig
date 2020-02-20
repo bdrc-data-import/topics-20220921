@@ -1,0 +1,47 @@
+@base          <bdg:T2465> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2465 {
+    bda:LG18562C6826AC215E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:35:39.529Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG49DFF4379A8EAE28
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T15:38:10.982Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB85272C840C87C38
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:32:28.265Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2465  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2465 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/T2465.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2465 ;
+        adm:logEntry        bda:LG18562C6826AC215E , bda:LG49DFF4379A8EAE28 , bda:LGB85272C840C87C38 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2465  a            :Topic ;
+        skos:prefLabel      "tibet (china) history periodicals/"@bo-x-ewts ;
+        :isRoot             true .
+}

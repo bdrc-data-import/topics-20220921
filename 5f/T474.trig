@@ -1,0 +1,50 @@
+@base          <bdg:T474> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T474 {
+    bda:LG156808DA90F342D9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T20:01:46.461Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T01AG02845 to T1CZ47"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG31CAA24DB5CACC81
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:40:53.142Z"^^xsd:dateTime .
+    
+    bda:LG5B894E9C99102E07
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T13:29:26.624Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T478 and T471"@en .
+    
+    bda:LG645E7B40743373D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T12:31:42.789Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T01AG02845 (dril sgrub)"@en .
+    
+    bda:T474  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T474 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5f/T474.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T474 ;
+        adm:logEntry        bda:LG156808DA90F342D9 , bda:LG31CAA24DB5CACC81 , bda:LG5B894E9C99102E07 , bda:LG645E7B40743373D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T474  a             :Topic ;
+        rdfs:seeAlso        bdr:T1CZ47 ;
+        skos:prefLabel      "rtsa gsum dril sgrub (kar lugs)"@bo-x-ewts ;
+        :isRoot             true .
+}

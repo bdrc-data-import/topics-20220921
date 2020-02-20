@@ -1,0 +1,59 @@
+@base          <bdg:T1432> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1432 {
+    bda:LG14C0737325691787
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T14:50:33.49Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG2CDE5207CE686CE4
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:15:46.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG32FDABD2858409CA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T12:06:39.734Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG70EE71044EFECC33
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-12T11:57:08.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added jambhala, dzam+b+ha la\ndzam+b+ha la"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1432  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1432 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c7/T1432.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1432 ;
+        adm:logEntry        bda:LG14C0737325691787 , bda:LG2CDE5207CE686CE4 , bda:LG32FDABD2858409CA , bda:LG70EE71044EFECC33 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD2401AE8CFD48DD0
+        a                   :Note ;
+        :noteText           "This topic is applied to the deity forms of dzaM b+ha la, the specifics of which are not yet identified."@en .
+    
+    bdr:T1432  a            :Topic ;
+        skos:altLabel       "dzam+b+ha la/"@bo-x-ewts , "vaiśravaṇa"@sa-x-ndia , "毗沙门天"@zh-hans ;
+        skos:prefLabel      "dzaM b+ha la/"@bo-x-ewts , "jambhala"@sa-x-ndia , "毗沙門天"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NTD2401AE8CFD48DD0 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T012AG03337> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03337 {
+    bda:LG9D72257C918E6A72
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-20T10:32:42.265Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGB3506AB694479204
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-31T10:09:43.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit name and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T012AG03337  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03337 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "73/T012AG03337.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03337 ;
+        adm:logEntry        bda:LG9D72257C918E6A72 , bda:LGB3506AB694479204 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTEC266CF112075A7B
+        a                   :Note ;
+        :noteText           "Specific form of Tara associated with the Jonang transmissions via Taranatha."@en .
+    
+    bdr:T012AG03337  a      :Topic ;
+        skos:altLabel       "tarayogini/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma rnal 'byor ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEC266CF112075A7B .
+}

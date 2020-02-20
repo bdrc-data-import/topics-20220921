@@ -1,0 +1,47 @@
+@base          <bdg:T4CZ15546> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15546 {
+    bda:LG3222EDE746ECC0CF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:10.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG8C04232BDD6BBE6D
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-26T16:34:18.857Z"^^xsd:dateTime ;
+        adm:logMessage      "New"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ15546  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15546 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c2/T4CZ15546.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15546 ;
+        adm:logEntry        bda:LG3222EDE746ECC0CF , bda:LG8C04232BDD6BBE6D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCF15AED0AD01DAA2
+        a                   :Note ;
+        :noteText           "sku mdog mthing nag zhal gcig phyag gnyis/ phyag g.yas pas rdo rjes mtshan pa'i dbyug to sngon po/ g.yon pa'i phyag ni sdig mdzub zhags pa thugs kar ro/ stag dang dzi na'i pags pa'i sham thabs bsnams pa'o"@bo-x-ewts .
+    
+    bdr:T4CZ15546  a        :Topic ;
+        skos:altLabel       "gshed nag"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje gshed nag po/"@bo-x-ewts , "kṛṣṇayamāri"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTCF15AED0AD01DAA2 .
+}

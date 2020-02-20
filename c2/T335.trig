@@ -1,0 +1,40 @@
+@base          <bdg:T335> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T335 {
+    bda:LG0604AC9E8678F57A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-16T09:41:34.607Z"^^xsd:dateTime ;
+        adm:logMessage      "added english"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T335  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T335 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c2/T335.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T335 ;
+        adm:logEntry        bda:LG0604AC9E8678F57A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5F8E9CB7AD4C696B
+        a                   :Note ;
+        :noteText           "the assembly of heruka - a wrathful deity sadhana from the klong chen snying thig"@en .
+    
+    bdr:T335  a             :Topic ;
+        skos:prefLabel      "klong chen snying thig dpal chen 'dus pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5F8E9CB7AD4C696B .
+}

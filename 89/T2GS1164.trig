@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1164> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1164 {
+    bda:LG5C79A698713DA81B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-07T10:19:15.12Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8200312C01C96945
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:47:32.562Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1164  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1164 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/T2GS1164.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1164 ;
+        adm:logEntry        bda:LG5C79A698713DA81B , bda:LG8200312C01C96945 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT33C5C4D9B1618B73
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the protector, mahakala anghora, dark blue, with one face and two arms; his right hand holds a large sandalwood club and his left rests a blood-filled skull on his side; he has three eyes, bared fangs, and dark brown upward streaming beard, eyebrows, and locks; he is offering blood and entrails to his mouth; he wears a flowing cloak of black silk tied with a gold girdle, snake and jewel ornaments, a crown of dry skulls and a long necklace of the heads of demon clans and copper boots on his feet; he abides amidst a blazing mass of fire; \n\nfor his attendants there are legs ldan nag po (excellent black one) whose right hand brandishes a large sandalwood club and his left offers a blood filled skull to the principal; he is dressed like the principal and stands proudly on a human corpse;  on the left comes sridevi, dark blue and riding a red-nosed ass; her right hand holds a blood-filled skull at her heart; she is complete with the charnel ground requisites such as a fluttering garments of black silk, a flayed human skin, a hair petticoat, a crown of dry skulls, a long necklace of fresh heads, a snake girdle and a dot of human ash; in the next circle, on the right are dakinis of the five families, on the left the four great kings, in the east the rsi kun tu ri ka, and behind the yaksa manibhadra; outside them are the eight tribes each a thousand strong\n\ndeities of tibetan buddhism #366"@en .
+    
+    bdr:T2GS1164  a         :Topic ;
+        skos:prefLabel      "mgon po aM g+ho ra/"@bo-x-ewts , "anghora mahakala"@en , "mahakala anghora"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT33C5C4D9B1618B73 .
+}

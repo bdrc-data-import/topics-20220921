@@ -1,0 +1,47 @@
+@base          <bdg:T848> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T848 {
+    bda:LG4A9D6CFD7D1717C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T07:26:14.296Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGEB1F0B290B73CA93
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-23T13:05:53.756Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See also T1619 (rta glud) and T1CZ25 (phyugs glud)"@en .
+    
+    bda:T848  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T848 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "79/T848.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T848 ;
+        adm:logEntry        bda:LG4A9D6CFD7D1717C9 , bda:LGEB1F0B290B73CA93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE0DAF1E0425003B5
+        a                   :Note ;
+        :noteText           "ritual for the ransom of the bla; rites to ransom the bla, to ransom the bla; these rituals  belong to series of glud rites"@en .
+    
+    bdr:T848  a             :Topic ;
+        rdfs:seeAlso        bdr:T1619 , bdr:T1CZ25 ;
+        skos:altLabel       "bla slu/"@bo-x-ewts ;
+        skos:prefLabel      "bla bslu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE0DAF1E0425003B5 .
+}

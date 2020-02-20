@@ -1,0 +1,46 @@
+@base          <bdg:T2483> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2483 {
+    bda:LG413169957672749C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-18T08:45:19.339Z"^^xsd:dateTime ;
+        adm:logMessage      "removed T2482 and T2483 in favor of snang brnyan/"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGA33C3C7A74E5CFB3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:54:16.653Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted see also field"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2483  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2483 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "11/T2483.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2483 ;
+        adm:logEntry        bda:LG413169957672749C , bda:LGA33C3C7A74E5CFB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT8AA381FD617656C4
+        a                   :Note ;
+        :noteText           "Withdrawn; no direct topic reassigment.  See also snang brnyan/"@en .
+    
+    bdr:T2483  a            :Topic ;
+        skos:prefLabel      "decorative arts--china--tibet--pictorial works"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8AA381FD617656C4 .
+}

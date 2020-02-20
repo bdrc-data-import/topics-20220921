@@ -1,0 +1,49 @@
+@base          <bdg:T2533> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2533 {
+    bda:LG3377BAF3F681B8A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T10:56:40.033Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG8F9D024C072EFB8D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T14:55:20.435Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2533  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2533 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6a/T2533.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2533 ;
+        adm:logEntry        bda:LG3377BAF3F681B8A4 , bda:LG8F9D024C072EFB8D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDA0DB1DD879C76E0
+        a                   :Note ;
+        :locationStatement  "pp. 178-181" ;
+        :noteSource         bdr:MW24826 ;
+        :noteText           "one of the protective deities belonging to the gnod sbyin mo bzhi; the gnod sbyin mo bzhi are one of the three groups belonging to the bstan ma bcu gnyis"@en .
+    
+    bdr:T2533  a            :Topic ;
+        skos:altLabel       "gser chen mkha' lding rdo rje klu mo/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje klu mo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDA0DB1DD879C76E0 .
+}

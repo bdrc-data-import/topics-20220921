@@ -1,0 +1,42 @@
+@base          <bdg:T1KG26395> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG26395 {
+    bda:LGC331D2FA23F70626
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-11-30T20:22:29.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added cortoon book"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGE3CFB629DA641254
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-04-05T12:14:32.094Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG26395  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG26395 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7f/T1KG26395.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG26395 ;
+        adm:logEntry        bda:LGC331D2FA23F70626 , bda:LGE3CFB629DA641254 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG26395  a        :Topic ;
+        skos:altLabel       "cortoon book"@en ;
+        skos:prefLabel      "ri mo'i sgrung deb/"@bo-x-ewts , "comic book"@en ;
+        :isRoot             true .
+}

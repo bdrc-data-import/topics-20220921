@@ -1,0 +1,59 @@
+@base          <bdg:T564> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T564 {
+    bda:LG029F1C1384A7328F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:54:45.431Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG2C333F544A6E1BAF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T14:25:25.017Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG37526EB14D9701A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T00:12:24.125Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF1F3CE2C4A115F76
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-28T02:32:51.267Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T564  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T564 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/T564.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T564 ;
+        adm:logEntry        bda:LG029F1C1384A7328F , bda:LG2C333F544A6E1BAF , bda:LG37526EB14D9701A4 , bda:LGF1F3CE2C4A115F76 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT751CC07634968C7C
+        a                   :Note ;
+        :noteText           "this deity term is applied to empowerments and other rituals for invoking the form of the sakyamuni buddha with two attendants; he is golden in color like refined gold with one face and two arms; the right hand is touching the earth and the left is in a gesture of concentration; seated in vajraparyanka he wears the dull red robes of a monk; the crown of his head bears an usnisa and he has the attributes of a brahmacarin.\n\non his right is a yellow maitreya (byams pa) holding in his right hand a jewel fly-whisk and in his left a flowering branch of the naga tree;  and on his left is white avalokita (spyan ras gzigs) his right hand holding a jewel fly whisk and his left a lotus; both have jewel ornaments and skirts of various silks and are looking at the lord's face.\n\nthe lord is crowned with aksobha; maitreya with vairocana,  and avalokita with amitabha.\n\ndeities of tibetan buddhism #14."@en .
+    
+    bdr:T564  a             :Topic ;
+        skos:altLabel       "thub pa rdo rje gdan gtso 'khor gsum/"@bo-x-ewts ;
+        skos:prefLabel      "shAkya thub pa rdo rje gdan pa gtso 'khor gsum/"@bo-x-ewts , "the sage of vajrasana and his two attendants"@en , "sakyamuni (vajrasana)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT751CC07634968C7C .
+}

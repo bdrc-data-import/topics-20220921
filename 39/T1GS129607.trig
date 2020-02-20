@@ -1,0 +1,46 @@
+@base          <bdg:T1GS129607> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS129607 {
+    bda:LG1B2D7101B8DAD4BA
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-10T10:10:03.089Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG92B33423A419C43F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:20:11.652Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS129607  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS129607 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "39/T1GS129607.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS129607 ;
+        adm:logEntry        bda:LG1B2D7101B8DAD4BA , bda:LG92B33423A419C43F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB7CF9FA560F61C4D
+        a                   :Note ;
+        :noteText           "pure revelation vision teaching received by the 5th dalai lama focusing on a wrathful form of the guru, connected with the byang gter"@en .
+    
+    bdr:T1GS129607  a       :Topic ;
+        skos:altLabel       "yang gsang karma drag po (ngag dbang blo bzang rgya mtsho)"@bo-x-ewts ;
+        skos:prefLabel      "yang gsang karma drag po (dag snang rgya can)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB7CF9FA560F61C4D .
+}

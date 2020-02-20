@@ -1,0 +1,53 @@
+@base          <bdg:T1834> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1834 {
+    bda:LG060B6DB2D7D07A32
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-25T12:55:29.273Z"^^xsd:dateTime ;
+        adm:logMessage      "english added"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG491460FAB050A565
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LG844865E3AA6D981B
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-28T20:38:36.196Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes from iw etc."@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1834  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1834 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/T1834.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1834 ;
+        adm:logEntry        bda:LG060B6DB2D7D07A32 , bda:LG491460FAB050A565 , bda:LG844865E3AA6D981B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7D093289E9D00B80
+        a                   :Note ;
+        :noteText           "dm  \tastrology. See tr XIV no. 10 (oct. 1979) 18a.\njv astronomy, astrology, zodiacal astrology;\niw  astronomy/astrology and mathematics;\nry 1) astronomy. 2) astrology, it is indian in origin, in contrast to the chinese tradition of divination {nag rtsis}"@en .
+    
+    bdr:T1834  a            :Topic ;
+        skos:altLabel       "skar rtsis/"@bo-x-ewts ;
+        skos:prefLabel      "dkar rtsis/"@bo-x-ewts , "astrology"@en , "jyotiṣa"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NT7D093289E9D00B80 .
+}

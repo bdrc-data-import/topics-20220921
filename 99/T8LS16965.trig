@@ -1,0 +1,41 @@
+@base          <bdg:T8LS16965> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16965 {
+    bda:LGFE1E3F00AA9406ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-08T09:18:50.805Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16965  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16965 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "99/T8LS16965.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16965 ;
+        adm:logEntry        bda:LGFE1E3F00AA9406ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3572000F824F8A47
+        a                   :Note ;
+        :noteText           "Song dynasty from 960-1279\nThe Song dynasty was an era of Chinese history that began in 960 and continued until 1279. It succeeded the Five Dynasties and Ten Kingdoms period, and was followed by the Yuan dynasty. It was the first government in world history to nationally issue banknotes or true paper money, and the first Chinese government to establish a permanent standing navy. This dynasty also saw the first known use of gunpowder, as well as the first discernment of true north using a compass."@en .
+    
+    bdr:T8LS16965  a        :Topic ;
+        skos:altLabel       "sung rgyal rabs/"@bo-x-ewts ;
+        skos:prefLabel      "song rgyal rabs/"@bo-x-ewts , "song dynasty"@en ;
+        :isRoot             true ;
+        :note               bdr:NT3572000F824F8A47 .
+}

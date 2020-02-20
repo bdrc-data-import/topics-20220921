@@ -1,0 +1,72 @@
+@base          <bdg:T2MS13267> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13267 {
+    bda:LG4CE0712C8B769960
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-01-30T14:24:37.069Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG4EB0580F1C53FFF8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-14T11:33:20.937Z"^^xsd:dateTime ;
+        adm:logMessage      "snyan rgyud kyi rgyud la ba sngon 'jug bsnan"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG6F4CD202D201E631
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-30T10:23:58.891Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB2107FE338A5727C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:49.61Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB5678B351B45A03E
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-03-19T14:51:43.019Z"^^xsd:dateTime .
+    
+    bda:LGBE42F630D0130914
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-14T11:35:50.043Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC95A83E55E92B9C1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-27T10:38:02.99Z"^^xsd:dateTime ;
+        adm:logMessage      "created new"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13267  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13267 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f4/T2MS13267.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13267 ;
+        adm:logEntry        bda:LG4CE0712C8B769960 , bda:LG4EB0580F1C53FFF8 , bda:LG6F4CD202D201E631 , bda:LGB2107FE338A5727C , bda:LGB5678B351B45A03E , bda:LGBE42F630D0130914 , bda:LGC95A83E55E92B9C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF2EFFD01D9331C0E
+        a                   :Note ;
+        :noteText           "this topic refers to a whispered or oral transmission; literarlly the heard transmission, refering to the transmission of mouth of master to ear of disciple."@en .
+    
+    bdr:T2MS13267  a        :Topic ;
+        rdfs:seeAlso        bdr: , bdr:T11MS3 ;
+        skos:prefLabel      "snyan brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF2EFFD01D9331C0E .
+}

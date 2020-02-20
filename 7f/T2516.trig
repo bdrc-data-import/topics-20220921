@@ -1,0 +1,59 @@
+@base          <bdg:T2516> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2516 {
+    bda:LG067D320325CDC220
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-31T09:28:12.856Z"^^xsd:dateTime ;
+        adm:logMessage      "add another Sanskrit term and geomancy English"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LG61D6D8A4CE98CAD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-05-11T13:23:32.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added Sanskrit"@en ;
+        adm:logWhoStr       "eroux" .
+    
+    bda:LGCAAAB13327261BD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T11:47:32.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added khyim bzo"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGEE4852948F86874F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-03T14:48:56.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2516  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2516 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7f/T2516.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2516 ;
+        adm:logEntry        bda:LG067D320325CDC220 , bda:LG61D6D8A4CE98CAD9 , bda:LGCAAAB13327261BD9 , bda:LGEE4852948F86874F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0BBE432F226C4841
+        a                   :Note ;
+        :noteText           "this topic is applied to the architectural structure and design of a construction, vernacular and monumental"@en .
+    
+    bdr:T2516  a            :Topic ;
+        skos:altLabel       "ar las rig pa/"@bo-x-ewts , "khang bzo/"@bo-x-ewts , "khang bzo'i rig pa/"@bo-x-ewts , "khyim bzo/"@bo-x-ewts , "geomancy"@en , "Vāstukalā"@sa-x-iast ;
+        skos:prefLabel      "khang bzo rig pa/"@bo-x-ewts , "architecture"@en , "Vāstuśāstra"@sa-x-iast ;
+        :isRoot             true ;
+        :note               bdr:NT0BBE432F226C4841 .
+}

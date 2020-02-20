@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1212> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1212 {
+    bda:LG34E6EDD1F009285F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T12:40:37.242Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1212  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1212 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e4/T2GS1212.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1212 ;
+        adm:logEntry        bda:LG34E6EDD1F009285F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD8B987BF30C5D8A3
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 11th of the 21 tara collection according to the tradition of suryagupta; this form of tara is black with a fierce form; she has two hands, the right holds a hook that summons the eight planets; her left hand holds a hook that dispels all misfortune (according to Suryagupta) or a noose;  she abides in alidha posture (right leg extended); she sits on a lotus and sun seat; she is crowned with ratnasambhava, master of her family.\n\ndeviations: moon seat\n\ndeities of tibetan buddhism #289"@en .
+    
+    bdr:T2GS1212  a         :Topic ;
+        skos:altLabel       "'gro ba 'gugs pa'i sgrol ma/"@bo-x-ewts , "'phongs pa sel ba'i sgrol ma/"@bo-x-ewts , "tara dispeller of misfortune"@en , "apadanasanitara"@sa-alalc97 ;
+        skos:prefLabel      "sgrol ma 'phongs pa sel ba/"@bo-x-ewts , "tara summoner of beings"@en , "jagadakarsanatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTD8B987BF30C5D8A3 .
+}

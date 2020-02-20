@@ -1,0 +1,53 @@
+@base          <bdg:T1408> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1408 {
+    bda:LG00FC5731F33D8B6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-11-24T15:09:54.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added additional spelling and extended annotation"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG83C7D1AAA726F112
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-11-24T15:48:57.241Z"^^xsd:dateTime ;
+        adm:logMessage      "edited and added annotation"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG98A5C14DA5147429
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:03:21.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T1408  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1408 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f7/T1408.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1408 ;
+        adm:logEntry        bda:LG00FC5731F33D8B6F , bda:LG83C7D1AAA726F112 , bda:LG98A5C14DA5147429 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTA2E1AE4D2B803608
+        a                   :Note ;
+        :noteText           "protective circular talisman or yantra."@en .
+    
+    bdr:T1408  a            :Topic ;
+        skos:altLabel       "bsrung 'khor/"@bo-x-ewts , "护轮"@zh-hans ;
+        skos:prefLabel      "srung 'khor/"@bo-x-ewts , "護輪"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NTA2E1AE4D2B803608 .
+}

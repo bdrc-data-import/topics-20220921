@@ -1,0 +1,58 @@
+@base          <bdg:T10MS11186> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS11186 {
+    bda:LG3287FC73BC0A5D7F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-02T05:40:08.735Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG417FF93815B93139
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-07T19:18:52.539Z"^^xsd:dateTime ;
+        adm:logMessage      "remove trailing slash from wylie name"@en ;
+        adm:logWho          bdr:U00006 .
+    
+    bda:LG7D63C1CC81BC8F3A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T12:17:23.608Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGED8DCCBB8137C8ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T21:28:09.277Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T10MS11186  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS11186 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "72/T10MS11186.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS11186 ;
+        adm:logEntry        bda:LG3287FC73BC0A5D7F , bda:LG417FF93815B93139 , bda:LG7D63C1CC81BC8F3A , bda:LGED8DCCBB8137C8ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT35019BCED415D458
+        a                   :Note ;
+        :noteText           "this genre topic is applied to works that are compilations, often times defined by verse compositions or collections of writings on a single theme."@en .
+    
+    bdr:T10MS11186  a       :Topic ;
+        skos:prefLabel      "mdzod/"@bo-x-ewts , "treasury"@en , "kosha"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT35019BCED415D458 .
+}

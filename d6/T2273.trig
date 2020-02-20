@@ -1,0 +1,58 @@
+@base          <bdg:T2273> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2273 {
+    bda:LG41837A14E76C7877
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T14:52:19.214Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG5CEB83FCC579351E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:06:48.594Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGA4AA92FDE274FDFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:30:27.253Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGB01A4A188735341F
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:17:30.561Z"^^xsd:dateTime ;
+        adm:logMessage      "removed worng topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2273  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2273 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d6/T2273.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2273 ;
+        adm:logEntry        bda:LG41837A14E76C7877 , bda:LG5CEB83FCC579351E , bda:LGA4AA92FDE274FDFC , bda:LGB01A4A188735341F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4716C1E1294DD24A
+        a                   :Note ;
+        :noteText           "From the Tukdrub Barchey Künsel. A cycle of teachings revealed by Chokgyur Lingpa together with Jamyang Khyentse Wangpo consisting of about ten volumes of texts. Belong to the principle of Guru Vidyadhara."@en .
+    
+    bdr:T2273  a            :Topic ;
+        skos:prefLabel      "grol ba bcu gcig"@bo-x-ewts , "11 types of liberation"@en ;
+        :isRoot             true ;
+        :note               bdr:NT4716C1E1294DD24A .
+}

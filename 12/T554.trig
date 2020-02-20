@@ -1,0 +1,40 @@
+@base          <bdg:T554> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T554 {
+    bda:LGCBC544B763B9D9A3
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-13T16:41:42.625Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T554  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T554 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "12/T554.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T554 ;
+        adm:logEntry        bda:LGCBC544B763B9D9A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7DE55899236BB2FD
+        a                   :Note ;
+        :noteText           "four great / guardian [directional) kings, the four mighty rulers. 1) yul 'khor bsrungs, king dhritarastra of the east. 2) 'phags skyes po, king virudhaka of the south. 3) spyan mi bzang, king Vvrupaksha of the west. 4) rnam thos sras king vaishravana of the north [RY]"@en .
+    
+    bdr:T554  a             :Topic ;
+        skos:prefLabel      "rgyal chen sde bzhi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7DE55899236BB2FD .
+}

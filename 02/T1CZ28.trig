@@ -1,0 +1,72 @@
+@base          <bdg:T1CZ28> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ28 {
+    bda:LG030E9D2B99CCD263
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-02-02T15:00:13.658Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG1661C3735AB48420
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-28T17:22:43.145Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG387828B6F60D989A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T14:47:35.114Z"^^xsd:dateTime ;
+        adm:logMessage      "released, added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG6924D956338F4023
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-07-25T14:05:42.704Z"^^xsd:dateTime ;
+        adm:logMessage      "replace extraneous external by seeAlso"@en ;
+        adm:logWho          bdr:U00006 .
+    
+    bda:LG95A1B9DB4118B369
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-01T14:12:08.521Z"^^xsd:dateTime ;
+        adm:logMessage      "New"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGC487067374B2CC3C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-01-22T15:54:16.616Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFF7A423BD7F41DFD
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-11T13:03:39.029Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ28  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ28 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "02/T1CZ28.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ28 ;
+        adm:logEntry        bda:LG030E9D2B99CCD263 , bda:LG1661C3735AB48420 , bda:LG387828B6F60D989A , bda:LG6924D956338F4023 , bda:LG95A1B9DB4118B369 , bda:LGC487067374B2CC3C , bda:LGFF7A423BD7F41DFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1CZ28  a           :Topic ;
+        rdfs:seeAlso        bdr:T151 ;
+        skos:altLabel       "manual for recitation"@en ;
+        skos:prefLabel      "bsnyen yig"@bo-x-ewts , "rituals for the sevasadhana"@en ;
+        :isRoot             true .
+}

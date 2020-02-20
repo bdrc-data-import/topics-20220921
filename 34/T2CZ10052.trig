@@ -1,0 +1,46 @@
+@base          <bdg:T2CZ10052> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CZ10052 {
+    bda:LG883E68F9D2CD8BDA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-05T13:32:53.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added application note and other names"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGEC8284DD5851F124
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-11T15:29:58.372Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T2CZ10052  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CZ10052 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "34/T2CZ10052.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CZ10052 ;
+        adm:logEntry        bda:LG883E68F9D2CD8BDA , bda:LGEC8284DD5851F124 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT39BEDEC5AAA5EA2F
+        a                   :Note ;
+        :noteText           "this term is applied to nunneries throughout the tibetan plateau"@en .
+    
+    bdr:T2CZ10052  a        :Topic ;
+        skos:altLabel       "a ni dgon pa/"@bo-x-ewts , "jo mo dgon/"@bo-x-ewts ;
+        skos:prefLabel      "btsun dgon/"@bo-x-ewts , "nunnery"@en , "尼姑寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT39BEDEC5AAA5EA2F .
+}

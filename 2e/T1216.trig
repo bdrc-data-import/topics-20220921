@@ -1,0 +1,52 @@
+@base          <bdg:T1216> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1216 {
+    bda:LG276B14F4DD000A0C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-04T16:52:27.566Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGEA34100594881094
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-23T18:36:26.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added note defining the five phyag rgya chen po"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1216  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1216 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/T1216.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1216 ;
+        adm:logEntry        bda:LG276B14F4DD000A0C , bda:LGEA34100594881094 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT297DA48C105CBFC5
+        a                   :Note ;
+        :noteText           "special method for the practice of the mahamudra taught by the 'bri gung bka' brgyud pa"@en .
+    
+    bdr:NT43D04531AF5CF576
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 1148" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "the five points of the mahamudra (phyag rgya chen po lnga) according to the chos rnam kun btus citing the dung dkar tshig mdzod: 1) byang sems; 2) lha sku; 3) mos gus; 4) gnas lugs; 5) bsngo ba: a concise and excellent khrid yig is that of the khro phu bka' brgyud found in the gdams ngag mdzod (khro phu bka' brgyud las byung ba'i phyag rgya chen po lnga ldan gyi khrid yig)"@en .
+    
+    bdr:T1216  a            :Topic ;
+        skos:prefLabel      "phyag chen lnga ldan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT297DA48C105CBFC5 , bdr:NT43D04531AF5CF576 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T003JR4759> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T003JR4759 {
+    bda:LG864877C0A42880C9
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-20T11:13:52.73Z"^^xsd:dateTime ;
+        adm:logMessage      "tibetan dscription added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGB47D37AA27ACAD64
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-22T09:56:17.303Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T003JR4759  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T003JR4759 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f6/T003JR4759.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T003JR4759 ;
+        adm:logEntry        bda:LG864877C0A42880C9 , bda:LGB47D37AA27ACAD64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0B99E180FC5177F3
+        a                   :Note ;
+        :noteText           "'breach of the citadel' (dan martin); a class of sems sde teachings; bon tradition maintains a parallel group of teachings by the same name; described in tibetan as rgya bod mkhas pa mi bzhi'i dgongs nyams gcig tu dril pa bka' brgyad rdzong 'phrang du grags pa"@en .
+    
+    bdr:T003JR4759  a       :Topic ;
+        skos:altLabel       "bka' brgyad rdzong 'phrang /"@bo-x-ewts , "rdzong 'phrang bka' ma/"@bo-x-ewts ;
+        skos:prefLabel      "rdzong 'phrang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B99E180FC5177F3 .
+}

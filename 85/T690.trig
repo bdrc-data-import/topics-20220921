@@ -1,0 +1,40 @@
+@base          <bdg:T690> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T690 {
+    bda:LG22F8D52C090EB0F6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T13:57:40.8Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T690  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T690 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "85/T690.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T690 ;
+        adm:logEntry        bda:LG22F8D52C090EB0F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT33DB3391C2AD4204
+        a                   :Note ;
+        :noteText           "the deity topic is applied to initiations and rituals connected with the female deity, white, her right hand holding a wheel marked with an eye; in her left hand she holds a white lotus; she has white garments and ornaments; she is one of the six rdo rje gdan gyi yi dam drug; her purpose is to pacify diseases;  \n\ndeities of tibetan buddhism #199"@en .
+    
+    bdr:T690  a             :Topic ;
+        skos:prefLabel      "sangs rgyas spyan ma/"@bo-x-ewts , "buddhalocana"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT33DB3391C2AD4204 .
+}

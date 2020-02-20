@@ -1,0 +1,46 @@
+@base          <bdg:T915> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T915 {
+    bda:LG210EABB1E7CE81CA
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T12:42:17.903Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3507F65D8C835AB5
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T10:05:31.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T915  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T915 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b9/T915.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T915 ;
+        adm:logEntry        bda:LG210EABB1E7CE81CA , bda:LG3507F65D8C835AB5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT82A1331B3F12CB23
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the three deities which were transmitted from gnyan lo tsA ba; these are laksmi with golden drop at the heart (dpal mo snying gi gser thig can, hrt-suvarna-bindu-laksmi); 2) red vasudhara (nor rgyun ma dmar mo); 3) the goddess tinu (lha mo ti nu);  the three dmar chung skor gsum are transmitted as a part of the sa skya pa gser chos are\n\nthese were transmitted from gnyan lo tsA ba and are also nor as the dbang gi lha gsum; taranatha notes that ku ru ku l+le is the principal deity of the group; deities of tibetan buddhism #201-205;  \n\ndeities of tibetan buddhism #206-208"@en .
+    
+    bdr:T915  a             :Topic ;
+        skos:prefLabel      "dmar chung skor gsum (gser chos)"@bo-x-ewts , "the three minor red deities"@en ;
+        :isRoot             true ;
+        :note               bdr:NT82A1331B3F12CB23 .
+}

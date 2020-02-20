@@ -1,0 +1,40 @@
+@base          <bdg:T757> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T757 {
+    bda:LG316883C4587F06EB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T09:51:32.363Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T757  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T757 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "57/T757.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T757 ;
+        adm:logEntry        bda:LG316883C4587F06EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTED1BF42167EE7919
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the golden vasundhara, whose color is like refined gold; she is adorned with silks and jewel ornaments and is in the full bloom of youth; her right hand holds a reddish blue picula fruit, her left an ear of rice; she stands with feet together on two jewel vases with their bases meeting and streams of jewels pouring forht from their mouths.  \n\ndeities of tibetan buddhism #327"@en .
+    
+    bdr:T757  a             :Topic ;
+        skos:prefLabel      "nor rgyun ma dza ma ri'i lugs/"@bo-x-ewts , "vasundhara in the tradition of jamari"@en ;
+        :isRoot             true ;
+        :note               bdr:NTED1BF42167EE7919 .
+}

@@ -1,0 +1,58 @@
+@base          <bdg:T558> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T558 {
+    bda:LG032F10E990573AE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T05:33:47.571Z"^^xsd:dateTime ;
+        adm:logMessage      "formatting of the note of application revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9E987458858808BF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T20:16:21.024Z"^^xsd:dateTime ;
+        adm:logMessage      "application note corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGAD70290B837EA404
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:12:44.932Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T558  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T558 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ac/T558.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T558 ;
+        adm:logEntry        bda:LG032F10E990573AE2 , bda:LG9E987458858808BF , bda:LGAD70290B837EA404 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0650939004BA29E3
+        a                   :Note ;
+        :noteText           "this term is applied to the empowerments and rituals about the form of the white tara in the cintamanicakra form as transmitted by atisa; the goddess is white as the moon with an extremely peaceful smile; she has seven eyes, three on the face, and one each on the palms and soles of her feet.\n\nthis is the standard form of white tara\n\ndeities of tibetan buddhism #4"@en .
+    
+    bdr:NTCB6202AFDB0848EB
+        a                   :Note ;
+        :locationStatement  "v. 3, p. 347" ;
+        :noteSource         bdr:MW19221 ;
+        :noteText           "according to various sources this form of tara is styled bka' babs bdun ldan"@en .
+    
+    bdr:T558  a             :Topic ;
+        skos:prefLabel      "sgrol dkar yid bzhin 'khor lo jo bo lugs/"@bo-x-ewts , "wish-fulfilling-wheel white tara in the tradition of atisa"@en , "tara (cintamani sukla)"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT0650939004BA29E3 , bdr:NTCB6202AFDB0848EB .
+}

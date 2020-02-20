@@ -1,0 +1,52 @@
+@base          <bdg:T217> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T217 {
+    bda:LG45129D2FA4A0DC7B
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-01-21T15:34:45.096Z"^^xsd:dateTime ;
+        adm:logMessage      "removed rtsom rig"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG4E6315FFD66AA854
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T10:58:38.108Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name and note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG57FCFFE08C3313D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:19:38.034Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T217  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T217 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/T217.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T217 ;
+        adm:logEntry        bda:LG45129D2FA4A0DC7B , bda:LG4E6315FFD66AA854 , bda:LG57FCFFE08C3313D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT42DFEBCA6C3F8431
+        a                   :Note ;
+        :noteText           "this topic is is used to classify generically collections of contemporary and modern tibetan literature or as a main topic for works about tibetan literature"@en .
+    
+    bdr:T217  a             :Topic ;
+        skos:prefLabel      "bod kyi rtsom rig"@bo-x-ewts , "tibetan literature"@en ;
+        :isRoot             true ;
+        :note               bdr:NT42DFEBCA6C3F8431 .
+}

@@ -1,0 +1,42 @@
+@base          <bdg:T565> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T565 {
+    bda:LGC9CC4B7B9F6D192E
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-11-07T13:19:00.86Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also between T691, T1201, and T565"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:T565  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T565 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "98/T565.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T565 ;
+        adm:logEntry        bda:LGC9CC4B7B9F6D192E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5C625FEB426DDC4C
+        a                   :Note ;
+        :noteText           "the second of the mandala of rgyud sde kun btus\nthis mandala comes from the trisamayavyuha\nthe systematization for the practice comes from the yig cha of sngags chen dkon mchog rgyal mtshan"@en .
+    
+    bdr:T565  a             :Topic ;
+        rdfs:seeAlso        bdr:T1201 , bdr:T691 ;
+        skos:altLabel       "shAkya thub pa dam tshig gsum bkod lha lnga /"@bo-x-ewts , "thub pa dam tshig gsum bkod/"@bo-x-ewts ;
+        skos:prefLabel      "dam tshig gsum bkod lha lnga /"@bo-x-ewts , "trisamayavyuha sakyamuni"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5C625FEB426DDC4C .
+}

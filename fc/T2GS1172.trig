@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1172> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1172 {
+    bda:LGCC00A5EF86846BA8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T11:57:24.215Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1172  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1172 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fc/T2GS1172.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1172 ;
+        adm:logEntry        bda:LGCC00A5EF86846BA8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFDB07520225B5364
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon avalokita jinasagara, red, his first pair of hands with palms folded, the right holding a rosary of red pearls and in the left a red lotus; he sits in vajraparyanka, adorned with silks and jewels; on his crown is amitabha and at his heart hayagriva brandishing a vajra and raising a threatening forefinger, at his navel is guhyajnanadakini (mkha' 'gro gsang ba ye shes), red, her two right hands holding a sword and a damaru, her left a trident and a blood filled skull, and with bone ornaments;  \n \n\nthere exist sadhanas where the the crowning amitabha is shown as an extra head; jinasagara is white and two-armed embracing the red guhyajnanadakini as consort; the author of one of these sadhanas is gung thang dkon mchog bstan pa'i sgron me;  \n\ndeities of tibetan buddhism #132"@en .
+    
+    bdr:T2GS1172  a         :Topic ;
+        skos:altLabel       "thugs rje chen po rgyal ba rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "spyan ras gzigs rgyal ba rgya mtsho/"@bo-x-ewts , "jinasagara avalokita known as the four sugatas combined"@en ;
+        :isRoot             true ;
+        :note               bdr:NTFDB07520225B5364 .
+}

@@ -1,0 +1,39 @@
+@base          <bdg:T411> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T411 {
+    bda:T411  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T411 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0f/T411.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T411 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCDE41E9E45A4F185
+        a                   :Note ;
+        :noteText           "there exist several transmission forms of the six armed mahakala; most of these come from rgwa lo either directly or as indirect oral transmissions (snyan brgyud); these are primarily found in the bka' brgyud pa, i.e. phag gru or thel lugs\ntshal lugs\n'bri gung lugs"@en .
+    
+    bdr:NTEC1E29623BB625F0
+        a                   :Note ;
+        :noteSource         bdr:MW12422 ;
+        :noteText           "one of the five mgon po bka' lnga"@en .
+    
+    bdr:T411  a             :Topic ;
+        skos:altLabel       "krsna sadbhuja jnana mahakala"@sa-alalc97 ;
+        skos:prefLabel      "mgon po phyag drug"@bo-x-ewts , "mahakala sadbhuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTCDE41E9E45A4F185 , bdr:NTEC1E29623BB625F0 .
+}

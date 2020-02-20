@@ -1,0 +1,36 @@
+@base          <bdg:T2585> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2585 {
+    bda:LGF004A9D6A24AE493
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T16:50:22.399Z"^^xsd:dateTime ;
+        adm:logMessage      "T2585 and T2611 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2585  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2585 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "d4/T2585.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2585 ;
+        adm:logEntry        bda:LGF004A9D6A24AE493 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2585  a            :Topic ;
+        skos:altLabel       "rgyang sgrog"@bo-x-ewts , "news broadcasting"@en ;
+        skos:prefLabel      "rlung 'phrin/"@bo-x-ewts , "radio broadcasting"@en ;
+        :isRoot             true .
+}

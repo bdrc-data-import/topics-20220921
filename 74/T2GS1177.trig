@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1177> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1177 {
+    bda:LG44B3AF2D82685E08
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T01:27:23.778Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1177  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1177 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "74/T2GS1177.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1177 ;
+        adm:logEntry        bda:LG44B3AF2D82685E08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC3AD958A0F32E0E0
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the blue lady parnasabari (leaf-clad wild woman) whose color is sky blue; she has one face and four arms; her first right hand which holds the branch of a heavenly tree, with fruit, pacifies illnesses; the second holds an axe, which smites the vicious; the first left hand with a noose, binds hindering demons; the second left holds a fly whisk with a jewel handle, eliminates diseases; amorous and wrathful, she is adorned with jewels, bones and snakes and has a tiger-sin loincloth and a scarf of leaves; she abides in pratyalidha posture (left leg extended) on a sun seat with a back-rest of unlight; she is crowned with amoghasiddhi.  \n\ndeities of tibetan buddhism #220"@en .
+    
+    bdr:T2GS1177  a         :Topic ;
+        skos:prefLabel      "ri khrod ma lo ma gyon ma sngon mo/"@bo-x-ewts , "blue parna sabari"@en , "parnasabari nila"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC3AD958A0F32E0E0 .
+}

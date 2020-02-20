@@ -1,0 +1,42 @@
+@base          <bdg:T1352> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1352 {
+    bda:LGB54E51EA37BCD39F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-10T16:24:33.254Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also between T238 and T1352"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGE02439343AA66D5F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-22T15:16:38.085Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1352  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1352 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c6/T1352.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1352 ;
+        adm:logEntry        bda:LGB54E51EA37BCD39F , bda:LGE02439343AA66D5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1352  a            :Topic ;
+        rdfs:seeAlso        bdr:T238 ;
+        skos:prefLabel      "bstan rim/"@bo-x-ewts , "stages of teachings"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T1232> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1232 {
+    bda:LG67B1611798439E27
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-26T12:01:48.083Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also t1232 (dbyangs rol)"@en .
+    
+    bda:LG96F2DD1093D7F558
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T12:55:55.052Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1232  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1232 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/T1232.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1232 ;
+        adm:logEntry        bda:LG67B1611798439E27 , bda:LG96F2DD1093D7F558 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6A03E15E10451265
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 9"@en .
+    
+    bdr:T1232  a            :Topic ;
+        rdfs:seeAlso        bdr:T1AT301 ;
+        skos:prefLabel      "rol mo/"@bo-x-ewts , "musical instruments"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT6A03E15E10451265 .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T1414> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1414 {
+    bda:LG226AB4B99B83CA61
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-05T14:29:09.219Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See also among T1414, T1441, T2MS14792; Added see also between T1570 and T1878"@en .
+    
+    bda:LG6A98BE73D09DCEB8
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-11T14:54:36.023Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T1414  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1414 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bd/T1414.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1414 ;
+        adm:logEntry        bda:LG226AB4B99B83CA61 , bda:LG6A98BE73D09DCEB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1414  a            :Topic ;
+        rdfs:seeAlso        bdr: , bdr:T1441 ;
+        skos:prefLabel      "kun rdzob bden pa/"@bo-x-ewts , "samvrtisatya"@sa-alalc97 ;
+        :isRoot             true .
+}

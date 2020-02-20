@@ -1,0 +1,52 @@
+@base          <bdg:T1089> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1089 {
+    bda:LG57260077ADD6F54F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-20T04:45:17.758Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected RID for see also"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGA65C60891E50487C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T12:04:19.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added SeeAlso T1166"@en .
+    
+    bda:LGD62C33BD273D0AB6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-20T04:44:03.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also to relate T1089 and T1166"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T1089  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1089 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "be/T1089.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1089 ;
+        adm:logEntry        bda:LG57260077ADD6F54F , bda:LGA65C60891E50487C , bda:LGD62C33BD273D0AB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF50CE2282199E42B
+        a                   :Note ;
+        :noteText           "here are classed sacred dances for the preparation of the ground for the performance of higher tantric practices.\n\ngar are found described often in the tantras and their indic commentaries in the bstan 'gyur. \n\nthey are distinguished from the 'chams (T1166) or masked sacred dance which developed in tibet.\n\ngar, like 'chams, are usually associated with the worship of a particular deity or cycle."@en .
+    
+    bdr:T1089  a            :Topic ;
+        rdfs:seeAlso        bdr:T1166 ;
+        skos:prefLabel      "gar/"@bo-x-ewts , "sacred dance (indic)"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF50CE2282199E42B .
+}

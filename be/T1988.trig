@@ -1,0 +1,49 @@
+@base          <bdg:T1988> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1988 {
+    bda:LGD1A262ABEF019EDF
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-15T14:27:32.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGE388D798ABB8F06E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-16T08:53:28.768Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEC3FC0C050281D5B
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T10:39:18.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"bsam gtan\" & seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1988  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1988 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "be/T1988.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1988 ;
+        adm:logEntry        bda:LGD1A262ABEF019EDF , bda:LGE388D798ABB8F06E , bda:LGEC3FC0C050281D5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1988  a            :Topic ;
+        rdfs:seeAlso        bdr:T3CN2033 ;
+        skos:altLabel       "bsam gtan/"@bo-x-ewts , "ting nge 'dzin/"@bo-x-ewts , "禅定"@zh-hans ;
+        skos:prefLabel      "ting 'dzin/"@bo-x-ewts , "samādhi"@sa-x-ndia , "三摩地"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,51 @@
+@base          <bdg:T2MS24673> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS24673 {
+    bda:LG23F703E601015836
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-25T11:48:46.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and notes"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG495693257981E1F1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:27:43.912Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS24673  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS24673 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a8/T2MS24673.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS24673 ;
+        adm:logEntry        bda:LG23F703E601015836 , bda:LG495693257981E1F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT04739E603AACA615
+        a                   :Note ;
+        :noteText           "this is a place type topic"@en .
+    
+    bdr:NT537EC0A0B00C33C8
+        a                   :Note ;
+        :noteText           "this topic is applied to the tibetan autonomous region as distinct from rang skyong khul or the outlying prefectures; various sa khul or district  (T2MS24674) are subsumed within."@en .
+    
+    bdr:T2MS24673  a        :Topic ;
+        skos:altLabel       "bod rang skyong ljongs/"@bo-x-ewts , "tibetan autonomous region (TAR)"@bo-x-ewts , "西藏自治区"@zh-hans ;
+        skos:prefLabel      "rang skyong ljongs/"@bo-x-ewts , "自治区"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT04739E603AACA615 , bdr:NT537EC0A0B00C33C8 .
+}

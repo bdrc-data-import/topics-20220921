@@ -1,0 +1,41 @@
+@base          <bdg:T226> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T226 {
+    bda:LGA04B8F17D79D78AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-08T16:12:22.396Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2145"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T226  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T226 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "61/T226.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T226 ;
+        adm:logEntry        bda:LGA04B8F17D79D78AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2145 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT5AB07862482E29FB
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G2145"@en .
+    
+    bdr:T226  a             :Topic ;
+        skos:prefLabel      "a mdo rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5AB07862482E29FB .
+}

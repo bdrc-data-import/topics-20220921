@@ -1,0 +1,58 @@
+@base          <bdg:T1446> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1446 {
+    bda:LG3B34B31D80F8D356
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-02-25T16:09:03.327Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG5152FDDA423EAFA1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T05:17:35.522Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGA43B2D0259107C97
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-16T07:35:09.14Z"^^xsd:dateTime ;
+        adm:logMessage      "english added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE5FD23EA7E1CE5C8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-01-17T17:53:58.631Z"^^xsd:dateTime ;
+        adm:logMessage      "variant name added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T1446  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1446 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "51/T1446.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1446 ;
+        adm:logEntry        bda:LG3B34B31D80F8D356 , bda:LG5152FDDA423EAFA1 , bda:LGA43B2D0259107C97 , bda:LGE5FD23EA7E1CE5C8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT898691F9C9336159
+        a                   :Note ;
+        :noteText           "this genre topic is applied to texts and literary topics"@en .
+    
+    bdr:T1446  a            :Topic ;
+        skos:altLabel       "bskyud byang /"@bo-x-ewts ;
+        skos:prefLabel      "brjed byang /"@bo-x-ewts , "memorandum; notes of points to remember"@en ;
+        :isRoot             true ;
+        :note               bdr:NT898691F9C9336159 .
+}

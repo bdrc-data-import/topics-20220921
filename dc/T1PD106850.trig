@@ -1,0 +1,42 @@
+@base          <bdg:T1PD106850> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106850 {
+    bda:LG7C31EB9856D8A643
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T09:51:30.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"zhing khams\" & names in other languages"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGABF3CC52019722D8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T09:26:11.315Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD106850  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106850 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dc/T1PD106850.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106850 ;
+        adm:logEntry        bda:LG7C31EB9856D8A643 , bda:LGABF3CC52019722D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1PD106850  a       :Topic ;
+        skos:altLabel       "zhing bkod/"@bo-x-ewts , "zhing khams kyi bkod pa/"@bo-x-ewts , "剎土"@zh-hant ;
+        skos:prefLabel      "zhing khams/"@bo-x-ewts , "Pure Lands"@en , "Kṣetra"@sa-x-ndia , "净土"@zh-hans ;
+        :isRoot             true .
+}

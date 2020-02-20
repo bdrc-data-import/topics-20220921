@@ -1,0 +1,41 @@
+@base          <bdg:T116> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T116 {
+    bda:LG897B6889D89DCE00
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-21T12:22:26.533Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t753"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T116  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T116 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bb/T116.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T116 ;
+        adm:logEntry        bda:LG897B6889D89DCE00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T753 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT280AA9E172A93805
+        a                   :Note ;
+        :noteText           "withdrawn in favor of t753"@en .
+    
+    bdr:T116  a             :Topic ;
+        skos:prefLabel      "rnam sras gsang sgrub dmar po gar mkhan mchog"@bo-x-ewts , "vaisravana nartakavara rakta"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT280AA9E172A93805 .
+}

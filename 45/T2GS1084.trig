@@ -1,0 +1,53 @@
+@base          <bdg:T2GS1084> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1084 {
+    bda:LG174E4B3E48168E7F
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T06:13:33.898Z"^^xsd:dateTime ;
+        adm:logMessage      "formatting of application note"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG4B426E1B43D52EDA
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T20:34:50.173Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5395D4CE17968DD8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T16:56:16.498Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1084  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1084 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "45/T2GS1084.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1084 ;
+        adm:logEntry        bda:LG174E4B3E48168E7F , bda:LG4B426E1B43D52EDA , bda:LG5395D4CE17968DD8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0EB85D367B273630
+        a                   :Note ;
+        :noteText           "this deity topic is used for empowerments and rituals dealing with the wish-fulfilling wheel white tara; she is white with two hands; she  is difficult to distinguish iconogaphically from the other white tara cintamanicakra forms; she is crowned with amitabha and has a lotus and moon seat.\n\ndeities of tibetan buddhism #6\n\nvery little difference from this and the jo bo lugs transmission except that the wheel at the heart has in addition on the rim a garland of the syllable oM."@en .
+    
+    bdr:T2GS1084  a         :Topic ;
+        skos:altLabel       "gnyan lugs kyi sgrol dkar yid bzhin 'khor l/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol dkar yid bzhin 'khor lo gnyan lugs/"@bo-x-ewts , "wish-fulfilling-wheel white tara in the tradition of gnyan lo tsa ba"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0EB85D367B273630 .
+}

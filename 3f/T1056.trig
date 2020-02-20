@@ -1,0 +1,40 @@
+@base          <bdg:T1056> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1056 {
+    bda:LGB8458E0424F5DF4F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T15:58:08.218Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1056  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1056 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3f/T1056.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1056 ;
+        adm:logEntry        bda:LGB8458E0424F5DF4F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT71500210EC53053B
+        a                   :Note ;
+        :noteText           "name of an widely practiced mandala of vajrayogini according to the rwa transmission"@en .
+    
+    bdr:T1056  a            :Topic ;
+        skos:prefLabel      "rdo rje rnal 'byor ma lha 37 rwa lugs/"@bo-x-ewts , "vajrayogini 37 devatmaka rwa krama"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT71500210EC53053B .
+}

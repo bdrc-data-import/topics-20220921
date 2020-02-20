@@ -1,0 +1,37 @@
+@base          <bdg:T1353> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1353 {
+    bda:LG4D69225FD5D8DAFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-15T10:34:21.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added multi language names & merge assosiated works from T1AT294"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1353  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1353 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "94/T1353.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1353 ;
+        adm:logEntry        bda:LG4D69225FD5D8DAFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1353  a            :Topic ;
+        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha" ;
+        skos:altLabel       "bde ba can gyi zhing khams/"@bo-x-ewts , "bde can zhing /"@bo-x-ewts , "bde chen zhing /"@bo-x-ewts , "bde ldan zhing /"@bo-x-ewts ;
+        skos:prefLabel      "bde ba can/"@bo-x-ewts , "paradise of amitabha"@en , "sukhavati"@sa-alalc97 , "极乐净土"@zh-hans ;
+        :isRoot             true .
+}

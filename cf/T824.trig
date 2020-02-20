@@ -1,0 +1,57 @@
+@base          <bdg:T824> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T824 {
+    bda:LG1BC5AE6613934AAA
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-18T13:18:30.296Z"^^xsd:dateTime ;
+        adm:logMessage      "see also"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG4FBA74197951BA8C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T16:09:00.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and info"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGBFA10A1B909DEF9D
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-01T16:38:21.82Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T824  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T824 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cf/T824.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T824 ;
+        adm:logEntry        bda:LG1BC5AE6613934AAA , bda:LG4FBA74197951BA8C , bda:LGBFA10A1B909DEF9D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6945C19DB830A1BE
+        a                   :Note ;
+        :noteText           "rigs gsum spyi this is the name of the first mandala of the rgyud sde kun btus"@en .
+    
+    bdr:NTB1753A0D972ADD69
+        a                   :Note ;
+        :noteText           "avalokitesvara, manjusri, and vajrapani"@en .
+    
+    bdr:T824  a             :Topic ;
+        skos:altLabel       "rigs gsum spyi/"@bo-x-ewts ;
+        skos:prefLabel      "rigs gsum mgon po/"@bo-x-ewts , "trikulanatha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT6945C19DB830A1BE , bdr:NTB1753A0D972ADD69 .
+}

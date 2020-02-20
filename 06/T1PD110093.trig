@@ -1,0 +1,53 @@
+@base          <bdg:T1PD110093> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD110093 {
+    bda:LG04CB543F99A54674
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:14:15.327Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG408DF09BF6041F86
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T14:16:25.103Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG963158C65F7E4F1A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-01T14:39:36.085Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD110093  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD110093 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "06/T1PD110093.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD110093 ;
+        adm:logEntry        bda:LG04CB543F99A54674 , bda:LG408DF09BF6041F86 , bda:LG963158C65F7E4F1A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT7991EB47A3D513E0
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 9"@en .
+    
+    bdr:T1PD110093  a       :Topic ;
+        skos:prefLabel      "sil snyan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7991EB47A3D513E0 .
+}

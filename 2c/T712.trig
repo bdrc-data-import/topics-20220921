@@ -1,0 +1,47 @@
+@base          <bdg:T712> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T712 {
+    bda:LG559DAF85C9695689
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-13T14:44:32.652Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG745AC912D398A27F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-13T17:41:07.953Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T712  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T712 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2c/T712.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T712 ;
+        adm:logEntry        bda:LG559DAF85C9695689 , bda:LG745AC912D398A27F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT185EC3AEFA064381
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the lord of birds, with one face, and two arms; he is yellow from the soles of his feet to the hips, white from there to the navel; red from there to the throat; black from there to his eyebrows; and green above that; he has three eyes; green jaya and blue vijaya bind his hair; black karkotaka and padma make his earrings; red vasuki and sankhapala his bracelets; yellow taksaka and mahapadma, his anklets, and white ananta and kulika his belt ('og pags) and necklace; his wings are of various colors and emit all kinds of light rays; crowned with the five families;  with his two hands he grasps by the waist a naga king in the form of a venomous snake, devouring his head with his mouth and trampling the end beneath his feet,  \n\ndeviations: no green above the eyebrows; shown eating the sneak in the middle and trampling on both ends.\n\nthe propitiation of this deity is useful for providing an antidote to poisionings (brtan g.yo'i dug gzhil ba).\n\ndeities of tibetan buddhism #229"@en .
+    
+    bdr:T712  a             :Topic ;
+        skos:altLabel       "dus 'khor khyung khra rgyud lugs/"@bo-x-ewts , "rdo rje nam mkha' lding /"@bo-x-ewts , "ye shes khyung khra rgyud lugs/"@bo-x-ewts , "garuda sabala kalacakra"@sa-alalc97 ;
+        skos:prefLabel      "khyung khra rgyud lugs/"@bo-x-ewts , "many-colored kalacakra-garuda in the tradition of the tantra"@en , "sabala kalacakra garuda"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT185EC3AEFA064381 .
+}

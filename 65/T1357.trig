@@ -1,0 +1,58 @@
+@base          <bdg:T1357> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1357 {
+    bda:LG05C6E6804A42BD12
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-09T13:39:45.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG976DD96B65835709
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-09T15:20:30.275Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGD872D98DC41B94E4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T10:12:11.376Z"^^xsd:dateTime ;
+        adm:logMessage      "T1357, T2MS13818 and T2MS13817 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE063951E01261B5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-29T14:48:11.169Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1357  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1357 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "65/T1357.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1357 ;
+        adm:logEntry        bda:LG05C6E6804A42BD12 , bda:LG976DD96B65835709 , bda:LGD872D98DC41B94E4 , bda:LGE063951E01261B5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB98C53F1D29FF956
+        a                   :Note ;
+        :noteText           "the dge lugs teaching of mahamudra. according to the tradition tshong kha pa received it via a ring lugs, down from mi la ras pa to spyan lnga chos kyi rgyal po, and a nye lugs, in a vision of manjusri. it was taught orally until the 1st paN chen wrote on it."@en .
+    
+    bdr:T1357  a            :Topic ;
+        skos:altLabel       "dben sa bka' brgyad/"@bo-x-ewts , "dben sa snyan brgyud/"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan phyag chen/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB98C53F1D29FF956 .
+}

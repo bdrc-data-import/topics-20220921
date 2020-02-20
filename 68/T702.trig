@@ -1,0 +1,40 @@
+@base          <bdg:T702> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T702 {
+    bda:LGE21BEB402DD9F8B7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T11:36:13.582Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T702  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T702 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "68/T702.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T702 ;
+        adm:logEntry        bda:LGE21BEB402DD9F8B7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB09D3529492C9B53
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon pratisara who is white with one face and two arms, the right brandishing a sword and the left holding at her heart a wheel; her legs are in the round posture (zlum pa = parimandala); she is graceful, smiling, and adorned with silks and all the jewel ornaments; she is crowned with vairocana; her mount is a polylotus and a moon.\n\nlineage from sa skya paN+DI ta.\n\nthere exists a form of pratisara, revealed by mchog gyur bde chen gling pa,  which is  propitiated in rituals for ensuring progeny for ruler and notables;  the deity is styled rin chen mkha' 'gro ma.\n\ndeities of tibetan buddhism #216."@en .
+    
+    bdr:T702  a             :Topic ;
+        skos:prefLabel      "so sor 'brang ma rdo rje gur las 'byung ba/"@bo-x-ewts , "pratisara from the vajrapanjara tantra"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB09D3529492C9B53 .
+}

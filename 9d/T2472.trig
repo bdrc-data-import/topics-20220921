@@ -1,0 +1,41 @@
+@base          <bdg:T2472> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2472 {
+    bda:LGD26238E7373527C7
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-03T15:01:34.704Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn because of not used"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGF263DABD11B61DE7
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T14:52:21.662Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2472  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2472 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9d/T2472.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2472 ;
+        adm:logEntry        bda:LGD26238E7373527C7 , bda:LGF263DABD11B61DE7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2472  a            :Topic ;
+        skos:prefLabel      "tshe dpag med mda' 'phel ma/"@bo-x-ewts ;
+        :isRoot             true .
+}

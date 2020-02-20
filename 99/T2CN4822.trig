@@ -1,0 +1,54 @@
+@base          <bdg:T2CN4822> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4822 {
+    bda:LG8ADF939030E6F81E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T11:28:46.73Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9591AC193BFAEE4F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-22T09:46:28.303Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGC44CF3C03D5D044C
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-24T12:03:09.19Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T2CN4822  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4822 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "99/T2CN4822.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4822 ;
+        adm:logEntry        bda:LG8ADF939030E6F81E , bda:LG9591AC193BFAEE4F , bda:LGC44CF3C03D5D044C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0C3A7D744E0A984C
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V .10, P. 444 རབ་འབྱམས་རྒྱལ་ཀུན་འདུས་པའི་སྤྱི་གཟུགས་དབང་ཆེན་གཏུམ་དྲག་ཁྲོ་བོའི་རྒྱལ་པོར་བཞེངས་པ་སྲིད་གསུམ་དྲེགས་པའི་ཡང་རྗེ་སྟོབས་ལྡན་དྲག་ཤུལ་དབང་པོ་ཞེས་གསལ།"@bo .
+    
+    bdr:T2CN4822  a         :Topic ;
+        skos:altLabel       "dgra lha'i rgyal po stobs ldan drag shul dbang po/"@bo-x-ewts ;
+        skos:prefLabel      "stobs ldan drag shul dbang po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0C3A7D744E0A984C .
+}

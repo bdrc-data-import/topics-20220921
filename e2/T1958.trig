@@ -1,0 +1,35 @@
+@base          <bdg:T1958> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1958 {
+    bda:LGB46A550234678EB3
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T14:48:48.515Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1958  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1958 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "e2/T1958.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1958 ;
+        adm:logEntry        bda:LGB46A550234678EB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1958  a            :Topic ;
+        skos:prefLabel      "gos rgyan cha/"@bo-x-ewts , "clothing and ornaments"@en ;
+        :isRoot             true .
+}

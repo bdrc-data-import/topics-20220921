@@ -1,0 +1,63 @@
+@base          <bdg:T580> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T580 {
+    bda:LG3CF546B7AF868AD1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T16:35:40.137Z"^^xsd:dateTime ;
+        adm:logMessage      "adding external link"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG948583590250D2A1
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T17:02:17.042Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGB0088BD44F832318
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T16:31:08.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added external link"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF777BD44BEBF3AE2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T13:13:35.135Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T580  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T580 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fc/T580.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T580 ;
+        adm:logEntry        bda:LG3CF546B7AF868AD1 , bda:LG948583590250D2A1 , bda:LGB0088BD44F832318 , bda:LGF777BD44BEBF3AE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB6965654DEE84124
+        a                   :Note ;
+        :noteText           "the ritual of invoking vajravega is used to stop rain (char dbab gcod byed pa)"@en .
+    
+    bdr:NTFCBA1D3E80395151
+        a                   :Note ;
+        :noteText           "this topic is applied to empowerments and rituals invoking the wrathful king vajravega from the kalacakra tantra; he is black, the color of the cloud at the end of time; he has four faces, six shoulders, twelve upper arms, and twenty-six forearms; his front face is black, the right one red, the left white, and the rear yellow; each face has three eyes; his tawny hair steams upwards; either side, the first shoulder is black, the second red, and the third white; the first two upper arms are black, the second two red; and the third four white; their thumbs are yellow, the forefingers white, the middle fingers red, the ring fingers black, and the little fingers green; with the first joints black (the other side) \n\nthe twelve right hands like this hold a wrathful vajra, a sword, a trident, and a knife; an arrow, a vajra hook, a damaru, and a hammer; and a wheel, a spear, a club, and an axe; the twelve left hold a vajra bell, a shield, akhatvanga, and a blood-filled skull; a bow, a noose, a jewel and a lotus; and a conch, a mirror, a vajra chain, and the four-faced head of brahma; the remaining pair of hands, the right black and the left yellow, with threatening forefingers are putting on an elephan skin as a scarf and hold a mara's head and a blood filled skull; his legs are in alidha posture (the left bent) trample on the hearts of mara and the king of defilemtns and pretas; the naga king jaya binds his topknot; vijaya binds his silk diadem; karkotaka and padma are his earrings; vasuki and sankhapala his pracelets; ananda and kulika his belt and necklace; and taksaka and mahapadma his anklets; from his shoulders hands a galrand of heads of a hundred kinds of maras; the cron of his head is adorned with a garland of five skulls, and he stands amidst a blazing mass of fire; he is crowned with aksobhya.\n\ndeviations: the seventh through the twelfth left hands are showing holding a lotus, a conch, a mirror, a chain, brhmas's head , and a sword; the mara's head and skull supposedly held by his last pair of hands cannot be seen.\n\ndeities of tibetan buddhism #73"@en .
+    
+    bdr:T580  a             :Topic ;
+        rdfs:seeAlso        "http://www.kalacakra.org/mandala/vajvg_b2.jpg"^^xsd:anyURI ;
+        skos:prefLabel      "rdo rje shugs/"@bo-x-ewts , "wrathful king krodha raja vajravega"@en , "vajravega"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTB6965654DEE84124 , bdr:NTFCBA1D3E80395151 .
+}

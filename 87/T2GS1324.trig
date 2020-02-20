@@ -1,0 +1,54 @@
+@base          <bdg:T2GS1324> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1324 {
+    bda:LG307378BF26265228
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-24T20:44:18.388Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG61D9615B07943464
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T16:11:56.344Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGB03B4FEFD56A9D85
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-10T16:33:26.965Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2GS1324  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1324 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "87/T2GS1324.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1324 ;
+        adm:logEntry        bda:LG307378BF26265228 , bda:LG61D9615B07943464 , bda:LGB03B4FEFD56A9D85 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF3F16F578F323711
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 233" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "chos sku'i ye shes gsum according to the chos rnam kun btus (citing the dung dkar tshig mdzod 836-12) are: 1) ngo bo ka dag ye shes; 2) rang bzhin lhun grub ye shes; 3) thugs rje kun khyab ye shes"@en .
+    
+    bdr:T2GS1324  a         :Topic ;
+        skos:prefLabel      "chos sku'i ye shes/"@bo-x-ewts , "dharmakaya wisdom"@en , "法身本智"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTF3F16F578F323711 .
+}

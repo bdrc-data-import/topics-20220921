@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1219> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1219 {
+    bda:LGF42EB66B32863305
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T14:28:05.902Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1219  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1219 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "83/T2GS1219.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1219 ;
+        adm:logEntry        bda:LGF42EB66B32863305 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5B868435E175F43D
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 7th of the 21 tara collection according to the tradition of suryagupta; this form of tara is black wearing yellow garments, fierce with upward streaming hair and with one face and four arms; the first right hand holds a wheel; the other a sword; the first left holds a lotus on which is vajra (suryagupta says a noose above her yoni); the other left makes a threatening forefinger; she is in pratyalidha posture (left leg extended); she is crowned with ratnasambhava, the master of her family; she is seated on a yellow lotus and sun seat.\n\ndeviations: according to a chinese blockprint shows a noose.\n\ndeities of tibetan buddhism #282"@en .
+    
+    bdr:T2GS1219  a         :Topic ;
+        skos:altLabel       "rgol ba 'joms pa'i sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma rgol ba 'joms ma/"@bo-x-ewts , "tara crushing disputants"@en , "vadipramardanitara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT5B868435E175F43D .
+}

@@ -1,0 +1,33 @@
+@base          <bdg:T451> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T451 {
+    bda:T451  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T451 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "3b/T451.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T451 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDF6E2BB3AC39B0D4
+        a                   :Note ;
+        :noteText           "under this keyword are classed all enumerations of the pedigree of particular teachings, that is the succession of teachers transmitting the precepts, that is the dbang, lung and khrid\n\ncompare: thob yig/gsan yig"@en .
+    
+    bdr:T451  a             :Topic ;
+        skos:prefLabel      "brgyud yig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDF6E2BB3AC39B0D4 .
+}

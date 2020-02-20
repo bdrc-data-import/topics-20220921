@@ -1,0 +1,41 @@
+@base          <bdg:T602> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T602 {
+    bda:LG3C2F30B58EBE6671
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T10:17:18.613Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T602  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T602 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/T602.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T602 ;
+        adm:logEntry        bda:LG3C2F30B58EBE6671 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7EBF2F82F8776C3C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon lord arya avalokita; his principal face is white, above that is a blue, wrathful face, on top the red face of amitabha; his fight hand holds a wish-granting gem; his left a wheel at his heart; he stands with feet together and is adorned with silks and jewel ornaments;   \n\n\ndeities of tibetan buddhism #120"@en .
+    
+    bdr:T602  a             :Topic ;
+        skos:altLabel       "spyan ras gzigs yid bzhin 'khor lo/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po yid bzhin 'khor lo/"@bo-x-ewts , "wish-fulfilling wheel (cintamani-cakra) avalokita"@en , "avalokitesvara cintamanicakra"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT7EBF2F82F8776C3C .
+}

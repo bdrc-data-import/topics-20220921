@@ -1,0 +1,64 @@
+@base          <bdg:T222> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T222 {
+    bda:LG0BFE53D5F3C7C236
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-01-25T15:23:01.344Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG2E65F23295DB3E6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-08-21T15:04:36.986Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG50EE4836ED4DDD3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T10:45:14.09Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7346E3A07DA32BBB
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-14T08:00:55.406Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF323140F021A3353
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-01-25T10:40:46.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added more name"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T222  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T222 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "54/T222.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T222 ;
+        adm:logEntry        bda:LG0BFE53D5F3C7C236 , bda:LG2E65F23295DB3E6F , bda:LG50EE4836ED4DDD3E , bda:LG7346E3A07DA32BBB , bda:LGF323140F021A3353 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAAD86B3C00EB36FA
+        a                   :Note ;
+        :noteText           "this topic is used to classify the annual calendars of tibet and the tibetan cultural area"@en .
+    
+    bdr:T222  a             :Topic ;
+        skos:altLabel       "le'u tho/"@bo-x-ewts , "lo tho/"@bo-x-ewts ;
+        skos:prefLabel      "li tho/"@bo-x-ewts , "calendar"@en ;
+        :isRoot             true ;
+        :note               bdr:NTAAD86B3C00EB36FA .
+}

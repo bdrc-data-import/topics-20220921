@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1175> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1175 {
+    bda:LG02883FCB60942A3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T16:44:14.128Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG3BA121582D95F90D
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T14:08:44.608Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1175  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1175 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/T2GS1175.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1175 ;
+        adm:logEntry        bda:LG02883FCB60942A3E , bda:LG3BA121582D95F90D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NTDB840C5004CB8EE9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon the five forms of the parnasabari or parnasavari; these are: 1) yellow parnasabari (ri khrod ma lo ma gyon ma ser mo); 2) red parnasabari (ri khrod ma lo ma gyon ma dmar mo); 3) blue barnasabari (ri khrod ma lo ma gyon ma sngon mo); 4) black parnasabari (ri khrod ma lo ma gyon ma nag mo); 5) green parnasabari (ri khrod ma lo ma gyon ma ljang gu)\n\ndeities of tibetan buddhism #218-222"@en .
+    
+    bdr:T2GS1175  a         :Topic ;
+        skos:prefLabel      "ri khrod ma lo ma gyon ma rigs lnga /"@bo-x-ewts , "parna sabari of the five families"@en ;
+        :isRoot             true ;
+        :note               bdr:NTDB840C5004CB8EE9 .
+}

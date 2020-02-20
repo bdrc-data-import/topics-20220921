@@ -1,0 +1,67 @@
+@base          <bdg:T1CZ56> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ56 {
+    bda:LG2346B69C5B9593B8
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-06T12:31:04.181Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG2DEA9B5AD2FBF4F3
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-07-29T15:07:35.541Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG57CE45130A5E3D03
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-27T15:52:25.624Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG5F10DFE7C54214AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-30T11:26:12.632Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG6FAE0DCC1BDF6380
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-10-14T16:02:10.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added rnam gzhag"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGC139ACFB9E292A8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-26T15:37:57.269Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGF9019F2C74E0B702
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-06-30T11:25:29.379Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T1CZ56  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ56 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "5d/T1CZ56.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ56 ;
+        adm:logEntry        bda:LG2346B69C5B9593B8 , bda:LG2DEA9B5AD2FBF4F3 , bda:LG57CE45130A5E3D03 , bda:LG5F10DFE7C54214AF , bda:LG6FAE0DCC1BDF6380 , bda:LGC139ACFB9E292A8E , bda:LGF9019F2C74E0B702 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1CZ56  a           :Topic ;
+        skos:altLabel       "rnam gzhag"@bo-x-ewts ;
+        skos:prefLabel      "rnam bzhag"@bo-x-ewts , "analysis"@en ;
+        :isRoot             true .
+}

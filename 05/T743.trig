@@ -1,0 +1,46 @@
+@base          <bdg:T743> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T743 {
+    bda:LG475E5B8CC64E3668
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T00:56:53.269Z"^^xsd:dateTime ;
+        adm:logMessage      "formatting issue reviewed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGAB92C6FDF9F648A9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T19:39:07.969Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T743  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T743 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "05/T743.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T743 ;
+        adm:logEntry        bda:LG475E5B8CC64E3668 , bda:LGAB92C6FDF9F648A9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE0CDBE47BA57F8CE
+        a                   :Note ;
+        :noteText           "this term is used for rituals for the propitiation of form of ganesh as transmitted from sakyaraksita. the deity is elephant faced and yellow; he is seated on lotus, moon and rat seat; his two right hands hold a trident and an axe; his two left hands hold a bowl full of gems and a radish; he is pot-bellied and abides in the lalita posture, adorned with all the ornaments, looking at a bowl full of various foods such as ladduka in front of him.\n\nthis is included in the group of  transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava\n\n\ndeities of tibetan buddhism #271"@en .
+    
+    bdr:T743  a             :Topic ;
+        skos:prefLabel      "tshogs bdag ser po/"@bo-x-ewts , "yellow ganapati"@en , "ganapati pita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTE0CDBE47BA57F8CE .
+}

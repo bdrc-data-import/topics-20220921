@@ -1,0 +1,50 @@
+@base          <bdg:T00AG01278> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01278 {
+    bda:LG1FAB079DA42DBFA7
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-02-24T14:06:51.007Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGB28C4CC3F34569D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:19:33.43Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC243BBA487FB0A18
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-18T16:36:31.178Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG01278  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01278 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "71/T00AG01278.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01278 ;
+        adm:logEntry        bda:LG1FAB079DA42DBFA7 , bda:LGB28C4CC3F34569D0 , bda:LGC243BBA487FB0A18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC09C733AC91C7823
+        a                   :Note ;
+        :noteText           "mahakarunika cittavisramana from a vision of the fifth dalai lama, received in 1666. see samten karmay, secret visions of the fifth dalai lama, pp. 23 and 52."@en .
+    
+    bdr:T00AG01278  a       :Topic ;
+        skos:altLabel       "mahakarunika"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po sems nyid ngal bso (dag snang rgya can lugs)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC09C733AC91C7823 .
+}

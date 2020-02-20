@@ -1,0 +1,52 @@
+@base          <bdg:T1KG5399> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG5399 {
+    bda:LG05FAAE669C554906
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T19:00:55.792Z"^^xsd:dateTime ;
+        adm:logMessage      "heavily revised with application of various notes; application and from chos rnam kun btus"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGE4D7FAC9A7CFBB45
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T16:58:54.378Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG5399  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG5399 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6b/T1KG5399.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG5399 ;
+        adm:logEntry        bda:LG05FAAE669C554906 , bda:LGE4D7FAC9A7CFBB45 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1728064A6DD393C7
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 885" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "chos rnam kun btus (quoting 'dul ba gzhi rgya cher 'grel pa las byung ba khag gcig ste, bstan 'gyur 'dul ba tsu pa 186 ba 4)\n1) nges brjod kyi rig byed; 2) mchod sbyin gyi rig byed; 3) snyan tshig gi rig byed; 4) srid srung gi rig byed.\nthese four vedas are the 1) rg veda; 2) yajurveda; 3) samaveda; 4) artharvaveda \nthe chos rnam kun btus (quoting the lde'u chos 'byung 113-9) gives another system:\nmu stegs pa'i rig byed bzhi ste: 1) ka ri sham pa; 2) rgyan gyi dra can; 3) sha sna can; 4) rig byed ma'o.\n\ndan martin: nges brjod / mchod sbyin / snyan tshig / srid srung ngo. 600 36-37.\n\njames valby: 4 vedas (snyan ngag, nges brjod, mchod sbyin, srid bsrung)\n\nrangjung yeshe:rig-veda, yajur-veda, sama-veda and the later addition atharva-veda.\n\nwiki: the rigveda, containing hymns to be recited by the hotṛ; 2) the yajurveda, containing formulas to be recited by the adhvaryu or officiating priest; 3) the samaveda, containing formulas to be sung by the udgātṛ; 4) the fourth is the atharvaveda, a collection of spells and incantations, apotropaic charms and speculative hymns."@en .
+    
+    bdr:NT4528F094A56193BE
+        a                   :Note ;
+        :noteText           "the oldest and most authoritative hindu sacred texts, composed in sanskrit and gathered into four collections; this topic is applied to works dealing with the vedic collections"@en .
+    
+    bdr:T1KG5399  a         :Topic ;
+        skos:prefLabel      "rig byed/"@bo-x-ewts , "veda"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1728064A6DD393C7 , bdr:NT4528F094A56193BE .
+}

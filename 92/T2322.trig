@@ -1,0 +1,46 @@
+@base          <bdg:T2322> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2322 {
+    bda:LG3231B0A6A2BD117B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:31:41.637Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGEFCD5EF7839795D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:08:04.43Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2322  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2322 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/T2322.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2322 ;
+        adm:logEntry        bda:LG3231B0A6A2BD117B , bda:LGEFCD5EF7839795D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT74DAAD88556D6EE8
+        a                   :Note ;
+        :noteText           "one of the chos skyong zab mo skor dgu of mchog gyur gling pa's discoveries"@en .
+    
+    bdr:T2322  a            :Topic ;
+        skos:prefLabel      "mgon po phyag drug (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT74DAAD88556D6EE8 .
+}

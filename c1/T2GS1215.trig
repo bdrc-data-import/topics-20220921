@@ -1,0 +1,41 @@
+@base          <bdg:T2GS1215> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1215 {
+    bda:LGE426FD41D0865A4C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-02T13:50:30.694Z"^^xsd:dateTime ;
+        adm:logMessage      "created; application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1215  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1215 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c1/T2GS1215.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1215 ;
+        adm:logEntry        bda:LGE426FD41D0865A4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC0EA538F12FB6379
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments, rituals, etc. connected with the 3rd of the 21 tara collection according to the tradition of suryagupta; this form of tara is yellow with one face and ten arms; her right hands hold a rosary, a sword, an arrow, a vajra and a staff; her left a silk ribbon, a noose, a lotus, a bell and a bow; she sits on a lotus and sun seat; she is crowned wih ratnasambhava, the master of her family\n\ndeviations: moon seat; staff shown as trident\n\ndeities of tibetan buddhism #276"@en .
+    
+    bdr:T2GS1215  a         :Topic ;
+        skos:altLabel       "gser mdog can gyi sgrol ma/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma gser mdog can/"@bo-x-ewts , "golden-colored tara"@en , "kanakavarnatara"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC0EA538F12FB6379 .
+}

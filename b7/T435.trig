@@ -1,0 +1,47 @@
+@base          <bdg:T435> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T435 {
+    bda:LG3076D71E7DF59AF0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-28T15:06:50.463Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG7CEE310A1570E4FD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-06T13:24:06.042Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T435  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T435 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b7/T435.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T435 ;
+        adm:logEntry        bda:LG3076D71E7DF59AF0 , bda:LG7CEE310A1570E4FD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT70AC9A9C69BE4351
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon hevajra as heruka, dark blue, with one face and two arms; with three red eyes and marked on the crown with aksobhya; his yellow hair streams upwards; his right hand brandishes a nine-pointed vajra and the left holds at the level of the heart a blood filled skull while in the armpit is a white khatvanga; he has a crown of five dry skulls and a long necklace of fity fresh heads; he is adorned with the five symbolic ornaments and ashes; he is either in ardhaparyanka (dancing posture with leg extended) or in alidha (right leg extended) he abides on a lotus, sun and corpse seat; \n\nhis consort is the mother vajranairatma (rdo rje bdag med ma) who is blue and holds a knife and skull; both are in the midst of a blazing fire of gnosis. \n\ntaranatha notes: heruka, heart of sri-hevajra. \n\n\ndeities of tibetan buddhism #71"@en .
+    
+    bdr:T435  a             :Topic ;
+        skos:altLabel       "dgyes rdor lhan skyes/"@bo-x-ewts ;
+        skos:prefLabel      "kye rdor lhan skyes/"@bo-x-ewts , "hevajra sahaja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT70AC9A9C69BE4351 .
+}

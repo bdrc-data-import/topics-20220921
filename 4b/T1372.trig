@@ -1,0 +1,36 @@
+@base          <bdg:T1372> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1372 {
+    bda:LG7D37B01AB86AE6BF
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-12-27T20:55:50.656Z"^^xsd:dateTime ;
+        adm:logMessage      "jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T1372  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1372 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "4b/T1372.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1372 ;
+        adm:logEntry        bda:LG7D37B01AB86AE6BF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1372  a            :Topic ;
+        skos:altLabel       "khog 'bugs/"@bo-x-ewts ;
+        skos:prefLabel      "khog dbub/"@bo-x-ewts , "survey"@en ;
+        :isRoot             true .
+}

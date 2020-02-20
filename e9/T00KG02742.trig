@@ -1,0 +1,55 @@
+@base          <bdg:T00KG02742> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00KG02742 {
+    bda:LG14B81EFF2ACFED1C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-28T10:57:42.95Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG4EF9A274C9FBEC03
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-21T16:52:48.082Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG95CA28C8C2DE5E2E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-31T11:17:39.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T00KG02742  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00KG02742 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e9/T00KG02742.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00KG02742 ;
+        adm:logEntry        bda:LG14B81EFF2ACFED1C , bda:LG4EF9A274C9FBEC03 , bda:LG95CA28C8C2DE5E2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTBD295FA32C01C688
+        a                   :Note ;
+        :locationStatement  "p. 2382" ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བླ་མ་སོགས་ཀྱི་ཞལ་གསུང་ལ་བརྟེན་ནས་ཤེས་དགོས་པའི་མན་ངག་སྙི་ང་པོར་དྲིལ་བའི་གཞུང་།"@bo .
+    
+    bdr:T00KG02742  a       :Topic ;
+        rdfs:seeAlso        bdr:T11MS49 ;
+        skos:prefLabel      "zhal shes/"@bo-x-ewts , "oral directions"@en , "亲训"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTBD295FA32C01C688 .
+}

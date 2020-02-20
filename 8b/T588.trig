@@ -1,0 +1,40 @@
+@base          <bdg:T588> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T588 {
+    bda:LGF96780214C0AE291
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-08T12:14:10.112Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T588  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T588 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8b/T588.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T588 ;
+        adm:logEntry        bda:LGF96780214C0AE291 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT61D0BB699E612929
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations connected with vajravarahi, who has the color of refined gold, one face, two arms, and three eyes.\n\ndeities of tibetan buddhism #85"@en .
+    
+    bdr:T588  a             :Topic ;
+        skos:prefLabel      "phag mo kurma pA dI/"@bo-x-ewts , "tortoise-legged varahi"@en , "kurmapadi-vajravarahi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT61D0BB699E612929 .
+}

@@ -1,0 +1,52 @@
+@base          <bdg:T01AG03136> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T01AG03136 {
+    bda:LG27068E206351F669
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-01T14:48:09.361Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG6A1C2405BF904202
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-04T11:08:10.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and descriptions"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF19D8351BD815FEE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T07:16:41.918Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T01AG03136  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T01AG03136 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "01/T01AG03136.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T01AG03136 ;
+        adm:logEntry        bda:LG27068E206351F669 , bda:LG6A1C2405BF904202 , bda:LGF19D8351BD815FEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT08BC0C6AC01D763C
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon mahakala, black with one face and four arms; his three eyes are red as banduka flowers and move around; his beard, eyebrows, and hair are tawny and stream upwards; his first right hand holds a knife, the first left a blood filled skull, one above the other at his heart; the other right hand holds a blazing sword and the other left a vajra marked trident with a snake; his lower body is wrapped in a fresh tiger skin; he is crowned with five dry human heads with black vajra finials; he has a long necklace of half a hundred blood dripping heads and is adorned with the six bone ornaments and snakes; roaring a loud laughter he abides in various lalita posture such as sattvaparyanka; he has an unbearable raksasa's body, corpulent, dwarfsh, and pot-bellied, very much agitated with extremely wrathful compassion; frowning in fury he bears frightful fangs; he possesses infinite expressions and changes such as great bravery, invincibility, pleasure, arrogance, and loud laughter; amid a mass of fire as of te era of destruction, enjoying all the delights he terrifies even the frightful; the principal is crowned with aksobhya.\n\nhis consort in his lap is mahakali (nag mo chen mo), pledge queen (dam tshig gi dbang mo = samayendrarani), embracing him; she is black, wrathful and amorous, naked with a crown and garland of dry skulls and loose, tawny hair; her right hand plays a damaru and her left holds a skull and embraces the father; in fresh bloom of youth she lacks other ornaments; the father and mother are sending out from their bodies, as messengers hosts of ravens, dogs, jackals, lions, birds, and black outcaste women.\n\non the points of the lower dharmodaya, come the black camundi holding a trident and a blood filled skull;  on the right point comes the red uma holding a knife and skull; on the left point comes the pale blue varahi (phag mo) holding a khatvanga and a human head.\n\non the front point of the lower dharmodaya comes the black yama holding a sword and a blood filled skll and riding a buffalo; on the right point comes the dark purple raksasa holding a knife and a skull full of human flesh and riding a black dog; on the left point comes mahesvara, ash-white, holding a damaru and trident and riding a tiger.\n\nat the four gates come the hammer, club, lotus, and sword bhairava, white, yellow, red and dark green, holding thir respective embles in the right hand and nooses in the left.\n\nin the four corners come the goddesses yellow kula (ku le), red kurukulla, blue kilaytr (phur 'debs ma) and green haradharani (?'phrog 'chang ma), semi peacerful and with an afectionate manner.\n\nthe male messengers are in pratyalidha posture (left leg extended) and resemble the father; tha matrkas are in alidha posture and resemble the mother.\n\nthe father and mother are sealed with the syllables of the armor heroes and heroines respectively; the father and mother are crowned with aksobhya and all the attendants with the principal.\n\nlineage of transmission: from nagarjuna and nagabodhi to santigupta who transmitted it to two of taranatha's teachers.\n\ndeities of tibetan buddhism #349."@en .
+    
+    bdr:T01AG03136  a       :Topic ;
+        skos:altLabel       "mgon po phyag bzhi pa zhi ba sbas pa'i lugs/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes mgon po phyag bzhi pa zhi ba sbas pa'i lugs/"@bo-x-ewts , "mahakala caturbhuja"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT08BC0C6AC01D763C .
+}

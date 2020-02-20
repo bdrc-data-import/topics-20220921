@@ -1,0 +1,40 @@
+@base          <bdg:T2GS1162> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1162 {
+    bda:LGE05A6CE105F1DDA9
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T16:37:48.102Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1162  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1162 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8f/T2GS1162.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1162 ;
+        adm:logEntry        bda:LGE05A6CE105F1DDA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1F403A3C5ED0D167
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and intitiations of kurukulle, red, with one face and four arms; the first pair holdinf an arrow with a red-utpala head and a bow of flowers drawn to her hear; the other right hand holds summning hook and the other left an utpala whose root forms a noose; she has three eyes and full breasts and is like a sixteen-year old; her tawny hair streams upwards; she is crowned with five dry skulls; she has a long necklace of fifty fresh heads; she is adorned with five bone ornaments and wears a tiger skin loincloth and abides in ardhaprayanka dancing posture with left leg extended amid red light rays and a blazing mass of fire;  her attendants are the white vajradakini from the east; the yellow ratnadakini from the south; the red padmadakini from the west; and the green karmadakini from the north; all of these hold a damaru and a skull and a khatvanga and are in a dancing posture; from her crown comes the wrathful hayagriva, red, with a club and a threatening forefinger \n\n\ndeities of tibetan buddhism  #201-205"@en .
+    
+    bdr:T2GS1162  a         :Topic ;
+        skos:prefLabel      "ku ru ku l+le gsang sgrub/"@bo-x-ewts , "secret practice kurukulla"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1F403A3C5ED0D167 .
+}

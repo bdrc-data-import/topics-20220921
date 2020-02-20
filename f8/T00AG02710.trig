@@ -1,0 +1,40 @@
+@base          <bdg:T00AG02710> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG02710 {
+    bda:LG5B8CC56B08E15B5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-03-02T15:08:22.179Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00AG02710  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG02710 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f8/T00AG02710.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG02710 ;
+        adm:logEntry        bda:LG5B8CC56B08E15B5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF96D1271CB862C01
+        a                   :Note ;
+        :noteText           "the period of the early transmission of buddhism to tibet, generally during the period between the reign of srong btsan sgam po and glang dar ma"@en .
+    
+    bdr:T00AG02710  a       :Topic ;
+        skos:prefLabel      "bstan pa snga dar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF96D1271CB862C01 .
+}

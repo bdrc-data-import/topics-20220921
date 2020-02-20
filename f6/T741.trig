@@ -1,0 +1,47 @@
+@base          <bdg:T741> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T741 {
+    bda:LG666CC9087107F0AC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T15:08:13.815Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG80482B8E48A5CF6A
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-20T01:23:23.512Z"^^xsd:dateTime ;
+        adm:logMessage      "sakyaraksita note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T741  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T741 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f6/T741.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T741 ;
+        adm:logEntry        bda:LG666CC9087107F0AC , bda:LG80482B8E48A5CF6A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC2DE9C69D83B964B
+        a                   :Note ;
+        :noteText           "this deity topic is applied to the goddess vetali, black and with tawny hair twisting to the left; her first pair of hands hold a sword and a blood-filled skull, the other pair a one-pointed vajra and a khatvanga; she has three eyes and bared fangs and is adorned with snakes and human heads, and wears a tiger skin loin cloth and an elephant skin scarf; she is amid a gale of fire among the great charnel grounds, surrounded by a hundred thousand matrka; from either side she is sending poisonous snake messengers.\n\nshe is is included in the group of transmissions from the 13th century indian master sakyaraksita; these were all received by taranatha from his master purnavajra; the lineage is different for deities of tibetan buddhism #258-260 which were received by purnavajra in south india from devasambhava\n\n\ndeities of tibetan buddhism #269."@en .
+    
+    bdr:T741  a             :Topic ;
+        skos:altLabel       "lha mo ro langs ma/"@bo-x-ewts ;
+        skos:prefLabel      "ro langs ma/"@bo-x-ewts , "vetali devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC2DE9C69D83B964B .
+}

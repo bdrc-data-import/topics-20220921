@@ -1,0 +1,41 @@
+@base          <bdg:T733> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T733 {
+    bda:LG19DB024E27F90C14
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-14T01:06:40.447Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T733  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T733 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b8/T733.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T733 ;
+        adm:logEntry        bda:LG19DB024E27F90C14 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1414F1A52A568708
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and empowerments focusing upon the great white-robed goddess; she is red, her left hand holding with the lotus fist upon her right thigh the stem of a red lotus, and her right taking a red gem that is on the center of its bloom at her heart; she is seated in vajraparyanka and adorned with a white scarf and so forth and with silks and jewels; she is complete with the requisites of a great empress of mantra.  \n\ndeities of tibetan buddhism #261."@en .
+    
+    bdr:T733  a             :Topic ;
+        skos:altLabel       "lha mo gos dkar mo/"@bo-x-ewts ;
+        skos:prefLabel      "gos dkar mo/"@bo-x-ewts , "the goddess pandaravasini"@en , "pandaravasini devi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1414F1A52A568708 .
+}

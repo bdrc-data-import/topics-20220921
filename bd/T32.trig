@@ -1,0 +1,33 @@
+@base          <bdg:T32> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T32 {
+    bda:T32  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T32 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "bd/T32.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6D05872D0DD089C8
+        a                   :Note ;
+        :noteText           "the nine stages or ways of practice; these are common among both rnying ma and bon\nhinayana\n1) the practice of the path of the sravaka\n2) the practice of the path of the pratyekabuddha\nmahayana\n3) the practice of the bodhisattva\nthe three outer tantras\n4) the practice of the kriya tantra\n5) the practice of the upa tantra\n6) the practice of the yoga tantra\nthe three inner tantras\n7) the practice of the mahayoga\n8) the practice of the anuyoga\n9) the practice of the atiyoga"@en .
+    
+    bdr:T32  a              :Topic ;
+        skos:prefLabel      "theg pa rim pa dgu/"@bo-x-ewts , "nine vehicles"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6D05872D0DD089C8 .
+}

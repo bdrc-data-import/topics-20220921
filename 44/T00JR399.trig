@@ -1,0 +1,57 @@
+@base          <bdg:T00JR399> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00JR399 {
+    bda:LG65476517B394AB2F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-01-30T16:54:11.896Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGBA6DDE1EA5B0877C
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-10-20T14:49:35.331Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:LGEE8E4C93AE31BD93
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-12-16T16:03:31.942Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF0047A484A6D89D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-12T13:49:13.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T00JR399  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00JR399 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "44/T00JR399.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00JR399 ;
+        adm:logEntry        bda:LG65476517B394AB2F , bda:LGBA6DDE1EA5B0877C , bda:LGEE8E4C93AE31BD93 , bda:LGF0047A484A6D89D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0541792E22A82A3E
+        a                   :Note ;
+        :noteText           "oblation rite"@en .
+    
+    bdr:T00JR399  a         :Topic ;
+        skos:altLabel       "gsol ka"@bo-x-ewts ;
+        skos:prefLabel      "gsol kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0541792E22A82A3E .
+}

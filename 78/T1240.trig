@@ -1,0 +1,44 @@
+@base          <bdg:T1240> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1240 {
+    bda:LG46A2EC98067AA40A
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-15T01:33:16.75Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG9E57169A4011066F
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-12T07:53:05.781Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1240  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1240 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "78/T1240.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1240 ;
+        adm:logEntry        bda:LG46A2EC98067AA40A , bda:LG9E57169A4011066F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8B2449DE5021E59F
+        a                   :Note ;
+        :noteText           "according to Ives Waldo, four hundred offerings [lamps, food, tsa tsa, and ngar mi or dri glud de bzhi po so so nas bya offering 100 each brgya rtsa re la ritual for eliminating obstacles] [IW]"@en .
+    
+    bdr:T1240  a            :Topic ;
+        skos:prefLabel      "brgya bzhi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B2449DE5021E59F .
+}

@@ -1,0 +1,64 @@
+@base          <bdg:T2398> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2398 {
+    bda:LG0B66EF0213FF8B4A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-16T16:25:09.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and note from T427"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG0E3872576F90847B
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-21T16:31:10.841Z"^^xsd:dateTime ;
+        adm:logMessage      "* added more in fo"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG3B9EF0344A9607FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:08:29.032Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG71E4DADDCF8671E7
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-04-15T14:34:02.331Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGC3F7EAB7E9B4C7ED
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-20T05:23:55.304Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew T427 in favor of T2398"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:T2398  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2398 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d4/T2398.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2398 ;
+        adm:logEntry        bda:LG0B66EF0213FF8B4A , bda:LG0E3872576F90847B , bda:LG3B9EF0344A9607FC , bda:LG71E4DADDCF8671E7 , bda:LGC3F7EAB7E9B4C7ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE65F5EE44CC43CFF
+        a                   :Note ;
+        :noteText           "this keyword is assigned generically to summaries of texts; the keyword sometimes overlaps with the sa bcad or outlines"@en .
+    
+    bdr:T2398  a            :Topic ;
+        skos:altLabel       "bsdus don/"@bo-x-ewts ;
+        skos:prefLabel      "don bsdus/"@bo-x-ewts , "summary"@en , "概要"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTE65F5EE44CC43CFF .
+}

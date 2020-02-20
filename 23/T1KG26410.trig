@@ -1,0 +1,46 @@
+@base          <bdg:T1KG26410> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG26410 {
+    bda:LG2E7FBEB1D726CBB7
+        a                   adm:LogEntry ;
+        adm:logDate         "2017-05-12T11:09:14.568Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG59240BCE0E132ADF
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-18T13:45:07.278Z"^^xsd:dateTime ;
+        adm:logMessage      "modified"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG26410  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG26410 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "23/T1KG26410.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG26410 ;
+        adm:logEntry        bda:LG2E7FBEB1D726CBB7 , bda:LG59240BCE0E132ADF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT61D34BF15513C259
+        a                   :Note ;
+        :noteText           "topic for related to all kinds of animals"@en .
+    
+    bdr:T1KG26410  a        :Topic ;
+        skos:prefLabel      "ri dwags dang gcan gzan/"@bo-x-ewts , "animals"@en ;
+        :isRoot             true ;
+        :note               bdr:NT61D34BF15513C259 .
+}

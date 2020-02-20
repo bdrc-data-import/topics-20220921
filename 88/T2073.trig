@@ -1,0 +1,54 @@
+@base          <bdg:T2073> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2073 {
+    bda:LG4226A7E12742678E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T18:55:59.71Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG43EC94E87C0E905F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T18:52:59.596Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LG5154FD1473E42313
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:06:33.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LG99A1DC5EB78A2526
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T18:55:36.538Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T2073  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2073 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "88/T2073.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2073 ;
+        adm:logEntry        bda:LG4226A7E12742678E , bda:LG43EC94E87C0E905F , bda:LG5154FD1473E42313 , bda:LG99A1DC5EB78A2526 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2073  a            :Topic ;
+        skos:altLabel       "十二相成道"@zh-hans ;
+        skos:prefLabel      "sangs rgyas kyi mdzad pa bcu gnyis/"@bo-x-ewts , "twelve acts of the buddha"@en , "十二宏化"@zh-hans ;
+        :isRoot             true .
+}

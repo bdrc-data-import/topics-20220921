@@ -1,0 +1,53 @@
+@base          <bdg:T560> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T560 {
+    bda:LG0797DBA69D9FBA31
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-27T21:50:24.638Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG80A63ECA052F29F0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T17:33:13.935Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGC2F39314F8529777
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-27T13:17:33.045Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T560  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T560 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "88/T560.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T560 ;
+        adm:logEntry        bda:LG0797DBA69D9FBA31 , bda:LG80A63ECA052F29F0 , bda:LGC2F39314F8529777 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2B5BE054B1D5A795
+        a                   :Note ;
+        :noteText           "this deity topic is applies to a red female deity, one of the dmar po skor gsum, a group of three red deities especially propitiated by the followers of the sa skya tradition. this form of the deity also comes from the hevajra tantra according to the transmission of lalitavajra.\n\nthe goddess is red with one face and four arms; the first pair of arms draws a bow of flowers and a red-utpala headed arrow to her ear; the other right hand holds a summoning hook and the other left an utpala whose root forms a noose; with fangs just showing, three eyes and full breasts, she is like a sixteen year old; her tawny hair streams upwards, she is crowned with five dry skulls, has a long necklace of fifty fresh heads; she wears a tiger skin loincloth; she abides in ardhaparyanka dancing posture, left leg extended on a human corpse whose head shows to her left, amid red light rays and a mass of fire; she is crowned with amitabha; her abode is the cave of knowledge (rig byed kyi phug, vedaguhya)\n\n\ndeities of tibetan buddhism #10"@en .
+    
+    bdr:T560  a             :Topic ;
+        skos:altLabel       "rig byed ma dmar po/"@bo-x-ewts ;
+        skos:prefLabel      "ku ru kul+le dmar po/"@bo-x-ewts , "rakta kurukulla"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT2B5BE054B1D5A795 .
+}

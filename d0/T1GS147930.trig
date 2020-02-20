@@ -1,0 +1,41 @@
+@base          <bdg:T1GS147930> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS147930 {
+    bda:LGD3CED7FC3900EC56
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-25T16:26:01.125Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS147930  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS147930 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d0/T1GS147930.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS147930 ;
+        adm:logEntry        bda:LGD3CED7FC3900EC56 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT977BD3F9681A2AB7
+        a                   :Note ;
+        :noteText           "dharma protector; mahakala riding on a tiger from the visionary revelations through atisa; the transmission lineage runs: rdo rje 'chang; ye shes mkha' 'gro; grub thob bi ha ra; rat+na kI rti; bi ri se haM; jo bo rje dpal mar me mdzad; after atisa, the transmission runs 'ban dkon mchog blo gros; bla ma shAkya 'bar; mkhar ston nam mkha'; lce mdo sde seng+ge; rgwa lo rnam rgyal rdo rje; his son shes rab seng+ge; gcung ye shes don grub; rin chen dpal bzang; lce dbang phyug rdo rje; rin chen rgyal mtshan; tshar chen blo gsal rgya mtsho"@en .
+    
+    bdr:T1GS147930  a       :Topic ;
+        skos:altLabel       "jo bo rje lha gcig nas brgyud pa'i mgon po stag zhon/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po stag zhon (jo bo rje lha gcig nas brgyud pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT977BD3F9681A2AB7 .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T1KG21096> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG21096 {
+    bda:LG394813CAA0F3CC12
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-01-22T16:52:18.612Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG462AFE50F6DE3A7E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-30T10:37:35.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1KG21096  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG21096 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "23/T1KG21096.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG21096 ;
+        adm:logEntry        bda:LG394813CAA0F3CC12 , bda:LG462AFE50F6DE3A7E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7199AC8E83D28A89
+        a                   :Note ;
+        :noteText           "The eight essential subjects and treatises studied in Kagyu tradition:\n1. 'dul ba\n2. mdzod\n3. tshad ma\n4. sher phyin\n5. dbu ma\n6. rgyud bla ma\n7. zab mo nang don\n8. brtags gnyis"@en .
+    
+    bdr:T1KG21096  a        :Topic ;
+        skos:altLabel       "mdo sngags gzhung chen brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "gzhung chen brgyad/"@bo-x-ewts , "eight essential subjects"@en , "显密八大典籍"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT7199AC8E83D28A89 .
+}

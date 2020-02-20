@@ -1,0 +1,54 @@
+@base          <bdg:T260> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T260 {
+    bda:LG278ACF1ED0B0FCFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-27T15:11:49.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added rtsom sgrung"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG28DBCE3264548C85
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T11:54:44.559Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name to tibetan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGCA6BADB266C26E68
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-06-15T09:16:32.988Z"^^xsd:dateTime ;
+        adm:logMessage      "moved \"brtsams sgrung\" to 1st line"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGEBDCC6FA201C8585
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-03-13T14:46:15.973Z"^^xsd:dateTime ;
+        adm:logMessage      "sgrung deb ring po changed to brtsams sgrung ring mo/"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T260  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T260 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/T260.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T260 ;
+        adm:logEntry        bda:LG278ACF1ED0B0FCFB , bda:LG28DBCE3264548C85 , bda:LGCA6BADB266C26E68 , bda:LGEBDCC6FA201C8585 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T260  a             :Topic ;
+        skos:altLabel       "brtsams sgrung ring mo/"@bo-x-ewts , "rtsom sgrung /"@bo-x-ewts , "sgrung rtsom/"@bo-x-ewts ;
+        skos:prefLabel      "brtsams sgrung /"@bo-x-ewts , "novel"@en ;
+        :isRoot             true .
+}

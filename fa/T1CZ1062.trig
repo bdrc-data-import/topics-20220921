@@ -1,0 +1,41 @@
+@base          <bdg:T1CZ1062> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ1062 {
+    bda:LG6BC423176662DC13
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-01T14:01:06.27Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG6E0FCC5A1D9977B7
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-08-09T19:38:37.937Z"^^xsd:dateTime ;
+        adm:logMessage      "variant name added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1CZ1062  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ1062 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fa/T1CZ1062.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ1062 ;
+        adm:logEntry        bda:LG6BC423176662DC13 , bda:LG6E0FCC5A1D9977B7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1CZ1062  a         :Topic ;
+        skos:altLabel       "gnod sbyin k+She Ta pA la yab yum/"@bo-x-ewts , "k+She tra pA la/"@bo-x-ewts ;
+        skos:prefLabel      "k+She Ta pA la/"@bo-x-ewts ;
+        :isRoot             true .
+}

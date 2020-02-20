@@ -1,0 +1,47 @@
+@base          <bdg:T416> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T416 {
+    bda:LG67E45C1548A80BAD
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T12:10:16.95Z"^^xsd:dateTime ;
+        adm:logMessage      "application note changed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG966A31F6291E69A8
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T10:51:38.054Z"^^xsd:dateTime ;
+        adm:logMessage      "added see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T416  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T416 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ff/T416.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T416 ;
+        adm:logEntry        bda:LG67E45C1548A80BAD , bda:LG966A31F6291E69A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT29030D45947999C2
+        a                   :Note ;
+        :noteText           "the santikahoma is performed to render peaceful; this generic topic is used for deity rituals connected with a specific deity"@en .
+    
+    bdr:T416  a             :Topic ;
+        rdfs:seeAlso        bdr:T1020 , bdr:T8 ;
+        skos:prefLabel      "zhi ba'i sbyin sreg"@bo-x-ewts , "pacifying fire ritual"@en , "santikahomavidhi"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT29030D45947999C2 .
+}

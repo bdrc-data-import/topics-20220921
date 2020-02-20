@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1232> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1232 {
+    bda:LG8E46EAA8E265D660
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:45:53.779Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF31537169F0AE785
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-06T12:58:29.814Z"^^xsd:dateTime ;
+        adm:logMessage      "created with note of application"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1232  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1232 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ad/T2GS1232.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1232 ;
+        adm:logEntry        bda:LG8E46EAA8E265D660 , bda:LGF31537169F0AE785 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT0E28A2E71130ED56
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and and rituals focusing on mahakala who is black as the cloud at the end of time, with one face and two arms, the right hand brandishing a knife, the left holding at his heart a skull with a heart; blood trickles from the corner of his mouth; he is crowned with heruka.\n\nto the northeast of the principal is black devi (lha mo nag mo) holding a trident and a blood filled skull; in front is secret karma mahakala (gsang ba'i las mgon), dark red, with a knife and a skull and jackal faced; on the right is dark green yama, holding a sword and a blood filled skull; on the left, karma mahakala mara (las mgon bdud) raven faced holding a knife and skull.\n\noutside are east black mahakali, holding knife and blood filled skull and riding a small mule; south black vikarali holding a knife and flood filled skull and riding a raven; sest black bukiarali (in the mantra sukarali) holding a vajra and a dagger and riding a vetala: north black kankali holding a trident and a blood filled skull with a corpse seat; all are complete with fierce apparel.\n\ndeities of tibetan buddhism 373."@en .
+    
+    bdr:T2GS1232  a         :Topic ;
+        skos:prefLabel      "mgon po gri gug lha dgu ma dz+nyA'i lugs/"@bo-x-ewts , "nine deity knife mahakala in the tradition of jnana"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0E28A2E71130ED56 .
+}

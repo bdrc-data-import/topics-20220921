@@ -1,0 +1,34 @@
+@base          <bdg:T1398> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1398 {
+    bda:LG5D8C9FA2410350FF
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-02-01T16:35:30.821Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1398  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1398 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "9e/T1398.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1398 ;
+        adm:logEntry        bda:LG5D8C9FA2410350FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1398  a            :Topic ;
+        skos:prefLabel      "sangs rgyas dus chen/"@bo-x-ewts ;
+        :isRoot             true .
+}

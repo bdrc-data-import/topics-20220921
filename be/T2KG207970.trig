@@ -1,0 +1,36 @@
+@base          <bdg:T2KG207970> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2KG207970 {
+    bda:LGBCBCE37905A666B9
+        a                   adm:LogEntry ;
+        adm:logDate         "2019-07-08T16:17:20.615Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T2KG207970  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2KG207970 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "be/T2KG207970.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2KG207970 ;
+        adm:logEntry        bda:LGBCBCE37905A666B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2KG207970  a       :Topic ;
+        skos:altLabel       "bod gzhung phyi dril las khungs/"@bo-x-ewts , "the department of information and international relations (DIIR), central tibetan administration"@en ;
+        skos:prefLabel      "phyi dril las khungs/"@bo-x-ewts , "the department of information and international relations (DIIR)"@en ;
+        :isRoot             true .
+}

@@ -1,0 +1,84 @@
+@base          <bdg:T1683> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1683 {
+    bda:LG066626A5E7289CA2
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T14:55:20.271Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG51FA595139D7B0AF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-09T11:57:55.35Z"^^xsd:dateTime ;
+        adm:logMessage      "linked to sbyang chog, as a variant spelling"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG5B0B31686A954FF7
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-02T16:17:08.467Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T012AG03341 to T978"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG73AA023742EC2ED1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T18:39:59.668Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T01AG03285 to T810"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGB5B5442EF06033CB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-17T13:35:14.317Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T01AG03285 (gnas 'dren)"@en .
+    
+    bda:LGD36D8A698395BD13
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T16:29:56.019Z"^^xsd:dateTime ;
+        adm:logMessage      "Added SeeAlso T1683"@en .
+    
+    bda:LGE7CB5E3BFCE9B891
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-03-09T11:52:55.388Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from RYWiki"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGEFE7F71D46AE14D0
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T14:57:50.558Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T012AG03341 (bsreg sbyong)"@en .
+    
+    bda:T1683  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1683 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "5c/T1683.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1683 ;
+        adm:logEntry        bda:LG066626A5E7289CA2 , bda:LG51FA595139D7B0AF , bda:LG5B0B31686A954FF7 , bda:LG73AA023742EC2ED1 , bda:LGB5B5442EF06033CB , bda:LGD36D8A698395BD13 , bda:LGE7CB5E3BFCE9B891 , bda:LGEFE7F71D46AE14D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT35E3AC75660B169E
+        a                   :Note ;
+        :noteText           "inscription-ritual performed for dead persons"@en .
+    
+    bdr:NTE5AE48C9E386DC03
+        a                   :Note ;
+        :noteText           "purification ritual for the deceased; see also the variant form sbyang chog"@en .
+    
+    bdr:T1683  a            :Topic ;
+        rdfs:seeAlso        bdr:T175 , bdr:T810 , bdr:T978 ;
+        skos:prefLabel      "byang chog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT35E3AC75660B169E , bdr:NTE5AE48C9E386DC03 .
+}

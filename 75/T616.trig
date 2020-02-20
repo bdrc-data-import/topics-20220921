@@ -1,0 +1,40 @@
+@base          <bdg:T616> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T616 {
+    bda:LG3636FDCA3C2ABA5E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-11T14:26:36.214Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T616  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T616 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "75/T616.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T616 ;
+        adm:logEntry        bda:LG3636FDCA3C2ABA5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB28246E400593E19
+        a                   :Note ;
+        :noteText           "according to yogatantra see the entry under four miracles- 1) {sems dpa'i rnal 'byor lngags phyi pa gsum}; 2) {rnal 'byor chen po bskyed pa ma (error:)haa yo ga}; 3) {yongs su rnal 'byor lung a nu yo ga} 4) {shin tu rnal 'byor man dag a ti yo ga'o} (chn]. the * [bka' brgyud pas phyag rgya chen po bsgom pai lam zhig ste, sems la dmigs pa rtse gcig tu gtad pas rtse gcig dang, sems spros bral du rtogs pas spros bral dang, snang sems ro gcig tu rtogs pas ro gcig dang, mtshan bcas kyis sgom du med pas sgom med bcas bzhi'i]. the * [in kagyu mahamudra meditation path, sems la dmigs pa rtse gcig tu gtad pas rtse gcig dang, sems spros bral du rtogs pas spros bral dang, snang sems ro gcig tu rtogs pas ro gcig dang, mtshan bcas kyis sgom du med pas sgom med bcas bzhi."@en .
+    
+    bdr:T616  a             :Topic ;
+        skos:altLabel       "rnal 'byor bzhi rim/"@bo-x-ewts ;
+        skos:prefLabel      "rnal 'byor bzhi/"@bo-x-ewts , "our yogas"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB28246E400593E19 .
+}

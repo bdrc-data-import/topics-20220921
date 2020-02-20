@@ -1,0 +1,40 @@
+@base          <bdg:T1AT437> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1AT437 {
+    bda:LG9D2A6B66E6610C77
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-10T14:33:18.022Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en .
+    
+    bda:T1AT437  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1AT437 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c4/T1AT437.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1AT437 ;
+        adm:logEntry        bda:LG9D2A6B66E6610C77 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFEC708C81980ABAA
+        a                   :Note ;
+        :noteText           "consecrating ritual for offering articles including ritual obejects and substance offered to the deities"@en .
+    
+    bdr:T1AT437  a          :Topic ;
+        rdfs:comment        "consecrating ritual for offering articles including ritual obejects and substance offered to the deities" ;
+        skos:prefLabel      "mchod rdzas byin rlabs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFEC708C81980ABAA .
+}

@@ -1,0 +1,47 @@
+@base          <bdg:T8LS16594> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16594 {
+    bda:LG4126B58BE778551F
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-31T19:43:43.417Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGEB666CF5982D9E07
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-05-28T09:18:14.21Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16594  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16594 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a8/T8LS16594.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16594 ;
+        adm:logEntry        bda:LG4126B58BE778551F , bda:LGEB666CF5982D9E07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT970AFAC8F5BECB80
+        a                   :Note ;
+        :locationStatement  "vol. 1, p. 83" ;
+        :noteSource         bdr:MW1PD107937 .
+    
+    bdr:T8LS16594  a        :Topic ;
+        skos:prefLabel      "gtsug tor gdugs dkar mo/"@bo-x-ewts , "ushnishasitatapatra"@sa-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT970AFAC8F5BECB80 .
+}

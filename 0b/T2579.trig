@@ -1,0 +1,42 @@
+@base          <bdg:T2579> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2579 {
+    bda:LG5B41D64B082F2861
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-14T11:01:36.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added english name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG9B2B05B953E0774D
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-25T11:56:08.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also, T536"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2579  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2579 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0b/T2579.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2579 ;
+        adm:logEntry        bda:LG5B41D64B082F2861 , bda:LG9B2B05B953E0774D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2579  a            :Topic ;
+        rdfs:seeAlso        bdr:T536 ;
+        skos:prefLabel      "'don 'grigs/"@bo-x-ewts , "compilation of recitations"@en ;
+        :isRoot             true .
+}

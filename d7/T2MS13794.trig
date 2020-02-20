@@ -1,0 +1,47 @@
+@base          <bdg:T2MS13794> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS13794 {
+    bda:LG126CDADFD758DD3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-06T15:23:50.956Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG3A882C04929293CC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-22T15:57:04.469Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC6159DD45187CE51
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T12:49:02.921Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS13794  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS13794 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d7/T2MS13794.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS13794 ;
+        adm:logEntry        bda:LG126CDADFD758DD3E , bda:LG3A882C04929293CC , bda:LGC6159DD45187CE51 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2MS13794  a        :Topic ;
+        skos:prefLabel      "sman rtsis/"@bo-x-ewts , "medicine and astrology / astronomy"@en ;
+        :isRoot             true .
+}

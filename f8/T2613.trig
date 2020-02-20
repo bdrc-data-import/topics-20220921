@@ -1,0 +1,42 @@
+@base          <bdg:T2613> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2613 {
+    bda:LG913C1D4243382AFC
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-13T14:31:53.342Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew in favor of T18"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2613  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2613 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f8/T2613.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2613 ;
+        adm:logEntry        bda:LG913C1D4243382AFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT65E79636FB555A0A
+        a                   :Note ;
+        :locationStatement  "v. 68-69" ;
+        :noteSource         bdr:MW20578 ;
+        :noteText           "the rin chen gter mdzod chen mo groups rituals for the offering of fragrant smells and first portions under a category (snang srid zhi bder sgrub pa bsang gsur phud mchog):\n1) gnam sa snang brgyad bsang gter (mnga' bdag myang ral nyi ma 'od zer)\n2) phud rab rgyas pa (klong chen pa dri med 'od zer)\n3) sde brgyad bcos thabs (gnubs chen sangs rgyas ye shes)\n4) gtsug lag rtsis kyi lha rnams mchod thabs (smin gling lo chen d+harma shrI)\n5) bsang mchod bde legs kun 'byung (klong chen pa) and rgyags rngan (rgyal sras legs pa). both of these are written by gsang bdag 'phrin las lhun grub.\n6) ri bo bsang mdzod (from the rig 'dzin srog sgrub of lha btsun nam mkha' 'jigs med)\n7) rtsa gsum bsang mchod (stag sham nus ldan rdo rje's pad+ma yongs grol)\n8) bsang rngan, brngan mdos, gzhi bdag rten bkol (mchog gyur gling pa bla ma dngos grub rgya mtsho)\n9) gsur mchod (gu ru chos kyi dbang phyug bla ma gsang 'dus)\n10) dkar dmar gsur mchod smon lam bcas (mchog gyur gling pa)\n11) dkar dmar gsur rkyang (kong sprul)"@en .
+    
+    bdr:T2613  a            :Topic ;
+        skos:prefLabel      "bsangs gsur phud mchod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT65E79636FB555A0A .
+}

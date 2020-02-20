@@ -1,0 +1,56 @@
+@base          <bdg:T3CN2033> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN2033 {
+    bda:LG11A2F225A6CDF9E1
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-23T09:02:03.091Z"^^xsd:dateTime ;
+        adm:logMessage      "added description & associated works"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG75322DBAD43CCE92
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-22T16:43:48.964Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGA1AAC2D47F197090
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-25T10:38:35.875Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGFC603F197F4653F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-23T15:03:03.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added seeAlso"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T3CN2033  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN2033 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b8/T3CN2033.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN2033 ;
+        adm:logEntry        bda:LG11A2F225A6CDF9E1 , bda:LG75322DBAD43CCE92 , bda:LGA1AAC2D47F197090 , bda:LGFC603F197F4653F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T3CN2033  a         :Topic ;
+        rdfs:comment        "The six transcendent actions of generosity {sbyin pa}, discipline {tshul khrims}, patience {bzod pa}, diligence {bsam gtan}, concentration {bsam gtan}, and discriminating knowledge {she srab}." ;
+        rdfs:seeAlso        bdr:T1722 , bdr:T1988 , bdr:T4CZ16839 ;
+        skos:altLabel       "pha rol tu phyin pa drug"@bo-x-ewts , "phyin drug"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin drug"@bo-x-ewts , "six paramitas"@en , "六度"@zh-hans ;
+        :isRoot             true .
+}

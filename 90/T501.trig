@@ -1,0 +1,47 @@
+@base          <bdg:T501> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T501 {
+    bda:LGC45B13D4B0245EC4
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-30T15:10:09.907Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1882 (srog sgrub)"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LGFA39ED1B005E604D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-25T05:29:58.513Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added; no visualization"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T501  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T501 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "90/T501.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T501 ;
+        adm:logEntry        bda:LGC45B13D4B0245EC4 , bda:LGFA39ED1B005E604D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE1299F2B4D440F66
+        a                   :Note ;
+        :noteText           "this term is applied to a female protector of the rnying ma tradition"@en .
+    
+    bdr:T501  a             :Topic ;
+        rdfs:seeAlso        bdr:T1882 ;
+        skos:prefLabel      "ma mo srog sgrub ma (srung ma)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE1299F2B4D440F66 .
+}

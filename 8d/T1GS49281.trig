@@ -1,0 +1,46 @@
+@base          <bdg:T1GS49281> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS49281 {
+    bda:LG1A450E3F8BF5A1F5
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-11T16:43:51.589Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG921D6A19A1A42096
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:11:47.38Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS49281  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS49281 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8d/T1GS49281.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS49281 ;
+        adm:logEntry        bda:LG1A450E3F8BF5A1F5 , bda:LG921D6A19A1A42096 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT44C8EA3BE36181DD
+        a                   :Note ;
+        :noteText           "here are classed works dealing with the rasa, efficacy, and methods of recognition of materia medica in the tibetan pharmacopoeia"@en .
+    
+    bdr:T1GS49281  a        :Topic ;
+        skos:prefLabel      "'khrungs dpe/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT44C8EA3BE36181DD .
+}

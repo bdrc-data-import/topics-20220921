@@ -1,0 +1,40 @@
+@base          <bdg:T661> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T661 {
+    bda:LGE92B8388ED661BCE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T14:08:20.114Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T661  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T661 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "12/T661.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T661 ;
+        adm:logEntry        bda:LGE92B8388ED661BCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT72128B1C8152DF7D
+        a                   :Note ;
+        :noteText           "this topic is applied to the sahaja form of hayagriva without consort as taught by the tradition of atisa; the deity is ruby color, with one face, two arms, and three eyes; cf. deities of tibetan buddhism #163"@en .
+    
+    bdr:T661  a             :Topic ;
+        skos:prefLabel      "rta mgrin lhan cig skyes pa jo bo lugs/"@bo-x-ewts , "hayagriva sahaja ekavira"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT72128B1C8152DF7D .
+}

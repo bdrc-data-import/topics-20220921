@@ -1,0 +1,59 @@
+@base          <bdg:T1PD85357> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD85357 {
+    bda:LG368BE7BBCCCB20A6
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-01T16:09:21.278Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG4A16B4FC4FE08654
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-05-01T16:13:41.432Z"^^xsd:dateTime ;
+        adm:logMessage      "refreshed"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LG55255608488F28FB
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-23T11:18:56.911Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGF912FAF950E47ACF
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-23T11:04:22.637Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGF91E5EA25638680E
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T13:26:44.719Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T1PD85357  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD85357 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "23/T1PD85357.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD85357 ;
+        adm:logEntry        bda:LG368BE7BBCCCB20A6 , bda:LG4A16B4FC4FE08654 , bda:LG55255608488F28FB , bda:LGF912FAF950E47ACF , bda:LGF91E5EA25638680E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T1PD85357  a        :Topic ;
+        skos:prefLabel      "rang gi lo rgyus/"@bo-x-ewts , "autobiography"@en ;
+        :isRoot             true .
+}

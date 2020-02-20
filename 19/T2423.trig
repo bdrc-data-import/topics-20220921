@@ -1,0 +1,56 @@
+@base          <bdg:T2423> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2423 {
+    bda:LG07030F291F0C7FD4
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-28T12:32:14.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added all names and edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG2CE3C5A7F3D428D6
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-04T13:13:11.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG9517589D83FE7F1C
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-30T10:21:09.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added description: \"Kanjur Canonical Text\""@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGD319DF5853D3D3C6
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-04T15:50:40.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added 88 associated works & nodes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2423  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2423 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/T2423.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2423 ;
+        adm:logEntry        bda:LG07030F291F0C7FD4 , bda:LG2CE3C5A7F3D428D6 , bda:LG9517589D83FE7F1C , bda:LGD319DF5853D3D3C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T2423  a            :Topic ;
+        rdfs:comment        "bde bar gshegs pa'i bka' 'gyur ro cog" , "Kanjur Canonical Text" ;
+        rdfs:seeAlso        bdr:T1129 ;
+        skos:altLabel       "bka' 'gyur ro 'tshal/"@bo-x-ewts , "rgyal ba'i bka' 'gyur ro cog"@bo-x-ewts , "Kanjur"@en-x-mixed , "甘珠尔大藏经"@zh-hans , "gan zhu er"@zh-latn-pinyin-x-ndia , "gan zhu er da zang jing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bka' 'gyur/"@bo-x-ewts , "Kagyur"@en-x-mixed , "甘珠尔"@zh-hans ;
+        :isRoot             true .
+}

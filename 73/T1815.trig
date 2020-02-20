@@ -1,0 +1,46 @@
+@base          <bdg:T1815> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1815 {
+    bda:LGC67E32CEC5DFC93C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-05-13T15:32:22.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added more names of gter ston to the gter ma"@en ;
+        adm:logWho          bdr:U00031 .
+    
+    bda:LGEAC61837CA71C630
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-14T14:42:03.582Z"^^xsd:dateTime ;
+        adm:logMessage      "note"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T1815  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1815 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "73/T1815.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1815 ;
+        adm:logEntry        bda:LGC67E32CEC5DFC93C , bda:LGEAC61837CA71C630 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD213E4628F973C03
+        a                   :Note ;
+        :noteText           "one of the zab pa skor bdun, a treasure revealed by mchog gyur gling pa 1856 at Yel rgyal nam mkha’ mdzod"@en .
+    
+    bdr:T1815  a            :Topic ;
+        skos:prefLabel      "thugs sgrub dgongs pa kun 'dus (mchog gyur gling pa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD213E4628F973C03 .
+}

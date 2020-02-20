@@ -1,0 +1,41 @@
+@base          <bdg:T3JT13429> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3JT13429 {
+    bda:LG5A1FEE99671B0617
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-06-09T09:49:34.07Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG8BF9C731988B01A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-19T13:07:40.191Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T279"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T3JT13429  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3JT13429 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d4/T3JT13429.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3JT13429 ;
+        adm:logEntry        bda:LG5A1FEE99671B0617 , bda:LG8BF9C731988B01A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T279 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T3JT13429  a        :Topic ;
+        skos:prefLabel      "bshad rgyud/"@bo-x-ewts ;
+        :isRoot             true .
+}

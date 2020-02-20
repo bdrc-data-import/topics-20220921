@@ -1,0 +1,62 @@
+@base          <bdg:T2CN4770> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2CN4770 {
+    bda:LG4BF003C0343EE9D2
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:02:36.177Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGAABE100AA7CEDD4E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-20T12:07:16.87Z"^^xsd:dateTime ;
+        adm:logMessage      "created records"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGAC9125C9D03B7574
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-28T11:00:35.931Z"^^xsd:dateTime ;
+        adm:logMessage      "released with works associated"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGF9B5C6108241FB48
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-21T09:38:02.773Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T2CN4770  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2CN4770 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1e/T2CN4770.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2CN4770 ;
+        adm:logEntry        bda:LG4BF003C0343EE9D2 , bda:LGAABE100AA7CEDD4E , bda:LGAC9125C9D03B7574 , bda:LGF9B5C6108241FB48 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0E77C38E5BDBBDE3
+        a                   :Note ;
+        :noteText           "the idealized guru in the form gzi brjid rdo rje from the rig 'dzin thugs thig revelations of gter bdag gling pa."@en .
+    
+    bdr:NT71CE733201EB7D1B
+        a                   :Note ;
+        :noteText           "w22130-5897 (page 32) སླེ་ལུང་རྗེ་དྲུང་བཞད་པའི་རྡོ་རྗེས་ཆོས་རྒྱལ་གཏེར་བདག་གླིང་པའི་གཏེར་གསར་རིག་འཛིན་ཐུགས་ཐིག་གི་སྒོམ་བཟླས་ལ་གཞོལ་བའི་ཚེ་ཞིག་ལ་དག་སྣང་དུ་སྩལ་ཞེས་འཁོད།"@en .
+    
+    bdr:T2CN4770  a         :Topic ;
+        skos:prefLabel      "gu ru gzi brjid rdo rje/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0E77C38E5BDBBDE3 , bdr:NT71CE733201EB7D1B .
+}

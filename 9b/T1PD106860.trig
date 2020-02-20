@@ -1,0 +1,58 @@
+@base          <bdg:T1PD106860> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD106860 {
+    bda:LG4089408F8505EC30
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-15T13:00:21.579Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG88CC5B3F64BD4CAB
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-06T15:23:25.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGC0213FAB78244A8F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-22T12:15:50.372Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T1171 mo dpe"@en .
+    
+    bda:LGD0B2938BE770189F
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-25T15:21:33.713Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1PD106860  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD106860 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9b/T1PD106860.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD106860 ;
+        adm:logEntry        bda:LG4089408F8505EC30 , bda:LG88CC5B3F64BD4CAB , bda:LGC0213FAB78244A8F , bda:LGD0B2938BE770189F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT36C74F02DC651FEB
+        a                   :Note ;
+        :noteText           "prognostication through divinatory method"@en .
+    
+    bdr:T1PD106860  a       :Topic ;
+        rdfs:seeAlso        bdr:T1171 ;
+        skos:altLabel       "mo phywa/"@bo-x-ewts , "phywa mo/"@bo-x-ewts ;
+        skos:prefLabel      "mo/"@bo-x-ewts , "divination"@en ;
+        :isRoot             true ;
+        :note               bdr:NT36C74F02DC651FEB .
+}

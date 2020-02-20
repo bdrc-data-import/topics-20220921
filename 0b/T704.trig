@@ -1,0 +1,46 @@
+@base          <bdg:T704> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T704 {
+    bda:LG74A0003F3EAA8A94
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-03T12:23:09.189Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGEFF40AC2619D7AD3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T16:56:21.66Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T704  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T704 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0b/T704.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T704 ;
+        adm:logEntry        bda:LG74A0003F3EAA8A94 , bda:LGEFF40AC2619D7AD3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9AAE30049B821EE9
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the yellow lady parnasabari (leaf-clad wild woman) whose color is like refined gold; she has three faces and six arms; her principal face is yellow and wrathful with an amorous sentiment; her right face is white and tranquil; her left is red and passionate; each face has three eyes; the first right hand flourishes a vajra, the second holds an axe, the third an arrow; the first left has a vajra noose wound around a threatening forefinger, the second a fly-whisk of fresh leaves with flowers and fruit; the third a bow; she is in half-standing posture with her right hand pressed to her groin and that knee and the left sole resting on the seat; she has a red silk scarf and a skirt made of fresh leaves and is adorned with ornaments of jewels and flowers; a white serpent forms her long necklace (se ral kha); her hair is half tied up; she is just coming into the prime of youth, beautiful, alert and a little wrathful in appearance, with an infinite mass of blazing light gathered around her; she is crowned with aksobhya.    \n\ndeities of tibetan buddhism #218"@en .
+    
+    bdr:T704  a             :Topic ;
+        skos:prefLabel      "ri khrod ma lo ma gyon ma ser mo/"@bo-x-ewts , "yellow parna sabari"@en , "parnasabari pita"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT9AAE30049B821EE9 .
+}

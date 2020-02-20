@@ -1,0 +1,36 @@
+@base          <bdg:T1261> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1261 {
+    bda:LGBB022FD6199CECF6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-04T16:56:07.183Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T1261  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1261 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "32/T1261.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1261 ;
+        adm:logEntry        bda:LGBB022FD6199CECF6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1261  a            :Topic ;
+        skos:altLabel       "lhan cig skyes sbyor/"@bo-x-ewts , "phyag rgya chen po lhan cig skyes sbyor/"@bo-x-ewts ;
+        skos:prefLabel      "phyag chen lhan cig skyes sbyor/"@bo-x-ewts ;
+        :isRoot             true .
+}

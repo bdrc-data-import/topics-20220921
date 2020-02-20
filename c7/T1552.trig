@@ -1,0 +1,52 @@
+@base          <bdg:T1552> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1552 {
+    bda:LG166E3CD9B288C676
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-04-03T10:35:46.642Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG33D38D4563E75F8F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-12-18T16:17:48.976Z"^^xsd:dateTime ;
+        adm:logMessage      "released, deleted khrid"@en ;
+        adm:logWho          bdr:U00043 .
+    
+    bda:LG58D1A7247A6CBCC8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-09-01T11:24:13.601Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1552  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1552 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c7/T1552.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1552 ;
+        adm:logEntry        bda:LG166E3CD9B288C676 , bda:LG33D38D4563E75F8F , bda:LG58D1A7247A6CBCC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT67E76E2AB65245C7
+        a                   :Note ;
+        :noteText           "51st of the jo nang khrid brgya."@en .
+    
+    bdr:T1552  a            :Topic ;
+        skos:prefLabel      "mdo rgyud bsre ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT67E76E2AB65245C7 .
+}

@@ -1,0 +1,59 @@
+@base          <bdg:T1CZ2922> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1CZ2922 {
+    bda:LG106C7D620B83FC5A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-02T10:58:12.124Z"^^xsd:dateTime ;
+        adm:logMessage      "changed langueage"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGC348B1FC1C2EBCF4
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-05-08T15:24:20.115Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGDA096EFF3A554A05
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-03-28T12:16:15.469Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGFC13B11EFFEB8342
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-01T19:01:13.324Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1CZ2922  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1CZ2922 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "45/T1CZ2922.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1CZ2922 ;
+        adm:logEntry        bda:LG106C7D620B83FC5A , bda:LGC348B1FC1C2EBCF4 , bda:LGDA096EFF3A554A05 , bda:LGFC13B11EFFEB8342 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT45CB17D2940A94CE
+        a                   :Note ;
+        :noteText           "one of the most essential of the rig pa'i gnas lnga, sciences, the five; vidya sthana. grammar, dialectics, medicine, arts and craft, and religious philosophy"@en .
+    
+    bdr:T1CZ2922  a         :Topic ;
+        skos:altLabel       "nang don rig pa/"@bo-x-ewts ;
+        skos:prefLabel      "nang rig pa/"@bo-x-ewts , "buddhist teachings"@en ;
+        :isRoot             true ;
+        :note               bdr:NT45CB17D2940A94CE .
+}

@@ -1,0 +1,41 @@
+@base          <bdg:T962> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T962 {
+    bda:LG31BBA63B04D4EF93
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-25T16:13:10.477Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGC69BFA70135506D1
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T16:26:09.603Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T962  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T962 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7d/T962.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T962 ;
+        adm:logEntry        bda:LG31BBA63B04D4EF93 , bda:LGC69BFA70135506D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T962  a             :Topic ;
+        skos:prefLabel      "thugs chen 'khor ba dong sprugs/ (gu ru chos dbang lugs)"@bo-x-ewts ;
+        :isRoot             true .
+}

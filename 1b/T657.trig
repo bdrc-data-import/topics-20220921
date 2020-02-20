@@ -1,0 +1,41 @@
+@base          <bdg:T657> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T657 {
+    bda:LG830CAC73D3E9E3B7
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-12T10:44:26.81Z"^^xsd:dateTime ;
+        adm:logMessage      "application topic added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T657  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T657 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1b/T657.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T657 ;
+        adm:logEntry        bda:LG830CAC73D3E9E3B7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTCFE766149D75F647
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing on vajrapani, dark blue, with one face, two arms, and three-eyes with bared fangs; his right hand brandishes skward a yellow, five pointed vajra and the left extending a thretening forefinger, overcoming hindrances; he is in pratyalidha posture (left leg extended) on a polylotus and the sun; he is adorned with black snakes and complete with the ornaments and garb of a wrathful deity; every pore is filled with dark blue garudas; he abides amidst a blazing mass of fire; the threatening forefinger can also be at his heart; on his crown is aksobhya; this teaching is derived from ras chung rdo rje grags.   \n\n\ndeities of tibetan buddhism #157"@en .
+    
+    bdr:T657  a             :Topic ;
+        skos:altLabel       "gtum chung khra tshogs ras chung lugs/"@bo-x-ewts , "padeka dhara canda vajrapani"@sa-alalc97 ;
+        skos:prefLabel      "phyag rdor gtum po khra thogs/"@bo-x-ewts , "fierce hawk-bearing vajrapani"@en , "vajrapani canda"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTCFE766149D75F647 .
+}

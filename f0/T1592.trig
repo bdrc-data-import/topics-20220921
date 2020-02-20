@@ -1,0 +1,47 @@
+@base          <bdg:T1592> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1592 {
+    bda:LG1D3A3C2687DE5176
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-05-03T09:31:51.556Z"^^xsd:dateTime ;
+        adm:logMessage      "delete khrid and note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG34BC2839D3BE5603
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-01-07T12:39:24.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added note and see alsos"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1592  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1592 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f0/T1592.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1592 ;
+        adm:logEntry        bda:LG1D3A3C2687DE5176 , bda:LG34BC2839D3BE5603 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTAC5876101A8DB28F
+        a                   :Note ;
+        :noteText           "a particular form, rngog pa'i bsre 'pho"@en .
+    
+    bdr:T1592  a            :Topic ;
+        rdfs:seeAlso        bdr:T15 , bdr:T394 ;
+        skos:prefLabel      "bsre 'pho/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAC5876101A8DB28F .
+}

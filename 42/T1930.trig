@@ -1,0 +1,59 @@
+@base          <bdg:T1930> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1930 {
+    bda:LG596B1C3F84ECE70E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-08-22T11:52:49.469Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG6FB0E45B7AFEB13B
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-12-21T16:15:23.124Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGAB0EDCA972823B82
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-04T11:57:14.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added name as dam can snyon kha chen po & added 2nd note"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:T1930  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1930 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "42/T1930.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1930 ;
+        adm:logEntry        bda:LG596B1C3F84ECE70E , bda:LG6FB0E45B7AFEB13B , bda:LGAB0EDCA972823B82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT2795234871B5C422
+        a                   :Note ;
+        :noteSource         bdr:MW22130 ;
+        :noteText           "V.9, p. 487 སྲུང་མ་འདི་ཉིད་ལ་རྣམ་འགྱུར་མཚན་གྱི་རྣམ་གྲངས་མང་ཞིང་། འདི་ཉིད་ཀྱི་དམ་ཚིག་གི་གནས་སུ་གྲགས་པ་ནི་མཁོ་མཐིང་གཙུག་ལག་ཁང་དང་ཟུང་དུ་འབྲེལ་བ་ལྷོ་བྲག་མཁར་ཆུ་དཔལ་གྱི་དབེན་གནས་ཏེ་གུ་རུ་རིན་པོ་ཆེས་གཙོས་རིས་མེད་སྐྱེས་ཆེན་མང་པོའི་བསྟི་གནས་དེ་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NT9830449A0958CA5C
+        a                   :Note ;
+        :noteSource         bdr:MW24946 ;
+        :noteText           "protective and local mountain deity of the lho brag lha mo mkhar, styled here klu bdud snyon kha rje btsun"@en .
+    
+    bdr:T1930  a            :Topic ;
+        skos:altLabel       "bsnyon kha'i rje btsun/"@bo-x-ewts , "dge bsnyen chen po snyon kha/"@bo-x-ewts , "klu bdud bsnyon kha'i rje btsun/"@bo-x-ewts ;
+        skos:prefLabel      "dam can snyon kha chen po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2795234871B5C422 , bdr:NT9830449A0958CA5C .
+}

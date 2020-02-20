@@ -1,0 +1,41 @@
+@base          <bdg:T2362> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2362 {
+    bda:LG356D38815A9796F9
+        a                   adm:LogEntry ;
+        adm:logDate         "2016-01-20T20:43:42.523Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:LGDA35F5E0AEEA984A
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T12:44:20.984Z"^^xsd:dateTime ;
+        adm:logMessage      "reversed names"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2362  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2362 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/T2362.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2362 ;
+        adm:logEntry        bda:LG356D38815A9796F9 , bda:LGDA35F5E0AEEA984A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:T2362  a            :Topic ;
+        skos:prefLabel      "skye khams rig pa/"@bo-x-ewts , "ecology"@en ;
+        :isRoot             true .
+}

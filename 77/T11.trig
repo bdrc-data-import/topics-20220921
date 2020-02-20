@@ -1,0 +1,64 @@
+@base          <bdg:T11> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T11 {
+    bda:LG0AF505A7BB900675
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-03-08T16:43:07.155Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG5B66E81A455D0E3E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T09:49:34.091Z"^^xsd:dateTime ;
+        adm:logMessage      "application note completed"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG671054B1C1599446
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T12:47:00.582Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG8EA7442219251189
+        a                   adm:LogEntry ;
+        adm:logDate         "2006-11-28T15:20:05.251Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG9226A383DFD2CCD6
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-05-17T17:34:57.852Z"^^xsd:dateTime ;
+        adm:logMessage      "variant name added; jann"@en ;
+        adm:logWho          bdr:U00011 .
+    
+    bda:T11  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T11 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "77/T11.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T11 ;
+        adm:logEntry        bda:LG0AF505A7BB900675 , bda:LG5B66E81A455D0E3E , bda:LG671054B1C1599446 , bda:LG8EA7442219251189 , bda:LG9226A383DFD2CCD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT8B45093382AF63B9
+        a                   :Note ;
+        :noteText           "this generic topic is applied to prayers to successive teachers transmitting specified teachings; the name of the teaching or text is the main subject topic, e. g. mngon rtogs rgyan or abhidharma"@en .
+    
+    bdr:T11  a              :Topic ;
+        skos:altLabel       "bla ma brgyud pa'i gsol 'debs/"@bo-x-ewts , "brgyud 'debs/"@bo-x-ewts ;
+        skos:prefLabel      "bla brgyud gsol 'debs/"@bo-x-ewts , "prayers to teachers of the lineage of transmission"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8B45093382AF63B9 .
+}

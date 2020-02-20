@@ -1,0 +1,47 @@
+@base          <bdg:T1GS129612> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS129612 {
+    bda:LG887FACE087B0CC56
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-11T14:05:50.675Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF91FAA0B759EE952
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-11T14:14:39.569Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1GS129612  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS129612 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "af/T1GS129612.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS129612 ;
+        adm:logEntry        bda:LG887FACE087B0CC56 , bda:LGF91FAA0B759EE952 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT037FFF7979D4BA32
+        a                   :Note ;
+        :noteText           "cycle of teachings from the revelations of 'jam mgon kong sprul); the yab bka' is bla sgrub 'od kyi thig le; the yum bka' is the mkha' 'gro bde chen rgya mtsho"@en .
+    
+    bdr:T1GS129612  a       :Topic ;
+        skos:altLabel       "bla sgrub 'od kyi thig le ('jam mgon kong sprul)"@bo-x-ewts , "yum bka' mkha' 'gro bde chen rgya mtsho ('jam mgon kong sprul)"@bo-x-ewts ;
+        skos:prefLabel      "gsang thig snying po'i skor ('jam mgon kong sprul)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT037FFF7979D4BA32 .
+}

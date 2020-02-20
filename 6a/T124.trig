@@ -1,0 +1,47 @@
+@base          <bdg:T124> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T124 {
+    bda:LG6720E4360A396D33
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-25T12:24:56.333Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of t2gs1192"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGF75CFE98BD4D62AC
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-26T16:33:56.373Z"^^xsd:dateTime ;
+        adm:logMessage      "restore from local restore folder"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T124  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T124 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6a/T124.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T124 ;
+        adm:logEntry        bda:LG6720E4360A396D33 , bda:LGF75CFE98BD4D62AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2GS1192 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT1DA66C60ABDF87D8
+        a                   :Note ;
+        :noteText           "to be withdrawn in favor of t2gs1192"@en .
+    
+    bdr:T124  a             :Topic ;
+        skos:prefLabel      "rnam sras ljang khu seng zhon dznya na lugs/"@bo-x-ewts , "vaisravana simhavahana syama"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT1DA66C60ABDF87D8 .
+}

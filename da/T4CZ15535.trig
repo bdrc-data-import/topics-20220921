@@ -1,0 +1,47 @@
+@base          <bdg:T4CZ15535> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ15535 {
+    bda:LG14A4CEA2ADCD3C94
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-27T16:58:58.087Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG89E239DC576AD89A
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-09-05T16:33:26.756Z"^^xsd:dateTime ;
+        adm:logMessage      "new topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:T4CZ15535  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ15535 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "da/T4CZ15535.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ15535 ;
+        adm:logEntry        bda:LG14A4CEA2ADCD3C94 , bda:LG89E239DC576AD89A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTB230A7BCA57C884D
+        a                   :Note ;
+        :noteText           "sku mdog ser mo/ zhal gsum spyan gsum ma/ phyag drug ma/ dbu la mi bskyod pas brgyan pa/ khro ba dan gbcas pa'i bzzhad pa nyid dang sbrul gyi smad ka dang ldan pa/ g.yas kyi phyag na rdo rje dang g.yon gnyis pas ral gri gdengs pagsum pa gar gyi stangs so/"@en .
+    
+    bdr:T4CZ15535  a        :Topic ;
+        skos:altLabel       "bcom ldan 'das 'phags ma sgrol ma dug sel ma/"@bo-x-ewts , "dug sel ma/"@bo-x-ewts ;
+        skos:prefLabel      "'phags ma dug sel ma/"@bo-x-ewts , "janguli"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTB230A7BCA57C884D .
+}

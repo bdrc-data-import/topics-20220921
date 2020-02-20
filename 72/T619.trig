@@ -1,0 +1,57 @@
+@base          <bdg:T619> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T619 {
+    bda:LG39F0FA6A6BE870C4
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-04-03T13:39:49.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LGAFB5B4DA09323ED0
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T09:45:54.766Z"^^xsd:dateTime ;
+        adm:logMessage      "note of application added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGCED4341926D1406E
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-06-20T09:55:23.125Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LGD76D4D4BC33C3693
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-03-27T11:16:12.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit and chinese"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:T619  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T619 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "72/T619.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T619 ;
+        adm:logEntry        bda:LG39F0FA6A6BE870C4 , bda:LGAFB5B4DA09323ED0 , bda:LGCED4341926D1406E , bda:LGD76D4D4BC33C3693 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT03080F24F2B84134
+        a                   :Note ;
+        :noteText           "this topic is applied to texts concerned with the generic tara, texts which a specific form or transmission is unknown"@en .
+    
+    bdr:T619  a             :Topic ;
+        skos:prefLabel      "sgrol ma/"@bo-x-ewts , "tāra"@sa-x-ndia , "度母"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT03080F24F2B84134 .
+}

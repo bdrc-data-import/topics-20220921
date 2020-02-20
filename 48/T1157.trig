@@ -1,0 +1,52 @@
+@base          <bdg:T1157> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1157 {
+    bda:LG51B4708BA5F57072
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-09T16:40:59.523Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG84E7F80F2C08E614
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-03T10:20:14.662Z"^^xsd:dateTime ;
+        adm:logMessage      "edited and added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGFC7FA7A69373C6A7
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-01-21T15:08:50.541Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed encoding"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1157  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1157 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "48/T1157.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1157 ;
+        adm:logEntry        bda:LG51B4708BA5F57072 , bda:LG84E7F80F2C08E614 , bda:LGFC7FA7A69373C6A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT163F7DB5FD4D983F
+        a                   :Note ;
+        :noteText           "this topic is applied to translations from one written language into another. it is generally used, but not limited to, texts translated into the tibetan language."@en .
+    
+    bdr:T1157  a            :Topic ;
+        skos:prefLabel      "sgyur yig"@bo-x-ewts , "translation"@en ;
+        :isRoot             true ;
+        :note               bdr:NT163F7DB5FD4D983F .
+}

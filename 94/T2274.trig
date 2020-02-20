@@ -1,0 +1,58 @@
+@base          <bdg:T2274> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2274 {
+    bda:LG2472BAF93C8643DA
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-09-26T14:52:19.588Z"^^xsd:dateTime ;
+        adm:logMessage      "changed withdrawn to released"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LG3BB09E1A74199F59
+        a                   adm:LogEntry ;
+        adm:logDate         "2018-10-16T14:17:30.852Z"^^xsd:dateTime ;
+        adm:logMessage      "removed worng topic"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG4918F0384F262B9C
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:30:37.241Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LGAE9389538CB16C70
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-27T11:06:56.246Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrown as orphon"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:T2274  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2274 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "94/T2274.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2274 ;
+        adm:logEntry        bda:LG2472BAF93C8643DA , bda:LG3BB09E1A74199F59 , bda:LG4918F0384F262B9C , bda:LGAE9389538CB16C70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE6CE27ABD837D383
+        a                   :Note ;
+        :noteText           "1) {thos grol}. - liberation through hearing. 2) {btags grol}. - liberation through wearing. 3) {mthong grol}. - liberation through seeing. 4) {dran grol}. - liberation through remembering. 5) {myong grol}. - liberation through tasting. 6) {reg grol}. - liberation through touching/ contact]"@en .
+    
+    bdr:T2274  a            :Topic ;
+        skos:prefLabel      "grol ba drug"@bo-x-ewts , "six liberations, the six types of liberation"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE6CE27ABD837D383 .
+}

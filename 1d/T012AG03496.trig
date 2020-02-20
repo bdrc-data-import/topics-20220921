@@ -1,0 +1,36 @@
+@base          <bdg:T012AG03496> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03496 {
+    bda:LGB6563DCD98867F00
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-07-30T11:53:34.208Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:T012AG03496  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03496 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "1d/T012AG03496.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03496 ;
+        adm:logEntry        bda:LGB6563DCD98867F00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T012AG03496  a      :Topic ;
+        skos:altLabel       "nyes pa sel byed/"@bo-x-ewts ;
+        skos:prefLabel      "nyes sel/"@bo-x-ewts , "purification of misdeeds"@en-x-mixed ;
+        :isRoot             true .
+}

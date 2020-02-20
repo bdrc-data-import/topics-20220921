@@ -1,0 +1,52 @@
+@base          <bdg:T206> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T206 {
+    bda:LG6A07D83FBD88727D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-08T07:15:18.825Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGD677CDE2C5F5CA8E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-11-26T18:42:27.429Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised and chos rnam kun btus note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T206  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T206 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3e/T206.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T206 ;
+        adm:logEntry        bda:LG6A07D83FBD88727D , bda:LGD677CDE2C5F5CA8E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4AE1EFAED4790DC5
+        a                   :Note ;
+        :noteText           "this topic is applied to works treating the traditional Indic canons of poetic metres, such as commentaries on the chandoratnakara"@en .
+    
+    bdr:NT590A582D8FB89905
+        a                   :Note ;
+        :locationStatement  "v. 1, p. 93" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "sdeb sbyor gnyis\nchos rnam kun btus (quoting the dung dkar tshig mdzod 1189-23): \nsdeb sbyor gnyis: \n1) prit; 2) dzA ti\nives waldo: gives as definitions: breeding, doctrine in samaveda, meter, metrical science, poetry, rhetoric"@en .
+    
+    bdr:T206  a             :Topic ;
+        skos:prefLabel      "sdeb sbyor/"@bo-x-ewts , "poetic metrics"@en , "chanda"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT4AE1EFAED4790DC5 , bdr:NT590A582D8FB89905 .
+}

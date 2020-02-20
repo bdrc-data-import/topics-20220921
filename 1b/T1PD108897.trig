@@ -1,0 +1,65 @@
+@base          <bdg:T1PD108897> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD108897 {
+    bda:LG01C6D46E2FE466DF
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:28:05.168Z"^^xsd:dateTime ;
+        adm:logMessage      "rgya yig bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG427B90125C52A089
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T12:27:31.604Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG4E40DF1B604979AD
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-07T09:22:37.29Z"^^xsd:dateTime ;
+        adm:logMessage      "mchan bsnan"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGC1AD7C3ACCCF03FC
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:10:22.548Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LGE9B740C2441B797A
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-11T10:08:49.003Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD108897  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD108897 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1b/T1PD108897.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD108897 ;
+        adm:logEntry        bda:LG01C6D46E2FE466DF , bda:LG427B90125C52A089 , bda:LG4E40DF1B604979AD , bda:LGC1AD7C3ACCCF03FC , bda:LGE9B740C2441B797A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT14FB50C8531F3AF8
+        a                   :Note ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "དུང་དཀར་ཚིག་མཛོད་ཆེན་མོར་ (p. 889) སྔར་ཡོན་རྒྱལ་རབས་ནས་བཟུང་དཔོན་རིགས་བྱས་རྗེས་ཅན་ལ་དམིགས་བསལ་གྱི་གཟེངས་བསྟོད་བཀའ་ཡིག་སྤྲད་པ་དེ་ལ་འཇའ་ས་གནང་བ་ཟེར་ཞེས་འཁོད།"@bo .
+    
+    bdr:T1PD108897  a       :Topic ;
+        skos:prefLabel      "'ja' sa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT14FB50C8531F3AF8 .
+}

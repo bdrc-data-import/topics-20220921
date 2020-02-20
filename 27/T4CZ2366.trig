@@ -1,0 +1,53 @@
+@base          <bdg:T4CZ2366> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ2366 {
+    bda:LG47C810A980D43D6F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-05T14:26:56.687Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LG50C1980ED1C1BBC6
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-05T14:53:05.017Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bsnan"@en ;
+        adm:logWho          bdr:U00017 .
+    
+    bda:LG968138E154451289
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-01-14T16:07:16.47Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T4CZ2366  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ2366 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/T4CZ2366.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ2366 ;
+        adm:logEntry        bda:LG47C810A980D43D6F , bda:LG50C1980ED1C1BBC6 , bda:LG968138E154451289 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTD64B14E21C19D2A1
+        a                   :Note ;
+        :noteText           "inscription above a door or gate"@en .
+    
+    bdr:T4CZ2366  a         :Topic ;
+        skos:altLabel       "them yig"@bo-x-ewts ;
+        skos:prefLabel      "them byang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD64B14E21C19D2A1 .
+}

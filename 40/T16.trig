@@ -1,0 +1,47 @@
+@base          <bdg:T16> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T16 {
+    bda:LG61BCC6F93789A751
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-08-26T12:04:21.959Z"^^xsd:dateTime ;
+        adm:logMessage      "T16 and T1PD109545 merged"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGDDB7F1882FACADE8
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-07T14:59:32.24Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T16  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T16 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "40/T16.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T16 ;
+        adm:logEntry        bda:LG61BCC6F93789A751 , bda:LGDDB7F1882FACADE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7C35130001768DA4
+        a                   :Note ;
+        :noteText           "generic topic applied to chronicles of monastic and other religious establishments; the place name of the institution which is chronicled is the main topic.\n\nthis topic is applied to throne holder of any monastery"@en .
+    
+    bdr:T16  a              :Topic ;
+        skos:altLabel       "mkhan rabs/"@bo-x-ewts ;
+        skos:prefLabel      "gdan rabs/"@bo-x-ewts , "monastic chronicles"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7C35130001768DA4 .
+}

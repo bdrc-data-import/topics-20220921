@@ -1,0 +1,40 @@
+@base          <bdg:T1843> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1843 {
+    bda:LGEE2A67BB1CE415A4
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T09:59:15.703Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T1843  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1843 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4f/T1843.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1843 ;
+        adm:logEntry        bda:LGEE2A67BB1CE415A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT23A91A24CA95E228
+        a                   :Note ;
+        :noteText           "protector deity; mahakala in a lion-faced form"@en .
+    
+    bdr:T1843  a            :Topic ;
+        skos:prefLabel      "zhing skyong dbang po/"@bo-x-ewts , "mahakala simhamukha"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT23A91A24CA95E228 .
+}

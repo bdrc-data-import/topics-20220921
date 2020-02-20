@@ -1,0 +1,40 @@
+@base          <bdg:T738> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T738 {
+    bda:LGF92010AEE9FEBE31
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-19T10:33:11.392Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T738  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T738 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ab/T738.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T738 ;
+        adm:logEntry        bda:LGF92010AEE9FEBE31 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTF5C096B621FFD3CF
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon the wrathful king acala, red, with one face, six arms, and four legs; his first pair of hands hold a sword and a noose, the second pair a hook and a skull, and the last a club and the threatening forefinger; his front pair of legs are in pratylidha (right bent) and trample mara and rati; the back pair in dancing position tramples brahma, visnu and isvara;\n\nhis consort, the mother candarati (gtum mo dga' byed ma, fierce creator of delight) holds a damaru and a garland of flowers and embraces him; she tramples underfoot aviracitra (ruler of the asuras )and nagas.\n\nfather and mother are complete with the apparel of male and female wrathful deities.\n\ndeities of tibetan buddhism #266"@en .
+    
+    bdr:T738  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba dmar po/"@bo-x-ewts , "red acala"@en , "acala rakta"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTF5C096B621FFD3CF .
+}

@@ -1,0 +1,35 @@
+@base          <bdg:T1PD109541> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD109541 {
+    bda:LGD6F1DBA5B290E04E
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-02-24T14:59:27.071Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD109541  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD109541 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "03/T1PD109541.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD109541 ;
+        adm:logEntry        bda:LGD6F1DBA5B290E04E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1PD109541  a       :Topic ;
+        skos:prefLabel      "a ti yo ga"@bo-x-ewts ;
+        :isRoot             true .
+}

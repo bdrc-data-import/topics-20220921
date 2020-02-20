@@ -1,0 +1,36 @@
+@base          <bdg:T1KG1285> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1KG1285 {
+    bda:LGD9B9550087628F3C
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-12-19T10:41:47.85Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic"@en ;
+        adm:logWho          bdr:U00016 .
+    
+    bda:T1KG1285  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1KG1285 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b7/T1KG1285.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1KG1285 ;
+        adm:logEntry        bda:LGD9B9550087628F3C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1KG1285  a         :Topic ;
+        skos:altLabel       "rdzu 'phrul/"@bo-x-ewts , "sgyu ma 'phrul pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgyu 'phrul/"@bo-x-ewts , "magical display"@en , "maya"@sa-alalc97 ;
+        :isRoot             true .
+}

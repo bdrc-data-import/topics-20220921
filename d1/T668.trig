@@ -1,0 +1,46 @@
+@base          <bdg:T668> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T668 {
+    bda:LG2C5DFFA9CBA6EE0C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-06T12:27:22.088Z"^^xsd:dateTime ;
+        adm:logMessage      "application note revised"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGDA5813001F5275D3
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-06-05T10:28:09.833Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T668  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T668 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d1/T668.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T668 ;
+        adm:logEntry        bda:LG2C5DFFA9CBA6EE0C , bda:LGDA5813001F5275D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT3A1D9500046BD1BB
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations for the form of acala, who is blue, with four faces, all black, and four hands and four legs; his legs are variously extended and bent, trampling on the four maras or else in alidha (right legs extended); his two right hands ae thrusting a sword and brandishing a vajra; his two left press a noose against his heart, with threatening forefinger, and hold a blood filled skull; he is three eyed, with yellow upward streaming hair and bares sharp fangs; he has a tiger skin loincloth and a scarf of human skin and is adorned with snakes, jewels, and bones; he is sending out clouds of wrathful emanations and is surrounded by a blazing mountain of fire; he is crowned with aksobha;  \n\ndeities of tibetan buddhism #176"@en .
+    
+    bdr:T668  a             :Topic ;
+        skos:prefLabel      "mi g.yo ba phyag bzhi pa/"@bo-x-ewts , "four-armed acala"@en , "acala caturbhuja"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT3A1D9500046BD1BB .
+}

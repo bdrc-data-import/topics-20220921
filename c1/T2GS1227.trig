@@ -1,0 +1,47 @@
+@base          <bdg:T2GS1227> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1227 {
+    bda:LG32AB9EA1B76B56E2
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-04T11:32:12.883Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGAC8428DA2036BC95
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-05-03T11:40:10.094Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn as orphan"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2GS1227  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1227 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c1/T2GS1227.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1227 ;
+        adm:logEntry        bda:LG32AB9EA1B76B56E2 , bda:LGAC8428DA2036BC95 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT308342C7920D4DB4
+        a                   :Note ;
+        :noteText           "this deity topic is applied to empowerments and rituals focusing upon mahakala, dark blue, with one face, two arms, and three eyes; he holds a knife and a blood filled skull one above the other at his heart; his beard, eyebrows and hair stream upwards; he is beating his blazing, vajra wings; he has a crown of dry skulls, a long neclace of fresh heads and ornaments of snakes, bones and jewels and wears a fresh tiger skin loincloth and human skin and elephant skin scarves; his feet in the form of a blazing ritual dagger, pierce the heart of the enemy; he abides amid a blazing fire of gnosis; on a sunseat is yamantaka, dark blue, holding a club and a noose; these emblems turn to hooks to summon the gnosis-being; then to a flask for the empowerment, after whiich this same yamantaka acts as crown.\n\ndeities of tibetan buddhism # 359."@en .
+    
+    bdr:T2GS1227  a         :Topic ;
+        skos:altLabel       "garuda winged, dagger footed panjara mahakala"@en ;
+        skos:prefLabel      "gur mgon phur zhabs khyung gshog can/"@bo-x-ewts , "dagger footed panjara mahakala"@en ;
+        :isRoot             true ;
+        :note               bdr:NT308342C7920D4DB4 .
+}

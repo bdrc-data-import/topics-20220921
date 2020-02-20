@@ -1,0 +1,53 @@
+@base          <bdg:T1PD95> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1PD95 {
+    bda:LG022160BE9DE3CEC9
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-06-18T11:21:20.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG6FED46954B12D5C0
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-23T12:06:26.306Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:LG9897AC066EB06699
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-02-23T12:12:35.053Z"^^xsd:dateTime ;
+        adm:logMessage      "zhu dag byas"@en ;
+        adm:logWho          bdr:U00021 .
+    
+    bda:T1PD95  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1PD95 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "04/T1PD95.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1PD95 ;
+        adm:logEntry        bda:LG022160BE9DE3CEC9 , bda:LG6FED46954B12D5C0 , bda:LG9897AC066EB06699 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C2FBB9B39ED4E5F
+        a                   :Note ;
+        :noteText           "first of 4 medical treatises which explains everything concisely, root tantras"@en .
+    
+    bdr:T1PD95  a           :Topic ;
+        skos:altLabel       "rtsa ba'i rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "rtsa rgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6C2FBB9B39ED4E5F .
+}

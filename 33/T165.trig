@@ -1,0 +1,33 @@
+@base          <bdg:T165> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T165 {
+    bda:T165  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T165 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "33/T165.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T165 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT253CB31B4A655802
+        a                   :Note ;
+        :noteText           "the bar do is an intermediate state between birth and rebirth; according to some systems there are five antarabhava specified:\nskye gnas brgyud pa'i bar do\nsnang ba skye she'i bar do\nting 'dzin lam gyi bar do\nrmi lam gnyid kyi bar do\n'chi ba srid pa'i bar do\n\nanother system enumerates seven bar do:\nrang bzhin skye gnas kyi bar do\nchos nyid srid pa'i bar do\nzung 'jug sku bzhi'i bar do\nrang rig ye shes kyi bar do\ndus mtshams rang bzhin gyi bar do\n'phyugs med rten 'brel bar do,\n'khor 'das gnyis kyi bar do\n\nanother system enumberates six bar do:\nskyed gnas bar do\nrmi lam bar do\nbsam gtan bar do\n'chi kha bar do\nchos nyid bar dosrid pa bar do)"@en .
+    
+    bdr:T165  a             :Topic ;
+        skos:prefLabel      "bar do/"@bo-x-ewts , "intermediate state"@en , "antarabhava"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NT253CB31B4A655802 .
+}

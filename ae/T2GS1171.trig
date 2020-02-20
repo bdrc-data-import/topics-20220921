@@ -1,0 +1,46 @@
+@base          <bdg:T2GS1171> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2GS1171 {
+    bda:LGFD811B8036DE5FB6
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T11:06:46.222Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LGFF25A8793D5FC03E
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-07-09T11:19:11.659Z"^^xsd:dateTime ;
+        adm:logMessage      "note this is a teaching passing through mitrayogin added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T2GS1171  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2GS1171 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ae/T2GS1171.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2GS1171 ;
+        adm:logEntry        bda:LGFD811B8036DE5FB6 , bda:LGFF25A8793D5FC03E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTC574EF8147AF2F76
+        a                   :Note ;
+        :noteText           "this deity topic is applied to rituals and initiations focusing upon avalokita, white, with five stacked up central faces, blue and extremely wrathful, and stacks of three white ones on the right and three red ones on the left, all peaceful; his first pair of hands are blue and at his heart with palms folded; the others are white, the second pair holding a vajra rosary and a red lotus, the third a wheel and a bow and arrow, the fourth holding a hook and a mass of fire; he stands with his feet together amid a blazing mass of fire; his other characteristics are as normal.  \n\nthis is a teaching of mitrayogin\n\ndeities of tibetan buddhism #130"@en .
+    
+    bdr:T2GS1171  a         :Topic ;
+        skos:prefLabel      "spyan ras gzigs rdo rje snying po rab tu 'joms pa/"@bo-x-ewts , "avalokita destroying with the vajra essence"@en , "avalokita vajrasarapramardin"@sa-alalc97 ;
+        :isRoot             true ;
+        :note               bdr:NTC574EF8147AF2F76 .
+}

@@ -1,0 +1,46 @@
+@base          <bdg:T1GS129606> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1GS129606 {
+    bda:LG3D0D32089D3E3116
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-09-10T09:54:56.447Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:LG780931130C992A5C
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-03-08T16:20:09.604Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1GS129606  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1GS129606 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/T1GS129606.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1GS129606 ;
+        adm:logEntry        bda:LG3D0D32089D3E3116 , bda:LG780931130C992A5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4398A3D56C77B118
+        a                   :Note ;
+        :noteText           "pure vision revelations of the wrathful gu ru drag po rdo rje gro lod received by the 5th dalai lama"@en .
+    
+    bdr:T1GS129606  a       :Topic ;
+        skos:altLabel       "gu ru drag po rdo rje gro lod (ngag dbang blo bzang rgya mtsho)"@bo-x-ewts ;
+        skos:prefLabel      "gu ru drag po rdo rje gro lod (dag snang rgya can)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4398A3D56C77B118 .
+}

@@ -1,0 +1,35 @@
+@base          <bdg:T1983> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1983 {
+    bda:LG866B184723559176
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-04T13:57:38.124Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T1983  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1983 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "62/T1983.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1983 ;
+        adm:logEntry        bda:LG866B184723559176 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T1983  a            :Topic ;
+        rdfs:seeAlso        bdr:T289 ;
+        skos:prefLabel      "gsar 'gyur rtsom rig"@bo-x-ewts , "journalistic writing"@en ;
+        :isRoot             true .
+}

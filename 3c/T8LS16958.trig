@@ -1,0 +1,42 @@
+@base          <bdg:T8LS16958> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T8LS16958 {
+    bda:LG058FC7F07AA86036
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-12-07T11:15:00.547Z"^^xsd:dateTime ;
+        adm:logMessage      "created new topic"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:T8LS16958  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T8LS16958 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/T8LS16958.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T8LS16958 ;
+        adm:logEntry        bda:LG058FC7F07AA86036 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTFAFC5E54350EEAFA
+        a                   :Note ;
+        :noteSource         bdr:MW1CZ878 ;
+        :noteText           "one of the school of sakya tradition of Tibetan buddhism"@en .
+    
+    bdr:T8LS16958  a        :Topic ;
+        skos:altLabel       "ngor pa/"@bo-x-ewts ;
+        skos:prefLabel      "ngor/"@bo-x-ewts , "ngor"@en ;
+        :isRoot             true ;
+        :note               bdr:NTFAFC5E54350EEAFA .
+}

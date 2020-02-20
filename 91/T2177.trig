@@ -1,0 +1,47 @@
+@base          <bdg:T2177> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2177 {
+    bda:LG99061530BCE8FC21
+        a                   adm:LogEntry ;
+        adm:logDate         "2015-09-29T15:50:08.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"dbu ma rang stong\" & chinese"@en ;
+        adm:logWho          bdr:U00007 .
+    
+    bda:LGCFA679F9AFFF1AFE
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-31T16:40:23.607Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2177  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2177 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "91/T2177.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2177 ;
+        adm:logEntry        bda:LG99061530BCE8FC21 , bda:LGCFA679F9AFFF1AFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4B546621455B2DCC
+        a                   :Note ;
+        :noteText           "This topic is applied to philosophical thinking or contemplative views that understand the relative as well as the ultimate nature of reality to be inherently empty of defining characteristics."@en .
+    
+    bdr:T2177  a            :Topic ;
+        skos:altLabel       "dbu ma rang stong /"@bo-x-ewts ;
+        skos:prefLabel      "rang stong /"@bo-x-ewts , "intrinsic emptiness"@en , "自空"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4B546621455B2DCC .
+}

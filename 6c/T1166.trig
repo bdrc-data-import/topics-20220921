@@ -1,0 +1,47 @@
+@base          <bdg:T1166> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T1166 {
+    bda:LG0EF16010AF7A14E8
+        a                   adm:LogEntry ;
+        adm:logDate         "2011-04-20T04:44:04.552Z"^^xsd:dateTime ;
+        adm:logMessage      "added see also to relate T1089 and T1166"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LG22E3C27634B91F7F
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-16T12:05:24.538Z"^^xsd:dateTime ;
+        adm:logMessage      "aaded SeeAlso T1089"@en .
+    
+    bda:T1166  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T1166 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6c/T1166.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T1166 ;
+        adm:logEntry        bda:LG0EF16010AF7A14E8 , bda:LG22E3C27634B91F7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT9E098C5D9DD357D4
+        a                   :Note ;
+        :noteText           "here are classed works about and describing the sacred masked dance in the tibetan tradition. these dances are not found in the indian tradition.\n'chams yig describe how the dance is to be performed.\n\nthey often contain information on the history of the different sacred masked dances of the tradition or locality and how the masked dance is used in the propitiation of a particular deity.\nmasked dances are particularly developed among the bka' brgyud, rnying ma, and sa skya traditions. \n\nthey are not customary in many dge lugs pa institutions, particularly in central tibet.\n\nsee also T1089 indic sacred dance"@en .
+    
+    bdr:T1166  a            :Topic ;
+        rdfs:seeAlso        bdr:T1089 ;
+        skos:altLabel       "masked dances"@en ;
+        skos:prefLabel      "'chams/"@bo-x-ewts , "sacred dances"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9E098C5D9DD357D4 .
+}

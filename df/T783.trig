@@ -1,0 +1,47 @@
+@base          <bdg:T783> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T783 {
+    bda:LG094525BB79535AE6
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-16T10:54:40.732Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G247"@en ;
+        adm:logWho          bdr:U00012 .
+    
+    bda:LGBE96E3E09B81DF82
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-26T12:51:14.883Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G247"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T783  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T783 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "df/T783.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T783 ;
+        adm:logEntry        bda:LG094525BB79535AE6 , bda:LGBE96E3E09B81DF82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G247 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:NT80A59E6385BFF31F
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G247"@en .
+    
+    bdr:T783  a             :Topic ;
+        skos:prefLabel      "ngam ring chos sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT80A59E6385BFF31F .
+}

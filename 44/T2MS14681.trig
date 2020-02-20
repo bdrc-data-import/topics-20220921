@@ -1,0 +1,45 @@
+@base          <bdg:T2MS14681> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T2MS14681 {
+    bda:LG0070C12CBD071191
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-19T14:35:11.858Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGB620E62B8C4B973D
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-10-19T14:44:16.775Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:T2MS14681  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T2MS14681 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "44/T2MS14681.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T2MS14681 ;
+        adm:logEntry        bda:LG0070C12CBD071191 , bda:LGB620E62B8C4B973D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4EABE469A8453B9A
+        a                   :Note ;
+        :noteText           "this topic is applied generically to persons who are ministers of a cabinet or government officer"@en .
+    
+    bdr:T2MS14681  a        :Topic ;
+        skos:prefLabel      "bka' blon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4EABE469A8453B9A .
+}

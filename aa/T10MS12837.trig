@@ -1,0 +1,46 @@
+@base          <bdg:T10MS12837> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T10MS12837 {
+    bda:LG55DDFB565E6E2A23
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-03-09T12:53:05.681Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGEBEF0C3FD1CB2DFB
+        a                   adm:LogEntry ;
+        adm:logDate         "2012-10-19T12:48:11.738Z"^^xsd:dateTime ;
+        adm:logMessage      "Added See Also T132 ('grel pa) and T4JW52424 (rang 'grel)"@en .
+    
+    bda:T10MS12837  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T10MS12837 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "aa/T10MS12837.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T10MS12837 ;
+        adm:logEntry        bda:LG55DDFB565E6E2A23 , bda:LGEBEF0C3FD1CB2DFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTE7BC648869C09D53
+        a                   :Note ;
+        :noteText           "this genre topic is applied to commentaries or explanations of the intended meaning by the author."@en .
+    
+    bdr:T10MS12837  a       :Topic ;
+        rdfs:seeAlso        bdr:T132 , bdr:T4JW5424 ;
+        skos:prefLabel      "dgongs 'grel/"@bo-x-ewts , "commentary on the intent"@en ;
+        :isRoot             true ;
+        :note               bdr:NTE7BC648869C09D53 .
+}

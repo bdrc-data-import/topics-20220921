@@ -1,0 +1,48 @@
+@base          <bdg:T012AG03703> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03703 {
+    bda:LG15E8936659C4A845
+        a                   adm:LogEntry ;
+        adm:logDate         "2007-08-16T16:20:29.451Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdr:U00002 .
+    
+    bda:LG6AC6B0A31C037EAF
+        a                   adm:LogEntry ;
+        adm:logDate         "2010-08-11T12:03:53.235Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00020 .
+    
+    bda:LGD9880241B1246265
+        a                   adm:LogEntry ;
+        adm:logDate         "2008-10-15T09:03:42.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"appendix\""@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T012AG03703  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03703 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/T012AG03703.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03703 ;
+        adm:logEntry        bda:LG15E8936659C4A845 , bda:LG6AC6B0A31C037EAF , bda:LGD9880241B1246265 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T012AG03703  a      :Topic ;
+        skos:altLabel       "appendix"@en ;
+        skos:prefLabel      "zur phyung /"@bo-x-ewts , "supplement"@en ;
+        :isRoot             true .
+}

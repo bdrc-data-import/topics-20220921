@@ -1,0 +1,47 @@
+@base          <bdg:T356> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T356 {
+    bda:LG661C3A4459B2E7F2
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-02-21T14:09:56.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added sanskrit: checked by ms"@en ;
+        adm:logWho          bdr:U00048 .
+    
+    bda:LGE9738D4DCAB28F12
+        a                   adm:LogEntry ;
+        adm:logDate         "2009-04-27T11:26:16.64Z"^^xsd:dateTime ;
+        adm:logMessage      "switched languages; note added"@en ;
+        adm:logWho          bdr:U00001 .
+    
+    bda:T356  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T356 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bc/T356.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T356 ;
+        adm:logEntry        bda:LG661C3A4459B2E7F2 , bda:LGE9738D4DCAB28F12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT11A7D8C37E3B4D8B
+        a                   :Note ;
+        :noteText           "under this topic are classified texts concerned with dreams; not to be used for the dream sections, i.e. dream yoga, of the nA ro chos drug"@en .
+    
+    bdr:T356  a             :Topic ;
+        skos:altLabel       "梦"@zh-hans ;
+        skos:prefLabel      "rmi lam/"@bo-x-ewts , "dream experiences"@en , "svapna"@sa-x-ndia , "夢"@zh-hant ;
+        :isRoot             true ;
+        :note               bdr:NT11A7D8C37E3B4D8B .
+}
