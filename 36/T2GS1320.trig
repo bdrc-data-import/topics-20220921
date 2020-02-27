@@ -37,7 +37,7 @@ bdg:T2GS1320 {
     
     bdr:NT8D00BED91A85F9E8
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1309" ;
+        :contentLocationStatement  "v. 1, p. 1309" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus, quoting the ri mo'i rnam gzhag blo gsal 'jug sgo by brtson grus rab rgyas and rdo rje rin chen (100-22) enumerates as the five styles of tibetan painting: 1) sman bla don grub nas rim par brgyud pa'i sman lugs; 2) sprul sku byi'u sgang pa'i lugs las byi'u lugs; 3) gong dkar mkhyen brtse ba las brgyud pa'i mkhyen lugs; 4) karma pa mi bskyod rdo rje'i phyag rgyun las kar bris dang rje bcu pa'i lugs; 5) mkhas pa bkras rgyal ba'i phyag rgyun las ldan lugs"@en .
     

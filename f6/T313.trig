@@ -37,7 +37,7 @@ bdg:T313 {
     
     bdr:NT52B890574EB396FC
         a                   :Note ;
-        :locationStatement  "v. 1, p. 398" ;
+        :contentLocationStatement  "v. 1, p. 398" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the bstan 'gyur mdo sde thi pa 113 ba 1) describes zhi gnas kyi dbye ba gsum:\nde yang/ 'phags pa dgongs pa zab mo nges par 'grel pa'i mdo rgya cher 'grel pa las byung bas ste/\n1) zhi gnas gsum rnam pa bstan pa; 2) zhi gnas rnam pa brgyad bstan pa; 3) zhi gnas rnam pa bzhi bstan pa."@en .
     

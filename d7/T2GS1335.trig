@@ -41,7 +41,7 @@ bdg:T2GS1335 {
     
     bdr:NTEC6D41BB03B5C769
         a                   :Note ;
-        :locationStatement  "v. 1, p. 84" ;
+        :contentLocationStatement  "v. 1, p. 84" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (quoting the bstan 'gyur, mdo sde ti pa 153 ba 5, 'phags pa dgongs pa zab mo nges par 'grel pa'i mdo rgya cher 'grel pa): bde ba rnam pa gnyis: 1) rab tu zhi ba'i bde ba; 2) yongs su mkhyen pa'i bde ba"@en .
     

@@ -31,7 +31,7 @@ bdg:T8LS14948 {
     
     bdr:NTAB11B4AAE6151D7D
         a                   :Note ;
-        :locationStatement  "vol. ka, f. 4b, p. 626" ;
+        :contentLocationStatement  "vol. ka, f. 4b, p. 626" ;
         :noteSource         bdr:MW29307 .
     
     bdr:T8LS14948  a        :Topic ;

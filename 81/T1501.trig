@@ -35,7 +35,7 @@ bdg:T1501 {
     
     bdr:NT492E4FF56A5A15F0
         a                   :Note ;
-        :locationStatement  "v. 71" ;
+        :contentLocationStatement  "v. 71" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "rituals for the prevention of frost\nthe gter ma found in the rin chen gter mdzod often groups rituals for the prevention of damage to crops by hail and frost together\n'jam mgon kong sprul includes in the rin chen gter mdzod chen mo \n1) thugs sgrub sad srung gnyis ( rig 'dzin rgod kyi ldem 'phru can byang gter)\n2) lo glud (byang gter)\n3) sad srung man ngag zab dgu bsdus pa (brag dmar kun bzang blo gros)"@en .
     

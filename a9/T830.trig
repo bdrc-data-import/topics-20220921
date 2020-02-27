@@ -37,7 +37,7 @@ bdg:T830 {
     
     bdr:NTCF8BF9C2B60A3F8B
         a                   :Note ;
-        :locationStatement  "v. 11, f. 218r" ;
+        :contentLocationStatement  "v. 11, f. 218r" ;
         :noteSource         bdr:MW23681 ;
         :noteText           "this transmission is called nye brgyud thung mong ma yin pa and passed through thugs sras lo tsA ba rin chen rnam rgyal, the chief disciple of bu ston rin chen grub"@en .
     

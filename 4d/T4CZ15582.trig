@@ -31,7 +31,7 @@ bdg:T4CZ15582 {
     
     bdr:NT06B5B552DC089BF8
         a                   :Note ;
-        :locationStatement  "pp. 2007" ;
+        :contentLocationStatement  "pp. 2007" ;
         :noteSource         bdr:MW26372 ;
         :noteText           "this topic is applied to the pureland, birthplace of gshen rab, bon paradise"@en .
     

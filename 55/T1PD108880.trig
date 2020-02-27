@@ -60,7 +60,7 @@ bdg:T1PD108880 {
     
     bdr:NT4DAB94E1E8A0DE13
         a                   :Note ;
-        :locationStatement  "p. 2768" ;
+        :contentLocationStatement  "p. 2768" ;
         :noteSource         bdr:MW29329 ;
         :noteText           "Tibetan govt transport service request authorization letter"@en .
     

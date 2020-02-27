@@ -37,7 +37,7 @@ bdg:T2GS1334 {
     
     bdr:NT06B614D86CEEAC1F
         a                   :Note ;
-        :locationStatement  "v. 1, p. 398" ;
+        :contentLocationStatement  "v. 1, p. 398" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "zhang gsum: clans having a relationship of maternal uncle to the btsan po during the royal dynastic period; \naccording to the chos rnam kun btus (quoting the lde'u jo sras chos 'byung 112-4) the term zhang po is used for the three clans related by marriage and who were given the title of maternal uncle (zhang po):\n1) sna nam; 2) mchims; 3) 'bro"@en .
     

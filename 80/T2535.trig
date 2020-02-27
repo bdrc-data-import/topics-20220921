@@ -31,7 +31,7 @@ bdg:T2535 {
     
     bdr:NT6D458AB3AFB3489C
         a                   :Note ;
-        :locationStatement  "pp. 182-198" ;
+        :contentLocationStatement  "pp. 182-198" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "a group of four protective deities of the sman mo class; this is one of the groups comprising the bstan ma bcu gnyis:\n\nkong btsun de mo\nrdo rje sman gcig ma (btsan la lo ro'i ra ro)\nrdo rje g,yar mo bsil\nrdo rje gzugs legs ma (g.yu'i dril bu rdo rje gzigs legs ma)"@en .
     

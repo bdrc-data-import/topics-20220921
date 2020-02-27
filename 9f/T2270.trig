@@ -24,7 +24,7 @@ bdg:T2270 {
     
     bdr:NT9E9F04ED3807E91D
         a                   :Note ;
-        :locationStatement  "v. 67" ;
+        :contentLocationStatement  "v. 67" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "the basic meaning of this key word is \"liberation by wearing \". compare thos grol,  mthong grol, etc.\nbtags grol are magical diagrams which is attached to the head or heart at the moment of dying; the btags grol is often worn in the topknot of a tantric practitioner in preparation for the final hours\nthere exist blockprints of these liberation diagrams which can aid one at the time of death if they are worn as special amulets\n\nthe rin chen gter mdzod chen mo contains a number of rituals concerned with the use of the btags grol. these are called mchog gi phrin las\n1) brtags grol dbang bcas (from the bla ma yang tig yid bzhin nor bu of rgyal ba klong chen pa)\n2) btags grol rgyud drug (mkha' 'gro snying tig revelations of pad+ma las 'brel rtsal) and brtags grol man ngag dbang (rgyal ba klong chen pa)\n3) btags grol dkar po gcig thub (bla ma dgongs 'dus rdzogs chen gser zhun revelations of sangs rgyas gling pa)\n4) bla ma longs sku'i rdor sems gsang sngags thos grol dang pad 'byung gi padma'i snying po rgyud bklag thabs (mchog gyur gling pa and mkhyen brtse'i dbang po)\n5) bla ma longs sku'i grol ba bcu gcig gi lag len\n6) rig 'dzin pad+ma 'byung gnas ngo mtshar chos drug lag len dang thos grol khol phyung ('jam mgon kong sprul)"@en .
     

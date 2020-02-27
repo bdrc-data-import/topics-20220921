@@ -24,7 +24,7 @@ bdg:T1406 {
     
     bdr:NT846C0BC90D7AF0C6
         a                   :Note ;
-        :locationStatement  "pp. 182-184" ;
+        :contentLocationStatement  "pp. 182-184" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "one of the protective deities belonging to the sman mo class; the sman mo bzhi are one of the three groups belonging to the bstan ma bcu gnyis\n\nthe kong btsun de mo is a protective deity connected with the kong po area of southern tibet"@en .
     

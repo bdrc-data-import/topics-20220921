@@ -41,7 +41,7 @@ bdg:T206 {
     
     bdr:NT590A582D8FB89905
         a                   :Note ;
-        :locationStatement  "v. 1, p. 93" ;
+        :contentLocationStatement  "v. 1, p. 93" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "sdeb sbyor gnyis\nchos rnam kun btus (quoting the dung dkar tshig mdzod 1189-23): \nsdeb sbyor gnyis: \n1) prit; 2) dzA ti\nives waldo: gives as definitions: breeding, doctrine in samaveda, meter, metrical science, poetry, rhetoric"@en .
     

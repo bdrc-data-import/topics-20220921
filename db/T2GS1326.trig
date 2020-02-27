@@ -31,7 +31,7 @@ bdg:T2GS1326 {
     
     bdr:NT3201E83DD71CA0F3
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1551" ;
+        :contentLocationStatement  "v. 2, p. 1551" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "ro rnam pa drug (medical and food)\nthe chos rnam kun btus (citing the bstan 'gyur, gso rig he, 447-1) enumerates these as 1) mngar ba, sweet; 2) skyur ba, sour; 3) tsha bro ba, pungent; 4) kha ba, salty ; 5) tsha ba, bitter; 6) bska ba, astringent."@en .
     

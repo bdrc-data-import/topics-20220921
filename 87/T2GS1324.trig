@@ -43,7 +43,7 @@ bdg:T2GS1324 {
     
     bdr:NTF3F16F578F323711
         a                   :Note ;
-        :locationStatement  "v. 1, p. 233" ;
+        :contentLocationStatement  "v. 1, p. 233" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "chos sku'i ye shes gsum according to the chos rnam kun btus (citing the dung dkar tshig mdzod 836-12) are: 1) ngo bo ka dag ye shes; 2) rang bzhin lhun grub ye shes; 3) thugs rje kun khyab ye shes"@en .
     

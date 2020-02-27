@@ -37,7 +37,7 @@ bdg:T1441 {
     
     bdr:NT0364C4072F561CE4
         a                   :Note ;
-        :locationStatement  "v. 1, p. 84" ;
+        :contentLocationStatement  "v. 1, p. 84" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus(quoting btsan 'gyur mdo sde ci pa 127 na 6 and citing 'phags pa blo gros mi zad pas bstan pa rgya cher 'grel pa) gives:\n1) tha snyad kyi bden pa; 2) don dam pa'i bden pa.\n\ntwo truths :dvaya satya  satya dvaya: ultimate truth (don dam bden pa,  paramārthasatya) and conventional truth (kun rdzob bden pa, samvṛtisatya)\n\nives waldo: two truths [absolute and relative]; relative truth {kun rdzob kyi bden pa} and ultimate truth {don dam bden pa} syn {bden gnyis}. two truths. relative truth and ultimate truth. relative truth describes the seeming, superficial and apparent mode of all things. ultimate truth describes the real, true and unmistaken mode. these two aspects of reality are defined by the four philosophical schools as well as the tantras of vajrayana in different ways, each progressively deeper and closer to describing things as they are. two truths [thd]"@en .
     

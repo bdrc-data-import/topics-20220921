@@ -41,7 +41,7 @@ bdg:T1216 {
     
     bdr:NT43D04531AF5CF576
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1148" ;
+        :contentLocationStatement  "v. 1, p. 1148" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the five points of the mahamudra (phyag rgya chen po lnga) according to the chos rnam kun btus citing the dung dkar tshig mdzod: 1) byang sems; 2) lha sku; 3) mos gus; 4) gnas lugs; 5) bsngo ba: a concise and excellent khrid yig is that of the khro phu bka' brgyud found in the gdams ngag mdzod (khro phu bka' brgyud las byung ba'i phyag rgya chen po lnga ldan gyi khrid yig)"@en .
     

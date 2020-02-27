@@ -41,7 +41,7 @@ bdg:T2GS1331 {
     
     bdr:NT424A8C1B9F93FD1F
         a                   :Note ;
-        :locationStatement  "v. 2, p. 2745" ;
+        :contentLocationStatement  "v. 2, p. 2745" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1375-3 which follows the explanation found in the kalacakra tantra (dus kyi 'khor lo'i rgyud)) notes the existence of 12 of these 'phrul 'khor:\n1) sgyogs kyi 'phrul 'khor; 2) gru'i 'phrul 'khor; 3) gri gug gi 'phrul 'khor; 4) gur gyi 'phrul 'khor; 5) lcags mda'i 'phrul 'khor; 6) ral gri'i 'phrul 'khor; 7) me'i 'phrul 'khor; 8) rlung gi 'phrul 'khor; 9) shing rta'i 'phrul 'khor; 10) khang bzang; 11) khyogs kyi mtshan nyid; 12) chu gyen du 'dren pa'i 'phrul 'khor."@en .
     

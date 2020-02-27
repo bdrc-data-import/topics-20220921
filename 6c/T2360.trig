@@ -37,7 +37,7 @@ bdg:T2360 {
     
     bdr:NTE478262F596333EC
         a                   :Note ;
-        :locationStatement  "pp. 166-167" ;
+        :contentLocationStatement  "pp. 166-167" ;
         :noteSource         bdr:MW25095 ;
         :noteText           "a group of 13 bon deities (listed with their mounts:\n1) gnyan rje gong sngon khyung dmar la chibs;\n2) gtsang lha bye yug/ rta dkar la chibs;\n3) srog lha gangs dkar/ngang ser la chibs;\n4) sgyogs chen sdong ra/ lha g.yag dkar por chibs;\n5) 'rong nam yang rtse/ chu glang sngon por chibs;\n6) dung lha byang rtse/ rta dmar la chibs;\n7) lcog lha tshal rtse/ 'brug sngon por chibs;\n8) lha ri g.yu tshe/ sha ba ser por chibs;\n9) spom ra nag po/ drel nag la chibs;\n10) 'gyu chen ldong khra/ drel dmar la chibs;\n11) dbyig chen ra rngam/ rta dkar la chibs;\n12) ba ru ser glang/ gla dkar la chibs;\n13) 'bri chen sdong ra/rta dmar la chibs pa"@en .
     

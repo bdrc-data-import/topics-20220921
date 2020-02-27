@@ -30,7 +30,7 @@ bdg:T2603 {
     
     bdr:NT40E08699B8EEF24F
         a                   :Note ;
-        :locationStatement  "v. 72" ;
+        :contentLocationStatement  "v. 72" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "under this subject heading are classed rituals for the protection of the individual against weapons\nin the rin chen gter mdzod chen mo we find the following rituals\n1) mtshon srung (tshe brtan rgyal mtshan)\n2) thugs sgrub go cha brgyad kyi man ngag (rig 'dzin rgod kyi ldem 'phru can)\n3) gur drag mtshon srung rnams gter gzhung (rat+na gling pa)\n4) gur drag mtshon srung rnams gter gzhung gi lag len ('jam dbyangs mkhyen brtse'i dbang po)\n5) mtshon srung dar mdung ma\n6) sgom bzlas\n7) ral gri ma\n8) sngags rgod (byang gling)\n9) rgya zi nag po'i mtshon srung lugs gnyis"@en .
     

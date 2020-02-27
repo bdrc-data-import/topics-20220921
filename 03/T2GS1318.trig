@@ -41,7 +41,7 @@ bdg:T2GS1318 {
     
     bdr:NT2FAF94CAED6DB6E9
         a                   :Note ;
-        :locationStatement  "v. 1, p. 588" ;
+        :contentLocationStatement  "v. 1, p. 588" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "this topic is applied to works concerning the four demons according to the gcod system: these \"four demons\" are: 1) dbang po thogs bcas kyi bdud; 2) yid snang thogs med kyi bdud; 3) mi chos rnam g.yeng dga' brod kyi bdud; 4) gdeng med snyoms byed kyi bdud. the source quotes the dung dkar tshig mdzod 785-18"@en .
     

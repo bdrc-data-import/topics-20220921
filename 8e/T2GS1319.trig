@@ -43,7 +43,7 @@ bdg:T2GS1319 {
     
     bdr:NT6EFD4A6DBDA1D545
         a                   :Note ;
-        :locationStatement  "v. 1, p. 306" ;
+        :contentLocationStatement  "v. 1, p. 306" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus, citing the dung dkar tshig mdzod 123-4 notes the three types of amrta as:\n1) zag med ye shes kyi bdud rtsi; 2) 'chi med tshe yi bdud rtsi; 3) nad med sman gyi bdud rtsi.\nthis topic is applied to works specifically dealing with the concept of the essential force inherent in the bdud rtsi; the traditional tibetan form is bcud which occurs in the word bcud len; the vital essence can be lost through contact with impure objects or impure actions"@en .
     

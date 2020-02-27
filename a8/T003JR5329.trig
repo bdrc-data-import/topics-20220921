@@ -31,7 +31,7 @@ bdg:T003JR5329 {
     
     bdr:NTDF668172721B1452
         a                   :Note ;
-        :locationStatement  "p. 322" ;
+        :contentLocationStatement  "p. 322" ;
         :noteSource         bdr:MW20916 ;
         :noteText           "rgyal po lugs ni bsam yas 'byongs nas slob dpon chen pos btsan po khri srong lde'u btsan dang jo mo mkhar chen bza' dang spyan 'dren pa'i lo tsA ba mi gsum la gnang bas de skad du grags/\nthe phur pa (rgyud lugs) is an update and revival of this lineage"@en .
     

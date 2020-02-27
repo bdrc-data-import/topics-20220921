@@ -24,7 +24,7 @@ bdg:T2532 {
     
     bdr:NT5FA6F973D83A1101
         a                   :Note ;
-        :locationStatement  "pp. 177-178" ;
+        :contentLocationStatement  "pp. 177-178" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "one of the protective deities belonging to the gnod sbyin mo bzhi; the gnod sbyin mo bzhi are one of the three groups belonging to the bstan ma bcu gnyis"@en .
     

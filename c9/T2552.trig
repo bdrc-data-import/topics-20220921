@@ -65,7 +65,7 @@ bdg:T2552 {
     
     bdr:NT81F900E5389FDF22
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1541" ;
+        :contentLocationStatement  "v. 2, p. 1541" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1582-6) lists the six yan lag or branches: 1) sor sdud kyi yan lag; 2) bsam gtan gyi yan lag; 3) srog rtsol gyi yan lag; 4) 'dzin pa'i yan lag; 5) rjes dran gyi yan lag; 6) ting nge 'dzin gyi yan lag."@en .
     

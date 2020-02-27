@@ -43,7 +43,7 @@ bdg:T01JR254 {
     
     bdr:NT3F0F5EAA600EE14D
         a                   :Note ;
-        :locationStatement  "v. 16, 6 ff." ;
+        :contentLocationStatement  "v. 16, 6 ff." ;
         :noteSource         bdr:MW21807 ;
         :noteText           "༡༽འདིར་ཀློང་ཆེན་སྙིང་ཐིག་གི་བླ་རྫོགས་ཐུགས་གསུམ་མཐའ་དག་གི་བཀའ་སྲུང་ཐུན་མོང་མ་ཡིན་པ་དཔལ་ལྡན་མ་མགོན་ལྕམ་དྲལ་ཡིན་པར་གསལ་ལ།"@bo .
     
@@ -53,7 +53,7 @@ bdg:T01JR254 {
     
     bdr:NT91D377E2CD85DB6C
         a                   :Note ;
-        :locationStatement  "2 ff." ;
+        :contentLocationStatement  "2 ff." ;
         :noteSource         bdr:MW3CN15336 ;
         :noteText           "༢༽འདིར་ཀཾ་ཚང་ལ་ཡང་བཀའ་སྲུང་མ་མགོན་ལྕམ་དྲལ་ཞེས་ཡོངས་གྲགས་ཀྱི་ཆོས་སྐྱོང་གཙོ་བོའི་དཀྱིལ་འཁོར་དུ་བཞུགས་པ་གསལ་ལོ།།"@bo .
     

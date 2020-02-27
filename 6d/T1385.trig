@@ -30,7 +30,7 @@ bdg:T1385 {
     
     bdr:NT092D7DF80705CAD1
         a                   :Note ;
-        :locationStatement  "f. 16v" ;
+        :contentLocationStatement  "f. 16v" ;
         :noteSource         bdr:MW22446 ;
         :noteText           "bka' brgyud pa lineage and subsect.\nthis school is one of the four greater lines (che bzhi)  and takes its origins from phag mo gru pa rdo rje rgyal po\ncomprises the tradition which produced the eight lesser lineages (chung brgyad)."@en .
     

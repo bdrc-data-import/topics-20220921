@@ -24,7 +24,7 @@ bdg:T2599 {
     
     bdr:NT5D6BB0C6D16F83AF
         a                   :Note ;
-        :locationStatement  "v, 2, p. 317" ;
+        :contentLocationStatement  "v, 2, p. 317" ;
         :noteSource         bdr:MW30183 ;
         :noteText           "according to this source the klong dgu are:\nlta ba'i klong\nsgom pa'i klong\nspyod pa'i klong\n'bras bu'i klong\nsa lam gyi klong\ndkyil 'khor gyi klong\ndbang gi klong\ndam tshig gi klong\n'phrin las kyi klong"@en .
     

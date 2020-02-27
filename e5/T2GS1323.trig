@@ -37,7 +37,7 @@ bdg:T2GS1323 {
     
     bdr:NT8B21043EAF4FD414
         a                   :Note ;
-        :locationStatement  "v. 1, p. 233" ;
+        :contentLocationStatement  "v. 1, p. 233" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (citing the dung dkar tshig mdzod 840-14) the chos gos rnam gsum are: 1) bla gos; 2) mthang gos; 3) snam sbyar"@en .
     

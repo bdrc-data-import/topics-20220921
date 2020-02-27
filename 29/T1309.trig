@@ -31,7 +31,7 @@ bdg:T1309 {
     
     bdr:NTD4D87C6BCDECC6D5
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1396" ;
+        :contentLocationStatement  "v. 2, p. 1396" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (citing the dung dkar tshig mdzod 1046-22) the thun drug are described: 1) skya rengs shar na nyi ma ma shar bar nyin thun dang po; 2) nyi ma shar nas nyin gung ma zin par nyin thun gnyis pa; 3) nyin gung yol nas nyi ma nub bar nyin thun gsum pa; 4) nyi ma nub nas srod ma yol bar mtshan thun dang po; 5) sa srod yol nas gung ma shar bar mtshan thun gnyis pa; 6) nam gung yol nas skya rengs ma shar bar mtshan thun gsum pa"@en .
     

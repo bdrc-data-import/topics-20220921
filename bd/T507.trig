@@ -28,7 +28,7 @@ bdg:T507 {
     
     bdr:NT969F3004435EDE20
         a                   :Note ;
-        :locationStatement  "p. 167" ;
+        :contentLocationStatement  "p. 167" ;
         :noteSource         bdr:MW25095 ;
         :noteText           "according to this bon source, the bon skyong brtan ma bcu gnyis are (with mounts):\n1) kong btsun de mo stag la chibs\n2) gangs dkar sha med/ ngag pa ser por chibs\n3) rma ting 'phrul mo/ rta dkar por chibs\n4) skye mthing ya ma/ g.yag khams par chibs\n5) ma btsun 'brog chen/ glang sngon por chibs\n6) rma ri rab khyams/ rta sngon por chibs\n7) lha ri ya ma/ rta ngang par chibs\n8) skye thing nag mo/ sha ba sngon por chibs\n9) gangs kyi g.yu sgron/ ne tso sngon por chibs\n10) ka ga ser mo/ ri dwags gtsod la chibs\n11) kha rag khyung btsun/ drel nag por chibs\n12) gda' la btsun mo/ sha ba la chibs"@en .
     

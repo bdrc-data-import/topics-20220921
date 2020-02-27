@@ -40,7 +40,7 @@ bdg:T8LS16583 {
     
     bdr:NTFE065229434C08A0
         a                   :Note ;
-        :locationStatement  "p. 453" ;
+        :contentLocationStatement  "p. 453" ;
         :noteSource         bdr:MW00EGS1016962 .
     
     bdr:T8LS16583  a        :Topic ;

@@ -57,7 +57,7 @@ bdg:T2GS1230 {
     
     bdr:NT9B99D252212B8407
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1567" ;
+        :contentLocationStatement  "v. 2, p. 1567" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "gur mgon lha 13: the chos rnam kun btus (citing dung dkar tshig mdzod 521-26)calls the group gur lha bcu bdun (in error because there are only bcu gsum) enumerates: 1) mgon po gur; 2) e ka dza ti; 3) lha mo  dud sol ma; 4) gnod sbyin nag po; 5) nag mo gnod sbyin; 6) pu tra nag po; 7) b+ha dra nag po; 8) srin mo khrag mig ma; 9) lcags kyu ma; 10) zhags pa ma; 11) lcags sgrog ma; 12) dril bu ma; 13) las mkhan gcer bu zangs gri can"@en .
     

@@ -31,7 +31,7 @@ bdg:T2524 {
     
     bdr:NT6C32B8264C533658
         a                   :Note ;
-        :locationStatement  "pp.167-198" ;
+        :contentLocationStatement  "pp.167-198" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "the group of 12 protective goddesses; comprises the bdud mo bzhi, the gnod sbyin bzhi and the sman mo bzhi"@en .
     

@@ -37,7 +37,7 @@ bdg:T2GS1317 {
     
     bdr:NTAF4E42BD44948FB8
         a                   :Note ;
-        :locationStatement  "p. 289" ;
+        :contentLocationStatement  "p. 289" ;
         :noteSource         bdr:MW18132 ;
         :noteText           "the nine 'gong po deities are: 1) shel ging dkar po in the center; 2) dkar po mi gcig to the east; 3) gza' the'u dmar po to the southeast; 4) bye ba rkang ring to the west; 5) gnam the'u dkar po to the southwest; 6) yam shud dmar po to the west; 7) sa the'u nag po to the northwest; 8) khu le lag dgu to the north; 9) bar the'u khra bo to the northeast.\n'gong po spun dgu; \ndbus su shel ging dkar po/ shar du dkar po mi gcig  shar lhor gza' the'u dmar po/ lho'i bye ba rkang ring / lho nub gnam the'u dkar po/ nub kyi yam shud dmar po/ nub byang sa the'u nag po/ byang gi khu le lag dgu/ byang shar bar the'u khra bo/"@en .
     

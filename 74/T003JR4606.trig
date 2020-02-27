@@ -37,7 +37,7 @@ bdg:T003JR4606 {
     
     bdr:NT3A0E792AAFA6BCBF
         a                   :Note ;
-        :locationStatement  "pp. 339-341" ;
+        :contentLocationStatement  "pp. 339-341" ;
         :noteSource         bdr:MW20916 .
     
     bdr:T003JR4606  a       :Topic ;

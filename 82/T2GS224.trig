@@ -47,7 +47,7 @@ bdg:T2GS224 {
     
     bdr:NTEDE5E8691132BA5B
         a                   :Note ;
-        :locationStatement  "p. 405" ;
+        :contentLocationStatement  "p. 405" ;
         :noteSource         bdr:MW20138 ;
         :noteText           "སྤྱིར་བཀའ་པོད་ལྔ་དང་ཟུར་བཀོལ་བཞི་ཞེས་གྲགས་པའི་ཟུར་བཀོལ་བཞི་པོ་ཡང་ཕན་ཕྱིན་མངོན་རྟོགས་རྒྱན་གྱི་ནང་ནས་འཕྲོས་པ་སྟེ། ཞེས་གསལ།"@bo .
     

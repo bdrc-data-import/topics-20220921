@@ -50,7 +50,7 @@ bdg:T540 {
     
     bdr:NTFF039990FAC72F97
         a                   :Note ;
-        :locationStatement  "v. 17" ;
+        :contentLocationStatement  "v. 17" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "under this category are classed various rituals focussing upon identity with the guru\n'jam mgon kong sprul in the rin chen gter mdzod chen mo includes the following practices:\n1) dwags po'i gsang lam bla sgrub ('ja' tshon snying po)\n2) Dom+bi pa, bi rwa pa, pha dam pa, mitra dzo ki, rat+na gling pa (gnam chos)\n3) pak+shi bla sgrub (yon dge mi 'gyur rdo rje)\n4) klong chen bla sgrub ('jigs med gling pa)\n5) grub thob thugs thig ('jam dbyangs mkhyen brtse'i dbang po)\n6) sku gsum rigs 'dus (mchog gyur gling pa)"@en .
     

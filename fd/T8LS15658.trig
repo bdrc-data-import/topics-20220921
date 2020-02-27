@@ -31,7 +31,7 @@ bdg:T8LS15658 {
     
     bdr:NT951F28CD94496944
         a                   :Note ;
-        :locationStatement  "p. 124" ;
+        :contentLocationStatement  "p. 124" ;
         :noteSource         bdr:MW1KG16278 .
     
     bdr:T8LS15658  a        :Topic ;

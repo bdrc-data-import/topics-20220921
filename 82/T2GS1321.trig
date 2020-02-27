@@ -37,7 +37,7 @@ bdg:T2GS1321 {
     
     bdr:NT9F0CE98360081455
         a                   :Note ;
-        :locationStatement  "v. 1, p. 988" ;
+        :contentLocationStatement  "v. 1, p. 988" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus, quoting the dung tshig mdzod 609-8, lists the five chief pranidhana of the dge ldan pa tradition: 1) bzang spyod; 2) byams smon; 3) thog mtha' ma; 4) bde smon; 5) spyod 'jug; the source notes that often the spyod 'jug is replaced by the gsang 'dus smon lam"@en .
     

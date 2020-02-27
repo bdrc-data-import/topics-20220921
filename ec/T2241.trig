@@ -31,7 +31,7 @@ bdg:T2241 {
     
     bdr:NT6C43FA5B22DDE27B
         a                   :Note ;
-        :locationStatement  "p. 45" ;
+        :contentLocationStatement  "p. 45" ;
         :noteSource         bdr:MW19856 ;
         :noteText           "aristocratic family with ties in the snye mo rdzong area;\nadministrator of the snye mo thar pa gling nunnery"@en .
     

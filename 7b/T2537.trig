@@ -31,7 +31,7 @@ bdg:T2537 {
     
     bdr:NT69F82AC3149F7C19
         a                   :Note ;
-        :locationStatement  "pp. 186-187" ;
+        :contentLocationStatement  "pp. 186-187" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "one of the protective deities belonging to the sman mo class; the sman mo bzhi are one of the three groups belonging to the bstan ma bcu gnyis"@en .
     

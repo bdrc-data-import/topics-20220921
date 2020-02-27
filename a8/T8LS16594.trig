@@ -37,7 +37,7 @@ bdg:T8LS16594 {
     
     bdr:NT970AFAC8F5BECB80
         a                   :Note ;
-        :locationStatement  "vol. 1, p. 83" ;
+        :contentLocationStatement  "vol. 1, p. 83" ;
         :noteSource         bdr:MW1PD107937 .
     
     bdr:T8LS16594  a        :Topic ;

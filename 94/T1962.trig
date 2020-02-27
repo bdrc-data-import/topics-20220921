@@ -37,7 +37,7 @@ bdg:T1962 {
     
     bdr:NTD5123BF19180EAF2
         a                   :Note ;
-        :locationStatement  "pp. 206-263" ;
+        :contentLocationStatement  "pp. 206-263" ;
         :noteSource         bdr:MW25047 ;
         :noteText           "border conflict in sichuan between the lhasa government and the chinese authorities in sichuan; there is an account of the efforts of ha rten tshe dbang grags pa in the resolution of this conflict"@en .
     

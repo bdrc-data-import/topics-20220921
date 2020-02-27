@@ -31,7 +31,7 @@ bdg:T2240 {
     
     bdr:NT730DA49160C6D5C3
         a                   :Note ;
-        :locationStatement  "p. 41" ;
+        :contentLocationStatement  "p. 41" ;
         :noteSource         bdr:MW19856 ;
         :noteText           "an aristocratic family with former holdings in the snye mo rdzong area"@en .
     

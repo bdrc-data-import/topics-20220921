@@ -24,7 +24,7 @@ bdg:T508 {
     
     bdr:NT02422EA3A0B4FA5E
         a                   :Note ;
-        :locationStatement  "p. 2322" ;
+        :contentLocationStatement  "p. 2322" ;
         :noteSource         bdr:MW26372 ;
         :noteText           "1544. 'bras spungs su gnas chung rdo rje grags ldan mi'i khog tu thog mar phebs\nthis is the first manifestation of the gnas chung oracle taking possession of it voice at 'bras spungs"@en .
     

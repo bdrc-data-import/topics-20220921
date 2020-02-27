@@ -46,13 +46,13 @@ bdg:T2CZ10402 {
     
     bdr:NTA6CE9B2FFB5261E2
         a                   :Note ;
-        :locationStatement  "v. 2, p. 2751" ;
+        :contentLocationStatement  "v. 2, p. 2751" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus citing a different tradition which enumerates the the 'dzam gling rgyan drug, a slob dpon chen po bzhi, and a rmad du byung ba gnyis, for a total of 12:\nthe 'dzam gling rgyan drug are divided into two groups, authors of the basic shastras and the three a) authors of the commentaries on the shastras: 1) klu sgrub; 2) thogs med; 3) phyogs glang gsum ni gzhung byed pa po; b) authors of the commentaries on the shastra: 1) A rya de ba; 2) dbyig gnyen; 3) chos kyi grags pa gsum ni 'grel pa byed pa po. there are slob dpon chen po bzhi who are listed: 1) dpa' bo; 2) sgra gcan 'dzin bzang po; 3) yon tan 'od; 4) chos skyong. two additional masters are given as the rmad du byung ba'i slob dpon: 1) zhi ba lha; 2) tsan+dra go mI. shAkya 'od is missing from these twelve (6+4+2)"@en .
     
     bdr:NTEEBA779D218FF655
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1341" ;
+        :contentLocationStatement  "v. 1, p. 1341" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (quoting dung dkar tshig mdzod 649-8) the six adornments of the academic buddhist tradition are: 1) klu sgrub; 2 A rya de ba; 3) thogs med; 4) dbyig gnyen; 5) phyogs glang; 6) chos grags.\nthere are two different enumerations of the mchog gnyis: when used with the rgyan drug the two are: 1) yon tan 'od; 2) shAkya 'od.\nwhen used alone the two best ones (mchog gnyis) are klu sgrub and A rya de ba."@en .
     

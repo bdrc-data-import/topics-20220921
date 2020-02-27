@@ -43,7 +43,7 @@ bdg:T2560 {
     
     bdr:NT69BCA9A0A5624F40
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1112" ;
+        :contentLocationStatement  "v. 1, p. 1112" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus citing the 'dul ba gzhi'i rgya cher 'grel pa, bstan 'gyur, 'dul ba, tsu, 206-7, cites the sdig to las lnga: these five great sins are: 1) bram ze gsod pa; 2) ba lang gsod pa; 3) gser rku ba; 4) bla ma'i chung ma'i 'gam du 'gro ba; 5) chang 'thung ba"@en .
     

@@ -77,7 +77,7 @@ bdg:T613 {
     
     bdr:NTFD3C37CF838DD58A
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1096" ;
+        :contentLocationStatement  "v. 1, p. 1096" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus citing the dung dkar tshig mdzod, 1115-9, notes five types of practice instructions (gdams ngag gtso bo lnga): 1) sems bskyed; 2) mos gus; 3) bskyed rim; 4) rdzogs rim; 5) bsngo ba.  the chos rnam kun btus, citing the bstan 'gyur, sems tsam, tshi, 165-2, gives an enumeration of five gdams ngag (gdams ngag lnga): 1) lung gi gdams ngag; 2) rtogs pa'i gdams ngag; 3) go rim gyi gdams ngag; 4) phyin ci ma log pa'i gdams ngag; 5) chos 'phrul gyi gdams ngag."@en .
     

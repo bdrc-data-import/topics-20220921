@@ -47,7 +47,7 @@ bdg:T895 {
     
     bdr:NTFCAAED86FF2D8E1B
         a                   :Note ;
-        :locationStatement  "v. 68" ;
+        :contentLocationStatement  "v. 68" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "this keyword is applied to purificatory rituals through the use of the sprinkling of water\nthere are large number of these in both rnying ma and gsar ma traditions\n'jam mgon kong sprul includes four titles in this group under category gnas chen byin 'bebs)\n1) rnam 'joms bag chags stobs sbyong (byang gter thugs sgrub chos tshan bcu pa)\n2) rdo rje lte skor sgron ma lnga pa bka' nan rab brjid (byang chub gling pa dpal gyi rgyal mtshan)\n3) khrus chog (mchog gling thugs sgrub bar chad kun sel)\n4) bka' nan rab brjid ('jam mgon kong sprul)"@en .
     

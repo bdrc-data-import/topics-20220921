@@ -41,7 +41,7 @@ bdg:T2040 {
     
     bdr:NTBB74F27C52AE8D91
         a                   :Note ;
-        :locationStatement  "p. 345" ;
+        :contentLocationStatement  "p. 345" ;
         :noteSource         bdr:MW20916 ;
         :noteText           "phur pa rdo rje bkod pa rnal 'byor chen po'i rgyud dang rdo rje khros pa sogs kyi rgyud don bzhin bka' bsdu gsar du byas nas phur pa rgyal po lugs dang rjes su mthun pas'i rdo rje phur pa rgyud lugs su grags pa rig 'dzin chen po 'jigs med gling pa'i mkhyen dpyod kyi chu gter las thon pas'i gdams skor zab mo 'di yang chos kyi ngo bo bka' ma yin pas snga 'gyur bka' ma'i gras su bgrang bar 'os pa yin no | hence the inclusion of this cycle of teachings in the bka' ma shin tu rgyas pa (120 vol. redaction)"@en .
     

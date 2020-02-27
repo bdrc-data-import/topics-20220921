@@ -31,7 +31,7 @@ bdg:T1502 {
     
     bdr:NT6774F2D7283AF8E4
         a                   :Note ;
-        :locationStatement  "v. 1, p. 233" ;
+        :contentLocationStatement  "v. 1, p. 233" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus citing the dung dkar tshig mdzod 834-21, the chos kyi phyag rgya gsum are: 1) 'du byed kyi thams cad mi rtag pa; 2) chos thams cad bdag med pa: 3) mya ngan las 'das pa ni zhi ba."@en .
     

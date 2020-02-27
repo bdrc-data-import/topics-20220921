@@ -94,49 +94,49 @@ bdg:T246 {
     
     bdr:NT11DEAA22D03E96A7
         a                   :Note ;
-        :locationStatement  "Pp.184-185" ;
+        :contentLocationStatement  "Pp.184-185" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains discussion on the novice precept concerning song (glu), dance (gar), and instrumental music (rol mo) in Shakyaprabha's Sum brgya pa"@en .
     
     bdr:NT430774D40BF8A70D
         a                   :Note ;
-        :locationStatement  "P.832" ;
+        :contentLocationStatement  "P.832" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains dicussion on glu, gar, and rol mo in the anonymous text on novice precept Thams cad yod par smra ba rnams kyi dge tshul gyi bya ba"@en .
     
     bdr:NT450BC476C29F5BD7
         a                   :Note ;
-        :locationStatement  "P.895" ;
+        :contentLocationStatement  "P.895" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains story of the drug sde monks related to the monastic precept prohibiting song, dance, and instrumental music."@en .
     
     bdr:NT86906332368C523B
         a                   :Note ;
-        :locationStatement  "Pp.625-627" ;
+        :contentLocationStatement  "Pp.625-627" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains relatively lengthy dicussion on the novice precept concerning glu, gar, and rol mo in Vinitadeva's Trisatakarikavyakhyana (Tshig le'ur byas pa sum brgya pa'i rnam par bshad pa)"@en .
     
     bdr:NTA7DCF239001038AC
         a                   :Note ;
-        :locationStatement  "PP.781-782" ;
+        :contentLocationStatement  "PP.781-782" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains discussion on glu, gar, and rol mo in Kamalasila's Sramanapancasatkarikapradabhismarana"@en .
     
     bdr:NTC63A9F4DCAB385A7
         a                   :Note ;
-        :locationStatement  "Pp.359-360" ;
+        :contentLocationStatement  "Pp.359-360" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains dicussion on novice precept concerning song (glu), dance (gar), and instrumental music (rol mo) in Shakyaprabha's 'Od ldan"@en .
     
     bdr:NTC66A361F771A2A0B
         a                   :Note ;
-        :locationStatement  "P.729" ;
+        :contentLocationStatement  "P.729" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains one line on glu, gar, and sil snyan in Nagarjuna's Lnag bcu pa"@en .
     
     bdr:NTF497FBB32E85116F
         a                   :Note ;
-        :locationStatement  "P.862" ;
+        :contentLocationStatement  "P.862" ;
         :noteSource         bdr:MW1PD95844 ;
         :noteText           "contains dicussion on gar, glu, and rol mo in Kalyanamitra's Sramanerasiksapadasutra"@en .
     

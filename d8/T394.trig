@@ -57,7 +57,7 @@ bdg:T394 {
     
     bdr:NT5F252C560D2A4CA5
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1426" ;
+        :contentLocationStatement  "v. 2, p. 1426" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1196-22) notes that the nA ro chos drug precepts were taught and put together by the indian master narotapa: 1) gtum mo (ma rgyud kyai rdo rje dang bde mchog nas bshad pa; 2) sgyu lus (pha rgyud gsang ba 'dus pa nas bshad pa); 3) 'od gsal (pha rgyud gsang ba 'dus pa nas bshad pa). these three are the rtsa ba gsum; 4) 'pho ba (ma rgyud gdan bzhi nas bshad pa); 5) grong 'jug (ma rgyud gdan bzhi nas bshad pa); 6) bar do'i gdams ngag. these three are called the yan lag gsum."@en .
     

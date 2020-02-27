@@ -31,7 +31,7 @@ bdg:T1388 {
     
     bdr:NTEA481B5594736B98
         a                   :Note ;
-        :locationStatement  "v. 1, p. 189" ;
+        :contentLocationStatement  "v. 1, p. 189" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "counter used in describing rdzogs chen practice; this term is applied to instructions and works recounting the way in which these methods are to be practiced.\nthe chos rnam kun btus, citing the tshig don mdzod of the klong chen mdzod bdun (92-2) outlines the khregs chod 'degs lugs rnam pa gsum: 1) chos zad ka dag chen por la bzla ba; 2) bya bral zang thal rjen par 'gag bsdams pa; 3) yongs grol mnyam pa chen po'i chings su bcing ba."@en .
     

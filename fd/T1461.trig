@@ -37,7 +37,7 @@ bdg:T1461 {
     
     bdr:NTAD59525E2038805D
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1636" ;
+        :contentLocationStatement  "v. 2, p. 1636" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus citing the dung dkar tshig mdzod 767.9 enumerates the seven mandalas of the rngog tradition as expounded from the teachings transmitted by rngog chos sku rdo rje from mar pa lo tsA ba chos kyi blo gros as: 1) kyai rdo rje lha 9; 2) yum bdag med ma lha mo 15; 3) rdo rje gur rigs bsdus lha 49; 4) rdo rje gdan bzhi'am rdo rje rnal 'byor nam mkha'  lha 97; 5) rdo rje gdan bzhi yum bka' ye shes mkha' gro lha 13; 6) ma hA mA ya'am sgyu ma chen po lha 5; 7) 'jam dpal gsang ldan lha 53. this topic is applied to rituals and explanations treating these seven mandalas together."@en .
     

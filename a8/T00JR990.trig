@@ -41,13 +41,13 @@ bdg:T00JR990 {
     
     bdr:NT4DB49843B1107791
         a                   :Note ;
-        :locationStatement  "pp. 164-165" ;
+        :contentLocationStatement  "pp. 164-165" ;
         :noteSource         bdr:MW20396 ;
         :noteText           "1) chos rje gtsang ston pa'i man ngag lta phreng 'grel dang khrid yig bcas \n2) mkhas grub nam mkha' rdo rje'i sems sde pra khrid\n3) rme shod sangs rgyas rdo rje'i bla ma yang tig khrid \n4) mkhas grub ye shes rgyal mtshan gyi phyag chen man ngag rgya mtsho \n5) grub thob kun dga' 'bum pa'i gcod khrid chen mo \n6) bar khrod dbon bkra shis rin chen gyi rdzogs chen khrid zab lam rig pa'i me long, \n7) bya bral ba bsod nams don 'grub kyi rdzogs chen khrid zab don snying po \n8) hor po shakya rgyal mtshan gyi dgongs pa zang thal khrid \n9) mkhas grub pad+ma ma ti'i bar do drug gi khrid \n10) pad+ma ma ti'i yang ti nag po gser gyi 'bru gcig khrid zab lam don gsal\n11) rig 'dzin tshe dbang nor bu'i dkon mchog spyi 'dus kyi khrid gu ru'i dgongs rgyan \n12) rig 'dzin bdud 'dul rdo rje'i rdzogs chen khrid kun bzang 'ja' sku \n13) klong gsal rdo rje snying po'i khrid yig 'ja' zer grong 'jug"@en .
     
     bdr:NTF39FCF7ACED47BA2
         a                   :Note ;
-        :locationStatement  "p. 176.5" ;
+        :contentLocationStatement  "p. 176.5" ;
         :noteSource         bdr:MW30200 ;
         :noteText           "acknowledges another version of the khrid chen bcu gsum in which the man ngag lta phreng and dkon mchog spyi 'dus are replaced with the khol ri byang chub rgyal mtshan gyi ka dag klong yangs and stong chung bkra shis rgya mtsho'i phyag chen khrid.  the standard enumeration is preferable because the former is similar to the dgongs pa zang thal and the latter is a summary of the phyag chen man ngag rgya mtsho"@en .
     

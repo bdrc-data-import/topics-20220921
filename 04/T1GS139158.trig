@@ -43,7 +43,7 @@ bdg:T1GS139158 {
     
     bdr:NT7240F902EDA654D2
         a                   :Note ;
-        :locationStatement  "pp. 198-203" ;
+        :contentLocationStatement  "pp. 198-203" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "Protective deity regarded to be a form of sridevi, the youngest of the offspring of the sde dpon of gshin rje, long ba'i rgyal po, and the mother kha la me 'bar ba."@en .
     

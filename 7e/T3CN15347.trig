@@ -31,7 +31,7 @@ bdg:T3CN15347 {
     
     bdr:NT5849DD08A8B39D3D
         a                   :Note ;
-        :locationStatement  "p. 9 - p. 12" ;
+        :contentLocationStatement  "p. 9 - p. 12" ;
         :noteSource         bdr:MW3CN15290 ;
         :noteText           "གནམ་ཆོས་ལས་གསུངས་པའི་སྤྱན་རས་གཟིགས་ཀྱི་སྤྲུལ་པ་དང་ཨོ་རྒྱན་སྤྲུལ་པ་གཅིག་བསྡུས་ཀྱི་ཡི་དམ་ཞིག་ཡིན་པར་གསལ།"@bo .
     

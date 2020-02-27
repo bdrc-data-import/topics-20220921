@@ -24,7 +24,7 @@ bdg:T1412 {
     
     bdr:NT810493A141CCCBEE
         a                   :Note ;
-        :locationStatement  "v. 80" ;
+        :contentLocationStatement  "v. 80" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "keyword applied to rituals to promote the fertility and increase of progeny\naccording to the rin chen gter mdzod chen mo the rituals belonging to this class include:\n1) bla ma gsang 'dus kyi them med lha bu btson 'dzin (gu ru chos dbang)\n2) lha mo bu rdzi ma'i rten mdos (rdor gling gter phran gces phreng)\n3) rming po srid spel gyi chos drug gi srid 'bebs (sangs rgyas gling pa'i bla ma dgongs 'dus)\n4) srid 'tsho sogs (gter chos)\n5) rin chen mkha' 'gro so sor 'brang ma (mchog gling zab bdun tshe zab)"@en .
     

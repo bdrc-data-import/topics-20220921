@@ -31,7 +31,7 @@ bdg:T8LS14946 {
     
     bdr:NTF04DB812BA161F1D
         a                   :Note ;
-        :locationStatement  "vol. kha, p. 319" ;
+        :contentLocationStatement  "vol. kha, p. 319" ;
         :noteSource         bdr:MW29307 ;
         :noteText           "vairocana, akSobhya, ratnasaMbhava, amitAbha, amoghasiddhi"@en .
     

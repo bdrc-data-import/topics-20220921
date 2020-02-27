@@ -41,7 +41,7 @@ bdg:T163 {
     
     bdr:NT8A7234EB62DA228D
         a                   :Note ;
-        :locationStatement  "v. 1, p. 397" ;
+        :contentLocationStatement  "v. 1, p. 397" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (quoting the shes bya kun khyab, deb bar cha 704-20) defines the three rdzogs rim lha sku rjes mthun gyi dbye ba gsum:\n\nrdzogs rim lha sku rjes mthun gyi dbye ba gsum\n1) rdzogs pa'i rnal 'byor ni/ sems zhu bde phal pas byin gyis brlabs pa'i rkyen dang lha bsgom pa'i mthus/ rnam rtog med bzhin gsal snang char ba'i lha sku'o/; 2) sgyu lus bdag byin rlabs ni/ rlung sems tsam las dngos su grub pa'i lha sku'o/; 3) mtshan ma'i rnal 'byor ni/ du ba la sogs pa'i rtags snang ngo."@en .
     

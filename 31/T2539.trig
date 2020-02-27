@@ -37,7 +37,7 @@ bdg:T2539 {
     
     bdr:NT2047BE9AB1682E19
         a                   :Note ;
-        :locationStatement  "pp. 198-203" ;
+        :contentLocationStatement  "pp. 198-203" ;
         :noteSource         bdr:MW24826 .
     
     bdr:T2539  a            :Topic ;

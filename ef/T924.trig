@@ -37,7 +37,7 @@ bdg:T924 {
     
     bdr:NT397D7BFE7CA07910
         a                   :Note ;
-        :locationStatement  "pp. 112-122" ;
+        :contentLocationStatement  "pp. 112-122" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "this deity topic is applied to the four-faced mahakala when a more specific form is not ascertainable:\nthe special forms are:\n385) dpal mgon zhal bzhi pa bsnyen dus dang 'brel ba;  \n386) dpal mgon zhal bzhi pa sgrub dus dang 'brel ba;  \n387) dpal mgon zhal bzhi las sbyor mgon po;  \n388) dpal mgon zhal bzhi pa dkar po tshe 'phel;  \n389) dpal mgon zhal bzi pa ser po nor 'phel;  \n390) dpal mgon zal bzhi pa dmar po dbang sdud;  \n391) dpal mgon zhal zhi pa sngon po nyams sgrol\n\ndeities of tibetan buddhism"@en .
     

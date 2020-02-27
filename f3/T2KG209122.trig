@@ -31,7 +31,7 @@ bdg:T2KG209122 {
     
     bdr:NT6231EAA37FE80D59
         a                   :Note ;
-        :locationStatement  "p. 1043" ;
+        :contentLocationStatement  "p. 1043" ;
         :noteSource         bdr:MW26372 ;
         :noteText           "dung dkar tshig mdzod/"@bo-x-ewts .
     

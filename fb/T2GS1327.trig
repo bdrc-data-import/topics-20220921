@@ -37,7 +37,7 @@ bdg:T2GS1327 {
     
     bdr:NT0237FB490D32CB33
         a                   :Note ;
-        :locationStatement  "v. 2, pp. 1341-1342" ;
+        :contentLocationStatement  "v. 2, pp. 1341-1342" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 649-19) lists these six tantric adornments as: 1) rus pa'i dbu rgyan; 2) mgul rgyan; 3) snyan rgyan; 4) gdu bu; 5) se ral kha; 6) 'og pag. iw notes: the six ornaments and accoutrements scepters [bone head ornament, necklace, ear rings, gdu bu, se ral kha, 'og pag]"@en .
     

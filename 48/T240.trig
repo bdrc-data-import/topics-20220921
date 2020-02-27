@@ -60,7 +60,7 @@ bdg:T240 {
     
     bdr:NT3078B7C6ADBA427D
         a                   :Note ;
-        :locationStatement  "2. ff" ;
+        :contentLocationStatement  "2. ff" ;
         :noteSource         bdr:MW3CN1657 ;
         :noteText           "དཔེ་ཆ་འདིའི་ཤོག་སྣེའི་མཚན་བྱང་ལ་\"སྐད་ཤན་སྦྱར་\"ཞེས་གསལ།"@bo .
     

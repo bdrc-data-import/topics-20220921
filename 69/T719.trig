@@ -59,7 +59,7 @@ bdg:T719 {
     
     bdr:NT62E2AF8D0E9A9CAC
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1652" ;
+        :contentLocationStatement  "v. 2, p. 1652" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (quoting dung dkar tshig mdzod 1049-29) lists the thub pa bdun: 1) rnam gzigs; 2) gtsug tor can; 3) thams cad skyob; 4) 'khor ba 'jig; 5) gser thub; 6) 'od srungs; 7) shAkya thub pa"@en .
     

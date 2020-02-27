@@ -24,7 +24,7 @@ bdg:T2602 {
     
     bdr:NTD939669411B7DB95
         a                   :Note ;
-        :locationStatement  "v. 72" ;
+        :contentLocationStatement  "v. 72" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "works for the protection against thieves and bandits are classified under this key word\nthe rin chen gter mdzod chen mo includes 15 separate texts arranged into 6 sections:\n1) sgrol ma'i dgra jag 'ching ba ra ru ma'i gzhung (bya mong brtson 'grus grags)\n2) sgrol ma'i dgra jag 'ching ba ra ru ma'i gsal byed (sa skya gong ma kun dga' blo gros)\n3) lag len dmar khrid\n4) thugs sgrub bal mo'i jag chings sgrib shing bcas (byang gter rig 'dzin rgod kyi ldem 'phru can)\n5) rkun ching (given by the tshe ring ma to mi la ras pa)\n6) dam can dgra chings (given by nam mkha'i snying po to padma)\n7) yang lag len 'dra min can\n8) jag chings (lha btsun)\n9) rta gsang jag chings gnod byed skrod pa gter gzhung (rat+na gling pa)\n10) thub nag (bka' ma)\n11) gur drag and gnam chos jag chings (rat+na gling pa and gnam chos mi 'gyur rdo rje)\n12) 'od zer can ma'i dbang chog (gnam chos mi 'gyur rdo rje)\n13) dgra chings 'khor lo (gsar rnying mang po'i bcud bsdus karma chags med)"@en .
     

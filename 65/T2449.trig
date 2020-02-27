@@ -24,7 +24,7 @@ bdg:T2449 {
     
     bdr:NT434A5949EB0085A8
         a                   :Note ;
-        :locationStatement  "p. 436" ;
+        :contentLocationStatement  "p. 436" ;
         :noteSource         bdr:MW29329 ;
         :noteText           "sbyin sreg gi mdzad sgo'i skabs bed spyod pa'i yo byad dgang gzer dang blugs gzar gnyis kyi bsdus ming /"@bo-x-ewts .
     

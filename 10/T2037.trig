@@ -48,7 +48,7 @@ bdg:T2037 {
     
     bdr:NT33BFF5C8C9CD0C37
         a                   :Note ;
-        :locationStatement  "p. 2768" ;
+        :contentLocationStatement  "p. 2768" ;
         :noteSource         bdr:MW29329 ;
         :noteText           "directions, guide book"@en .
     

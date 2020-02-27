@@ -31,7 +31,7 @@ bdg:T8LS15613 {
     
     bdr:NT0F483E62C8A6DD71
         a                   :Note ;
-        :locationStatement  "vol. e, f. 100v7" ;
+        :contentLocationStatement  "vol. e, f. 100v7" ;
         :noteSource         bdr:MW29706 .
     
     bdr:T8LS15613  a        :Topic ;

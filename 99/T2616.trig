@@ -24,7 +24,7 @@ bdg:T2616 {
     
     bdr:NTE3DC2843B7136795
         a                   :Note ;
-        :locationStatement  "f. 223r" ;
+        :contentLocationStatement  "f. 223r" ;
         :noteSource         bdr:MW20584 ;
         :noteText           "this key word is applied to works focusing on uma, a protective hindu deity connected with the klong chen snying thig revelations"@en .
     

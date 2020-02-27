@@ -43,7 +43,7 @@ bdg:T00KG02742 {
     
     bdr:NTBD295FA32C01C688
         a                   :Note ;
-        :locationStatement  "p. 2382" ;
+        :contentLocationStatement  "p. 2382" ;
         :noteSource         bdr:MW29329 ;
         :noteText           "བླ་མ་སོགས་ཀྱི་ཞལ་གསུང་ལ་བརྟེན་ནས་ཤེས་དགོས་པའི་མན་ངག་སྙི་ང་པོར་དྲིལ་བའི་གཞུང་།"@bo .
     

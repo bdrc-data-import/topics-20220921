@@ -37,7 +37,7 @@ bdg:T1384 {
     
     bdr:NT02653F520EEAAE15
         a                   :Note ;
-        :locationStatement  "f. 16v" ;
+        :contentLocationStatement  "f. 16v" ;
         :noteSource         bdr:MW22446 ;
         :noteText           "bka' brgyud lineage and subsect.\nthis school is one of the four greater lines and takes its origins from 'ba' rom pa dar ma dbang phyug.\nwidely spread in the nang chen area in khams.\nabsorbed by the mchog gling gter gsar."@en .
     

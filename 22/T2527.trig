@@ -31,7 +31,7 @@ bdg:T2527 {
     
     bdr:NT3F0BBD083F1F732D
         a                   :Note ;
-        :locationStatement  "pp. 171-173" ;
+        :contentLocationStatement  "pp. 171-173" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "one of the protective deities belonging to the bdud mo mched bzhi; the bdud mo mched gnyis are one of the three groups belonging to the bstan ma bcu gnyis\nstyled: gangs kyi yum chen"@en .
     

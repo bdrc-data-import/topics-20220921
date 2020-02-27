@@ -43,7 +43,7 @@ bdg:T2GS1150 {
     
     bdr:NTC58A9EAE1E3B6CAC
         a                   :Note ;
-        :locationStatement  "p. 232" ;
+        :contentLocationStatement  "p. 232" ;
         :noteSource         bdr:MW2GS1147 ;
         :noteText           "this supernatural being topic is used for bskang gso and similar rituals for the propitiation of the gnas bdag of sbas yul mkhan pa lung"@en .
     

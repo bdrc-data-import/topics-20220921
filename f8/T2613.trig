@@ -31,7 +31,7 @@ bdg:T2613 {
     
     bdr:NT65E79636FB555A0A
         a                   :Note ;
-        :locationStatement  "v. 68-69" ;
+        :contentLocationStatement  "v. 68-69" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "the rin chen gter mdzod chen mo groups rituals for the offering of fragrant smells and first portions under a category (snang srid zhi bder sgrub pa bsang gsur phud mchog):\n1) gnam sa snang brgyad bsang gter (mnga' bdag myang ral nyi ma 'od zer)\n2) phud rab rgyas pa (klong chen pa dri med 'od zer)\n3) sde brgyad bcos thabs (gnubs chen sangs rgyas ye shes)\n4) gtsug lag rtsis kyi lha rnams mchod thabs (smin gling lo chen d+harma shrI)\n5) bsang mchod bde legs kun 'byung (klong chen pa) and rgyags rngan (rgyal sras legs pa). both of these are written by gsang bdag 'phrin las lhun grub.\n6) ri bo bsang mdzod (from the rig 'dzin srog sgrub of lha btsun nam mkha' 'jigs med)\n7) rtsa gsum bsang mchod (stag sham nus ldan rdo rje's pad+ma yongs grol)\n8) bsang rngan, brngan mdos, gzhi bdag rten bkol (mchog gyur gling pa bla ma dngos grub rgya mtsho)\n9) gsur mchod (gu ru chos kyi dbang phyug bla ma gsang 'dus)\n10) dkar dmar gsur mchod smon lam bcas (mchog gyur gling pa)\n11) dkar dmar gsur rkyang (kong sprul)"@en .
     

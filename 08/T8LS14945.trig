@@ -38,7 +38,7 @@ bdg:T8LS14945 {
     
     bdr:NT70EEEE6D13D3EB8E
         a                   :Note ;
-        :locationStatement  "vol. kha, p. 319" ;
+        :contentLocationStatement  "vol. kha, p. 319" ;
         :noteSource         bdr:MW29307 .
     
     bdr:T8LS14945  a        :Topic ;

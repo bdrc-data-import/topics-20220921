@@ -43,13 +43,13 @@ bdg:T950 {
     
     bdr:NT589A754B41B1D1D6
         a                   :Note ;
-        :locationStatement  "prelims." ;
+        :contentLocationStatement  "prelims." ;
         :noteSource         bdr:MW12422 ;
         :noteText           "according to the yi dam rgya mtsho'i sgrub thabs rin chen 'byung gnas there are five mgon po bka' lnga:\nphyag drug pa bar chad kun sel:      \nmgon dkar yid bzhin nor bu:  \nmgon ser blo 'phel:  \nmgon dmar dbang gi rgyal po:  \nmgon ljang tshe bdag:"@en .
     
     bdr:NTE516815F2990F858
         a                   :Note ;
-        :locationStatement  "v. 58-60" ;
+        :contentLocationStatement  "v. 58-60" ;
         :noteSource         bdr:MW20578 ;
         :noteText           "under this deity key word are classed rituals for unidentified forms of mahakala of the gsar ma traditions; \nunder this key word are also classed various forms of mahakala according to the rnying ma tradition not otherwise differentiated;  \naccording to the rin chen gter mdzod the various protectors of the mahakala class who are included in these volumes are:  \n1) rgyud mgon legs ldan (bka' ma);  \n2) mgon po legs ldan (mchog gling zab bdun bka' srung gtso bo);  \n3) las mgon, sras mchog ber nag ,dang re ti zhal sbyor (gter gzhung);  \n4) ye shes mgon po phyag bzhi pa (mnga' bdag nyang ral nyi ma 'od zer);  \n5) phyag bzhi pa (mchog gling zab bdun);  \n6) gur mgon srog gi spu gri (gu rus 'khon klu dbang la gnang ba bka' ma);  \n7) gur mgon (rgya pad+ma dbang phyug);  \n8) mgon po phyag drug pa (mchog gling thugs chen pad+ma sgyu 'phrul drwa ba);  \n9) phyag drug pa zab mo skor dgu'i phyi sgrub (mchog gling);  \n10) mgon po ma ning (chos dbang dang rdor gling rat gling pad gling 'ja' tshon rnams kyi gter kha gcig 'dus);  \n11) mgon po trak+Shad"@en .
     

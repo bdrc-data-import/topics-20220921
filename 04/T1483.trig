@@ -36,7 +36,7 @@ bdg:T1483 {
     
     bdr:NT0F76C6B91BCE0B5B
         a                   :Note ;
-        :locationStatement  "v. 2, p. 1426-1427" ;
+        :contentLocationStatement  "v. 2, p. 1426-1427" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (citing the dung dkar tshig mdzod 1208-8) enumerates these six teachings or doctrines: 1) gtum mo bde drod rang 'bar; 2) sgyu lus chags sdang rang grol; 3) rmi lam nying 'phrul rang dag; 4) 'od gsal gti mug rang sangs; 5) 'pho ba ma sgom sangs rgyas; 6) bar do rgyal ba longs sku."@en .
     

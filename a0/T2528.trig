@@ -31,7 +31,7 @@ bdg:T2528 {
     
     bdr:NT5710D69F9EDAF3BC
         a                   :Note ;
-        :locationStatement  "pp. 173-175" ;
+        :contentLocationStatement  "pp. 173-175" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "one of the protective deities belonging to the bdud mo mched bzhi; the bdud mo mched gnyis are one of the three groups belonging to the bstan ma bcu gnyis"@en .
     

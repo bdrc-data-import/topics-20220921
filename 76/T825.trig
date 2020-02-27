@@ -37,7 +37,7 @@ bdg:T825 {
     
     bdr:NT6534572B103747EA
         a                   :Note ;
-        :locationStatement  "v. 3, pp. 448" ;
+        :contentLocationStatement  "v. 3, pp. 448" ;
         :noteSource         bdr:MW19221 ;
         :noteText           "this revelatory form of tara was a vision ofmkhas grub nor bzang rgya mtsho"@en .
     

@@ -31,7 +31,7 @@ bdg:T8LS15536 {
     
     bdr:NT48AF6BFDDCBC0D2A
         a                   :Note ;
-        :locationStatement  "vol. e, f. 96r2" ;
+        :contentLocationStatement  "vol. e, f. 96r2" ;
         :noteSource         bdr:MW29706 .
     
     bdr:T8LS15536  a        :Topic ;

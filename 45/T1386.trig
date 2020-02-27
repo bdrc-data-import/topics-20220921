@@ -37,7 +37,7 @@ bdg:T1386 {
     
     bdr:NT8F6126171B95FECC
         a                   :Note ;
-        :locationStatement  "f. 16v" ;
+        :contentLocationStatement  "f. 16v" ;
         :noteSource         bdr:MW22446 ;
         :noteText           "bka' brgyud pa lineage and subsect.\nthis school is one of the four greater lines (che bzhi)  and takes its origins from the first black hat karma pa dus gsum mkhyen pa.\nit's chief monasteries were lho karma dgon, mtshur phu, and dpal spungs.\nthe school had two major incarnation lineages: the black hat (zhwa nag) and the red hat (zhwa dmar)\nother important incarnation lineages belonging to the transmission lineage are: dpal spung, gnas nang dpa' bo, mtshur phu rgyal tshab, and karma chags med (also the founder of the gnas mdo bka' brgyud)"@en .
     

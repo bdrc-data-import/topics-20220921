@@ -49,7 +49,7 @@ bdg:T1249 {
     
     bdr:NT967A251EAB379C32
         a                   :Note ;
-        :locationStatement  "v. 1, p. 397" ;
+        :contentLocationStatement  "v. 1, p. 397" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "the chos rnam kun btus (quoting from the dung dkar tshig mdzod 1749-20) speaks of the systems of contemplative practice according to the rdzogs chen tradition (rdzogs pa chen po'i sgom tshul gsum):\n1) sems sde rig stong chos sku'i ngang du 'jog; 2) klong sde chos nyid bya rtsol med pa'i ngang du 'jog; 3) man ngag gi sde ye grol spang blang dang bral ba'i ngang du 'jog."@en .
     

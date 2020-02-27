@@ -37,7 +37,7 @@ bdg:T2GS1332 {
     
     bdr:NT3037F90232718897
         a                   :Note ;
-        :locationStatement  "v. 1, p. 398" ;
+        :contentLocationStatement  "v. 1, p. 398" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (quoting the dung dkar tshig mdzod, 1768-28): zhal che'i byang bu gsum\n\n1) zangs yag; 2) sked khra; 3) kha dmar rgya byang"@en .
     

@@ -47,7 +47,7 @@ bdg:T558 {
     
     bdr:NTCB6202AFDB0848EB
         a                   :Note ;
-        :locationStatement  "v. 3, p. 347" ;
+        :contentLocationStatement  "v. 3, p. 347" ;
         :noteSource         bdr:MW19221 ;
         :noteText           "according to various sources this form of tara is styled bka' babs bdun ldan"@en .
     

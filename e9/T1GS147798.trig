@@ -37,7 +37,7 @@ bdg:T1GS147798 {
     
     bdr:NTEEBC4B2084B1CD96
         a                   :Note ;
-        :locationStatement  "v. 1, p. 1309" ;
+        :contentLocationStatement  "v. 1, p. 1309" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to the chos rnam kun btus (quoting the lde'u chos 'byung, 278-13) the five earth defects of lha sa (lha sa'i sa'i skyon legs) are:\n1) klu'i pho brang; 2) 'dre'i mdun sa; 3) ma mo'i nyal sa; 4) btsan rgyi rgyu srang; 5) 'byung ba bzhi ba'i sa dgra."@en .
     

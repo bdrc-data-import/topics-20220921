@@ -31,7 +31,7 @@ bdg:T1387 {
     
     bdr:NT045CB2991E0608BA
         a                   :Note ;
-        :locationStatement  "f. 16v" ;
+        :contentLocationStatement  "f. 16v" ;
         :noteSource         bdr:MW22446 ;
         :noteText           "bka' brgyud pa lineage and subsect.\nThis school is one of the four greater lines (che bzhi)  and takes its origins from zhang tshal pa brtson 'grus grags pa, the disciple of dbon sgom tshul khrims snying po.\nIt was the predominant sectarian tradition of the myriarchy of tshal gung thang.\nIt also enjoyed wide popularity in western tibet"@en .
     

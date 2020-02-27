@@ -43,7 +43,7 @@ bdg:T2GS1151 {
     
     bdr:NT212D8F92AA905873
         a                   :Note ;
-        :locationStatement  "p. 232" ;
+        :contentLocationStatement  "p. 232" ;
         :noteSource         bdr:MW2GS1147 ;
         :noteText           "the supernatural being topic is used for the bskang gso and other similar propitatory ritual for the the gzhi bdag of the sbas yul mkhan pa lung; this is apparently not a place name"@en .
     

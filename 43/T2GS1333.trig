@@ -37,7 +37,7 @@ bdg:T2GS1333 {
     
     bdr:NT59B2168AABB2EBFC
         a                   :Note ;
-        :locationStatement  "v. 1, p. 398" ;
+        :contentLocationStatement  "v. 1, p. 398" ;
         :noteSource         bdr:MW1KG2733 ;
         :noteText           "according to chos rnam kun btus (quoting the dung dkar tshig mdzod 1765-25): zhabs tog gsum:  de yang dgos pa gsum gyi lus 'bul lo zhes pa'ang 'di nyid do\n1) nor ci yod 'bul ba'i snying khams dgos; 2) las chos su mthong ba'i dad pa dgos; 3) tsha thub grang thub kyi bsgrub pa dgos zhes gsungs"@en .
     

@@ -31,7 +31,7 @@ bdg:T1945 {
     
     bdr:NT515F8B88BDB23898
         a                   :Note ;
-        :locationStatement  "pp. 83-87" ;
+        :contentLocationStatement  "pp. 83-87" ;
         :noteSource         bdr:MW24997 ;
         :noteText           "copper working industry"@en .
     

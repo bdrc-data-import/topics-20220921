@@ -37,7 +37,7 @@ bdg:T8LS14983 {
     
     bdr:NT26281C32A17026B4
         a                   :Note ;
-        :locationStatement  "vol. e, f. 13b6" ;
+        :contentLocationStatement  "vol. e, f. 13b6" ;
         :noteSource         bdr:MW29706 ;
         :noteText           "- elder son of mahadeva\n- one of the 8 wrathful deity\n-, kumara the son of mahadeva who is possessed of 6 faces"@en .
     

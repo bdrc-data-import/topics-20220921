@@ -31,7 +31,7 @@ bdg:T2530 {
     
     bdr:NT31E3146130A5158A
         a                   :Note ;
-        :locationStatement  "pp. 175-182" ;
+        :contentLocationStatement  "pp. 175-182" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "a group of four protective deities of the gnod sbyin class; this is one of the groups comprising the bstan ma bcu gnyis:\n\ngangs dkar sha men rdo rje spyan gcig ma\nkha rag khyung btsun\ngser chen mkha' lding rdo rje klu mo\nrdo rje drag rgyal ma"@en .
     

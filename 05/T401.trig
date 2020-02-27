@@ -31,7 +31,7 @@ bdg:T401 {
     
     bdr:NTEBE9050D777D9C45
         a                   :Note ;
-        :locationStatement  "pp. 123-156" ;
+        :contentLocationStatement  "pp. 123-156" ;
         :noteSource         bdr:MW24826 ;
         :noteText           "the generic sridevi as a protective deity"@en .
     

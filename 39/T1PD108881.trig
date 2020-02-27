@@ -66,7 +66,7 @@ bdg:T1PD108881 {
     
     bdr:NT566F6689D645D651
         a                   :Note ;
-        :locationStatement  "p. 2768" ;
+        :contentLocationStatement  "p. 2768" ;
         :noteSource         bdr:MW29329 ;
         :noteText           "passport, permit to travel, travel documents"@en .
     
