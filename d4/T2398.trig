@@ -30,6 +30,12 @@ bdg:T2398 {
         adm:logMessage      "added chinese"@en ;
         adm:logWho          bdr:U00048 .
     
+    bda:LG45C82D8F4860AC59
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-03-20T11:53:01.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added snying bsdus"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:LG71E4DADDCF8671E7
         a                   adm:LogEntry ;
         adm:logDate         "2013-04-15T14:34:02.331Z"^^xsd:dateTime ;
@@ -44,11 +50,11 @@ bdg:T2398 {
     bda:T2398  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2398 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d4/T2398.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2398 ;
-        adm:logEntry        bda:LG0B66EF0213FF8B4A , bda:LG0E3872576F90847B , bda:LG3B9EF0344A9607FC , bda:LG71E4DADDCF8671E7 , bda:LGC3F7EAB7E9B4C7ED ;
+        adm:logEntry        bda:LG0B66EF0213FF8B4A , bda:LG0E3872576F90847B , bda:LG3B9EF0344A9607FC , bda:LG45C82D8F4860AC59 , bda:LG71E4DADDCF8671E7 , bda:LGC3F7EAB7E9B4C7ED ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -57,7 +63,7 @@ bdg:T2398 {
         :noteText           "this keyword is assigned generically to summaries of texts; the keyword sometimes overlaps with the sa bcad or outlines"@en .
     
     bdr:T2398  a            :Topic ;
-        skos:altLabel       "bsdus don/"@bo-x-ewts ;
+        skos:altLabel       "bsdus don/"@bo-x-ewts , "mdor bsdus/"@bo-x-ewts , "snying bsdus/"@bo-x-ewts , "snying don/"@bo-x-ewts ;
         skos:prefLabel      "don bsdus/"@bo-x-ewts , "summary"@en , "概要"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTE65F5EE44CC43CFF .

@@ -18,16 +18,22 @@ bdg:T1PD116111 {
         adm:logMessage      "གསར་དུ་བཅུག"@en ;
         adm:logWho          bdr:U00021 .
     
+    bda:LG98F9445D5761CF5E
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-03-16T19:16:38.268Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:T1PD116111  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1PD116111 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ce/T1PD116111.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1PD116111 ;
-        adm:logEntry        bda:LG03D46D41A1973DF4 ;
+        adm:logEntry        bda:LG03D46D41A1973DF4 , bda:LG98F9445D5761CF5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:NTD56A684BDEC435D8
         a                   :Note ;
