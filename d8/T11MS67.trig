@@ -24,6 +24,12 @@ bdg:T11MS67 {
         adm:logMessage      "added alternative name, abbreviation"@en ;
         adm:logWho          bdr:U00020 .
     
+    bda:LGC260048F555871B4
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-04-27T10:33:55.676Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of T202"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:LGF75AF2B22A91DD88
         a                   adm:LogEntry ;
         adm:logDate         "2014-04-24T19:58:17.321Z"^^xsd:dateTime ;
@@ -32,20 +38,20 @@ bdg:T11MS67 {
     bda:T11MS67  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T11MS67 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d8/T11MS67.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T11MS67 ;
-        adm:logEntry        bda:LG07E8CE498B4458D5 , bda:LGAC639DDA4E525DFB , bda:LGF75AF2B22A91DD88 ;
+        adm:logEntry        bda:LG07E8CE498B4458D5 , bda:LGAC639DDA4E525DFB , bda:LGC260048F555871B4 , bda:LGF75AF2B22A91DD88 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:replaceWith     bdr:T202 ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:NT5A86EDCFB47C9618
         a                   :Note ;
         :noteText           "subject classification applies to both the deity and tantra"@en .
     
     bdr:T11MS67  a          :Topic ;
-        rdfs:seeAlso        bdr:T00JR803 ;
         skos:altLabel       "gsang snying /"@bo-x-ewts ;
         skos:prefLabel      "gsang ba'i snying po/"@bo-x-ewts , "guhyagarbha"@sa-x-ndia ;
         :isRoot             true ;

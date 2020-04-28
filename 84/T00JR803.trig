@@ -17,6 +17,12 @@ bdg:T00JR803 {
         adm:logDate         "2010-01-07T16:44:49.63Z"^^xsd:dateTime ;
         adm:logWho          bdr:U00038 .
     
+    bda:LG527941CABABEBA51
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-04-27T15:32:09.678Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from T11MS67 to T202"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:LG5FF926E86604E374
         a                   adm:LogEntry ;
         adm:logDate         "2014-04-24T19:58:09.844Z"^^xsd:dateTime ;
@@ -43,16 +49,16 @@ bdg:T00JR803 {
     bda:T00JR803  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T00JR803 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "84/T00JR803.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T00JR803 ;
-        adm:logEntry        bda:LG2316B7EBFC116F64 , bda:LG5FF926E86604E374 , bda:LG63F487F97F6E5512 , bda:LG876EAADC8F3881C8 , bda:LG9D77D4EC4AB0C2F9 ;
+        adm:logEntry        bda:LG2316B7EBFC116F64 , bda:LG527941CABABEBA51 , bda:LG5FF926E86604E374 , bda:LG63F487F97F6E5512 , bda:LG876EAADC8F3881C8 , bda:LG9D77D4EC4AB0C2F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T00JR803  a         :Topic ;
-        rdfs:seeAlso        bdr:T11MS67 ;
+        rdfs:seeAlso        bdr:T202 ;
         skos:altLabel       "gsang ba'i snying po sgyu 'phrul drwa ba (khams lugs)"@bo-x-ewts ;
         skos:prefLabel      "sgyu 'phrul drwa ba (khams lugs)"@bo-x-ewts ;
         :isRoot             true .
