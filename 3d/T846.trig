@@ -29,14 +29,20 @@ bdg:T846 {
         adm:logMessage      "added sanskrit: checked by ms"@en ;
         adm:logWho          bdr:U00048 .
     
+    bda:LGD2A6EA84992FFA6A
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-04-30T16:09:27.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant spelling"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:T846  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T846 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3d/T846.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T846 ;
-        adm:logEntry        bda:LG8E8A92F54E42F6A3 , bda:LGA8B63487A9A86B68 , bda:LGAB73BA18CFDAF946 ;
+        adm:logEntry        bda:LG8E8A92F54E42F6A3 , bda:LGA8B63487A9A86B68 , bda:LGAB73BA18CFDAF946 , bda:LGD2A6EA84992FFA6A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,6 +52,7 @@ bdg:T846 {
     
     bdr:T846  a             :Topic ;
         rdfs:seeAlso        bdr:T2518 ;
+        skos:altLabel       "'chi ba blu ba/"@bo-x-ewts , "'chi ba bslu ba/"@bo-x-ewts , "'chi blu/"@bo-x-ewts ;
         skos:prefLabel      "'chi bslu/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTD488BBDE8E31C468 .
