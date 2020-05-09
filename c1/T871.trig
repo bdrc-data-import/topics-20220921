@@ -26,9 +26,9 @@ bdg:T871 {
     
     bda:LGF7555878115C0FDF
         a                   adm:LogEntry ;
-        adm:logDate         "2013-10-23T10:46:31.419Z"^^xsd:dateTime ;
-        adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logDate         "2020-05-08T15:07:11.791Z"^^xsd:dateTime ;
+        adm:logMessage      "added names \"mi bskod pa\" & \"阿閦佛\"..."@en ;
+        adm:logWho          bdr:U00007 .
     
     bda:T871  a             adm:AdminData ;
         :isRoot             true ;
@@ -42,7 +42,7 @@ bdg:T871 {
         adm:status          bda:StatusReleased .
     
     bdr:T871  a             :Topic ;
-        skos:altLabel       "akshobhya"@en-x-mixed , "不动佛"@zh-hans ;
-        skos:prefLabel      "mi 'khrugs pa/"@bo-x-ewts , "aksobhya"@en-x-mixed , "akṣobhya"@sa-x-ndia , "不動佛"@zh-hant ;
+        skos:altLabel       "mi bskyod pa/"@bo-x-ewts , "akshobhya"@en-x-mixed , "阿閦佛"@zh-hans , "阿閦比佛"@zh-hans , "不動佛"@zh-hant ;
+        skos:prefLabel      "mi 'khrugs pa/"@bo-x-ewts , "aksobhya"@en-x-mixed , "अक्षोभ्य"@sa-x-iast , "不动佛"@zh-hans ;
         :isRoot             true .
 }
