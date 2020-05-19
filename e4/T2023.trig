@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2023 {
+    bda:LG295898FCDE3AA517
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-05-18T16:13:15.884Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected \"dogs spyod\" to \"dogs dpyod\""@en ;
+        adm:logWho          bdr:U00007 .
+    
     bda:LG71DD4A56CE33A454
         a                   adm:LogEntry ;
         adm:logDate         "2010-04-12T15:45:55.424Z"^^xsd:dateTime ;
@@ -26,16 +32,16 @@ bdg:T2023 {
     bda:T2023  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2023 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e4/T2023.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2023 ;
-        adm:logEntry        bda:LG71DD4A56CE33A454 , bda:LG9892B8A8C49A2B3C ;
+        adm:logEntry        bda:LG295898FCDE3AA517 , bda:LG71DD4A56CE33A454 , bda:LG9892B8A8C49A2B3C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T2023  a            :Topic ;
-        skos:altLabel       "dogs spyod/"@bo-x-ewts ;
+        skos:altLabel       "dogs dpyod/"@bo-x-ewts ;
         skos:prefLabel      "dogs gcod/"@bo-x-ewts , "clarification of doubtful points"@en-x-mixed ;
         :isRoot             true .
 }

@@ -24,23 +24,29 @@ bdg:T1GS44553 {
         adm:logMessage      "first published"@en ;
         adm:logWho          bdr:U00001 .
     
+    bda:LG6D7C8E8D1C6A3B63
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-05-18T21:00:08.213Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdr:U00007 .
+    
     bda:T1GS44553  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1GS44553 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "dc/T1GS44553.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1GS44553 ;
-        adm:logEntry        bda:LG031FACF9591ED561 , bda:LG33C71DC8C7F7F6D1 ;
+        adm:logEntry        bda:LG031FACF9591ED561 , bda:LG33C71DC8C7F7F6D1 , bda:LG6D7C8E8D1C6A3B63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:NTBE822B60D9EA7CC1
         a                   :Note ;
-        :noteText           "here are classified catalogs and accounts of stupas or choten"@en .
+        :noteText           "here are classified catalogs and accounts of stupas or choten and zuklagkhang"@en .
     
     bdr:T1GS44553  a        :Topic ;
-        skos:altLabel       "mchod sdong dkar chag"@bo-x-ewts ;
+        skos:altLabel       "gtsug lag khang gi dkar chag"@bo-x-ewts , "mchod sdong dkar chag"@bo-x-ewts ;
         skos:prefLabel      "mchod rten dkar chag"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTBE822B60D9EA7CC1 .
