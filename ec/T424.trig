@@ -24,18 +24,25 @@ bdg:T424 {
         adm:logMessage      "changed in attempt to revise to tibetan form"@en ;
         adm:logWho          bdr:U00001 .
     
+    bda:LGF7404EA0E870578A
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-05-22T18:18:13.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdr:U00007 .
+    
     bda:T424  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T424 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ec/T424.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T424 ;
-        adm:logEntry        bda:LG0C870607CDDBC30F , bda:LG6982C2A8629C527E ;
+        adm:logEntry        bda:LG0C870607CDDBC30F , bda:LG6982C2A8629C527E , bda:LGF7404EA0E870578A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T424  a             :Topic ;
+        skos:altLabel       "bza' bca'"@bo-x-ewts , "bza' btung gi rigs/"@bo-x-ewts , "zas rigs/"@bo-x-ewts , "zhal zas/"@bo-x-ewts ;
         skos:prefLabel      "kha zas/"@bo-x-ewts , "food and beverages"@en ;
         :isRoot             true .
 }
