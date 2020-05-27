@@ -12,16 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1433 {
+    bda:LG64E05936AB29419C
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-05-26T16:54:56.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:T1433  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1433 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "a2/T1433.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1433 ;
+        adm:logEntry        bda:LG64E05936AB29419C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1433  a            :Topic ;
-        skos:prefLabel      "drug cu pa'i gtor ma/"@bo-x-ewts ;
+        skos:prefLabel      "drug cu pa'i gtor ma/"@bo-x-ewts , "drug cu ma'i gtor ma"@en-x-mixed ;
         :isRoot             true .
 }
