@@ -36,6 +36,6 @@ bdg:T1711 {
         adm:status          bda:StatusReleased .
     
     bdr:T1711  a            :Topic ;
-        skos:prefLabel      "byams ma (yi dam, bon)"@bo-x-ewts ;
+        skos:prefLabel      "byams ma (yi dam/ bon)"@bo-x-ewts ;
         :isRoot             true .
 }

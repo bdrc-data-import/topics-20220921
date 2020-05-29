@@ -46,7 +46,7 @@ bdg:T2GS1334 {
         :noteText           "this topic is applied to works about the lineages and families that bore a relationship of father-in-law to the rulers, the btsan po or lineages like the sa skya 'khon"@en .
     
     bdr:T2GS1334  a         :Topic ;
-        skos:prefLabel      "zhang, zhang po/"@bo-x-ewts , "maternal uncle, maternal kinsmen"@en ;
+        skos:prefLabel      "zhang / zhang po/"@bo-x-ewts , "maternal uncle, maternal kinsmen"@en ;
         :isRoot             true ;
         :note               bdr:NT06B614D86CEEAC1F , bdr:NTAE0D7E03717B182A .
 }
