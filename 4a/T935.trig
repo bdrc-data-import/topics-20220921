@@ -23,18 +23,25 @@ bdg:T935 {
         adm:logMessage      "added name"@en ;
         adm:logWho          bdr:U00002 .
     
+    bda:LGD779695E681F118F
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-06-03T16:07:30.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added more info"@en ;
+        adm:logWho          bdr:U00017 .
+    
     bda:T935  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T935 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4a/T935.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T935 ;
-        adm:logEntry        bda:LG84B9B07E56CCC04D , bda:LGB07C08D5E54D5A80 ;
+        adm:logEntry        bda:LG84B9B07E56CCC04D , bda:LGB07C08D5E54D5A80 , bda:LGD779695E681F118F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T935  a             :Topic ;
-        skos:prefLabel      "sAtstsha/"@bo-x-ewts ;
+        skos:altLabel       "sa tshA/"@bo-x-ewts ;
+        skos:prefLabel      "sAtst+sha"@bo-x-ewts ;
         :isRoot             true .
 }
