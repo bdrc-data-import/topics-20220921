@@ -17,6 +17,12 @@ bdg:T00AG0335 {
         adm:logDate         "2006-10-26T12:18:08.339Z"^^xsd:dateTime ;
         adm:logWho          bdr:U00002 .
     
+    bda:LGA6BD63A126478685
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-06-04T11:53:23.724Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdr:U00017 .
+    
     bda:LGACEA1B19074AC1A2
         a                   adm:LogEntry ;
         adm:logDate         "2011-05-03T11:01:55.298Z"^^xsd:dateTime ;
@@ -32,11 +38,11 @@ bdg:T00AG0335 {
     bda:T00AG0335  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T00AG0335 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "07/T00AG0335.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T00AG0335 ;
-        adm:logEntry        bda:LG825D2A9956FA82DC , bda:LGACEA1B19074AC1A2 , bda:LGB502D80B1C98315A ;
+        adm:logEntry        bda:LG825D2A9956FA82DC , bda:LGA6BD63A126478685 , bda:LGACEA1B19074AC1A2 , bda:LGB502D80B1C98315A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,8 +51,8 @@ bdg:T00AG0335 {
         :noteText           "one of the gu ru mtshan brgyad"@en .
     
     bdr:T00AG0335  a        :Topic ;
-        skos:altLabel       "mtso skyes rdo rje/"@bo-x-ewts ;
-        skos:prefLabel      "gu ru mtso skyes rdo rje/"@bo-x-ewts ;
+        skos:altLabel       "mtsho skyes rdo rje/"@bo-x-ewts ;
+        skos:prefLabel      "gu ru mtsho skyes rdo rje/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTD3AFC88CD64AFC92 .
 }

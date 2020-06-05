@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1CZ48 {
+    bda:LG2458160388996C54
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-06-04T11:53:24.027Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdr:U00017 .
+    
     bda:LG523D733A90A1B462
         a                   adm:LogEntry ;
         adm:logDate         "2007-03-05T11:59:52.778Z"^^xsd:dateTime ;
@@ -21,16 +27,15 @@ bdg:T1CZ48 {
     bda:T1CZ48  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1CZ48 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "87/T1CZ48.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1CZ48 ;
-        adm:logEntry        bda:LG523D733A90A1B462 ;
+        adm:logEntry        bda:LG2458160388996C54 , bda:LG523D733A90A1B462 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1CZ48  a           :Topic ;
-        skos:altLabel       "uncommon sadhana/"@bo-x-ewts ;
-        skos:prefLabel      "sgrub thabs thun mong ma yin pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrub thabs thun mong ma yin pa/"@bo-x-ewts , "uncommon sadhana"@en ;
         :isRoot             true .
 }
