@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1928 {
+    bda:LG041161265DF34557
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-06-08T12:49:37.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added other name"@en ;
+        adm:logWho          bdr:U00016 .
+    
     bda:LG5AC82C9BD45149B3
         a                   adm:LogEntry ;
         adm:logDate         "2011-02-23T09:56:25.877Z"^^xsd:dateTime ;
@@ -21,11 +27,11 @@ bdg:T1928 {
     bda:T1928  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1928 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c6/T1928.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1928 ;
-        adm:logEntry        bda:LG5AC82C9BD45149B3 ;
+        adm:logEntry        bda:LG041161265DF34557 , bda:LG5AC82C9BD45149B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +41,7 @@ bdg:T1928 {
         :noteText           "styled zhing skyong lhan skyes rdo rje g.yu sgron ma"@en .
     
     bdr:T1928  a            :Topic ;
+        skos:altLabel       "dpal ldan ha ri rdo rje g.ya' ma skyong /"@bo-x-ewts ;
         skos:prefLabel      "rdo rje g.yu sgron ma/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT44D4C902146A6EE6 .
