@@ -14,8 +14,8 @@
 bdg:T1CZ48 {
     bda:LG2458160388996C54
         a                   adm:LogEntry ;
-        adm:logDate         "2020-06-04T11:53:24.027Z"^^xsd:dateTime ;
-        adm:logMessage      "fixed typo"@en ;
+        adm:logDate         "2020-06-09T11:36:17.415Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
         adm:logWho          bdr:U00017 .
     
     bda:LG523D733A90A1B462

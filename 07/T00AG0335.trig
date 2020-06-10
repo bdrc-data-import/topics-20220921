@@ -19,8 +19,8 @@ bdg:T00AG0335 {
     
     bda:LGA6BD63A126478685
         a                   adm:LogEntry ;
-        adm:logDate         "2020-06-04T11:53:23.724Z"^^xsd:dateTime ;
-        adm:logMessage      "fixed typo"@en ;
+        adm:logDate         "2020-06-09T11:36:16.48Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
         adm:logWho          bdr:U00017 .
     
     bda:LGACEA1B19074AC1A2

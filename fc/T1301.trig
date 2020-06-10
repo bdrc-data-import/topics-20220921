@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1301 {
+    bda:LG349036CA1123F10C
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-06-09T11:36:16.941Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdr:U00017 .
+    
     bda:LGE4D6C3BDFF1145F6
         a                   adm:LogEntry ;
         adm:logDate         "2007-08-15T15:39:03.893Z"^^xsd:dateTime ;
@@ -21,11 +27,11 @@ bdg:T1301 {
     bda:T1301  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1301 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fc/T1301.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1301 ;
-        adm:logEntry        bda:LGE4D6C3BDFF1145F6 ;
+        adm:logEntry        bda:LG349036CA1123F10C , bda:LGE4D6C3BDFF1145F6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,8 +40,8 @@ bdg:T1301 {
         :noteText           "blood"@en .
     
     bdr:T1301  a            :Topic ;
-        skos:altLabel       "rak+ta/"@bo-x-ewts ;
-        skos:prefLabel      "rakta/"@bo-x-ewts ;
+        skos:altLabel       "rakta/"@bo-x-ewts ;
+        skos:prefLabel      "rak+ta/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTE5D1A90BD6ED0F06 .
 }
