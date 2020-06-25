@@ -25,6 +25,7 @@ bdg:T1KG24262 {
         adm:gitPath         "92/T1KG24262.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1KG24262 ;
+        adm:isRestrictedInChina  true ;
         adm:logEntry        bda:LGFD55E787F47FB211 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
