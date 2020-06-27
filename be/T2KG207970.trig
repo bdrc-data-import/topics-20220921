@@ -25,9 +25,9 @@ bdg:T2KG207970 {
         adm:gitPath         "be/T2KG207970.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2KG207970 ;
-        adm:isRestrictedInChina  true ;
         adm:logEntry        bda:LGBCBCE37905A666B9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:T2KG207970  a       :Topic ;
