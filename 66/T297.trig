@@ -1,4 +1,4 @@
-@base          <bdg:T297> .
+BASE           <bdg:T297>
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
