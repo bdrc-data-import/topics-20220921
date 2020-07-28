@@ -29,10 +29,15 @@ bdg:T583 {
         adm:logMessage      "added name"@en ;
         adm:logWho          bdr:U00017 .
     
+    bda:LGB6AD54268E78F453
+        a                   adm:LogEntry ;
+        adm:logDate         "2020-07-27T16:35:50.05Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00007 .
+    
     bda:LGBFBF23847AAAA67F
         a                   adm:LogEntry ;
         adm:logDate         "2011-03-11T15:31:37.788Z"^^xsd:dateTime ;
-        adm:logMessage      "corrected spelling nA and added shad"@en ;
+        adm:logMessage      "corrected Tibetan spelling nA and added name in Chinese"@en ;
         adm:logWho          bdr:U00007 .
     
     bda:LGD1B926BCB536B40B
@@ -44,11 +49,11 @@ bdg:T583 {
     bda:T583  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T583 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ce/T583.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T583 ;
-        adm:logEntry        bda:LG172AE36D1137A052 , bda:LG2B221B900F0DF43B , bda:LG960D3F4E820978B0 , bda:LGBFBF23847AAAA67F , bda:LGD1B926BCB536B40B ;
+        adm:logEntry        bda:LG172AE36D1137A052 , bda:LG2B221B900F0DF43B , bda:LG960D3F4E820978B0 , bda:LGB6AD54268E78F453 , bda:LGBFBF23847AAAA67F , bda:LGD1B926BCB536B40B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -57,8 +62,8 @@ bdg:T583 {
         :noteText           "this topic is applied to sadhana and other ritual practices connected with vajrayogini; she is red with one face, two arms, and three eyes.  \n\n\ndeities of tibetan buddhism #77; see also #87"@en .
     
     bdr:T583  a             :Topic ;
-        skos:altLabel       "rje btsun nA ro mkha' spyod ma/"@bo-x-ewts , "rje btsun rdo rje rnal 'byor ma/"@bo-x-ewts ;
-        skos:prefLabel      "nA ro mkha' spyod/"@bo-x-ewts , "dakini according to the tradition of naropa"@en , "nadakhecari"@sa-alalc97 ;
+        skos:altLabel       "rdo rje rnal 'byor ma/"@bo-x-ewts , "rje btsun nA ro mkha' spyod ma/"@bo-x-ewts , "rje btsun rdo rje rnal 'byor ma/"@bo-x-ewts ;
+        skos:prefLabel      "nA ro mkha' spyod ma/"@bo-x-ewts , "dakini according to the tradition of naropa"@en , "nadakhecari"@sa-alalc97 , "金刚瑜伽母"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTB1990DB882367383 .
 }
