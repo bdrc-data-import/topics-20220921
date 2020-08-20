@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,26 +13,26 @@
 
 bdg:T00JR399 {
     bda:LG65476517B394AB2F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-01-30T16:54:11.896Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LGBA6DDE1EA5B0877C
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2006-10-20T14:49:35.331Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:LGEE8E4C93AE31BD93
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-16T16:03:31.942Z"^^xsd:dateTime ;
         adm:logMessage      "changed language settings"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGF0047A484A6D89D2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-12T13:49:13.529Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T00JR399  a         adm:AdminData ;
         :isRoot             true ;

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T1038 {
     bda:LG00A762258172FC1B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T09:41:41.255Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG653A63465A2D1DEA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T09:04:01.922Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown as orphon"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LGC69A3102105654B1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-16T08:34:55.234Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEEA512EFC97364B4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1038  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1038 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e4/T1038.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1038 ;
-        adm:logEntry        bda:LG00A762258172FC1B , bda:LG653A63465A2D1DEA , bda:LGC69A3102105654B1 ;
+        adm:logEntry        bda:LG00A762258172FC1B , bda:LG653A63465A2D1DEA , bda:LGC69A3102105654B1 , bda:LGEEA512EFC97364B4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

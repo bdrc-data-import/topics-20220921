@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,41 +13,45 @@
 
 bdg:T394 {
     bda:LG1EB2CB0BBD7033E2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-19T12:06:50.77Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG6D986D4930690462
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-10T11:23:38.019Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG9029AE4DC858E3F8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-12-21T16:58:52.481Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG99D32B7D38ABBEBA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDC2FC923ABC83B73
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-25T16:19:45.426Z"^^xsd:dateTime ;
         adm:logMessage      "application note and description from chos rnam kun btus added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGFCAD08764990003F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-03-08T16:32:22.083Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T394  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T394 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d8/T394.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T394 ;
-        adm:logEntry        bda:LG1EB2CB0BBD7033E2 , bda:LG6D986D4930690462 , bda:LG9029AE4DC858E3F8 , bda:LGDC2FC923ABC83B73 , bda:LGFCAD08764990003F ;
+        adm:logEntry        bda:LG1EB2CB0BBD7033E2 , bda:LG6D986D4930690462 , bda:LG9029AE4DC858E3F8 , bda:LG99D32B7D38ABBEBA , bda:LGDC2FC923ABC83B73 , bda:LGFCAD08764990003F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

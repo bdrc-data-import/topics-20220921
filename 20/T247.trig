@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,59 +13,63 @@
 
 bdg:T247 {
     bda:LG19A8C39FF55F8FED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T10:28:31.946Z"^^xsd:dateTime ;
         adm:logMessage      "changed new bon to bon gsar"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG2326592E945E09F3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG41C189AAB0EA2EB1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T09:59:31.921Z"^^xsd:dateTime ;
         adm:logMessage      "fixed typo"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG46FE2198A252F88A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-15T16:26:24.093Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG546B46BE2567F16D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T09:57:41.871Z"^^xsd:dateTime ;
         adm:logMessage      "edited note, added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG8469FB4BE978E202
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T10:22:22.167Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG8EEB41958592026C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-02-11T15:00:32.932Z"^^xsd:dateTime ;
         adm:logMessage      "added english & chinese name"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGAFE751EFBA695513
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-18T13:11:25.392Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T366 (bon gsar)"@en .
     
     bda:LGF55A2F1E25AF1DC7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T11:00:21.465Z"^^xsd:dateTime ;
         adm:logMessage      "added CDATA to zhang zhung"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:T247  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T247 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "20/T247.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T247 ;
-        adm:logEntry        bda:LG19A8C39FF55F8FED , bda:LG41C189AAB0EA2EB1 , bda:LG46FE2198A252F88A , bda:LG546B46BE2567F16D , bda:LG8469FB4BE978E202 , bda:LG8EEB41958592026C , bda:LGAFE751EFBA695513 , bda:LGF55A2F1E25AF1DC7 ;
+        adm:logEntry        bda:LG19A8C39FF55F8FED , bda:LG2326592E945E09F3 , bda:LG41C189AAB0EA2EB1 , bda:LG46FE2198A252F88A , bda:LG546B46BE2567F16D , bda:LG8469FB4BE978E202 , bda:LG8EEB41958592026C , bda:LGAFE751EFBA695513 , bda:LGF55A2F1E25AF1DC7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

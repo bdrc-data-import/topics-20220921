@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,20 +13,20 @@
 
 bdg:T00AG01173 {
     bda:LG113418037A07621C
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-19T15:42:23.986Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of CW W3JT13386"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG3A07A83153B70568
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2006-12-08T10:37:52.696Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LGC318384DE0A43AFC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-12-08T10:43:04.245Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T00AG01173  a       adm:AdminData ;
         :isRoot             true ;

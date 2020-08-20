@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T496 {
     bda:LG10AFEE48ACA07674
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2011-05-03T12:18:04.346Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG164098E31CE19AED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T13:01:33.826Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5493C74922F8FDD7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T496  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T496 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fa/T496.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T496 ;
-        adm:logEntry        bda:LG10AFEE48ACA07674 , bda:LG164098E31CE19AED ;
+        adm:logEntry        bda:LG10AFEE48ACA07674 , bda:LG164098E31CE19AED , bda:LG5493C74922F8FDD7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

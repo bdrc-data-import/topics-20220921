@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T738 {
+    bda:LG74C0B79D647A6D3D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF92010AEE9FEBE31
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-19T10:33:11.392Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T738  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T738 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ab/T738.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T738 ;
-        adm:logEntry        bda:LGF92010AEE9FEBE31 ;
+        adm:logEntry        bda:LG74C0B79D647A6D3D , bda:LGF92010AEE9FEBE31 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

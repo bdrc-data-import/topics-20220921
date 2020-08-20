@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,18 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1753 {
+    bda:LG19C44B54748550C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC5EEEB7FE3E71EC1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T13:29:31.996Z"^^xsd:dateTime .
     
     bda:T1753  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1753 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "10/T1753.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1753 ;
-        adm:logEntry        bda:LGC5EEEB7FE3E71EC1 ;
+        adm:logEntry        bda:LG19C44B54748550C2 , bda:LGC5EEEB7FE3E71EC1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T742 {
     bda:LG0DE7841A032B9CCB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T20:01:53.516Z"^^xsd:dateTime ;
         adm:logMessage      "typo corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2557A466DA68B98B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG81EADEA294634777
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T01:02:52.859Z"^^xsd:dateTime ;
         adm:logMessage      "sakyaraksita note added; typo corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGB88481C635E49F34
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T19:48:54.683Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T742  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T742 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6a/T742.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T742 ;
-        adm:logEntry        bda:LG0DE7841A032B9CCB , bda:LG81EADEA294634777 , bda:LGB88481C635E49F34 ;
+        adm:logEntry        bda:LG0DE7841A032B9CCB , bda:LG2557A466DA68B98B , bda:LG81EADEA294634777 , bda:LGB88481C635E49F34 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

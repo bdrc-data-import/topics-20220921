@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T676 {
     bda:LGBBEA682B48794D0E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-05-24T13:01:15.765Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGE25730D9D08C7EC6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-03T07:14:43.532Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGED5EB0891CA37E1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF605B4B8C7C70C7C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-03-01T14:26:36.323Z"^^xsd:dateTime ;
         adm:logMessage      "New"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T676  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T676 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5e/T676.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T676 ;
-        adm:logEntry        bda:LGBBEA682B48794D0E , bda:LGE25730D9D08C7EC6 , bda:LGF605B4B8C7C70C7C ;
+        adm:logEntry        bda:LGBBEA682B48794D0E , bda:LGE25730D9D08C7EC6 , bda:LGED5EB0891CA37E1C , bda:LGF605B4B8C7C70C7C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

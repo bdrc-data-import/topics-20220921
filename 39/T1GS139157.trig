@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,16 +13,16 @@
 
 bdg:T1GS139157 {
     bda:LG2FDBBD67445A86B5
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2009-01-27T08:43:41.937Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG7F7F734D727AC8F8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-01-27T13:58:05.155Z"^^xsd:dateTime ;
         adm:logMessage      "correction bsgyur to sgyur"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T1GS139157  a       adm:AdminData ;
         :isRoot             true ;

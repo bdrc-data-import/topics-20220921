@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T696 {
     bda:LG42A4664B1B1342E3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-10-20T12:36:45.6Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG62110D36FB7BD970
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBC6194F850818C46
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-03T10:31:26.029Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T696  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T696 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "67/T696.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T696 ;
-        adm:logEntry        bda:LG42A4664B1B1342E3 , bda:LGBC6194F850818C46 ;
+        adm:logEntry        bda:LG42A4664B1B1342E3 , bda:LG62110D36FB7BD970 , bda:LGBC6194F850818C46 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

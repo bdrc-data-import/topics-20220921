@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,16 +13,16 @@
 
 bdg:T3CN1331 {
     bda:LG754BB8D0E969101B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-03T15:09:40.485Z"^^xsd:dateTime ;
         adm:logMessage      "added more associated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG7D331A6503D4C27D
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2015-01-26T09:58:41.571Z"^^xsd:dateTime ;
         adm:logMessage      "created record"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T3CN1331  a         adm:AdminData ;
         :isRoot             true ;

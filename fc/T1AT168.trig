@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,56 +13,56 @@
 
 bdg:T1AT168 {
     bda:LG31EFAF2503DB5B34
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T18:55:42.754Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG54F692026789CC35
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-03-02T15:50:24.429Z"^^xsd:dateTime .
     
     bda:LG576021AAB0DAC510
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-24T16:46:52.647Z"^^xsd:dateTime .
     
     bda:LG5D784F011F27AA38
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-24T16:43:54.234Z"^^xsd:dateTime ;
         adm:logMessage      "added information"@en .
     
     bda:LG9669EF359E4873D9
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-16T14:22:30.71Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of right topic"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG98BA774522A8E6A6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T18:55:37.808Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGA42F38E0B6EAF98D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T16:35:09.256Z"^^xsd:dateTime ;
         adm:logMessage      "withdrwan infavor of right t"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGBDB3843718A12F41
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T18:55:37.662Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGE3B7A838DC62286B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T09:46:37.731Z"^^xsd:dateTime ;
         adm:logMessage      "changed from withdrawn to released"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGF17B7B515478D736
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2008-10-23T10:25:43.086Z"^^xsd:dateTime ;
         adm:logMessage      "published"@en .
     

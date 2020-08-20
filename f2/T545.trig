@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T545 {
+    bda:LGAA653FF817FAE1BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBBDB53356832ABB5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-23T17:18:42.096Z"^^xsd:dateTime ;
         adm:logMessage      "added names & merged T1507"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T545  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T545 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f2/T545.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T545 ;
-        adm:logEntry        bda:LGBBDB53356832ABB5 ;
+        adm:logEntry        bda:LGAA653FF817FAE1BF , bda:LGBBDB53356832ABB5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

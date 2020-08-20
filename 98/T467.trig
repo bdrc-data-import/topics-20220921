@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,30 +13,34 @@
 
 bdg:T467 {
     bda:LG124D4BB2213DAB2C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-12-07T11:26:02.403Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG14AF3D8A48BF1C98
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-01-18T16:33:16.462Z"^^xsd:dateTime ;
         adm:logMessage      "fixed english"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG8F52C6B4CBAC1689
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:44:13.02Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T337, T1892, T1092"@en .
+    
+    bda:LG9703AB142111CCF1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T467  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T467 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "98/T467.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T467 ;
-        adm:logEntry        bda:LG124D4BB2213DAB2C , bda:LG14AF3D8A48BF1C98 , bda:LG8F52C6B4CBAC1689 ;
+        adm:logEntry        bda:LG124D4BB2213DAB2C , bda:LG14AF3D8A48BF1C98 , bda:LG8F52C6B4CBAC1689 , bda:LG9703AB142111CCF1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

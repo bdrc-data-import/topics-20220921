@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2585 {
+    bda:LGEE105FE86C6C1FF6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF004A9D6A24AE493
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-26T16:50:22.399Z"^^xsd:dateTime ;
         adm:logMessage      "T2585 and T2611 merged"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:T2585  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2585 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d4/T2585.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2585 ;
-        adm:logEntry        bda:LGF004A9D6A24AE493 ;
+        adm:logEntry        bda:LGEE105FE86C6C1FF6 , bda:LGF004A9D6A24AE493 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2204 {
     bda:LG48DA57DF95AA7617
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-09T15:12:46.375Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew in favor of C2MS13778"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8FBE26E4B891A078
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2204  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2204 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2d/T2204.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2204 ;
-        adm:logEntry        bda:LG48DA57DF95AA7617 ;
+        adm:logEntry        bda:LG48DA57DF95AA7617 , bda:LG8FBE26E4B891A078 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

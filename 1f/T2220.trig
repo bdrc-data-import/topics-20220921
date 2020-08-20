@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2220 {
     bda:LG0B05D7F05E3850E4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T10:50:53.625Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown as orphon"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG4D4C893413BF44B0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2220  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2220 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "1f/T2220.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2220 ;
-        adm:logEntry        bda:LG0B05D7F05E3850E4 ;
+        adm:logEntry        bda:LG0B05D7F05E3850E4 , bda:LG4D4C893413BF44B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

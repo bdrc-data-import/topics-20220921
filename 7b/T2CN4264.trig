@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,33 +13,33 @@
 
 bdg:T2CN4264 {
     bda:LG4622586EF7F839BF
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2011-03-03T11:31:15.369Z"^^xsd:dateTime ;
         adm:logMessage      "created record & added note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG8F784678017E186E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-25T10:31:03.77Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LGC078CDD866F5358C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-25T10:25:35.741Z"^^xsd:dateTime ;
         adm:logMessage      "Reviewed and released"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LGDD10206A9B99892A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-22T16:55:07.098Z"^^xsd:dateTime ;
         adm:logMessage      "linked work with note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGE0AC7AF8E5E818DE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-25T10:30:16.526Z"^^xsd:dateTime ;
         adm:logMessage      "བཅོས"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:T2CN4264  a         adm:AdminData ;
         :isRoot             true ;

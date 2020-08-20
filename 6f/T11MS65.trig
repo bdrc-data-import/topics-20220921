@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,16 +13,16 @@
 
 bdg:T11MS65 {
     bda:LG15CA6382515073E9
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2015-06-10T11:08:05.36Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn. no need."@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG6F2E0FC52D7AFBB4
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2014-04-25T12:52:18.567Z"^^xsd:dateTime ;
         adm:logMessage      "added name, note, see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T11MS65  a          adm:AdminData ;
         :isRoot             true ;

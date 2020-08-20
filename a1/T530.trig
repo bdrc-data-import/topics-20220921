@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,28 +13,32 @@
 
 bdg:T530 {
     bda:LG1CDDF45246E6E3F3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T12:31:45.12Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T01AG02845 (dril sgrub)"@en .
     
     bda:LG4E266D079021E9EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T20:01:46.461Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T01AG02845 to T1CZ47"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9812701D3D44D055
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC257432707AEDA28
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T12:40:55.388Z"^^xsd:dateTime .
     
     bda:T530  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T530 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a1/T530.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T530 ;
-        adm:logEntry        bda:LG1CDDF45246E6E3F3 , bda:LG4E266D079021E9EE , bda:LGC257432707AEDA28 ;
+        adm:logEntry        bda:LG1CDDF45246E6E3F3 , bda:LG4E266D079021E9EE , bda:LG9812701D3D44D055 , bda:LGC257432707AEDA28 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

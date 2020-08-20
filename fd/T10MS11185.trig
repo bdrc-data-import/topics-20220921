@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,34 +13,34 @@
 
 bdg:T10MS11185 {
     bda:LG76ACD100E780BF69
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2012-02-28T13:57:51.277Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG87F4CDB1F54822E4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T16:35:05.976Z"^^xsd:dateTime ;
         adm:logMessage      "withdrwan infavor of right t"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG8A13169D1561A2DF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-19T12:17:59.721Z"^^xsd:dateTime ;
         adm:logMessage      "english name changed"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG96F23E81B7929652
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-11T12:19:52.268Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LGADF1D74910674E1F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-11T11:42:24.28Z"^^xsd:dateTime ;
         adm:logMessage      "note deleted"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:T10MS11185  a       adm:AdminData ;
         :isRoot             true ;

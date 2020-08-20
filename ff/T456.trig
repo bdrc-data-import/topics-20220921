@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T456 {
     bda:LG2DC52B69857578A9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-07-10T13:12:44.352Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG8F72001C2085B747
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-24T11:29:08.327Z"^^xsd:dateTime ;
         adm:logMessage      "notes added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG94ED6FD0173C2010
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG9584C3F64C461DD1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:11:02.737Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:T456  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T456 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ff/T456.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T456 ;
-        adm:logEntry        bda:LG2DC52B69857578A9 , bda:LG8F72001C2085B747 , bda:LG9584C3F64C461DD1 ;
+        adm:logEntry        bda:LG2DC52B69857578A9 , bda:LG8F72001C2085B747 , bda:LG94ED6FD0173C2010 , bda:LG9584C3F64C461DD1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

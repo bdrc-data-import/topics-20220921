@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,34 +13,34 @@
 
 bdg:T2MS13816 {
     bda:LG1AE47439D0A792B6
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-18T15:31:54.577Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG24790C41539FEE77
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-27T20:18:48.386Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG4B71BA94E18C89A2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-27T20:18:34.226Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG6C703901907006E6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-25T15:28:37.063Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LGEA1E7945F024783C
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2010-09-23T11:34:12.98Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T2MS13816  a        adm:AdminData ;
         :isRoot             true ;

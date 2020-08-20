@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T424 {
     bda:LG0C870607CDDBC30F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-02-22T14:50:40.327Z"^^xsd:dateTime ;
         adm:logMessage      "reviewed subject headings"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG342FE99E0BB2651B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6982C2A8629C527E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-09-09T04:46:39.296Z"^^xsd:dateTime ;
         adm:logMessage      "changed in attempt to revise to tibetan form"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGF7404EA0E870578A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2020-05-22T18:18:13.647Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T424  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T424 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ec/T424.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T424 ;
-        adm:logEntry        bda:LG0C870607CDDBC30F , bda:LG6982C2A8629C527E , bda:LGF7404EA0E870578A ;
+        adm:logEntry        bda:LG0C870607CDDBC30F , bda:LG342FE99E0BB2651B , bda:LG6982C2A8629C527E , bda:LGF7404EA0E870578A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

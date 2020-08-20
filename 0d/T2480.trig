@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T2480 {
     bda:LG213E8BA17617A0CA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T11:31:44.115Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown as orphon"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LG859460BF1C68CD13
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-10T10:13:00.578Z"^^xsd:dateTime ;
         adm:logMessage      "sanskrit name added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFB47D6C47B43471C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2480  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2480 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0d/T2480.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2480 ;
-        adm:logEntry        bda:LG213E8BA17617A0CA , bda:LG859460BF1C68CD13 ;
+        adm:logEntry        bda:LG213E8BA17617A0CA , bda:LG859460BF1C68CD13 , bda:LGFB47D6C47B43471C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

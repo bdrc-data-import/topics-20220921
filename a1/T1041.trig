@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1041 {
+    bda:LG0C3A2FF170505A40
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2C54D003D6205A0A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T09:04:17.852Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown as orphon"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LGFF1CFD1DAFDCB8D9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T09:42:54.378Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:T1041  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1041 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a1/T1041.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1041 ;
-        adm:logEntry        bda:LG2C54D003D6205A0A , bda:LGFF1CFD1DAFDCB8D9 ;
+        adm:logEntry        bda:LG0C3A2FF170505A40 , bda:LG2C54D003D6205A0A , bda:LGFF1CFD1DAFDCB8D9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1449 {
+    bda:LG8B3E4CAC2EBB5653
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG93F7D208219503A6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-11-05T11:47:23.191Z"^^xsd:dateTime ;
         adm:logMessage      "added name \"yul srol lo rgyus\" & chinese, added associated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGCD23216B32DCFE9D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T13:34:19.62Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T1449  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1449 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a0/T1449.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1449 ;
-        adm:logEntry        bda:LG93F7D208219503A6 , bda:LGCD23216B32DCFE9D ;
+        adm:logEntry        bda:LG8B3E4CAC2EBB5653 , bda:LG93F7D208219503A6 , bda:LGCD23216B32DCFE9D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

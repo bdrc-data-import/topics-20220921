@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T1894 {
     bda:LG39FCECBD317E848C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-11T15:00:51.212Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG51A7E2ECE6BDAEC8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-04-25T01:50:44.543Z"^^xsd:dateTime ;
         adm:logMessage      "added variant names; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:LG553FCEF18E36EA2F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-16T10:34:19.109Z"^^xsd:dateTime ;
         adm:logMessage      "added names in multi languages"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFDBA7B93B36341E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1894  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1894 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "41/T1894.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1894 ;
-        adm:logEntry        bda:LG39FCECBD317E848C , bda:LG51A7E2ECE6BDAEC8 , bda:LG553FCEF18E36EA2F ;
+        adm:logEntry        bda:LG39FCECBD317E848C , bda:LG51A7E2ECE6BDAEC8 , bda:LG553FCEF18E36EA2F , bda:LGFDBA7B93B36341E8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

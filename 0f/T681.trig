@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T681 {
     bda:LG7BA02737DB0B1AF7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T07:45:44.491Z"^^xsd:dateTime ;
         adm:logMessage      "added sakyraksita note"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGD20BAF0E8503026F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T15:20:52.906Z"^^xsd:dateTime ;
         adm:logMessage      "added other name work"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDA0EC66FCE68965C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF23FD3A687AFCBB6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T14:03:24.787Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T681  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T681 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0f/T681.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T681 ;
-        adm:logEntry        bda:LG7BA02737DB0B1AF7 , bda:LGD20BAF0E8503026F , bda:LGF23FD3A687AFCBB6 ;
+        adm:logEntry        bda:LG7BA02737DB0B1AF7 , bda:LGD20BAF0E8503026F , bda:LGDA0EC66FCE68965C , bda:LGF23FD3A687AFCBB6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

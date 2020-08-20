@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,28 +13,28 @@
 
 bdg:T2CN4865 {
     bda:LG41932CAC1B090377
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-11T14:59:43.55Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG6FCD088518F3444E
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2011-04-25T11:37:27.292Z"^^xsd:dateTime ;
         adm:logMessage      "created record & added note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGAD8A76727A12401E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-22T17:10:22.618Z"^^xsd:dateTime ;
         adm:logMessage      "linked work with note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGBBF16403613768D2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-24T16:45:29.54Z"^^xsd:dateTime ;
         adm:logMessage      "corrected page number"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2CN4865  a         adm:AdminData ;
         :isRoot             true ;

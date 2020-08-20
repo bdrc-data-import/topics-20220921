@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,23 +13,27 @@
 
 bdg:T2022 {
     bda:LG6BD4DABD6AA9CCF7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-10T09:22:07.276Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG73015829EE68B428
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE3032E10641F17A8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-14T15:31:44.052Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:T2022  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2022 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "68/T2022.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2022 ;
-        adm:logEntry        bda:LG6BD4DABD6AA9CCF7 , bda:LGE3032E10641F17A8 ;
+        adm:logEntry        bda:LG6BD4DABD6AA9CCF7 , bda:LG73015829EE68B428 , bda:LGE3032E10641F17A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

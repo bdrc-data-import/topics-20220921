@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,28 +13,28 @@
 
 bdg:T2CN4966 {
     bda:LG0ADB6CE87847198E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-05-12T12:52:58.532Z"^^xsd:dateTime ;
         adm:logMessage      "added lo rtags"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG3D7E7CD7AFB7955F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-28T11:13:03.049Z"^^xsd:dateTime ;
         adm:logMessage      "released with works associated"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGC09311714B851903
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2011-05-04T14:14:16.552Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGDE84E255FB4FC348
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2011-04-28T12:00:09.834Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2CN4966  a         adm:AdminData ;
         :isRoot             true ;

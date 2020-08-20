@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,31 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2378 {
+    bda:LG145EE41B66154253
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4D34349A530332E6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-12T12:18:43.301Z"^^xsd:dateTime ;
         adm:logMessage      "language order changed"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LGC02A0C2622CDDA8E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-12T15:12:13.474Z"^^xsd:dateTime ;
         adm:logMessage      "edited english name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGE97CD885BFEC7AAE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-01-11T15:17:55.173Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:T2378  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2378 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e1/T2378.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2378 ;
-        adm:logEntry        bda:LG4D34349A530332E6 , bda:LGC02A0C2622CDDA8E , bda:LGE97CD885BFEC7AAE ;
+        adm:logEntry        bda:LG145EE41B66154253 , bda:LG4D34349A530332E6 , bda:LGC02A0C2622CDDA8E , bda:LGE97CD885BFEC7AAE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

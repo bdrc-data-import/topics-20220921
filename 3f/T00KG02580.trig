@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,16 +13,16 @@
 
 bdg:T00KG02580 {
     bda:LGC4B9372E9DB828B1
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-06-27T16:15:30.286Z"^^xsd:dateTime ;
         adm:logMessage      "added a topic"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGECFF301BC5F28347
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-18T18:22:06.05Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T00KG02580  a       adm:AdminData ;
         :isRoot             true ;

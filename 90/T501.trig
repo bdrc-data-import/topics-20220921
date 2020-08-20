@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T501 {
+    bda:LG28D30A91E3CDCF40
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC45B13D4B0245EC4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-30T15:10:09.907Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T1882 (srog sgrub)"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LGFA39ED1B005E604D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-25T05:29:58.513Z"^^xsd:dateTime ;
         adm:logMessage      "application note added; no visualization"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T501  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T501 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "90/T501.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T501 ;
-        adm:logEntry        bda:LGC45B13D4B0245EC4 , bda:LGFA39ED1B005E604D ;
+        adm:logEntry        bda:LG28D30A91E3CDCF40 , bda:LGC45B13D4B0245EC4 , bda:LGFA39ED1B005E604D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

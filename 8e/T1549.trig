@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1549 {
     bda:LG527732194ACF6032
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-04-03T10:33:38.952Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGC929D1BC1CD60BB5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T12:22:37.963Z"^^xsd:dateTime ;
         adm:logMessage      "with drawn in favor of corect T"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF61731672918F99A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1549  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1549 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8e/T1549.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1549 ;
-        adm:logEntry        bda:LG527732194ACF6032 , bda:LGC929D1BC1CD60BB5 ;
+        adm:logEntry        bda:LG527732194ACF6032 , bda:LGC929D1BC1CD60BB5 , bda:LGF61731672918F99A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

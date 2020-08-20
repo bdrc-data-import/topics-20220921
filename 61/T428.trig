@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T428 {
     bda:LG097443B2EA17F513
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-04-03T12:11:26.435Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit and chinese"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
+    
+    bda:LGAF786D2CE43FD25A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBC937C49A9A37C1E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-12T15:54:32.546Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGBF8A8C7F3920422C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-02-18T14:42:08.836Z"^^xsd:dateTime ;
         adm:logMessage      "added shad and chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T428  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T428 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "61/T428.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T428 ;
-        adm:logEntry        bda:LG097443B2EA17F513 , bda:LGBC937C49A9A37C1E , bda:LGBF8A8C7F3920422C ;
+        adm:logEntry        bda:LG097443B2EA17F513 , bda:LGAF786D2CE43FD25A , bda:LGBC937C49A9A37C1E , bda:LGBF8A8C7F3920422C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

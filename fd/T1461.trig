@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1461 {
     bda:LG41C292DBC4668CAF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-25T07:45:32.798Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG5DF221EE3FA63327
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-25T08:10:09.94Z"^^xsd:dateTime ;
         adm:logMessage      "added variant topic name rngog dkyil 7"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7FE78210611E22EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1461  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1461 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fd/T1461.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1461 ;
-        adm:logEntry        bda:LG41C292DBC4668CAF , bda:LG5DF221EE3FA63327 ;
+        adm:logEntry        bda:LG41C292DBC4668CAF , bda:LG5DF221EE3FA63327 , bda:LG7FE78210611E22EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

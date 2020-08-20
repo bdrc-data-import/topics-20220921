@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,27 +13,27 @@
 
 bdg:T1AT672 {
     bda:LG1EEDB0EAE8AC9231
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-10-25T11:34:46.125Z"^^xsd:dateTime ;
         adm:logMessage      "edited name and note"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG592A45543A3487FF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-12-21T16:58:51.339Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG7E6AE170DF334376
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T10:47:30.99Z"^^xsd:dateTime ;
         adm:logMessage      "new topic"@en .
     
     bda:LGA07B39BF9B507AC5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T10:52:19.562Z"^^xsd:dateTime .
     
     bda:LGCD95802112CE4133
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2008-11-19T15:04:05.497Z"^^xsd:dateTime ;
         adm:logMessage      "added topic"@en .
     

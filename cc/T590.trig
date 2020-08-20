@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T590 {
     bda:LGC0EAD2ED33ED13BA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-07T04:53:45.645Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDE781AF62B3A436D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGECFBAC5B84EB3C52
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-07T04:58:35.787Z"^^xsd:dateTime ;
         adm:logMessage      "typos corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T590  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T590 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "cc/T590.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T590 ;
-        adm:logEntry        bda:LGC0EAD2ED33ED13BA , bda:LGECFBAC5B84EB3C52 ;
+        adm:logEntry        bda:LGC0EAD2ED33ED13BA , bda:LGDE781AF62B3A436D , bda:LGECFBAC5B84EB3C52 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

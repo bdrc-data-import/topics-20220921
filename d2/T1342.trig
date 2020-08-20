@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,38 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1342 {
+    bda:LG79C5CB7D954C1A28
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA9F94DC066386D1D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-03T17:10:30.378Z"^^xsd:dateTime ;
         adm:logMessage      "added T1887 to see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGD34174FEFE76798E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-07T09:36:17.718Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGDFE56FED94728700
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:02:58.935Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGE1B1F3A7A0024B23
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-06-16T12:33:42.037Z"^^xsd:dateTime ;
         adm:logMessage      "added name \"'khrungs rabs\""@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T1342  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1342 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d2/T1342.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1342 ;
-        adm:logEntry        bda:LGA9F94DC066386D1D , bda:LGD34174FEFE76798E , bda:LGDFE56FED94728700 , bda:LGE1B1F3A7A0024B23 ;
+        adm:logEntry        bda:LG79C5CB7D954C1A28 , bda:LGA9F94DC066386D1D , bda:LGD34174FEFE76798E , bda:LGDFE56FED94728700 , bda:LGE1B1F3A7A0024B23 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2427 {
+    bda:LG26FF49E8309D2BF3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9BBED507CBDF1751
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-05T00:26:55.008Z"^^xsd:dateTime ;
         adm:logMessage      "removed withdrawn topics from taxonomy"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:T2427  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2427 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "73/T2427.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2427 ;
-        adm:logEntry        bda:LG9BBED507CBDF1751 ;
+        adm:logEntry        bda:LG26FF49E8309D2BF3 , bda:LG9BBED507CBDF1751 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

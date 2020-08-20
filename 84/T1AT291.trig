@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,37 @@
 
 bdg:T1AT291 {
     bda:LG04256ED38E5C9EC5
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2009-02-12T10:00:57.803Z"^^xsd:dateTime ;
         adm:logMessage      "new topic"@en .
     
     bda:LG2CAFB8BA5F3F157B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:39:05.557Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG48AC8AD102CFD97A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T14:11:25.158Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T1116 (srog 'khor)"@en .
     
     bda:LG86DEE187EF8B8ABB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T10:18:57.668Z"^^xsd:dateTime ;
         adm:logMessage      "changed withdrawn to released"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGA85034723E398DEE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T14:06:39.209Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T895 (khrus tshul)"@en .
     
     bda:LGAC98AAA069776FB0
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-11T10:59:52.561Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn infavour of T1116"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:T1AT291  a          adm:AdminData ;
         :isRoot             true ;

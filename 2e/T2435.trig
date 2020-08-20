@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,36 +13,40 @@
 
 bdg:T2435 {
     bda:LG4AB5A429B5272F40
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T12:33:37.808Z"^^xsd:dateTime ;
         adm:logMessage      "edited ending /"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG54136BB8B50456A8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-02-03T11:00:07.586Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG8D9982FC644A01C0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-01-20T20:24:48.527Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAAE794A0AA46E1F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC01D18668D1F0FA0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T12:23:27.108Z"^^xsd:dateTime ;
         adm:logMessage      "added tibetan"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:T2435  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2435 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2e/T2435.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2435 ;
-        adm:logEntry        bda:LG4AB5A429B5272F40 , bda:LG54136BB8B50456A8 , bda:LG8D9982FC644A01C0 , bda:LGC01D18668D1F0FA0 ;
+        adm:logEntry        bda:LG4AB5A429B5272F40 , bda:LG54136BB8B50456A8 , bda:LG8D9982FC644A01C0 , bda:LGAAE794A0AA46E1F1 , bda:LGC01D18668D1F0FA0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

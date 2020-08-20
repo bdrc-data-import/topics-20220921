@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,34 +13,34 @@
 
 bdg:T00KG03985 {
     bda:LG0351D7D62A6E57CB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-18T08:49:12.984Z"^^xsd:dateTime ;
         adm:logMessage      "connected T00KG03985 to T548"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LG2F267A870CACC41A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-18T08:45:18.656Z"^^xsd:dateTime ;
         adm:logMessage      "removed T2482 and T2483 in favor of snang brnyan/"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LG4DE2F3635F213E83
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-27T15:36:28.698Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG5D5E429BADA69FEC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-02-18T14:47:18.498Z"^^xsd:dateTime ;
         adm:logMessage      "added shad"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG9A609FE5587B9670
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-11-26T10:03:33.598Z"^^xsd:dateTime ;
         adm:logMessage      "created topic and published first time"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:T00KG03985  a       adm:AdminData ;
         :isRoot             true ;

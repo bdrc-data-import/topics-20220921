@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T682 {
     bda:LG2467C45B64C96607
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T19:04:41.391Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA473DFF8E676D39C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD6B43B72778BA873
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T12:22:40.008Z"^^xsd:dateTime ;
         adm:logMessage      "with drawn in favor of corect T"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGDAD2EC341C1EA9F5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:31:59.038Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T682  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T682 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b6/T682.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T682 ;
-        adm:logEntry        bda:LG2467C45B64C96607 , bda:LGD6B43B72778BA873 , bda:LGDAD2EC341C1EA9F5 ;
+        adm:logEntry        bda:LG2467C45B64C96607 , bda:LGA473DFF8E676D39C , bda:LGD6B43B72778BA873 , bda:LGDAD2EC341C1EA9F5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

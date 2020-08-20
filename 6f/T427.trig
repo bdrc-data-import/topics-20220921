@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,49 +13,53 @@
 
 bdg:T427 {
     bda:LG198C4B804B4FD800
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-20T05:23:55.641Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew T427 in favor of T2398"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG34BEA367C265B695
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG578AB11322D67F9D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-16T16:24:32.228Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew in favor of T2398"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG8D5FFFB076543841
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-24T15:43:13.623Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGA23C91537015A1EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-18T16:53:50.775Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGB22090D99913FC75
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-28T11:33:52.124Z"^^xsd:dateTime ;
         adm:logMessage      "deleted see also field"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGB2AA8246BABD113D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-18T16:53:35.757Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T427  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T427 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "6f/T427.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T427 ;
-        adm:logEntry        bda:LG198C4B804B4FD800 , bda:LG578AB11322D67F9D , bda:LG8D5FFFB076543841 , bda:LGA23C91537015A1EE , bda:LGB22090D99913FC75 , bda:LGB2AA8246BABD113D ;
+        adm:logEntry        bda:LG198C4B804B4FD800 , bda:LG34BEA367C265B695 , bda:LG578AB11322D67F9D , bda:LG8D5FFFB076543841 , bda:LGA23C91537015A1EE , bda:LGB22090D99913FC75 , bda:LGB2AA8246BABD113D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T238 {
     bda:LG14F472E7A3DACECB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-12-10T15:51:22.524Z"^^xsd:dateTime ;
         adm:logMessage      "Created See Also lam rim and bstan rim"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LG626D7734D2150B6A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-22T15:12:13.793Z"^^xsd:dateTime ;
         adm:logMessage      "added shad & chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG73FFF7B8B27DC3EA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T15:39:01.242Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGD872AD33FDEF25E6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-12-10T16:24:33.464Z"^^xsd:dateTime ;
         adm:logMessage      "Created See Also between T238 and T1352"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
+    
+    bda:LGDEEA358C30A375BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T238  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T238 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "cc/T238.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T238 ;
-        adm:logEntry        bda:LG14F472E7A3DACECB , bda:LG626D7734D2150B6A , bda:LG73FFF7B8B27DC3EA , bda:LGD872AD33FDEF25E6 ;
+        adm:logEntry        bda:LG14F472E7A3DACECB , bda:LG626D7734D2150B6A , bda:LG73FFF7B8B27DC3EA , bda:LGD872AD33FDEF25E6 , bda:LGDEEA358C30A375BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

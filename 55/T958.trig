@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T958 {
     bda:LG1F2F7CA183874C0F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-05-18T13:20:39.812Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG8F52493673F18198
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:52:39.038Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFB2CF5B4016950D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T958  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T958 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "55/T958.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T958 ;
-        adm:logEntry        bda:LG1F2F7CA183874C0F , bda:LG8F52493673F18198 ;
+        adm:logEntry        bda:LG1F2F7CA183874C0F , bda:LG8F52493673F18198 , bda:LGFB2CF5B4016950D8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

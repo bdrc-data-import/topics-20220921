@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T741 {
+    bda:LG39EC31D0A87C9187
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG666CC9087107F0AC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-19T15:08:13.815Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG80482B8E48A5CF6A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T01:23:23.512Z"^^xsd:dateTime ;
         adm:logMessage      "sakyaraksita note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T741  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T741 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f6/T741.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T741 ;
-        adm:logEntry        bda:LG666CC9087107F0AC , bda:LG80482B8E48A5CF6A ;
+        adm:logEntry        bda:LG39EC31D0A87C9187 , bda:LG666CC9087107F0AC , bda:LG80482B8E48A5CF6A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

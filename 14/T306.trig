@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,35 +13,39 @@
 
 bdg:T306 {
     bda:LG11507A3BE4FFBA29
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-15T09:21:53.336Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG1E56CC3BF9BDB892
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T15:22:27.181Z"^^xsd:dateTime ;
         adm:logMessage      "added application note"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG303992996DE99192
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG7C8D73460AFFE1D4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T14:28:56.047Z"^^xsd:dateTime ;
         adm:logMessage      "added extrnal reference to tsadra.org"@en .
     
     bda:LGF5E812F24D4ACBB1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T15:42:41.034Z"^^xsd:dateTime ;
         adm:logMessage      "added description for external reference"@en .
     
     bda:T306  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T306 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "14/T306.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T306 ;
-        adm:logEntry        bda:LG11507A3BE4FFBA29 , bda:LG1E56CC3BF9BDB892 , bda:LG7C8D73460AFFE1D4 , bda:LGF5E812F24D4ACBB1 ;
+        adm:logEntry        bda:LG11507A3BE4FFBA29 , bda:LG1E56CC3BF9BDB892 , bda:LG303992996DE99192 , bda:LG7C8D73460AFFE1D4 , bda:LGF5E812F24D4ACBB1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,61 +13,65 @@
 
 bdg:T1129 {
     bda:LG28A9E03999623B7E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-10-30T16:34:00.424Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LG29CF4449C6CFAD67
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-01-13T10:21:06.523Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LG2F97C45965C172FF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-01T09:35:00.905Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3FB971EC0A78EC03
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG42A82BB73F4FB816
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-04T09:09:19.645Z"^^xsd:dateTime ;
         adm:logMessage      "added title \"bka' bstan\" & chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG482A115BE093897A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-04T13:13:36.717Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG6B8C764E89773F9F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-30T09:57:02.204Z"^^xsd:dateTime ;
         adm:logMessage      "added \"skor\" with tibetan names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGAEF5359389DF5096
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-01-28T10:52:02.56Z"^^xsd:dateTime ;
         adm:logMessage      "edited tibetan title"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGBFE30AAF90E8829C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-04T09:19:33.391Z"^^xsd:dateTime ;
         adm:logMessage      "edited englishe name & added description"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T1129  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1129 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ee/T1129.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1129 ;
-        adm:logEntry        bda:LG28A9E03999623B7E , bda:LG29CF4449C6CFAD67 , bda:LG2F97C45965C172FF , bda:LG42A82BB73F4FB816 , bda:LG482A115BE093897A , bda:LG6B8C764E89773F9F , bda:LGAEF5359389DF5096 , bda:LGBFE30AAF90E8829C ;
+        adm:logEntry        bda:LG28A9E03999623B7E , bda:LG29CF4449C6CFAD67 , bda:LG2F97C45965C172FF , bda:LG3FB971EC0A78EC03 , bda:LG42A82BB73F4FB816 , bda:LG482A115BE093897A , bda:LG6B8C764E89773F9F , bda:LGAEF5359389DF5096 , bda:LGBFE30AAF90E8829C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

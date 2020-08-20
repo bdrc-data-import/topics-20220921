@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1130 {
     bda:LGA23AB4386CBC1FC9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T12:08:40.889Z"^^xsd:dateTime ;
         adm:logMessage      "renamed & added names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDAB30F6ADB8496D0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF325110814241FF1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T12:13:04.67Z"^^xsd:dateTime ;
         adm:logMessage      "associated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T1130  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1130 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ea/T1130.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1130 ;
-        adm:logEntry        bda:LGA23AB4386CBC1FC9 , bda:LGF325110814241FF1 ;
+        adm:logEntry        bda:LGA23AB4386CBC1FC9 , bda:LGDAB30F6ADB8496D0 , bda:LGF325110814241FF1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

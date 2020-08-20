@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,52 +13,56 @@
 
 bdg:T1092 {
     bda:LG05ADE11EA3D5AB5B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-08-23T16:16:58.515Z"^^xsd:dateTime ;
         adm:logMessage      "corrected typos + mistakes"@en ;
-        adm:logWho          bdr:U00009 .
+        adm:logWho          bdu:U00009 .
     
     bda:LG35D5A2BE87C83F15
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T13:12:30.702Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1892"@en .
     
     bda:LG497C838A18AE935E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:47:28.979Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1092"@en .
     
     bda:LG59316DBF8E8FA2AE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-28T12:16:10.238Z"^^xsd:dateTime ;
         adm:logMessage      "added \"ltung ba bshags pa\" & the chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG7FD040EB6C0F0ABC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T13:07:18.356Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T337"@en .
     
     bda:LG91F6C2534DAC4B72
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-07-30T11:51:52.504Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG9FFAA852D0114A92
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-28T12:14:53.975Z"^^xsd:dateTime ;
         adm:logMessage      "cleanup 2 seeAlso"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7729BF0A57E88F9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1092  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1092 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "56/T1092.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1092 ;
-        adm:logEntry        bda:LG05ADE11EA3D5AB5B , bda:LG35D5A2BE87C83F15 , bda:LG497C838A18AE935E , bda:LG59316DBF8E8FA2AE , bda:LG7FD040EB6C0F0ABC , bda:LG91F6C2534DAC4B72 , bda:LG9FFAA852D0114A92 ;
+        adm:logEntry        bda:LG05ADE11EA3D5AB5B , bda:LG35D5A2BE87C83F15 , bda:LG497C838A18AE935E , bda:LG59316DBF8E8FA2AE , bda:LG7FD040EB6C0F0ABC , bda:LG91F6C2534DAC4B72 , bda:LG9FFAA852D0114A92 , bda:LGD7729BF0A57E88F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T1613 {
     bda:LG4F388B6A5F7E1897
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-21T12:31:06.987Z"^^xsd:dateTime ;
         adm:logMessage      "after restore fixing web display --mo"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8A331D9FF5C3E343
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1613  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1613 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c6/T1613.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1613 ;
-        adm:logEntry        bda:LG4F388B6A5F7E1897 ;
+        adm:logEntry        bda:LG4F388B6A5F7E1897 , bda:LG8A331D9FF5C3E343 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

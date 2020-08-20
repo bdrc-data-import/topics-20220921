@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,35 +13,39 @@
 
 bdg:T67 {
     bda:LG7B24658B992B0450
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-07T17:16:27.932Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG89EAAF1C545E7C95
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB30BB7BA44063106
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:12:03.592Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGB678C898A575E0B3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-16T07:47:05.687Z"^^xsd:dateTime ;
         adm:logMessage      "typo corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGD9082C3C5CA57263
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-05T10:53:43.709Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T67  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T67 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "88/T67.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T67 ;
-        adm:logEntry        bda:LG7B24658B992B0450 , bda:LGB30BB7BA44063106 , bda:LGB678C898A575E0B3 , bda:LGD9082C3C5CA57263 ;
+        adm:logEntry        bda:LG7B24658B992B0450 , bda:LG89EAAF1C545E7C95 , bda:LGB30BB7BA44063106 , bda:LGB678C898A575E0B3 , bda:LGD9082C3C5CA57263 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

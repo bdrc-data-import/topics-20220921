@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T563 {
     bda:LG0068FF19542E9841
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T22:40:53.977Z"^^xsd:dateTime ;
         adm:logMessage      "application note revised"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4B40E679235BE99B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGAF3094ED867109A2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-05T17:47:04.839Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGB10DA6186B44FBED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-27T14:03:14.766Z"^^xsd:dateTime ;
         adm:logMessage      "application note modified"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T563  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T563 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1f/T563.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T563 ;
-        adm:logEntry        bda:LG0068FF19542E9841 , bda:LGAF3094ED867109A2 , bda:LGB10DA6186B44FBED ;
+        adm:logEntry        bda:LG0068FF19542E9841 , bda:LG4B40E679235BE99B , bda:LGAF3094ED867109A2 , bda:LGB10DA6186B44FBED ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

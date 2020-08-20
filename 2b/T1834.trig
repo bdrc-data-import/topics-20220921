@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T1834 {
     bda:LG060B6DB2D7D07A32
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-10-25T12:55:29.273Z"^^xsd:dateTime ;
         adm:logMessage      "english added"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG3FC1EA7671ED6CA9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG491460FAB050A565
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
     
     bda:LG844865E3AA6D981B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-28T20:38:36.196Z"^^xsd:dateTime ;
         adm:logMessage      "added notes from iw etc."@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T1834  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1834 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2b/T1834.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1834 ;
-        adm:logEntry        bda:LG060B6DB2D7D07A32 , bda:LG491460FAB050A565 , bda:LG844865E3AA6D981B ;
+        adm:logEntry        bda:LG060B6DB2D7D07A32 , bda:LG3FC1EA7671ED6CA9 , bda:LG491460FAB050A565 , bda:LG844865E3AA6D981B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

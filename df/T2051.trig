@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2051 {
+    bda:LG3716EB6588BF4C8B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC32EAECC9F186049
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-10-27T10:12:43.136Z"^^xsd:dateTime ;
         adm:logMessage      "combined 'gres byang and gres byang"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:T2051  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2051 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "df/T2051.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2051 ;
-        adm:logEntry        bda:LGC32EAECC9F186049 ;
+        adm:logEntry        bda:LG3716EB6588BF4C8B , bda:LGC32EAECC9F186049 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

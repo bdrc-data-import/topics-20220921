@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T1414 {
     bda:LG226AB4B99B83CA61
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T14:29:09.219Z"^^xsd:dateTime ;
         adm:logMessage      "Added See also among T1414, T1441, T2MS14792; Added see also between T1570 and T1878"@en .
     
     bda:LG6A98BE73D09DCEB8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-11T14:54:36.023Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD08948ECC0786FC4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1414  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1414 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bd/T1414.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1414 ;
-        adm:logEntry        bda:LG226AB4B99B83CA61 , bda:LG6A98BE73D09DCEB8 ;
+        adm:logEntry        bda:LG226AB4B99B83CA61 , bda:LG6A98BE73D09DCEB8 , bda:LGD08948ECC0786FC4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

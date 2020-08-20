@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T2481 {
     bda:LG353D5C0437F63B15
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-02-07T14:15:44.046Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG7CC7625879DBE5ED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-27T11:34:43.766Z"^^xsd:dateTime ;
         adm:logMessage      "added gos rgyan cha"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGED0B12D09DECF1F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2481  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2481 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c6/T2481.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2481 ;
-        adm:logEntry        bda:LG353D5C0437F63B15 , bda:LG7CC7625879DBE5ED ;
+        adm:logEntry        bda:LG353D5C0437F63B15 , bda:LG7CC7625879DBE5ED , bda:LGED0B12D09DECF1F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

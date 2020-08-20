@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,55 +13,59 @@
 
 bdg:T498 {
     bda:LG31C47ED81E450918
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-03-27T11:16:07.677Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit and chinese"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LG77751E7EE277FDB9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-11-24T14:52:34.495Z"^^xsd:dateTime ;
         adm:logMessage      "added 3 names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG9739F02113FD6C76
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-01-18T16:54:04.315Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LGB15EA4AEE2361E4F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-15T15:14:55.189Z"^^xsd:dateTime ;
         adm:logMessage      "application note revised"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGB94D822EC2A95D0B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-11-06T15:32:29.556Z"^^xsd:dateTime ;
         adm:logMessage      "variant spelling added"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGCA5A8389AA8AE29C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCA625892459B460F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T10:12:26.987Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGE07E9A116F07981D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-11-24T14:46:56.756Z"^^xsd:dateTime ;
         adm:logMessage      "corrected language settings"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T498  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T498 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "3b/T498.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T498 ;
-        adm:logEntry        bda:LG31C47ED81E450918 , bda:LG77751E7EE277FDB9 , bda:LG9739F02113FD6C76 , bda:LGB15EA4AEE2361E4F , bda:LGB94D822EC2A95D0B , bda:LGCA625892459B460F , bda:LGE07E9A116F07981D ;
+        adm:logEntry        bda:LG31C47ED81E450918 , bda:LG77751E7EE277FDB9 , bda:LG9739F02113FD6C76 , bda:LGB15EA4AEE2361E4F , bda:LGB94D822EC2A95D0B , bda:LGCA5A8389AA8AE29C , bda:LGCA625892459B460F , bda:LGE07E9A116F07981D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

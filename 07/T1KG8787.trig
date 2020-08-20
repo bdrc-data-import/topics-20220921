@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,21 +13,21 @@
 
 bdg:T1KG8787 {
     bda:LG61C48F363C8FC514
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2011-02-15T14:26:39.068Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGBD0689159477DAA7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-10-21T11:52:34.115Z"^^xsd:dateTime ;
         adm:logMessage      "refreshed"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGC73523A7A1764EDB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-03-03T11:24:36.102Z"^^xsd:dateTime ;
         adm:logMessage      "Reviewed and released"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:T1KG8787  a         adm:AdminData ;
         :isRoot             true ;

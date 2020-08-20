@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,52 +13,56 @@
 
 bdg:T942 {
     bda:LG144080C74C5FE497
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-04-11T13:20:08.434Z"^^xsd:dateTime ;
         adm:logMessage      "added topics"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG2AC8D0490DF47CAB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-22T15:31:18.187Z"^^xsd:dateTime ;
         adm:logMessage      "added note, separated /"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG4248E96CA6B2429D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-22T15:53:16.253Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG54558C8CA678A44D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-17T15:33:08.987Z"^^xsd:dateTime ;
         adm:logMessage      "added names \"drang nges\" &  edited"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCF187352263B5A89
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE2A9FEC39021188C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-17T15:37:00.964Z"^^xsd:dateTime ;
         adm:logMessage      "added associated works from T1CZ55"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGFAC1531029E4FDBB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-22T15:55:00.872Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGFCCAB8ECDF240341
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-22T15:34:40.744Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T942  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T942 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ca/T942.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T942 ;
-        adm:logEntry        bda:LG144080C74C5FE497 , bda:LG2AC8D0490DF47CAB , bda:LG4248E96CA6B2429D , bda:LG54558C8CA678A44D , bda:LGE2A9FEC39021188C , bda:LGFAC1531029E4FDBB , bda:LGFCCAB8ECDF240341 ;
+        adm:logEntry        bda:LG144080C74C5FE497 , bda:LG2AC8D0490DF47CAB , bda:LG4248E96CA6B2429D , bda:LG54558C8CA678A44D , bda:LGCF187352263B5A89 , bda:LGE2A9FEC39021188C , bda:LGFAC1531029E4FDBB , bda:LGFCCAB8ECDF240341 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

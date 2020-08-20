@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1711 {
     bda:LG2DC3E64A1CF19F66
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-28T10:03:14.295Z"^^xsd:dateTime ;
         adm:logMessage      "released with works associated"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG5D6815492FAE3AB3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-09T12:29:35.829Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew due to no works assigned"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG93983C716A83CD3E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1711  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1711 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/T1711.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1711 ;
-        adm:logEntry        bda:LG2DC3E64A1CF19F66 , bda:LG5D6815492FAE3AB3 ;
+        adm:logEntry        bda:LG2DC3E64A1CF19F66 , bda:LG5D6815492FAE3AB3 , bda:LG93983C716A83CD3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

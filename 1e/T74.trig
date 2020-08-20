@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T74 {
     bda:LG97FB0A1E46667786
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2017-04-07T11:00:19.114Z"^^xsd:dateTime ;
         adm:logMessage      "added name \"dus 'khor/\""@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGB8F2A24AD7C12C10
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-03-27T11:16:15.619Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit and chinese"@en .
+    
+    bda:LGC6BCB70D81168E70
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T74  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T74 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1e/T74.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T74 ;
-        adm:logEntry        bda:LG97FB0A1E46667786 , bda:LGB8F2A24AD7C12C10 ;
+        adm:logEntry        bda:LG97FB0A1E46667786 , bda:LGB8F2A24AD7C12C10 , bda:LGC6BCB70D81168E70 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

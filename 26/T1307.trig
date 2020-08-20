@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,29 +13,33 @@
 
 bdg:T1307 {
     bda:LG8C44B5B7897636FB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T12:50:01.552Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1GS10764 (sa chog)"@en .
     
     bda:LGAF1E98DD6198B84D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T15:15:18.361Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGDC856505A682DAE5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-03-30T12:16:07.679Z"^^xsd:dateTime ;
         adm:logMessage      "note about usage of keyword added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE3F3768ED36189C5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1307  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1307 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "26/T1307.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1307 ;
-        adm:logEntry        bda:LG8C44B5B7897636FB , bda:LGAF1E98DD6198B84D , bda:LGDC856505A682DAE5 ;
+        adm:logEntry        bda:LG8C44B5B7897636FB , bda:LGAF1E98DD6198B84D , bda:LGDC856505A682DAE5 , bda:LGE3F3768ED36189C5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

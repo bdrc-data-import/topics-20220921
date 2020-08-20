@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1071 {
     bda:LG5EC46AD032340573
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T09:47:27.728Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LGA7DD4128E76F572C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T09:04:48.236Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown as orphon"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGB3CD215ADA095D53
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1071  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1071 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "64/T1071.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1071 ;
-        adm:logEntry        bda:LG5EC46AD032340573 , bda:LGA7DD4128E76F572C ;
+        adm:logEntry        bda:LG5EC46AD032340573 , bda:LGA7DD4128E76F572C , bda:LGB3CD215ADA095D53 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

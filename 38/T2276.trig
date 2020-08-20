@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2276 {
     bda:LG85E42EEA23890E9C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-11-07T15:44:44.469Z"^^xsd:dateTime ;
         adm:logMessage      "note added; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG8F9EE9109F17DEC7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2276  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2276 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "38/T2276.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2276 ;
-        adm:logEntry        bda:LG85E42EEA23890E9C ;
+        adm:logEntry        bda:LG85E42EEA23890E9C , bda:LG8F9EE9109F17DEC7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

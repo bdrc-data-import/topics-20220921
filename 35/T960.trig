@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T960 {
     bda:LG32BA093EA9407E51
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-05-28T18:08:42.953Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAA0A8EB6D8993336
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T960  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T960 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "35/T960.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T960 ;
-        adm:logEntry        bda:LG32BA093EA9407E51 ;
+        adm:logEntry        bda:LG32BA093EA9407E51 , bda:LGAA0A8EB6D8993336 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

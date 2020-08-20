@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,25 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2374 {
+    bda:LG80B82B1213E08EF7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB5F9159318819B97
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-14T08:09:50.171Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGC2101FFDE578629C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-01T11:17:06.408Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew, no works associated"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T2374  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2374 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/T2374.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2374 ;
-        adm:logEntry        bda:LGB5F9159318819B97 , bda:LGC2101FFDE578629C ;
+        adm:logEntry        bda:LG80B82B1213E08EF7 , bda:LGB5F9159318819B97 , bda:LGC2101FFDE578629C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

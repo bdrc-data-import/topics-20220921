@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T548 {
     bda:LG5615A2B0DD7ADCAB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-18T08:49:13.39Z"^^xsd:dateTime ;
         adm:logMessage      "connected T00KG03985 to T548"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG637E05ADC39D1949
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T548  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T548 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "6d/T548.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T548 ;
-        adm:logEntry        bda:LG5615A2B0DD7ADCAB ;
+        adm:logEntry        bda:LG5615A2B0DD7ADCAB , bda:LG637E05ADC39D1949 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

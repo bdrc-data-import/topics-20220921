@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T210 {
+    bda:LG30EF5631E128AB69
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9528AD9A3C886486
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-28T09:20:32.804Z"^^xsd:dateTime ;
         adm:logMessage      "added chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGC1774C4A3F926CC4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T17:05:25.184Z"^^xsd:dateTime ;
         adm:logMessage      "note of application added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T210  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T210 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "90/T210.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T210 ;
-        adm:logEntry        bda:LG9528AD9A3C886486 , bda:LGC1774C4A3F926CC4 ;
+        adm:logEntry        bda:LG30EF5631E128AB69 , bda:LG9528AD9A3C886486 , bda:LGC1774C4A3F926CC4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

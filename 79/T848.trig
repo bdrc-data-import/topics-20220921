@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,25 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T848 {
+    bda:LG01A9B16C10802B1A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4A9D6CFD7D1717C9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-12T07:26:14.296Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGEB1F0B290B73CA93
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-23T13:05:53.756Z"^^xsd:dateTime ;
         adm:logMessage      "Added See also T1619 (rta glud) and T1CZ25 (phyugs glud)"@en .
     
     bda:T848  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T848 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "79/T848.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T848 ;
-        adm:logEntry        bda:LG4A9D6CFD7D1717C9 , bda:LGEB1F0B290B73CA93 ;
+        adm:logEntry        bda:LG01A9B16C10802B1A , bda:LG4A9D6CFD7D1717C9 , bda:LGEB1F0B290B73CA93 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1364 {
     bda:LG65AC122EE69EBD14
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-03-08T16:37:42.916Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG7846592961CF79D3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-03T10:20:49.653Z"^^xsd:dateTime ;
         adm:logMessage      "delete khrid"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC27EBACE0D38B908
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1364  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1364 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d6/T1364.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1364 ;
-        adm:logEntry        bda:LG65AC122EE69EBD14 , bda:LG7846592961CF79D3 ;
+        adm:logEntry        bda:LG65AC122EE69EBD14 , bda:LG7846592961CF79D3 , bda:LGC27EBACE0D38B908 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

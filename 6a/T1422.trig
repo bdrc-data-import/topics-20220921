@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T1422 {
     bda:LG25F66442096472AF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-06-08T12:31:21.964Z"^^xsd:dateTime ;
         adm:logMessage      "corrected typo"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD4F4432843F309D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1422  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1422 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "6a/T1422.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1422 ;
-        adm:logEntry        bda:LG25F66442096472AF ;
+        adm:logEntry        bda:LG25F66442096472AF , bda:LGD4F4432843F309D6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

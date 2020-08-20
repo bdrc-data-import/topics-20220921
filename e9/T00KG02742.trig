@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,22 +13,22 @@
 
 bdg:T00KG02742 {
     bda:LG14B81EFF2ACFED1C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-28T10:57:42.95Z"^^xsd:dateTime ;
         adm:logMessage      "added names & note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG4EF9A274C9FBEC03
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T16:52:48.082Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG95CA28C8C2DE5E2E
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-31T11:17:39.862Z"^^xsd:dateTime ;
         adm:logMessage      "added topics"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:T00KG02742  a       adm:AdminData ;
         :isRoot             true ;

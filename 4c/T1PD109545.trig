@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,22 +13,22 @@
 
 bdg:T1PD109545 {
     bda:LG4B0CF59B8702C831
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2011-02-25T11:11:00.292Z"^^xsd:dateTime ;
         adm:logMessage      "gsar du bcug"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LG5F275E4002DAF25E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-03-22T11:42:31.9Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LG76E9891AD5015B75
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T18:49:33.28Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:T1PD109545  a       adm:AdminData ;
         :isRoot             true ;

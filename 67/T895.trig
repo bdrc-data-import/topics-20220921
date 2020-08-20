@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,35 +13,39 @@
 
 bdg:T895 {
     bda:LG44D32E807483D4B4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:39:05.557Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T1AT291 to T1116"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG4E5751038770C61D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-11-06T15:26:25.639Z"^^xsd:dateTime ;
         adm:logMessage      "edited name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG5A364E79DAB41A44
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-23T11:49:49.162Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T012AG03493 (ri khrus)"@en .
     
     bda:LG697B8007831E2520
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T14:06:40.356Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T895 (khrus tshul)"@en .
+    
+    bda:LGC847F6A31439E3ED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T895  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T895 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "67/T895.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T895 ;
-        adm:logEntry        bda:LG44D32E807483D4B4 , bda:LG4E5751038770C61D , bda:LG5A364E79DAB41A44 , bda:LG697B8007831E2520 ;
+        adm:logEntry        bda:LG44D32E807483D4B4 , bda:LG4E5751038770C61D , bda:LG5A364E79DAB41A44 , bda:LG697B8007831E2520 , bda:LGC847F6A31439E3ED ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

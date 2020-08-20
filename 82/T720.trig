@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T720 {
     bda:LG11C45EA681EA7A88
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T13:41:00.773Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG3734F198B1FE02D1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T05:10:05.436Z"^^xsd:dateTime ;
         adm:logMessage      "sakyaraksita note added to application note"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG3C285993A6615ECD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-27T15:56:09.569Z"^^xsd:dateTime ;
         adm:logMessage      "added chinese"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG749082BD4412A71B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB5061DF17918C8A0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-09-04T16:19:10.623Z"^^xsd:dateTime ;
         adm:logMessage      "added alternative name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T720  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T720 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "82/T720.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T720 ;
-        adm:logEntry        bda:LG11C45EA681EA7A88 , bda:LG3734F198B1FE02D1 , bda:LG3C285993A6615ECD , bda:LGB5061DF17918C8A0 ;
+        adm:logEntry        bda:LG11C45EA681EA7A88 , bda:LG3734F198B1FE02D1 , bda:LG3C285993A6615ECD , bda:LG749082BD4412A71B , bda:LGB5061DF17918C8A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

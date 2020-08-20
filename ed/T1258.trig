@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,42 +13,46 @@
 
 bdg:T1258 {
     bda:LG3F335C3D00EAFAAA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-28T11:03:08.063Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG49921F73EA493B99
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-11T14:53:48.239Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7B37DE0C4F952313
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG91603FEE34824FF2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-28T11:16:37.923Z"^^xsd:dateTime ;
         adm:logMessage      "deleted extra SeeAlso"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LG9ABB9DA2A8F07EED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-28T15:14:11.732Z"^^xsd:dateTime ;
         adm:logMessage      "added T1GS129601 (rjes chog) uncontrolled topic"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LGAC35DD89A1964729
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-28T11:13:02.364Z"^^xsd:dateTime ;
         adm:logMessage      "added T1257, T941, and T1256"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:T1258  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1258 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ed/T1258.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1258 ;
-        adm:logEntry        bda:LG3F335C3D00EAFAAA , bda:LG49921F73EA493B99 , bda:LG91603FEE34824FF2 , bda:LG9ABB9DA2A8F07EED , bda:LGAC35DD89A1964729 ;
+        adm:logEntry        bda:LG3F335C3D00EAFAAA , bda:LG49921F73EA493B99 , bda:LG7B37DE0C4F952313 , bda:LG91603FEE34824FF2 , bda:LG9ABB9DA2A8F07EED , bda:LGAC35DD89A1964729 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

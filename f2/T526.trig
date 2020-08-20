@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T526 {
+    bda:LG6F5E59FEE0304FEC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC55F655DC786E5BC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-07-17T14:17:42.65Z"^^xsd:dateTime ;
         adm:logMessage      "added alternative name"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T526  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T526 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f2/T526.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T526 ;
-        adm:logEntry        bda:LGC55F655DC786E5BC ;
+        adm:logEntry        bda:LG6F5E59FEE0304FEC , bda:LGC55F655DC786E5BC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

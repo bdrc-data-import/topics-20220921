@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T873 {
     bda:LG20E1ED883B0D1C47
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-25T15:58:43.966Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG40CE2245BF98FD49
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGAC8C9BF6CD0CE537
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-06T13:31:53.02Z"^^xsd:dateTime ;
         adm:logMessage      "application note revised"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGED2297C48641350C
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-26T16:36:47.483Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T873  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T873 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d1/T873.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T873 ;
-        adm:logEntry        bda:LG20E1ED883B0D1C47 , bda:LGAC8C9BF6CD0CE537 , bda:LGED2297C48641350C ;
+        adm:logEntry        bda:LG20E1ED883B0D1C47 , bda:LG40CE2245BF98FD49 , bda:LGAC8C9BF6CD0CE537 , bda:LGED2297C48641350C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

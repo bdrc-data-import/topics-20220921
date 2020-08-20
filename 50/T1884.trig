@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T1884 {
     bda:LG6371FC11372AEE30
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-27T12:39:12.488Z"^^xsd:dateTime ;
         adm:logMessage      "added lhug rtsom 'dems sgrig"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG96D698BE2773C390
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T15:04:55.36Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD03D23B7C6BBA354
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1884  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1884 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "50/T1884.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1884 ;
-        adm:logEntry        bda:LG6371FC11372AEE30 , bda:LG96D698BE2773C390 ;
+        adm:logEntry        bda:LG6371FC11372AEE30 , bda:LG96D698BE2773C390 , bda:LGD03D23B7C6BBA354 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T569 {
     bda:LG0C5FC8E68B674529
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-06T10:01:09.505Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG55057AC1EF6D8A3F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG63296EF485C6937B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-11-01T12:08:12.198Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LG7BCC9FC0E6BD0D73
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-11-01T11:38:57.883Z"^^xsd:dateTime ;
         adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LGB798E8C1F60825DC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-28T10:33:07.437Z"^^xsd:dateTime ;
         adm:logMessage      "application note revised"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T569  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T569 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "29/T569.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T569 ;
-        adm:logEntry        bda:LG0C5FC8E68B674529 , bda:LG63296EF485C6937B , bda:LG7BCC9FC0E6BD0D73 , bda:LGB798E8C1F60825DC ;
+        adm:logEntry        bda:LG0C5FC8E68B674529 , bda:LG55057AC1EF6D8A3F , bda:LG63296EF485C6937B , bda:LG7BCC9FC0E6BD0D73 , bda:LGB798E8C1F60825DC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

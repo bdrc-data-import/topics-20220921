@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T1561 {
     bda:LG29128B80A70F41A2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-04T11:04:00.573Z"^^xsd:dateTime ;
         adm:logMessage      "delete khrid and note"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LG4F38589E0A296A4E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T19:00:45.727Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T11MS47 to T1029"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG5B006B8BCA73B6C6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T16:52:48.8Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG7573A61E703B7EE5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-01T11:34:08.242Z"^^xsd:dateTime ;
         adm:logMessage      "edited name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9232A8752E7E110A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1561  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1561 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ea/T1561.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1561 ;
-        adm:logEntry        bda:LG29128B80A70F41A2 , bda:LG4F38589E0A296A4E , bda:LG5B006B8BCA73B6C6 , bda:LG7573A61E703B7EE5 ;
+        adm:logEntry        bda:LG29128B80A70F41A2 , bda:LG4F38589E0A296A4E , bda:LG5B006B8BCA73B6C6 , bda:LG7573A61E703B7EE5 , bda:LG9232A8752E7E110A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

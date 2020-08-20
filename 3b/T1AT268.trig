@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,34 +13,34 @@
 
 bdg:T1AT268 {
     bda:LG0E97330700AC7E1D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-03T15:00:30.957Z"^^xsd:dateTime ;
         adm:logMessage      "moved name \"rjes chings\" from T514"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG2F643D253C60285A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-03T12:55:45.521Z"^^xsd:dateTime ;
         adm:logMessage      "edited name in tibetan"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG2FFDDF18B857EE96
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-27T13:26:25.141Z"^^xsd:dateTime ;
         adm:logMessage      "revised topic"@en .
     
     bda:LG4B30D9E70A3ACD2D
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2008-10-27T13:06:41.207Z"^^xsd:dateTime ;
         adm:logMessage      "added topic"@en .
     
     bda:LG97C92CB87EB9E427
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-27T15:09:37.477Z"^^xsd:dateTime ;
         adm:logMessage      "added information"@en .
     
     bda:LGA78A51655231AFAE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-03-02T15:50:47.427Z"^^xsd:dateTime .
     
     bda:T1AT268  a          adm:AdminData ;

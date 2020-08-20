@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T1866 {
     bda:LG7D26B73F53CD08BA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-13T15:32:23.63Z"^^xsd:dateTime ;
         adm:logMessage      "added more names of gter ston to the gter ma"@en ;
-        adm:logWho          bdr:U00031 .
+        adm:logWho          bdu:U00031 .
+    
+    bda:LGBA41C6E9E81ADDE2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD5D4B1BBE855E0FA
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-12-08T11:57:21.709Z"^^xsd:dateTime ;
         adm:logMessage      "added note, corrected identification"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LGE69C253DDF0D5B0F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-13T14:49:57.522Z"^^xsd:dateTime ;
         adm:logMessage      "added corrections"@en ;
-        adm:logWho          bdr:U00031 .
+        adm:logWho          bdu:U00031 .
     
     bda:T1866  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1866 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "50/T1866.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1866 ;
-        adm:logEntry        bda:LG7D26B73F53CD08BA , bda:LGD5D4B1BBE855E0FA , bda:LGE69C253DDF0D5B0F ;
+        adm:logEntry        bda:LG7D26B73F53CD08BA , bda:LGBA41C6E9E81ADDE2 , bda:LGD5D4B1BBE855E0FA , bda:LGE69C253DDF0D5B0F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

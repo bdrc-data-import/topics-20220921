@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T704 {
     bda:LG74A0003F3EAA8A94
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-03T12:23:09.189Z"^^xsd:dateTime ;
         adm:logMessage      "typo corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB0C85A2212E6A5E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEFF40AC2619D7AD3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-12T16:56:21.66Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T704  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T704 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0b/T704.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T704 ;
-        adm:logEntry        bda:LG74A0003F3EAA8A94 , bda:LGEFF40AC2619D7AD3 ;
+        adm:logEntry        bda:LG74A0003F3EAA8A94 , bda:LGB0C85A2212E6A5E8 , bda:LGEFF40AC2619D7AD3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,36 +13,40 @@
 
 bdg:T489 {
     bda:LG166C44FAECE2392F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-03-25T11:11:13.587Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG19051F07E305DFBD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG31F36C16CD6D4BF5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-27T13:22:36.672Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGA2BF639610983AA9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-12-18T14:13:40.732Z"^^xsd:dateTime ;
         adm:logMessage      "spelling correction; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:LGBC7F16390F46C169
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-04T01:14:55.488Z"^^xsd:dateTime ;
         adm:logMessage      "revised main name and note of application"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T489  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T489 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "cd/T489.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T489 ;
-        adm:logEntry        bda:LG166C44FAECE2392F , bda:LG31F36C16CD6D4BF5 , bda:LGA2BF639610983AA9 , bda:LGBC7F16390F46C169 ;
+        adm:logEntry        bda:LG166C44FAECE2392F , bda:LG19051F07E305DFBD , bda:LG31F36C16CD6D4BF5 , bda:LGA2BF639610983AA9 , bda:LGBC7F16390F46C169 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

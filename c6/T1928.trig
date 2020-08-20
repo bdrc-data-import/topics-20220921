@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1928 {
     bda:LG041161265DF34557
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2020-06-08T12:49:37.072Z"^^xsd:dateTime ;
         adm:logMessage      "added other name"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5402D4B462B28969
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG5AC82C9BD45149B3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-02-23T09:56:25.877Z"^^xsd:dateTime ;
         adm:logMessage      "shad bsnan/"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T1928  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1928 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c6/T1928.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1928 ;
-        adm:logEntry        bda:LG041161265DF34557 , bda:LG5AC82C9BD45149B3 ;
+        adm:logEntry        bda:LG041161265DF34557 , bda:LG5402D4B462B28969 , bda:LG5AC82C9BD45149B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

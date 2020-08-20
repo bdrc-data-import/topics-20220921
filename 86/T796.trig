@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T796 {
     bda:LG9937F0ABC457136E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-15T12:04:16.171Z"^^xsd:dateTime ;
         adm:logMessage      "note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGA73F8F6D42FFF0E2
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-26T12:45:42.974Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of G416"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB0819D4902DEB52D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFBCDBFA6085ED5B5
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-16T16:29:06.413Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of G416"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:T796  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T796 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "86/T796.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T796 ;
-        adm:logEntry        bda:LG9937F0ABC457136E , bda:LGA73F8F6D42FFF0E2 , bda:LGFBCDBFA6085ED5B5 ;
+        adm:logEntry        bda:LG9937F0ABC457136E , bda:LGA73F8F6D42FFF0E2 , bda:LGB0819D4902DEB52D , bda:LGFBCDBFA6085ED5B5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:G416 ;
         adm:status          bda:StatusWithdrawn .

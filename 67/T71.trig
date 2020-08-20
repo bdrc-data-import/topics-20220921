@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T71 {
     bda:LG475C57868CA1E4FE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-06-19T15:07:57.442Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5189D8D9802D22DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGA121EE49F6AF25C3
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-16T16:51:02.844Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of G104"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:T71  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T71 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "67/T71.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T71 ;
-        adm:logEntry        bda:LG475C57868CA1E4FE , bda:LGA121EE49F6AF25C3 ;
+        adm:logEntry        bda:LG475C57868CA1E4FE , bda:LG5189D8D9802D22DF , bda:LGA121EE49F6AF25C3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:G104 ;
         adm:status          bda:StatusWithdrawn .

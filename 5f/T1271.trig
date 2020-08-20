@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T1271 {
     bda:LG40358516964CFC0A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-25T14:48:06.081Z"^^xsd:dateTime ;
         adm:logMessage      "added shad"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG56CF67D305BDA311
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG805530F12BD5F227
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-09T19:03:43.987Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGEC74B491A02CE44E
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-22T11:16:14.478Z"^^xsd:dateTime ;
         adm:logMessage      "Withdrawn in favor of CW W4CZ321175"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGFDDDF1ECA85834D5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T16:35:06.586Z"^^xsd:dateTime ;
         adm:logMessage      "withdrwan infavor of right t"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T1271  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1271 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5f/T1271.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1271 ;
-        adm:logEntry        bda:LG40358516964CFC0A , bda:LG805530F12BD5F227 , bda:LGEC74B491A02CE44E , bda:LGFDDDF1ECA85834D5 ;
+        adm:logEntry        bda:LG40358516964CFC0A , bda:LG56CF67D305BDA311 , bda:LG805530F12BD5F227 , bda:LGEC74B491A02CE44E , bda:LGFDDDF1ECA85834D5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:W4CZ321175 ;
         adm:status          bda:StatusWithdrawn .

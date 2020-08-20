@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T221 {
     bda:LG4879FCBC8D76CEEC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T17:08:22.12Z"^^xsd:dateTime ;
         adm:logMessage      "note of application added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6F0CBC586B2DEBE6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCD5BA339E7D71256
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T14:47:50.145Z"^^xsd:dateTime ;
         adm:logMessage      "added gzhung yig"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGE3EBF10166006725
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-04-15T14:36:35.432Z"^^xsd:dateTime ;
         adm:logMessage      "added chinese name"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T221  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T221 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "87/T221.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T221 ;
-        adm:logEntry        bda:LG4879FCBC8D76CEEC , bda:LGCD5BA339E7D71256 , bda:LGE3EBF10166006725 ;
+        adm:logEntry        bda:LG4879FCBC8D76CEEC , bda:LG6F0CBC586B2DEBE6 , bda:LGCD5BA339E7D71256 , bda:LGE3EBF10166006725 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

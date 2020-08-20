@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T1166 {
     bda:LG0EF16010AF7A14E8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-04-20T04:44:04.552Z"^^xsd:dateTime ;
         adm:logMessage      "added see also to relate T1089 and T1166"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LG22E3C27634B91F7F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T12:05:24.538Z"^^xsd:dateTime ;
         adm:logMessage      "aaded SeeAlso T1089"@en .
+    
+    bda:LG7CED8B672BBB4E1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1166  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1166 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6c/T1166.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1166 ;
-        adm:logEntry        bda:LG0EF16010AF7A14E8 , bda:LG22E3C27634B91F7F ;
+        adm:logEntry        bda:LG0EF16010AF7A14E8 , bda:LG22E3C27634B91F7F , bda:LG7CED8B672BBB4E1C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

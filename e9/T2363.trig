@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,43 +13,47 @@
 
 bdg:T2363 {
     bda:LG7001C4BBF176A6D0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T15:07:42.53Z"^^xsd:dateTime ;
         adm:logMessage      "merge with T535"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG8C1780E6C9CBDE15
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T16:59:17.122Z"^^xsd:dateTime ;
         adm:logMessage      "added seeAlso"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGB04F13F0A68CAD5D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:07:59.679Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
+    
+    bda:LGD44CEF7413884C73
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF432F8C4A4DF67F0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T19:10:06.185Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGF8F71242BCC9F930
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T15:18:47.557Z"^^xsd:dateTime ;
         adm:logMessage      "renamed and released, added all names & assosoated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2363  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2363 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e9/T2363.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2363 ;
-        adm:logEntry        bda:LG7001C4BBF176A6D0 , bda:LG8C1780E6C9CBDE15 , bda:LGB04F13F0A68CAD5D , bda:LGF432F8C4A4DF67F0 , bda:LGF8F71242BCC9F930 ;
+        adm:logEntry        bda:LG7001C4BBF176A6D0 , bda:LG8C1780E6C9CBDE15 , bda:LGB04F13F0A68CAD5D , bda:LGD44CEF7413884C73 , bda:LGF432F8C4A4DF67F0 , bda:LGF8F71242BCC9F930 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

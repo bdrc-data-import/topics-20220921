@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1169 {
     bda:LG493BCE418DDAF3DD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-29T15:52:09.241Z"^^xsd:dateTime ;
         adm:logMessage      "added \"dbu ma gzhan stong\" & chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG87F8FD4B87F0CD51
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-31T16:37:42.442Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC135BD5BEB7E6665
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1169  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1169 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "15/T1169.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1169 ;
-        adm:logEntry        bda:LG493BCE418DDAF3DD , bda:LG87F8FD4B87F0CD51 ;
+        adm:logEntry        bda:LG493BCE418DDAF3DD , bda:LG87F8FD4B87F0CD51 , bda:LGC135BD5BEB7E6665 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

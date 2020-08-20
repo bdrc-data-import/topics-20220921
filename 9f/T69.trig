@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,42 +13,46 @@
 
 bdg:T69 {
     bda:LG3DCF43FBF43C5ECD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-04-03T14:23:00.113Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG5E472B8FA8E48D77
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG8EA13A9D3E2398EF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-22T10:12:16.495Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG8EAAFAFCB454D24F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:12:15.275Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGA805F50DB74A9369
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-03-14T12:57:31.883Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGED4F53D10A3A3C72
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T09:43:23.145Z"^^xsd:dateTime ;
         adm:logMessage      "added names and see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T69  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T69 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9f/T69.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T69 ;
-        adm:logEntry        bda:LG3DCF43FBF43C5ECD , bda:LG8EA13A9D3E2398EF , bda:LG8EAAFAFCB454D24F , bda:LGA805F50DB74A9369 , bda:LGED4F53D10A3A3C72 ;
+        adm:logEntry        bda:LG3DCF43FBF43C5ECD , bda:LG5E472B8FA8E48D77 , bda:LG8EA13A9D3E2398EF , bda:LG8EAAFAFCB454D24F , bda:LGA805F50DB74A9369 , bda:LGED4F53D10A3A3C72 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

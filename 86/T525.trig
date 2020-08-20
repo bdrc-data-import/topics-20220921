@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,30 +13,34 @@
 
 bdg:T525 {
     bda:LG51BF3EB5A2D20DE1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-11T14:26:36.147Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG51F8A744C7693838
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-08T13:14:27.036Z"^^xsd:dateTime ;
         adm:logMessage      "note of application added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG52ACBA069FAE4504
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD00A01DA5F4578A0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-03-02T16:07:07.644Z"^^xsd:dateTime ;
         adm:logMessage      "added shad and chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T525  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T525 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "86/T525.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T525 ;
-        adm:logEntry        bda:LG51BF3EB5A2D20DE1 , bda:LG51F8A744C7693838 , bda:LGD00A01DA5F4578A0 ;
+        adm:logEntry        bda:LG51BF3EB5A2D20DE1 , bda:LG51F8A744C7693838 , bda:LG52ACBA069FAE4504 , bda:LGD00A01DA5F4578A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

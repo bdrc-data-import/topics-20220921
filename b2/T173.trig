@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,53 +13,57 @@
 
 bdg:T173 {
     bda:LG0731739C1B43807A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-22T15:09:07.197Z"^^xsd:dateTime ;
         adm:logMessage      "Added T1830 (spos sbyor)"@en .
     
     bda:LG1116E30F1D7474C7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:16:31.743Z"^^xsd:dateTime .
     
+    bda:LG70396E721700959E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG89566CF7C02E6970
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T12:50:04.909Z"^^xsd:dateTime ;
         adm:logMessage      "Deleted SeeAlso T002JR4920 (bsgral mchod)"@en .
     
     bda:LGAFAC3B5CF1F33523
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-09T10:41:57.97Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGC15CE109A0E53ADF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-04T10:51:34.647Z"^^xsd:dateTime ;
         adm:logMessage      "added see alsos"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGD0D7579EA4E75DDB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:18:08.721Z"^^xsd:dateTime .
     
     bda:LGE42D27C191B05601
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-04-30T16:17:25.298Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00003 .
+        adm:logWho          bdu:U00003 .
     
     bda:LGF8277B1CEF187388
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:10:19.53Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T003JR4920, T249, and T529"@en .
     
     bda:T173  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T173 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "b2/T173.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T173 ;
-        adm:logEntry        bda:LG0731739C1B43807A , bda:LG1116E30F1D7474C7 , bda:LG89566CF7C02E6970 , bda:LGAFAC3B5CF1F33523 , bda:LGC15CE109A0E53ADF , bda:LGD0D7579EA4E75DDB , bda:LGE42D27C191B05601 , bda:LGF8277B1CEF187388 ;
+        adm:logEntry        bda:LG0731739C1B43807A , bda:LG1116E30F1D7474C7 , bda:LG70396E721700959E , bda:LG89566CF7C02E6970 , bda:LGAFAC3B5CF1F33523 , bda:LGC15CE109A0E53ADF , bda:LGD0D7579EA4E75DDB , bda:LGE42D27C191B05601 , bda:LGF8277B1CEF187388 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

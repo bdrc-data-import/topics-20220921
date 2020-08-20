@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1098 {
     bda:LG3A5C2C5B0199680C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-13T15:32:17.521Z"^^xsd:dateTime ;
         adm:logMessage      "added more names of gter ston to the gter ma"@en ;
-        adm:logWho          bdr:U00031 .
+        adm:logWho          bdu:U00031 .
     
     bda:LG3D27EF71AE86758A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-13T14:36:35.038Z"^^xsd:dateTime ;
         adm:logMessage      "added names of individual gter ston to gter ma if soley discovered by them"@en ;
-        adm:logWho          bdr:U00031 .
+        adm:logWho          bdu:U00031 .
+    
+    bda:LG5087C7DA6A6DB788
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1098  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1098 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "24/T1098.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1098 ;
-        adm:logEntry        bda:LG3A5C2C5B0199680C , bda:LG3D27EF71AE86758A ;
+        adm:logEntry        bda:LG3A5C2C5B0199680C , bda:LG3D27EF71AE86758A , bda:LG5087C7DA6A6DB788 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

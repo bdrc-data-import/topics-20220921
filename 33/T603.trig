@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,49 +13,53 @@
 
 bdg:T603 {
     bda:LG28134FB3629CF8A7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-09T10:56:32.631Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG2C645738A9758964
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T00:47:59.355Z"^^xsd:dateTime ;
         adm:logMessage      "rypo corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG339BECE3A45480D2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-18T17:30:35.656Z"^^xsd:dateTime ;
         adm:logMessage      "typos corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG473943B763C2B32E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-12T15:56:25.233Z"^^xsd:dateTime ;
         adm:logMessage      "changes from skyobs to skyob made"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG98D21FB47473C0B8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-18T17:20:59.737Z"^^xsd:dateTime ;
         adm:logMessage      "appication note revised"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAC715F138733FC49
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE8B25C518464CC96
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-18T17:23:48.06Z"^^xsd:dateTime ;
         adm:logMessage      "checking"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T603  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T603 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "33/T603.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T603 ;
-        adm:logEntry        bda:LG28134FB3629CF8A7 , bda:LG2C645738A9758964 , bda:LG339BECE3A45480D2 , bda:LG473943B763C2B32E , bda:LG98D21FB47473C0B8 , bda:LGE8B25C518464CC96 ;
+        adm:logEntry        bda:LG28134FB3629CF8A7 , bda:LG2C645738A9758964 , bda:LG339BECE3A45480D2 , bda:LG473943B763C2B32E , bda:LG98D21FB47473C0B8 , bda:LGAC715F138733FC49 , bda:LGE8B25C518464CC96 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

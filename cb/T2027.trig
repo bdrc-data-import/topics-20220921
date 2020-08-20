@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T2027 {
     bda:LG75A686AEC1641E7E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T14:47:47.273Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG7C094529B41F9760
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-25T16:02:07.569Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD4C16CDED39023D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2027  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2027 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cb/T2027.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2027 ;
-        adm:logEntry        bda:LG75A686AEC1641E7E , bda:LG7C094529B41F9760 ;
+        adm:logEntry        bda:LG75A686AEC1641E7E , bda:LG7C094529B41F9760 , bda:LGD4C16CDED39023D5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

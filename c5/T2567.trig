@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T2567 {
     bda:LG02A39A7C4D8C9899
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-10T10:24:39.796Z"^^xsd:dateTime ;
         adm:logMessage      "note modified"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4968709E22FDE004
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG9D4CE7000A4E344D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-09-04T16:22:29.39Z"^^xsd:dateTime ;
         adm:logMessage      "added name & note"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2567  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2567 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/T2567.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2567 ;
-        adm:logEntry        bda:LG02A39A7C4D8C9899 , bda:LG9D4CE7000A4E344D ;
+        adm:logEntry        bda:LG02A39A7C4D8C9899 , bda:LG4968709E22FDE004 , bda:LG9D4CE7000A4E344D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

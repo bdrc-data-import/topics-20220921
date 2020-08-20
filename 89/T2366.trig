@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,24 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2366 {
+    bda:LG0E2DDDF76413B5AB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBB9B9AF0CEEF2B19
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-03-19T14:51:42.805Z"^^xsd:dateTime .
     
     bda:LGC88FD212465F3616
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-05-06T15:36:50.047Z"^^xsd:dateTime ;
         adm:logMessage      "added smar khrid"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T2366  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2366 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "89/T2366.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2366 ;
-        adm:logEntry        bda:LGBB9B9AF0CEEF2B19 , bda:LGC88FD212465F3616 ;
+        adm:logEntry        bda:LG0E2DDDF76413B5AB , bda:LGBB9B9AF0CEEF2B19 , bda:LGC88FD212465F3616 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

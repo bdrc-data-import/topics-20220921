@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,43 +13,47 @@
 
 bdg:T423 {
     bda:LG2E2C5AF118E38D71
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-03-27T11:16:05.49Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit and chinese"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LG5EB9552897E7B608
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T12:03:17.884Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGA560DB2654230D50
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-10-10T20:09:15.076Z"^^xsd:dateTime ;
         adm:logMessage      "corrected language settings"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGB3DAE2E7DF395D3D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-04-03T12:11:25.986Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit and chinese"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGBCE550288C8BBF72
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-12-04T21:10:31.652Z"^^xsd:dateTime ;
         adm:logMessage      "added 'khor lo sdom pa"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBF6C1B639C227396
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T423  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T423 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c6/T423.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T423 ;
-        adm:logEntry        bda:LG2E2C5AF118E38D71 , bda:LG5EB9552897E7B608 , bda:LGA560DB2654230D50 , bda:LGB3DAE2E7DF395D3D , bda:LGBCE550288C8BBF72 ;
+        adm:logEntry        bda:LG2E2C5AF118E38D71 , bda:LG5EB9552897E7B608 , bda:LGA560DB2654230D50 , bda:LGB3DAE2E7DF395D3D , bda:LGBCE550288C8BBF72 , bda:LGBF6C1B639C227396 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

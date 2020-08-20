@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T814 {
     bda:LG07D278CC9C93CC01
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-05T12:37:31.408Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG8DB67AA7BB9F3D5B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-02T11:34:22.803Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew as orphan"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDA1761D04107D2FA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T814  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T814 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "65/T814.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T814 ;
-        adm:logEntry        bda:LG07D278CC9C93CC01 , bda:LG8DB67AA7BB9F3D5B ;
+        adm:logEntry        bda:LG07D278CC9C93CC01 , bda:LG8DB67AA7BB9F3D5B , bda:LGDA1761D04107D2FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

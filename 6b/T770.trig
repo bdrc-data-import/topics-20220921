@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T770 {
     bda:LG101EBAF8FF69F287
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-11-19T16:07:26.314Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG4E1F964100793A65
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2017-05-05T10:38:18.05Z"^^xsd:dateTime ;
         adm:logMessage      "corrected language settings"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG8B1DD5690EC524DE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T13:10:51.593Z"^^xsd:dateTime ;
         adm:logMessage      "added names and works..."@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGC02BDD2D7E658937
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T15:03:58.292Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE605F63E6ED8C26B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T770  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T770 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6b/T770.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T770 ;
-        adm:logEntry        bda:LG101EBAF8FF69F287 , bda:LG4E1F964100793A65 , bda:LG8B1DD5690EC524DE , bda:LGC02BDD2D7E658937 ;
+        adm:logEntry        bda:LG101EBAF8FF69F287 , bda:LG4E1F964100793A65 , bda:LG8B1DD5690EC524DE , bda:LGC02BDD2D7E658937 , bda:LGE605F63E6ED8C26B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

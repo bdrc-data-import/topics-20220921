@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,15 +13,15 @@
 
 bdg:T1GS10764 {
     bda:LG02EF3D7735D02F97
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T12:50:39.571Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1307 (sa dpyad)"@en .
     
     bda:LG541B8D6037E52D01
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-03-30T12:11:53.254Z"^^xsd:dateTime ;
         adm:logMessage      "separation of sa dpyad and sa chog"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T1GS10764  a        adm:AdminData ;
         :isRoot             true ;

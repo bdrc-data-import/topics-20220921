@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T27 {
     bda:LG40CBE6825F3073C0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-08T15:32:26.684Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG79962F2E73DF232F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-01T13:51:57.803Z"^^xsd:dateTime ;
         adm:logMessage      "Added T1225 (tshe 'gugs) SeeAlso"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
+    
+    bda:LGC20E3BB11EF00680
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T27  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T27 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b5/T27.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T27 ;
-        adm:logEntry        bda:LG40CBE6825F3073C0 , bda:LG79962F2E73DF232F ;
+        adm:logEntry        bda:LG40CBE6825F3073C0 , bda:LG79962F2E73DF232F , bda:LGC20E3BB11EF00680 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

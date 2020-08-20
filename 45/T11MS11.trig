@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,21 +13,21 @@
 
 bdg:T11MS11 {
     bda:LG751CB176D3169ED6
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2014-03-19T14:51:32.144Z"^^xsd:dateTime ;
         adm:logMessage      "created new topic"@en .
     
     bda:LGB787273715C9B177
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-04T10:51:32.911Z"^^xsd:dateTime ;
         adm:logMessage      "added see alsos"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGFEFDBC6484AA8844
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T16:52:48.583Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T11MS11  a          adm:AdminData ;
         :isRoot             true ;

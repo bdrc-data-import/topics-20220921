@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T1961 {
     bda:LG5EA372226F036C4C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T16:45:31.84Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1821"@en .
     
     bda:LG8422A4DCDF510A12
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:05:48.791Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T1821 to T978"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBAA5164DD26D9D0D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1961  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1961 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2f/T1961.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1961 ;
-        adm:logEntry        bda:LG5EA372226F036C4C , bda:LG8422A4DCDF510A12 ;
+        adm:logEntry        bda:LG5EA372226F036C4C , bda:LG8422A4DCDF510A12 , bda:LGBAA5164DD26D9D0D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

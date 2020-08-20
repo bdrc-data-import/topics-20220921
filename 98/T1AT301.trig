@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,12 +13,12 @@
 
 bdg:T1AT301 {
     bda:LG3DAF85FD54D53FA1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T12:02:37.544Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T1232 (rol mo)"@en .
     
     bda:LGC52F6C0FCDFBE3F4
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2009-03-10T14:06:03.794Z"^^xsd:dateTime ;
         adm:logMessage      "new topic"@en .
     

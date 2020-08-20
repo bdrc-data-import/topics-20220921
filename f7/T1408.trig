@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T1408 {
     bda:LG00FC5731F33D8B6F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-11-24T15:09:54.123Z"^^xsd:dateTime ;
         adm:logMessage      "added additional spelling and extended annotation"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG83C7D1AAA726F112
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-11-24T15:48:57.241Z"^^xsd:dateTime ;
         adm:logMessage      "edited and added annotation"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG98A5C14DA5147429
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:03:21.626Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
+    
+    bda:LGB7E86F811EE376F3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1408  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1408 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f7/T1408.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1408 ;
-        adm:logEntry        bda:LG00FC5731F33D8B6F , bda:LG83C7D1AAA726F112 , bda:LG98A5C14DA5147429 ;
+        adm:logEntry        bda:LG00FC5731F33D8B6F , bda:LG83C7D1AAA726F112 , bda:LG98A5C14DA5147429 , bda:LGB7E86F811EE376F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

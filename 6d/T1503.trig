@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,43 +13,47 @@
 
 bdg:T1503 {
     bda:LG2C025BE9F19FB31F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-28T10:33:47.039Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG32AFD3F2B74AC350
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T16:35:07.711Z"^^xsd:dateTime ;
         adm:logMessage      "withdrwan infavor of right t"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG5D7CE55A4F984C69
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-10-18T12:22:37.487Z"^^xsd:dateTime ;
         adm:logMessage      "with drawn in favor of corect T"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE71F5627BF2B8B20
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEE673B42DFB6057B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T16:31:49.642Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGFDC168D679A6ACA0
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2018-10-16T14:22:28.491Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of right topic"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T1503  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1503 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6d/T1503.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1503 ;
-        adm:logEntry        bda:LG2C025BE9F19FB31F , bda:LG32AFD3F2B74AC350 , bda:LG5D7CE55A4F984C69 , bda:LGEE673B42DFB6057B , bda:LGFDC168D679A6ACA0 ;
+        adm:logEntry        bda:LG2C025BE9F19FB31F , bda:LG32AFD3F2B74AC350 , bda:LG5D7CE55A4F984C69 , bda:LGE71F5627BF2B8B20 , bda:LGEE673B42DFB6057B , bda:LGFDC168D679A6ACA0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

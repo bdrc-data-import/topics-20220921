@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T2551 {
     bda:LG2995CBFD5D3EB3A1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-10-14T11:30:18.284Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3D16DB457C512F2C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG66BBBB1C96F6DF45
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-10-25T12:36:51.443Z"^^xsd:dateTime ;
         adm:logMessage      "english added"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LGF03502B39123073D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-16T12:21:35.423Z"^^xsd:dateTime ;
         adm:logMessage      "edited & merge T1PD109542 & T1PD109543 & T1PD109544 to here"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2551  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2551 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "47/T2551.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2551 ;
-        adm:logEntry        bda:LG2995CBFD5D3EB3A1 , bda:LG66BBBB1C96F6DF45 , bda:LGF03502B39123073D ;
+        adm:logEntry        bda:LG2995CBFD5D3EB3A1 , bda:LG3D16DB457C512F2C , bda:LG66BBBB1C96F6DF45 , bda:LGF03502B39123073D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

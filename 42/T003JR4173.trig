@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,28 +13,28 @@
 
 bdg:T003JR4173 {
     bda:LG59E857A16AE501BE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-18T13:04:16.849Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T1875"@en .
     
     bda:LGBEC0FCB0892E26C7
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-05-23T18:50:19.994Z"^^xsd:dateTime ;
         adm:logMessage      "edited the note for the bi ma snying thig and newly created the rgyud bcu bdun; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:LGCB4DF714F0F1098D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-18T13:06:04.936Z"^^xsd:dateTime .
     
     bda:LGED8D430F3FD08AD7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-09-29T11:10:25.191Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGF5300C8CA0E5C430
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T15:48:17.116Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T004JR4173 (rgyud bcu bdun)"@en .
     

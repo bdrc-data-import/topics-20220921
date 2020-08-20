@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,12 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1679 {
+    bda:LGD4D0ED184A207D33
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:T1679  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1679 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "37/T1679.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1679 ;
+        adm:logEntry        bda:LGD4D0ED184A207D33 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

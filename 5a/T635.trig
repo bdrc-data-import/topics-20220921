@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T635 {
     bda:LG4A1B35BD42389351
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-18T14:58:11.672Z"^^xsd:dateTime ;
         adm:logMessage      "name and note change entirely."@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG78611BE0C092A1FF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-18T15:01:41.783Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAF8C10EF9E19E9CE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T635  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T635 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "5a/T635.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T635 ;
-        adm:logEntry        bda:LG4A1B35BD42389351 , bda:LG78611BE0C092A1FF ;
+        adm:logEntry        bda:LG4A1B35BD42389351 , bda:LG78611BE0C092A1FF , bda:LGAF8C10EF9E19E9CE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

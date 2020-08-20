@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T754 {
+    bda:LG8347D27A2D3F1CD4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC7E5E287795BA9A6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-26T16:34:00.815Z"^^xsd:dateTime ;
         adm:logMessage      "restore from local restore folder"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGDC344ABF0FDB5ADA
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2010-07-25T16:20:15.58Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn topic in favor of t2gs1194"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T754  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T754 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b2/T754.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T754 ;
-        adm:logEntry        bda:LGC7E5E287795BA9A6 , bda:LGDC344ABF0FDB5ADA ;
+        adm:logEntry        bda:LG8347D27A2D3F1CD4 , bda:LGC7E5E287795BA9A6 , bda:LGDC344ABF0FDB5ADA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

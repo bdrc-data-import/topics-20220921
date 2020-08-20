@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,36 +13,40 @@
 
 bdg:T2077 {
     bda:LG39F73DEC5D7EFE9C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-10-21T12:11:30.265Z"^^xsd:dateTime ;
         adm:logMessage      "edited name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG6FED4F50AD456ADB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-10-22T10:19:37.644Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LG89AD4927667AF07A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-10-21T11:58:41.177Z"^^xsd:dateTime ;
         adm:logMessage      "added names"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD301BA51A46EB934
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGECB751B0517B6A67
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-13T14:26:59.511Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T2077  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2077 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "df/T2077.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2077 ;
-        adm:logEntry        bda:LG39F73DEC5D7EFE9C , bda:LG6FED4F50AD456ADB , bda:LG89AD4927667AF07A , bda:LGECB751B0517B6A67 ;
+        adm:logEntry        bda:LG39F73DEC5D7EFE9C , bda:LG6FED4F50AD456ADB , bda:LG89AD4927667AF07A , bda:LGD301BA51A46EB934 , bda:LGECB751B0517B6A67 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

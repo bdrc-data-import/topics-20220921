@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1992 {
     bda:LGCD29A87544F0A2D7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-18T10:13:31.939Z"^^xsd:dateTime ;
         adm:logMessage      "added skt and english; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
     
     bda:LGD922BF0AB244178C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:05:41.917Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
+    
+    bda:LGDB58819F1E9C92F7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1992  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1992 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a9/T1992.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1992 ;
-        adm:logEntry        bda:LGCD29A87544F0A2D7 , bda:LGD922BF0AB244178C ;
+        adm:logEntry        bda:LGCD29A87544F0A2D7 , bda:LGD922BF0AB244178C , bda:LGDB58819F1E9C92F7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

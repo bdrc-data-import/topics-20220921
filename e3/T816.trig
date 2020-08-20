@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,47 +13,51 @@
 
 bdg:T816 {
     bda:LG3CB16EC1AD98C4F3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T15:17:29.986Z"^^xsd:dateTime ;
         adm:logMessage      "edited typo"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG678CCF84765B681E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T11:54:38.802Z"^^xsd:dateTime ;
         adm:logMessage      "edited name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6C46797A8584E84C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG722FDB97821409B2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-12-21T16:58:53.633Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGB503B26998F3B95B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-05-27T08:18:31.546Z"^^xsd:dateTime ;
         adm:logMessage      "checked orthography"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGC39AB84C20FA4823
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-01-25T16:01:19.262Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:LGDF419C3F28489BC7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2011-01-19T11:33:03.607Z"^^xsd:dateTime ;
         adm:logMessage      "corrected dkar and added shad"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:T816  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T816 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e3/T816.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T816 ;
-        adm:logEntry        bda:LG3CB16EC1AD98C4F3 , bda:LG678CCF84765B681E , bda:LG722FDB97821409B2 , bda:LGB503B26998F3B95B , bda:LGC39AB84C20FA4823 , bda:LGDF419C3F28489BC7 ;
+        adm:logEntry        bda:LG3CB16EC1AD98C4F3 , bda:LG678CCF84765B681E , bda:LG6C46797A8584E84C , bda:LG722FDB97821409B2 , bda:LGB503B26998F3B95B , bda:LGC39AB84C20FA4823 , bda:LGDF419C3F28489BC7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T2507 {
     bda:LG6A0DE4AE344D9DB6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T17:05:18.863Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG7AB3864452B15F36
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-26T16:50:49.436Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC6BA5E239902E643
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2507  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2507 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ad/T2507.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2507 ;
-        adm:logEntry        bda:LG6A0DE4AE344D9DB6 , bda:LG7AB3864452B15F36 ;
+        adm:logEntry        bda:LG6A0DE4AE344D9DB6 , bda:LG7AB3864452B15F36 , bda:LGC6BA5E239902E643 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

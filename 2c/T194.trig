@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,30 +13,34 @@
 
 bdg:T194 {
     bda:LG0B57F8586EEFDE58
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-25T11:30:22.536Z"^^xsd:dateTime ;
         adm:logMessage      "T194 and T1769 merged"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
     
     bda:LG5EF3ACBFE9AFA55A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-07T11:48:57.13Z"^^xsd:dateTime ;
         adm:logMessage      "added see alsos"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG66551C732A073BD0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-07T12:08:59.935Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8DD2FE3D4EF2CAD3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T194  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T194 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2c/T194.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T194 ;
-        adm:logEntry        bda:LG0B57F8586EEFDE58 , bda:LG5EF3ACBFE9AFA55A , bda:LG66551C732A073BD0 ;
+        adm:logEntry        bda:LG0B57F8586EEFDE58 , bda:LG5EF3ACBFE9AFA55A , bda:LG66551C732A073BD0 , bda:LG8DD2FE3D4EF2CAD3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

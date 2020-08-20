@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,29 +13,33 @@
 
 bdg:T1044 {
     bda:LG56C85855A8ABC302
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-12T13:55:49.123Z"^^xsd:dateTime ;
         adm:logMessage      "added alternative name"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG694335F31D67E0D9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-12T13:58:39.083Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG89B0ECE944567277
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF8C4C017DA9B795B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T13:12:19.632Z"^^xsd:dateTime ;
         adm:logMessage      "added T455 SeeAlso"@en .
     
     bda:T1044  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1044 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "22/T1044.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1044 ;
-        adm:logEntry        bda:LG56C85855A8ABC302 , bda:LG694335F31D67E0D9 , bda:LGF8C4C017DA9B795B ;
+        adm:logEntry        bda:LG56C85855A8ABC302 , bda:LG694335F31D67E0D9 , bda:LG89B0ECE944567277 , bda:LGF8C4C017DA9B795B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

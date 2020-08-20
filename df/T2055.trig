@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,62 +13,66 @@
 
 bdg:T2055 {
     bda:LG04E0D9289F6BC944
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-06T12:57:36.412Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG1B1B7C9D4AED0380
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-30T15:50:55.823Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG2021B0982FF4AC6B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-28T15:54:00.355Z"^^xsd:dateTime ;
         adm:logMessage      "Added Sanskrit diacritics"@en .
     
     bda:LG2049490D76611CFD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-03-06T11:01:07.944Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG448D4CF1D6456635
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6F4D87F144844E06
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-16T16:10:10.258Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG8B9BDE73649E8909
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-17T13:45:41.976Z"^^xsd:dateTime ;
         adm:logMessage      "added associated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG90A6BD0C5BA199C3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-25T14:47:41.688Z"^^xsd:dateTime ;
         adm:logMessage      "added see also, T1133"@en .
     
     bda:LGBDFE158B2BF4BCF5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-16T16:08:11.184Z"^^xsd:dateTime ;
         adm:logMessage      "added chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGE1954D79349DB305
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-28T17:42:16.127Z"^^xsd:dateTime ;
         adm:logMessage      "added Sanskrit phonetcis"@en .
     
     bda:T2055  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2055 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "df/T2055.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2055 ;
-        adm:logEntry        bda:LG04E0D9289F6BC944 , bda:LG1B1B7C9D4AED0380 , bda:LG2021B0982FF4AC6B , bda:LG2049490D76611CFD , bda:LG6F4D87F144844E06 , bda:LG8B9BDE73649E8909 , bda:LG90A6BD0C5BA199C3 , bda:LGBDFE158B2BF4BCF5 , bda:LGE1954D79349DB305 ;
+        adm:logEntry        bda:LG04E0D9289F6BC944 , bda:LG1B1B7C9D4AED0380 , bda:LG2021B0982FF4AC6B , bda:LG2049490D76611CFD , bda:LG448D4CF1D6456635 , bda:LG6F4D87F144844E06 , bda:LG8B9BDE73649E8909 , bda:LG90A6BD0C5BA199C3 , bda:LGBDFE158B2BF4BCF5 , bda:LGE1954D79349DB305 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

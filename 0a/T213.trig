@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,31 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T213 {
+    bda:LG01F31A256DFDE342
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC7785F1E0E78F29F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-08-13T10:20:42.25Z"^^xsd:dateTime ;
         adm:logMessage      "added yig gzugs"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGDE5986784EC7B4F4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-22T10:57:21.293Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LGE613AAFEC9D541AB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T10:06:11.797Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T213  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T213 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0a/T213.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T213 ;
-        adm:logEntry        bda:LGC7785F1E0E78F29F , bda:LGDE5986784EC7B4F4 , bda:LGE613AAFEC9D541AB ;
+        adm:logEntry        bda:LG01F31A256DFDE342 , bda:LGC7785F1E0E78F29F , bda:LGDE5986784EC7B4F4 , bda:LGE613AAFEC9D541AB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

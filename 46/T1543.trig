@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,43 +13,47 @@
 
 bdg:T1543 {
     bda:LG14BA3362D3D1444F
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-05-04T15:10:05.04Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:LG6140FEA0ECD2E992
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-07T10:47:16.962Z"^^xsd:dateTime ;
         adm:logMessage      "added see also and notes, released"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG70DA856149FA94E7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-01T11:15:17.294Z"^^xsd:dateTime ;
         adm:logMessage      "added (khrid)"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG726C70540BB63B95
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG95B8063A1B3DC3ED
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-25T15:31:54.999Z"^^xsd:dateTime ;
         adm:logMessage      "added english & chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGEF7B5F036175B7C1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T12:11:44.679Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T1543  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1543 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "46/T1543.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1543 ;
-        adm:logEntry        bda:LG14BA3362D3D1444F , bda:LG6140FEA0ECD2E992 , bda:LG70DA856149FA94E7 , bda:LG95B8063A1B3DC3ED , bda:LGEF7B5F036175B7C1 ;
+        adm:logEntry        bda:LG14BA3362D3D1444F , bda:LG6140FEA0ECD2E992 , bda:LG70DA856149FA94E7 , bda:LG726C70540BB63B95 , bda:LG95B8063A1B3DC3ED , bda:LGEF7B5F036175B7C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

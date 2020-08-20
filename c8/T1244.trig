@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1244 {
+    bda:LG3387110E754991D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD294E974AD2B2E86
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-02-17T16:41:39.573Z"^^xsd:dateTime ;
         adm:logMessage      "gsar du bcug"@en ;
-        adm:logWho          bdr:U00021 .
+        adm:logWho          bdu:U00021 .
     
     bda:T1244  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1244 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c8/T1244.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1244 ;
-        adm:logEntry        bda:LGD294E974AD2B2E86 ;
+        adm:logEntry        bda:LG3387110E754991D8 , bda:LGD294E974AD2B2E86 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

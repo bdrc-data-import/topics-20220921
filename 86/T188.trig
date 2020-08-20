@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T188 {
     bda:LG8D7AF39BB5568FDF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-17T11:18:20.793Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGD12160B49F112FB5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T14:25:29.578Z"^^xsd:dateTime ;
         adm:logMessage      "language order changed"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGF3A4B1BF565FA163
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T188  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T188 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "86/T188.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T188 ;
-        adm:logEntry        bda:LG8D7AF39BB5568FDF , bda:LGD12160B49F112FB5 ;
+        adm:logEntry        bda:LG8D7AF39BB5568FDF , bda:LGD12160B49F112FB5 , bda:LGF3A4B1BF565FA163 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

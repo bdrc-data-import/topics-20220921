@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,36 +13,40 @@
 
 bdg:T6 {
     bda:LG502AD435B65DF525
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-27T15:03:30.254Z"^^xsd:dateTime ;
         adm:logMessage      "added mgur glu"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG54BD2042F65510DC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T15:47:35.472Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG9FCFC060448DC44D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-07T10:08:49.533Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGC3F1CA45F5F1C79E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-11-16T21:35:49.604Z"^^xsd:dateTime ;
         adm:logMessage      "added variant name; jann"@en ;
-        adm:logWho          bdr:U00011 .
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGE096536EB2D91D21
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T6  a               adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T6 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "71/T6.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T6 ;
-        adm:logEntry        bda:LG502AD435B65DF525 , bda:LG54BD2042F65510DC , bda:LG9FCFC060448DC44D , bda:LGC3F1CA45F5F1C79E ;
+        adm:logEntry        bda:LG502AD435B65DF525 , bda:LG54BD2042F65510DC , bda:LG9FCFC060448DC44D , bda:LGC3F1CA45F5F1C79E , bda:LGE096536EB2D91D21 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

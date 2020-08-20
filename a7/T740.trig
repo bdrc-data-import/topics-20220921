@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T740 {
     bda:LG2AEB1396DDD2FF8E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-19T14:59:31.112Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG62442E3AB87772E9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF0CB96DD3EB56FFC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T01:27:29.731Z"^^xsd:dateTime ;
         adm:logMessage      "sakyaraksita note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T740  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T740 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a7/T740.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T740 ;
-        adm:logEntry        bda:LG2AEB1396DDD2FF8E , bda:LGF0CB96DD3EB56FFC ;
+        adm:logEntry        bda:LG2AEB1396DDD2FF8E , bda:LG62442E3AB87772E9 , bda:LGF0CB96DD3EB56FFC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T310 {
     bda:LG24D3D8C8E6859F8A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T16:52:49.727Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGAE76072C5A499C96
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T15:41:36.428Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGC5EEBF957DEB7D66
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-11T11:02:08.061Z"^^xsd:dateTime ;
         adm:logMessage      "removed T1129 as classification"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGCE15DABC9F4C7654
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T310  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T310 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "18/T310.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T310 ;
-        adm:logEntry        bda:LG24D3D8C8E6859F8A , bda:LGAE76072C5A499C96 , bda:LGC5EEBF957DEB7D66 ;
+        adm:logEntry        bda:LG24D3D8C8E6859F8A , bda:LGAE76072C5A499C96 , bda:LGC5EEBF957DEB7D66 , bda:LGCE15DABC9F4C7654 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

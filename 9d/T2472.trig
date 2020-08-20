@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2472 {
+    bda:LGC0F9C7D754A37C37
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD26238E7373527C7
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2015-12-03T15:01:34.704Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn because of not used"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGF263DABD11B61DE7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-26T14:52:21.662Z"^^xsd:dateTime ;
         adm:logMessage      "changed withdrawn to released"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2472  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2472 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9d/T2472.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2472 ;
-        adm:logEntry        bda:LGD26238E7373527C7 , bda:LGF263DABD11B61DE7 ;
+        adm:logEntry        bda:LGC0F9C7D754A37C37 , bda:LGD26238E7373527C7 , bda:LGF263DABD11B61DE7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

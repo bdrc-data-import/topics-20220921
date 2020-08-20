@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T2062 {
     bda:LG1D17119946F0DFFE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T11:22:02.274Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG2D1DC23074EE21CD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-28T11:18:10.45Z"^^xsd:dateTime ;
         adm:logMessage      "added seeAlso"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3AC5505C3511CE19
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC5A96341DFB307E8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-26T16:51:56.931Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrita & chinese names"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2062  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2062 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "25/T2062.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2062 ;
-        adm:logEntry        bda:LG1D17119946F0DFFE , bda:LG2D1DC23074EE21CD , bda:LGC5A96341DFB307E8 ;
+        adm:logEntry        bda:LG1D17119946F0DFFE , bda:LG2D1DC23074EE21CD , bda:LG3AC5505C3511CE19 , bda:LGC5A96341DFB307E8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

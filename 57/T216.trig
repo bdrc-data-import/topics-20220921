@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T216 {
     bda:LG58AC191B696B1489
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
         adm:logMessage      "fixed Sanskrit"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
     
     bda:LG79BC579486463A0E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-17T18:15:31.974Z"^^xsd:dateTime ;
         adm:logMessage      "added Sanskrit"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
+    
+    bda:LG998B9C31CA625CE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG9BEF7EF1C979BEF1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T10:16:33.874Z"^^xsd:dateTime ;
         adm:logMessage      "application note created"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T216  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T216 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "57/T216.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T216 ;
-        adm:logEntry        bda:LG58AC191B696B1489 , bda:LG79BC579486463A0E , bda:LG9BEF7EF1C979BEF1 ;
+        adm:logEntry        bda:LG58AC191B696B1489 , bda:LG79BC579486463A0E , bda:LG998B9C31CA625CE9 , bda:LG9BEF7EF1C979BEF1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

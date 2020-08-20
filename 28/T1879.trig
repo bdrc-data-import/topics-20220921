@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T1879 {
     bda:LG5B318E2AD81926FD
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2015-02-23T08:50:44.471Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn infavour of W3JT13386"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG918D55202B690C51
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1879  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1879 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "28/T1879.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1879 ;
-        adm:logEntry        bda:LG5B318E2AD81926FD ;
+        adm:logEntry        bda:LG5B318E2AD81926FD , bda:LG918D55202B690C51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

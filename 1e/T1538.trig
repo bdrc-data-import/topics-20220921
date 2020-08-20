@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T1538 {
     bda:LG4F907C39E8B4613A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-09-01T10:32:42.984Z"^^xsd:dateTime ;
         adm:logMessage      "added (khrid)"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD69A9827325BACA3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFBB560A78C2C817F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-03T09:45:08.434Z"^^xsd:dateTime ;
         adm:logMessage      "delete khrid and note"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:T1538  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1538 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1e/T1538.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1538 ;
-        adm:logEntry        bda:LG4F907C39E8B4613A , bda:LGFBB560A78C2C817F ;
+        adm:logEntry        bda:LG4F907C39E8B4613A , bda:LGD69A9827325BACA3 , bda:LGFBB560A78C2C817F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

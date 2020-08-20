@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T265 {
     bda:LG878F9ECB2CDBB30F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-26T12:37:14.895Z"^^xsd:dateTime ;
         adm:logMessage      "added bod kyi skad yig"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9B43618818AAF66D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T265  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T265 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "33/T265.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T265 ;
-        adm:logEntry        bda:LG878F9ECB2CDBB30F ;
+        adm:logEntry        bda:LG878F9ECB2CDBB30F , bda:LG9B43618818AAF66D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

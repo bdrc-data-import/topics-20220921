@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,82 +13,86 @@
 
 bdg:T246 {
     bda:LG201DF1BE0B512CDF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-27T06:16:33.619Z"^^xsd:dateTime ;
         adm:logMessage      "add note from W1PD95844"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:LG2C93E5712F0C2375
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-27T05:43:35.781Z"^^xsd:dateTime ;
         adm:logMessage      "add note from W1PD95844"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:LG41C2B0BB92B2B451
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-21T16:34:21.521Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG442F4E899C29686F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6D97981DB16E8909
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-27T06:27:18.67Z"^^xsd:dateTime ;
         adm:logMessage      "add note from W1PD 95844"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:LG780175BA98397015
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T13:00:44.575Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T4CZ2184"@en .
     
     bda:LG79877228239562EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-21T17:18:14.186Z"^^xsd:dateTime ;
         adm:logMessage      "add T1674"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:LG88F91F6CBC023432
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
         adm:logMessage      "added another possible sanskrit term"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
     
     bda:LG90C5785B2461912B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2016-01-20T15:15:31.974Z"^^xsd:dateTime ;
         adm:logMessage      "added gzhas"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG956FF984883D5D0F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-27T05:57:41.625Z"^^xsd:dateTime ;
         adm:logMessage      "add note from W1PD95844"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:LG968208F4F39C4CA2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-10T10:12:25.494Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG9C54B5BA457FE576
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-17T18:15:31.974Z"^^xsd:dateTime ;
         adm:logMessage      "added Sanskrit"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
     
     bda:LGA6F39BDAE72B88C6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-09-27T06:52:11.38Z"^^xsd:dateTime ;
         adm:logMessage      "add note from W1PD95844"@en ;
-        adm:logWho          bdr:U00008 .
+        adm:logWho          bdu:U00008 .
     
     bda:T246  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T246 ;
-        adm:facetIndex      21 ;
+        adm:facetIndex      22 ;
         adm:gitPath         "40/T246.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T246 ;
-        adm:logEntry        bda:LG201DF1BE0B512CDF , bda:LG2C93E5712F0C2375 , bda:LG41C2B0BB92B2B451 , bda:LG6D97981DB16E8909 , bda:LG780175BA98397015 , bda:LG79877228239562EE , bda:LG88F91F6CBC023432 , bda:LG90C5785B2461912B , bda:LG956FF984883D5D0F , bda:LG968208F4F39C4CA2 , bda:LG9C54B5BA457FE576 , bda:LGA6F39BDAE72B88C6 ;
+        adm:logEntry        bda:LG201DF1BE0B512CDF , bda:LG2C93E5712F0C2375 , bda:LG41C2B0BB92B2B451 , bda:LG442F4E899C29686F , bda:LG6D97981DB16E8909 , bda:LG780175BA98397015 , bda:LG79877228239562EE , bda:LG88F91F6CBC023432 , bda:LG90C5785B2461912B , bda:LG956FF984883D5D0F , bda:LG968208F4F39C4CA2 , bda:LG9C54B5BA457FE576 , bda:LGA6F39BDAE72B88C6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

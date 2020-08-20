@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,19 +12,23 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T628 {
+    bda:LGBF38DA4E3C6334B9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGDE08802A83FEE0CF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-11T14:26:36.288Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T628  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T628 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "03/T628.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T628 ;
-        adm:logEntry        bda:LGDE08802A83FEE0CF ;
+        adm:logEntry        bda:LGBF38DA4E3C6334B9 , bda:LGDE08802A83FEE0CF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

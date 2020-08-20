@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,35 +12,39 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1808 {
+    bda:LG1C40238F82B79FA1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG311E027384B6B14A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T14:59:05.411Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T00JR2928 (drag po'i las)"@en .
     
     bda:LG36841ACEC1B263A5
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-11T14:26:36Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGA29649CEBBF61335
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-06-12T14:24:15.344Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LGCEAB79E9A581568A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T15:02:12.639Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T00JR2928 (drag po'i las)"@en .
     
     bda:T1808  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1808 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7e/T1808.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1808 ;
-        adm:logEntry        bda:LG311E027384B6B14A , bda:LG36841ACEC1B263A5 , bda:LGA29649CEBBF61335 , bda:LGCEAB79E9A581568A ;
+        adm:logEntry        bda:LG1C40238F82B79FA1 , bda:LG311E027384B6B14A , bda:LG36841ACEC1B263A5 , bda:LGA29649CEBBF61335 , bda:LGCEAB79E9A581568A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

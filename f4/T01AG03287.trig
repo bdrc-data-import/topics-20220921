@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,39 +13,39 @@
 
 bdg:T01AG03287 {
     bda:LG217E115A360A6841
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-31T14:25:39.221Z"^^xsd:dateTime ;
         adm:logMessage      "Deleted See Also dbang tho"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LG23AA9AAAD99116F4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-26T15:13:40.503Z"^^xsd:dateTime ;
         adm:logMessage      "Added T00JR761 (khrus dbang)"@en .
     
     bda:LG8E80EDBC5D5A0FEC
-        a                   adm:LogEntry ;
+        a                   adm:InitialDataCreation ;
         adm:logDate         "2007-06-13T16:06:58.312Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:LG8FD04533CCC7154D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-11-01T11:38:56.97Z"^^xsd:dateTime ;
         adm:logMessage      "Created See Also with dbang bskur (T10MS14317) as mother of rgyud sde'i dbang bskur"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:LGA9598FA689531F2E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-25T14:26:22.988Z"^^xsd:dateTime ;
         adm:logMessage      "added name and note"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGE6DCFEED1F732EEE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-11-01T12:08:11.499Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T48 (dbang chog) as father topic in rgyud sde'i dbang bskur rituals"@en ;
-        adm:logWho          bdr:U00043 .
+        adm:logWho          bdu:U00043 .
     
     bda:T01AG03287  a       adm:AdminData ;
         :isRoot             true ;

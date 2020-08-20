@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,26 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T163 {
+    bda:LGC7AE69D57C9A9876
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF83DBFC00D6B31DF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:04:12.038Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGFC88075D849C78E0
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-26T16:11:13.514Z"^^xsd:dateTime ;
         adm:logMessage      "application note added for general rdzogs rim teachings; chos rnam kun btus quoted"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T163  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T163 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a5/T163.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T163 ;
-        adm:logEntry        bda:LGF83DBFC00D6B31DF , bda:LGFC88075D849C78E0 ;
+        adm:logEntry        bda:LGC7AE69D57C9A9876 , bda:LGF83DBFC00D6B31DF , bda:LGFC88075D849C78E0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

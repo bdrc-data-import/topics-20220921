@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,35 +13,39 @@
 
 bdg:T326 {
     bda:LG3E5C4BBBABCE8B2A
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T11:24:55.26Z"^^xsd:dateTime ;
         adm:logMessage      "Added T2045 (sman sgrub bdud rtsi sman dngos)"@en .
     
     bda:LG63FD666985EBD657
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T11:27:42.947Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T2045"@en .
     
+    bda:LG75B75AC311D85280
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG80CD2D93D3F03DB2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T16:43:18.749Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG8C0F4EAEFFDC4B46
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2007-05-11T16:10:17.416Z"^^xsd:dateTime ;
         adm:logMessage      "added name"@en ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T326  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T326 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f9/T326.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T326 ;
-        adm:logEntry        bda:LG3E5C4BBBABCE8B2A , bda:LG63FD666985EBD657 , bda:LG80CD2D93D3F03DB2 , bda:LG8C0F4EAEFFDC4B46 ;
+        adm:logEntry        bda:LG3E5C4BBBABCE8B2A , bda:LG63FD666985EBD657 , bda:LG75B75AC311D85280 , bda:LG80CD2D93D3F03DB2 , bda:LG8C0F4EAEFFDC4B46 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

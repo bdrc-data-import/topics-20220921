@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T230 {
     bda:LG77E7AE8600990C7D
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-10-19T10:05:54.399Z"^^xsd:dateTime ;
         adm:logMessage      "took off prefix ma"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8CB4DA6FEF43F9A9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDF4098F49C52F0DF
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T12:09:54.132Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T230  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T230 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "5b/T230.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T230 ;
-        adm:logEntry        bda:LG77E7AE8600990C7D , bda:LGDF4098F49C52F0DF ;
+        adm:logEntry        bda:LG77E7AE8600990C7D , bda:LG8CB4DA6FEF43F9A9 , bda:LGDF4098F49C52F0DF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

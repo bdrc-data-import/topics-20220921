@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T2624 {
     bda:LG36320B99F9A583E7
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-25T16:53:04.377Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG7D3B7727C79C64A4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T16:20:23.248Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA94AA392A5FA2B97
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC1FEFCC4183F92AD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-17T10:55:26Z"^^xsd:dateTime ;
         adm:logMessage      "cleaned up english descriptions"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LGC6B9455208043BEE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2018-09-28T14:07:21.577Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:T2624  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2624 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5c/T2624.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2624 ;
-        adm:logEntry        bda:LG36320B99F9A583E7 , bda:LG7D3B7727C79C64A4 , bda:LGC1FEFCC4183F92AD , bda:LGC6B9455208043BEE ;
+        adm:logEntry        bda:LG36320B99F9A583E7 , bda:LG7D3B7727C79C64A4 , bda:LGA94AA392A5FA2B97 , bda:LGC1FEFCC4183F92AD , bda:LGC6B9455208043BEE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

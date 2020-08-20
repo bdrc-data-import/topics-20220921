@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T500 {
     bda:LG460732E6D17F87BE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-25T05:25:48.971Z"^^xsd:dateTime ;
         adm:logMessage      "revised application note; transmission in rnying ma tradition"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG945853024A2C5E62
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-25T05:21:33.092Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG9C3EA489C0A8521B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-29T06:03:26.336Z"^^xsd:dateTime ;
         adm:logMessage      "attempted to understand faulty display"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9D1FED4EC236A2A9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T500  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T500 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "96/T500.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T500 ;
-        adm:logEntry        bda:LG460732E6D17F87BE , bda:LG945853024A2C5E62 , bda:LG9C3EA489C0A8521B ;
+        adm:logEntry        bda:LG460732E6D17F87BE , bda:LG945853024A2C5E62 , bda:LG9C3EA489C0A8521B , bda:LG9D1FED4EC236A2A9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,49 +13,53 @@
 
 bdg:T299 {
     bda:LG014202EC67B99EFC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-18T12:45:00.603Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG1927662364A2C628
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-02T11:09:16.4Z"^^xsd:dateTime ;
         adm:logMessage      "edited topics"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG40E8A911840B88C3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-26T13:23:25.889Z"^^xsd:dateTime ;
         adm:logMessage      "application note revised: genre and subject"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGA5DDF3EAAB57B727
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:08:49.14Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGE7E0EC97AEB71063
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-23T10:04:37.449Z"^^xsd:dateTime ;
         adm:logMessage      "added tibetan term"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGEC9E766C0A79B98F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-02T11:08:07.503Z"^^xsd:dateTime ;
         adm:logMessage      "viewed"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF1E89255C13F12CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T299  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T299 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "88/T299.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T299 ;
-        adm:logEntry        bda:LG014202EC67B99EFC , bda:LG1927662364A2C628 , bda:LG40E8A911840B88C3 , bda:LGA5DDF3EAAB57B727 , bda:LGE7E0EC97AEB71063 , bda:LGEC9E766C0A79B98F ;
+        adm:logEntry        bda:LG014202EC67B99EFC , bda:LG1927662364A2C628 , bda:LG40E8A911840B88C3 , bda:LGA5DDF3EAAB57B727 , bda:LGE7E0EC97AEB71063 , bda:LGEC9E766C0A79B98F , bda:LGF1E89255C13F12CA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

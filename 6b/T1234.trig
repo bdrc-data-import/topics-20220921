@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,25 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1234 {
+    bda:LG066AB4E17F0C19D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGEA5D90A470DBCBB8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-01-14T16:17:09.528Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGFEC3A1AF15F0E8A4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2014-01-17T12:23:42.377Z"^^xsd:dateTime ;
         adm:logMessage      "added see also, additional name, note"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T1234  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1234 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6b/T1234.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1234 ;
-        adm:logEntry        bda:LGEA5D90A470DBCBB8 , bda:LGFEC3A1AF15F0E8A4 ;
+        adm:logEntry        bda:LG066AB4E17F0C19D8 , bda:LGEA5D90A470DBCBB8 , bda:LGFEC3A1AF15F0E8A4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

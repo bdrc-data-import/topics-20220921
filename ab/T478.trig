@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,34 +12,38 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T478 {
+    bda:LG164CA4DEA9B5923F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG39241B9390A2D46E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T13:29:27.416Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T478 and T471"@en .
     
     bda:LG4B3DE48BDA5618EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T12:40:54.499Z"^^xsd:dateTime .
     
     bda:LG9EF4D6AD9A11F3E8
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-17T12:31:44.26Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T01AG02845 (dril sgrub)"@en .
     
     bda:LGAD6C5D5D90B8B198
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T20:01:46.461Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T01AG02845 to T1CZ47"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:T478  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T478 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ab/T478.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T478 ;
-        adm:logEntry        bda:LG39241B9390A2D46E , bda:LG4B3DE48BDA5618EE , bda:LG9EF4D6AD9A11F3E8 , bda:LGAD6C5D5D90B8B198 ;
+        adm:logEntry        bda:LG164CA4DEA9B5923F , bda:LG39241B9390A2D46E , bda:LG4B3DE48BDA5618EE , bda:LG9EF4D6AD9A11F3E8 , bda:LGAD6C5D5D90B8B198 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

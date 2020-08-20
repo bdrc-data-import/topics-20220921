@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,48 +13,52 @@
 
 bdg:T1779 {
     bda:LG06C4851377A78374
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-05T15:47:27.731Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG07939FBB2F9FDCF4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG3D976BA3A92DAB9E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-09T05:37:36.161Z"^^xsd:dateTime ;
         adm:logMessage      "removed newline character in name"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LG6B1B3BB9CA35B20B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-07T09:31:45.167Z"^^xsd:dateTime ;
         adm:logMessage      "topic application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LG983AB18A960039E9
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-08T21:11:56.17Z"^^xsd:dateTime ;
         adm:logMessage      "corrected title"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LGB76E2E40752A97EB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-10T11:33:51.337Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGFF5B78C7CEAC20B2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-31T00:48:44.084Z"^^xsd:dateTime ;
         adm:logMessage      "added diacritics on sanskrit"@en ;
-        adm:logWhoStr       "eroux" .
+        adm:logWho          bdu:U00053 .
     
     bda:T1779  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1779 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c0/T1779.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1779 ;
-        adm:logEntry        bda:LG06C4851377A78374 , bda:LG3D976BA3A92DAB9E , bda:LG6B1B3BB9CA35B20B , bda:LG983AB18A960039E9 , bda:LGB76E2E40752A97EB , bda:LGFF5B78C7CEAC20B2 ;
+        adm:logEntry        bda:LG06C4851377A78374 , bda:LG07939FBB2F9FDCF4 , bda:LG3D976BA3A92DAB9E , bda:LG6B1B3BB9CA35B20B , bda:LG983AB18A960039E9 , bda:LGB76E2E40752A97EB , bda:LGFF5B78C7CEAC20B2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

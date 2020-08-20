@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,24 +13,28 @@
 
 bdg:T1335 {
     bda:LG203F04616F6217EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-22T10:22:01.324Z"^^xsd:dateTime ;
         adm:logMessage      "added names & seeAlso \"sgomPa, spyodPa\""@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5E0F51810B3FDD36
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB10F013C29ABB825
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-18T13:22:53.463Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T395 (lta khrid)"@en .
     
     bda:T1335  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1335 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7c/T1335.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1335 ;
-        adm:logEntry        bda:LG203F04616F6217EE , bda:LGB10F013C29ABB825 ;
+        adm:logEntry        bda:LG203F04616F6217EE , bda:LG5E0F51810B3FDD36 , bda:LGB10F013C29ABB825 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

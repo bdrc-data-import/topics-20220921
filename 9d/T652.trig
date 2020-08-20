@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T652 {
+    bda:LG80682E318A903207
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE7E19BCD429DD2D6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-08-04T00:21:43.178Z"^^xsd:dateTime ;
         adm:logMessage      "extended wylie romanization corrected"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T652  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T652 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "9d/T652.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T652 ;
-        adm:logEntry        bda:LGE7E19BCD429DD2D6 ;
+        adm:logEntry        bda:LG80682E318A903207 , bda:LGE7E19BCD429DD2D6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

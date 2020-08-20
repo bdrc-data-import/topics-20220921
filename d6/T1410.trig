@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T1410 {
     bda:LG130E9EE915FB4791
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-27T12:50:49.338Z"^^xsd:dateTime ;
         adm:logMessage      "application note added or amplified"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG38D28B09F4E08AB5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T1410  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1410 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d6/T1410.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1410 ;
-        adm:logEntry        bda:LG130E9EE915FB4791 ;
+        adm:logEntry        bda:LG130E9EE915FB4791 , bda:LG38D28B09F4E08AB5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

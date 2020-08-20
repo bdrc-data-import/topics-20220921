@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,20 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2564 {
+    bda:LG408F27562E2ECC47
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBE493D932DAF7A33
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2008-10-16T18:11:41.312Z"^^xsd:dateTime ;
         adm:logMessage      "names added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T2564  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2564 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f5/T2564.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2564 ;
-        adm:logEntry        bda:LGBE493D932DAF7A33 ;
+        adm:logEntry        bda:LG408F27562E2ECC47 , bda:LGBE493D932DAF7A33 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T580 {
     bda:LG3CF546B7AF868AD1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-08T16:35:40.137Z"^^xsd:dateTime ;
         adm:logMessage      "adding external link"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG501D4240AAC46757
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG948583590250D2A1
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-11-24T17:02:17.042Z"^^xsd:dateTime ;
         adm:logMessage      "reviewed"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGB0088BD44F832318
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-07-08T16:31:08.015Z"^^xsd:dateTime ;
         adm:logMessage      "added external link"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:LGF777BD44BEBF3AE2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-06T13:13:35.135Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T580  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T580 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fc/T580.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T580 ;
-        adm:logEntry        bda:LG3CF546B7AF868AD1 , bda:LG948583590250D2A1 , bda:LGB0088BD44F832318 , bda:LGF777BD44BEBF3AE2 ;
+        adm:logEntry        bda:LG3CF546B7AF868AD1 , bda:LG501D4240AAC46757 , bda:LG948583590250D2A1 , bda:LGB0088BD44F832318 , bda:LGF777BD44BEBF3AE2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

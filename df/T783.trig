@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T783 {
     bda:LG094525BB79535AE6
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-16T10:54:40.732Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of G247"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG7795B9C8CDA248AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBE96E3E09B81DF82
-        a                   adm:LogEntry ;
+        a                   adm:WithdrawData ;
         adm:logDate         "2012-03-26T12:51:14.883Z"^^xsd:dateTime ;
         adm:logMessage      "withdrawn in favor of G247"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T783  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T783 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "df/T783.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T783 ;
-        adm:logEntry        bda:LG094525BB79535AE6 , bda:LGBE96E3E09B81DF82 ;
+        adm:logEntry        bda:LG094525BB79535AE6 , bda:LG7795B9C8CDA248AA , bda:LGBE96E3E09B81DF82 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:G247 ;
         adm:status          bda:StatusWithdrawn .

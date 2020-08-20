@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,37 +13,41 @@
 
 bdg:T2002 {
     bda:LG6D6AF6DA171C3377
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-02T16:10:00.05Z"^^xsd:dateTime ;
         adm:logMessage      "status changed from released to withdrawn"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81663CACD1179BB5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB9896F6F77BCC967
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-02T13:08:04.516Z"^^xsd:dateTime ;
         adm:logMessage      "reused and added names & description"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LGC1DB782A5F1AA3AD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2019-05-20T09:36:29.126Z"^^xsd:dateTime ;
         adm:logMessage      "fixed typo"@en ;
-        adm:logWho          bdr:U00016 .
+        adm:logWho          bdu:U00016 .
     
     bda:LGE5D91CD09B550043
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-02T15:32:58.442Z"^^xsd:dateTime ;
         adm:logMessage      "added associated works"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T2002  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2002 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "47/T2002.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2002 ;
-        adm:logEntry        bda:LG6D6AF6DA171C3377 , bda:LGB9896F6F77BCC967 , bda:LGC1DB782A5F1AA3AD , bda:LGE5D91CD09B550043 ;
+        adm:logEntry        bda:LG6D6AF6DA171C3377 , bda:LG81663CACD1179BB5 , bda:LGB9896F6F77BCC967 , bda:LGC1DB782A5F1AA3AD , bda:LGE5D91CD09B550043 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

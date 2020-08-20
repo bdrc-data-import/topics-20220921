@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2266 {
     bda:LG0DA546D011A120A4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-01T11:28:21.565Z"^^xsd:dateTime ;
         adm:logMessage      "withdrew, no works associated"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB38B5CD53F513C93
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2266  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2266 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "cc/T2266.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2266 ;
-        adm:logEntry        bda:LG0DA546D011A120A4 ;
+        adm:logEntry        bda:LG0DA546D011A120A4 , bda:LGB38B5CD53F513C93 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T285 {
     bda:LG8F022E61503B55F3
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-05T00:26:55.402Z"^^xsd:dateTime ;
         adm:logMessage      "removed withdrawn topics from taxonomy"@en ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGC92B9E2FB56DE7D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCF01DEF87CBEA988
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-03-26T16:11:02.891Z"^^xsd:dateTime ;
         adm:logMessage      "withdrown"@en ;
-        adm:logWho          bdr:U00013 .
+        adm:logWho          bdu:U00013 .
     
     bda:T285  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T285 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ec/T285.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T285 ;
-        adm:logEntry        bda:LG8F022E61503B55F3 , bda:LGCF01DEF87CBEA988 ;
+        adm:logEntry        bda:LG8F022E61503B55F3 , bda:LGC92B9E2FB56DE7D5 , bda:LGCF01DEF87CBEA988 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusWithdrawn .
     

@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,54 +13,58 @@
 
 bdg:T386 {
     bda:LG18EB076A9CEF2B8F
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T19:17:11.669Z"^^xsd:dateTime ;
         adm:logMessage      "seeAlso rid changed from T10MS11142 to T1AT489"@en ;
-        adm:logWho          bdr:U00017 .
+        adm:logWho          bdu:U00017 .
     
     bda:LG53BB896FDB2FFDC4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-02-15T14:51:36.112Z"^^xsd:dateTime ;
         adm:logMessage      "added see also T10MS11142"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG6BE6D8AE376F5CAD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-05-08T22:54:17.346Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00012 .
+        adm:logWho          bdu:U00012 .
     
     bda:LG7F776A5C55C7AD4E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2013-02-21T14:10:49.556Z"^^xsd:dateTime ;
         adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdr:U00048 .
+        adm:logWho          bdu:U00048 .
     
     bda:LGA08197111F59BD0E
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-16T09:33:36.925Z"^^xsd:dateTime ;
         adm:logMessage      "changed language encoding"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LGC3D22C8FE33AFAEC
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-24T11:40:04.658Z"^^xsd:dateTime ;
         adm:logMessage      "edited & added seeAlso \"dkon mchog gsum\""@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCF7613C77B547DEB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF9CEA20DE3491D76
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-12-14T16:07:27.111Z"^^xsd:dateTime ;
         adm:logMessage      "reversed word order to make tibetan first"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:T386  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T386 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "66/T386.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T386 ;
-        adm:logEntry        bda:LG18EB076A9CEF2B8F , bda:LG53BB896FDB2FFDC4 , bda:LG6BE6D8AE376F5CAD , bda:LG7F776A5C55C7AD4E , bda:LGA08197111F59BD0E , bda:LGC3D22C8FE33AFAEC , bda:LGF9CEA20DE3491D76 ;
+        adm:logEntry        bda:LG18EB076A9CEF2B8F , bda:LG53BB896FDB2FFDC4 , bda:LG6BE6D8AE376F5CAD , bda:LG7F776A5C55C7AD4E , bda:LGA08197111F59BD0E , bda:LGC3D22C8FE33AFAEC , bda:LGCF7613C77B547DEB , bda:LGF9CEA20DE3491D76 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

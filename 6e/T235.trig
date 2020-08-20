@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,31 +13,35 @@
 
 bdg:T235 {
     bda:LG02D1B388EDA27C03
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T12:08:00.711Z"^^xsd:dateTime ;
         adm:logMessage      "added see also"@en ;
-        adm:logWho          bdr:U00020 .
+        adm:logWho          bdu:U00020 .
     
     bda:LG08F02CAA0659F6EE
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-25T15:48:29.514Z"^^xsd:dateTime ;
         adm:logMessage      "added names \"sgrub brgyud shing rta che brgyad\" & the chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD5198628E253191C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGED9F914C23AA168C
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2010-06-08T15:22:02.093Z"^^xsd:dateTime ;
         adm:logMessage      "application note added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
     
     bda:T235  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T235 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6e/T235.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T235 ;
-        adm:logEntry        bda:LG02D1B388EDA27C03 , bda:LG08F02CAA0659F6EE , bda:LGED9F914C23AA168C ;
+        adm:logEntry        bda:LG02D1B388EDA27C03 , bda:LG08F02CAA0659F6EE , bda:LGD5198628E253191C , bda:LGED9F914C23AA168C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

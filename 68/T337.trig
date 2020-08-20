@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,40 +12,44 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T337 {
+    bda:LG0595A12EAFD7AD26
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3F8C1DD4706CA1AD
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T13:07:33.533Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1092"@en .
     
     bda:LG5F52EDF64408C4C6
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-28T12:00:33.244Z"^^xsd:dateTime ;
         adm:logMessage      "cleanup SeeAlso T467, added SeeAlso \"sdig bshags\" & the chinese name"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:LG85A0E0F4A58EC164
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T13:12:31.396Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T1892"@en .
     
     bda:LGB00F5189679BA636
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-16T14:48:08.041Z"^^xsd:dateTime ;
         adm:logMessage      "Added SeeAlso T467"@en .
     
     bda:LGBF2A06B4E95F7DF2
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2006-12-21T13:33:35.45Z"^^xsd:dateTime ;
-        adm:logWho          bdr:U00002 .
+        adm:logWho          bdu:U00002 .
     
     bda:T337  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T337 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "68/T337.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T337 ;
-        adm:logEntry        bda:LG3F8C1DD4706CA1AD , bda:LG5F52EDF64408C4C6 , bda:LG85A0E0F4A58EC164 , bda:LGB00F5189679BA636 , bda:LGBF2A06B4E95F7DF2 ;
+        adm:logEntry        bda:LG0595A12EAFD7AD26 , bda:LG3F8C1DD4706CA1AD , bda:LG5F52EDF64408C4C6 , bda:LG85A0E0F4A58EC164 , bda:LGB00F5189679BA636 , bda:LGBF2A06B4E95F7DF2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

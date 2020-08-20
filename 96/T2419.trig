@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2419 {
     bda:LGC47CF204DC2C8581
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-08-25T15:00:24.356Z"^^xsd:dateTime ;
         adm:logMessage      "T2419 and T1PD96321 merged"@en ;
-        adm:logWho          bdr:U00019 .
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE488410A7CE07C57
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2419  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2419 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "96/T2419.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2419 ;
-        adm:logEntry        bda:LGC47CF204DC2C8581 ;
+        adm:logEntry        bda:LGC47CF204DC2C8581 , bda:LGE488410A7CE07C57 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

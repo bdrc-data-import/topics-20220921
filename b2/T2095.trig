@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,19 +13,23 @@
 
 bdg:T2095 {
     bda:LG2F33287DC3AAD3FB
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2009-01-15T22:52:25.906Z"^^xsd:dateTime ;
         adm:logMessage      "annotation added"@en ;
-        adm:logWho          bdr:U00001 .
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB98958068E946F9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T2095  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2095 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b2/T2095.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2095 ;
-        adm:logEntry        bda:LG2F33287DC3AAD3FB ;
+        adm:logEntry        bda:LG2F33287DC3AAD3FB , bda:LGAB98958068E946F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

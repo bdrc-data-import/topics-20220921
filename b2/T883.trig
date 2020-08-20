@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,18 +13,22 @@
 
 bdg:T883 {
     bda:LG0017CC862A6D703B
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T15:42:32.064Z"^^xsd:dateTime ;
         adm:logMessage      "Added See Also T1840 (bdud bzlog)"@en .
+    
+    bda:LG10CE2FC9949FB3CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:T883  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T883 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b2/T883.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T883 ;
-        adm:logEntry        bda:LG0017CC862A6D703B ;
+        adm:logEntry        bda:LG0017CC862A6D703B , bda:LG10CE2FC9949FB3CC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

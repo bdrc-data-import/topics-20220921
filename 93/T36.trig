@@ -3,6 +3,7 @@
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,25 +13,29 @@
 
 bdg:T36 {
     bda:LG3086A0569CD83A39
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-12-07T11:41:57.484Z"^^xsd:dateTime ;
         adm:logMessage      "added seeAlso"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG737BF7A57C70B0E7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG78020A7B09F2BFE4
-        a                   adm:LogEntry ;
+        a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T17:07:10.881Z"^^xsd:dateTime ;
         adm:logMessage      "added chinese"@en ;
-        adm:logWho          bdr:U00007 .
+        adm:logWho          bdu:U00007 .
     
     bda:T36  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T36 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "93/T36.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T36 ;
-        adm:logEntry        bda:LG3086A0569CD83A39 , bda:LG78020A7B09F2BFE4 ;
+        adm:logEntry        bda:LG3086A0569CD83A39 , bda:LG737BF7A57C70B0E7 , bda:LG78020A7B09F2BFE4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
