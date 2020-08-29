@@ -26,8 +26,8 @@ bdg:T1GS44553 {
     
     bda:LG6D7C8E8D1C6A3B63
         a                   adm:UpdateData ;
-        adm:logDate         "2020-05-18T21:00:08.213Z"^^xsd:dateTime ;
-        adm:logMessage      "edited"@en ;
+        adm:logDate         "2020-08-28T12:59:56.127Z"^^xsd:dateTime ;
+        adm:logMessage      "have quastion with T1218"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T1GS44553  a        adm:AdminData ;

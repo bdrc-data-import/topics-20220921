@@ -11,29 +11,31 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:T1218 {
-    bda:LGD64E69E31B17B550
+bdg:T2CN4390 {
+    bda:LG0E62FBDD752D33D9
         a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGF738398DAEF02900
-        a                   adm:UpdateData ;
-        adm:logDate         "2020-08-28T13:02:44.745Z"^^xsd:dateTime ;
-        adm:logMessage      "need to compare with T1GS44553"@en ;
+        adm:logDate         "2011-03-11T17:03:37.189Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:T1218  a            adm:AdminData ;
+    bda:LG1C06480A2C55EBA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-28T11:47:08.028Z"^^xsd:dateTime ;
+        adm:logMessage      "released from editing status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:T2CN4390  a         adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:T1218 ;
+        adm:adminAbout      bdr:T2CN4390 ;
         adm:facetIndex      3 ;
-        adm:gitPath         "5d/T1218.trig" ;
+        adm:gitPath         "10/T2CN4390.trig" ;
         adm:gitRepo         bda:GR0007 ;
-        adm:graphId         bdg:T1218 ;
-        adm:logEntry        bda:LGD64E69E31B17B550 , bda:LGF738398DAEF02900 ;
+        adm:graphId         bdg:T2CN4390 ;
+        adm:logEntry        bda:LG0E62FBDD752D33D9 , bda:LG1C06480A2C55EBA7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:T1218  a            :Topic ;
-        skos:prefLabel      "sku gdung dkar chag"@bo-x-ewts , "funeral reliquary choten"@en ;
+    bdr:T2CN4390  a         :Topic ;
+        skos:prefLabel      "pad+ma mkha' 'gro/"@bo-x-ewts ;
         :isRoot             true .
 }

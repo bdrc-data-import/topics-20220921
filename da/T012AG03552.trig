@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T012AG03552 {
+    bda:LG893848BF95073C0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-28T11:47:07.634Z"^^xsd:dateTime ;
+        adm:logMessage      "released from editing status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB08482632F0FF9BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-02T12:11:36.162Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC5E584A68B9C5581
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-02T11:54:13.424Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:T012AG03552  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T012AG03552 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "da/T012AG03552.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T012AG03552 ;
+        adm:logEntry        bda:LG893848BF95073C0E , bda:LGB08482632F0FF9BD , bda:LGC5E584A68B9C5581 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT0BEC635342078B10
+        a                   :Note ;
+        :noteText           "soothill gives the following list:\nvipasyin \nsikhin\nvisvabhu \nkrakucchanda \nkanakamuni \nkssyapa \nskyamuni"@en .
+    
+    bdr:T012AG03552  a      :Topic ;
+        skos:altLabel       "bde gshegs bdun/"@bo-x-ewts , "seven tathagata"@en ;
+        skos:prefLabel      "de bzhin gshegs pa bdun/"@bo-x-ewts , "the seven historical buddhas"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0BEC635342078B10 .
+}

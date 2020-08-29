@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01368 {
+    bda:LG7740E07E97A3CB88
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-28T11:47:06.324Z"^^xsd:dateTime ;
+        adm:logMessage      "released from editing status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDE53E9672464C1CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-01-11T15:52:13.359Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:T00AG01368  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01368 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ea/T00AG01368.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01368 ;
+        adm:logEntry        bda:LG7740E07E97A3CB88 , bda:LGDE53E9672464C1CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT7EDF209D5D90EB4B
+        a                   :Note ;
+        :noteText           "a treasure purportedly revealed by vairocana and jointly revealed by rdo rje gling pa, kun skyong gling pa, and stag sham nus ldan rdo rje bsam gtan gling pa, that was merged into one cycle. the texts are found in volume 58 of the rin chen gter mdzod and v. 15 of mkhyen brtse'i dbang po's bka' 'bum"@en .
+    
+    bdr:T00AG01368  a       :Topic ;
+        skos:prefLabel      "rdor sems snying thig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7EDF209D5D90EB4B .
+}

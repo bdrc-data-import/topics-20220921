@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T00AG01366 {
+    bda:LG3ED1D1FC51F53CD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-10T12:17:53.107Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG6700F7021B188EBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-04T10:21:22.967Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG9A706F33092BB7B7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-01-10T10:34:09.501Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGBAC3D41F15E19CC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-28T11:47:05.975Z"^^xsd:dateTime ;
+        adm:logMessage      "released from editing status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:T00AG01366  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T00AG01366 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b8/T00AG01366.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T00AG01366 ;
+        adm:logEntry        bda:LG3ED1D1FC51F53CD3 , bda:LG6700F7021B188EBD , bda:LG9A706F33092BB7B7 , bda:LGBAC3D41F15E19CC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4DA0F8E4596B8618
+        a                   :Note ;
+        :noteText           "a mind treasure (dgongs gter) on white tara revealed by mkhyen brtse'i dbang po when he was thirty-five. texts are found in v. 29 of the rin chen gter mdzod and v. 15 of the bka' 'bum."@en .
+    
+    bdr:T00AG01366  a       :Topic ;
+        skos:prefLabel      "'chi med 'phags ma'i snying thig (mkhyen brtse'i dbang po/)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4DA0F8E4596B8618 .
+}
