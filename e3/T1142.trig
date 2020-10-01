@@ -13,21 +13,28 @@
 
 bdg:T1142 {
     bda:LGDB17DB3DFC43EA96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-30T17:20:20.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"bde thang \""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDE756C4DFA07FAC1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1142  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1142 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e3/T1142.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1142 ;
-        adm:logEntry        bda:LGDB17DB3DFC43EA96 ;
+        adm:logEntry        bda:LGDB17DB3DFC43EA96 , bda:LGDE756C4DFA07FAC1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1142  a            :Topic ;
+        skos:altLabel       "bde thang /"@bo-x-ewts ;
         skos:prefLabel      "'phrod bsten/"@bo-x-ewts , "health and hygiene"@en ;
         :isRoot             true .
 }
