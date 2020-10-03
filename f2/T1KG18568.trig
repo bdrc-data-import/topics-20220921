@@ -18,18 +18,25 @@ bdg:T1KG18568 {
         adm:logMessage      "created topic"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG176FA81AC494B2C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-02T13:33:49.946Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:T1KG18568  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1KG18568 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f2/T1KG18568.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1KG18568 ;
-        adm:logEntry        bda:LG16C934D94339124F ;
+        adm:logEntry        bda:LG16C934D94339124F , bda:LG176FA81AC494B2C8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1KG18568  a        :Topic ;
-        skos:prefLabel      "gshags 'gyed/"@bo-x-ewts ;
+        skos:altLabel       "gshags 'gyed/"@bo-x-ewts ;
+        skos:prefLabel      "kha shags/"@bo-x-ewts , "jest"@en ;
         :isRoot             true .
 }
