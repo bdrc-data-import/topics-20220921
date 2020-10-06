@@ -36,8 +36,8 @@ bdg:T1KG6098 {
         adm:status          bda:StatusReleased .
     
     bdr:T1KG6098  a         :Topic ;
-        rdfs:comment        "writings from the medieval era"@en ;
         skos:altLabel       "bod kyi bar dus rtsom rig"@bo-x-ewts ;
         skos:prefLabel      "bar dus rtsom rig"@bo-x-ewts ;
+        :catalogInfo        "writings from the medieval era"@en ;
         :isRoot             true .
 }

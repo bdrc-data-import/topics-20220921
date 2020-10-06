@@ -59,9 +59,9 @@ bdg:T4CZ2184 {
         adm:status          bda:StatusReleased .
     
     bdr:T4CZ2184  a         :Topic ;
-        rdfs:comment        "བདེ་སྟོང་གི་ཉམས་སྣང་བརྗོད་བྱར་སྟོན་པའི་གླུ"@bo ;
         rdfs:seeAlso        bdr:T246 ;
         skos:altLabel       "do ha/"@bo-x-ewts , "vajra song"@en ;
         skos:prefLabel      "rdo rje'i glu/"@bo-x-ewts , "song of the vajra"@en ;
+        :catalogInfo        "བདེ་སྟོང་གི་ཉམས་སྣང་བརྗོད་བྱར་སྟོན་པའི་གླུ"@bo ;
         :isRoot             true .
 }

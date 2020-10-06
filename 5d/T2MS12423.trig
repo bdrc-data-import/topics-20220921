@@ -30,7 +30,7 @@ bdg:T2MS12423 {
         adm:status          bda:StatusReleased .
     
     bdr:T2MS12423  a        :Topic ;
-        rdfs:comment        "type of prayer for dispelling obstacles along the path"@en ;
         skos:prefLabel      "bar chad lam sel/"@bo-x-ewts ;
+        :catalogInfo        "type of prayer for dispelling obstacles along the path"@en ;
         :isRoot             true .
 }

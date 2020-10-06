@@ -65,10 +65,10 @@ bdg:T1AT670 {
         :noteText           "explanation and elucidation of crucial points"@en .
     
     bdr:T1AT670  a          :Topic ;
-        rdfs:comment        "explanation and elucidation of crucial points"@en ;
         rdfs:seeAlso        bdr:T1029 , bdr:T1491 , bdr:T2339 ;
         skos:altLabel       "gnad gsal/"@bo-x-ewts , "gsal byed/"@bo-x-ewts ;
         skos:prefLabel      "gnad 'gag gsal byed/"@bo-x-ewts , "explanation and elucidation of crucial points and concepts"@en ;
+        :catalogInfo        "explanation and elucidation of crucial points"@en ;
         :isRoot             true ;
         :note               bdr:NT09EB92FB24E12F83 , bdr:NTB5F4077CF24E2CFE .
 }

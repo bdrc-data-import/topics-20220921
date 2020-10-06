@@ -30,8 +30,8 @@ bdg:T2MS11339 {
         adm:status          bda:StatusReleased .
     
     bdr:T2MS11339  a        :Topic ;
-        rdfs:comment        "transgression of a monastic vow from the ethical code based on the vinaya literature"@en ;
         skos:altLabel       "vinaya transgression/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba'i ltung ba/"@bo-x-ewts ;
+        :catalogInfo        "transgression of a monastic vow from the ethical code based on the vinaya literature"@en ;
         :isRoot             true .
 }

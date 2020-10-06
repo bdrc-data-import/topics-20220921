@@ -52,8 +52,8 @@ bdg:TAT102 {
         :noteText           "name or inscription burning ritual [for the dead]"@en .
     
     bdr:TAT102  a           :Topic ;
-        rdfs:comment        "name or inscription burning ritual [for the dead]"@en ;
         skos:prefLabel      "byang bsregs/"@bo-x-ewts ;
+        :catalogInfo        "name or inscription burning ritual [for the dead]"@en ;
         :isRoot             true ;
         :note               bdr:NTFD7E8A7D6977B217 .
 }
