@@ -1,0 +1,38 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ363957 {
+    bda:LG1BC4658A48433261
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-19T15:16:52.02Z"^^xsd:dateTime ;
+        adm:logMessage      "new t"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:T4CZ363957  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ363957 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "05/T4CZ363957.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ363957 ;
+        adm:logEntry        bda:LG1BC4658A48433261 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T4CZ363957  a       :Topic ;
+        rdfs:comment        "arrangement of the recitative for the ritual temporary displacement of different entities from their old dwelling supports, for restoration purposes" ;
+        skos:altLabel       "arga'i cho ga"@bo-x-ewts ;
+        skos:prefLabel      "arga"@bo-x-ewts ;
+        :catalogInfo        "rten gsum gsar bhengs sa rnying pa gsor chog"@bo-x-ewts ;
+        :isRoot             true .
+}
