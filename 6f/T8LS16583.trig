@@ -46,7 +46,6 @@ bdg:T8LS16583 {
     bdr:T8LS16583  a        :Topic ;
         skos:altLabel       "phyir bcos pa/"@bo-x-ewts , "pratikAr"@sa-x-ndia ;
         skos:prefLabel      "phyir bcos/"@bo-x-ewts , "pratividhAn"@sa-x-ndia ;
-        :catalogInfo        "sdom pa slar yang gso ba/ dper na dge tshul dang dge slong gi phyir bcos lta bu/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTA9958428A64CCCDA , bdr:NTFE065229434C08A0 .
 }

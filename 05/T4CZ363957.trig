@@ -33,6 +33,5 @@ bdg:T4CZ363957 {
         rdfs:comment        "arrangement of the recitative for the ritual temporary displacement of different entities from their old dwelling supports, for restoration purposes" ;
         skos:altLabel       "arga'i cho ga"@bo-x-ewts ;
         skos:prefLabel      "arga"@bo-x-ewts ;
-        :catalogInfo        "rten gsum gsar bhengs sa rnying pa gsor chog"@bo-x-ewts ;
         :isRoot             true .
 }
