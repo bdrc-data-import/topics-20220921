@@ -21,7 +21,7 @@ bdg:T2MS14922 {
     bda:LGD00B567BE714FBDA
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-14T17:24:40.63Z"^^xsd:dateTime ;
-        adm:logMessage      "\"man ju\" adited to \"man ju rigs\""@en ;
+        adm:logMessage      "man ju\" adited to \"man ju rigs"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T2MS14922  a        adm:AdminData ;
