@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T00KG02676 {
+    bda:LGA12A05619FB93EF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-05T00:51:15.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD8BCC82C4597D02A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-12T14:40:23.285Z"^^xsd:dateTime ;
@@ -21,15 +27,16 @@ bdg:T00KG02676 {
     bda:T00KG02676  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T00KG02676 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "24/T00KG02676.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T00KG02676 ;
-        adm:logEntry        bda:LGD8BCC82C4597D02A ;
+        adm:logEntry        bda:LGA12A05619FB93EF9 , bda:LGD8BCC82C4597D02A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T00KG02676  a       :Topic ;
+        skos:altLabel       "rims nad srung ba/"@bo-x-ewts , "rims srung /"@bo-x-ewts ;
         skos:prefLabel      "rims bsrung /"@bo-x-ewts ;
         :isRoot             true .
 }
