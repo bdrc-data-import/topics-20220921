@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1KG21749 {
+    bda:LG5025AEEFAC8B5D60
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-22T18:28:16.337Z"^^xsd:dateTime ;
+        adm:logMessage      "language encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCDA573D6E6213B82
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-04-16T12:29:38.832Z"^^xsd:dateTime ;
@@ -21,11 +27,11 @@ bdg:T1KG21749 {
     bda:T1KG21749  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1KG21749 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "8a/T1KG21749.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1KG21749 ;
-        adm:logEntry        bda:LGCDA573D6E6213B82 ;
+        adm:logEntry        bda:LG5025AEEFAC8B5D60 , bda:LGCDA573D6E6213B82 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
