@@ -13,21 +13,27 @@
 
 bdg:T1359 {
     bda:LG3D0F5D80AA96F1A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-24T11:25:31.992Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBE9E1DD2688DFF64
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1359  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1359 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "63/T1359.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1359 ;
-        adm:logEntry        bda:LG3D0F5D80AA96F1A4 ;
+        adm:logEntry        bda:LG3D0F5D80AA96F1A4 , bda:LGBE9E1DD2688DFF64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1359  a            :Topic ;
+        skos:altLabel       "sems dang sems byung /"@bo-x-ewts ;
         skos:prefLabel      "sems sems byung /"@bo-x-ewts , "citta-caitta"@sa-alalc97 ;
         :isRoot             true .
 }
