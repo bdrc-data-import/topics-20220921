@@ -13,21 +13,28 @@
 
 bdg:T944 {
     bda:LG5C92835F656D6995
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T21:26:13.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"rgyal mtshan 'dzugs chog\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB28CD278B762D3F3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T944  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T944 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b2/T944.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T944 ;
-        adm:logEntry        bda:LG5C92835F656D6995 ;
+        adm:logEntry        bda:LG5C92835F656D6995 , bda:LGB28CD278B762D3F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T944  a             :Topic ;
-        skos:prefLabel      "rgyal mtshan 'dzugs pa'i cho ga"@bo-x-ewts ;
+        skos:altLabel       "rgyal mtshan 'dzugs pa'i cho ga"@bo-x-ewts ;
+        skos:prefLabel      "rgyal mtshan 'dzugs chog"@bo-x-ewts ;
         :isRoot             true .
 }
