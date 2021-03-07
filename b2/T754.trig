@@ -37,6 +37,7 @@ bdg:T754 {
         adm:graphId         bdg:T754 ;
         adm:logEntry        bda:LG8347D27A2D3F1CD4 , bda:LGC7E5E287795BA9A6 , bda:LGDC344ABF0FDB5ADA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2GS1194 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT3AE5EDA2BBF8D9B0

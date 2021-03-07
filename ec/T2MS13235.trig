@@ -45,6 +45,7 @@ bdg:T2MS13235 {
         adm:graphId         bdg:T2MS13235 ;
         adm:logEntry        bda:LG11F084EC59148482 , bda:LG47ECE31B7E09549E , bda:LGA3EEC856F9FEAD9F , bda:LGDD992D8E70FDFDEA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1542 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT835457084BE109F4

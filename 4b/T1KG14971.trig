@@ -33,6 +33,7 @@ bdg:T1KG14971 {
         adm:graphId         bdg:T1KG14971 ;
         adm:logEntry        bda:LG30070395EDEE2844 , bda:LG67F8A899B1220710 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1946 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1KG14971  a        :Topic ;

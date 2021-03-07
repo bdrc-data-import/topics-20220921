@@ -36,6 +36,7 @@ bdg:T2611 {
         adm:graphId         bdg:T2611 ;
         adm:logEntry        bda:LG610168EAFA93DC80 , bda:LG9DBD2EEEC658DE10 , bda:LGE6D5E26F4BB854FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2585 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T2611  a            :Topic ;

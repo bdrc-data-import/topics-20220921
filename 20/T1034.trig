@@ -43,6 +43,7 @@ bdg:T1034 {
         adm:graphId         bdg:T1034 ;
         adm:logEntry        bda:LG0F434BE02062BF47 , bda:LG11E5372BCE368B74 , bda:LGF1FA3EA69D11C59E , bda:LGFDA8F5EF167D71EC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2230 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1034  a            :Topic ;

@@ -33,6 +33,7 @@ bdg:T10MS14626 {
         adm:graphId         bdg:T10MS14626 ;
         adm:logEntry        bda:LG80CCD7CB7DC07149 , bda:LGAECA6186D5F9BC64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1972 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTFEC86C135561BA28

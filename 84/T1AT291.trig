@@ -54,6 +54,7 @@ bdg:T1AT291 {
         adm:graphId         bdg:T1AT291 ;
         adm:logEntry        bda:LG04256ED38E5C9EC5 , bda:LG2CAFB8BA5F3F157B , bda:LG48AC8AD102CFD97A , bda:LG86DEE187EF8B8ABB , bda:LGA85034723E398DEE , bda:LGAC98AAA069776FB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1116 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT4ED444A04C8BE8B1

@@ -45,6 +45,7 @@ bdg:T01AG03282 {
         adm:graphId         bdg:T01AG03282 ;
         adm:logEntry        bda:LG127BB0162DE07EB5 , bda:LG8F4582C1101F808F , bda:LG9C651792C3C9A964 , bda:LGA2023700E877A83D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T8LS16966 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTAF0F3A289EB16376

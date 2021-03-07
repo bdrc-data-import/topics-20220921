@@ -33,6 +33,7 @@ bdg:T1KG89006 {
         adm:graphId         bdg:T1KG89006 ;
         adm:logEntry        bda:LG0B498E4B2D3A9256 , bda:LG81D0DBB6F0D5951E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1147 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT076CC42BC847B073

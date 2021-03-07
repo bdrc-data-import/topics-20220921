@@ -45,6 +45,7 @@ bdg:T10MS14462 {
         adm:graphId         bdg:T10MS14462 ;
         adm:logEntry        bda:LG72FF5F47396643E0 , bda:LG753F98C0FAE02850 , bda:LG9F1D51EACF8FA543 , bda:LGEF14094E039A292B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T394 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T10MS14462  a       :Topic ;

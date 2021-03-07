@@ -39,6 +39,7 @@ bdg:T1GS130096 {
         adm:graphId         bdg:T1GS130096 ;
         adm:logEntry        bda:LG3299BA7714F15A8B , bda:LG680FBB4A771959FB , bda:LG685D7A2DAD8DE901 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2126 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1GS130096  a       :Topic ;

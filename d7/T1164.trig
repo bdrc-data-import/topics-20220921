@@ -37,6 +37,7 @@ bdg:T1164 {
         adm:graphId         bdg:T1164 ;
         adm:logEntry        bda:LG01EBEDA21B80378F , bda:LG390BE6A9FBA4204D , bda:LGE7FD709F7C88B6E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1142 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1164  a            :Topic ;

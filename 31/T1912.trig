@@ -31,6 +31,7 @@ bdg:T1912 {
         adm:graphId         bdg:T1912 ;
         adm:logEntry        bda:LG4A61CAA057E49EFD , bda:LGD23DB54E83CA2CCB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1838 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1912  a            :Topic ;

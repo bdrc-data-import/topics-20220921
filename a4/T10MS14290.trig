@@ -45,6 +45,7 @@ bdg:T10MS14290 {
         adm:graphId         bdg:T10MS14290 ;
         adm:logEntry        bda:LG0B02DCB64B0DD041 , bda:LG2139C7C7D58B0B51 , bda:LG42C9A619CACF6C18 , bda:LG448CEB19B54AA516 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T00JR140 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTF633A831332DC19B
