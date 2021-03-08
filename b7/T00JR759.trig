@@ -33,6 +33,7 @@ bdg:T00JR759 {
         adm:graphId         bdg:T00JR759 ;
         adm:logEntry        bda:LG6AF4931B5B21740C , bda:LGFE4081B0BD97630A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T1408 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTB70D5F12F3EC51BE

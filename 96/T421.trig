@@ -31,6 +31,7 @@ bdg:T421 {
         adm:graphId         bdg:T421 ;
         adm:logEntry        bda:LG66DC8C8CC2B54717 , bda:LG9AC9285C8186DC97 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G584 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT4F5C970AB950162D

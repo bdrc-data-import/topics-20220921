@@ -31,6 +31,7 @@ bdg:T344 {
         adm:graphId         bdg:T344 ;
         adm:logEntry        bda:LGAC6A649D8785F2FB , bda:LGF3D8B662F0625A40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C1AG86 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT956007D6D1AC251E

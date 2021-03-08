@@ -37,6 +37,7 @@ bdg:T625 {
         adm:graphId         bdg:T625 ;
         adm:logEntry        bda:LG6C2303ADABFAF4C0 , bda:LGA8C45C40A57A4261 , bda:LGF4DD3573137083A6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:W1GS152270 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT1DB6EE53EBA41982

@@ -33,6 +33,7 @@ bdg:T012AG03336 {
         adm:graphId         bdg:T012AG03336 ;
         adm:logEntry        bda:LG130AC7AAA42E1166 , bda:LGAF769AD6413AC132 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T012AG03337 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT7E698F04F5D0EE8F

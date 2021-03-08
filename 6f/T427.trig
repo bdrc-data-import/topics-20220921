@@ -61,6 +61,7 @@ bdg:T427 {
         adm:graphId         bdg:T427 ;
         adm:logEntry        bda:LG198C4B804B4FD800 , bda:LG34BEA367C265B695 , bda:LG578AB11322D67F9D , bda:LG8D5FFFB076543841 , bda:LGA23C91537015A1EE , bda:LGB22090D99913FC75 , bda:LGB2AA8246BABD113D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2398 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTAC89D522D907CFE8

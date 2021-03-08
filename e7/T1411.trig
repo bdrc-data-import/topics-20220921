@@ -31,6 +31,7 @@ bdg:T1411 {
         adm:graphId         bdg:T1411 ;
         adm:logEntry        bda:LG5C3A256E1D20C27F , bda:LGB6DEA3E473F4D101 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2MS13818 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT8FA8EF4DFAF12317

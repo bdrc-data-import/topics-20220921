@@ -38,6 +38,7 @@ bdg:T00KG02847 {
         adm:graphId         bdg:T00KG02847 ;
         adm:logEntry        bda:LG0295B72DD6EA8B63 , bda:LGB7D23443B3249621 , bda:LGFA66F4DA4AD0BC05 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2077 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT04D13B39B24BFA79

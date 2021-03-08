@@ -32,6 +32,7 @@ bdg:T2MS12359 {
         adm:graphId         bdg:T2MS12359 ;
         adm:logEntry        bda:LG20F4CED6C8C41E94 , bda:LG5AD08041BF1C9265 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T2186 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT422F8C54DE5931C4

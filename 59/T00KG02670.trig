@@ -45,6 +45,7 @@ bdg:T00KG02670 {
         adm:graphId         bdg:T00KG02670 ;
         adm:logEntry        bda:LG20FDFE412E37E794 , bda:LG6853107AB5B77424 , bda:LGE1875B0DDDBF7315 , bda:LGF9B3E4C3A4277D5B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T58 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTB7B7251C55CBD7F0

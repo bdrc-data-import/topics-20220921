@@ -37,6 +37,7 @@ bdg:T1399 {
         adm:graphId         bdg:T1399 ;
         adm:logEntry        bda:LG1B0CA22AC2B59965 , bda:LG3C2E968C1A25538D , bda:LG6E3FD39FDCF10E80 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:T338 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT778B28DC2E805311

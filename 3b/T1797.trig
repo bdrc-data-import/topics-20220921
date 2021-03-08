@@ -31,6 +31,7 @@ bdg:T1797 {
         adm:graphId         bdg:T1797 ;
         adm:logEntry        bda:LGDC31C5C787BDEACC , bda:LGFCFC54004F9AEB1D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C11MS134 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT7AD43CC784F1327D

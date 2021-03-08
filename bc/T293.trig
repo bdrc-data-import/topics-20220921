@@ -31,7 +31,7 @@ bdg:T293 {
         adm:graphId         bdg:T293 ;
         adm:logEntry        bda:LG4E40DC54F9004A63 , bda:LG5C8FA46DE243411F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:G2GS1127 ;
+        adm:replaceWith     bdr:G2800 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT4E61D443D9EC9405

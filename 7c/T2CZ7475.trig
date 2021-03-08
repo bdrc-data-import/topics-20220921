@@ -32,6 +32,7 @@ bdg:T2CZ7475 {
         adm:graphId         bdg:T2CZ7475 ;
         adm:logEntry        bda:LG2E21C91EAA478248 , bda:LG65632343FCB20D66 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:W10MS11428 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTA6B8DD56179DB694

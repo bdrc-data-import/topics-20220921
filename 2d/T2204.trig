@@ -31,6 +31,7 @@ bdg:T2204 {
         adm:graphId         bdg:T2204 ;
         adm:logEntry        bda:LG48DA57DF95AA7617 , bda:LG8FBE26E4B891A078 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2MS13778 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT39201C7037D67A3A
