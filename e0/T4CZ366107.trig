@@ -14,7 +14,8 @@
 bdg:T4CZ366107 {
     bda:LGED95A1933C747F31
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-03-02T11:31:06.071Z"^^xsd:dateTime ;
+        adm:logDate         "2021-03-08T16:03:37.009Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ366107  a       adm:AdminData ;
