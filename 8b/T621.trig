@@ -31,7 +31,7 @@ bdg:T621 {
         adm:graphId         bdg:T621 ;
         adm:logEntry        bda:LG6E8B7AE7DCB78DC9 , bda:LG7AB37C6CE78B0A38 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W10MS11135 ;
+        adm:replaceWith     bdr:WA10MS11135 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T621  a             :Topic ;

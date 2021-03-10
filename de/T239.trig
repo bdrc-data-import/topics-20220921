@@ -31,7 +31,7 @@ bdg:T239 {
         adm:graphId         bdg:T239 ;
         adm:logEntry        bda:LG36EBAA41A94A11F6 , bda:LGF2A12A71010C9AB8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W21667 ;
+        adm:replaceWith     bdr:WA21667 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTDC6C44C5982237CE

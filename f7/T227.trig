@@ -31,7 +31,7 @@ bdg:T227 {
         adm:graphId         bdg:T227 ;
         adm:logEntry        bda:LG3D388B58BD2C4C18 , bda:LGE28865891729932F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:G2GS1090 ;
+        adm:replaceWith     bdr:G1521 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NTA6672E1992C774D7

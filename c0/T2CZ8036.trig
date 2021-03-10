@@ -51,7 +51,7 @@ bdg:T2CZ8036 {
         adm:graphId         bdg:T2CZ8036 ;
         adm:logEntry        bda:LG522D2417A3A6221B , bda:LG6EDF112AF6B6EBC9 , bda:LG85DEAAB5935BC6C9 , bda:LGA68EF9EB9DE78A5F , bda:LGEC04580BF2058424 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W4CZ10510 ;
+        adm:replaceWith     bdr:WA4CZ10510 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT2715C81BE13C0F1E

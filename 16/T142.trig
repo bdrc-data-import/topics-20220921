@@ -37,7 +37,7 @@ bdg:T142 {
         adm:graphId         bdg:T142 ;
         adm:logEntry        bda:LG291F39D571F2ED76 , bda:LG34A6FE6469E08D7B , bda:LG5F85A08EA09227BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W22003 ;
+        adm:replaceWith     bdr:WA22003 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T142  a             :Topic ;

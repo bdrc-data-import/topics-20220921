@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1CZ4663 {
+    bda:LG0F3B62CC9A6D728F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T17:09:45.167Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG61EB85041376F18F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-05-23T12:11:42.983Z"^^xsd:dateTime ;
@@ -31,13 +37,13 @@ bdg:T1CZ4663 {
     bda:T1CZ4663  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1CZ4663 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4d/T1CZ4663.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1CZ4663 ;
-        adm:logEntry        bda:LG61EB85041376F18F , bda:LGA5E09F5B9364B5DF , bda:LGF3E58AC80EAE02C8 ;
+        adm:logEntry        bda:LG0F3B62CC9A6D728F , bda:LG61EB85041376F18F , bda:LGA5E09F5B9364B5DF , bda:LGF3E58AC80EAE02C8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:T1CZ4663  a         :Topic ;
         skos:prefLabel      "bar du dge ba/"@bo-x-ewts , "initial benefit"@en ;

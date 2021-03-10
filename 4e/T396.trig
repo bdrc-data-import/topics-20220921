@@ -31,7 +31,7 @@ bdg:T396 {
         adm:graphId         bdg:T396 ;
         adm:logEntry        bda:LG16CB7308AA123477 , bda:LG9F38E294AD58934B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W19740 ;
+        adm:replaceWith     bdr:WA19740 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T396  a             :Topic ;

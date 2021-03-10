@@ -36,7 +36,7 @@ bdg:T2355 {
         adm:graphId         bdg:T2355 ;
         adm:logEntry        bda:LG9C417B39AF93E597 , bda:LGA4C660AFC0A86C27 , bda:LGE718DBE58BBA0423 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:G2MS13755 ;
+        adm:replaceWith     bdr:G1GS1590 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT53A6DCC436A4654F

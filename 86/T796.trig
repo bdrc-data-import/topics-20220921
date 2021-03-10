@@ -43,7 +43,7 @@ bdg:T796 {
         adm:graphId         bdg:T796 ;
         adm:logEntry        bda:LG9937F0ABC457136E , bda:LGA73F8F6D42FFF0E2 , bda:LGB0819D4902DEB52D , bda:LGFBCDBFA6085ED5B5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:G416 ;
+        adm:replaceWith     bdr:G1629 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:NT3F07A5B644A75A44

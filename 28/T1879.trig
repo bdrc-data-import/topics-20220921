@@ -31,7 +31,7 @@ bdg:T1879 {
         adm:graphId         bdg:T1879 ;
         adm:logEntry        bda:LG5B318E2AD81926FD , bda:LG918D55202B690C51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:replaceWith     bdr:W3JT13386 ;
+        adm:replaceWith     bdr:WA3JT13386 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:T1879  a            :Topic ;

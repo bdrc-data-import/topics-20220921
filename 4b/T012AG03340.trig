@@ -24,16 +24,22 @@ bdg:T012AG03340 {
         adm:logMessage      "released from editing status"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGEB8CF253C58F0E04
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T16:49:05.553Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:T012AG03340  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T012AG03340 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4b/T012AG03340.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T012AG03340 ;
-        adm:logEntry        bda:LGE395B12EB4E41DFA , bda:LGE5CA8E0577F01A02 ;
+        adm:logEntry        bda:LGE395B12EB4E41DFA , bda:LGE5CA8E0577F01A02 , bda:LGEB8CF253C58F0E04 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:T012AG03340  a      :Topic ;
         skos:altLabel       "nam snying /"@bo-x-ewts ;
