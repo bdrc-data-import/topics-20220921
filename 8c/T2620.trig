@@ -13,21 +13,28 @@
 
 bdg:T2620 {
     bda:LGBF15246690DA0561
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T10:31:15.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFF5391DADFDAD4F3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T2620  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2620 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "8c/T2620.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2620 ;
-        adm:logEntry        bda:LGBF15246690DA0561 ;
+        adm:logEntry        bda:LGBF15246690DA0561 , bda:LGFF5391DADFDAD4F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T2620  a            :Topic ;
+        skos:altLabel       "gser phreng /"@bo-x-ewts ;
         skos:prefLabel      "gser 'phreng /"@bo-x-ewts , "golden rosary (transmission)"@en ;
         :isRoot             true .
 }
