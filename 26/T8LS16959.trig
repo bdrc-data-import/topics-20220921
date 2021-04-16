@@ -18,14 +18,20 @@ bdg:T8LS16959 {
         adm:logMessage      "created new topic"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9DF9055257E649D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T17:09:28.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"rdzong lugs\" and \"sa skya rdzong lugs\""@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:T8LS16959  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T8LS16959 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "26/T8LS16959.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T8LS16959 ;
-        adm:logEntry        bda:LG9909623772E744F6 ;
+        adm:logEntry        bda:LG9909623772E744F6 , bda:LG9DF9055257E649D2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +41,7 @@ bdg:T8LS16959 {
         :noteText           "one of the school of sakya tradition of Tibetan buddhism. rdzong pa rdo rje gdan pa kun dga' rnam rgyal was the founder of this school"@en .
     
     bdr:T8LS16959  a        :Topic ;
+        skos:altLabel       "rdzong lugs/"@bo-x-ewts , "sa skya rdzong lugs/"@bo-x-ewts ;
         skos:prefLabel      "rdzong pa/"@bo-x-ewts , "zongpa"@en ;
         :isRoot             true ;
         :note               bdr:NT25ADFCB31366D34A .
