@@ -14,7 +14,8 @@
 bdg:T4CZ359084 {
     bda:LGCB56B92C41BE6F34
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-06-25T16:12:58.584Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-03T11:03:31.174Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ359084  a       adm:AdminData ;

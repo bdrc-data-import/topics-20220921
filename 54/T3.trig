@@ -37,8 +37,10 @@ bdg:T3 {
         adm:logWho          bdu:U00020 .
     
     bda:LG561092CF66DED470
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T11:03:30.783Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGB2276E644D8D0AFC
         a                   adm:UpdateData ;
@@ -57,6 +59,10 @@ bdg:T3 {
         adm:logDate         "2012-10-03T12:12:53.454Z"^^xsd:dateTime ;
         adm:logMessage      "edited typo in Notes"@en .
     
+    bda:LGDD13DA7AE79A93ED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF2E20B4B4DC5DBB3
         a                   adm:UpdateData ;
         adm:logDate         "2012-09-13T05:34:30.995Z"^^xsd:dateTime ;
@@ -66,11 +72,11 @@ bdg:T3 {
     bda:T3  a               adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T3 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "54/T3.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T3 ;
-        adm:logEntry        bda:LG293AEC23B964ABC2 , bda:LG2E8E3A252438FE70 , bda:LG3F5EEB60557E676C , bda:LG528A30C4D13D21CB , bda:LG561092CF66DED470 , bda:LGB2276E644D8D0AFC , bda:LGB89644BE256875E2 , bda:LGD53C1710598D27BE , bda:LGF2E20B4B4DC5DBB3 ;
+        adm:logEntry        bda:LG293AEC23B964ABC2 , bda:LG2E8E3A252438FE70 , bda:LG3F5EEB60557E676C , bda:LG528A30C4D13D21CB , bda:LG561092CF66DED470 , bda:LGB2276E644D8D0AFC , bda:LGB89644BE256875E2 , bda:LGD53C1710598D27BE , bda:LGDD13DA7AE79A93ED , bda:LGF2E20B4B4DC5DBB3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
