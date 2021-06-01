@@ -13,21 +13,28 @@
 
 bdg:T1940 {
     bda:LG271629D1F9DACF01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T15:29:18.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD65C17766FD8C6AB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1940  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1940 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "9d/T1940.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1940 ;
-        adm:logEntry        bda:LG271629D1F9DACF01 ;
+        adm:logEntry        bda:LG271629D1F9DACF01 , bda:LGD65C17766FD8C6AB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1940  a            :Topic ;
+        skos:altLabel       "gna' rdzas rtogs zhib rig pa/"@bo-x-ewts ;
         skos:prefLabel      "gna' dpyad rig pa/"@bo-x-ewts , "archeology"@en ;
         :isRoot             true .
 }
