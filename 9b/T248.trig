@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T248 {
-    bda:LG7B0AB97CB5DACD9D
+    bda:LG2E8447DE5D0FEE5A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG7B0AB97CB5DACD9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-14T12:45:19.819Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"gling sgrung\""@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGF976732A9867DDBB
         a                   adm:UpdateData ;
@@ -25,16 +31,16 @@ bdg:T248 {
     bda:T248  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T248 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/T248.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T248 ;
-        adm:logEntry        bda:LG7B0AB97CB5DACD9D , bda:LGF976732A9867DDBB ;
+        adm:logEntry        bda:LG2E8447DE5D0FEE5A , bda:LG7B0AB97CB5DACD9D , bda:LGF976732A9867DDBB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T248  a             :Topic ;
-        skos:altLabel       "ge sar gyi sgrung /"@bo-x-ewts ;
+        skos:altLabel       "ge sar gyi sgrung /"@bo-x-ewts , "gling sgrung /"@bo-x-ewts ;
         skos:prefLabel      "ge sar sgrung /"@bo-x-ewts ;
         :isRoot             true .
 }

@@ -13,21 +13,28 @@
 
 bdg:T1252 {
     bda:LG230A77D4AF7EA064
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-14T09:58:41.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD0DBCE5B4FCE78A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1252  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1252 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "fd/T1252.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1252 ;
-        adm:logEntry        bda:LG230A77D4AF7EA064 ;
+        adm:logEntry        bda:LG230A77D4AF7EA064 , bda:LGCD0DBCE5B4FCE78A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1252  a            :Topic ;
-        skos:prefLabel      "sgra sgyur/"@bo-x-ewts , "translation"@en ;
+        skos:altLabel       "lo tsA/"@bo-x-ewts , "yig sgyur/"@bo-x-ewts ;
+        skos:prefLabel      "sgra sgyur/"@bo-x-ewts , "translation"@en , "翻译"@zh-hans ;
         :isRoot             true .
 }
