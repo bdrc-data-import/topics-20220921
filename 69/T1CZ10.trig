@@ -31,7 +31,7 @@ bdg:T1CZ10 {
     
     bdr:NT35F60C7C78D76BC0
         a                   :Note ;
-        :noteText           "mdo smad byang rgyud kyi gzhi bdag rnams kyi gtso bo"@en .
+        :noteText           "mdo smad byang rgyud kyi gzhi bdag rnams kyi gtso bo/"@bo-x-ewts .
     
     bdr:T1CZ10  a           :Topic ;
         skos:prefLabel      "gzhi bdag lha'i dge bsnyen gzi brjid 'phags/"@bo-x-ewts ;

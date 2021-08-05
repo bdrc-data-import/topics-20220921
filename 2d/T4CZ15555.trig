@@ -31,7 +31,7 @@ bdg:T4CZ15555 {
     
     bdr:NTE5B267D3DBD1B153
         a                   :Note ;
-        :noteText           "1) so sor 'brang ma/ 2) rma bya chen mo/ 3)stong chen mo rab tu 'joms ma/ 4) gsang sngags chen mo rjes su 'dzin ma/ 5) bsil ba tshal chen mo/"@en .
+        :noteText           "1) so sor 'brang ma/ 2) rma bya chen mo/ 3)stong chen mo rab tu 'joms ma/ 4) gsang sngags chen mo rjes su 'dzin ma/ 5) bsil ba tshal chen mo/"@bo-x-ewts .
     
     bdr:T4CZ15555  a        :Topic ;
         skos:prefLabel      "lha mo lnga /"@bo-x-ewts , "pancadevita"@sa-x-ndia ;

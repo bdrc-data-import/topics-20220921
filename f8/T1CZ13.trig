@@ -31,7 +31,7 @@ bdg:T1CZ13 {
     
     bdr:NTDF06594CDCD4BDB8
         a                   :Note ;
-        :noteText           "rta mgrin dang mgon po phyag drug sbrag te sgrub pa"@en .
+        :noteText           "rta mgrin dang mgon po phyag drug sbrag te sgrub pa/"@bo-x-ewts .
     
     bdr:T1CZ13  a           :Topic ;
         skos:prefLabel      "rta mgon sbrag sgrub/"@bo-x-ewts ;

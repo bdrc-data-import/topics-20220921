@@ -31,7 +31,7 @@ bdg:T4CZ15558 {
     
     bdr:NT1C842C2E5C3166F0
         a                   :Note ;
-        :noteText           "rta mchog dmar po zhal bzhi phyag brgyad zhabs bzhi pa/"@en .
+        :noteText           "rta mchog dmar po zhal bzhi phyag brgyad zhabs bzhi pa/"@bo-x-ewts .
     
     bdr:T4CZ15558  a        :Topic ;
         skos:prefLabel      "rta mchog"@bo-x-ewts , "paramasva"@sa-x-ndia ;

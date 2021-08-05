@@ -31,7 +31,7 @@ bdg:T1CZ49 {
     
     bdr:NTA6E52B32EC9DF511
         a                   :Note ;
-        :noteText           "bde mchog rtsa rgyud las gsungs pa'i bde mchog gi rkang brgyad bstod pa"@en .
+        :noteText           "bde mchog rtsa rgyud las gsungs pa'i bde mchog gi rkang brgyad bstod pa/"@bo-x-ewts .
     
     bdr:T1CZ49  a           :Topic ;
         skos:prefLabel      "rkang brgyad bstod pa/"@bo-x-ewts ;

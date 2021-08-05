@@ -31,7 +31,7 @@ bdg:T4CZ15556 {
     
     bdr:NT04BB6D2CFABA7170
         a                   :Note ;
-        :noteText           "sku mdog mthing nag zhal bzhi phyag brgyad ma/"@en .
+        :noteText           "sku mdog mthing nag zhal bzhi phyag brgyad ma/"@bo-x-ewts .
     
     bdr:T4CZ15556  a        :Topic ;
         skos:altLabel       "rje btsun 'jig rten gsum las rnam par rgyal ba/"@bo-x-ewts ;

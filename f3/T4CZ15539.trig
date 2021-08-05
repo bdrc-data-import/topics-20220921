@@ -31,7 +31,7 @@ bdg:T4CZ15539 {
     
     bdr:NT31F98A137305731A
         a                   :Note ;
-        :noteText           "zhal gcig phyag bzhi ma sku mdog nag mo ste/ g.yas pa'i phyag gnyis rdo rje dang mchog sbyin dang g.yon gnyis mdung dang zhags pa bsnams pa'o//"@en .
+        :noteText           "zhal gcig phyag bzhi ma sku mdog nag mo ste/ g.yas pa'i phyag gnyis rdo rje dang mchog sbyin dang g.yon gnyis mdung dang zhags pa bsnams pa'o"@bo-x-ewts .
     
     bdr:T4CZ15539  a        :Topic ;
         skos:altLabel       "'phags ma gsang sngags kyi rjes su 'brang ba chen mo/"@bo-x-ewts ;

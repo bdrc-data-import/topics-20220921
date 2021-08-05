@@ -29,7 +29,7 @@ bdg:T2303 {
     
     bdr:NT50C8E4652431F358
         a                   :Note ;
-        :noteText           "mchog gling rten 'brel chos bcu'i bla ma'i thugs sgrub skor gsum gyi..."@en .
+        :noteText           "mchog gling rten 'brel chos bcu'i bla ma'i thugs sgrub skor gsum gyi..."@bo-x-ewts .
     
     bdr:T2303  a            :Topic ;
         skos:altLabel       "thugs sgrub rdo rje drag rtsal (mchog gyur gling pa)"@bo-x-ewts ;

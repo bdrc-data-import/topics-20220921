@@ -31,7 +31,7 @@ bdg:T1CZ7 {
     
     bdr:NT303976A0DDC7DC6C
         a                   :Note ;
-        :noteText           "rwa sgreng gnas srung"@en .
+        :noteText           "rwa sgreng gnas srung /"@bo-x-ewts .
     
     bdr:T1CZ7  a            :Topic ;
         skos:prefLabel      "phying dkar jo bo rgyal mtshan (srung ma)"@bo-x-ewts ;

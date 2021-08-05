@@ -31,7 +31,7 @@ bdg:T4CZ15534 {
     
     bdr:NT857151F7D20F28B9
         a                   :Note ;
-        :noteText           "sku mdog ljang khu zhal gsum phyag brgyad ma/"@en .
+        :noteText           "sku mdog ljang khu zhal gsum phyag brgyad ma/"@bo-x-ewts .
     
     bdr:T4CZ15534  a        :Topic ;
         skos:prefLabel      "rdo rje lcags sgrog ma/"@bo-x-ewts , "vajrasrinkhala"@sa-x-ndia ;

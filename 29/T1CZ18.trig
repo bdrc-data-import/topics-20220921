@@ -43,7 +43,7 @@ bdg:T1CZ18 {
     
     bdr:NT763825AE31FEE4FF
         a                   :Note ;
-        :noteText           "drag po lha bzhi'i rgyud"@en .
+        :noteText           "drag po lha bzhi'i rgyud/"@bo-x-ewts .
     
     bdr:T1CZ18  a           :Topic ;
         skos:prefLabel      "ser bdag bcu gsum/"@bo-x-ewts ;

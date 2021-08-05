@@ -35,7 +35,7 @@ bdg:T1969 {
     
     bdr:NTCAC83A7EB2BCAF3B
         a                   :Note ;
-        :noteText           "bod zhi bas bcings 'grol 'byung thabs skor gyi gros mthun don tshan bcu bdun"@en .
+        :noteText           "bod zhi bas bcings 'grol 'byung thabs skor gyi gros mthun don tshan bcu bdun/"@bo-x-ewts .
     
     bdr:T1969  a            :Topic ;
         skos:prefLabel      "gros mthun don tshan bcu bdun/"@bo-x-ewts , "17 point agreement for the peaceful liberation of tibet"@en ;

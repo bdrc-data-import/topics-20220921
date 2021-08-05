@@ -41,7 +41,7 @@ bdg:T1087 {
     
     bdr:NTCAF77D6FC59D91FE
         a                   :Note ;
-        :noteText           "mi tra brgya rtsa 98"@en .
+        :noteText           "mi tra brgya rtsa 98"@bo-x-ewts .
     
     bdr:T1087  a            :Topic ;
         skos:prefLabel      "ma hA mA ya 'bring po lha 5"@bo-x-ewts ;

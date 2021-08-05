@@ -37,7 +37,7 @@ bdg:T4CZ15546 {
     
     bdr:NTCF15AED0AD01DAA2
         a                   :Note ;
-        :noteText           "sku mdog mthing nag zhal gcig phyag gnyis/ phyag g.yas pas rdo rjes mtshan pa'i dbyug to sngon po/ g.yon pa'i phyag ni sdig mdzub zhags pa thugs kar ro/ stag dang dzi na'i pags pa'i sham thabs bsnams pa'o//"@en .
+        :noteText           "sku mdog mthing nag zhal gcig phyag gnyis/ phyag g.yas pas rdo rjes mtshan pa'i dbyug to sngon po/ g.yon pa'i phyag ni sdig mdzub zhags pa thugs kar ro/ stag dang dzi na'i pags pa'i sham thabs bsnams pa'o"@bo-x-ewts .
     
     bdr:T4CZ15546  a        :Topic ;
         skos:altLabel       "gshed nag"@bo-x-ewts ;

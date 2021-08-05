@@ -30,7 +30,7 @@ bdg:T3JT13430 {
     
     bdr:NT204F9B077C9D3913
         a                   :Note ;
-        :noteText           "rgyud bzhi'i ya gal zhig"@en .
+        :noteText           "rgyud bzhi'i ya gal zhig"@bo-x-ewts .
     
     bdr:NT70DA2BDDB19949BF
         a                   :Note ;
