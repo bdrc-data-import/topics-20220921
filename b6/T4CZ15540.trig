@@ -31,7 +31,7 @@ bdg:T4CZ15540 {
     
     bdr:NT1CEFAA982E751FDD
         a                   :Note ;
-        :noteText           "sku mdog dmar mo zhal gcig phyag bzhi ma/ g.yas pa'i phyag gnyis na bgrang phreng dang mchog sbyin/ g.yon gnyis na rdo rje dang lcags dkyu snying ga na gnas pa'i pu sti dang ldan pa'o"@bo-x-ewts .
+        :noteText           "sku mdog dmar mo zhal gcig phyag bzhi ma/ g.yas pa'i phyag gnyis na bgrang phreng dang mchog sbyin/ g.yon gnyis na rdo rje dang lcags dkyu snying ga na gnas pa'i pu sti dang ldan pa'o//"@en .
     
     bdr:T4CZ15540  a        :Topic ;
         skos:altLabel       "'phags ma bsil ba'i tshal chen mo/"@bo-x-ewts ;

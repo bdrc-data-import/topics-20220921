@@ -37,7 +37,7 @@ bdg:T4CZ15538 {
     
     bdr:NTDCFE5EFB54616216
         a                   :Note ;
-        :noteText           "sku mdog dkar mo zhal gcig phyag drug ma/ g.yas pa'i phyag gsum gyis ral gri dang mda' shing mchog sbyin phyag rgya dang g.yon gsum gyis gzhu dang zhags pa dang mgung bsnams pa'o"@bo-x-ewts .
+        :noteText           "sku mdog dkar mo zhal gcig phyag drug ma/ g.yas pa'i phyag gsum gyis ral gri dang mda' shing mchog sbyin phyag rgya dang g.yon gsum gyis gzhu dang zhags pa dang mgung bsnams pa'o//"@en .
     
     bdr:T4CZ15538  a        :Topic ;
         skos:altLabel       "'phags ma stong chen mo rab tu 'joms ma/"@bo-x-ewts ;

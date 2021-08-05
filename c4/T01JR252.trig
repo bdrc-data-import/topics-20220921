@@ -37,7 +37,7 @@ bdg:T01JR252 {
     bdr:NT84AF044241D186E5
         a                   :Note ;
         :noteSource         bdr:MW20916 ;
-        :noteText           "[p. 323] jo mos (ye shes mtsho rgyal) rang gi ming po mkhar chen dpal gyi dbang phyug la bshad nas rim par dar ro/"@bo-x-ewts .
+        :noteText           "[p. 323] jo mos (ye shes mtsho rgyal) rang gi ming po mkhar chen dpal gyi dbang phyug la bshad nas rim par dar ro/"@en .
     
     bdr:T01JR252  a         :Topic ;
         skos:altLabel       "phur pa (mtsho rgyal snyan brgyud)"@bo-x-ewts , "rdo rje phur pa/ (jo mo lugs/"@bo-x-ewts ;

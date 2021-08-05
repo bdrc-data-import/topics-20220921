@@ -36,7 +36,7 @@ bdg:T3JT12482 {
     
     bdr:NT1BBE4DE09EFB94BB
         a                   :Note ;
-        :noteText           "'khor lo rin po che/ nor bu rin po che/ btsun mo rin po che/ blon po rin po che/ glang po rin po che/ rta mchog rin po che/ dmag dpon rin po che/"@bo-x-ewts .
+        :noteText           "'khor lo rin po che/ nor bu rin po che/ btsun mo rin po che/ blon po rin po che/ glang po rin po che/ rta mchog rin po che/ dmag dpon rin po che/"@en .
     
     bdr:NTBA178ED50AA47084
         a                   :Note ;

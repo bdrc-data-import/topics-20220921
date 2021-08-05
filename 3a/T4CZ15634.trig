@@ -31,7 +31,7 @@ bdg:T4CZ15634 {
     
     bdr:NTF0631C93B1C661B4
         a                   :Note ;
-        :noteText           "sku mdog nag po zhal gcig phyag bzhi/"@bo-x-ewts .
+        :noteText           "sku mdog nag po zhal gcig phyag bzhi/"@en .
     
     bdr:T4CZ15634  a        :Topic ;
         skos:altLabel       "khro bo chen po dbyug pa sngon po/"@bo-x-ewts , "vajraniladanda/"@bo-x-ewts ;

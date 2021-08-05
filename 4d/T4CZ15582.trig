@@ -37,7 +37,7 @@ bdg:T4CZ15582 {
     
     bdr:NT650925295DEC4E55
         a                   :Note ;
-        :noteText           "ston pa gshen rab kyi 'khrungs yul dang bon gyi dag pa'i zhing khams gnas mchog 'ol mo lung rings su grags/"@bo-x-ewts .
+        :noteText           "ston pa gshen rab kyi 'khrungs yul dang bon gyi dag pa'i zhing khams gnas mchog 'ol mo lung rings su grags/"@en .
     
     bdr:T4CZ15582  a        :Topic ;
         skos:altLabel       "'ol mo lung ring /"@bo-x-ewts , "gshen yul 'ol mo lung rings/"@bo-x-ewts , "tA gzig 'ol mo lung rings/"@bo-x-ewts ;

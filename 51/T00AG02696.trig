@@ -42,7 +42,7 @@ bdg:T00AG02696 {
     
     bdr:NT7BDE0C5A912D9D42
         a                   :Note ;
-        :noteText           "1) bshad pa tshig gi skor\n2) gdams ngag nyams len gyi skor\n3) rtogs pa byin rlabs kyi skor/"@bo-x-ewts .
+        :noteText           "1) bshad pa tshig gi skor\n2) gdams ngag nyams len gyi skor\n3) rtogs pa byin rlabs kyi skor"@en .
     
     bdr:T00AG02696  a       :Topic ;
         skos:prefLabel      "phyag rgya chen po skor gsum/"@bo-x-ewts ;

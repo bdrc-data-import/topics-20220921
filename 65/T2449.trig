@@ -31,7 +31,7 @@ bdg:T2449 {
         a                   :Note ;
         :contentLocationStatement  "p. 436" ;
         :noteSource         bdr:MW29329 ;
-        :noteText           "sbyin sreg gi mdzad sgo'i skabs bed spyod pa'i yo byad dgang gzer dang blugs gzar gnyis kyi bsdus ming /"@bo-x-ewts .
+        :noteText           "sbyin sreg gi mdzad sgo'i skabs bed spyod pa'i yo byad dgang gzer dang blugs gzar gnyis kyi bsdus ming"@en .
     
     bdr:T2449  a            :Topic ;
         skos:prefLabel      "dgang blugs/"@bo-x-ewts , "ladle"@en ;

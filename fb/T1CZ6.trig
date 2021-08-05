@@ -37,7 +37,7 @@ bdg:T1CZ6 {
     
     bdr:NT624501A1D74189DE
         a                   :Note ;
-        :noteText           "dgon lung byams pa gling gi srung ma/"@bo-x-ewts .
+        :noteText           "dgon lung byams pa gling gi srung ma"@en .
     
     bdr:T1CZ6  a            :Topic ;
         skos:prefLabel      "rdo rje 'od ldan dkar po/"@bo-x-ewts ;

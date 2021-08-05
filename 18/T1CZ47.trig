@@ -42,7 +42,7 @@ bdg:T1CZ47 {
     
     bdr:NTD801D93161BF1331
         a                   :Note ;
-        :noteText           "mgon po dang rnal 'byor ma/ spyan ras gzigs/ sgrol ma bcas sbrag te sgrub pa dben sa pa nas brgyud pa/"@bo-x-ewts .
+        :noteText           "mgon po dang rnal 'byor ma/ spyan ras gzigs/ sgrol ma bcas sbrag te sgrub pa dben sa pa nas brgyud pa"@en .
     
     bdr:T1CZ47  a           :Topic ;
         rdfs:seeAlso        bdr:T1CZ47 ;

@@ -31,7 +31,7 @@ bdg:T4CZ15537 {
     
     bdr:NTF8F43DB74EDB6FA9
         a                   :Note ;
-        :noteText           "sku mdog dmar mo/ zhal gcig spyan gsum/ phyag drug ma/ stag gi pags pa'i sham thabs can no/"@bo-x-ewts .
+        :noteText           "sku mdog dmar mo/ zhal gcig spyan gsum/ phyag drug ma/ stag gi pags pa'i sham thabs can no/"@en .
     
     bdr:T4CZ15537  a        :Topic ;
         skos:prefLabel      "rdo rje tsa rtsi ka"@bo-x-ewts , "vajracarcika"@sa-x-ndia ;

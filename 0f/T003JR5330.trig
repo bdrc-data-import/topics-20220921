@@ -39,7 +39,7 @@ bdg:T003JR5330 {
         a                   :Note ;
         :contentLocationStatement  "p. 323" ;
         :noteSource         bdr:MW20916 ;
-        :noteText           "jo mos (ye shes mtsho rgyal) rang gi ming po mkhar chen dpal gyi dbang phyug la bshad nas rim par dar ro/"@bo-x-ewts .
+        :noteText           "jo mos (ye shes mtsho rgyal) rang gi ming po mkhar chen dpal gyi dbang phyug la bshad nas rim par dar ro/"@en .
     
     bdr:T003JR5330  a       :Topic ;
         skos:altLabel       "rdo rje phur pa (jo mo lugs)"@bo-x-ewts ;

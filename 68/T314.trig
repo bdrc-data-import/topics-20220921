@@ -44,8 +44,7 @@ bdg:T314 {
         :noteText           "this term is applied sadhanas and similar works focusing upon the form of avalokitesvara from the klong chen snying thig revelations of 'jigs med gling pa; this is one of the most popular avalokitesvara practices used in these times"@en .
     
     bdr:T314  a             :Topic ;
-        skos:altLabel       "gsang sgrub thugs rje chen po sdug bsngal rang grol ('jigs med gling pa)"@bo-x-ewts ;
-        skos:prefLabel      "thugs rje chen po sdug bsngal rang grol/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po sdug bsngal rang grol/"@bo-x-ewts , "gsang sgrub thugs rje chen po sdug bsngal rang grol ('jigs med gling pa)"@en ;
         :isRoot             true ;
         :note               bdr:NT9FA61BE3828B1E85 .
 }

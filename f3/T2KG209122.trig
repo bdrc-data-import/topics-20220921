@@ -33,7 +33,7 @@ bdg:T2KG209122 {
         a                   :Note ;
         :contentLocationStatement  "p. 1043" ;
         :noteSource         bdr:MW26372 ;
-        :noteText           "dung dkar tshig mdzod/"@bo-x-ewts .
+        :noteText           "dung dkar tshig mdzod"@en .
     
     bdr:T2KG209122  a       :Topic ;
         skos:altLabel       "thal 'gyur gyi phreng ba/"@bo-x-ewts ;
