@@ -12,22 +12,52 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2203 {
-    bda:LGC5FBCBCB99E3BE64
+    bda:LG6F27974E33260804
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T19:52:14.463Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBDEF15F678E81B4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T18:31:34.673Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected infos under the T# with G#: G3CN26733"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7CCAB9A7ED071C7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGE662185C1EAD91F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T20:12:25.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2nd note"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T2203  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2203 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "69/T2203.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2203 ;
-        adm:logEntry        bda:LGC5FBCBCB99E3BE64 ;
+        adm:logEntry        bda:LG6F27974E33260804 , bda:LGBDEF15F678E81B4E , bda:LGD7CCAB9A7ED071C7 , bda:LGE662185C1EAD91F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:NTC5FBCBCB99E3BE64
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18437 ;
+        :noteText           "ཡིག་ཆ་མང་ཆེ་བར་\"ཡིག་ཚང་\"ཞེས་གསལ་མོད། བོད་ལྗོངས་སློབ་ཆེན་དཔེ་མཛོད་ཁང་ནས་\"ཡིག་ཚངས་\"ཞེས་བྲིས་གནང་འདུག"@bo .
+    
+    bdr:NTF829E2DAFE6BEEDA
+        a                   :Note ;
+        :contentLocationStatement  "p. 8" ;
+        :noteSource         bdr:MW30145 ;
+        :noteText           "\"ཡིག་ཚངས་དྲུག་\"ཞེས་འདིར་ནི་\"ཁོས་སུམ་ཅུ་རྩ་དྲུག་\"གི་ནང་ཚན་དུ་བཤད་པ་ཁྲིམས་ཡིག་ཞལ་ལྕེ་དང་འབྲེལ་བའི་ཚིག་ལས་ཡོངས་གྲགས་ཀྱི་\"ཡིག་ཚང་མི་གོ་བ་ཤེས་སོ།།"@bo .
+    
     bdr:T2203  a            :Topic ;
-        skos:prefLabel      "rtse yig tshang /"@bo-x-ewts , "tibetan government secretariat"@en ;
-        :isRoot             true .
+        skos:prefLabel      "yig tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC5FBCBCB99E3BE64 , bdr:NTF829E2DAFE6BEEDA .
 }
