@@ -12,52 +12,71 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2203 {
-    bda:LG6F27974E33260804
+    bda:LG35A0DD94D08D5337
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3FC5EE154CC02409
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-15T19:52:14.463Z"^^xsd:dateTime ;
-        adm:logMessage      "added note"@en ;
+        adm:logDate         "2021-09-15T20:12:25.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added names with note"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGBDEF15F678E81B4E
+    bda:LGD7CCAB9A7ED071C7
         a                   adm:UpdateData ;
         adm:logDate         "2021-09-15T18:31:34.673Z"^^xsd:dateTime ;
         adm:logMessage      "corrected infos under the T# with G#: G3CN26733"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGD7CCAB9A7ED071C7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGE662185C1EAD91F1
+    bda:LGF5F5409274575EA5
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-15T20:12:25.267Z"^^xsd:dateTime ;
-        adm:logMessage      "added 2nd note"@en ;
+        adm:logDate         "2021-09-16T13:57:37.129Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T2203  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2203 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "69/T2203.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2203 ;
-        adm:logEntry        bda:LG6F27974E33260804 , bda:LGBDEF15F678E81B4E , bda:LGD7CCAB9A7ED071C7 , bda:LGE662185C1EAD91F1 ;
+        adm:logEntry        bda:LG35A0DD94D08D5337 , bda:LG3FC5EE154CC02409 , bda:LGD7CCAB9A7ED071C7 , bda:LGF5F5409274575EA5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:NTC5FBCBCB99E3BE64
-        a                   :Note ;
-        :noteSource         bdr:MW1KG18437 ;
-        :noteText           "ཡིག་ཆ་མང་ཆེ་བར་\"ཡིག་ཚང་\"ཞེས་གསལ་མོད། བོད་ལྗོངས་སློབ་ཆེན་དཔེ་མཛོད་ཁང་ནས་\"ཡིག་ཚངས་\"ཞེས་བྲིས་གནང་འདུག"@bo .
-    
-    bdr:NTF829E2DAFE6BEEDA
+    bdr:NT6F27974E33260804
         a                   :Note ;
         :contentLocationStatement  "p. 8" ;
         :noteSource         bdr:MW30145 ;
-        :noteText           "\"ཡིག་ཚངས་དྲུག་\"ཞེས་འདིར་ནི་\"ཁོས་སུམ་ཅུ་རྩ་དྲུག་\"གི་ནང་ཚན་དུ་བཤད་པ་ཁྲིམས་ཡིག་ཞལ་ལྕེ་དང་འབྲེལ་བའི་ཚིག་ལས་ཡོངས་གྲགས་ཀྱི་\"ཡིག་ཚང་མི་གོ་བ་ཤེས་སོ།།"@bo .
+        :noteText           "\"ཡིག་ཚངས་དྲུག་\"ཞེས་འདིར་ནི་\"ཁོས་སུམ་ཅུ་རྩ་དྲུག་\"གི་ནང་ཚན་དུ་བཤད་པ་ཁྲིམས་ཡིག་ཞལ་ལྕེ་དང་འབྲེལ་བའི་ཚིག་ལས་ཕྱིས་བྱུང་\"ཡིག་ཚང་\"ཞེས་པར་མི་གོ"@bo .
+    
+    bdr:NTBDEF15F678E81B4E
+        a                   :Note ;
+        :contentLocationStatement  "p. 153, p. 219" ;
+        :noteSource         bdr:MW1KG6259 ;
+        :noteText           "《སྦ་གསལ་སྣང་གི་བཞེད་པའི་》(p. 153)ནང་དུ། \"གཏམ་དང་ལོ་རྒྱུས། བཟང་པོའི་ལས་ཐབས་དང་། ལག་རྗེས་དང་། ཕ་མེས་ཀྱི་དགེ་དང་ ཡིག་ཚང་གི་ལུགས་རྒྱས་པར་བྱ་བར་མཛད་གནང་ངོ་།།\"ཞེས་གསལ་ལ། \n《ཆོས་འབྱུང་གི་ཡི་གེ་ཞིབ་མོ་》(p. 219)ཡི་ནང་དུ། \"གཏམ་དང་ལོ་རྒྱུས་དང་། དགེ་དང་ ཡིག་ཚང་ཇི་ལྟར་ཡིན་ལུགས་རྒྱས་པར་བྱ་བ་གནང་ངོ་།།\"ཞེས་གསལ་བ་ནི་ཏུན་ཧོང་ཡིག་རྙིང་ཕུད། ལོ་རྒྱུས་ཡིག་ཆའི་ནང་གསལ་བའི་\"ཡིག་ཚང་\"ཞེས་པ་ཐོན་སྔ་ཤོས་སུ་གྱུར་ཚོད་ལགས་ཏེ། འདི་སྐབས་\"ཡིག་ཚང་\"ཞེས་པ་ལམ་ལུགས་ཤིག་ལ་གོ་བ་ཤེས་སོ།།"@bo .
+    
+    bdr:NTC5FBCBCB99E3BE64
+        a                   :Note ;
+        :contentLocationStatement  "p. 1" ;
+        :noteSource         bdr:MW1KG5760 ;
+        :noteText           "དེབ་དམར་གྱི་དབུའི་རྩོམ་པ་དམ་བཅའ་སྐབས་འདིར་\"ཡིག་ཚང་\"ཞེས་ལོ་རྒྱུས་ཀྱི་ཡིག་ཆ་ལ་གོ་བ་གསལ་པོར་མཇལ་བ་འདིས་མཚོན་དུས་ཕྱིས་སུ་ཡང་གོ་དོན་འདི་གཙོ་བོར་གྱུར་པར་མངོན་ནོ།།"@bo .
+    
+    bdr:NTE662185C1EAD91F1
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18437 ;
+        :noteText           "འདིར་\"ཡིག་ཚངས་\"ཞེས་པ་ཆོས་འབྱུང་མཁས་དགའ་དང་ཏུན་ཧོང་ཡིག་རྙིང་འགའ་རེ་དང་འདྲ་བར་བྲིས་འདུག"@bo .
+    
+    bdr:NTF829E2DAFE6BEEDA
+        a                   :Note ;
+        :contentLocationStatement  "V. 24, P. 20" ;
+        :noteSource         bdr:MW1KG4884 ;
+        :noteText           "ཀུན་མཁྱེན་ཀློང་ཆེན་རབ་འབྱམས་ཀྱི་གསུང་། ཞྭ་པདྨ་དབང་ཆེན་གྱི་དཀར་ཆག་གཙིགས་ཀྱི་ཡི་གེ་ཞིབ་མོ་བཞུགས། ཞེས་པའི་ནང་། \"དེ་ནས་དགེ་བ་ཅན་དག་གིས་སྔོན་གྱི་ ཡིག་ཚང ་ལས་བྱུང་བ་ལྟར་ཅུང་ཟད་གསོས་ཤིང་མཆོད་པ་ཕུལ་བ་ལས།\" ཞེས་པ་དང་། ཡང་\"བདག་ཅག་དཔོན་སློབ་ཏུ་གཏོགས་པས་ཀྱང་སྔོན་གྱི་ ཡིག་ཚང ་དང་མཐུན་པར་གཙུག་ལག་ཁང་བསྒྲུབ་པ་ལ་བར་ཆད་མི་འབྱུང་ཞིང་མྱུར་དུ་འགྲུབ་པའི་རྟེན་འབྲེལ་ལ་ཞུགས་ཏེ།\" ཞེས་གསལ་བ་འདི་དེབ་དམར་དང་དུས་མཚུངས་པ་དུས་རབས་བཅུ་བཞི་པའི་སྟོད་དུ་\"ཡིག་ཚང་\"ཞེས་པ་ལོ་རྒྱུས་ཡིག་ཆ་ལ་གོ་བ་གསལ་ལོ།།"@bo .
     
     bdr:T2203  a            :Topic ;
+        skos:altLabel       "yig gtsang /"@bo-x-ewts , "yig tsang /"@bo-x-ewts , "yig tshangs/"@bo-x-ewts ;
         skos:prefLabel      "yig tshang /"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NTC5FBCBCB99E3BE64 , bdr:NTF829E2DAFE6BEEDA .
+        :note               bdr:NT6F27974E33260804 , bdr:NTBDEF15F678E81B4E , bdr:NTC5FBCBCB99E3BE64 , bdr:NTE662185C1EAD91F1 , bdr:NTF829E2DAFE6BEEDA .
 }
