@@ -18,9 +18,9 @@ bdg:T2135 {
     
     bda:LG767BE72253BD02AB
         a                   adm:UpdateData ;
-        adm:logDate         "2013-02-21T14:07:14.791Z"^^xsd:dateTime ;
-        adm:logMessage      "added sanskrit: checked by ms"@en ;
-        adm:logWho          bdu:U00048 .
+        adm:logDate         "2021-09-17T19:39:32.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T2135  a            adm:AdminData ;
         :isRoot             true ;
@@ -34,6 +34,6 @@ bdg:T2135 {
         adm:status          bda:StatusReleased .
     
     bdr:T2135  a            :Topic ;
-        skos:prefLabel      "lus sbyin/"@bo-x-ewts , "舍身"@zh-hans ;
+        skos:prefLabel      "lus sbyin/"@bo-x-ewts , "施身法"@zh-hans ;
         :isRoot             true .
 }
