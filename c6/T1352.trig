@@ -12,35 +12,48 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1352 {
-    bda:LGB54E51EA37BCD39F
+    bda:LG1DA7BC62DC09F516
         a                   adm:UpdateData ;
-        adm:logDate         "2012-12-10T16:24:33.254Z"^^xsd:dateTime ;
-        adm:logMessage      "Created See Also between T238 and T1352"@en ;
-        adm:logWho          bdu:U00043 .
+        adm:logDate         "2021-09-23T10:32:50.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
     
-    bda:LGCBD35ED0E607EFDE
+    bda:LG39117998C7A35A73
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGE02439343AA66D5F
+    bda:LGCBD35ED0E607EFDE
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-22T15:16:38.085Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE02439343AA66D5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T16:24:33.254Z"^^xsd:dateTime ;
+        adm:logMessage      "Created See Also between T238 and T1352"@en ;
+        adm:logWho          bdu:U00043 .
+    
     bda:T1352  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1352 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c6/T1352.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1352 ;
-        adm:logEntry        bda:LGB54E51EA37BCD39F , bda:LGCBD35ED0E607EFDE , bda:LGE02439343AA66D5F ;
+        adm:logEntry        bda:LG1DA7BC62DC09F516 , bda:LG39117998C7A35A73 , bda:LGCBD35ED0E607EFDE , bda:LGE02439343AA66D5F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:NTB54E51EA37BCD39F
+        a                   :Note ;
+        :contentLocationStatement  "p. 1" ;
+        :noteSource         bdr:MW3CN26827 ;
+        :noteText           "བསྟན་རིམ་དང་ལམ་རིམ་དོན་གཅིག་ལ་གོ་བ་འདི་ན་ཡང་གསལ།"@bo .
     
     bdr:T1352  a            :Topic ;
         rdfs:seeAlso        bdr:T238 ;
         skos:prefLabel      "bstan rim/"@bo-x-ewts , "stages of teachings"@en ;
-        :isRoot             true .
+        :isRoot             true ;
+        :note               bdr:NTB54E51EA37BCD39F .
 }

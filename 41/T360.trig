@@ -46,8 +46,8 @@ bdg:T360 {
     
     bda:LGF75CDE28C3D4F279
         a                   adm:UpdateData ;
-        adm:logDate         "2018-09-25T17:03:19.64Z"^^xsd:dateTime ;
-        adm:logMessage      "corrected typo"@en ;
+        adm:logDate         "2021-09-23T11:27:52.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added name: sbyor ba yan lag drug"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T360  a             adm:AdminData ;
@@ -73,7 +73,7 @@ bdg:T360 {
     
     bdr:T360  a             :Topic ;
         rdfs:seeAlso        bdr:T1253 , bdr:T1255 ;
-        skos:altLabel       "jo nang /"@bo-x-ewts , "rdo rje rnal 'byor ba yan lag drug"@bo-x-ewts , "sbyor ba yan lag drug"@bo-x-ewts , "yan lag drug pa/"@bo-x-ewts ;
+        skos:altLabel       "jo nang /"@bo-x-ewts , "rdo rje rnal 'byor ba yan lag drug"@bo-x-ewts , "sbyor ba yan lag drug"@bo-x-ewts ;
         skos:prefLabel      "sbyor drug"@bo-x-ewts , "sadangayoga"@sa-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT006CDFFFB11A899A , bdr:NT99E1F6007770F5CC .
