@@ -19,26 +19,32 @@ bdg:T1231 {
         adm:logWho          bdu:U00016 .
     
     bda:LG7D05ACF2D360A8C6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-24T06:48:11.042Z"^^xsd:dateTime ;
+        adm:logMessage      "add Sanskrit label"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGE51DCB9ABD9F1451
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-29T13:42:26.738Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE72CE26ED0B6A751
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:T1231  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1231 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b2/T1231.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1231 ;
-        adm:logEntry        bda:LG77B6C5716DB70E5D , bda:LG7D05ACF2D360A8C6 , bda:LGE51DCB9ABD9F1451 ;
+        adm:logEntry        bda:LG77B6C5716DB70E5D , bda:LG7D05ACF2D360A8C6 , bda:LGE51DCB9ABD9F1451 , bda:LGE72CE26ED0B6A751 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1231  a            :Topic ;
-        skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts , "numerical categories"@en ;
+        skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts , "numerical categories"@en , "dharmaparyāya"@sa-x-iast ;
         :isRoot             true .
 }
