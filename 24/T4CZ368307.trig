@@ -14,8 +14,7 @@
 bdg:T4CZ368307 {
     bda:LG187E6211902194B1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-28T15:09:00.63Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2021-09-29T11:00:30.75Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ368307  a       adm:AdminData ;
