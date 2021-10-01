@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2338 {
-    bda:LG29F3986B53192786
+    bda:LG1501460C69E625CD
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG29F3986B53192786
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-30T14:44:31.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 names: mgon po ber nag can,  ye shes...& the name in english"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGCEA1F8959C230EF0
         a                   adm:UpdateData ;
@@ -25,11 +31,11 @@ bdg:T2338 {
     bda:T2338  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2338 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a5/T2338.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2338 ;
-        adm:logEntry        bda:LG29F3986B53192786 , bda:LGCEA1F8959C230EF0 ;
+        adm:logEntry        bda:LG1501460C69E625CD , bda:LG29F3986B53192786 , bda:LGCEA1F8959C230EF0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,7 +44,8 @@ bdg:T2338 {
         :noteText           "this deity topic is applied to empowerments and rituals focusing upon this karma mahakala who is dark blue, his right hand brandishing a knife and his left holding a skull full of heart's blood; he is corpulent, dwarfish and of great splendor, wth the garb of a raksasa, wearing high boots of shagreen on his feet; he abides in pratyalidha (right leg bent), trampling the corpse of a hindering enemy, wearing white and green sleeveless vests (sha 'gag) and a nine layer flowing cloak of black silkl he is adorned with snakes and human heads amid a blazing mass of fire\n\ndeities of tibetan buddhism #374"@en .
     
     bdr:T2338  a            :Topic ;
-        skos:prefLabel      "mgon po ber nag zangs gri can/"@bo-x-ewts , "black-cloaked mahakala with copper knife"@en ;
+        skos:altLabel       "mgon po ber nag zangs gri can/"@bo-x-ewts , "ye shes mgon po ber nag can/"@bo-x-ewts , "black-cloaked mahakala with copper knife"@en ;
+        skos:prefLabel      "mgon po ber nag can/"@bo-x-ewts , "black-cloaked mahakala"@en ;
         :isRoot             true ;
         :note               bdr:NT5285CE3F94B09464 .
 }

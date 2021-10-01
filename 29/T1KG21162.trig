@@ -18,18 +18,25 @@ bdg:T1KG21162 {
         adm:logMessage      "created topic"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG8D24A78BAFD3CBE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-30T19:44:18.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added name: rlung sbyor"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:T1KG21162  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1KG21162 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "29/T1KG21162.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1KG21162 ;
-        adm:logEntry        bda:LG5DE0F61E60E9CBB4 ;
+        adm:logEntry        bda:LG5DE0F61E60E9CBB4 , bda:LG8D24A78BAFD3CBE7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1KG21162  a        :Topic ;
+        skos:altLabel       "rlung sbyor/"@bo-x-ewts ;
         skos:prefLabel      "rlung sbyong /"@bo-x-ewts , "pranayama exercises"@en ;
         :isRoot             true .
 }
