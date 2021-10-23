@@ -18,9 +18,15 @@ bdg:T1127 {
         adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LG6287FFDDE6D234D2
+    bda:LG27377427B8099F4A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG6287FFDDE6D234D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-22T09:20:00.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added: rus rgyud"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG974E766B857E8867
         a                   adm:UpdateData ;
@@ -31,16 +37,17 @@ bdg:T1127 {
     bda:T1127  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1127 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "69/T1127.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1127 ;
-        adm:logEntry        bda:LG1FBB418FDD3A9FC0 , bda:LG6287FFDDE6D234D2 , bda:LG974E766B857E8867 ;
+        adm:logEntry        bda:LG1FBB418FDD3A9FC0 , bda:LG27377427B8099F4A , bda:LG6287FFDDE6D234D2 , bda:LG974E766B857E8867 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1127  a            :Topic ;
         rdfs:seeAlso        bdr:T11MS16 , bdr:T1673 ;
+        skos:altLabel       "rus rgyud/"@bo-x-ewts ;
         skos:prefLabel      "gdung rus/"@bo-x-ewts , "clans and lineages"@en ;
         :isRoot             true .
 }
