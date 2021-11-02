@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T3CN1331 {
+    bda:LG325188716A21055E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-01T22:34:03.685Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG754BB8D0E969101B
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-03T15:09:40.485Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:T3CN1331 {
     bda:T3CN1331  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T3CN1331 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "95/T3CN1331.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T3CN1331 ;
-        adm:logEntry        bda:LG754BB8D0E969101B , bda:LG7D331A6503D4C27D ;
+        adm:logEntry        bda:LG325188716A21055E , bda:LG754BB8D0E969101B , bda:LG7D331A6503D4C27D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T3CN1331  a         :Topic ;
-        skos:prefLabel      "rgya yig chos dpe/"@bo-x-ewts , "buddhist texts in chinese"@en , "中文佛书"@zh-hans ;
+        skos:prefLabel      "rgya yig chos dpe/"@bo-x-ewts , "Buddhist texts in Chinese"@en , "中文佛典"@zh-hans ;
         :isRoot             true .
 }
