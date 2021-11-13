@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1892 {
+    bda:LG005A84787E4EEF60
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG0271BCEA94F47F98
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-18T16:31:06.22Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:T1892 {
         adm:logWho          bdu:U00007 .
     
     bda:LGAC6A2B8525DF41A4
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-12T09:31:43.387Z"^^xsd:dateTime ;
+        adm:logMessage      "added bskang bshags/"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGEBF4DB287F59EDEF
         a                   adm:UpdateData ;
@@ -41,17 +47,17 @@ bdg:T1892 {
     bda:T1892  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1892 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5a/T1892.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1892 ;
-        adm:logEntry        bda:LG0271BCEA94F47F98 , bda:LG4B641FC5CCE8CCF7 , bda:LG7F28E1ECD265E4FE , bda:LGAC6A2B8525DF41A4 , bda:LGEBF4DB287F59EDEF ;
+        adm:logEntry        bda:LG005A84787E4EEF60 , bda:LG0271BCEA94F47F98 , bda:LG4B641FC5CCE8CCF7 , bda:LG7F28E1ECD265E4FE , bda:LGAC6A2B8525DF41A4 , bda:LGEBF4DB287F59EDEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1892  a            :Topic ;
         rdfs:seeAlso        bdr:T1092 , bdr:T337 , bdr:T467 ;
-        skos:altLabel       "skong ba dang bshags pa/"@bo-x-ewts , "attonement and confession"@en ;
+        skos:altLabel       "bskang bshags/"@bo-x-ewts , "skong ba dang bshags pa/"@bo-x-ewts , "attonement and confession"@en ;
         skos:prefLabel      "skong bshags/"@bo-x-ewts , "confession and purification"@en ;
         :isRoot             true .
 }
