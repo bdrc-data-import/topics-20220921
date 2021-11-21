@@ -25,6 +25,7 @@ bdg:T2331 {
         adm:graphId         bdg:T2331 ;
         adm:logEntry        bda:LG35F7FCAF2DB11B1C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:T2331  a            :Topic ;

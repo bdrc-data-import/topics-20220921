@@ -39,6 +39,7 @@ bdg:T2MS13833 {
         adm:graphId         bdg:T2MS13833 ;
         adm:logEntry        bda:LG484343274490C3BC , bda:LG5905D97F8923E26D , bda:LG8D75E8D747F23AD3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:NT25EDF846D483B4F9

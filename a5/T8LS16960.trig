@@ -27,6 +27,7 @@ bdg:T8LS16960 {
         adm:graphId         bdg:T8LS16960 ;
         adm:logEntry        bda:LG62DBA70FABF63463 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:T8LS16960  a        :Topic ;
