@@ -40,6 +40,7 @@ bdg:T00EGS1016987 {
         adm:graphId         bdg:T00EGS1016987 ;
         adm:logEntry        bda:LG0DD6DEA88C3E9360 , bda:LG4880D8FD11479220 , bda:LGC6E3A4E48A55BF02 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:T00EGS1016987
