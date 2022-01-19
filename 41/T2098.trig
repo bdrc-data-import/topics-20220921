@@ -34,7 +34,7 @@ bdg:T2098 {
         adm:status          bda:StatusReleased .
     
     bdr:T2098  a            :Topic ;
-        rdfs:comment        "A Buddhist layman" ;
+        rdfs:comment        "A Buddhist layman"@en ;
         skos:prefLabel      "dge bsnyen/"@bo-x-ewts , "Upasaka"@en , "aup'asaka"@sa-x-ndia , "优婆塞"@zh-hans ;
         :isRoot             true .
 }

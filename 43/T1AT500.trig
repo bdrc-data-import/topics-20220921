@@ -37,7 +37,7 @@ bdg:T1AT500 {
         :noteText           "white fire offering ritual or burning of non-meat edibles such as diary products"@en .
     
     bdr:T1AT500  a          :Topic ;
-        rdfs:comment        "white fire offering ritual or burning of non-meat edibles such as diary products" ;
+        rdfs:comment        "white fire offering ritual or burning of non-meat edibles such as diary products"@en ;
         skos:prefLabel      "dkar gsur/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT3F4EC85A3949A970 .

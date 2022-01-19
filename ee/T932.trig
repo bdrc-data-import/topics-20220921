@@ -50,7 +50,7 @@ bdg:T932 {
         :noteText           "this is described in tibetan sources as: las dang po pa'i nyams su blang ba'i rim pa ; teachings  to be undertaken by beginning practitioners"@en .
     
     bdr:T932  a             :Topic ;
-        rdfs:comment        "The seven branch practice of prostrating to the Three Jewels, confessing negative actions, making offering, rejoicing in the virtue of others, requesting to turn the wheel of Dharma, beseeching to not pass into nirvana, and dedicating the merit to the enlightenment of all sentient beings." ;
+        rdfs:comment        "The seven branch practice of prostrating to the Three Jewels, confessing negative actions, making offering, rejoicing in the virtue of others, requesting to turn the wheel of Dharma, beseeching to not pass into nirvana, and dedicating the merit to the enlightenment of all sentient beings."@en ;
         skos:altLabel       "seven offices of worship"@en ;
         skos:prefLabel      "yan lag bdun pa/"@bo-x-ewts , "seven branches"@en , "七支"@zh-hans ;
         :isRoot             true ;

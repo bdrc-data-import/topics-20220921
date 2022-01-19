@@ -59,7 +59,7 @@ bdg:T1AT268 {
         :noteText           "descriptive outline/summary of major texts that usually  introduces a teaching"@en .
     
     bdr:T1AT268  a          :Topic ;
-        rdfs:comment        "general outline" ;
+        rdfs:comment        "general outline"@en ;
         skos:altLabel       "sngon chings dang rjes chings/"@bo-x-ewts ;
         skos:prefLabel      "sngon chings dang mjug chings/"@bo-x-ewts ;
         :isRoot             true ;

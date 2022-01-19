@@ -46,7 +46,7 @@ bdg:T1225 {
         adm:status          bda:StatusReleased .
     
     bdr:T1225  a            :Topic ;
-        rdfs:comment        "ritual for summoning forces of longevity" ;
+        rdfs:comment        "ritual for summoning forces of longevity"@en ;
         rdfs:seeAlso        bdr:T2511 , bdr:T27 ;
         skos:prefLabel      "tshe 'gugs/"@bo-x-ewts ;
         :isRoot             true .

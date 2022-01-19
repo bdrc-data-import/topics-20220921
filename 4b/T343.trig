@@ -40,7 +40,7 @@ bdg:T343 {
         adm:status          bda:StatusReleased .
     
     bdr:T343  a             :Topic ;
-        rdfs:comment        "Requesting, the Buddhas of the ten directions to turn the wheel of the Dharma. one of the {yan lag bdun pa} seven branch practices." ;
+        rdfs:comment        "Requesting, the Buddhas of the ten directions to turn the wheel of the Dharma. one of the {yan lag bdun pa} seven branch practices."@en ;
         skos:altLabel       "chos 'khor skor bar skul ba/"@bo-x-ewts , "thugs rgyud skul ba/"@bo-x-ewts , "requesting turn the wheel of the dharma"@en , "请转法轮"@zh-hans ;
         skos:prefLabel      "skul ba/"@bo-x-ewts , "requesting"@en , "请求"@zh-hans ;
         :isRoot             true .

@@ -33,7 +33,7 @@ bdg:T1AT288 {
         :noteText           "name of a protective deity of the srung ma class"@en .
     
     bdr:T1AT288  a          :Topic ;
-        rdfs:comment        "name of a protective deity of the srung ma class" ;
+        rdfs:comment        "name of a protective deity of the srung ma class"@en ;
         skos:altLabel       "ngan ne/"@bo-x-ewts , "ngan ne ma/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje ngan ne ma/"@bo-x-ewts ;
         :isRoot             true ;

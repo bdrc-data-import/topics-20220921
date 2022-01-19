@@ -33,7 +33,7 @@ bdg:T1AT470 {
         :noteText           "mind or heart sadhana practice"@en .
     
     bdr:T1AT470  a          :Topic ;
-        rdfs:comment        "mind or heart sadhana practice" ;
+        rdfs:comment        "mind or heart sadhana practice"@en ;
         skos:prefLabel      "thugs sgrub/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTC6F669FE780607D1 .

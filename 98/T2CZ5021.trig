@@ -30,7 +30,7 @@ bdg:T2CZ5021 {
         adm:status          bda:StatusReleased .
     
     bdr:T2CZ5021  a         :Topic ;
-        rdfs:comment        "country which combines religious and secular" ;
+        rdfs:comment        "country which combines religious and secular"@en ;
         skos:altLabel       "lugs gnyis/"@bo-x-ewts , "religious and secular/ political/"@bo-x-ewts ;
         skos:prefLabel      "chos srid/"@bo-x-ewts ;
         :isRoot             true .

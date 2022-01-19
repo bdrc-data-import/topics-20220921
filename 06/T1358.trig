@@ -40,7 +40,7 @@ bdg:T1358 {
         adm:status          bda:StatusReleased .
     
     bdr:T1358  a            :Topic ;
-        rdfs:comment        "རྗེ་ཙོང་ཁ་པས་ངེས་འབྱུང་དང་བྱང་སེམས།_སྟོང་ཉིད་ཀྱི་ལྟ་བ་བཅས་གསུམ་ནི་ལམ་གྱི་གཙོ་བོར་གསུངས་པ་དེའོ།།" ;
+        rdfs:comment        "རྗེ་ཙོང་ཁ་པས་ངེས་འབྱུང་དང་བྱང་སེམས།_སྟོང་ཉིད་ཀྱི་ལྟ་བ་བཅས་གསུམ་ནི་ལམ་གྱི་གཙོ་བོར་གསུངས་པ་དེའོ།།"@bo ;
         skos:altLabel       "lam gtso gsum/"@bo-x-ewts , "lam gtso rnam gsum/"@bo-x-ewts , "lam gyi gtso bo rnam gsum/"@bo-x-ewts ;
         skos:prefLabel      "lam gyi gnad gsum/"@bo-x-ewts , "Three Main Points of the Path"@en ;
         :isRoot             true .

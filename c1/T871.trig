@@ -46,7 +46,7 @@ bdg:T871 {
         adm:status          bda:StatusReleased .
     
     bdr:T871  a             :Topic ;
-        skos:altLabel       "mi bskyod pa/"@bo-x-ewts , "akshobhya"@en-x-mixed , "阿閦佛"@zh-hans , "阿閦比佛"@zh-hans , "不動佛"@zh-hant ;
-        skos:prefLabel      "mi 'khrugs pa/"@bo-x-ewts , "aksobhya"@en-x-mixed , "अक्षोभ्य"@sa-x-iast , "不动佛"@zh-hans ;
+        skos:altLabel       "mi bskyod pa/"@bo-x-ewts , "aksobhya"@bo-x-phon-en , "akshobhya"@bo-x-phon-en-m-tbrc , "阿閦佛"@zh-hans , "阿閦比佛"@zh-hans , "不動佛"@zh-hant ;
+        skos:prefLabel      "mi 'khrugs pa/"@bo-x-ewts , "अक्षोभ्य"@sa-x-iast , "不动佛"@zh-hans ;
         :isRoot             true .
 }

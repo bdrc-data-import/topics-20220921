@@ -47,7 +47,7 @@ bdg:T514 {
         :noteText           "descriptive outline/summary added to a text"@en .
     
     bdr:T514  a             :Topic ;
-        rdfs:comment        "general summary" ;
+        rdfs:comment        "general summary"@en ;
         skos:prefLabel      "spyi chings/"@bo-x-ewts , "descriptive outline"@en , "总纲"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NT5A348627A3D7B0A8 .

@@ -30,7 +30,7 @@ bdg:T2MS9698 {
         adm:status          bda:StatusReleased .
     
     bdr:T2MS9698  a         :Topic ;
-        rdfs:comment        "vajrakilaya according to the byang gter (northern treasure) tradition" ;
+        rdfs:comment        "vajrakilaya according to the byang gter (northern treasure) tradition"@en ;
         skos:prefLabel      "rdo rje phur pa (byang gter lugs)"@bo-x-ewts ;
         :isRoot             true .
 }

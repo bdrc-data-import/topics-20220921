@@ -40,7 +40,7 @@ bdg:T2343 {
         adm:status          bda:StatusReleased .
     
     bdr:T2343  a            :Topic ;
-        rdfs:comment        "Prasangika, \"consequentialist / -ism\", the \"consequentialist\" system of Madhyamika, founded by Buddhapaalita and disseminated by Chandrakirti, a Consequentialist, a Madhyamika who mainly states refutations of an opponents assertion of any of the four extremes through the expression of a correct contradictory consequence, consequence school." ;
+        rdfs:comment        "Prasangika, \"consequentialist / -ism\", the \"consequentialist\" system of Madhyamika, founded by Buddhapaalita and disseminated by Chandrakirti, a Consequentialist, a Madhyamika who mainly states refutations of an opponents assertion of any of the four extremes through the expression of a correct contradictory consequence, consequence school."@en ;
         skos:altLabel       "dbu ma thal 'gyur pa/"@bo-x-ewts ;
         skos:prefLabel      "thal 'gyur pa/"@bo-x-ewts , "consequentialist"@en , "Prasangika"@sa-x-ndia , "应成派"@zh-hans ;
         :isRoot             true .

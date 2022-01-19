@@ -33,7 +33,7 @@ bdg:T4CZ368307 {
         :noteText           "Tibetan art of storytelling"@en .
     
     bdr:T4CZ368307  a       :Topic ;
-        rdfs:comment        "Lama Mani or Mani Lochens are wandering Buddhist storytellers, who tell stories based on ethical codes of conduct, explain moral concept of karma and encourage compassion for all living beings." ;
+        rdfs:comment        "Lama Mani or Mani Lochens are wandering Buddhist storytellers, who tell stories based on ethical codes of conduct, explain moral concept of karma and encourage compassion for all living beings."@en ;
         skos:altLabel       "ma Ni lo chen/"@bo-x-ewts ;
         skos:prefLabel      "bla ma ma Ni/"@bo-x-ewts ;
         :isRoot             true ;

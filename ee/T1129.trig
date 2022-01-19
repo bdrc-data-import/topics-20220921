@@ -76,7 +76,7 @@ bdg:T1129 {
         adm:status          bda:StatusReleased .
     
     bdr:T1129  a            :Topic ;
-        rdfs:comment        "about both Kanjur and Tenjur canonical works." , "bka' 'gyur dang bstan 'gyur gnyis ka'i skor te/ dkar chag sogs 'brel yod rtsom rigs bzhugs pa'i sde tshan zhig" ;
+        rdfs:comment        "bka' 'gyur dang bstan 'gyur gnyis ka'i skor te/ dkar chag sogs 'brel yod rtsom rigs bzhugs pa'i sde tshan zhig"@bo-x-ewts , "about both Kanjur and Tenjur canonical works."@en ;
         rdfs:seeAlso        bdr:T2423 , bdr:T3CN2023 ;
         skos:altLabel       "bka' bstan 'gyur skor/"@bo-x-ewts , "about canonical works"@en , "有关甘珠尔和丹珠尔"@zh-hans ;
         skos:prefLabel      "bka' bstan skor/"@bo-x-ewts , "about kanjur and tenjur"@en , "有关藏文大藏经"@zh-hans ;

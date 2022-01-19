@@ -51,7 +51,7 @@ bdg:T381 {
         adm:status          bda:StatusReleased .
     
     bdr:T381  a             :Topic ;
-        rdfs:comment        "philosophical position" ;
+        rdfs:comment        "philosophical position"@en ;
         rdfs:seeAlso        bdr:T1335 , bdr:T385 , bdr:T395 ;
         skos:prefLabel      "lta ba/"@bo-x-ewts , "view"@en , "见地"@zh-hans ;
         :isRoot             true .

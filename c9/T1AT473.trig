@@ -33,7 +33,7 @@ bdg:T1AT473 {
         :noteText           "mind/heart sadhana of the peaceful and fierceful deities"@en .
     
     bdr:T1AT473  a          :Topic ;
-        rdfs:comment        "mind/heart sadhana of the peaceful and fierceful deities" ;
+        rdfs:comment        "mind/heart sadhana of the peaceful and fierceful deities"@en ;
         skos:prefLabel      "zhi khro'i thugs sgrub/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT1EB38766B9E8B32C .

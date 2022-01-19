@@ -52,7 +52,7 @@ bdg:T2002 {
         adm:status          bda:StatusReleased .
     
     bdr:T2002  a            :Topic ;
-        rdfs:comment        "mdo sngags kyi zlas dbye ba'i mdo la go ste/ mdo lugs sam mdo phyogs yang zer bar snang /" ;
+        rdfs:comment        "mdo sngags kyi zlas dbye ba'i mdo la go ste/ mdo lugs sam mdo phyogs yang zer bar snang /"@bo-x-ewts ;
         skos:altLabel       "mdo/"@bo-x-ewts , "mdo lugs/"@bo-x-ewts ;
         skos:prefLabel      "mdo phyogs/"@bo-x-ewts , "Sutra Tradition"@en ;
         :isRoot             true .

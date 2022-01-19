@@ -41,7 +41,7 @@ bdg:T3JT5431 {
         adm:status          bda:StatusReleased .
     
     bdr:T3JT5431  a         :Topic ;
-        rdfs:comment        "red fire offering ritual or burning of meat edibles" ;
+        rdfs:comment        "red fire offering ritual or burning of meat edibles"@en ;
         skos:prefLabel      "dmar gsur/"@bo-x-ewts ;
         :isRoot             true .
 }

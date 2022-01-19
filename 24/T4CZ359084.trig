@@ -30,7 +30,7 @@ bdg:T4CZ359084 {
         adm:status          bda:StatusReleased .
     
     bdr:T4CZ359084  a       :Topic ;
-        rdfs:comment        "one of the three \"inner\" offerings" ;
+        rdfs:comment        "one of the three \"inner\" offerings"@en ;
         skos:prefLabel      "nang mchod/"@bo-x-ewts , "rakta"@sa-x-ndia ;
         :isRoot             true .
 }

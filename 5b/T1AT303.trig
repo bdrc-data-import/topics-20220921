@@ -33,7 +33,7 @@ bdg:T1AT303 {
         :noteText           "performed Buddhist dances"@en .
     
     bdr:T1AT303  a          :Topic ;
-        rdfs:comment        "performed Buddhist dances" ;
+        rdfs:comment        "performed Buddhist dances"@en ;
         skos:prefLabel      "chos bro/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT6FB4C03520FEEE2E .

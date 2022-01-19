@@ -52,9 +52,9 @@ bdg:T2423 {
         adm:status          bda:StatusReleased .
     
     bdr:T2423  a            :Topic ;
-        rdfs:comment        "bde bar gshegs pa'i bka' 'gyur ro cog" , "Kanjur Canonical Text" ;
+        rdfs:comment        "bde bar gshegs pa'i bka' 'gyur ro cog"@bo-x-ewts , "Kanjur Canonical Text"@en ;
         rdfs:seeAlso        bdr:T1129 ;
-        skos:altLabel       "bka' 'gyur ro 'tshal/"@bo-x-ewts , "rgyal ba'i bka' 'gyur ro cog"@bo-x-ewts , "Kanjur"@en-x-mixed , "甘珠尔大藏经"@zh-hans , "gan zhu er"@zh-latn-pinyin-x-ndia , "gan zhu er da zang jing"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bka' 'gyur/"@bo-x-ewts , "Kagyur"@en-x-mixed , "甘珠尔"@zh-hans ;
+        skos:altLabel       "bka' 'gyur ro 'tshal/"@bo-x-ewts , "rgyal ba'i bka' 'gyur ro cog"@bo-x-ewts , "Kanjur"@bo-x-phon-en , "Kagyur"@bo-x-phon-en-m-tbrc , "甘珠尔大藏经"@zh-hans , "gan zhu er"@zh-latn-pinyin-x-ndia , "gan zhu er da zang jing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bka' 'gyur/"@bo-x-ewts , "甘珠尔"@zh-hans ;
         :isRoot             true .
 }

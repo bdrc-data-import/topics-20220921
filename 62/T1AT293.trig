@@ -33,7 +33,7 @@ bdg:T1AT293 {
         :noteText           "treasure protector of the tsan class"@en .
     
     bdr:T1AT293  a          :Topic ;
-        rdfs:comment        "treasure protector of the tsan class" ;
+        rdfs:comment        "treasure protector of the tsan class"@en ;
         skos:altLabel       "sku khyams brag btsan/"@bo-x-ewts , "zab gter srung ma sku khyams brag btsan/"@bo-x-ewts ;
         skos:prefLabel      "sku khyams/"@bo-x-ewts ;
         :isRoot             true ;

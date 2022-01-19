@@ -33,7 +33,7 @@ bdg:T1AT297 {
         :noteText           "protective guardian of Sikkim"@en .
     
     bdr:T1AT297  a          :Topic ;
-        rdfs:comment        "protective guardian of Sikkim" ;
+        rdfs:comment        "protective guardian of Sikkim"@en ;
         skos:altLabel       "mdzod lnga stag rtse/"@bo-x-ewts ;
         skos:prefLabel      "bka' srung mdzod lnga stag rtse/"@bo-x-ewts ;
         :isRoot             true ;

@@ -34,7 +34,7 @@ bdg:T1353 {
         adm:status          bda:StatusReleased .
     
     bdr:T1353  a            :Topic ;
-        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha" ;
+        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha"@en ;
         skos:altLabel       "bde ba can gyi zhing khams/"@bo-x-ewts , "bde can zhing /"@bo-x-ewts , "bde chen zhing /"@bo-x-ewts , "bde ldan zhing /"@bo-x-ewts ;
         skos:prefLabel      "bde ba can/"@bo-x-ewts , "paradise of amitabha"@en , "sukhavati"@sa-alalc97 , "极乐净土"@zh-hans ;
         :isRoot             true .

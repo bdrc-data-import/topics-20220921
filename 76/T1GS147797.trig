@@ -45,7 +45,7 @@ bdg:T1GS147797 {
         :noteText           "under this topic are classified works focussing upon the meditation and invocation of gurus such as tsong kha pa"@en .
     
     bdr:T1GS147797  a       :Topic ;
-        rdfs:comment        "meditation and invocation" ;
+        rdfs:comment        "meditation and invocation"@en ;
         skos:prefLabel      "bsgom bzlas/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT055255B8A1ECA203 .

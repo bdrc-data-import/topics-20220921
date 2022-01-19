@@ -33,7 +33,7 @@ bdg:T1AT454 {
         :noteText           "Hayagriva (rta mgrin) and Vajrayogini (rdo rje phag mo)"@en .
     
     bdr:T1AT454  a          :Topic ;
-        rdfs:comment        "Hayagriva (rta mgrin) and Vajrayogini (rdo rje phag mo)" ;
+        rdfs:comment        "Hayagriva (rta mgrin) and Vajrayogini (rdo rje phag mo)"@en ;
         skos:prefLabel      "rta phag"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTBAFCB078BB273B48 .

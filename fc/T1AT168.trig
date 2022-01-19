@@ -82,7 +82,7 @@ bdg:T1AT168 {
         :noteText           "name tablet burning ritual for the dead"@en .
     
     bdr:T1AT168  a          :Topic ;
-        rdfs:comment        "death/funerary ritual" ;
+        rdfs:comment        "death/funerary ritual"@en ;
         skos:altLabel       "byang bsregs/"@bo-x-ewts ;
         skos:prefLabel      "byang sregs/"@bo-x-ewts , "name burning"@en ;
         :isRoot             true ;

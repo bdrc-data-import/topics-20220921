@@ -34,7 +34,7 @@ bdg:T1871 {
         adm:status          bda:StatusReleased .
     
     bdr:T1871  a            :Topic ;
-        rdfs:comment        "བྱ་རྒྱུད། Kriya; སྤྱོད་རྒྱུད། Charya tantra; རྣལ་འབྱོར་རྒྱུད། yoga tantra; རྣལ་འབྱོར་བླ་མེད་རྒྱུད། Anuttara Yoga tantra." ;
+        rdfs:comment        "བྱ་རྒྱུད། Kriya; སྤྱོད་རྒྱུད། Charya tantra; རྣལ་འབྱོར་རྒྱུད། yoga tantra; རྣལ་འབྱོར་བླ་མེད་རྒྱུད། Anuttara Yoga tantra."@en ;
         skos:altLabel       "four sections of tantra"@en ;
         skos:prefLabel      "rgyud sde bzhi/"@bo-x-ewts , "four classes of tantra"@en , "四部密续"@zh-hans ;
         :isRoot             true .

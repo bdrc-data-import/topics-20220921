@@ -50,7 +50,7 @@ bdg:T1AT304 {
         :noteText           "withdrawn in favor of T847"@en .
     
     bdr:T1AT304  a          :Topic ;
-        rdfs:comment        "reppeling ritual against annoyances, dissolutness, and/or irritation" ;
+        rdfs:comment        "reppeling ritual against annoyances, dissolutness, and/or irritation"@en ;
         skos:altLabel       "bsun zlog"@bo-x-ewts ;
         skos:prefLabel      "bsun bzlog"@bo-x-ewts ;
         :isRoot             true ;

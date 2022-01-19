@@ -38,7 +38,7 @@ bdg:T1AT301 {
         :noteText           "ritual chants and music"@en .
     
     bdr:T1AT301  a          :Topic ;
-        rdfs:comment        "ritual chants and music" ;
+        rdfs:comment        "ritual chants and music"@en ;
         rdfs:seeAlso        bdr:T1232 ;
         skos:prefLabel      "dbyangs rol/"@bo-x-ewts ;
         :isRoot             true ;

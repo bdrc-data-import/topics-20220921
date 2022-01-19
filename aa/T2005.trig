@@ -46,7 +46,7 @@ bdg:T2005 {
         adm:status          bda:StatusReleased .
     
     bdr:T2005  a            :Topic ;
-        rdfs:comment        "'dir \"sher phyin \"zhes pa'ng \"sher phyin gyi mdo\" la go zhing / brjod don sher phyin gyi mdo dang 'brel yang gzhung chen gyi skor yin na don tshan gzhan \"phar phyin\" gyi nang du gzigs par 'tshal/ de yang sher phyin gyi mdo yin na mngon rtogs rgyan gyi bshad bya rtsa ba'i mdo yin pas ma khyab/ des na rgyan yang phar phyin gyi gzhung khongs su bzhag nas \"mdo\" dang \"gzhung \" gnyis sde tshan so sor phye ba'o/" ;
+        rdfs:comment        "'dir \"sher phyin \"zhes pa'ng \"sher phyin gyi mdo\" la go zhing / brjod don sher phyin gyi mdo dang 'brel yang gzhung chen gyi skor yin na don tshan gzhan \"phar phyin\" gyi nang du gzigs par 'tshal/ de yang sher phyin gyi mdo yin na mngon rtogs rgyan gyi bshad bya rtsa ba'i mdo yin pas ma khyab/ des na rgyan yang phar phyin gyi gzhung khongs su bzhag nas \"mdo\" dang \"gzhung \" gnyis sde tshan so sor phye ba'o"@bo-x-ewts ;
         rdfs:seeAlso        bdr:T36 ;
         skos:altLabel       "sher phyin gyi mdo/"@bo-x-ewts , "般若波罗蜜多经"@zh-hans ;
         skos:prefLabel      "sher phyin/"@bo-x-ewts , "prajnaparamita sutra"@en , "prajñāpāramitā"@sa-x-ndia , "般若波羅蜜多"@zh-hant ;

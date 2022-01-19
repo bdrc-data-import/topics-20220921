@@ -52,7 +52,7 @@ bdg:T00JR990 {
         :noteText           "acknowledges another version of the khrid chen bcu gsum in which the man ngag lta phreng and dkon mchog spyi 'dus are replaced with the khol ri byang chub rgyal mtshan gyi ka dag klong yangs and stong chung bkra shis rgya mtsho'i phyag chen khrid.  the standard enumeration is preferable because the former is similar to the dgongs pa zang thal and the latter is a summary of the phyag chen man ngag rgya mtsho"@en .
     
     bdr:T00JR990  a         :Topic ;
-        rdfs:comment        "a collection of contemplative instructions composed over the ages by kaH thog masters and compiled by dge rtse 03 'gyur med rnam rgyal (1886-1952)" ;
+        rdfs:comment        "a collection of contemplative instructions composed over the ages by kaH thog masters and compiled by dge rtse 03 'gyur med rnam rgyal (1886-1952)"@en ;
         skos:altLabel       "kaH thog snyan brgyud khrid chen bcu gsum/"@bo-x-ewts ;
         skos:prefLabel      "kaH thog khrid chen bcu gsum/"@bo-x-ewts ;
         :isRoot             true ;

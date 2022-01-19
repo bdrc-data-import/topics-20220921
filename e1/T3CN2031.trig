@@ -36,7 +36,7 @@ bdg:T3CN2031 {
         adm:status          bda:StatusReleased .
     
     bdr:T3CN2031  a         :Topic ;
-        rdfs:comment        "One of the two main Hinayana schools of philosophy. School of Buddhist philosophy based on the Abhidharma teachings compiled in the Mahavidhasa." ;
+        rdfs:comment        "One of the two main Hinayana schools of philosophy. School of Buddhist philosophy based on the Abhidharma teachings compiled in the Mahavidhasa."@en ;
         skos:altLabel       "bye smra/"@bo-x-ewts ;
         skos:prefLabel      "bye brag smra ba/"@bo-x-ewts , "Vaibhashika school"@en , "Vaibhashika"@sa-x-ndia , "毘婆沙部｜有部"@zh-hans ;
         :isRoot             true .

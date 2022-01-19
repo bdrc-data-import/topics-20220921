@@ -33,7 +33,7 @@ bdg:T1AT292 {
         :noteText           "local guardian of Mount Merchen (dza ri mer chen) in Nangchen"@en .
     
     bdr:T1AT292  a          :Topic ;
-        rdfs:comment        "local guardian of Mount Merchen (dza ri mer chen) in Nangchen" ;
+        rdfs:comment        "local guardian of Mount Merchen (dza ri mer chen) in Nangchen"@en ;
         skos:altLabel       "gnas bdag rdo rje 'od dkar/"@bo-x-ewts , "gnas srung rdo rje 'od dkar/"@bo-x-ewts ;
         skos:prefLabel      "mer chen gnas srung rdo rje 'od dkar/"@bo-x-ewts ;
         :isRoot             true ;

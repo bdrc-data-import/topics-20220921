@@ -33,7 +33,7 @@ bdg:T1AT302 {
         :noteText           "the four visions or four visionary appearances in the Great Perfection (chos nyid mngon sum gi snang ba; nyams gong 'phel ba'i snang ba; rig pa tshad phebs kyi snang ba; and chos nyid du 'dzin pa zad pa'i snang ba)."@en .
     
     bdr:T1AT302  a          :Topic ;
-        rdfs:comment        "the four visions or four visionary appearances in the Great Perfection (chos nyid mngon sum gi snang ba; nyams gong 'phel ba'i snang ba; rig pa tshad phebs kyi snang ba; and chos nyid du 'dzin pa zad pa'i snang ba)." ;
+        rdfs:comment        "the four visions or four visionary appearances in the Great Perfection (chos nyid mngon sum gi snang ba; nyams gong 'phel ba'i snang ba; rig pa tshad phebs kyi snang ba; and chos nyid du 'dzin pa zad pa'i snang ba)."@en ;
         skos:altLabel       "snang ba bzhi/"@bo-x-ewts ;
         skos:prefLabel      "snang bzhi/"@bo-x-ewts ;
         :isRoot             true ;

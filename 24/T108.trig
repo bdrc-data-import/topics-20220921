@@ -40,7 +40,7 @@ bdg:T108 {
         adm:status          bda:StatusReleased .
     
     bdr:T108  a             :Topic ;
-        rdfs:comment        "32 major and 80 minor marks or characteristics." , "mtshan bzang so gnyis dang dpe byad brgyad cu/" , "三十二种相及八十二种好" ;
+        rdfs:comment        "mtshan bzang so gnyis dang dpe byad brgyad cu/"@bo-x-ewts , "32 major and 80 minor marks or characteristics."@en , "三十二种相及八十二种好"@zh-hans ;
         skos:altLabel       "mtshan dang dpe byad/"@bo-x-ewts ;
         skos:prefLabel      "mtshan dpe/"@bo-x-ewts , "major and minor marks"@en , "如来相好"@zh-hans ;
         :isRoot             true .

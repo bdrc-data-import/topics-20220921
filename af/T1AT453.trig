@@ -33,7 +33,7 @@ bdg:T1AT453 {
         :noteText           "the five principles or doctrines of Buddhism [name (ming; nama),  causal characteristics (rgyu mtshan, nimitta), thoughts (rnam rtog, vikalpa), the pristine cognition of the pure expanse (dbyings dag pa'i ye shes, samyag jnana), and the absolute (yongs grub, tathata)]."@en .
     
     bdr:T1AT453  a          :Topic ;
-        rdfs:comment        "the five principles or doctrines of Buddhism [name (ming; nama), causal characteristics (rgyu mtshan, nimitta), thoughts (rnam rtog, vikalpa), the pristine cognition of the pure expanse (dbyings dag pa'i ye shes, samyag jnana), and the absolute (yongs grub, tathata)]." ;
+        rdfs:comment        "the five principles or doctrines of Buddhism [name (ming; nama), causal characteristics (rgyu mtshan, nimitta), thoughts (rnam rtog, vikalpa), the pristine cognition of the pure expanse (dbyings dag pa'i ye shes, samyag jnana), and the absolute (yongs grub, tathata)]."@en ;
         skos:altLabel       "sangs rgyas chos lnga /"@bo-x-ewts ;
         skos:prefLabel      "chos lnga /"@bo-x-ewts ;
         :isRoot             true ;

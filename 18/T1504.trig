@@ -40,7 +40,7 @@ bdg:T1504 {
         adm:status          bda:StatusReleased .
     
     bdr:T1504  a            :Topic ;
-        rdfs:comment        "1) four sakya oral instructions on freedom from attachment; 2) mind training free from the four attachments" ;
+        rdfs:comment        "1) four sakya oral instructions on freedom from attachment; 2) mind training free from the four attachments"@en ;
         skos:prefLabel      "zhen pa bzhi bral/"@bo-x-ewts , "free from the four attachments"@en , "远离四种执着"@zh-hans ;
         :isRoot             true .
 }

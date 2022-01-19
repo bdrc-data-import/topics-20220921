@@ -33,7 +33,7 @@ bdg:T1AT289 {
         :noteText           "one of the deities of the dge bsnyen (upasaka) class"@en .
     
     bdr:T1AT289  a          :Topic ;
-        rdfs:comment        "one of the deities of the dge bsnyen (upasaka) class" ;
+        rdfs:comment        "one of the deities of the dge bsnyen (upasaka) class"@en ;
         skos:altLabel       "ston rgyal/"@bo-x-ewts , "ston rgyal dkar po/"@bo-x-ewts ;
         skos:prefLabel      "dge bsnyen ston rgyal dkar po/"@bo-x-ewts ;
         :isRoot             true ;

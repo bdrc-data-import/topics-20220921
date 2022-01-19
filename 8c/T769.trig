@@ -40,7 +40,7 @@ bdg:T769 {
         adm:status          bda:StatusReleased .
     
     bdr:T769  a             :Topic ;
-        rdfs:comment        "sde snod gsum gyi nang nas mdo sde la'o/" ;
+        rdfs:comment        "sde snod gsum gyi nang nas mdo sde la'o"@bo-x-ewts ;
         skos:altLabel       "mdo sde/"@bo-x-ewts ;
         skos:prefLabel      "mdo/"@bo-x-ewts , "sutra"@sa-alalc97 , "经"@zh-hans ;
         :isRoot             true .

@@ -36,7 +36,7 @@ bdg:T3CN2024 {
         adm:status          bda:StatusReleased .
     
     bdr:T3CN2024  a         :Topic ;
-        rdfs:comment        "sūtrapiṭaka མདོ་སྡེའི་སྡེ་སྣོད། 經藏 vinayapiṭaka འདུལ་བའི་སྡེ་སྣོད། 律藏 abhidharmapiṭaka མངོན་པའི་སྡེ་སྣོད། 論藏" ;
+        rdfs:comment        "sūtrapiṭaka མདོ་སྡེའི་སྡེ་སྣོད། 經藏 vinayapiṭaka འདུལ་བའི་སྡེ་སྣོད། 律藏 abhidharmapiṭaka མངོན་པའི་སྡེ་སྣོད། 論藏"@en ;
         skos:prefLabel      "sde snod gsum/"@bo-x-ewts , "tripiṭaka"@sa-x-ndia , "三藏"@zh-hans ;
         :isRoot             true .
 }

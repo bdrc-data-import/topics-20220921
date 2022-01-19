@@ -33,7 +33,7 @@ bdg:T1AT414 {
         :noteText           "method or formula to request the reception of accomplishments (siddhi)"@en .
     
     bdr:T1AT414  a          :Topic ;
-        rdfs:comment        "method or formula to request the reception of accomplishments (siddhi)" ;
+        rdfs:comment        "method or formula to request the reception of accomplishments (siddhi)"@en ;
         skos:prefLabel      "dngos grub blang ba/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT223C29B4B45351A4 .

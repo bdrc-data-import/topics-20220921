@@ -33,7 +33,7 @@ bdg:T1AT471 {
         :noteText           "ritual of self-liberation through the cleansing of evil deeds and defilments"@en .
     
     bdr:T1AT471  a          :Topic ;
-        rdfs:comment        "ritual of self-liberation through the cleansing of evil deeds and defilments" ;
+        rdfs:comment        "ritual of self-liberation through the cleansing of evil deeds and defilments"@en ;
         skos:prefLabel      "sdig sgrib rang grol/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT00286F8A9EEB6344 .

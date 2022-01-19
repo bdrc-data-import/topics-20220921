@@ -30,7 +30,7 @@ bdg:T4CZ363957 {
         adm:status          bda:StatusReleased .
     
     bdr:T4CZ363957  a       :Topic ;
-        rdfs:comment        "arrangement of the recitative for the ritual temporary displacement of different entities from their old dwelling supports, for restoration purposes" ;
+        rdfs:comment        "arrangement of the recitative for the ritual temporary displacement of different entities from their old dwelling supports, for restoration purposes"@en ;
         skos:altLabel       "arga'i cho ga"@bo-x-ewts ;
         skos:prefLabel      "arga"@bo-x-ewts ;
         :isRoot             true .

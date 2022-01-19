@@ -33,7 +33,7 @@ bdg:T1AT307 {
         :noteText           "ritual for the purification of one's qualities"@en .
     
     bdr:T1AT307  a          :Topic ;
-        rdfs:comment        "ritual for the purification of one's qualities" ;
+        rdfs:comment        "ritual for the purification of one's qualities"@en ;
         skos:altLabel       "yon tan sbyong ba/"@bo-x-ewts ;
         skos:prefLabel      "yon sbyong /"@bo-x-ewts ;
         :isRoot             true ;

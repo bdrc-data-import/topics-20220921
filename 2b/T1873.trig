@@ -34,7 +34,7 @@ bdg:T1873 {
         adm:status          bda:StatusReleased .
     
     bdr:T1873  a            :Topic ;
-        rdfs:comment        "Three yanas/ spiritual approaches/ vehicles; 1) {nyan thos kyi theg pa} vehicle of listeners. {rang sangs rgyas kyi theg pa} vehicle of lone-learners. {theg pa chen po} vehicle of altruistic saints. Three Vehicles. three causal vehicles of the pious attendants, self-centered buddhas, and bodhisattvas. 2) To the vehicle of directing the cause of suffering {kun 'byung 'dren pa} the vehicle of austere awareness {dka' thub rig} and the vehicle of overpowering means {dbang bsgyur thabs kyi theg pa} 3) Three vehicles. Hinayana, Mahayana and Vajrayana" , "ཐེག་པ་གསུམ་ལ་གོ་ཚུལ་མི་འདྲ་བ་གསུམ་ཙམ་མཆིས་པ་གཤམ་གསལ་ལྟར།" ;
+        rdfs:comment        "ཐེག་པ་གསུམ་ལ་གོ་ཚུལ་མི་འདྲ་བ་གསུམ་ཙམ་མཆིས་པ་གཤམ་གསལ་ལྟར།"@bo , "Three yanas/ spiritual approaches/ vehicles; 1) {nyan thos kyi theg pa} vehicle of listeners. {rang sangs rgyas kyi theg pa} vehicle of lone-learners. {theg pa chen po} vehicle of altruistic saints. Three Vehicles. three causal vehicles of the pious attendants, self-centered buddhas, and bodhisattvas. 2) To the vehicle of directing the cause of suffering {kun 'byung 'dren pa} the vehicle of austere awareness {dka' thub rig} and the vehicle of overpowering means {dbang bsgyur thabs kyi theg pa} 3) Three vehicles. Hinayana, Mahayana and Vajrayana"@en ;
         skos:altLabel       "theg gsum/"@bo-x-ewts , "Triyana"@sa-x-ndia ;
         skos:prefLabel      "theg pa gsum/"@bo-x-ewts , "The three yanas/ vehicles"@en , "triyāna"@sa-x-ndia , "三乘"@zh-hans ;
         :isRoot             true .

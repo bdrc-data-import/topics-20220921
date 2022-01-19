@@ -48,7 +48,7 @@ bdg:T3CN2033 {
         adm:status          bda:StatusReleased .
     
     bdr:T3CN2033  a         :Topic ;
-        rdfs:comment        "The six transcendent actions of generosity {sbyin pa}, discipline {tshul khrims}, patience {bzod pa}, diligence {bsam gtan}, concentration {bsam gtan}, and discriminating knowledge {she srab}." ;
+        rdfs:comment        "The six transcendent actions of generosity {sbyin pa}, discipline {tshul khrims}, patience {bzod pa}, diligence {bsam gtan}, concentration {bsam gtan}, and discriminating knowledge {she srab}."@en ;
         rdfs:seeAlso        bdr:T1722 , bdr:T1988 , bdr:T4CZ16839 ;
         skos:altLabel       "pha rol tu phyin pa drug"@bo-x-ewts , "phyin drug"@bo-x-ewts ;
         skos:prefLabel      "phar phyin drug"@bo-x-ewts , "six paramitas"@en , "六度"@zh-hans ;

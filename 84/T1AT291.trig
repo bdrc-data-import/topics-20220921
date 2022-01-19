@@ -62,7 +62,7 @@ bdg:T1AT291 {
         :noteText           "life mantra"@en .
     
     bdr:T1AT291  a          :Topic ;
-        rdfs:comment        "life mantra" ;
+        rdfs:comment        "life mantra"@en ;
         rdfs:seeAlso        bdr:T1116 ;
         skos:prefLabel      "srog sngags/"@bo-x-ewts ;
         :isRoot             true ;

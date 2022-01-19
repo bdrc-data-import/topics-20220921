@@ -45,7 +45,7 @@ bdg:T1AT452 {
         :noteText           "secret empowerment"@en .
     
     bdr:T1AT452  a          :Topic ;
-        rdfs:comment        "secret empowerment" ;
+        rdfs:comment        "secret empowerment"@en ;
         rdfs:seeAlso        bdr:T10MS14317 , bdr:T48 ;
         skos:prefLabel      "gsang dbang /"@bo-x-ewts ;
         :isRoot             true ;

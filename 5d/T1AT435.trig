@@ -33,7 +33,7 @@ bdg:T1AT435 {
         :noteText           "the protective deities of Vajrayana"@en .
     
     bdr:T1AT435  a          :Topic ;
-        rdfs:comment        "the protective deities of Vajrayana" ;
+        rdfs:comment        "the protective deities of Vajrayana"@en ;
         skos:altLabel       "sngags kyi srung ma/"@bo-x-ewts ;
         skos:prefLabel      "sngags srung /"@bo-x-ewts ;
         :isRoot             true ;

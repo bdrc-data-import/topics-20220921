@@ -42,7 +42,7 @@ bdg:T1AT287 {
         :noteText           "fierceful manifestation of Hayagriva"@en .
     
     bdr:T1AT287  a          :Topic ;
-        rdfs:comment        "fierceful manifestation of Hayagriva" ;
+        rdfs:comment        "fierceful manifestation of Hayagriva"@en ;
         skos:altLabel       "yang gsang rta mgrin rdo rje me char/"@bo-x-ewts ;
         skos:prefLabel      "rta mgrin rdo rje me char/"@bo-x-ewts ;
         :isRoot             true ;

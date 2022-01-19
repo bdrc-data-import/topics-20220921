@@ -50,7 +50,7 @@ bdg:T1AT472 {
         :noteText           "withdrawn in favor of T479"@en .
     
     bdr:T1AT472  a          :Topic ;
-        rdfs:comment        "lamp aspiration prayer" ;
+        rdfs:comment        "lamp aspiration prayer"@en ;
         skos:prefLabel      "mar me smon lam/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT5E35576167642B53 , bdr:NT7F9A3C78FE308B4B .

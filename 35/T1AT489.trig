@@ -43,7 +43,7 @@ bdg:T1AT489 {
         :noteText           "king of subduers; epithet of buddha sakyamuni"@en .
     
     bdr:T1AT489  a          :Topic ;
-        rdfs:comment        "king of subduers; epithet of buddha sakyamuni" ;
+        rdfs:comment        "king of subduers; epithet of buddha sakyamuni"@en ;
         skos:altLabel       "ston pa bcom ldan 'das shAkya thub pa/"@bo-x-ewts , "thub dbang /"@bo-x-ewts ;
         skos:prefLabel      "shAkya thub pa/"@bo-x-ewts , "Gautama Buddha"@en , "shakyamuni"@sa-x-ndia , "释迦牟尼佛"@zh-hans ;
         :isRoot             true ;

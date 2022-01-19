@@ -34,7 +34,7 @@ bdg:T1356 {
         adm:status          bda:StatusReleased .
     
     bdr:T1356  a            :Topic ;
-        rdfs:comment        "the indivisibility of samsara and nirvana. The main view in the Sakya School" ;
+        rdfs:comment        "the indivisibility of samsara and nirvana. The main view in the Sakya School"@en ;
         skos:altLabel       "'khor 'das/"@bo-x-ewts , "'khor 'das mnyam nyid/"@bo-x-ewts ;
         skos:prefLabel      "'khor 'das dbyer med/"@bo-x-ewts , "inseparable samsara and nirvana"@en , "轮涅无别"@zh-hans ;
         :isRoot             true .

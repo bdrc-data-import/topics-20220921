@@ -52,7 +52,7 @@ bdg:T385 {
         adm:status          bda:StatusReleased .
     
     bdr:T385  a             :Topic ;
-        rdfs:comment        "The four Buddhist schools of thought are: Vaibhashika, Sautrantika, Chittamatra, and Madhyamika. The former two are Hinayana and the latter two Mahayana." ;
+        rdfs:comment        "The four Buddhist schools of thought are: Vaibhashika, Sautrantika, Chittamatra, and Madhyamika. The former two are Hinayana and the latter two Mahayana."@en ;
         rdfs:seeAlso        bdr:T2055 , bdr:T233 ;
         skos:altLabel       "lta grub/"@bo-x-ewts , "views and tenets"@en ;
         skos:prefLabel      "grub mtha'"@bo-x-ewts , "philosophical schools"@en , "siddhanta"@sa-alalc97 , "宗派"@zh-hans ;

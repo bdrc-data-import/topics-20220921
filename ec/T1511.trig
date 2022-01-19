@@ -40,7 +40,7 @@ bdg:T1511 {
         adm:status          bda:StatusReleased .
     
     bdr:T1511  a            :Topic ;
-        rdfs:comment        "relaxing in the natural state of the mind" ;
+        rdfs:comment        "relaxing in the natural state of the mind"@en ;
         skos:prefLabel      "sems nyid ngal gso/"@bo-x-ewts , "aking ease in mind itself"@en , "心性休息"@zh-hans ;
         :isRoot             true .
 }

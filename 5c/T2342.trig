@@ -46,7 +46,7 @@ bdg:T2342 {
         adm:status          bda:StatusReleased .
     
     bdr:T2342  a            :Topic ;
-        rdfs:comment        "Branch of the Madhyamika, distinguished by use of conventional forms of philosophical reasoning." ;
+        rdfs:comment        "Branch of the Madhyamika, distinguished by use of conventional forms of philosophical reasoning."@en ;
         skos:altLabel       "dbu ma rang rgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rang rgyud pa/"@bo-x-ewts , "Svatantrika"@sa-alalc97 , "自续派"@zh-hans ;
         :isRoot             true .

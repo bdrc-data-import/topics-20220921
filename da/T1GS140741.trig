@@ -44,7 +44,7 @@ bdg:T1GS140741 {
         :noteText           "these three treatises are located in vols. 68 and 69 of the kaH thog collection of the bka' ma shin tu rgyas pa (W25983)"@en .
     
     bdr:T1GS140741  a       :Topic ;
-        rdfs:comment        "three works of klong chen rab 'byams pa commenting on the guhyagarbha tantra; this comprises one of the three skor gsum written by the author" ;
+        rdfs:comment        "three works of klong chen rab 'byams pa commenting on the guhyagarbha tantra; this comprises one of the three skor gsum written by the author"@en ;
         skos:prefLabel      "mun sel skor gsum/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT6A9FF12FD2A89C32 , bdr:NTEFAB737FC78146EF .

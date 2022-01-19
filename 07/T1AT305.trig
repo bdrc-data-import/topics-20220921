@@ -44,7 +44,7 @@ bdg:T1AT305 {
         :noteText           "practice of gcod according to the revelations of the rig 'dzin srog sgrub by nam mkha' 'jigs med"@en .
     
     bdr:T1AT305  a          :Topic ;
-        rdfs:comment        "practice of gcod according to the revelations of the rig 'dzin srog sgurb by Nam mkha' 'jigs med" ;
+        rdfs:comment        "practice of gcod according to the revelations of the rig 'dzin srog sgurb by Nam mkha' 'jigs med"@en ;
         rdfs:seeAlso        bdr:T194 ;
         skos:prefLabel      "gcod yul dpa' bo'i thol glu/"@bo-x-ewts ;
         :isRoot             true ;

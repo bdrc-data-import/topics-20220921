@@ -39,7 +39,7 @@ bdg:T1AT296 {
         :noteText           "Lotus Net Buddha field"@en .
     
     bdr:T1AT296  a          :Topic ;
-        rdfs:comment        "Lotus Net Buddha field" ;
+        rdfs:comment        "Lotus Net Buddha field"@en ;
         skos:altLabel       "bde gsang pad+ma drwa ba DAki rol pa'i gling mchog"@bo-x-ewts ;
         skos:prefLabel      "pad+ma drwa ba'i gling /"@bo-x-ewts ;
         :isRoot             true ;

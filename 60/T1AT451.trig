@@ -39,7 +39,7 @@ bdg:T1AT451 {
         :noteText           "ritual of taming, subjugating, and converting"@en .
     
     bdr:T1AT451  a          :Topic ;
-        rdfs:comment        "ritual of taming, subjugating, and converting" ;
+        rdfs:comment        "ritual of taming, subjugating, and converting"@en ;
         skos:prefLabel      "'dul chog"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT1755D7BA1F46AEEC .

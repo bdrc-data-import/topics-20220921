@@ -33,7 +33,7 @@ bdg:T1AT306 {
         :noteText           "hindrance torma: hindrance offering cakes ritual for the destruction of obstructing and harmful spirits"@en .
     
     bdr:T1AT306  a          :Topic ;
-        rdfs:comment        "hindrance torma: hindrance offering cakes ritual for the destruction of obstructing and harmful spirits" ;
+        rdfs:comment        "hindrance torma: hindrance offering cakes ritual for the destruction of obstructing and harmful spirits"@en ;
         skos:prefLabel      "bgegs gtor/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT34DEB9A52633F35B .

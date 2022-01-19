@@ -34,7 +34,7 @@ bdg:T2202 {
         adm:status          bda:StatusReleased .
     
     bdr:T2202  a            :Topic ;
-        rdfs:comment        "Paradise Arrayed in Turquoise Petals, Tara's Buddhafield" ;
+        rdfs:comment        "Paradise Arrayed in Turquoise Petals, Tara's Buddhafield"@en ;
         skos:altLabel       "g.yu lo bkod pa'i zhing /"@bo-x-ewts , "Arrayed in Turquoise Petals"@en ;
         skos:prefLabel      "g.yu lo bkod/"@bo-x-ewts , "Yulo Köpa"@en , "璁叶庄严刹土"@zh-hans ;
         :isRoot             true .

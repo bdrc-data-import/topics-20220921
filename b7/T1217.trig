@@ -40,7 +40,7 @@ bdg:T1217 {
         adm:status          bda:StatusReleased .
     
     bdr:T1217  a            :Topic ;
-        rdfs:comment        "dran pa nyer bzhag bzhi dang / yang dag spong ba bzhi/ rdzu 'phrul gyi rkang pa bzhi/ rnam byang dbang po lnga/ rnam byang gi stobs lnga/ byang chub yan lag bdun/ 'phags las yan lag brgyad de so bdun no//" ;
+        rdfs:comment        "dran pa nyer bzhag bzhi dang / yang dag spong ba bzhi/ rdzu 'phrul gyi rkang pa bzhi/ rnam byang dbang po lnga/ rnam byang gi stobs lnga/ byang chub yan lag bdun/ 'phags las yan lag brgyad de so bdun no/"@bo-x-ewts ;
         skos:prefLabel      "byang phyogs so bdun/"@bo-x-ewts , "37 factors of enlightenment"@en , "三十七道品"@zh-hans ;
         :isRoot             true .
 }

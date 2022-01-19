@@ -40,8 +40,8 @@ bdg:T1GS138846 {
         :noteText           "name of the paradise of padmasambhava"@en .
     
     bdr:T1GS138846  a       :Topic ;
-        skos:altLabel       "copper colored mountain"@en ;
-        skos:prefLabel      "zangs mdog dpal ri/"@bo-x-ewts , "Sangdok Palri"@en-x-mixed , "铜色吉祥山"@zh-hans ;
+        skos:altLabel       "Sangdok Palri"@bo-x-phon-en ;
+        skos:prefLabel      "zangs mdog dpal ri/"@bo-x-ewts , "copper colored mountain"@en , "铜色吉祥山"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTFE2E4CEC66ADA906 .
 }

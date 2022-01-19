@@ -33,7 +33,7 @@ bdg:T1AT437 {
         :noteText           "consecrating ritual for offering articles including ritual obejects and substance offered to the deities"@en .
     
     bdr:T1AT437  a          :Topic ;
-        rdfs:comment        "consecrating ritual for offering articles including ritual obejects and substance offered to the deities" ;
+        rdfs:comment        "consecrating ritual for offering articles including ritual obejects and substance offered to the deities"@en ;
         skos:prefLabel      "mchod rdzas byin rlabs/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTFEC708C81980ABAA .

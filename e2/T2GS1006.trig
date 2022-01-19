@@ -34,7 +34,7 @@ bdg:T2GS1006 {
         :noteText           "here are classed works on spaces, particularly sacred places and mystical body locations"@en .
     
     bdr:T2GS1006  a         :Topic ;
-        rdfs:comment        "sthana" ;
+        rdfs:comment        "sthana"@sa-x-ndia ;
         skos:prefLabel      "gnas/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTA4F1FBF7C1A53435 .

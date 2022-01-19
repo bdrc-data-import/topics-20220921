@@ -33,7 +33,7 @@ bdg:T1AT290 {
         :noteText           "female naga spirit associated with salt lakes"@en .
     
     bdr:T1AT290  a          :Topic ;
-        rdfs:comment        "female naga spirit associated with salt lakes" ;
+        rdfs:comment        "female naga spirit associated with salt lakes"@en ;
         skos:altLabel       "klu mo 'od 'bar ma/"@bo-x-ewts , "klu mo tshwa sman dkar mo/"@bo-x-ewts ;
         skos:prefLabel      "tshwa sman klu 'od 'bar ma/"@bo-x-ewts ;
         :isRoot             true ;

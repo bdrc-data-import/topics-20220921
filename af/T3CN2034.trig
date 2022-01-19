@@ -30,7 +30,7 @@ bdg:T3CN2034 {
         adm:status          bda:StatusReleased .
     
     bdr:T3CN2034  a         :Topic ;
-        rdfs:comment        "Four attractive qualities of a bodhisattva {bsdu ba'i dngos po bzhi}. These are liberality {sbyin pa}, affectionate speech {snyan par smra ba}, purposeful activity {don spyod pa}, and agreement in purpose {don mthun pa}." ;
+        rdfs:comment        "Four attractive qualities of a bodhisattva {bsdu ba'i dngos po bzhi}. These are liberality {sbyin pa}, affectionate speech {snyan par smra ba}, purposeful activity {don spyod pa}, and agreement in purpose {don mthun pa}."@en ;
         skos:altLabel       "bsdu ba'i dngos po bzhi/"@bo-x-ewts , "bsdu bzhi/"@bo-x-ewts ;
         skos:prefLabel      "bsdu dngos bzhi/"@bo-x-ewts , "four means of magnetizing"@en , "四摄法"@zh-hans ;
         :isRoot             true .

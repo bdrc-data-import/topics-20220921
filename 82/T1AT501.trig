@@ -33,7 +33,7 @@ bdg:T1AT501 {
         :noteText           "vajraratirunA mahArani"@en .
     
     bdr:T1AT501  a          :Topic ;
-        rdfs:comment        "vajraratirunA mahArani" ;
+        rdfs:comment        "vajraratirunA mahArani"@sa-x-ndia ;
         skos:altLabel       "dpal rdo rje sder mo/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje sder mo/"@bo-x-ewts ;
         :isRoot             true ;

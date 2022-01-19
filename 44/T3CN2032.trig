@@ -36,7 +36,7 @@ bdg:T3CN2032 {
         adm:status          bda:StatusReleased .
     
     bdr:T3CN2032  a         :Topic ;
-        rdfs:comment        "A Hinayana school of philosophy and the second of the four major Buddhist Schools known for its reliance on the sutras rather than Abhidharma." ;
+        rdfs:comment        "A Hinayana school of philosophy and the second of the four major Buddhist Schools known for its reliance on the sutras rather than Abhidharma."@en ;
         skos:prefLabel      "mdo sde pa/"@bo-x-ewts , "Sautrantika school,"@en , "Sautrantika"@sa-x-ndia , "经部"@zh-hans ;
         :isRoot             true .
 }

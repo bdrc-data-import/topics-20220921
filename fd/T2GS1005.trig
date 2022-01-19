@@ -46,7 +46,7 @@ bdg:T2GS1005 {
         adm:status          bda:StatusReleased .
     
     bdr:T2GS1005  a         :Topic ;
-        rdfs:comment        "A set of vows for lay practitioners usually taken on special days. Against killing, stealing, falsehood, sexual misconduct, and alcohol, the 8 to be renounced by observers of the purificatory fast." ;
+        rdfs:comment        "A set of vows for lay practitioners usually taken on special days. Against killing, stealing, falsehood, sexual misconduct, and alcohol, the 8 to be renounced by observers of the purificatory fast."@en ;
         skos:prefLabel      "bsnyen gnas/"@bo-x-ewts , "One-day precepts"@en ;
         :isRoot             true .
 }

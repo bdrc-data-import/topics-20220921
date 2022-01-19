@@ -39,7 +39,7 @@ bdg:T1AT294 {
         :noteText           "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha"@en .
     
     bdr:T1AT294  a          :Topic ;
-        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha" ;
+        rdfs:comment        "field of great bliss (mahasukha/dewa chenpo), the western Buddha field of Amitabha"@en ;
         skos:prefLabel      "bde chen zhing /"@bo-x-ewts , "sukhavati"@en ;
         :isRoot             true ;
         :note               bdr:NT3BDE55C5259252F4 .
