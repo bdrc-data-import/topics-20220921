@@ -14,8 +14,8 @@
 bdg:T4CZ368801 {
     bda:LG72009BC984C06EFB
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-20T16:20:07.215Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-01-25T15:43:40.246Z"^^xsd:dateTime ;
+        adm:logMessage      "new p"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ368801  a       adm:AdminData ;
