@@ -18,18 +18,24 @@ bdg:T2129 {
         adm:logMessage      "added sanskrit: checked by ms"@en ;
         adm:logWho          bdu:U00048 .
     
-    bda:LGD7BE30B6D160B165
+    bda:LG87E7E28EF2ABE043
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGD7BE30B6D160B165
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-27T16:30:28.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:T2129  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2129 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "43/T2129.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2129 ;
-        adm:logEntry        bda:LG8604E8F4F55E9DDC , bda:LGD7BE30B6D160B165 ;
+        adm:logEntry        bda:LG8604E8F4F55E9DDC , bda:LG87E7E28EF2ABE043 , bda:LGD7BE30B6D160B165 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
