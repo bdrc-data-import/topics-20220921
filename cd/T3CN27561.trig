@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27561 {
+    bda:LGC2659490D4698F99
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:51:18.288Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27561  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27561 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cd/T3CN27561.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27561 ;
+        adm:logEntry        bda:LGC2659490D4698F99 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT1314E75C6E6C8B8A
+        a                   :Note ;
+        :noteText           "印度佛教四宗之一"@zh-hans .
+    
+    bdr:T3CN27561  a        :Topic ;
+        skos:altLabel       "Jingbu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mdo sde pa/"@bo-x-ewts , "Sautrantika"@sa-x-ndia , "经部"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT1314E75C6E6C8B8A .
+}

@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27567 {
+    bda:LGEDDE60417F38AA26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T22:59:02.14Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27567  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27567 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b5/T3CN27567.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27567 ;
+        adm:logEntry        bda:LGEDDE60417F38AA26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT4E2769338504CCAE
+        a                   :Note ;
+        :noteText           "ཉན་ཐོས་ཀྱི་རྩ་བའི་སྡེ་པ་བཞི་ལས་གཅིག་ཏེ། སྒྲ་གཅན་འཛི་ན་ནས་བརྒྱུད་པ་གཞི་ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་བརྒྱུད་པ།"@bo .
+    
+    bdr:NTD50BA1681CEFEBB2
+        a                   :Note ;
+        :noteText           "罗侯罗所传根本说一切有部，即根本四部或声闻四派系之一。"@zh-hans .
+    
+    bdr:T3CN27567  a        :Topic ;
+        skos:altLabel       "Genben Shuoyiqieyou Bu"@zh-hans ;
+        skos:prefLabel      "gzhi thams cad yod par smra ba/"@bo-x-ewts , "Mūlasarvāstivāda"@sa-x-ndia , "根本说一切有部"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4E2769338504CCAE , bdr:NTD50BA1681CEFEBB2 .
+}

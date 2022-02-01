@@ -11,25 +11,26 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:T4CZ368801 {
-    bda:LG72009BC984C06EFB
+bdg:T3CN27565 {
+    bda:LG26249ADB2B101CB0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-25T15:43:40.246Z"^^xsd:dateTime ;
-        adm:logMessage      "new p"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logDate         "2022-01-31T22:32:59.85Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
     
-    bda:T4CZ368801  a       adm:AdminData ;
+    bda:T3CN27565  a        adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:T4CZ368801 ;
+        adm:adminAbout      bdr:T3CN27565 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "74/T4CZ368801.trig" ;
+        adm:gitPath         "a5/T3CN27565.trig" ;
         adm:gitRepo         bda:GR0007 ;
-        adm:graphId         bdg:T4CZ368801 ;
-        adm:logEntry        bda:LG72009BC984C06EFB ;
+        adm:graphId         bdg:T3CN27565 ;
+        adm:logEntry        bda:LG26249ADB2B101CB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:T4CZ368801  a       :Topic ;
-        skos:prefLabel      "rgyun shes/"@bo-x-ewts , "Common sense"@en ;
+    bdr:T3CN27565  a        :Topic ;
+        skos:altLabel       "Fojiao Sizong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "nang pa'i grub mtha' smra ba bzhi/"@bo-x-ewts , "Four schools of Indian Buddhist philosophy"@en , "佛教四宗"@zh-hans ;
         :isRoot             true .
 }

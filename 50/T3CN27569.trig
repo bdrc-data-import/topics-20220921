@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27569 {
+    bda:LG00D6D79FC6A7F17C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T23:21:26.343Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27569  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27569 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "50/T3CN27569.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27569 ;
+        adm:logEntry        bda:LG00D6D79FC6A7F17C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT5C3B8FCEADD0AACA
+        a                   :Note ;
+        :noteText           "优波离所传正量部，即根本四部或声闻四派系之一。"@zh-hans .
+    
+    bdr:NTD416450B5180FEB2
+        a                   :Note ;
+        :noteText           "ཉན་ཐོས་ཀྱི་རྩ་བའི་སྡེ་པ་བཞི་ལས་གཅིག་ཏེ། ཉེ་བར་འཁོར་ནས་བརྒྱུད་པ་མང་བཀུར་བའི་སྡེ་པའོ།།"@bo .
+    
+    bdr:T3CN27569  a        :Topic ;
+        skos:altLabel       "Zhengliangbu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mang bkur ba'i sde pa/"@bo-x-ewts , "Saṃmatīya、Saṃmitīya"@sa-x-ndia , "正量部"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5C3B8FCEADD0AACA , bdr:NTD416450B5180FEB2 .
+}
