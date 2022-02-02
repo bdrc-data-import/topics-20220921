@@ -11,37 +11,38 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:T3CN27564 {
-    bda:LG4F6A0C57F4B95670
+bdg:T3CN27586 {
+    bda:LGA96A0A96FEC6B0D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T15:39:13.739Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB18AED9F149BD014
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-28T13:21:09.849Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-31T14:25:40.248Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG7089F859531C9D94
+    bda:LGFB6B3C2ABD252388
         a                   adm:UpdateData ;
-        adm:logDate         "2022-02-01T13:02:54.488Z"^^xsd:dateTime ;
-        adm:logMessage      "edited"@en ;
+        adm:logDate         "2022-02-01T18:16:59.67Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:T3CN27564  a        adm:AdminData ;
+    bda:T3CN27586  a        adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:T3CN27564 ;
+        adm:adminAbout      bdr:T3CN27586 ;
         adm:facetIndex      4 ;
-        adm:gitPath         "43/T3CN27564.trig" ;
+        adm:gitPath         "01/T3CN27586.trig" ;
         adm:gitRepo         bda:GR0007 ;
-        adm:graphId         bdg:T3CN27564 ;
-        adm:logEntry        bda:LG4F6A0C57F4B95670 , bda:LG7089F859531C9D94 ;
+        adm:graphId         bdg:T3CN27586 ;
+        adm:logEntry        bda:LGA96A0A96FEC6B0D9 , bda:LGB18AED9F149BD014 , bda:LGFB6B3C2ABD252388 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:NTD145439DAF31C085
-        a                   :Note ;
-        :noteText           "印度佛教四宗之一"@zh-hans .
-    
-    bdr:T3CN27564  a        :Topic ;
-        skos:altLabel       "Zhongguan"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "dbu ma pa/"@bo-x-ewts , "Mādhyamika"@sa-x-ndia , "中观"@zh-hans ;
-        :isRoot             true ;
-        :note               bdr:NTD145439DAF31C085 .
+    bdr:T3CN27586  a        :Topic ;
+        skos:altLabel       "Zhiduobu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Caitika"@sa-x-ndia , "制多部"@zh-hans ;
+        :isRoot             true .
 }

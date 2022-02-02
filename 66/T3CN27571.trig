@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27571 {
+    bda:LG90B2818C56E946A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T15:30:28.746Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBAFE25A7287E6BF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T18:05:55.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6A4B3442F931D34
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T10:31:23.146Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27571  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27571 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "66/T3CN27571.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27571 ;
+        adm:logEntry        bda:LG90B2818C56E946A0 , bda:LGBAFE25A7287E6BF5 , bda:LGE6A4B3442F931D34 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6372FFDB8A5493EF
+        a                   :Note ;
+        :noteText           "18部派之一"@en .
+    
+    bdr:T3CN27571  a        :Topic ;
+        skos:altLabel       "Xueshanbu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Haimavata"@sa-x-ndia , "雪山部"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6372FFDB8A5493EF .
+}

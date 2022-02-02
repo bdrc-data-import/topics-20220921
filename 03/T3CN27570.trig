@@ -12,30 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T3CN27570 {
+    bda:LG34CAE3A7583234B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T22:49:09.39Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6D46CFBB7E5E2FBC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-31T22:49:09.39Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-28T15:10:23.456Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE20625BB292FAC9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T13:55:28.928Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T3CN27570  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T3CN27570 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "03/T3CN27570.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T3CN27570 ;
-        adm:logEntry        bda:LG6D46CFBB7E5E2FBC ;
+        adm:logEntry        bda:LG34CAE3A7583234B7 , bda:LG6D46CFBB7E5E2FBC , bda:LGE20625BB292FAC9B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:NTD9569E56447D8B38
         a                   :Note ;
-        :noteText           "十八部派的根本。གྱེས་པ་བཅོ་བརྒྱད་ཀྱི་རྩ་བར་གྱུར་པའི་སྡེ་བཞིའོ།།"@en .
+        :noteText           "声闻四派系，十八部派的根本。གྱེས་པ་བཅོ་བརྒྱད་ཀྱི་རྩ་བར་གྱུར་པའི་ཉན་ཐོས་ཀྱི་སྡེ་བཞིའོ།།"@en .
     
     bdr:T3CN27570  a        :Topic ;
-        skos:altLabel       "Genben Sibu, Shengwen Sipaixi"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "nyan thos kyi rtsa ba'i sde bzhi/"@bo-x-ewts , "根本四部, 声闻四派系"@zh-hans ;
+        skos:altLabel       "Genben Sibu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtsa ba'i sde bzhi/"@bo-x-ewts , "根本四部"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTD9569E56447D8B38 .
 }

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27599 {
+    bda:LG0BE2B3EE34C4E997
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T15:46:17.894Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0F00CB9D97677046
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T19:02:32.623Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBF84D9AD708084BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T16:21:42.426Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27599  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27599 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3d/T3CN27599.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27599 ;
+        adm:logEntry        bda:LG0BE2B3EE34C4E997 , bda:LG0F00CB9D97677046 , bda:LGBF84D9AD708084BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T3CN27599  a        :Topic ;
+        skos:altLabel       "華嚴"@zh-hant , "Huayan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "phal chen lugs/"@bo-x-ewts , "Avatamsaka School"@en , "华严"@zh-hans ;
+        :isRoot             true .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T3CN27592 {
+    bda:LG80BBE70589AAE2D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T19:02:30.57Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG980D9CA91F2C82C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T15:46:15.368Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE80D049478CDCB07
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T16:21:42.426Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:T3CN27592  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T3CN27592 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "37/T3CN27592.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T3CN27592 ;
+        adm:logEntry        bda:LG80BBE70589AAE2D5 , bda:LG980D9CA91F2C82C5 , bda:LGE80D049478CDCB07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:T3CN27592  a        :Topic ;
+        skos:altLabel       "Chengshizong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bden grub lugs/"@bo-x-ewts , "Satyasiddhi school"@en , "成實宗"@zh-hant ;
+        :isRoot             true .
+}

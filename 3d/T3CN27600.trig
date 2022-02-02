@@ -11,37 +11,38 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:T3CN27564 {
-    bda:LG4F6A0C57F4B95670
+bdg:T3CN27600 {
+    bda:LG26CF4923782AAF86
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T15:46:18.245Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52E4858EC1B51C09
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-28T13:21:09.849Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-31T16:21:42.426Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG7089F859531C9D94
+    bda:LGFD9DECD546FDBADD
         a                   adm:UpdateData ;
-        adm:logDate         "2022-02-01T13:02:54.488Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-01T19:02:32.909Z"^^xsd:dateTime ;
         adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:T3CN27564  a        adm:AdminData ;
+    bda:T3CN27600  a        adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:T3CN27564 ;
+        adm:adminAbout      bdr:T3CN27600 ;
         adm:facetIndex      4 ;
-        adm:gitPath         "43/T3CN27564.trig" ;
+        adm:gitPath         "3d/T3CN27600.trig" ;
         adm:gitRepo         bda:GR0007 ;
-        adm:graphId         bdg:T3CN27564 ;
-        adm:logEntry        bda:LG4F6A0C57F4B95670 , bda:LG7089F859531C9D94 ;
+        adm:graphId         bdg:T3CN27600 ;
+        adm:logEntry        bda:LG26CF4923782AAF86 , bda:LG52E4858EC1B51C09 , bda:LGFD9DECD546FDBADD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:NTD145439DAF31C085
-        a                   :Note ;
-        :noteText           "印度佛教四宗之一"@zh-hans .
-    
-    bdr:T3CN27564  a        :Topic ;
-        skos:altLabel       "Zhongguan"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "dbu ma pa/"@bo-x-ewts , "Mādhyamika"@sa-x-ndia , "中观"@zh-hans ;
-        :isRoot             true ;
-        :note               bdr:NTD145439DAF31C085 .
+    bdr:T3CN27600  a        :Topic ;
+        skos:altLabel       "Mizong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsang sngags lugs/"@bo-x-ewts , "Esoteric School"@en , "密宗"@zh-hans ;
+        :isRoot             true .
 }

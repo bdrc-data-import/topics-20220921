@@ -14,18 +14,24 @@
 bdg:T3CN27562 {
     bda:LG15F4D37E8294D416
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-31T17:55:47.67Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-28T11:55:47.67Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF67DBE4DFD16611D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T12:59:15.572Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T3CN27562  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T3CN27562 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9c/T3CN27562.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T3CN27562 ;
-        adm:logEntry        bda:LG15F4D37E8294D416 ;
+        adm:logEntry        bda:LG15F4D37E8294D416 , bda:LGF67DBE4DFD16611D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

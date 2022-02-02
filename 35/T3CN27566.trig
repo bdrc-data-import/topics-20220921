@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T3CN27566 {
+    bda:LG3BDAF97F5895B191
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T13:08:09.773Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGFB1FA3D4E1C4CED4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-31T22:42:57.913Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-28T13:42:57.913Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:T3CN27566  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T3CN27566 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "35/T3CN27566.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T3CN27566 ;
-        adm:logEntry        bda:LGFB1FA3D4E1C4CED4 ;
+        adm:logEntry        bda:LG3BDAF97F5895B191 , bda:LGFB1FA3D4E1C4CED4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,7 +45,7 @@ bdg:T3CN27566 {
     
     bdr:T3CN27566  a        :Topic ;
         skos:altLabel       "Dazhongbu"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "phal chen sde pa/"@bo-x-ewts , "大众部"@zh-hans ;
+        skos:prefLabel      "phal chen sde pa/"@bo-x-ewts , "Mahāsāṃghika"@sa-x-ndia , "大众部"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NT256281CAB2B7F9FD , bdr:NTE218962B283768D9 .
 }

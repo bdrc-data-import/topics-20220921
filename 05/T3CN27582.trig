@@ -11,37 +11,32 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:T3CN27564 {
-    bda:LG4F6A0C57F4B95670
+bdg:T3CN27582 {
+    bda:LG627BBB4E78B6B81D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-28T13:21:09.849Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-31T14:25:40.248Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG7089F859531C9D94
+    bda:LG86607355556190A3
         a                   adm:UpdateData ;
-        adm:logDate         "2022-02-01T13:02:54.488Z"^^xsd:dateTime ;
-        adm:logMessage      "edited"@en ;
+        adm:logDate         "2022-02-01T17:46:39.004Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:T3CN27564  a        adm:AdminData ;
+    bda:T3CN27582  a        adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:T3CN27564 ;
-        adm:facetIndex      4 ;
-        adm:gitPath         "43/T3CN27564.trig" ;
+        adm:adminAbout      bdr:T3CN27582 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "05/T3CN27582.trig" ;
         adm:gitRepo         bda:GR0007 ;
-        adm:graphId         bdg:T3CN27564 ;
-        adm:logEntry        bda:LG4F6A0C57F4B95670 , bda:LG7089F859531C9D94 ;
+        adm:graphId         bdg:T3CN27582 ;
+        adm:logEntry        bda:LG627BBB4E78B6B81D , bda:LG86607355556190A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:NTD145439DAF31C085
-        a                   :Note ;
-        :noteText           "印度佛教四宗之一"@zh-hans .
-    
-    bdr:T3CN27564  a        :Topic ;
-        skos:altLabel       "Zhongguan"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "dbu ma pa/"@bo-x-ewts , "Mādhyamika"@sa-x-ndia , "中观"@zh-hans ;
-        :isRoot             true ;
-        :note               bdr:NTD145439DAF31C085 .
+    bdr:T3CN27582  a        :Topic ;
+        skos:altLabel       "說出世部"@zh-hant , "Shuochushibu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Lokottaravāda"@sa-x-ndia , "说出世部"@zh-hans ;
+        :isRoot             true .
 }
