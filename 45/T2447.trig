@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2447 {
-    bda:LG9417870BDE20FA25
+    bda:LG88F5775D8F4762CD
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9417870BDE20FA25
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-08T10:55:50.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added mdo chen bka' brgyud/"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGDEDB3B094EEE9A25
         a                   adm:UpdateData ;
@@ -25,11 +31,11 @@ bdg:T2447 {
     bda:T2447  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2447 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "45/T2447.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2447 ;
-        adm:logEntry        bda:LG9417870BDE20FA25 , bda:LGDEDB3B094EEE9A25 ;
+        adm:logEntry        bda:LG88F5775D8F4762CD , bda:LG9417870BDE20FA25 , bda:LGDEDB3B094EEE9A25 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,6 +44,7 @@ bdg:T2447 {
         :noteText           "bka' brgyud lineage of practices followed in western tibet; allied to  the 'brug pa bka' brgyud"@en .
     
     bdr:T2447  a            :Topic ;
+        skos:altLabel       "mdo chen bka' brgyud/"@bo-x-ewts ;
         skos:prefLabel      "ma bdun bka' brgyud/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTEC3D727D0FA6B24D .
