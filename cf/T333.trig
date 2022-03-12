@@ -13,6 +13,12 @@
 
 bdg:T333 {
     bda:LG0D4301E6F6365E4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T13:45:39.73Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in Chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81D47A3E4D55A312
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -25,11 +31,11 @@ bdg:T333 {
     bda:T333  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T333 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "cf/T333.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T333 ;
-        adm:logEntry        bda:LG0D4301E6F6365E4C , bda:LG8D7DF3E958321B81 ;
+        adm:logEntry        bda:LG0D4301E6F6365E4C , bda:LG81D47A3E4D55A312 , bda:LG8D7DF3E958321B81 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,7 +44,8 @@ bdg:T333 {
         :noteText           "this key word is applied to specialized works treating the seventy topics treated in the prajnaparamita or mngon rtogs rgyan literature; it is one of the special manuals for study in some of the monastic colleges of the dge lugs tradition"@en .
     
     bdr:T333  a             :Topic ;
-        skos:prefLabel      "don bdun cu/"@bo-x-ewts , "seventy topics"@en ;
+        skos:altLabel       "七十義"@zh-hant ;
+        skos:prefLabel      "don bdun cu/"@bo-x-ewts , "seventy topics"@en , "七十义"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTAEDC6DB7B08B0142 .
 }

@@ -13,21 +13,27 @@
 
 bdg:T2281 {
     bda:LG7010951C93F04627
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T14:08:22.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFF2A32EF7329094F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T2281  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2281 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "81/T2281.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2281 ;
-        adm:logEntry        bda:LG7010951C93F04627 ;
+        adm:logEntry        bda:LG7010951C93F04627 , bda:LGFF2A32EF7329094F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T2281  a            :Topic ;
-        skos:prefLabel      "rten 'brel/"@bo-x-ewts ;
+        skos:prefLabel      "rten 'brel/"@bo-x-ewts , "缘起"@zh-hans ;
         :isRoot             true .
 }

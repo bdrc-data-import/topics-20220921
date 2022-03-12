@@ -35,9 +35,15 @@ bdg:T942 {
         adm:logMessage      "added names \"drang nges\" &  edited"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGCF187352263B5A89
+    bda:LGBAB680DF96A526D4
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGCF187352263B5A89
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T13:54:42.279Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in chinese & nomalized list"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGE2A9FEC39021188C
         a                   adm:UpdateData ;
@@ -58,11 +64,11 @@ bdg:T942 {
     bda:T942  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T942 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "ca/T942.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T942 ;
-        adm:logEntry        bda:LG144080C74C5FE497 , bda:LG2AC8D0490DF47CAB , bda:LG4248E96CA6B2429D , bda:LG54558C8CA678A44D , bda:LGCF187352263B5A89 , bda:LGE2A9FEC39021188C , bda:LGFAC1531029E4FDBB , bda:LGFCCAB8ECDF240341 ;
+        adm:logEntry        bda:LG144080C74C5FE497 , bda:LG2AC8D0490DF47CAB , bda:LG4248E96CA6B2429D , bda:LG54558C8CA678A44D , bda:LGBAB680DF96A526D4 , bda:LGCF187352263B5A89 , bda:LGE2A9FEC39021188C , bda:LGFAC1531029E4FDBB , bda:LGFCCAB8ECDF240341 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

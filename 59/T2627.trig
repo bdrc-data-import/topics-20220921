@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2627 {
-    bda:LG50AF453DC66484B4
+    bda:LG32429B4FC949158F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG50AF453DC66484B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T13:21:54.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"bden bzhi\" in Tibetan, added name in chinese & sanskrit"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGF4FAFB1B65C0BC0E
         a                   adm:UpdateData ;
@@ -25,11 +31,11 @@ bdg:T2627 {
     bda:T2627  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2627 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "59/T2627.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2627 ;
-        adm:logEntry        bda:LG50AF453DC66484B4 , bda:LGF4FAFB1B65C0BC0E ;
+        adm:logEntry        bda:LG32429B4FC949158F , bda:LG50AF453DC66484B4 , bda:LGF4FAFB1B65C0BC0E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,8 +44,8 @@ bdg:T2627 {
         :noteText           "The Four Noble Truths taught by Shakyamuni Buddha in the first turning of the wheel that include all the causes and results of samsara and nirvana, what is to be accepted and rejected: \n\n1) sdug bsngal gyi bden pa -- the truth of suffering\n2) kun 'byung gi bden pa -- the truth of of the source or arising (of suffering)\n3) 'gog pa'i bden pa -- the truth of the cessation (of suffering)\n4) lam gyi bden pa -- the truth of the path (to cessation of suffering)"@en .
     
     bdr:T2627  a            :Topic ;
-        skos:altLabel       "'phags pa'i bden pa bzhi/"@bo-x-ewts ;
-        skos:prefLabel      "bden pa bzhi/"@bo-x-ewts , "four noble truths"@en ;
+        skos:altLabel       "'phags pa'i bden pa bzhi/"@bo-x-ewts , "bden bzhi/"@bo-x-ewts , "four noble truths"@en , "四谛"@zh-hans , "四聖諦"@zh-hant , "四諦"@zh-hant ;
+        skos:prefLabel      "bden pa bzhi/"@bo-x-ewts , "cattāri ariyasaccāni"@en , "catvāri āryasatyāni"@sa-x-ndia , "四圣谛"@zh-hans ;
         :isRoot             true ;
         :note               bdr:NTB83DB68E5EC4BA7D .
 }

@@ -13,21 +13,27 @@
 
 bdg:T1748 {
     bda:LG10D3762C3D4EAEB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T14:30:39.315Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD1260CF37D73ECF1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1748  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1748 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e7/T1748.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1748 ;
-        adm:logEntry        bda:LG10D3762C3D4EAEB9 ;
+        adm:logEntry        bda:LG10D3762C3D4EAEB9 , bda:LGD1260CF37D73ECF1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1748  a            :Topic ;
-        skos:prefLabel      "dge 'dun nyi shu/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'dun nyi shu/"@bo-x-ewts , "二十僧伽"@zh-hans ;
         :isRoot             true .
 }

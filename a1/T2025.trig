@@ -13,21 +13,28 @@
 
 bdg:T2025 {
     bda:LG213C58365C0FCF6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T13:43:27.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"dngos brgyad\" in Tibetan and 2 names in Chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG21E885503A0982F3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T2025  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2025 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "a1/T2025.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2025 ;
-        adm:logEntry        bda:LG213C58365C0FCF6B ;
+        adm:logEntry        bda:LG213C58365C0FCF6B , bda:LG21E885503A0982F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T2025  a            :Topic ;
-        skos:prefLabel      "dngos po brgyad/"@bo-x-ewts ;
+        skos:altLabel       "dngos brgyad/"@bo-x-ewts , "八品"@zh-hans ;
+        skos:prefLabel      "dngos po brgyad/"@bo-x-ewts , "八事"@zh-hans ;
         :isRoot             true .
 }

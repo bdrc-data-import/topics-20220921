@@ -19,17 +19,23 @@ bdg:T1091 {
         adm:logWho          bdu:U00007 .
     
     bda:LG26FAFBDF9D2F03AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-11T13:50:04.726Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized list"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4CE67F68781BDBEC
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T1091  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1091 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "66/T1091.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1091 ;
-        adm:logEntry        bda:LG208CFD524E95051D , bda:LG26FAFBDF9D2F03AF ;
+        adm:logEntry        bda:LG208CFD524E95051D , bda:LG26FAFBDF9D2F03AF , bda:LG4CE67F68781BDBEC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
