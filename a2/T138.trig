@@ -24,27 +24,32 @@ bdg:T138 {
         adm:logWho          bdu:U00007 .
     
     bda:LG747B4CF92AE9322E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T14:52:31.402Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGBF44EC50DF5337A8
         a                   adm:UpdateData ;
         adm:logDate         "2006-12-22T11:21:05.539Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00002 .
     
+    bda:LGD927882A897829C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:T138  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T138 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a2/T138.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T138 ;
-        adm:logEntry        bda:LG2849F8088D2CD886 , bda:LG51EE11977B9369F9 , bda:LG747B4CF92AE9322E , bda:LGBF44EC50DF5337A8 ;
+        adm:logEntry        bda:LG2849F8088D2CD886 , bda:LG51EE11977B9369F9 , bda:LG747B4CF92AE9322E , bda:LGBF44EC50DF5337A8 , bda:LGD927882A897829C2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T138  a             :Topic ;
         skos:altLabel       "bla mchod/"@bo-x-ewts ;
-        skos:prefLabel      "bla ma mchod pa/"@bo-x-ewts , "worship of the guru"@en , "gurupuja"@sa-alalc97 ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga"@bo-x-ewts , "worship of the guru"@en , "gurupuja"@sa-alalc97 ;
         :isRoot             true .
 }
