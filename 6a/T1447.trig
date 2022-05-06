@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1447 {
+    bda:LG099DF9244A746193
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG0B324510C0AE0A3D
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T16:52:31.516Z"^^xsd:dateTime ;
@@ -19,17 +23,19 @@ bdg:T1447 {
         adm:logWho          bdu:U00020 .
     
     bda:LG71E44E21551EDE00
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-05T15:47:04.695Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T1447  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1447 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6a/T1447.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1447 ;
-        adm:logEntry        bda:LG0B324510C0AE0A3D , bda:LG71E44E21551EDE00 ;
+        adm:logEntry        bda:LG099DF9244A746193 , bda:LG0B324510C0AE0A3D , bda:LG71E44E21551EDE00 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

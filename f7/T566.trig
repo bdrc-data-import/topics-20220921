@@ -18,18 +18,24 @@ bdg:T566 {
         adm:logMessage      "application note added"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGCB73EBDB63F7B21D
+    bda:LG9E573BE405AC1D99
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGCB73EBDB63F7B21D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-05T21:30:42.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added name: thub dbang gnas brtan bcu drug"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T566  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T566 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f7/T566.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T566 ;
-        adm:logEntry        bda:LG134E18EF72BB7971 , bda:LGCB73EBDB63F7B21D ;
+        adm:logEntry        bda:LG134E18EF72BB7971 , bda:LG9E573BE405AC1D99 , bda:LGCB73EBDB63F7B21D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,6 +44,7 @@ bdg:T566 {
         :noteText           "this topic is used for rituals involving the sakyamuni buddha surrounded by the sixteen elders (arhats), the upasaka dharmatrata, the hoshang, and the four kings of the directions;  \ndeities of tibetan buddhism. #16-38;  for the individual sixteen sthavira, etc. see T1154"@en .
     
     bdr:T566  a             :Topic ;
+        skos:altLabel       "thub dbang gnas brtan bcu drug"@bo-x-ewts ;
         skos:prefLabel      "thub pa gnas brtan bcu drug dang bcas pa/"@bo-x-ewts , "mahamuni (astadasasthaviraparivara)"@sa-alalc97 ;
         :isRoot             true ;
         :note               bdr:NT8F9B4035F26D3B3F .

@@ -12,22 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1400 {
-    bda:LG91A6ED01F51A431E
+    bda:LG6C71B840DDD18A36
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG91A6ED01F51A431E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-05T17:10:15.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added name: byang sdom"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T1400  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1400 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "51/T1400.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1400 ;
-        adm:logEntry        bda:LG91A6ED01F51A431E ;
+        adm:logEntry        bda:LG6C71B840DDD18A36 , bda:LG91A6ED01F51A431E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1400  a            :Topic ;
+        skos:altLabel       "byang sdom/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i sdom pa/"@bo-x-ewts , "discipline of the bodhisattva"@en ;
         :isRoot             true .
 }
