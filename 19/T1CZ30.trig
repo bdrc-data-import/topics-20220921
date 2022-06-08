@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T1CZ30 {
+    bda:LG0D0314F99E2F589C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-06T11:55:18.215Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG90D00C2BC25987B6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-03-01T14:12:09.849Z"^^xsd:dateTime ;
@@ -21,15 +26,16 @@ bdg:T1CZ30 {
     bda:T1CZ30  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1CZ30 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "19/T1CZ30.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1CZ30 ;
-        adm:logEntry        bda:LG90D00C2BC25987B6 ;
+        adm:logEntry        bda:LG0D0314F99E2F589C , bda:LG90D00C2BC25987B6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1CZ30  a           :Topic ;
+        skos:altLabel       "bskyed rim dang rdzogs rim/"@bo-x-ewts ;
         skos:prefLabel      "bskyed rdzogs/"@bo-x-ewts , "stages, utpatti and sampannakrama; development and completion"@en ;
         :isRoot             true .
 }
