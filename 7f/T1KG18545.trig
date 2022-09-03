@@ -18,18 +18,25 @@ bdg:T1KG18545 {
         adm:logMessage      "created topic"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG65E84784DFBBDF3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-02T19:35:27.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 names"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:T1KG18545  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1KG18545 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "7f/T1KG18545.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1KG18545 ;
-        adm:logEntry        bda:LG4F9FF2A05A183D57 ;
+        adm:logEntry        bda:LG4F9FF2A05A183D57 , bda:LG65E84784DFBBDF3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T1KG18545  a        :Topic ;
+        skos:altLabel       "du ba/"@bo-x-ewts , "shig ras/"@bo-x-ewts , "tha mag"@bo-x-ewts ;
         skos:prefLabel      "tha ma kha/"@bo-x-ewts , "tobacco"@en ;
         :isRoot             true .
 }

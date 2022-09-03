@@ -18,18 +18,24 @@ bdg:T1651 {
         adm:logMessage      "note added"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGBCBDFC2E741FFC10
+    bda:LG9E70A1449CB9FBB2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGBCBDFC2E741FFC10
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-02T19:48:09.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"rgyal brngan\""@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:T1651  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T1651 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a1/T1651.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T1651 ;
-        adm:logEntry        bda:LG58ED5BA72561F4A9 , bda:LGBCBDFC2E741FFC10 ;
+        adm:logEntry        bda:LG58ED5BA72561F4A9 , bda:LG9E70A1449CB9FBB2 , bda:LGBCBDFC2E741FFC10 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,6 +44,7 @@ bdg:T1651 {
         :noteText           "offerings to make happy deities, both mundane and super-mundane; this includes burnt smoke offerings"@en .
     
     bdr:T1651  a            :Topic ;
+        skos:altLabel       "rgyal brngan/"@bo-x-ewts ;
         skos:prefLabel      "brgyags rngan/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT9448542215E1C3A5 .
