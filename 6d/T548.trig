@@ -19,22 +19,29 @@ bdg:T548 {
         adm:logWho          bdu:U00012 .
     
     bda:LG637E05ADC39D1949
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-07T12:39:10.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"dpe ris\" and the name in chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8AFA034E1E583AA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:T548  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T548 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6d/T548.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T548 ;
-        adm:logEntry        bda:LG5615A2B0DD7ADCAB , bda:LG637E05ADC39D1949 ;
+        adm:logEntry        bda:LG5615A2B0DD7ADCAB , bda:LG637E05ADC39D1949 , bda:LGE8AFA034E1E583AA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T548  a             :Topic ;
         rdfs:seeAlso        bdr:T00KG03985 ;
-        skos:prefLabel      "dpe'u ris/"@bo-x-ewts , "illustrations"@en ;
+        skos:altLabel       "dpe ris/"@bo-x-ewts ;
+        skos:prefLabel      "dpe'u ris/"@bo-x-ewts , "illustrations"@en , "图案"@zh-hans ;
         :isRoot             true .
 }
