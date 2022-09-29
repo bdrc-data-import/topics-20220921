@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:T4CZ371297 {
+    bda:LG57927E3B5731DA0F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-09-28T15:47:27.504Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:T4CZ371297  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:T4CZ371297 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7a/T4CZ371297.trig" ;
+        adm:gitRepo         bda:GR0007 ;
+        adm:graphId         bdg:T4CZ371297 ;
+        adm:logEntry        bda:LG57927E3B5731DA0F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NT6C99DA1C8FBF0350
+        a                   :Note ;
+        :noteText           "The white old man,  master of locality in Mongolia"@en .
+    
+    bdr:T4CZ371297  a       :Topic ;
+        skos:altLabel       "ha cang dkar po/"@bo-x-ewts , "Local deity/"@bo-x-ewts , "sa bdag rgan po dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "rgan po dkar po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6C99DA1C8FBF0350 .
+}
