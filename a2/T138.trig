@@ -25,7 +25,8 @@ bdg:T138 {
     
     bda:LG747B4CF92AE9322E
         a                   adm:UpdateData ;
-        adm:logDate         "2022-03-23T14:52:31.402Z"^^xsd:dateTime ;
+        adm:logDate         "2022-10-12T17:38:14.382Z"^^xsd:dateTime ;
+        adm:logMessage      "released for web edditor"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGBF44EC50DF5337A8

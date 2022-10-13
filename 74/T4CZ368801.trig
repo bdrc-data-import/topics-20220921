@@ -14,8 +14,8 @@
 bdg:T4CZ368801 {
     bda:LG72009BC984C06EFB
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-25T15:43:40.246Z"^^xsd:dateTime ;
-        adm:logMessage      "new p"@en ;
+        adm:logDate         "2022-10-12T14:18:01.245Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ368801  a       adm:AdminData ;
@@ -30,6 +30,6 @@ bdg:T4CZ368801 {
         adm:status          bda:StatusReleased .
     
     bdr:T4CZ368801  a       :Topic ;
-        skos:prefLabel      "rgyun shes/"@bo-x-ewts , "Common sense"@en ;
+        skos:prefLabel      "rgun shes/"@bo-x-ewts , "Common sense W1NLM2639"@en ;
         :isRoot             true .
 }

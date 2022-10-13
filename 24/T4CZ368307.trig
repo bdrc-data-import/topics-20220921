@@ -14,7 +14,8 @@
 bdg:T4CZ368307 {
     bda:LG187E6211902194B1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-29T11:00:30.75Z"^^xsd:dateTime ;
+        adm:logDate         "2022-10-12T17:32:05.371Z"^^xsd:dateTime ;
+        adm:logMessage      "released fir web eddirtor"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:T4CZ368307  a       adm:AdminData ;
