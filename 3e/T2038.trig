@@ -12,22 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:T2038 {
-    bda:LGE7E1C8B230B19F45
+    bda:LG011A72345F9D52B8
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGE7E1C8B230B19F45
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T18:45:05.564Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative spelling"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:T2038  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:T2038 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "3e/T2038.trig" ;
         adm:gitRepo         bda:GR0007 ;
         adm:graphId         bdg:T2038 ;
-        adm:logEntry        bda:LGE7E1C8B230B19F45 ;
+        adm:logEntry        bda:LG011A72345F9D52B8 , bda:LGE7E1C8B230B19F45 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:T2038  a            :Topic ;
-        skos:prefLabel      "gegs sel/"@bo-x-ewts ;
+        skos:altLabel       "bgegs sel/"@bo-x-ewts ;
+        skos:prefLabel      "gegs sel/"@bo-x-ewts , "removal of obstacles"@en ;
         :isRoot             true .
 }
